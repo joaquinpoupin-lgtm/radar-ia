@@ -25,7 +25,7 @@ fuentes (sources.yaml)
   Carpetas, `git init`, `.gitignore` (incluye `.env`), entorno virtual de Python, `requirements.txt` (feedparser, httpx, jinja2, pyyaml), `config.yaml` y `.env.example`.
   **Verificación:** `python -m radar --help` muestra los comandos disponibles.
 
-- [ ] **Paso 1 — Fuentes base verificadas**
+- [x] **Paso 1 — Fuentes base verificadas**
   `sources.yaml` con ~20 fuentes (blogs oficiales con RSS, Hacker News, subreddits, 8 canales de YouTube) con: nombre, tipo, URL, sección por defecto, idioma, peso. Comando `radar fuentes` que prueba cada una.
   **Verificación:** tabla con cada fuente en OK o con su error; las que fallan se arreglan o se quitan.
 
@@ -99,3 +99,4 @@ Una línea por paso terminado: fecha · paso · qué se hizo · decisiones o pro
 
 - 2026-10-20 · Kickoff · Decisiones de la sección 12 aceptadas (todas las recomendaciones): Python, repo público + GitHub Pages, cron cada 6 h, YouTube por título + descripción, ≤10 en brief / ≤25 al día. Usuario de GitHub pendiente (se pide en el Paso 11).
 - 2026-10-20 · Paso 0 · Estructura, git, `.venv`, dependencias fijadas, `config.yaml`, `.env.example`, CLI con comandos planeados y 4 tests en verde. Se agregó `docs/diseno.md` con el diseño de todos los pasos.
+- 2026-10-20 · Paso 1 · `sources.yaml` con 26 fuentes (10 empresas, HN, Reddit, 5 medios/blogs, 9 canales de YouTube) y comando `radar fuentes` (prueba en paralelo, tabla OK/AVISO/ERROR, sale con error si alguna falla); 25 OK + 1 aviso (DotCSV sin videos hace 152 días; se deja y se sumó Dot CSV Lab, que sí publica). 16 tests en verde. Decisiones: Anthropic, Meta, Mistral y xAI no tienen RSS oficial → feed comunitario gratuito (github.com/Olshansk/rss-feeds); Reddit bloquea pedidos seguidos (429) y su API JSON (403) → las 8 comunidades van en un solo feed RSS combinado (sin puntaje; ordenado por "top del día"). Descartadas: Qwen (sin posts desde 2025), DeepSeek (sin RSS), feed viejo de Microsoft (410). Pendiente para el Paso 12: confirmar que Reddit responde desde GitHub Actions.

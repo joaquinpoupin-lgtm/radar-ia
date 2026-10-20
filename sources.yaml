@@ -1,0 +1,208 @@
+# Fuentes de Radar IA. Agregar o quitar fuentes aquí, sin tocar código.
+# Después de editar, correr `python -m radar fuentes` para probarlas.
+#
+# Campos:
+#   nombre   nombre corto que se muestra en la web (único)
+#   tipo     rss | hackernews | youtube
+#   url      dirección del feed (o de la API, en Hacker News)
+#   seccion  sección por defecto: modelos | herramientas | tendencias | creadores | dinero | tips
+#            (la IA puede cambiarla según la noticia)
+#   idioma   es | en
+#   peso     1 (mucho ruido) a 3 (oficial / muy confiable); cuenta en el pre-filtro
+#   activa   false para apagarla sin borrarla (opcional, por defecto true)
+#
+# "Feed comunitario": la empresa no publica RSS oficial; lo genera el proyecto
+# gratuito github.com/Olshansk/rss-feeds leyendo su página. Si un día deja de
+# actualizarse, `radar fuentes` lo marca con AVISO.
+
+fuentes:
+  # --- Empresas de IA (oficiales) ---
+  - nombre: OpenAI
+    tipo: rss
+    url: https://openai.com/news/rss.xml
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Anthropic
+    tipo: rss   # feed comunitario
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Google DeepMind
+    tipo: rss
+    url: https://deepmind.google/blog/rss.xml
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Google AI
+    tipo: rss
+    url: https://blog.google/technology/ai/rss/
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Meta AI
+    tipo: rss   # feed comunitario
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_meta_ai.xml
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Mistral AI
+    tipo: rss   # feed comunitario
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_mistral.xml
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: xAI
+    tipo: rss   # feed comunitario
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml
+    seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Hugging Face
+    tipo: rss
+    url: https://huggingface.co/blog/feed.xml
+    seccion: herramientas
+    idioma: en
+    peso: 3
+
+  - nombre: Microsoft (IA)
+    tipo: rss
+    url: https://news.microsoft.com/source/topics/ai/feed/
+    seccion: modelos
+    idioma: en
+    peso: 2
+
+  - nombre: NVIDIA
+    tipo: rss   # blog general: también trae noticias de videojuegos
+    url: https://blogs.nvidia.com/feed/
+    seccion: modelos
+    idioma: en
+    peso: 2
+
+  # --- Comunidad ---
+  - nombre: Hacker News
+    tipo: hackernews   # el recolector se queda solo con lo que habla de IA
+    url: https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points%3E%3D50&hitsPerPage=100
+    seccion: tendencias
+    idioma: en
+    peso: 2
+
+  - nombre: Reddit
+    tipo: rss   # 8 comunidades en un solo pedido: Reddit bloquea si se piden seguidas
+    url: https://www.reddit.com/r/LocalLLaMA+artificial+singularity+OpenAI+ClaudeAI+ChatGPT+StableDiffusion+aivideo/top/.rss?t=day&limit=50
+    seccion: tendencias
+    idioma: en
+    peso: 1
+
+  # --- Medios y blogs ---
+  - nombre: The Verge (IA)
+    tipo: rss
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    seccion: tendencias
+    idioma: en
+    peso: 2
+
+  - nombre: TechCrunch (IA)
+    tipo: rss
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    seccion: tendencias
+    idioma: en
+    peso: 2
+
+  - nombre: Ars Technica (IA)
+    tipo: rss
+    url: https://arstechnica.com/ai/feed/
+    seccion: tendencias
+    idioma: en
+    peso: 2
+
+  - nombre: Simon Willison
+    tipo: rss   # muy práctico: trucos y pruebas de herramientas
+    url: https://simonwillison.net/atom/everything/
+    seccion: tips
+    idioma: en
+    peso: 2
+
+  - nombre: Xataka (IA)
+    tipo: rss
+    url: https://www.xataka.com/tag/inteligencia-artificial/rss2.xml
+    seccion: tendencias
+    idioma: es
+    peso: 2
+
+  # --- Creadores de YouTube ---
+  # url: https://www.youtube.com/feeds/videos.xml?channel_id=<id del canal>
+  - nombre: DotCSV
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCy5znSnfMsDwaLlROnZ7Qbg
+    seccion: creadores
+    idioma: es
+    peso: 2
+
+  - nombre: Dot CSV Lab
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCOTko-zmnQTcOxSRdg5_uOQ
+    seccion: creadores
+    idioma: es
+    peso: 2
+
+  - nombre: Xavier Mitjana
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCp2Zmdh40GJJJ2T5vWsMZDA
+    seccion: creadores
+    idioma: es
+    peso: 2
+
+  - nombre: Matt Wolfe
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g
+    seccion: creadores
+    idioma: en
+    peso: 2
+
+  - nombre: AI Explained
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw
+    seccion: creadores
+    idioma: en
+    peso: 2
+
+  - nombre: Two Minute Papers
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg
+    seccion: creadores
+    idioma: en
+    peso: 2
+
+  - nombre: Fireship
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA
+    seccion: creadores
+    idioma: en
+    peso: 2
+
+  - nombre: Matthew Berman
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA
+    seccion: creadores
+    idioma: en
+    peso: 2
+
+  - nombre: Wes Roth
+    tipo: youtube
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCqcbQf6yw5KzRoDDcZ_wBSw
+    seccion: creadores
+    idioma: en
+    peso: 2
+
+  # --- Probadas y descartadas (2026-10-20) ---
+  # Qwen (qwenlm.github.io/blog/index.xml): sin publicaciones desde sept. 2025.
+  # DeepSeek: no tiene RSS. Microsoft blogs.microsoft.com/ai/feed/: ya no existe (410).

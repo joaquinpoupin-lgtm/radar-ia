@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog de ejemplo</title>
+    <link>https://ejemplo.com</link>
+    <description>Feed de prueba para los tests</description>
+    <item>
+      <title>Nuevo modelo de ejemplo</title>
+      <link>https://ejemplo.com/nuevo-modelo</link>
+      <pubDate>Mon, 19 Oct 2026 15:00:00 +0000</pubDate>
+      <description>Extracto corto de prueba.</description>
+    </item>
+    <item>
+      <title>Otra noticia más vieja</title>
+      <link>https://ejemplo.com/otra</link>
+      <pubDate>Thu, 15 Oct 2026 10:00:00 +0000</pubDate>
+      <description>Otro extracto.</description>
+    </item>
+  </channel>
+</rss>

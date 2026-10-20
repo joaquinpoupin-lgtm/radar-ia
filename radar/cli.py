@@ -3,6 +3,8 @@
 import argparse
 import sys
 
+from radar.fuentes import comando_fuentes
+
 # Comandos planeados: (nombre, descripción, paso del plan que lo implementa).
 # Al implementar uno, reemplazar su función en COMANDOS.
 PLANEADOS = [
@@ -23,6 +25,7 @@ def _pendiente(paso: int):
 
 
 COMANDOS = {nombre: _pendiente(paso) for nombre, _, paso in PLANEADOS}
+COMANDOS["fuentes"] = comando_fuentes
 
 
 def construir_parser() -> argparse.ArgumentParser:

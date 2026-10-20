@@ -25,6 +25,10 @@ ia:
   espera_inicial_seg: 5    # backoff exponencial: 5, 10, 20...
   timeout_seg: 60
 
+fuentes:
+  dias_aviso_sin_novedades: 90  # `radar fuentes` avisa si una fuente no publica hace más que esto
+  hilos: 8                 # cuántas fuentes se prueban a la vez
+
 red:
   timeout_seg: 20
   user_agent: "RadarIA/0.1 (lector personal de noticias)"
