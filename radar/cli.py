@@ -5,6 +5,7 @@ import sys
 
 from radar.filtrar import comando_filtrar
 from radar.fuentes import comando_fuentes
+from radar.ia import comando_probar_ia
 from radar.recolectar import comando_recolectar
 
 # Comandos planeados: (nombre, descripción, paso del plan que lo implementa).
@@ -31,6 +32,7 @@ COMANDOS = {nombre: _pendiente(paso) for nombre, _, paso in PLANEADOS}
 COMANDOS["fuentes"] = comando_fuentes
 COMANDOS["recolectar"] = comando_recolectar
 COMANDOS["filtrar"] = comando_filtrar
+COMANDOS["probar-ia"] = comando_probar_ia
 
 
 def construir_parser() -> argparse.ArgumentParser:

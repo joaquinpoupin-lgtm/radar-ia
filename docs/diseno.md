@@ -97,6 +97,8 @@ Cómo trabaja `radar/recolectar.py`:
 - `ia.py` expone `pedir_json(prompt) -> dict`. Llamadas HTTP directas con `httpx`:
   - Gemini: `POST https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent` con la clave en la cabecera `x-goog-api-key` (nunca en la URL) y `responseMimeType: application/json`.
   - Groq: `POST https://api.groq.com/openai/v1/chat/completions` (formato OpenAI) con `response_format: {"type": "json_object"}`.
+- `llamar(proveedor, modelo, prompt, clave, cliente) -> str` (Paso 5) hace una llamada sin reintentos y lanza `ErrorIA` con `motivo`: `clave` (401/403 o clave inválida), `modelo` (404 o retirado), `cuota` (429), `red` (5xx, timeout, sin conexión) o `respuesta` (vacía o sin formato). Gemini: se ignoran las partes de razonamiento (`thought: true`). Los mensajes nunca copian el cuerpo del error ni la clave.
+- `radar probar-ia` (Paso 5) pide `{"respuesta": "OK"}` a principal y respaldo; si el modelo no existe, lista los modelos que la clave puede usar (`GET /models`). Modelos vigentes: `gemini-3.5-flash-lite` y `openai/gpt-oss-120b` (Groq gratis: 30 pedidos/min, 1.000/día, 8K tokens/min).
 - Ante 429/5xx/timeout: espera `espera_inicial_seg * 2^intento` (respetando `Retry-After` si viene) hasta `reintentos`; luego pasa al respaldo; si también falla, lanza `IANoDisponible` y el pipeline manda el lote a `pendientes.json`.
 - Una respuesta que no cumple el esquema cuenta como fallo (se reintenta una vez y después queda pendiente).
 - **Salida por noticia:** el esquema de la sección 7 del brief, más `"descartar": true` si no es relevante. `fuentes` y `confirmacion` los pone el código (no la IA) a partir del grupo, para que los links nunca sean inventados.
