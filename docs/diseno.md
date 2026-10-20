@@ -75,10 +75,12 @@ Cómo trabaja `radar/recolectar.py`:
 
 ## Agrupar (Paso 3)
 
-- **URL canónica:** minúsculas en el dominio, sin `www.`, sin `utm_*`/`ref`/`fbclid`, sin `#` ni `/` final. Para links de HN/Reddit que apuntan a un artículo, se usa la URL del artículo.
-- **id:** primeros 12 caracteres del SHA-1 de la URL canónica del primer candidato del grupo. Es estable: la misma noticia siempre tiene el mismo id.
-- **Agrupación:** títulos normalizados (minúsculas, sin puntuación) con `difflib.SequenceMatcher` ≥ `similitud_titulos`. Grupo = lista de candidatos; `confirmacion` = cantidad de fuentes distintas.
-- Títulos en distintos idiomas no se agrupan bien por similitud; el prompt de la IA además une los ítems de un mismo lote que sean la misma noticia.
+`radar/agrupar.py`; `radar recolectar` muestra al final "N candidatos → M noticias" y `--grupos` lista las que juntan más de un link.
+
+- **URL canónica:** `https`, dominio en minúsculas y sin `www.`, sin `utm_*`/`ref`/`ref_src`/`fbclid`/`gclid`/`mc_cid`/`mc_eid`/`igshid`, demás parámetros ordenados, sin `#` ni `/` final. Los links de HN/Reddit que apuntan a un artículo ya llegan con la URL del artículo (Paso 2).
+- **Agrupación** (unión de pares): misma URL canónica → mismo grupo siempre. Además, títulos parecidos **de fuentes distintas** (una misma fuente no repite noticias, pero sí títulos casi iguales para cosas distintas). Títulos normalizados (sin prefijo "Show HN:", sin tildes ni puntuación, minúsculas) y comparados **palabra por palabra** con `difflib.SequenceMatcher` ≥ `similitud_titulos`. Excepciones: si los números del título difieren no se agrupan ("Claude 4.5" ≠ "Claude 4.6"); si el título corto tiene ≥ 4 palabras y aparece entero y en orden en el largo, sí ("OpenAI acquires Orchestra Bio" = "OpenAI acquires startup Orchestra Bio to beef up…").
+- **`Grupo`:** `candidatos` (el principal primero = el **más antiguo**; sin fecha al final), `id` = primeros 12 caracteres del SHA-1 de la URL canónica del principal, `confirmacion` = fuentes distintas, `fuentes` = `[{nombre, url}]` sin repetir la misma página (salen del recolector, nunca de la IA), `hashes` = hash de cada link del grupo. Al elegir como principal el más antiguo, el id no cambia cuando otras fuentes repiten la noticia después; igual la caché (Paso 4) revisa todos los `hashes` por si el principal salió de la ventana de días.
+- Títulos en distintos idiomas o con otra redacción no se agrupan aquí; el prompt de la IA además une los ítems de un mismo lote que sean la misma noticia.
 
 ## Filtrar (Paso 4)
 

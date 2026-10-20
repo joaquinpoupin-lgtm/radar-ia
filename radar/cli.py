@@ -40,6 +40,8 @@ def construir_parser() -> argparse.ArgumentParser:
         sub.add_parser(nombre, help=descripcion, description=descripcion)
     sub.choices["recolectar"].add_argument(
         "--mostrar", type=int, default=0, metavar="N", help="muestra N candidatos de ejemplo")
+    sub.choices["recolectar"].add_argument(
+        "--grupos", action="store_true", help="muestra las noticias que juntan más de un link")
     return parser
 
 

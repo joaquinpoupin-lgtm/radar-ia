@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo
 import feedparser
 import httpx
 
+from radar.agrupar import agrupar, resumen_agrupacion
 from radar.config import cargar_config
 from radar.fuentes import ErrorDescarga, ErrorFuentes, Fuente, cargar_fuentes, crear_cliente, descargar, fecha_entrada
 
@@ -278,5 +279,13 @@ def comando_recolectar(args) -> int:
             fecha = c.fecha.astimezone(zona).strftime("%d-%m %H:%M") if c.fecha else "sin fecha"
             puntaje = f" · {c.puntaje} pts" if c.puntaje is not None else ""
             print(f"\n• [{c.fuente} · {fecha}{puntaje}] {c.titulo}\n  {c.url}\n  {c.extracto[:160] or '(sin extracto)'}")
+
+    grupos = agrupar(resultado.candidatos, config["limites"]["similitud_titulos"])
+    print(f"\nAgrupando: {resumen_agrupacion(resultado.candidatos, grupos)}")
+    if args.grupos:
+        for g in sorted((g for g in grupos if len(g.candidatos) > 1), key=lambda g: -len(g.candidatos)):
+            print(f"\n• [{g.id} · {g.confirmacion} fuentes] {g.titulo}")
+            for c in g.candidatos:
+                print(f"  - {c.fuente}: {c.titulo}\n    {c.url}")
     # Una fuente caída no es un fallo de la corrida: solo falla si no se pudo leer ninguna.
     return 0 if any(not i.error for i in resultado.informes) else 1
