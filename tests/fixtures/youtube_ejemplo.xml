@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+  <title>Canal de ejemplo</title>
+  <entry>
+    <id>yt:video:abc123</id>
+    <title>Probé el nuevo modelo de video 🤯</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=abc123"/>
+    <published>2026-10-20T04:00:00+00:00</published>
+    <media:group>
+      <media:title>Probé el nuevo modelo de video</media:title>
+      <media:description>👉 Prueba la herramienta: https://ejemplo.com/promo
+En este video pruebo el nuevo modelo de video y lo comparo con el anterior paso a paso.</media:description>
+    </media:group>
+  </entry>
+</feed>

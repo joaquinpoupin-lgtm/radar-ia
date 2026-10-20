@@ -62,7 +62,16 @@ Formato común para todo lo recolectado, antes de la IA:
  "puntaje": 120}
 ```
 
-`puntaje` solo existe en HN/Reddit. Las fechas se guardan en UTC y se convierten a hora de Chile solo para decidir "el día".
+`puntaje` solo existe en HN (el RSS de Reddit no lo trae). Las fechas se guardan en UTC y se convierten a hora de Chile solo para decidir "el día"; un candidato sin fecha se conserva y lo decide el pre-filtro.
+
+Cómo trabaja `radar/recolectar.py`:
+
+- Todas las fuentes se leen en paralelo con el cliente y la función `descargar()` de `radar/fuentes.py` (los mismos mensajes de error que `radar fuentes`). Una fuente caída, con HTTP ≠ 200 o con contenido inválido queda con su error en el informe y el resto sigue.
+- De cada fuente se toman solo los de los últimos `limites.dias_antiguedad_max` días, los más nuevos primero, hasta `recolector.max_por_fuente`.
+- **Extracto:** `summary` del feed (si es muy corto, `content`), limpio de HTML, de links sueltos y del relleno "The post … appeared first on …", cortado a `recolector.largo_extracto` sin partir palabras. Si queda con menos de 40 caracteres se lee el comienzo de la página (máx. 300 KB, solo HTML) y se usa `og:description` → `twitter:description` → `description`. Si la misma descripción aparece en varias páginas de una misma fuente, es la genérica del sitio y se descarta.
+- **Hacker News:** solo historias cuyo título contiene alguna palabra de `recolector.palabras_ia` (palabra completa, sin importar mayúsculas). Sin `url` (Ask HN) se usa el link de la discusión y `story_text` como extracto.
+- **Reddit:** el extracto es solo el texto del post (sin "submitted by…"); si el post apunta a un artículo externo, la `url` es la del artículo (imágenes/videos de `redd.it` se quedan con el link del post). A Reddit nunca se le piden páginas extra porque bloquea (429).
+- `radar recolectar` muestra cuántos candidatos trajo cada fuente, cuántos extractos salieron de la página y los errores; `--mostrar N` imprime N ejemplos. Sale con código 1 solo si no se pudo leer ninguna fuente.
 
 ## Agrupar (Paso 3)
 

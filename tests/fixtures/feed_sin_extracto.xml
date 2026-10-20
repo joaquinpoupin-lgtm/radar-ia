@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Blog sin extractos</title>
+  <item><title>Post uno</title><link>https://sinextracto.com/uno</link><pubDate>Tue, 20 Oct 2026 10:00:00 +0000</pubDate></item>
+  <item><title>Post dos</title><link>https://sinextracto.com/dos</link><pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate><description>TBD</description></item>
+  <item><title>Post tres</title><link>https://sinextracto.com/tres</link><pubDate>Tue, 20 Oct 2026 08:00:00 +0000</pubDate></item>
+  <item><title>Post cuatro</title><link>https://sinextracto.com/cuatro</link><pubDate>Tue, 20 Oct 2026 07:00:00 +0000</pubDate></item>
+</channel></rss>

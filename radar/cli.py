@@ -4,6 +4,7 @@ import argparse
 import sys
 
 from radar.fuentes import comando_fuentes
+from radar.recolectar import comando_recolectar
 
 # Comandos planeados: (nombre, descripción, paso del plan que lo implementa).
 # Al implementar uno, reemplazar su función en COMANDOS.
@@ -26,6 +27,7 @@ def _pendiente(paso: int):
 
 COMANDOS = {nombre: _pendiente(paso) for nombre, _, paso in PLANEADOS}
 COMANDOS["fuentes"] = comando_fuentes
+COMANDOS["recolectar"] = comando_recolectar
 
 
 def construir_parser() -> argparse.ArgumentParser:
@@ -36,6 +38,8 @@ def construir_parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="comando", metavar="<comando>")
     for nombre, descripcion, _ in PLANEADOS:
         sub.add_parser(nombre, help=descripcion, description=descripcion)
+    sub.choices["recolectar"].add_argument(
+        "--mostrar", type=int, default=0, metavar="N", help="muestra N candidatos de ejemplo")
     return parser
 
 

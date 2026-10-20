@@ -92,7 +92,7 @@ class Resultado:
     detalle: str = ""
 
 
-def _fecha_entrada(entrada) -> datetime | None:
+def fecha_entrada(entrada) -> datetime | None:
     t = entrada.get("published_parsed") or entrada.get("updated_parsed")
     return datetime(*t[:6], tzinfo=timezone.utc) if t else None
 
@@ -110,18 +110,22 @@ def _leer(fuente: Fuente, respuesta: httpx.Response) -> tuple[int, datetime | No
     feed = feedparser.parse(respuesta.content)
     if not feed.entries and feed.bozo:
         raise ValueError("no es un RSS/Atom válido")
-    fechas = [f for f in map(_fecha_entrada, feed.entries) if f]
+    fechas = [f for f in map(fecha_entrada, feed.entries) if f]
     return len(feed.entries), max(fechas, default=None)
 
 
-def probar_fuente(fuente: Fuente, cliente: httpx.Client, ahora: datetime, dias_aviso: int) -> Resultado:
-    """Descarga la fuente y dice si funciona. Nunca lanza excepciones: los errores van en el resultado."""
+class ErrorDescarga(Exception):
+    """La fuente no se pudo descargar; el mensaje explica por qué en palabras simples."""
+
+
+def descargar(url: str, cliente: httpx.Client) -> httpx.Response:
+    """GET que devuelve la respuesta si es 200 o lanza ErrorDescarga con un motivo legible."""
     try:
-        respuesta = cliente.get(fuente.url)
+        respuesta = cliente.get(url)
     except httpx.TimeoutException:
-        return Resultado(fuente, "ERROR", detalle="no respondió a tiempo")
+        raise ErrorDescarga("no respondió a tiempo")
     except httpx.HTTPError as e:
-        return Resultado(fuente, "ERROR", detalle=f"error de conexión ({type(e).__name__})")
+        raise ErrorDescarga(f"error de conexión ({type(e).__name__})")
 
     if respuesta.status_code != 200:
         detalle = f"HTTP {respuesta.status_code}"
@@ -129,7 +133,16 @@ def probar_fuente(fuente: Fuente, cliente: httpx.Client, ahora: datetime, dias_a
             detalle += " (demasiados pedidos; probar más tarde)"
         elif respuesta.status_code in (404, 410):
             detalle += " (la dirección ya no existe)"
-        return Resultado(fuente, "ERROR", detalle=detalle)
+        raise ErrorDescarga(detalle)
+    return respuesta
+
+
+def probar_fuente(fuente: Fuente, cliente: httpx.Client, ahora: datetime, dias_aviso: int) -> Resultado:
+    """Descarga la fuente y dice si funciona. Nunca lanza excepciones: los errores van en el resultado."""
+    try:
+        respuesta = descargar(fuente.url, cliente)
+    except ErrorDescarga as e:
+        return Resultado(fuente, "ERROR", detalle=str(e))
 
     try:
         items, ultima = _leer(fuente, respuesta)

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>top scoring links : multi</title>
+  <entry>
+    <title>New open model beats the old one on every benchmark</title>
+    <link href="https://www.reddit.com/r/LocalLLaMA/comments/1a/new_open_model/"/>
+    <updated>2026-10-20T09:00:00+00:00</updated>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/alguien"&gt; /u/alguien &lt;/a&gt; &amp;#32; to &amp;#32; &lt;a href="https://www.reddit.com/r/LocalLLaMA/"&gt; r/LocalLLaMA &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://blog.ejemplo.com/modelo-abierto?utm_source=reddit"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/LocalLLaMA/comments/1a/new_open_model/"&gt;[comments]&lt;/a&gt;&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content>
+  </entry>
+  <entry>
+    <title>I automated my weekly report with an agent</title>
+    <link href="https://www.reddit.com/r/ChatGPT/comments/2b/automated_report/"/>
+    <updated>2026-10-20T08:00:00+00:00</updated>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class="md"&gt;&lt;p&gt;I connected my spreadsheet to an agent and now the weekly report writes itself every Monday.&lt;/p&gt;&lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/otro"&gt; /u/otro &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://www.reddit.com/r/ChatGPT/comments/2b/automated_report/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href="https://www.reddit.com/r/ChatGPT/comments/2b/automated_report/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+  </entry>
+  <entry>
+    <title>Look at this AI video</title>
+    <link href="https://www.reddit.com/r/aivideo/comments/3c/look/"/>
+    <updated>2026-10-20T07:00:00+00:00</updated>
+    <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href="https://www.reddit.com/user/x"&gt; /u/x &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href="https://v.redd.it/xyz"&gt;[link]&lt;/a&gt;&lt;/span&gt;</content>
+  </entry>
+</feed>

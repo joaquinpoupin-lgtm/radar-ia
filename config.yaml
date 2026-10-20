@@ -29,6 +29,17 @@ fuentes:
   dias_aviso_sin_novedades: 90  # `radar fuentes` avisa si una fuente no publica hace más que esto
   hilos: 8                 # cuántas fuentes se prueban a la vez
 
+recolector:
+  max_por_fuente: 30       # candidatos máximos que se toman de cada fuente por corrida
+  largo_extracto: 500      # caracteres máximos del extracto (nunca se guarda el artículo completo)
+  # Hacker News: solo entran historias cuyo título tenga alguna de estas palabras
+  palabras_ia: [ai, llm, llms, gpt, chatgpt, openai, anthropic, claude, gemini, deepmind,
+                llama, mistral, deepseek, qwen, grok, xai, copilot, codex, sora, midjourney,
+                ollama, "hugging face", huggingface, "machine learning", "deep learning",
+                neural, chatbot, agent, agents, agentic, "artificial intelligence",
+                inference, fine-tuning, rag, embeddings, diffusion, "stable diffusion",
+                perplexity, "vibe coding", prompt, prompts, nvidia]
+
 red:
   timeout_seg: 20
   user_agent: "RadarIA/0.1 (lector personal de noticias)"
