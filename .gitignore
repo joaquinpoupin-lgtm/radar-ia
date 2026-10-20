@@ -1,0 +1,13 @@
+# Secretos: NUNCA se suben
+.env
+
+# Entorno de Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Sitio generado (lo publica GitHub Actions, no se guarda en el repo)
+_site/
+
+.DS_Store

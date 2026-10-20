@@ -1,0 +1,30 @@
+# Configuración de Radar IA. Cambiar valores aquí, no en el código.
+
+zona_horaria: America/Santiago
+
+limites:
+  max_brief: 10            # ítems máximos en el brief del día
+  max_por_dia: 25          # noticias publicadas máximas por día (todas las secciones)
+  max_nuevas_por_corrida: 10  # candidatas que se mandan a la IA en cada corrida
+  tamano_lote: 10          # noticias por llamada a la IA
+  dias_antiguedad_max: 3   # se ignoran candidatos más viejos que esto
+  similitud_titulos: 0.8   # 0-1: desde cuánto dos títulos se consideran la misma noticia
+
+brief:
+  hora_desde: "06:00"      # la primera corrida del día después de esta hora arma el brief
+
+ia:
+  # Nombres de modelo: verificar en el Paso 5 contra AI Studio / consola de Groq.
+  principal:
+    proveedor: gemini
+    modelo: gemini-2.5-flash-lite
+  respaldo:
+    proveedor: groq
+    modelo: llama-3.3-70b-versatile
+  reintentos: 3            # intentos por proveedor ante 429 / errores temporales
+  espera_inicial_seg: 5    # backoff exponencial: 5, 10, 20...
+  timeout_seg: 60
+
+red:
+  timeout_seg: 20
+  user_agent: "RadarIA/0.1 (lector personal de noticias)"
