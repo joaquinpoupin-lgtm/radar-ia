@@ -1,12 +1,15 @@
 """Llamadas a la IA (Gemini y Groq) con `httpx` + comando `probar-ia`.
 
-Paso 5: una llamada simple por proveedor. El Paso 6 suma reintentos, respaldo y pendientes.
-Las claves van en una cabecera (nunca en la URL) y jamás se imprimen.
+`llamar()` hace una sola llamada (Paso 5); `pedir_json()` suma reintentos con espera creciente
+y el cambio al proveedor de respaldo (Paso 6). Las claves van en una cabecera (nunca en la URL)
+y jamás se imprimen.
 """
 
 import json
+import re
 import time
 from dataclasses import dataclass
+from typing import Callable
 
 import httpx
 
@@ -29,16 +32,35 @@ PROMPT_PRUEBA = 'Responde solo con este JSON, sin nada más: {"respuesta": "OK"}
 class ErrorIA(Exception):
     """La IA no respondió bien. `motivo` es una palabra corta: clave, modelo, cuota, red, respuesta."""
 
-    def __init__(self, mensaje: str, motivo: str, status: int | None = None):
+    def __init__(self, mensaje: str, motivo: str, status: int | None = None, espera: float | None = None):
         super().__init__(mensaje)
         self.motivo = motivo
         self.status = status
+        self.espera = espera  # segundos que el servicio pidió esperar antes de reintentar (si lo dijo)
+
+
+class IANoDisponible(Exception):
+    """Ni el proveedor principal ni el de respaldo respondieron bien: lo pedido queda pendiente."""
+
+    def __init__(self, fallos: list[str]):
+        super().__init__("la IA no está disponible: " + "; ".join(fallos))
+        self.fallos = fallos
 
 
 def _cabeceras(proveedor: str, clave: str) -> dict:
     if proveedor == "gemini":
         return {"x-goog-api-key": clave}
     return {"Authorization": f"Bearer {clave}"}
+
+
+def _espera_pedida(respuesta: httpx.Response) -> float | None:
+    """Cuánto pide esperar el servicio: cabecera Retry-After o, en Gemini, "retryDelay": "34s" en el cuerpo."""
+    try:
+        return float(respuesta.headers["retry-after"])
+    except (KeyError, ValueError):
+        pass
+    m = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', respuesta.text)
+    return float(m.group(1)) if m else None
 
 
 def _error_http(respuesta: httpx.Response, proveedor: str) -> ErrorIA:
@@ -50,9 +72,11 @@ def _error_http(respuesta: httpx.Response, proveedor: str) -> ErrorIA:
     if s == 404 or "model_not_found" in texto or "does not exist" in texto or "decommissioned" in texto:
         return ErrorIA(f"HTTP {s}: el modelo no existe o ya no está disponible", "modelo", s)
     if s == 429:
-        return ErrorIA("HTTP 429: cuota del plan gratis agotada por ahora (probar más tarde)", "cuota", s)
+        return ErrorIA("HTTP 429: cuota del plan gratis agotada por ahora (probar más tarde)", "cuota", s,
+                       _espera_pedida(respuesta))
     if s >= 500:
-        return ErrorIA(f"HTTP {s}: el servicio de {proveedor} tiene problemas (probar más tarde)", "red", s)
+        return ErrorIA(f"HTTP {s}: el servicio de {proveedor} tiene problemas (probar más tarde)", "red", s,
+                       _espera_pedida(respuesta))
     return ErrorIA(f"HTTP {s}: pedido rechazado", "respuesta", s)
 
 
@@ -103,6 +127,66 @@ def llamar(proveedor: str, modelo: str, prompt: str, clave: str, cliente: httpx.
     if not texto.strip():
         raise ErrorIA(f"{proveedor} respondió vacío", "respuesta")
     return texto
+
+
+def pedir_json(prompt: str, config: dict, cliente: httpx.Client,
+               validar: Callable[[dict], None] | None = None,
+               dormir: Callable[[float], None] = time.sleep) -> dict:
+    """La única puerta a la IA: devuelve la respuesta como dict o lanza `IANoDisponible`.
+
+    - Cuota (429) o servicio caído/lento: espera `espera_inicial_seg`, luego el doble, etc. (o lo que pida
+      el servicio, hasta `espera_max_seg`) y reintenta hasta `reintentos` veces.
+    - Clave inválida o modelo inexistente: reintentar no sirve → pasa directo al respaldo.
+    - Respuesta que no es JSON o que `validar` rechaza (lanza ValueError): se pide una vez más y luego
+      pasa al respaldo.
+    """
+    ia = config["ia"]
+    fallos = []
+    for rol in ("principal", "respaldo"):
+        proveedor, modelo = ia[rol]["proveedor"], ia[rol]["modelo"]
+        variable = PROVEEDORES.get(proveedor, ("?",))[0]
+        clave = secreto(variable)
+        if not clave:
+            fallos.append(f"{proveedor}: falta {variable}")
+            continue
+        respuestas_malas = 0
+        for intento in range(ia["reintentos"]):
+            try:
+                texto = llamar(proveedor, modelo, prompt, clave, cliente)
+                try:
+                    datos = json.loads(texto)
+                except json.JSONDecodeError:
+                    raise ErrorIA(f"{proveedor} respondió algo que no es JSON válido", "respuesta")
+                if not isinstance(datos, dict):
+                    raise ErrorIA(f"{proveedor} respondió JSON, pero no un objeto", "respuesta")
+                if validar:
+                    try:
+                        validar(datos)
+                    except ValueError as e:
+                        raise ErrorIA(f"{proveedor} respondió fuera del formato pedido ({e})", "respuesta")
+                return datos
+            except ErrorIA as e:
+                motivo = str(e).replace(clave, "***")
+                ultimo = intento + 1 >= ia["reintentos"]
+                if e.motivo in ("clave", "modelo"):
+                    fallos.append(f"{proveedor}: {motivo}")
+                    break
+                if e.motivo == "respuesta":
+                    respuestas_malas += 1
+                    if respuestas_malas >= 2 or ultimo:
+                        fallos.append(f"{proveedor}: {motivo}")
+                        break
+                    print(f"  IA: {motivo}; se pide de nuevo")
+                    continue
+                if ultimo:
+                    fallos.append(f"{proveedor}: {motivo} (tras {ia['reintentos']} intentos)")
+                    break
+                espera = min(e.espera or ia["espera_inicial_seg"] * 2 ** intento, ia["espera_max_seg"])
+                print(f"  IA: {motivo}; reintento en {espera:g} s")
+                dormir(espera)
+        if rol == "principal":
+            print(f"  IA: {proveedor} no respondió; se usa el respaldo ({ia['respaldo']['proveedor']})")
+    raise IANoDisponible(fallos)
 
 
 def modelos_disponibles(proveedor: str, clave: str, cliente: httpx.Client) -> list[str]:

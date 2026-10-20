@@ -10,10 +10,11 @@ from zoneinfo import ZoneInfo
 from radar.agrupar import Grupo, agrupar, resumen_agrupacion
 from radar.config import RAIZ, cargar_config
 from radar.fuentes import ErrorFuentes, cargar_fuentes
-from radar.recolectar import patron_ia, recolectar
+from radar.recolectar import Candidato, patron_ia, recolectar
 
 CARPETA_DATOS = RAIZ / "data"
 RUTA_PROCESADOS = CARPETA_DATOS / "cache" / "procesados.json"
+RUTA_PENDIENTES = CARPETA_DATOS / "pendientes.json"
 MAX_BONUS_CONFIRMACION = 3
 
 
@@ -56,6 +57,56 @@ def marcar_procesados(procesados: dict[str, str], grupos: list[Grupo], hoy: str)
             procesados[h] = hoy
 
 
+# --- Pendientes: lo que la IA no pudo procesar se reintenta primero en la corrida siguiente ---
+
+def cargar_pendientes(ruta: Path = RUTA_PENDIENTES) -> list[Grupo]:
+    """Se guardan los candidatos completos (título, link, extracto corto): así se reintentan aunque ya no
+    salgan en el feed. Si el archivo está dañado se avisa y se parte sin pendientes."""
+    try:
+        datos = json.loads(ruta.read_text(encoding="utf-8"))
+        grupos = []
+        for g in datos["grupos"]:
+            candidatos = [Candidato(**{**c, "fecha": datetime.fromisoformat(c["fecha"]) if c["fecha"] else None})
+                          for c in g["candidatos"]]
+            grupos.append(Grupo(g["id"], candidatos))
+        return grupos
+    except FileNotFoundError:
+        return []
+    except (ValueError, OSError, KeyError, TypeError) as e:
+        print(f"Aviso: no se pudo leer {ruta.name} ({type(e).__name__}); se parte sin pendientes.")
+        return []
+
+
+def guardar_pendientes(grupos: list[Grupo], ahora: datetime, ruta: Path = RUTA_PENDIENTES) -> None:
+    """Un candidato sin fecha queda con la de esta corrida, para que igual expire con la ventana de días."""
+    datos = {"grupos": [{"id": g.id, "titulo": g.titulo,
+                         "candidatos": [{**c.a_dict(), "fecha": (c.fecha or ahora).isoformat()}
+                                        for c in g.candidatos]} for g in grupos]}
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+    ruta.write_text(json.dumps(datos, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def sumar_pendientes(grupos: list[Grupo], pendientes: list[Grupo]) -> list[Grupo]:
+    """Junta lo recién recolectado con los pendientes. Si una noticia pendiente volvió a aparecer, se usa
+    la versión nueva (puede traer más fuentes) y no se repite."""
+    hashes_frescos = set().union(*(g.hashes for g in grupos)) if grupos else set()
+    return grupos + [p for p in pendientes if not (p.hashes & hashes_frescos)]
+
+
+def actualizar_pendientes(anteriores: list[Grupo], fallidos: list[Grupo], procesados: dict[str, str],
+                          config: dict, ahora: datetime) -> list[Grupo]:
+    """Pendientes para la próxima corrida: los que fallaron ahora + los anteriores que siguen sin procesar.
+    Se olvidan los ya procesados y los que salieron de la ventana de días (ya no son noticia)."""
+    desde = ahora - timedelta(days=config["limites"]["dias_antiguedad_max"])
+    salida, vistos = [], set()
+    for g in fallidos + anteriores:
+        if g.hashes & vistos or ya_procesado(g, procesados) or (g.principal.fecha and g.principal.fecha < desde):
+            continue
+        vistos |= g.hashes
+        salida.append(g)
+    return salida
+
+
 def publicadas_hoy(hoy: str, carpeta: Path = CARPETA_DATOS) -> int:
     """Noticias ya publicadas hoy (data/AAAA-MM-DD.json lo escribe el Paso 8)."""
     try:
@@ -92,11 +143,16 @@ class Prefiltro:
     viejas: int = 0
     nuevas: int = 0  # sin procesar y dentro de la ventana de días
     cupo: int = 0    # cuántas se podían mandar a la IA en esta corrida
+    pendientes: int = 0  # de las nuevas, cuántas quedaron pendientes en una corrida anterior (van primero)
 
 
 def prefiltrar(grupos: list[Grupo], procesados: dict[str, str], config: dict, ahora: datetime,
-               publicadas: int = 0) -> Prefiltro:
-    """Quita lo ya procesado y lo viejo, ordena por puntaje y respeta los topes por corrida, por día y por fuente."""
+               publicadas: int = 0, pendientes: list[Grupo] = ()) -> Prefiltro:
+    """Quita lo ya procesado y lo viejo, ordena por puntaje y respeta los topes por corrida, por día y por fuente.
+
+    Lo que quedó pendiente en corridas anteriores (`pendientes`) va primero, antes que todo lo demás.
+    """
+    hashes_pendientes = set().union(*(p.hashes for p in pendientes)) if pendientes else set()
     limites = config["limites"]
     desde = ahora - timedelta(days=limites["dias_antiguedad_max"])
     r = Prefiltro(cupo=max(0, min(limites["max_nuevas_por_corrida"], limites["max_por_dia"] - publicadas)))
@@ -110,7 +166,9 @@ def prefiltrar(grupos: list[Grupo], procesados: dict[str, str], config: dict, ah
             candidatas.append((g, puntaje(g, config, ahora)))
     r.nuevas = len(candidatas)
 
-    candidatas.sort(key=lambda x: -x[1])  # estable: a igual puntaje, el orden de llegada
+    # Pendientes primero; después por puntaje (estable: a igual puntaje, el orden de llegada).
+    candidatas.sort(key=lambda x: (not (x[0].hashes & hashes_pendientes), -x[1]))
+    r.pendientes = sum(bool(g.hashes & hashes_pendientes) for g, _ in candidatas)
     por_fuente: dict[str, int] = {}
     for g, p in candidatas:
         if len(r.elegidas) >= r.cupo:
@@ -124,7 +182,7 @@ def prefiltrar(grupos: list[Grupo], procesados: dict[str, str], config: dict, ah
 
 def informe(r: Prefiltro) -> str:
     lineas = [f"Ya procesadas antes: {r.ya_procesadas} · más viejas que la ventana: {r.viejas}"
-              f" · nuevas: {r.nuevas}"]
+              f" · nuevas: {r.nuevas}" + (f" (pendientes de antes: {r.pendientes})" if r.pendientes else "")]
     if not r.nuevas:
         lineas.append("0 noticias nuevas: no hay nada que mandar a la IA.")
     elif not r.cupo:
@@ -155,9 +213,10 @@ def comando_filtrar(args) -> int:
     print(resumen_agrupacion(recoleccion.candidatos, grupos))
 
     procesados = cargar_procesados()
+    pendientes = cargar_pendientes()
     publicadas = publicadas_hoy(hoy)
     print(f"Publicadas hoy ({hoy}): {publicadas} de {config['limites']['max_por_dia']}")
-    resultado = prefiltrar(grupos, procesados, config, ahora, publicadas)
+    resultado = prefiltrar(sumar_pendientes(grupos, pendientes), procesados, config, ahora, publicadas, pendientes)
     print(informe(resultado))
 
     if args.marcar and resultado.elegidas:

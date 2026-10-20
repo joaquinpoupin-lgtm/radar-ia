@@ -39,6 +39,7 @@ ia:
     modelo: openai/gpt-oss-120b
   reintentos: 3            # intentos por proveedor ante 429 / errores temporales
   espera_inicial_seg: 5    # backoff exponencial: 5, 10, 20...
+  espera_max_seg: 60       # nunca esperar más que esto entre intentos (aunque el servicio pida más)
   timeout_seg: 60
 
 fuentes:

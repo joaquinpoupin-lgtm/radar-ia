@@ -90,7 +90,7 @@ Cómo trabaja `radar/recolectar.py`:
 - **Pre-filtro:** fuera lo ya procesado y lo que supera `dias_antiguedad_max`. Puntaje = mayor peso del grupo + `bonus_por_fuente_extra` por cada fuente adicional (máx. +3) + bonus por puntos de HN (`bonus_hn`, el mayor alcanzado) + `bonus_palabra_clave` si algún título tiene una de `palabras_clave` − `castigo_por_dia` × días de antigüedad (sin fecha = la ventana completa). Todo en `config.yaml` → `prefiltro`.
 - **Topes:** cupo = `max_nuevas_por_corrida`, sin pasar de `max_por_dia` − publicadas hoy (largo de `noticias` en `data/<hoy>.json`, hoy en hora de Chile); y máximo `prefiltro.max_por_fuente` de una misma fuente por corrida, para que haya variedad.
 - Lo no elegido **no** se marca: se reconsidera en la corrida siguiente hasta que sale de la ventana de días.
-- Los pendientes de corridas anteriores (`pendientes.json`, Paso 6) tendrán prioridad: se agregan en ese paso.
+- **Pendientes** (Paso 6) `data/pendientes.json`: `{"grupos": [{"id", "titulo", "candidatos": [Candidato]}]}`. Se guardan los candidatos completos (título, link, extracto corto, nunca el artículo) para reintentar aunque la noticia ya no salga en el feed; un candidato sin fecha queda con la de la corrida para que igual expire. `sumar_pendientes()` los junta con lo recolectado (si la noticia volvió a aparecer se usa la versión nueva, sin duplicar) y `prefiltrar(..., pendientes=)` los pone **primero**, antes que el puntaje (sí respetan el cupo y el tope por fuente). Después de la IA, `actualizar_pendientes()` deja los que fallaron ahora + los anteriores sin procesar, sin los ya procesados ni los que salieron de la ventana de días. Archivo dañado = aviso y se parte sin pendientes.
 
 ## IA (Pasos 5-7)
 
@@ -99,8 +99,11 @@ Cómo trabaja `radar/recolectar.py`:
   - Groq: `POST https://api.groq.com/openai/v1/chat/completions` (formato OpenAI) con `response_format: {"type": "json_object"}`.
 - `llamar(proveedor, modelo, prompt, clave, cliente) -> str` (Paso 5) hace una llamada sin reintentos y lanza `ErrorIA` con `motivo`: `clave` (401/403 o clave inválida), `modelo` (404 o retirado), `cuota` (429), `red` (5xx, timeout, sin conexión) o `respuesta` (vacía o sin formato). Gemini: se ignoran las partes de razonamiento (`thought: true`). Los mensajes nunca copian el cuerpo del error ni la clave.
 - `radar probar-ia` (Paso 5) pide `{"respuesta": "OK"}` a principal y respaldo; si el modelo no existe, lista los modelos que la clave puede usar (`GET /models`). Modelos vigentes: `gemini-3.5-flash-lite` y `openai/gpt-oss-120b` (Groq gratis: 30 pedidos/min, 1.000/día, 8K tokens/min).
-- Ante 429/5xx/timeout: espera `espera_inicial_seg * 2^intento` (respetando `Retry-After` si viene) hasta `reintentos`; luego pasa al respaldo; si también falla, lanza `IANoDisponible` y el pipeline manda el lote a `pendientes.json`.
-- Una respuesta que no cumple el esquema cuenta como fallo (se reintenta una vez y después queda pendiente).
+- `pedir_json(prompt, config, cliente, validar=None) -> dict` (Paso 6) es la única puerta a la IA. Por proveedor (principal y luego respaldo):
+  - `cuota` (429) o `red` (5xx, timeout, sin conexión): espera `espera_inicial_seg * 2^intento` (o lo que pida el servicio: cabecera `Retry-After` o `retryDelay` de Gemini), nunca más de `espera_max_seg`, hasta `reintentos` intentos.
+  - `clave` o `modelo` (o clave faltante): reintentar no sirve → pasa directo al respaldo.
+  - `respuesta` (no es JSON, no es objeto o `validar` lanza `ValueError`): se pide una vez más sin esperar y luego pasa al respaldo.
+  - Si ambos fallan lanza `IANoDisponible(fallos)` (motivos sin claves) y el lote va a `pendientes.json`. Imprime una línea por reintento para el log de Actions.
 - **Salida por noticia:** el esquema de la sección 7 del brief, más `"descartar": true` si no es relevante. `fuentes` y `confirmacion` los pone el código (no la IA) a partir del grupo, para que los links nunca sean inventados.
 - Lote = `tamano_lote` grupos con título, extracto, fuente y URL. El prompt pide parafrasear, no inventar, marcar rumores, explicar términos y aplicar el filtro anti-humo de la sección "dinero".
 
