@@ -10,6 +10,20 @@ limites:
   dias_antiguedad_max: 3   # se ignoran candidatos más viejos que esto
   similitud_titulos: 0.8   # 0-1: desde cuánto dos títulos se consideran la misma noticia
 
+prefiltro:
+  # Puntaje sin IA para elegir qué se manda a resumir: peso de la fuente (1-3) + bonus - castigo por antigüedad.
+  bonus_por_fuente_extra: 1    # por cada fuente adicional que cuenta la misma noticia (máx. +3)
+  bonus_hn: {100: 1, 300: 2}   # puntos en Hacker News → bonus (se usa el mayor que se alcance)
+  bonus_palabra_clave: 0.5     # si el título tiene alguna palabra clave (una sola vez)
+  castigo_por_dia: 0.5         # se resta por cada día de antigüedad
+  max_por_fuente: 3            # máximo de una misma fuente por corrida (variedad)
+  palabras_clave: [launch, launches, launched, release, releases, released, introducing, announces,
+                   model, "open source", open-source, open-weight, free, agent, agents,
+                   lanza, lanzamiento, presenta, modelo, gratis, "código abierto", agente, agentes]
+
+cache:
+  dias: 30                 # las entradas de procesados.json más viejas que esto se borran
+
 brief:
   hora_desde: "06:00"      # la primera corrida del día después de esta hora arma el brief
 
@@ -33,10 +47,11 @@ recolector:
   max_por_fuente: 30       # candidatos máximos que se toman de cada fuente por corrida
   largo_extracto: 500      # caracteres máximos del extracto (nunca se guarda el artículo completo)
   # Hacker News: solo entran historias cuyo título tenga alguna de estas palabras
+  # "agent" no va: en HN suele ser otra cosa ("ICE agent"); los de IA casi siempre dicen "AI" o "agentic".
   palabras_ia: [ai, llm, llms, gpt, chatgpt, openai, anthropic, claude, gemini, deepmind,
                 llama, mistral, deepseek, qwen, grok, xai, copilot, codex, sora, midjourney,
                 ollama, "hugging face", huggingface, "machine learning", "deep learning",
-                neural, chatbot, agent, agents, agentic, "artificial intelligence",
+                neural, chatbot, agentic, "artificial intelligence",
                 inference, fine-tuning, rag, embeddings, diffusion, "stable diffusion",
                 perplexity, "vibe coding", prompt, prompts, nvidia]
 

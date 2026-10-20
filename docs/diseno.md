@@ -16,7 +16,7 @@ radar/
   fuentes.py           lee sources.yaml + comando `fuentes`           ← Paso 1
   recolectar.py        RSS/Atom + Hacker News → Candidato             ← Paso 2
   agrupar.py           URL canónica, id, agrupación por título        ← Paso 3
-  filtrar.py           caché de procesados + pre-filtro sin IA        ← Paso 4
+  filtrar.py           caché de procesados + pre-filtro sin IA + `filtrar` ← Paso 4
   ia.py                cliente Gemini/Groq con backoff y fallback     ← Pasos 5-6
   resumir.py           lotes → prompt → validación de esquema         ← Paso 7
   almacen.py           data/AAAA-MM-DD.json, pendientes, brief        ← Paso 8
@@ -84,9 +84,13 @@ Cómo trabaja `radar/recolectar.py`:
 
 ## Filtrar (Paso 4)
 
-- `procesados.json`: `{"<id>": "AAAA-MM-DD"}` para todo lo resumido **o descartado** por la IA. Se podan las entradas de más de 30 días.
-- Pre-filtro: se descarta lo que supera `dias_antiguedad_max`. Puntaje = peso de la fuente + bonus por `confirmacion` + bonus por puntaje HN/Reddit + bonus por palabras clave (lanzamiento, modelo, gratis, open source, agente...). Se envían a la IA los `max_nuevas_por_corrida` mejores, sin pasar de `max_por_dia` publicadas ese día.
-- Los pendientes de corridas anteriores tienen prioridad.
+`radar/filtrar.py`; `radar filtrar` recolecta, agrupa y muestra qué se mandaría a la IA con su puntaje (no usa IA). `--marcar` guarda lo elegido en la caché como si la IA lo hubiera procesado (para probar sin IA; borrar `procesados.json` después).
+
+- **Caché** `data/cache/procesados.json`: `{"<hash de un link>": "AAAA-MM-DD"}` para todo lo resumido **o descartado** por la IA. Se guardan los hashes de **todos** los links del grupo y una noticia cuenta como procesada si **cualquiera** de sus links ya está: así se reconoce aunque cambie el principal. Se podan las entradas de más de `cache.dias` días. Si el archivo está dañado se avisa y se parte de cero (a lo más se repite una corrida; nunca se cae).
+- **Pre-filtro:** fuera lo ya procesado y lo que supera `dias_antiguedad_max`. Puntaje = mayor peso del grupo + `bonus_por_fuente_extra` por cada fuente adicional (máx. +3) + bonus por puntos de HN (`bonus_hn`, el mayor alcanzado) + `bonus_palabra_clave` si algún título tiene una de `palabras_clave` − `castigo_por_dia` × días de antigüedad (sin fecha = la ventana completa). Todo en `config.yaml` → `prefiltro`.
+- **Topes:** cupo = `max_nuevas_por_corrida`, sin pasar de `max_por_dia` − publicadas hoy (largo de `noticias` en `data/<hoy>.json`, hoy en hora de Chile); y máximo `prefiltro.max_por_fuente` de una misma fuente por corrida, para que haya variedad.
+- Lo no elegido **no** se marca: se reconsidera en la corrida siguiente hasta que sale de la ventana de días.
+- Los pendientes de corridas anteriores (`pendientes.json`, Paso 6) tendrán prioridad: se agregan en ese paso.
 
 ## IA (Pasos 5-7)
 
