@@ -15,7 +15,8 @@ import httpx
 
 from radar.agrupar import agrupar, resumen_agrupacion
 from radar.config import cargar_config
-from radar.fuentes import ErrorDescarga, ErrorFuentes, Fuente, cargar_fuentes, crear_cliente, descargar, fecha_entrada
+from radar.fuentes import (TIPOS_JSON, ErrorDescarga, ErrorFuentes, Fuente, cargar_fuentes, crear_cliente,
+                           descargar, fecha_entrada, fecha_item_json, items_json, url_real)
 
 # Extractos más cortos que esto (p. ej. "TBD") no sirven: se busca la descripción de la página.
 MIN_EXTRACTO = 40
@@ -23,6 +24,14 @@ MIN_EXTRACTO = 40
 MAX_BYTES_PAGINA = 300_000
 DOMINIOS_REDDIT = ("reddit.com", "redd.it")
 URL_HN = "https://news.ycombinator.com/item?id={}"
+URL_HF_MODELO = "https://huggingface.co/{}"
+URL_HF_README = "https://huggingface.co/{}/raw/main/README.md"
+URL_ARXIV = "https://arxiv.org/abs/{}"
+# Del README de un modelo solo se lee el comienzo: el párrafo que lo presenta está arriba.
+MAX_BYTES_README = 60_000
+# Encabezados del README desde donde ya no se busca la presentación del modelo.
+SECCIONES_TECNICAS = re.compile(r"quick ?start|usage|how to|install|inference|deploy|getting started|"
+                                r"prompt|encoding|license|citation|requirements|example", re.I)
 
 
 @dataclass
@@ -76,6 +85,7 @@ def limpiar_texto(texto: str, largo: int) -> str:
     texto = re.sub(r"<[^>]+>", " ", texto or "")
     texto = html.unescape(texto)
     texto = re.sub(r"The post .{0,300}? appeared first on .*$", "", texto, flags=re.S)  # relleno de WordPress
+    texto = re.sub(r"\s*Discussion\s*\|\s*Link\s*$", "", texto)  # relleno del feed de Product Hunt
     texto = re.sub(r"https?://\S+", "", texto)
     texto = re.sub(r"\s+", " ", texto).strip()
     if len(texto) <= largo:
@@ -181,21 +191,140 @@ def candidatos_hn(fuente: Fuente, datos: dict, patron: re.Pattern, largo: int) -
     return salida
 
 
+def _con_datos(texto: str, datos: list[str], largo: int) -> str:
+    """Extracto = texto (cortado) + " · dato · dato", sin pasar de `largo` caracteres."""
+    sufijo = "".join(f" · {d}" for d in datos if d)
+    return (limpiar_texto(texto, max(largo - len(sufijo), 0)) + sufijo).strip(" ·")
+
+
+def _miles(n) -> str:
+    return f"{int(n or 0):,}".replace(",", ".")
+
+
+def candidatos_github(fuente: Fuente, items: list[dict], ahora: datetime, desde: datetime,
+                      largo: int) -> list[Candidato]:
+    """Búsqueda de repos de GitHub → candidatos (solo los creados desde `desde`).
+
+    La fecha es la de la corrida ("visto en alza hoy"): un repo creado hace 5 días puede estar
+    subiendo justo ahora, y con su fecha de creación quedaría fuera de la ventana de días.
+    """
+    salida = []
+    for r in items:
+        nombre, url = r.get("full_name"), r.get("html_url")
+        creado = fecha_item_json("github", r)
+        if not nombre or not url or (creado and creado < desde):
+            continue
+        descripcion = re.sub(r"\s+", " ", r.get("description") or "").strip()
+        titulo = f"{nombre}: {descripcion}" if descripcion else nombre
+        datos = [f"{_miles(r.get('stargazers_count'))} estrellas en GitHub",
+                 f"lenguaje {r['language']}" if r.get("language") else "",
+                 "temas: " + ", ".join(r["topics"][:5]) if r.get("topics") else ""]
+        salida.append(_base(fuente, titulo=limpiar_texto(titulo, 160), url=url, fecha=ahora,
+                            extracto=_con_datos(descripcion, datos, largo)))
+    return salida
+
+
+def candidatos_hf_modelos(fuente: Fuente, items: list[dict], ahora: datetime, desde: datetime,
+                          largo: int) -> list[Candidato]:
+    """Modelos en tendencia de Hugging Face → candidatos (solo los publicados desde `desde`, sin copias
+    cuantizadas de otro modelo). El texto del extracto se completa después con el README (`parrafo_readme`)."""
+    salida = []
+    for m in items:
+        ident = m.get("id") or m.get("modelId")
+        creado = fecha_item_json("huggingface", m)
+        etiquetas = [str(t) for t in m.get("tags") or []]
+        if not ident or (creado and creado < desde) or any(t.startswith("base_model:quantized:") for t in etiquetas):
+            continue
+        licencia = next((t.split(":", 1)[1] for t in etiquetas if t.startswith("license:")), "")
+        datos = [f"tipo: {m['pipeline_tag']}" if m.get("pipeline_tag") else "",
+                 f"licencia {licencia}" if licencia else "",
+                 f"{_miles(m.get('likes'))} me gusta y {_miles(m.get('downloads'))} descargas en Hugging Face"]
+        salida.append(_base(fuente, titulo=ident, url=URL_HF_MODELO.format(ident), fecha=ahora,
+                            extracto=_con_datos("", datos, largo)))
+    return salida
+
+
+def candidatos_papers(fuente: Fuente, items: list[dict], votos_min: int, largo: int) -> list[Candidato]:
+    """Daily Papers de Hugging Face → candidatos con link a arXiv, solo los que tienen ≥ `votos_min` votos."""
+    salida = []
+    for item in items:
+        paper = item.get("paper") if isinstance(item.get("paper"), dict) else {}
+        ident, votos = paper.get("id"), paper.get("upvotes") or 0
+        titulo = re.sub(r"\s+", " ", paper.get("title") or item.get("title") or "").strip()
+        if not ident or not titulo or votos < votos_min:
+            continue
+        salida.append(_base(fuente, titulo=titulo, url=URL_ARXIV.format(ident),
+                            fecha=fecha_item_json("papers", item),
+                            extracto=_con_datos(paper.get("summary") or "", [f"{votos} votos en Hugging Face"],
+                                                largo)))
+    return salida
+
+
+def parrafo_readme(texto: str, largo: int) -> str:
+    """Primer párrafo de texto corrido de un README (sin encabezado YAML, HTML, imágenes, tablas ni código)."""
+    texto = re.sub(r"\A---\n.*?\n---\n", "", texto, flags=re.S)
+    texto = re.sub(r"```.*?(```|\Z)", "", texto, flags=re.S)
+    texto = re.sub(r"<!--.*?-->", "", texto, flags=re.S)
+    texto = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", texto)              # imágenes
+    texto = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", texto)           # [texto](link) → texto
+    texto = re.sub(r"\*\*|__|`", "", texto)                             # negritas y código en línea
+    for parrafo in re.split(r"\n\s*\n", texto):
+        lineas = [l for l in parrafo.strip().splitlines() if l.strip()]
+        if not lineas:
+            continue
+        primera = lineas[0].lstrip()
+        if primera.startswith("#") and SECCIONES_TECNICAS.search(primera):
+            break  # de aquí en adelante son instrucciones de uso, no la presentación del modelo
+        if primera.startswith(("#", "|", ">", "- ", "* ", "=", "<")):
+            continue
+        limpio = limpiar_texto(" ".join(lineas), largo)
+        if len(limpio) >= 80 and len(limpio.split()) >= 10:
+            return limpio
+    return ""
+
+
+def leer_readme(ident: str, cliente: httpx.Client) -> str | None:
+    """Comienzo del README de un modelo de Hugging Face. Nunca lanza."""
+    try:
+        with cliente.stream("GET", URL_HF_README.format(ident)) as r:
+            if r.status_code != 200:
+                return None
+            datos = b""
+            for trozo in r.iter_bytes():
+                datos += trozo
+                if len(datos) >= MAX_BYTES_README:
+                    break
+        return datos.decode("utf-8", errors="replace")
+    except Exception:  # un README raro nunca debe romper la recolección
+        return None
+
+
 # --- Recolección completa ---
 
 def _leer_fuente(fuente: Fuente, cliente: httpx.Client, config: dict, patron: re.Pattern,
-                 desde: datetime) -> tuple[list[Candidato], InformeFuente]:
+                 ahora: datetime) -> tuple[list[Candidato], InformeFuente]:
     """Una fuente → sus candidatos recientes. Nunca lanza: el error queda en el informe."""
     informe = InformeFuente(fuente.nombre)
-    largo = config["recolector"]["largo_extracto"]
+    rec = config["recolector"]
+    largo = rec["largo_extracto"]
+    desde = ahora - timedelta(days=config["limites"]["dias_antiguedad_max"])
+    desde_tendencias = ahora - timedelta(days=rec["dias_tendencias"])
     try:
-        respuesta = descargar(fuente.url, cliente)
-        if fuente.tipo == "hackernews":
+        respuesta = descargar(url_real(fuente, ahora, config), cliente)
+        if fuente.tipo in TIPOS_JSON:
             try:
                 datos = respuesta.json()
-            except ValueError:
-                raise ErrorDescarga("la respuesta no es la API de Hacker News esperada")
-            candidatos = candidatos_hn(fuente, datos, patron, largo)
+                items = items_json(fuente.tipo, datos)
+            except ValueError as e:  # JSON roto o con otra forma
+                raise ErrorDescarga(str(e) if "API" in str(e) else "la respuesta no es JSON válido")
+            if fuente.tipo == "hackernews":
+                candidatos = candidatos_hn(fuente, datos, patron, largo)
+            elif fuente.tipo == "github":
+                candidatos = candidatos_github(fuente, items, ahora, desde_tendencias, largo)
+            elif fuente.tipo == "huggingface":
+                candidatos = candidatos_hf_modelos(fuente, items, ahora, desde_tendencias, largo)
+            else:
+                candidatos = candidatos_papers(fuente, items, rec["papers_votos_min"], largo)
         else:
             candidatos = candidatos_feed(fuente, respuesta.content, largo)
     except ErrorDescarga as e:
@@ -216,15 +345,23 @@ def _leer_fuente(fuente: Fuente, cliente: httpx.Client, config: dict, patron: re
 def recolectar(fuentes: list[Fuente], config: dict, ahora: datetime | None = None,
                cliente: httpx.Client | None = None) -> Recoleccion:
     ahora = ahora or datetime.now(timezone.utc)
-    desde = ahora - timedelta(days=config["limites"]["dias_antiguedad_max"])
     patron = patron_ia(config["recolector"]["palabras_ia"])
     largo = config["recolector"]["largo_extracto"]
     resultado = Recoleccion()
 
     with cliente or crear_cliente(config) as c, ThreadPoolExecutor(config["fuentes"]["hilos"]) as hilos:
-        for candidatos, informe in hilos.map(lambda f: _leer_fuente(f, c, config, patron, desde), fuentes):
+        for candidatos, informe in hilos.map(lambda f: _leer_fuente(f, c, config, patron, ahora), fuentes):
             resultado.candidatos.extend(candidatos)
             resultado.informes.append(informe)
+
+        # Modelos de Hugging Face: la API no trae descripción y la de la página es la genérica del sitio,
+        # así que el extracto empieza con el primer párrafo del README del modelo (si lo hay).
+        modelos = [x for x in resultado.candidatos if x.tipo == "huggingface"]
+        readmes = list(hilos.map(lambda x: leer_readme(x.titulo, c), modelos))
+        for modelo, readme in zip(modelos, readmes):
+            parrafo = parrafo_readme(readme or "", largo - len(modelo.extracto) - 3)
+            if parrafo:
+                modelo.extracto = f"{parrafo} · {modelo.extracto}"
 
         # Los que no traen extracto útil: se busca la descripción de la página (menos Reddit, que bloquea).
         faltan = [x for x in resultado.candidatos

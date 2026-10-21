@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 
 from radar.agrupar import Grupo, agrupar, resumen_agrupacion
 from radar.config import RAIZ, cargar_config
-from radar.fuentes import ErrorFuentes, cargar_fuentes
+from radar.fuentes import ErrorFuentes, cargar_fuentes, topes_por_fuente
 from radar.recolectar import Candidato, patron_ia, recolectar
 
 CARPETA_DATOS = RAIZ / "data"
@@ -147,11 +147,13 @@ class Prefiltro:
 
 
 def prefiltrar(grupos: list[Grupo], procesados: dict[str, str], config: dict, ahora: datetime,
-               publicadas: int = 0, pendientes: list[Grupo] = ()) -> Prefiltro:
+               publicadas: int = 0, pendientes: list[Grupo] = (), topes: dict[str, int] | None = None) -> Prefiltro:
     """Quita lo ya procesado y lo viejo, ordena por puntaje y respeta los topes por corrida, por día y por fuente.
 
     Lo que quedó pendiente en corridas anteriores (`pendientes`) va primero, antes que todo lo demás.
+    `topes` = {fuente: máximo por corrida} para las que tienen `max_por_corrida` propio en sources.yaml.
     """
+    topes = topes or {}
     hashes_pendientes = set().union(*(p.hashes for p in pendientes)) if pendientes else set()
     limites = config["limites"]
     desde = ahora - timedelta(days=limites["dias_antiguedad_max"])
@@ -174,7 +176,7 @@ def prefiltrar(grupos: list[Grupo], procesados: dict[str, str], config: dict, ah
         if len(r.elegidas) >= r.cupo:
             break
         fuente = g.principal.fuente
-        if por_fuente.get(fuente, 0) < config["prefiltro"]["max_por_fuente"]:
+        if por_fuente.get(fuente, 0) < topes.get(fuente, config["prefiltro"]["max_por_fuente"]):
             por_fuente[fuente] = por_fuente.get(fuente, 0) + 1
             r.elegidas.append((g, p))
     return r
@@ -216,7 +218,8 @@ def comando_filtrar(args) -> int:
     pendientes = cargar_pendientes()
     publicadas = publicadas_hoy(hoy)
     print(f"Publicadas hoy ({hoy}): {publicadas} de {config['limites']['max_por_dia']}")
-    resultado = prefiltrar(sumar_pendientes(grupos, pendientes), procesados, config, ahora, publicadas, pendientes)
+    resultado = prefiltrar(sumar_pendientes(grupos, pendientes), procesados, config, ahora, publicadas, pendientes,
+                           topes_por_fuente(fuentes))
     print(informe(resultado))
 
     if args.marcar and resultado.elegidas:

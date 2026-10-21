@@ -21,7 +21,7 @@ from radar.almacen import (actualizar_brief, cargar_dia, fecha_anterior, guardar
 from radar.config import cargar_config
 from radar.filtrar import (CARPETA_DATOS, cargar_pendientes, cargar_procesados, hoy_chile, prefiltrar,
                            publicadas_hoy, sumar_pendientes)
-from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes
+from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes, topes_por_fuente
 from radar.ia import pedir_json
 from radar.recolectar import recolectar
 from radar.resumir import resumir
@@ -79,7 +79,7 @@ def correr(config: dict, ahora: datetime, fuentes: list[Fuente], datos: Path = C
         print(resumen_agrupacion(recoleccion.candidatos, grupos))
         pendientes = cargar_pendientes(ruta_pendientes)
         filtro = prefiltrar(sumar_pendientes(grupos, pendientes), cargar_procesados(datos / "cache" / "procesados.json"),
-                            config, ahora, publicadas_hoy(hoy, datos), pendientes)
+                            config, ahora, publicadas_hoy(hoy, datos), pendientes, topes_por_fuente(fuentes))
         elegidas = [g for g, _ in filtro.elegidas]
         print(f"Ya procesadas: {filtro.ya_procesadas} · nuevas: {filtro.nuevas}"
               + (f" (pendientes de antes: {filtro.pendientes})" if filtro.pendientes else "")

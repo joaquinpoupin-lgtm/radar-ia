@@ -16,7 +16,7 @@ from radar.agrupar import Grupo, agrupar, resumen_agrupacion
 from radar.almacen import guardar_corrida
 from radar.config import RAIZ, cargar_config
 from radar.filtrar import cargar_pendientes, cargar_procesados, hoy_chile, prefiltrar, publicadas_hoy, sumar_pendientes
-from radar.fuentes import ErrorFuentes, cargar_fuentes
+from radar.fuentes import ErrorFuentes, cargar_fuentes, topes_por_fuente
 from radar.ia import IANoDisponible, pedir_json
 from radar.recolectar import recolectar
 
@@ -207,7 +207,7 @@ def comando_resumir(args) -> int:
     print(resumen_agrupacion(recoleccion.candidatos, grupos))
     pendientes = cargar_pendientes()
     elegidas = prefiltrar(sumar_pendientes(grupos, pendientes), cargar_procesados(), config, ahora,
-                          publicadas_hoy(hoy), pendientes).elegidas
+                          publicadas_hoy(hoy), pendientes, topes_por_fuente(fuentes)).elegidas
     if not elegidas:
         print("0 noticias nuevas: no hay nada que resumir.")
         return 0

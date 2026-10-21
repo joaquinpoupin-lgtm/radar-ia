@@ -3,7 +3,7 @@
 import json
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -15,7 +15,10 @@ from radar.config import RAIZ, cargar_config
 
 RUTA_FUENTES = RAIZ / "sources.yaml"
 
-TIPOS = {"rss", "hackernews", "youtube"}
+TIPOS = {"rss", "hackernews", "youtube", "github", "huggingface", "papers"}
+# Tipos que se leen desde una API JSON (no RSS). Paso 14: github (búsqueda de repos), huggingface (modelos
+# en tendencia) y papers (Daily Papers de Hugging Face, que son papers de arXiv votados por la comunidad).
+TIPOS_JSON = {"hackernews", "github", "huggingface", "papers"}
 SECCIONES = {"modelos", "herramientas", "tendencias", "creadores", "dinero", "tips"}
 IDIOMAS = {"es", "en"}
 CAMPOS = ("nombre", "tipo", "url", "seccion", "idioma", "peso")
@@ -34,6 +37,7 @@ class Fuente:
     idioma: str
     peso: int
     activa: bool = True
+    max_por_corrida: int | None = None  # tope propio en el pre-filtro (si no, prefiltro.max_por_fuente)
 
 
 def cargar_fuentes(ruta: Path = RUTA_FUENTES, solo_activas: bool = True) -> list[Fuente]:
@@ -64,14 +68,70 @@ def cargar_fuentes(ruta: Path = RUTA_FUENTES, solo_activas: bool = True) -> list
             errores.append(f"{quien}: peso debe ser 1, 2 o 3")
         if not str(cruda["url"]).startswith(("https://", "http://")):
             errores.append(f"{quien}: la url debe empezar con https://")
+        tope = cruda.get("max_por_corrida")
+        if tope is not None and (not isinstance(tope, int) or isinstance(tope, bool) or tope < 1):
+            errores.append(f"{quien}: max_por_corrida debe ser un número entero desde 1")
         if cruda["nombre"] in nombres:
             errores.append(f"{quien}: nombre repetido")
         nombres.add(cruda["nombre"])
-        fuentes.append(Fuente(**{c: cruda[c] for c in CAMPOS}, activa=bool(cruda.get("activa", True))))
+        fuentes.append(Fuente(**{c: cruda[c] for c in CAMPOS}, activa=bool(cruda.get("activa", True)),
+                              max_por_corrida=tope))
 
     if errores:
         raise ErrorFuentes(f"{ruta.name} tiene errores:\n  - " + "\n  - ".join(errores))
     return [f for f in fuentes if f.activa or not solo_activas]
+
+
+def topes_por_fuente(fuentes: list[Fuente]) -> dict[str, int]:
+    """{nombre: tope} de las fuentes con `max_por_corrida` propio (para el pre-filtro)."""
+    return {f.nombre: f.max_por_corrida for f in fuentes if f.max_por_corrida}
+
+
+def url_real(fuente: Fuente, ahora: datetime, config: dict) -> str:
+    """La URL a pedir: `{desde}` se cambia por la fecha de hace `recolector.dias_tendencias` días (AAAA-MM-DD)."""
+    desde = ahora - timedelta(days=config["recolector"]["dias_tendencias"])
+    return fuente.url.replace("{desde}", desde.strftime("%Y-%m-%d"))
+
+
+def _fecha_iso(texto) -> datetime | None:
+    """"2026-10-17T02:40:38.000Z" → datetime en UTC (None si no viene o no se entiende)."""
+    try:
+        fecha = datetime.fromisoformat(str(texto).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return fecha if fecha.tzinfo else fecha.replace(tzinfo=timezone.utc)
+
+
+def items_json(tipo: str, datos) -> list[dict]:
+    """La lista de ítems de una respuesta JSON según el tipo. Lanza ValueError si no tiene la forma esperada."""
+    try:
+        if tipo == "hackernews":
+            items = datos["hits"]
+        elif tipo == "github":
+            items = datos["items"]
+        else:  # huggingface y papers responden directamente una lista
+            items = datos
+    except (KeyError, TypeError):
+        items = None
+    if not isinstance(items, list) or not all(isinstance(i, dict) for i in items):
+        raise ValueError(f"la respuesta no es la API de {NOMBRE_API[tipo]} esperada")
+    return items
+
+
+NOMBRE_API = {"hackernews": "Hacker News", "github": "GitHub", "huggingface": "Hugging Face",
+              "papers": "Hugging Face Daily Papers"}
+
+
+def fecha_item_json(tipo: str, item: dict) -> datetime | None:
+    """Fecha de publicación de un ítem JSON (en `radar fuentes` sirve para "última novedad")."""
+    if tipo == "hackernews":
+        return datetime.fromtimestamp(item["created_at_i"], timezone.utc) if item.get("created_at_i") else None
+    if tipo == "github":
+        return _fecha_iso(item.get("created_at"))
+    if tipo == "huggingface":
+        return _fecha_iso(item.get("createdAt"))
+    paper = item.get("paper") if isinstance(item.get("paper"), dict) else {}
+    return _fecha_iso(paper.get("submittedOnDailyAt") or item.get("publishedAt"))
 
 
 def crear_cliente(config: dict) -> httpx.Client:
@@ -99,13 +159,14 @@ def fecha_entrada(entrada) -> datetime | None:
 
 def _leer(fuente: Fuente, respuesta: httpx.Response) -> tuple[int, datetime | None]:
     """Devuelve (cantidad de ítems, fecha más reciente). Lanza ValueError si el contenido no sirve."""
-    if fuente.tipo == "hackernews":
+    if fuente.tipo in TIPOS_JSON:
         try:
-            hits = respuesta.json()["hits"]
-        except (json.JSONDecodeError, KeyError, TypeError):
-            raise ValueError("la respuesta no es la API de Hacker News esperada")
-        fechas = [datetime.fromtimestamp(h["created_at_i"], timezone.utc) for h in hits if "created_at_i" in h]
-        return len(hits), max(fechas, default=None)
+            datos = respuesta.json()
+        except json.JSONDecodeError:
+            raise ValueError(f"la respuesta no es la API de {NOMBRE_API[fuente.tipo]} esperada")
+        items = items_json(fuente.tipo, datos)
+        fechas = [f for f in (fecha_item_json(fuente.tipo, i) for i in items) if f]
+        return len(items), max(fechas, default=None)
 
     feed = feedparser.parse(respuesta.content)
     if not feed.entries and feed.bozo:
@@ -137,10 +198,11 @@ def descargar(url: str, cliente: httpx.Client) -> httpx.Response:
     return respuesta
 
 
-def probar_fuente(fuente: Fuente, cliente: httpx.Client, ahora: datetime, dias_aviso: int) -> Resultado:
-    """Descarga la fuente y dice si funciona. Nunca lanza excepciones: los errores van en el resultado."""
+def probar_fuente(fuente: Fuente, cliente: httpx.Client, ahora: datetime, dias_aviso: int,
+                  url: str | None = None) -> Resultado:
+    """Descarga la fuente (o `url`, si ya trae la fecha puesta) y dice si funciona. Nunca lanza excepciones."""
     try:
-        respuesta = descargar(fuente.url, cliente)
+        respuesta = descargar(url or fuente.url, cliente)
     except ErrorDescarga as e:
         return Resultado(fuente, "ERROR", detalle=str(e))
 
@@ -162,7 +224,8 @@ def probar_todas(fuentes: list[Fuente], config: dict, ahora: datetime | None = N
     ahora = ahora or datetime.now(timezone.utc)
     dias_aviso = config["fuentes"]["dias_aviso_sin_novedades"]
     with cliente or crear_cliente(config) as c, ThreadPoolExecutor(config["fuentes"]["hilos"]) as hilos:
-        return list(hilos.map(lambda f: probar_fuente(f, c, ahora, dias_aviso), fuentes))
+        return list(hilos.map(lambda f: probar_fuente(f, c, ahora, dias_aviso, url_real(f, ahora, config)),
+                              fuentes))
 
 
 def _hace(ultima: datetime | None, ahora: datetime, zona: ZoneInfo) -> str:

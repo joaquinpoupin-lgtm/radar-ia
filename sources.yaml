@@ -3,13 +3,18 @@
 #
 # Campos:
 #   nombre   nombre corto que se muestra en la web (único)
-#   tipo     rss | hackernews | youtube
-#   url      dirección del feed (o de la API, en Hacker News)
+#   tipo     rss | hackernews | youtube | github | huggingface | papers
+#            (github, huggingface y papers leen la API pública de esos sitios; ver más abajo)
+#   url      dirección del feed (o de la API). {desde} se cambia por la fecha de hace
+#            `recolector.dias_tendencias` días (config.yaml)
 #   seccion  sección por defecto: modelos | herramientas | tendencias | creadores | dinero | tips
 #            (la IA puede cambiarla según la noticia)
 #   idioma   es | en
 #   peso     1 (mucho ruido) a 3 (oficial / muy confiable); cuenta en el pre-filtro
 #   activa   false para apagarla sin borrarla (opcional, por defecto true)
+#   max_por_corrida  cuántas de esta fuente pueden ir a la IA por corrida (opcional; si no,
+#            prefiltro.max_por_fuente de config.yaml). Sirve para que las fuentes con mucho
+#            volumen no llenen el brief.
 #
 # "Feed comunitario": la empresa no publica RSS oficial; lo genera el proyecto
 # gratuito github.com/Olshansk/rss-feeds leyendo su página. Si un día deja de
@@ -101,6 +106,40 @@ fuentes:
     seccion: tendencias
     idioma: en
     peso: 1
+
+  # --- Proyectos, modelos y papers en tendencia (Paso 14) ---
+  # Gratis y sin cuenta. Cada una aporta como máximo 1 noticia por corrida (max_por_corrida).
+  - nombre: GitHub (en alza)
+    tipo: github   # API de búsqueda: repos de IA creados en los últimos 7 días con ≥150 estrellas
+    url: https://api.github.com/search/repositories?q=llm+OR+agent+OR+ai+in%3Aname%2Cdescription%2Ctopics+created%3A%3E%3D{desde}+stars%3A%3E%3D150&sort=stars&order=desc&per_page=30
+    seccion: herramientas
+    idioma: en
+    peso: 2
+    max_por_corrida: 1
+
+  - nombre: Hugging Face (modelos)
+    tipo: huggingface   # modelos en tendencia publicados en los últimos 7 días (sin copias cuantizadas)
+    url: https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=30
+    seccion: modelos
+    idioma: en
+    peso: 2
+    max_por_corrida: 1
+
+  - nombre: Product Hunt (IA)
+    tipo: rss
+    url: https://www.producthunt.com/feed?category=artificial-intelligence
+    seccion: herramientas
+    idioma: en
+    peso: 1
+    max_por_corrida: 1
+
+  - nombre: arXiv (destacados)
+    tipo: papers   # Daily Papers de Hugging Face: papers de arXiv votados por la comunidad (≥50 votos)
+    url: https://huggingface.co/api/daily_papers?limit=100
+    seccion: tendencias
+    idioma: en
+    peso: 1
+    max_por_corrida: 1
 
   # --- Medios y blogs ---
   - nombre: The Verge (IA)
