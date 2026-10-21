@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-21",
- "actualizado": "2026-10-21T00:54:23-03:00",
+ "actualizado": "2026-10-21T01:05:59-03:00",
  "brief": {
   "lo_mas_importante": [
    "Un grupo de piratas informáticos utilizó agentes autónomos de inteligencia artificial para vulnerar los sistemas de seguridad de más de cien sitios web.",
@@ -226,6 +226,187 @@
     {
      "nombre": "TechCrunch (IA)",
      "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "3a11e60ee8cf",
+   "fecha": "2026-10-21",
+   "titulo": "Mistral lanza modelos fundacionales para series temporales",
+   "que_paso": "Mistral publicó una familia de modelos de pronóstico probabilístico de 5 M a 209 M de parámetros. Funcionan en CPU y están listos para usar sin ajuste previo.",
+   "por_que_importa": "Permite a usuarios sin hardware especializado generar predicciones de tiempo con precisión sin entrenar modelos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos fundacionales",
+     "explicacion": "Modelos grandes que pueden adaptarse a distintas tareas sin entrenamiento adicional."
+    },
+    {
+     "termino": "pronóstico probabilístico",
+     "explicacion": "Predicción que incluye una medida de incertidumbre sobre el resultado."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://mistral.ai/news/timestral/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "60f7f9822d20",
+   "fecha": "2026-10-21",
+   "titulo": "Anthropic reporta pérdida neta de más de 80 000 millones de dólares en 2026",
+   "que_paso": "Según Reuters, la empresa de IA Anthropic anunció una pérdida superior a 80 mil millones de dólares en el primer semestre de 2026. No se dieron detalles de causas específicas.",
+   "por_que_importa": "Muestra la presión financiera que enfrentan las startups de IA, lo que puede afectar su capacidad de invertir en productos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "pérdida neta",
+     "explicacion": "Cuando los gastos superan a los ingresos."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "a87757c6fb36",
+   "fecha": "2026-10-21",
+   "titulo": "Jugadores de Steam piden filtro contra juegos generados por IA",
+   "que_paso": "Durante el Steam Next Fest, usuarios expresaron que muchos juegos presentaban contenido creado con IA y solicitaron un filtro \"No AI\". Señalan que la calidad suele ser baja.",
+   "por_que_importa": "Indica una creciente preocupación de la comunidad gamer sobre el uso excesivo de IA en títulos indie.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "IA",
+     "explicacion": "Inteligencia artificial, sistemas que generan contenido automáticamente."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "15170329e0c0",
+   "fecha": "2026-10-21",
+   "titulo": "DeepMind usa Gemini 4 Argon para completar Minecraft en 27 horas",
+   "que_paso": "Google DeepMind informó que cuatro agentes basados en Gemini 4 Argon lograron terminar el juego Minecraft sin trampas, incluyendo derrotar al Ender Dragon, en solo 27 horas. Fue una prueba sin intervención humana.",
+   "por_que_importa": "Demuestra la capacidad de los modelos actuales para aprender y ejecutar tareas complejas en entornos virtuales.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de IA que actúan de forma autónoma dentro de un entorno."
+    },
+    {
+     "termino": "Gemini 4 Argon",
+     "explicacion": "Versión del modelo de IA de Google que combina lenguaje y razonamiento."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/videojuegos/google-deepmind-presume-haber-batido-a-minecraft-agentes-controlados-gemini-4-argon-apenas-27-horas"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "7a364f356aab",
+   "fecha": "2026-10-21",
+   "titulo": "OpenAI mejora ChatGPT para lenguajes de programación poco usados",
+   "que_paso": "OpenAI anunció nuevas evaluaciones para que ChatGPT sea más útil en lenguajes como SQLite y COBOL, y en migraciones de código. El objetivo es apoyar a programadores que usan tecnologías antiguas.",
+   "por_que_importa": "Facilita a desarrolladores que trabajan con sistemas legados obtener ayuda de IA sin cambiar su stack.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "COBOL",
+     "explicacion": "Lenguaje de programación usado principalmente en sistemas bancarios antiguos."
+    },
+    {
+     "termino": "SQLite",
+     "explicacion": "Base de datos ligera embebida en aplicaciones."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/low-resource-programming-languages"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "9dbc0d55ff91",
+   "fecha": "2026-10-21",
+   "titulo": "TorchNeuron simplifica ejecutar modelos de Hugging Face en AWS Trainium",
+   "que_paso": "Hugging Face lanzó TorchNeuron, una librería que permite correr modelos de transformers en los chips Trainium de AWS con pocos cambios de código. La integración está diseñada para ser sencilla.",
+   "por_que_importa": "Los usuarios pueden aprovechar la potencia de Trainium sin tener que reescribir sus modelos, reduciendo tiempo y costos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Trainium",
+     "explicacion": "Chip de AWS especializado para acelerar modelos de IA."
+    },
+    {
+     "termino": "transformers",
+     "explicacion": "Arquitectura de modelos de IA que procesa texto y otros datos secuenciales."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/hf-torchneuron"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "5ed43860b2e6",
+   "fecha": "2026-10-21",
+   "titulo": "Gemini AI de Google llegará a Android Auto y autos con Google integrado",
+   "que_paso": "Google anunció que Gemini podrá usarse en el coche, accediendo a datos de Gmail, Calendar, Maps, fotos y búsquedas. Los usuarios podrán preguntar, por ejemplo, el estado de su vuelo mientras conducen.",
+   "por_que_importa": "Ofrece respuestas contextuales en tiempo real durante la conducción, sin necesidad de usar el móvil.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Gemini",
+     "explicacion": "Modelo de IA de Google que combina lenguaje y razonamiento."
+    },
+    {
+     "termino": "Android Auto",
+     "explicacion": "Plataforma de Google para integrar apps en el sistema del coche."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
     }
    ],
    "confirmacion": 1
