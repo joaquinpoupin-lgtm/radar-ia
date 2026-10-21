@@ -192,3 +192,21 @@ def test_pendientes_dañado_no_rompe(tmp_path, capsys):
     ruta.write_text("{no es json", encoding="utf-8")
     assert cargar_pendientes(ruta) == []
     assert "Aviso" in capsys.readouterr().out
+
+
+def test_opciones_de_config_van_en_el_pedido_y_el_400_muestra_el_codigo():
+    import copy
+    config = copy.deepcopy(CONFIG)
+    config["ia"]["respaldo"]["opciones"] = {"reasoning_effort": "low"}
+    cuerpos = []
+
+    def groq(pedido):
+        cuerpos.append(json.loads(pedido.content))
+        return ok_groq({"b": 2})
+
+    rechazo = httpx.Response(400, json={"error": {"code": "json_validate_failed", "message": "texto largo"}})
+    falso = Falso([rechazo], [groq])
+    assert falso.pedir(config=config) == {"b": 2}
+    assert cuerpos[0]["reasoning_effort"] == "low"
+    with pytest.raises(IANoDisponible, match=r"pedido rechazado \(json_validate_failed\)"):
+        Falso([rechazo], [CAIDO]).pedir()

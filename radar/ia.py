@@ -63,6 +63,16 @@ def _espera_pedida(respuesta: httpx.Response) -> float | None:
     return float(m.group(1)) if m else None
 
 
+def _codigo_error(respuesta: httpx.Response) -> str:
+    """Solo el código corto del error (p. ej. "json_validate_failed"), nunca el mensaje completo."""
+    try:
+        error = respuesta.json().get("error", {})
+        codigo = str(error.get("code") or error.get("status") or "")
+    except (ValueError, AttributeError):
+        return ""
+    return f" ({codigo})" if re.fullmatch(r"[A-Za-z_]{3,40}", codigo) else ""
+
+
 def _error_http(respuesta: httpx.Response, proveedor: str) -> ErrorIA:
     """Traduce un error HTTP a un motivo legible (sin copiar el cuerpo, por si trae datos sensibles)."""
     s = respuesta.status_code
@@ -77,7 +87,7 @@ def _error_http(respuesta: httpx.Response, proveedor: str) -> ErrorIA:
     if s >= 500:
         return ErrorIA(f"HTTP {s}: el servicio de {proveedor} tiene problemas (probar más tarde)", "red", s,
                        _espera_pedida(respuesta))
-    return ErrorIA(f"HTTP {s}: pedido rechazado", "respuesta", s)
+    return ErrorIA(f"HTTP {s}: pedido rechazado{_codigo_error(respuesta)}", "respuesta", s)
 
 
 def _post(cliente: httpx.Client, url: str, cabeceras: dict, cuerpo: dict, proveedor: str) -> dict:
@@ -95,8 +105,13 @@ def _post(cliente: httpx.Client, url: str, cabeceras: dict, cuerpo: dict, provee
         raise ErrorIA(f"{proveedor} devolvió algo que no es JSON", "respuesta")
 
 
-def llamar(proveedor: str, modelo: str, prompt: str, clave: str, cliente: httpx.Client) -> str:
-    """Manda un prompt y devuelve el texto de la respuesta (se pide en formato JSON)."""
+def llamar(proveedor: str, modelo: str, prompt: str, clave: str, cliente: httpx.Client,
+           opciones: dict | None = None) -> str:
+    """Manda un prompt y devuelve el texto de la respuesta (se pide en formato JSON).
+
+    `opciones` (de config.yaml) se suman al pedido: en Gemini dentro de `generationConfig`, en Groq arriba.
+    """
+    opciones = opciones or {}
     if proveedor not in PROVEEDORES:
         raise ErrorIA(f"proveedor '{proveedor}' no existe (usar: {', '.join(PROVEEDORES)})", "respuesta")
     base = PROVEEDORES[proveedor][1]
@@ -105,7 +120,7 @@ def llamar(proveedor: str, modelo: str, prompt: str, clave: str, cliente: httpx.
     if proveedor == "gemini":
         datos = _post(cliente, f"{base}/models/{modelo}:generateContent", cabeceras, {
             "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseMimeType": "application/json"},
+            "generationConfig": {"responseMimeType": "application/json", **opciones},
         }, proveedor)
         try:
             partes = datos["candidates"][0]["content"]["parts"]
@@ -118,6 +133,7 @@ def llamar(proveedor: str, modelo: str, prompt: str, clave: str, cliente: httpx.
             "model": modelo,
             "messages": [{"role": "user", "content": prompt}],
             "response_format": {"type": "json_object"},
+            **opciones,
         }, proveedor)
         try:
             texto = datos["choices"][0]["message"]["content"] or ""
@@ -152,7 +168,7 @@ def pedir_json(prompt: str, config: dict, cliente: httpx.Client,
         respuestas_malas = 0
         for intento in range(ia["reintentos"]):
             try:
-                texto = llamar(proveedor, modelo, prompt, clave, cliente)
+                texto = llamar(proveedor, modelo, prompt, clave, cliente, ia[rol].get("opciones"))
                 try:
                     datos = json.loads(texto)
                 except json.JSONDecodeError:

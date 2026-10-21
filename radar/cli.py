@@ -7,6 +7,7 @@ from radar.filtrar import comando_filtrar
 from radar.fuentes import comando_fuentes
 from radar.ia import comando_probar_ia
 from radar.recolectar import comando_recolectar
+from radar.resumir import comando_resumir
 
 # Comandos planeados: (nombre, descripción, paso del plan que lo implementa).
 # Al implementar uno, reemplazar su función en COMANDOS.
@@ -15,6 +16,7 @@ PLANEADOS = [
     ("recolectar", "Trae noticias candidatas de todas las fuentes", 2),
     ("filtrar", "Muestra qué noticias nuevas se mandarían a la IA (sin usar la IA)", 4),
     ("probar-ia", "Comprueba que las claves de Gemini y Groq funcionan", 5),
+    ("resumir", "Prueba el resumen: elige noticias nuevas y muestra cómo las resume la IA (no guarda nada)", 7),
     ("sitio", "Genera el sitio web estático en _site/ a partir de data/", 9),
     ("correr", "Corrida completa: recolectar, resumir, guardar y generar sitio", 10),
 ]
@@ -33,6 +35,7 @@ COMANDOS["fuentes"] = comando_fuentes
 COMANDOS["recolectar"] = comando_recolectar
 COMANDOS["filtrar"] = comando_filtrar
 COMANDOS["probar-ia"] = comando_probar_ia
+COMANDOS["resumir"] = comando_resumir
 
 
 def construir_parser() -> argparse.ArgumentParser:
@@ -50,6 +53,8 @@ def construir_parser() -> argparse.ArgumentParser:
     sub.choices["filtrar"].add_argument(
         "--marcar", action="store_true",
         help="simula que la IA procesó las elegidas y las guarda en la caché (para probar sin IA)")
+    sub.choices["resumir"].add_argument(
+        "--json", action="store_true", help="además muestra las noticias en el formato JSON que se guardará")
     return parser
 
 

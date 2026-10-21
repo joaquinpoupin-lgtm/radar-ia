@@ -37,6 +37,8 @@ ia:
   respaldo:
     proveedor: groq
     modelo: openai/gpt-oss-120b
+    # Groq gratis da 8K tokens/min; un lote de 10 noticias gasta ~6K y casi 2K eran "razonamiento".
+    opciones: {reasoning_effort: low}
   reintentos: 3            # intentos por proveedor ante 429 / errores temporales
   espera_inicial_seg: 5    # backoff exponencial: 5, 10, 20...
   espera_max_seg: 60       # nunca esperar más que esto entre intentos (aunque el servicio pida más)
