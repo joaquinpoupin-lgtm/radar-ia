@@ -3,6 +3,7 @@
 import argparse
 import sys
 
+from radar.almacen import comando_brief
 from radar.filtrar import comando_filtrar
 from radar.fuentes import comando_fuentes
 from radar.ia import comando_probar_ia
@@ -16,7 +17,8 @@ PLANEADOS = [
     ("recolectar", "Trae noticias candidatas de todas las fuentes", 2),
     ("filtrar", "Muestra qué noticias nuevas se mandarían a la IA (sin usar la IA)", 4),
     ("probar-ia", "Comprueba que las claves de Gemini y Groq funcionan", 5),
-    ("resumir", "Prueba el resumen: elige noticias nuevas y muestra cómo las resume la IA (no guarda nada)", 7),
+    ("resumir", "Elige noticias nuevas y muestra cómo las resume la IA (con --guardar, las guarda en data/)", 7),
+    ("brief", "Arma el brief del día (≤10 noticias + 'Lo más importante hoy') con lo guardado en data/", 8),
     ("sitio", "Genera el sitio web estático en _site/ a partir de data/", 9),
     ("correr", "Corrida completa: recolectar, resumir, guardar y generar sitio", 10),
 ]
@@ -36,6 +38,7 @@ COMANDOS["recolectar"] = comando_recolectar
 COMANDOS["filtrar"] = comando_filtrar
 COMANDOS["probar-ia"] = comando_probar_ia
 COMANDOS["resumir"] = comando_resumir
+COMANDOS["brief"] = comando_brief
 
 
 def construir_parser() -> argparse.ArgumentParser:
@@ -55,6 +58,12 @@ def construir_parser() -> argparse.ArgumentParser:
         help="simula que la IA procesó las elegidas y las guarda en la caché (para probar sin IA)")
     sub.choices["resumir"].add_argument(
         "--json", action="store_true", help="además muestra las noticias en el formato JSON que se guardará")
+    sub.choices["resumir"].add_argument(
+        "--guardar", action="store_true",
+        help="suma las noticias a data/AAAA-MM-DD.json y actualiza la caché y los pendientes")
+    sub.choices["brief"].add_argument(
+        "--forzar", action="store_true",
+        help="lo arma aunque sea antes de la hora del brief (o lo rehace si ya estaba)")
     return parser
 
 

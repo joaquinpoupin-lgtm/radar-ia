@@ -19,7 +19,7 @@ radar/
   filtrar.py           caché de procesados + pre-filtro sin IA + `filtrar` ← Paso 4
   ia.py                cliente Gemini/Groq con backoff y fallback     ← Pasos 5-6
   resumir.py           lotes → prompt → validación de esquema         ← Paso 7
-  almacen.py           data/AAAA-MM-DD.json, pendientes, brief        ← Paso 8
+  almacen.py           data/AAAA-MM-DD.json, guardar corrida, brief   ← Paso 8
   sitio.py             genera _site/ desde data/ + templates/         ← Paso 9
   pipeline.py          orquesta la corrida completa                   ← Paso 10
 data/
@@ -112,7 +112,7 @@ Cómo trabaja `radar/recolectar.py`:
 
 ## Día y brief (Paso 8)
 
-`data/AAAA-MM-DD.json`:
+`radar/almacen.py`. `data/AAAA-MM-DD.json`:
 
 ```json
 {"fecha": "2026-10-20", "actualizado": "2026-10-20T12:31:00-03:00",
@@ -120,7 +120,12 @@ Cómo trabaja `radar/recolectar.py`:
  "noticias": [ { ...esquema sección 7... } ]}
 ```
 
-- `brief` es `null` hasta que la **primera corrida del día después de `hora_desde`** lo arma: elige ≤ `max_brief` noticias del día (más las de la noche anterior aún no incluidas en un brief), con 🔥 primero, y pide los 3 bullets en una llamada aparte. Si la IA no está disponible, el brief se arma sin bullets y se reintentan en la corrida siguiente.
+- **Guardar:** `guardar_corrida(resultado, pendientes_anteriores, config, ahora)` hace todo lo que sigue a la IA: suma `resultado.noticias` al día de hoy (sin repetir `id`, ninguna sin link `http(s)`), marca `resultado.procesados` en la caché y reescribe `pendientes.json` con `actualizar_pendientes()`. El archivo se escribe a un `.tmp` y se reemplaza (nunca queda a medias). Si está dañado se renombra a `AAAA-MM-DD.danado.json` y se parte con el día vacío.
+- **Cuándo:** `brief` es `null` hasta que la **primera corrida del día después de `brief.hora_desde`** (hora de Chile) lo arma; una vez armado no se rehace (salvo `radar brief --forzar`). Sin noticias no se arma y se intenta en la corrida siguiente.
+- **Qué entra:** las noticias de hoy + las de ayer que no están en el brief de ayer (las de la tarde y la noche). Orden: 🔥 primero, después más `confirmacion`, y a igualdad las de hoy antes que las de ayer; se toman ≤ `max_brief`. Se guardan solo los `ids`: una noticia de ayer sigue viviendo en el archivo de ayer (el sitio las busca en ambos).
+- **Bullets:** una llamada aparte con `prompts/brief.md` (marcadores `{{CANTIDAD}}` y `{{NOTICIAS}}`; la IA ve título, qué pasó, por qué importa e importancia, sin links). Respuesta `{"lo_mas_importante": [...]}` con exactamente `min(3, noticias del brief)` frases no vacías de ≤ 300 caracteres. Mismo modelo que los resúmenes. Si la IA no responde, el brief queda con sus `ids` y `lo_mas_importante: []`, y la corrida siguiente solo completa los bullets.
+- **Revisión** `problemas_dia()` (lista vacía = OK): toda noticia del día y del brief con link, sin ids repetidos, ≤ `max_por_dia` noticias, brief ≤ `max_brief` y apuntando a noticias que existen, bullets bien formados.
+- **Comandos:** `radar resumir --guardar` corre recolectar → filtrar → IA → `guardar_corrida` (sin `--guardar` sigue siendo la prueba que no toca nada). `radar brief [--forzar]` arma o completa el brief con lo ya guardado, lo muestra y corre la revisión (sale con 1 si hay problemas). El Paso 10 (`radar correr`) junta ambos.
 
 ## Sitio (Paso 9)
 

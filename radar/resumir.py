@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 import httpx
 
 from radar.agrupar import Grupo, agrupar, resumen_agrupacion
+from radar.almacen import guardar_corrida
 from radar.config import RAIZ, cargar_config
 from radar.filtrar import cargar_pendientes, cargar_procesados, hoy_chile, prefiltrar, publicadas_hoy, sumar_pendientes
 from radar.fuentes import ErrorFuentes, cargar_fuentes
@@ -190,7 +191,8 @@ def texto_resultado(r: Resultado) -> str:
 
 
 def comando_resumir(args) -> int:
-    """Prueba del prompt: recolecta, elige como en una corrida y resume. No toca la caché ni los pendientes."""
+    """Recolecta, elige como en una corrida y resume. Sin --guardar es una prueba del prompt (no toca nada);
+    con --guardar suma las noticias a data/AAAA-MM-DD.json y actualiza la caché y los pendientes."""
     config = cargar_config()
     try:
         fuentes = cargar_fuentes()
@@ -209,10 +211,15 @@ def comando_resumir(args) -> int:
     if not elegidas:
         print("0 noticias nuevas: no hay nada que resumir.")
         return 0
-    print(f"Resumiendo {len(elegidas)} noticias con la IA (no se guarda nada; es una prueba)...\n")
+    aviso = "se guardan en data/" if args.guardar else "no se guarda nada; es una prueba"
+    print(f"Resumiendo {len(elegidas)} noticias con la IA ({aviso})...\n")
     with httpx.Client(timeout=config["ia"]["timeout_seg"]) as cliente:
         resultado = resumir([g for g, _ in elegidas], config, cliente, hoy)
     print(texto_resultado(resultado))
     if args.json:
         print("\n" + json.dumps(resultado.noticias, ensure_ascii=False, indent=1))
+    if args.guardar:
+        agregadas = guardar_corrida(resultado, pendientes, config, ahora)
+        print(f"\nGuardado: {agregadas} noticias en data/{hoy}.json · {len(resultado.procesados)} a la caché"
+              f" · {len(resultado.fallidos)} pendientes nuevas")
     return 1 if resultado.fallidos else 0

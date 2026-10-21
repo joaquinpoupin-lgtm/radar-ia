@@ -1,0 +1,154 @@
+{
+ "fecha": "2026-10-21",
+ "actualizado": "2026-10-21T00:11:36-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Un grupo de piratas informáticos utilizó agentes autónomos de inteligencia artificial para vulnerar los sistemas de seguridad de más de cien sitios web.",
+   "Un estudio reveló que ChatGPT citó miles de estadísticas falsas creadas en internet, repitiendo información inventada como si fuera real.",
+   "OpenAI compró la startup Orchestra Bio con el objetivo de fortalecer su tecnología orientada a la investigación científica y médica."
+  ],
+  "ids": [
+   "72f398965877",
+   "dbaa90254253",
+   "6a01ce2d8f26",
+   "79e072c52849",
+   "efa8c4c666c6",
+   "afe5d96a9d46"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "6a01ce2d8f26",
+   "fecha": "2026-10-21",
+   "titulo": "Un estudio muestra cómo se usan datos falsos para engañar a ChatGPT",
+   "que_paso": "Un análisis detectó que ChatGPT citó miles de estadísticas falsas creadas para aparecer en internet. Esto demuestra que los modelos pueden repetir información inventada como si fuera real.",
+   "por_que_importa": "Obliga a verificar siempre los datos y fuentes que entrega la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "ChatGPT",
+     "explicacion": "Asistente virtual de texto creado por OpenAI."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "79e072c52849",
+   "fecha": "2026-10-21",
+   "titulo": "Lanzan un sistema para hacer funcionar modelos DeepSeek con mayor velocidad",
+   "que_paso": "Presentaron DeepInfer, una herramienta diseñada para ejecutar modelos de DeepSeek a gran escala y con alto rendimiento. Permite procesar peticiones de forma más eficiente.",
+   "por_que_importa": "Facilita la ejecución técnica de estos sistemas avanzados para quienes los implementan.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "DeepSeek",
+     "explicacion": "Familia de modelos de inteligencia artificial desarrollados en China."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/deepseek-ai/DeepInfer"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "dbaa90254253",
+   "fecha": "2026-10-21",
+   "titulo": "OpenAI compra la empresa de biotecnología Orchestra Bio",
+   "que_paso": "OpenAI adquirió la startup Orchestra Bio para sumar su equipo y tecnología. El objetivo es fortalecer su modelo Rosalind y su herramienta Workbench orientados a la investigación científica.",
+   "por_que_importa": "Muestra cómo los desarrolladores de IA buscan expandirse hacia la investigación médica y farmacéutica.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/openai-to-acquire-orchestra-bio"
+    },
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "efa8c4c666c6",
+   "fecha": "2026-10-21",
+   "titulo": "WhatsApp retiró instrucciones ocultas sobre regulaciones en su ayuda de IA",
+   "que_paso": "Descubrieron que la sección de ayuda de WhatsApp tenía notas invisibles para su IA que le prohibían recomendar reguladores o citar normativas de privacidad como el GDPR. Tras hacerse público, fueron eliminadas.",
+   "por_que_importa": "Revela los límites que las plataformas intentan imponer a sus asistentes en temas legales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "72f398965877",
+   "fecha": "2026-10-21",
+   "titulo": "Hackers usan agentes de IA para infiltrarse en más de cien sitios web",
+   "que_paso": "Una empresa de seguridad informó que un atacante utilizó un grupo de agentes autónomos de IA para vulnerar sistemas de compañías como John Deere y SharkNinja. Los programas operaron en gran medida por su cuenta.",
+   "por_que_importa": "Evidencia los nuevos riesgos de seguridad cuando se utilizan sistemas automáticos para realizar ataques informáticos.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "afe5d96a9d46",
+   "fecha": "2026-10-21",
+   "titulo": "Mistral AI presenta Voxtral 3 para crear asistentes de voz",
+   "que_paso": "Mistral AI lanzó Voxtral 3, un kit de desarrollo de software enfocado en la voz en tiempo real. Funciona en más de 50 idiomas con transcripción precisa y síntesis de voz con emociones.",
+   "por_que_importa": "Ofrece a los desarrolladores nuevas opciones para integrar interacciones de voz avanzadas en sus aplicaciones.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Mistral AI",
+     "explicacion": "Empresa francesa creadora de modelos de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Mistral AI",
+     "url": "https://mistral.ai/news/voxtral-3"
+    }
+   ],
+   "confirmacion": 1
+  }
+ ]
+}
