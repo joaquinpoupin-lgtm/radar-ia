@@ -91,6 +91,10 @@ fuentes (sources.yaml)
   Dejarlo correr solo y revisar los criterios de éxito del brief (sección 9): corre solo, brief cada mañana legible en ~3 min, resúmenes claros, links funcionando, $0, sin roturas.
   **Verificación:** todos los criterios en OK → **MVP terminado** → recién ahí, Fase 2.
 
+## Pendientes sueltos (fuera de los pasos)
+
+- [ ] **Extractos de Hugging Face** (visto en el Paso 7): sus posts traen como extracto solo "A Blog post by X on Hugging Face", y la IA los descarta o los resume de forma pareja. Arreglo propuesto: en el recolector, tratar ese texto como extracto vacío y leer `og:description` de la página. Decidir con el usuario cuándo hacerlo.
+
 ---
 
 ## Bitácora
