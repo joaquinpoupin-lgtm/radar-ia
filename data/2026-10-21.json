@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-21",
- "actualizado": "2026-10-21T00:11:36-03:00",
+ "actualizado": "2026-10-21T00:54:23-03:00",
  "brief": {
   "lo_mas_importante": [
    "Un grupo de piratas informáticos utilizó agentes autónomos de inteligencia artificial para vulnerar los sistemas de seguridad de más de cien sitios web.",
@@ -146,6 +146,86 @@
     {
      "nombre": "Mistral AI",
      "url": "https://mistral.ai/news/voxtral-3"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "e7fd8cf2b322",
+   "fecha": "2026-10-21",
+   "titulo": "El dilema de programar con inteligencia artificial sin entender el código",
+   "que_paso": "Un ingeniero de Meta compartió en LinkedIn su incomodidad al usar IA. Cuenta que escribir código tan rápido deja sistemas enteros donde nadie comprende bien cómo funcionan por dentro.",
+   "por_que_importa": "Refleja la discusión actual sobre los riesgos de aceptar código generado por IA sin revisarlo a fondo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50151036"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b6629abae55b",
+   "fecha": "2026-10-21",
+   "titulo": "Anthropic propone ley de seguridad que cambiaría el bloqueo de modelos de IA",
+   "que_paso": "Anthropic planteó una nueva política de seguridad que aparentemente protege contra riesgos extremos. Sin embargo, la propuesta exige el permiso de un juez para que las agencias federales puedan bloquear el lanzamiento de un modelo.",
+   "por_que_importa": "Muestra cómo las empresas de IA intentan influir directamente en las reglas y regulaciones gubernamentales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "87c5cb39af2e",
+   "fecha": "2026-10-21",
+   "titulo": "Una startup crea un modelo de inteligencia artificial para traducir señales eléctricas de las plantas",
+   "que_paso": "La empresa Electric Plant desarrolló un traductor impulsado por inteligencia artificial. Su objetivo es permitir que los humanos escuchen lo que las plantas comunican a través de la electricidad en sus tallos.",
+   "por_que_importa": "Ilustra nuevas aplicaciones experimentales de la inteligencia artificial fuera del software tradicional.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "15705003f60b",
+   "fecha": "2026-10-21",
+   "titulo": "Eka Robotics alcanza una valorización de mil millones tras destacar con sus brazos robóticos",
+   "que_paso": "La empresa Eka Robotics superó los mil millones en valor gracias a un modelo físico de inteligencia artificial. Su brazo robótico destaca en la industria por su capacidad para tomar una gran variedad de objetos con movimientos muy fluidos.",
+   "por_que_importa": "Muestra avances prácticos en robótica impulsados por nuevas capacidades de inteligencia artificial.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/"
     }
    ],
    "confirmacion": 1
