@@ -38,19 +38,27 @@ _site/                 sitio generado (ignorado por git; lo publica Actions)
 ```yaml
 fuentes:
   - nombre: Blog de Anthropic
-    tipo: rss            # rss | hackernews | youtube   (Paso 14 suma: github, huggingface, producthunt, arxiv)
+    tipo: rss            # rss | hackernews | youtube | github | huggingface | papers
     url: https://...
     seccion: modelos     # sección por defecto (la IA puede cambiarla)
     idioma: en
     peso: 3              # 1 (ruido) a 3 (oficial/confiable); pesa en el pre-filtro
     activa: true
+    max_por_corrida: 1   # opcional: tope propio en el pre-filtro (si no, prefiltro.max_por_fuente)
 ```
+
+En `url`, `{desde}` se cambia por la fecha de hace `recolector.dias_tendencias` días (AAAA-MM-DD); hoy solo lo usa GitHub. `fuentes.url_real()` lo hace para `radar fuentes` y para el recolector.
 
 Para YouTube, `url` es `https://www.youtube.com/feeds/videos.xml?channel_id=...` y `seccion: creadores`. Hacker News usa la API pública de Algolia (`hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>=50`); el puntaje mínimo va en la URL y el filtro por palabras clave de IA lo hace el recolector (Paso 2).
 
 - **Reddit** es `tipo: rss` con las 8 comunidades en **un solo feed combinado** (`/r/A+B+.../top/.rss?t=day&limit=50`): Reddit responde 429 si se piden varios feeds seguidos y 403 a su API JSON sin cuenta. El RSS no trae puntaje; "top del día" ya viene ordenado por popularidad.
 - **Feeds comunitarios:** Anthropic, Meta, Mistral y xAI no publican RSS. Se usan los que genera gratis `github.com/Olshansk/rss-feeds` (marcados con un comentario en `sources.yaml`).
 - `radar/fuentes.py`: `cargar_fuentes()` valida todo `sources.yaml` y junta los errores en un solo mensaje; `crear_cliente(config)` es el cliente HTTP compartido (timeout y user-agent de `config.yaml`, lo reusa el recolector); `probar_todas()` prueba en paralelo (`fuentes.hilos`) y nunca lanza excepciones.
+- **Fuentes en tendencia (Paso 14)**, todas APIs públicas sin cuenta (`TIPOS_JSON`; `items_json()` valida la forma de cada respuesta y `fecha_item_json()` da la fecha para "última novedad"):
+  - `github`: `api.github.com/search/repositories` con `q=llm OR agent OR ai in:name,description,topics created:>={desde} stars:>=150`, orden por estrellas. Sin token: 10 búsquedas/min, de sobra para 1 por corrida (probado también desde Actions).
+  - `huggingface`: `huggingface.co/api/models?sort=trendingScore&direction=-1&limit=30`.
+  - `papers`: `huggingface.co/api/daily_papers?limit=100` (papers de arXiv que la comunidad sube y vota). Es la vía "muy filtrada" de arXiv: el API de arXiv no tiene ninguna señal de popularidad.
+  - Product Hunt es `tipo: rss` (`producthunt.com/feed?category=artificial-intelligence`).
 - `radar fuentes` muestra una tabla: **OK**, **AVISO** (responde pero sin publicaciones, o sin novedades hace más de `fuentes.dias_aviso_sin_novedades` días) o **ERROR** (HTTP ≠ 200, sin conexión, contenido inválido). Sale con código 1 si alguna tiene ERROR.
 
 ## Candidato (salida del recolector, Paso 2)
@@ -73,6 +81,10 @@ Cómo trabaja `radar/recolectar.py`:
 - **Extracto:** `summary` del feed (si es muy corto, `content`), limpio de HTML, de links sueltos y del relleno "The post … appeared first on …", cortado a `recolector.largo_extracto` sin partir palabras. Si queda con menos de 40 caracteres se lee el comienzo de la página (máx. 300 KB, solo HTML) y se usa `og:description` → `twitter:description` → `description`. Si la misma descripción aparece en varias páginas de una misma fuente, es la genérica del sitio y se descarta.
 - **Hacker News:** solo historias cuyo título contiene alguna palabra de `recolector.palabras_ia` (palabra completa, sin importar mayúsculas). Sin `url` (Ask HN) se usa el link de la discusión y `story_text` como extracto.
 - **Reddit:** el extracto es solo el texto del post (sin "submitted by…"); si el post apunta a un artículo externo, la `url` es la del artículo (imágenes/videos de `redd.it` se quedan con el link del post). A Reddit nunca se le piden páginas extra porque bloquea (429).
+- **GitHub:** solo repos creados desde hace `dias_tendencias`; título `dueño/repo: descripción`, extracto = descripción + "N estrellas en GitHub · lenguaje · temas". La fecha es la de la **corrida** ("visto en alza hoy"): con la de creación, un repo de hace 5 días que está subiendo quedaría fuera de la ventana de 3 días. No se repite gracias a la caché.
+- **Hugging Face (modelos):** igual de fecha y ventana; se saltan las copias cuantizadas (etiqueta `base_model:quantized:`). Extracto = "tipo · licencia · me gusta y descargas"; antes se le antepone el primer párrafo de presentación del `README.md` del modelo (`parrafo_readme()`: sin encabezado YAML, HTML, imágenes, tablas, listas ni código; ≥80 caracteres y ≥10 palabras; deja de buscar al llegar a un encabezado de uso, instalación, prompt, licencia, etc.). Del README se leen máx. 60 KB. La `og:description` de Hugging Face es la genérica del sitio y no sirve.
+- **arXiv (destacados):** solo papers con ≥ `recolector.papers_votos_min` votos; link `arxiv.org/abs/<id>`, fecha = día en que salió en Daily Papers, extracto = comienzo del resumen + "N votos en Hugging Face".
+- La popularidad (estrellas, me gusta, votos) va como dato en el extracto y no como `puntaje`: el bonus de HN las pondría por encima de las fuentes oficiales.
 - `radar recolectar` muestra cuántos candidatos trajo cada fuente, cuántos extractos salieron de la página y los errores; `--mostrar N` imprime N ejemplos. Sale con código 1 solo si no se pudo leer ninguna fuente.
 
 ## Agrupar (Paso 3)
@@ -90,7 +102,7 @@ Cómo trabaja `radar/recolectar.py`:
 
 - **Caché** `data/cache/procesados.json`: `{"<hash de un link>": "AAAA-MM-DD"}` para todo lo resumido **o descartado** por la IA. Se guardan los hashes de **todos** los links del grupo y una noticia cuenta como procesada si **cualquiera** de sus links ya está: así se reconoce aunque cambie el principal. Se podan las entradas de más de `cache.dias` días. Si el archivo está dañado se avisa y se parte de cero (a lo más se repite una corrida; nunca se cae).
 - **Pre-filtro:** fuera lo ya procesado y lo que supera `dias_antiguedad_max`. Puntaje = mayor peso del grupo + `bonus_por_fuente_extra` por cada fuente adicional (máx. +3) + bonus por puntos de HN (`bonus_hn`, el mayor alcanzado) + `bonus_palabra_clave` si algún título tiene una de `palabras_clave` − `castigo_por_dia` × días de antigüedad (sin fecha = la ventana completa). Todo en `config.yaml` → `prefiltro`.
-- **Topes:** cupo = `max_nuevas_por_corrida`, sin pasar de `max_por_dia` − publicadas hoy (largo de `noticias` en `data/<hoy>.json`, hoy en hora de Chile); y máximo `prefiltro.max_por_fuente` de una misma fuente por corrida, para que haya variedad.
+- **Topes:** cupo = `max_nuevas_por_corrida`, sin pasar de `max_por_dia` − publicadas hoy (largo de `noticias` en `data/<hoy>.json`, hoy en hora de Chile); y máximo `prefiltro.max_por_fuente` de una misma fuente por corrida, para que haya variedad. Una fuente con `max_por_corrida` en `sources.yaml` usa ese tope (`prefiltrar(..., topes=topes_por_fuente(fuentes))`): las 4 del Paso 14 tienen 1, así nunca aportan más de 4 de las 10 de una corrida.
 - Lo no elegido **no** se marca: se reconsidera en la corrida siguiente hasta que sale de la ventana de días.
 - **Pendientes** (Paso 6) `data/pendientes.json`: `{"grupos": [{"id", "titulo", "candidatos": [Candidato]}]}`. Se guardan los candidatos completos (título, link, extracto corto, nunca el artículo) para reintentar aunque la noticia ya no salga en el feed; un candidato sin fecha queda con la de la corrida para que igual expire. `sumar_pendientes()` los junta con lo recolectado (si la noticia volvió a aparecer se usa la versión nueva, sin duplicar) y `prefiltrar(..., pendientes=)` los pone **primero**, antes que el puntaje (sí respetan el cupo y el tope por fuente). Después de la IA, `actualizar_pendientes()` deja los que fallaron ahora + los anteriores sin procesar, sin los ya procesados ni los que salieron de la ventana de días. Archivo dañado = aviso y se parte sin pendientes.
 
