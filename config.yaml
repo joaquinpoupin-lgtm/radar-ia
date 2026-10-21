@@ -27,6 +27,10 @@ cache:
 brief:
   hora_desde: "06:00"      # la primera corrida del día después de esta hora arma el brief
 
+sitio:
+  dias_secciones: 7        # la página Secciones muestra las noticias de los últimos N días
+  palabras_por_minuto: 200 # para estimar cuánto se tarda en leer el brief (meta: ~3 min)
+
 ia:
   # Nombres de modelo verificados en el Paso 5 (2026-10-20). Si uno deja de existir,
   # `radar probar-ia` lista los que tu clave sí puede usar.

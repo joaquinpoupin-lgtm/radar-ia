@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{% block titulo %}Radar IA{% endblock %}</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<link rel="stylesheet" href="{{ raiz }}estilo.css">
+</head>
+<body>
+<header class="cabecera">
+  <a class="marca" href="{{ raiz }}index.html">📡 Radar IA</a>
+  <nav>
+    <a href="{{ raiz }}index.html"{% if pagina == "hoy" %} aria-current="page"{% endif %}>Hoy</a>
+    <a href="{{ raiz }}secciones.html"{% if pagina == "secciones" %} aria-current="page"{% endif %}>Secciones</a>
+    <a href="{{ raiz }}archivo/index.html"{% if pagina == "archivo" %} aria-current="page"{% endif %}>Archivo</a>
+  </nav>
+</header>
+<main>
+{% block contenido %}{% endblock %}
+</main>
+<footer class="pie">
+  <p>Resúmenes hechos con IA a partir de fuentes públicas: pueden tener errores. Ante la duda, lee la fuente original.</p>
+  {% if actualizado %}<p>Actualizado: {{ actualizado }} (hora de Chile)</p>{% endif %}
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

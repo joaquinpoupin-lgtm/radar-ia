@@ -1,0 +1,148 @@
+/* Radar IA: un solo CSS, pensado primero para el celular. Modo oscuro según el sistema. */
+
+:root {
+  --fondo: #f7f7f4;
+  --tarjeta: #ffffff;
+  --texto: #1c1c1a;
+  --suave: #5f5f5a;
+  --borde: #e3e2dc;
+  --acento: #1f5fbf;
+  --acento-fondo: #e8effa;
+  --fuego: #b3400f;
+  --fuego-fondo: #fdf0e8;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #151514;
+    --tarjeta: #1f1f1d;
+    --texto: #ecebe6;
+    --suave: #a3a29b;
+    --borde: #34332f;
+    --acento: #7fb0f5;
+    --acento-fondo: #1f2a3a;
+    --fuego: #f2925f;
+    --fuego-fondo: #3a251a;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+main, .pie { max-width: 42rem; margin: 0 auto; padding: 0 1rem; }
+
+a { color: var(--acento); }
+
+/* Cabecera */
+.cabecera {
+  position: sticky; top: 0; z-index: 1;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem;
+  padding: .6rem 1rem;
+  background: var(--tarjeta);
+  border-bottom: 1px solid var(--borde);
+}
+.marca { font-weight: 700; color: var(--texto); text-decoration: none; }
+.cabecera nav { display: flex; gap: .25rem; }
+.cabecera nav a {
+  padding: .3rem .6rem; border-radius: 999px;
+  color: var(--suave); text-decoration: none; font-size: .95rem;
+}
+.cabecera nav a[aria-current="page"] { background: var(--acento-fondo); color: var(--acento); font-weight: 600; }
+
+/* Títulos */
+h1 { font-size: 1.5rem; line-height: 1.25; margin: 1.25rem 0 .25rem; }
+h2 { font-size: 1.1rem; margin: 0 0 .5rem; }
+h3 { font-size: 1.15rem; line-height: 1.3; margin: .25rem 0 .5rem; }
+.bajada { color: var(--suave); margin: 0 0 1rem; font-size: .95rem; }
+
+.aviso {
+  padding: .75rem 1rem; border-radius: .6rem;
+  background: var(--tarjeta); border: 1px dashed var(--borde); color: var(--suave);
+}
+
+/* "Lo más importante hoy" */
+.destacado {
+  margin: 0 0 1.25rem; padding: 1rem 1rem .5rem;
+  border-radius: .8rem;
+  background: var(--acento-fondo);
+}
+.destacado ul { margin: 0; padding-left: 1.2rem; }
+.destacado li { margin-bottom: .5rem; }
+
+/* Noticia */
+.noticia {
+  margin: 0 0 1rem; padding: 1rem;
+  background: var(--tarjeta);
+  border: 1px solid var(--borde); border-radius: .8rem;
+}
+.noticia.alta { border-left: 4px solid var(--fuego); }
+.noticia p { margin: 0 0 .6rem; }
+.meta { display: flex; flex-wrap: wrap; gap: .1rem .4rem; font-size: .8rem; color: var(--suave); }
+.meta .seccion { font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+.fuego { color: var(--fuego); background: var(--fuego-fondo); padding: 0 .4rem; border-radius: .3rem; font-weight: 600; }
+.importa { color: var(--suave); }
+.importa strong { color: var(--texto); }
+
+.terminos { margin: 0 0 .6rem; font-size: .9rem; }
+.terminos summary { cursor: pointer; color: var(--acento); padding: .2rem 0; }
+.terminos dl { margin: .4rem 0 0; padding: .6rem .8rem; border-radius: .5rem; background: var(--fondo); }
+.terminos dt { font-weight: 600; }
+.terminos dd { margin: 0 0 .4rem; color: var(--suave); }
+
+.etiquetas { display: flex; flex-wrap: wrap; gap: .3rem; list-style: none; margin: 0 0 .6rem; padding: 0; }
+.etiquetas li { font-size: .78rem; padding: .05rem .5rem; border-radius: 999px; border: 1px solid var(--borde); color: var(--suave); }
+.etiquetas li::before { content: "#"; }
+
+.fuentes { font-size: .9rem; margin: 0 !important; }
+.fuentes a { display: inline-block; padding: .2rem 0; font-weight: 600; }
+
+.mas { margin: 1rem 0; }
+.mas a { font-weight: 600; }
+
+/* Filtros de Secciones */
+.filtros { margin: 0 0 1rem; }
+.filtros .grupo { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .5rem; }
+.filtros button {
+  font: inherit; font-size: .88rem;
+  padding: .35rem .75rem; border-radius: 999px;
+  border: 1px solid var(--borde); background: var(--tarjeta); color: var(--texto);
+  cursor: pointer;
+}
+.filtros button.chico { font-size: .8rem; padding: .25rem .6rem; }
+.filtros button small { color: var(--suave); }
+.filtros button[aria-pressed="true"] { background: var(--acento); border-color: var(--acento); color: var(--tarjeta); }
+.filtros button[aria-pressed="true"] small { color: inherit; opacity: .8; }
+.contador { font-size: .85rem; color: var(--suave); margin: 0; }
+
+/* Archivo */
+.dias { list-style: none; padding: 0; margin: 0; }
+.dias li {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem;
+  padding: .75rem 0; border-bottom: 1px solid var(--borde);
+}
+.dias a { font-weight: 600; }
+.dias span { color: var(--suave); font-size: .9rem; }
+
+.paginas { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0; font-weight: 600; }
+
+/* Pie */
+.pie { padding-top: 1rem; padding-bottom: 2rem; color: var(--suave); font-size: .8rem; border-top: 1px solid var(--borde); margin-top: 2rem; }
+.pie p { margin: 0 0 .3rem; }
+
+[hidden] { display: none !important; }
+
+@media (min-width: 40rem) {
+  body { font-size: 18px; }
+  h1 { font-size: 1.8rem; }
+  .noticia { padding: 1.25rem 1.5rem; }
+}

@@ -9,5 +9,6 @@ __pycache__/
 
 # Sitio generado (lo publica GitHub Actions, no se guarda en el repo)
 _site/
+_site.tmp/
 
 .DS_Store

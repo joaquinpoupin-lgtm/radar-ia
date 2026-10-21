@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block titulo %}Radar IA · Archivo{% endblock %}
+{% block contenido %}
+<h1>Archivo</h1>
+{% if dias %}
+<ul class="dias">
+  {% for d in dias %}
+  <li><a href="{{ d.fecha }}.html">{{ d.fecha | fecha_larga | capitalize }}</a>
+    <span>{{ d.noticias }} noticia{{ "s" if d.noticias != 1 }}{% if d.brief %} · con brief{% endif %}</span></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="aviso">Todavía no hay días guardados.</p>
+{% endif %}
+{% endblock %}

@@ -9,6 +9,7 @@ from radar.fuentes import comando_fuentes
 from radar.ia import comando_probar_ia
 from radar.recolectar import comando_recolectar
 from radar.resumir import comando_resumir
+from radar.sitio import comando_sitio
 
 # Comandos planeados: (nombre, descripción, paso del plan que lo implementa).
 # Al implementar uno, reemplazar su función en COMANDOS.
@@ -39,6 +40,7 @@ COMANDOS["filtrar"] = comando_filtrar
 COMANDOS["probar-ia"] = comando_probar_ia
 COMANDOS["resumir"] = comando_resumir
 COMANDOS["brief"] = comando_brief
+COMANDOS["sitio"] = comando_sitio
 
 
 def construir_parser() -> argparse.ArgumentParser:
@@ -64,6 +66,8 @@ def construir_parser() -> argparse.ArgumentParser:
     sub.choices["brief"].add_argument(
         "--forzar", action="store_true",
         help="lo arma aunque sea antes de la hora del brief (o lo rehace si ya estaba)")
+    sub.choices["sitio"].add_argument(
+        "--revisar-links", action="store_true", help="además prueba que cada link a las fuentes responda")
     return parser
 
 

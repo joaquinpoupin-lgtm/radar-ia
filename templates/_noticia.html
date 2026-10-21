@@ -1,0 +1,30 @@
+{# Una noticia. `mostrar_fecha`: en las listas de varios días. `de_ayer`: en el brief, si viene de ayer. #}
+{% macro noticia(n, raiz, mostrar_fecha=false, de_ayer=false) %}
+<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}" data-seccion="{{ n.seccion }}"
+  data-alta="{{ 'si' if n.importancia == 'alta' else 'no' }}" data-etiquetas="{{ n.etiquetas | join('|') }}">
+  <p class="meta">
+    {% if n.importancia == "alta" %}<span class="fuego" title="Importancia alta">🔥 Importante</span>{% endif %}
+    <span class="seccion">{{ NOMBRES_SECCION.get(n.seccion, n.seccion) }}</span>
+    {% if mostrar_fecha %}<span>· {{ n.fecha | fecha_corta }}</span>{% endif %}
+    {% if de_ayer %}<span>· de ayer</span>{% endif %}
+    {% if n.confirmacion > 1 %}<span>· {{ n.confirmacion }} fuentes la cuentan</span>{% endif %}
+  </p>
+  <h3>{{ n.titulo }}</h3>
+  <p>{{ n.que_paso }}</p>
+  <p class="importa"><strong>Por qué importa:</strong> {{ n.por_que_importa }}</p>
+  {% if n.terminos %}
+  <details class="terminos">
+    <summary>{{ "Qué significa" if n.terminos | length == 1 else "Términos explicados" }}: {{ n.terminos | map(attribute="termino") | join(", ") }}</summary>
+    <dl>
+      {% for t in n.terminos %}<dt>{{ t.termino }}</dt><dd>{{ t.explicacion }}</dd>{% endfor %}
+    </dl>
+  </details>
+  {% endif %}
+  {% if n.etiquetas %}
+  <ul class="etiquetas">{% for e in n.etiquetas %}<li>{{ e }}</li>{% endfor %}</ul>
+  {% endif %}
+  <p class="fuentes">Leer en:
+    {% for f in n.fuentes %}<a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.nombre }} ↗</a>{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+</article>
+{% endmacro %}

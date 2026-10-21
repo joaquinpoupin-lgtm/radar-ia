@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% from "_noticia.html" import noticia %}
+{% block titulo %}Radar IA · Secciones{% endblock %}
+{% block contenido %}
+<h1>Secciones</h1>
+<p class="bajada">Noticias de los últimos {{ dias }} días, de la más nueva a la más vieja.</p>
+{% if noticias %}
+<div class="filtros" id="filtros" hidden>
+  <div class="grupo" role="group" aria-label="Sección">
+    <button type="button" data-seccion="" aria-pressed="true">Todas <small>{{ noticias | length }}</small></button>
+    {% for s in SECCIONES if cuenta_secciones[s] %}
+    <button type="button" data-seccion="{{ s }}" aria-pressed="false">{{ NOMBRES_SECCION[s] }} <small>{{ cuenta_secciones[s] }}</small></button>
+    {% endfor %}
+  </div>
+  <div class="grupo" role="group" aria-label="Importancia y etiquetas">
+    {% if altas %}<button type="button" data-alta aria-pressed="false">🔥 Solo importantes <small>{{ altas }}</small></button>{% endif %}
+    {% for e, c in etiquetas %}
+    <button type="button" class="chico" data-etiqueta="{{ e }}" aria-pressed="false">#{{ e }} <small>{{ c }}</small></button>
+    {% endfor %}
+  </div>
+  <p class="contador" id="contador" aria-live="polite"></p>
+</div>
+<div id="lista">
+{% for n in noticias %}
+{{ noticia(n, raiz, mostrar_fecha=true) }}
+{% endfor %}
+</div>
+<p class="aviso" id="vacio" hidden>Ninguna noticia cumple esos filtros.</p>
+{% else %}
+<p class="aviso">Todavía no hay noticias en estos días.</p>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+{% if noticias %}
+<script>
+// Filtros: una sección (o todas) + solo 🔥 + una etiqueta. Sin JS se ven todas las noticias.
+(function () {
+  var filtros = document.getElementById("filtros");
+  var noticias = document.querySelectorAll("#lista .noticia");
+  var estado = { seccion: "", alta: false, etiqueta: "" };
+  filtros.hidden = false;
+
+  function aplicar() {
+    var visibles = 0;
+    noticias.forEach(function (n) {
+      var ok = (!estado.seccion || n.dataset.seccion === estado.seccion) &&
+               (!estado.alta || n.dataset.alta === "si") &&
+               (!estado.etiqueta || n.dataset.etiquetas.split("|").indexOf(estado.etiqueta) >= 0);
+      n.hidden = !ok;
+      if (ok) visibles++;
+    });
+    filtros.querySelectorAll("[data-seccion]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.seccion === estado.seccion);
+    });
+    filtros.querySelectorAll("[data-etiqueta]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.etiqueta === estado.etiqueta);
+    });
+    var alta = filtros.querySelector("[data-alta]");
+    if (alta) alta.setAttribute("aria-pressed", estado.alta);
+    document.getElementById("contador").textContent =
+      visibles + (visibles === 1 ? " noticia" : " noticias");
+    document.getElementById("vacio").hidden = visibles > 0;
+  }
+
+  filtros.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button");
+    if (!b) return;
+    if (b.hasAttribute("data-seccion")) estado.seccion = b.dataset.seccion;
+    else if (b.hasAttribute("data-alta")) estado.alta = !estado.alta;
+    else if (b.hasAttribute("data-etiqueta"))
+      estado.etiqueta = estado.etiqueta === b.dataset.etiqueta ? "" : b.dataset.etiqueta;
+    aplicar();
+  });
+  aplicar();
+})();
+</script>
+{% endif %}
+{% endblock %}

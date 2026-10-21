@@ -129,8 +129,15 @@ Cómo trabaja `radar/recolectar.py`:
 
 ## Sitio (Paso 9)
 
-- `python -m radar sitio` → `_site/`: `index.html` (brief de hoy), `secciones.html` (todas las noticias recientes con filtros por sección, 🔥 y etiquetas en JS simple), `archivo/AAAA-MM-DD.html` + `archivo/index.html`.
-- Mobile-first, un solo CSS, sin frameworks ni CDNs, modo oscuro automático. Cada noticia muestra: título, qué pasó, por qué importa, términos explicados, etiquetas y links a las fuentes (abren en pestaña nueva).
+`radar/sitio.py` + `templates/` (Jinja2 con autoescape: el texto de la IA nunca se interpreta como HTML).
+
+- `python -m radar sitio [--revisar-links]` → `_site/`: `index.html` (brief), `secciones.html` (noticias de los últimos `sitio.dias_secciones` días con filtros), `archivo/index.html` (lista de días) y `archivo/AAAA-MM-DD.html` (bullets + todas las noticias del día, 🔥 primero, con día anterior/siguiente). Un solo `estilo.css`, sin frameworks ni CDNs, mobile-first, modo oscuro según el sistema, `noindex` (uso personal).
+- Se arma en `_site.tmp/` y recién al final reemplaza `_site/`: si algo falla, el sitio anterior queda entero. Solo **lee** `data/`: un día dañado se avisa y no aparece (el Paso 8 lo aparta al volver a escribir ese día).
+- **Portada:** el brief más reciente (≤ hoy). Si el de hoy aún no está (corrida de las 00:30) muestra el de ayer con un aviso. Las noticias del brief que vienen de ayer se buscan en el archivo de ayer y llevan "de ayer". Debajo, un link a las noticias de hoy que quedaron fuera del brief. Muestra la lectura estimada: palabras de bullets + título, qué pasó y por qué importa ÷ `sitio.palabras_por_minuto` (200); los términos van plegados (`<details>`).
+- **Cada noticia:** 🔥, sección, fecha (en Secciones), "N fuentes la cuentan" si `confirmacion > 1` (puede haber menos links que fuentes: si HN comparte el artículo de The Verge es un solo link), título, qué pasó, por qué importa, términos, etiquetas y links "Leer en: X ↗" (pestaña nueva, `rel=noopener`).
+- **Filtros (Secciones):** atributos `data-seccion`, `data-alta`, `data-etiquetas` en cada noticia y ~40 líneas de JS: una sección (o todas) + "solo 🔥" + una etiqueta (las 20 más usadas), con contador y aviso si no queda ninguna. Sin JS los filtros no aparecen y se ven todas.
+- **Revisión de links:** siempre se comprueba que los links entre páginas apunten a archivos que existen. Con `--revisar-links` además se prueba cada link a las fuentes (GET sin bajar la página, en paralelo, mismo user-agent que el recolector): 2xx/3xx = OK; 401/403/429/999 = AVISO (el sitio existe pero bloquea programas); 404, 5xx o sin conexión = ERROR (sale con 1).
+- **Ver en local:** `.claude/launch.json` define el servidor `sitio` (`python -m http.server 8000 --directory _site`); abrir el `index.html` directo con doble clic también funciona.
 
 ## Automatización (Paso 12)
 

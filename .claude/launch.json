@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sitio",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "_site", "--bind", "127.0.0.1"],
+      "port": 8000
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "_noticia.html" import noticia %}
+{% block titulo %}Radar IA · {{ fecha }}{% endblock %}
+{% block contenido %}
+<h1>{{ fecha | fecha_larga | capitalize }}</h1>
+<p class="bajada">{{ noticias | length }} noticia{{ "s" if noticias | length != 1 }} publicadas este día</p>
+{% if brief and brief.bullets %}
+<section class="destacado">
+  <h2>Lo más importante</h2>
+  <ul>{% for b in brief.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+{% for n in noticias %}
+{{ noticia(n, raiz) }}
+{% endfor %}
+<nav class="paginas">
+  {% if anterior %}<a href="{{ anterior }}.html">← {{ anterior | fecha_corta }}</a>{% else %}<span></span>{% endif %}
+  <a href="index.html">Todos los días</a>
+  {% if siguiente %}<a href="{{ siguiente }}.html">{{ siguiente | fecha_corta }} →</a>{% else %}<span></span>{% endif %}
+</nav>
+{% endblock %}
