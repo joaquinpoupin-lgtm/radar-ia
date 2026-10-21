@@ -25,6 +25,7 @@ from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes
 from radar.ia import pedir_json
 from radar.recolectar import recolectar
 from radar.resumir import resumir
+from radar.simulacro import SIMULACROS, aplicar, cliente_ia, leer_simulacros
 from radar.sitio import CARPETA_SITIO, generar_sitio, links_internos_rotos
 
 
@@ -151,9 +152,20 @@ def comando_correr(args) -> int:
     except ErrorFuentes as e:
         print(e)
         return 1
+    try:
+        simulacros = leer_simulacros(getattr(args, "simular", None))
+    except ValueError as e:
+        print(e)
+        return 1
+    fuentes = aplicar(simulacros, fuentes)
     ahora = datetime.now(timezone.utc)
     print(f"Radar IA · corrida del {hoy_chile(ahora, config)} · {len(fuentes)} fuentes")
-    corrida = correr(config, ahora, fuentes, forzar_brief=args.forzar_brief)
+    for s in simulacros:
+        print(f"SIMULACRO {s}: {SIMULACROS[s]}")
+    corrida = correr(config, ahora, fuentes, cliente_ia=cliente_ia(simulacros, config),
+                     forzar_brief=args.forzar_brief)
+    if simulacros:
+        corrida.avisos.insert(0, f"simulacro activo: {', '.join(simulacros)}")
     print(texto_final(corrida, CARPETA_SITIO))
     return corrida.codigo
 

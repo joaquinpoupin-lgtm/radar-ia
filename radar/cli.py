@@ -10,6 +10,7 @@ from radar.ia import comando_probar_ia
 from radar.pipeline import comando_correr
 from radar.recolectar import comando_recolectar
 from radar.resumir import comando_resumir
+from radar.simulacro import SIMULACROS
 from radar.sitio import comando_sitio
 
 # Comandos planeados: (nombre, descripción, paso del plan que lo implementa).
@@ -73,6 +74,9 @@ def construir_parser() -> argparse.ArgumentParser:
     sub.choices["correr"].add_argument(
         "--forzar-brief", action="store_true",
         help="arma el brief aunque sea antes de las 06:00 (o lo rehace si ya estaba); útil para probar en local")
+    sub.choices["correr"].add_argument(
+        "--simular", metavar="FALLAS",
+        help="provoca fallas a propósito para probar (separadas por coma): " + ", ".join(SIMULACROS))
     return parser
 
 

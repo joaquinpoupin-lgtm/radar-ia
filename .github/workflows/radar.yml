@@ -8,6 +8,12 @@ on:
     - cron: '30 0,6,12,18 * * *'
       timezone: "America/Santiago"
   workflow_dispatch:  # botón "Run workflow" para lanzarlo a mano
+    inputs:
+      simular:
+        description: "Simulacro de fallas (vacío = corrida normal). Opciones, separadas por coma: sin-clave-gemini, cuota-gemini, cuota-todas, fuente-caida"
+        required: false
+        default: ""
+        type: string
 
 # Nunca dos corridas a la vez: si una está en marcha, la siguiente espera (no se cancela).
 concurrency:
@@ -42,7 +48,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python -m radar correr
+          # El texto del simulacro pasa por una variable (nunca pegado en el comando) para que no se pueda colar otro.
+          SIMULAR: ${{ inputs.simular }}
+        run: python -m radar correr ${SIMULAR:+--simular "$SIMULAR"}
 
       - name: Guardar datos (commit del robot)
         run: |
