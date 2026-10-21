@@ -139,6 +139,16 @@ Cómo trabaja `radar/recolectar.py`:
 - **Revisión de links:** siempre se comprueba que los links entre páginas apunten a archivos que existen. Con `--revisar-links` además se prueba cada link a las fuentes (GET sin bajar la página, en paralelo, mismo user-agent que el recolector): 2xx/3xx = OK; 401/403/429/999 = AVISO (el sitio existe pero bloquea programas); 404, 5xx o sin conexión = ERROR (sale con 1).
 - **Ver en local:** `.claude/launch.json` define el servidor `sitio` (`python -m http.server 8000 --directory _site`); abrir el `index.html` directo con doble clic también funciona.
 
+## Corrida completa (Paso 10)
+
+`radar/pipeline.py`: `python -m radar correr [--forzar-brief]` es lo que correrá Actions.
+
+- Tres etapas en orden: **Noticias** (recolectar → agrupar → sumar pendientes → pre-filtro → `resumir` → `guardar_corrida`), **Brief** (`actualizar_brief` + `problemas_dia`; el día se reescribe solo si el brief cambió) y **Sitio** (`generar_sitio` + links internos). Un solo cliente HTTP para la IA en toda la corrida.
+- Cada etapa va envuelta: si explota por algo inesperado, se imprime el detalle técnico, se anota el error y se sigue; el sitio se genera igual con lo ya guardado.
+- **Código de salida** (Actions lo usa para marcar verde/rojo): 0 si todo anduvo, aunque haya **avisos** esperables (fuentes caídas, IA sin cuota → pendientes, brief sin bullets). 1 si hubo **errores**: una etapa explotó, no se pudo leer *ninguna* fuente, la revisión del día encontró problemas o hay links internos rotos.
+- Sin noticias nuevas no se toca `data/` (no se crea un día vacío). `--forzar-brief` arma el brief aunque sea antes de las 06:00 (para probar en local; en Actions no se usa).
+- Imprime una sección por etapa con su duración y un resumen final (nuevas, pendientes, link al sitio, avisos, errores): queda legible en el log de Actions.
+
 ## Automatización (Paso 12)
 
 - `.github/workflows/radar.yml`: `schedule` con `cron: '30 0,6,12,18 * * *'` y `timezone: America/Santiago` (verificar la sintaxis contra la documentación oficial de GitHub al implementarlo) + `workflow_dispatch`.

@@ -7,6 +7,7 @@ from radar.almacen import comando_brief
 from radar.filtrar import comando_filtrar
 from radar.fuentes import comando_fuentes
 from radar.ia import comando_probar_ia
+from radar.pipeline import comando_correr
 from radar.recolectar import comando_recolectar
 from radar.resumir import comando_resumir
 from radar.sitio import comando_sitio
@@ -41,6 +42,7 @@ COMANDOS["probar-ia"] = comando_probar_ia
 COMANDOS["resumir"] = comando_resumir
 COMANDOS["brief"] = comando_brief
 COMANDOS["sitio"] = comando_sitio
+COMANDOS["correr"] = comando_correr
 
 
 def construir_parser() -> argparse.ArgumentParser:
@@ -68,6 +70,9 @@ def construir_parser() -> argparse.ArgumentParser:
         help="lo arma aunque sea antes de la hora del brief (o lo rehace si ya estaba)")
     sub.choices["sitio"].add_argument(
         "--revisar-links", action="store_true", help="además prueba que cada link a las fuentes responda")
+    sub.choices["correr"].add_argument(
+        "--forzar-brief", action="store_true",
+        help="arma el brief aunque sea antes de las 06:00 (o lo rehace si ya estaba); útil para probar en local")
     return parser
 
 
