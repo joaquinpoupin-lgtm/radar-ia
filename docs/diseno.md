@@ -154,6 +154,10 @@ Cómo trabaja `radar/recolectar.py`:
 
 - Repo público `joaquinpoupin-lgtm/radar-ia` (rama `main`), Pages con origen **GitHub Actions** (no una rama `gh-pages`): `https://joaquinpoupin-lgtm.github.io/radar-ia/`. Secrets `GEMINI_API_KEY` y `GROQ_API_KEY` ya guardados. Los commits usan el correo noreply de GitHub (también el robot del Paso 12 debe usar uno noreply).
 
-- `.github/workflows/radar.yml`: `schedule` con `cron: '30 0,6,12,18 * * *'` y `timezone: America/Santiago` (verificar la sintaxis contra la documentación oficial de GitHub al implementarlo) + `workflow_dispatch`.
-- `concurrency: radar` (nunca dos corridas a la vez). Pasos: checkout → Python 3.12 → instalar → `python -m radar correr` → commit de `data/` con el bot si hubo cambios → subir `_site/` con `actions/upload-pages-artifact` + `actions/deploy-pages`.
-- Secrets `GEMINI_API_KEY` y `GROQ_API_KEY` como variables de entorno del paso que corre el radar.
+- `.github/workflows/radar.yml`: `schedule` con `cron: '30 0,6,12,18 * * *'` y `timezone: "America/Santiago"` (sintaxis oficial de GitHub; minuto 30 porque a la hora en punto Actions se atrasa más) + `workflow_dispatch` (botón "Run workflow").
+- `concurrency: {group: radar, cancel-in-progress: false}`: nunca dos corridas a la vez; la siguiente espera.
+- Job `correr` (permiso `contents: write`): checkout → Python 3.12 (caché de pip) → `pip install -r requirements.txt` → `python -m radar correr` con `continue-on-error` → commit de `data/` como `github-actions[bot]` (correo noreply) solo si hubo cambios, con `git pull --rebase` antes del push → `upload-pages-artifact` con `_site/` si existe → si el radar falló, la corrida termina en rojo. Así un error no impide guardar lo ya hecho ni publicar el sitio.
+- Job `publicar` (permisos `pages: write`, `id-token: write`, entorno `github-pages`): `deploy-pages`; corre aunque `correr` termine en rojo.
+- Secrets `GEMINI_API_KEY` y `GROQ_API_KEY` solo como variables de entorno del paso que corre el radar (GitHub las tapa con `***` en el log). `tests/test_workflow.py` vigila horario, concurrencia, Secrets y correo noreply.
+- El robot también escribe `data/`: en el Mac, `git pull` antes de correr el radar en local.
+- GitHub desactiva los horarios de un repo público tras 60 días sin actividad (se reactivan a mano); los commits del robot deberían mantenerlo activo, a confirmar en el Paso 15.
