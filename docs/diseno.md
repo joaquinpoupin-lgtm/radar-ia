@@ -22,6 +22,7 @@ radar/
   almacen.py           data/AAAA-MM-DD.json, guardar corrida, brief   ← Paso 8
   sitio.py             genera _site/ desde data/ + templates/         ← Paso 9
   pipeline.py          orquesta la corrida completa                   ← Paso 10
+  simulacro.py         fallas a propósito para `correr --simular`     ← Paso 13
 data/
   AAAA-MM-DD.json      noticias publicadas de ese día (hora de Chile)
   cache/procesados.json  ids ya resumidos o descartados
@@ -160,4 +161,14 @@ Cómo trabaja `radar/recolectar.py`:
 - Job `publicar` (permisos `pages: write`, `id-token: write`, entorno `github-pages`): `deploy-pages`; corre aunque `correr` termine en rojo.
 - Secrets `GEMINI_API_KEY` y `GROQ_API_KEY` solo como variables de entorno del paso que corre el radar (GitHub las tapa con `***` en el log). `tests/test_workflow.py` vigila horario, concurrencia, Secrets y correo noreply.
 - El robot también escribe `data/`: en el Mac, `git pull` antes de correr el radar en local.
+- `workflow_dispatch` tiene la entrada `simular` (texto, vacía por defecto): llega al paso del radar como variable `SIMULAR` y el comando es `python -m radar correr ${SIMULAR:+--simular "$SIMULAR"}` (nunca `${{ inputs... }}` dentro de `run`, para que no se pueda inyectar otro comando). Los horarios no tienen entradas: siempre corren normal.
 - GitHub desactiva los horarios de un repo público tras 60 días sin actividad (se reactivan a mano); los commits del robot deberían mantenerlo activo, a confirmar en el Paso 15.
+
+## Simulacros de fallas (Paso 13)
+
+`radar/simulacro.py`: `python -m radar correr --simular FALLAS` (separadas por coma) provoca fallas a propósito solo en esa corrida; no toca `.env`, los Secrets ni `sources.yaml`. Los datos sí se guardan como en una corrida normal (de eso se trata: lo pendiente debe quedar y retomarse después).
+
+- `sin-clave-gemini`: deja `GEMINI_API_KEY` vacía en el proceso (vacía y no borrada, para que `cargar_env()` no la vuelva a leer del `.env`) → `pedir_json` pasa directo a Groq.
+- `cuota-gemini` / `cuota-todas`: el cliente de la IA usa `TransporteSinCuota`, que responde 429 a los servicios indicados (sin `Retry-After`, así se usa la espera creciente propia) y deja salir de verdad lo demás. Con `cuota-todas` lo elegido termina en `data/pendientes.json`.
+- `fuente-caida`: suma `FUENTE_CAIDA` (`https://fuente-caida.invalid/feed.xml`; el dominio `.invalid` está reservado y nunca existe).
+- La corrida imprime `SIMULACRO <nombre>: ...` al inicio y suma el aviso "simulacro activo" al resumen final. Un nombre desconocido termina con código 1 sin correr nada.
