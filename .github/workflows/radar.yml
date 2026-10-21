@@ -1,0 +1,88 @@
+# Corrida automática de Radar IA: recolecta, resume, guarda data/ y publica el sitio en GitHub Pages.
+# Horario en hora de Chile; la de 06:30 arma el brief del día (antes de las 7:00 aunque se atrase).
+name: Radar IA
+
+on:
+  schedule:
+    # Minuto 30 y no en punto: a la hora en punto GitHub está más cargado y atrasa o salta corridas.
+    - cron: '30 0,6,12,18 * * *'
+      timezone: "America/Santiago"
+  workflow_dispatch:  # botón "Run workflow" para lanzarlo a mano
+
+# Nunca dos corridas a la vez: si una está en marcha, la siguiente espera (no se cancela).
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write  # para guardar data/ con un commit del robot
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr el radar
+        id: radar
+        # Si falla, igual se guardan los datos y se publica el sitio; al final la corrida queda en rojo.
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python -m radar correr
+
+      - name: Guardar datos (commit del robot)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Sin cambios en data/: no hay nada que guardar."
+            exit 0
+          fi
+          git commit -m "Datos: corrida $(TZ=America/Santiago date '+%Y-%m-%d %H:%M') (hora de Chile)"
+          # Si alguien subió algo a main mientras corría, se pone encima antes de subir.
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Preparar el sitio para Pages
+        if: hashFiles('_site/index.html') != ''
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Marcar la corrida en rojo si el radar falló
+        if: steps.radar.outcome == 'failure'
+        run: |
+          echo "El radar terminó con errores: revisa el paso 'Correr el radar'."
+          exit 1
+
+  publicar:
+    needs: correr
+    # Se publica aunque el radar haya tenido errores, siempre que el sitio se haya armado.
+    if: ${{ !cancelled() && needs.correr.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5
