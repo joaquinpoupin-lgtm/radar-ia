@@ -41,13 +41,14 @@ def test_cliente_ia_solo_con_simulacro_de_cuota():
     assert cliente_ia(["cuota-todas"], CONFIG)._transport.hosts == {GEMINI, GROQ}
 
 
-def test_sin_clave_gemini_la_ignora_y_usa_groq(claves):
+def test_sin_clave_gemini_la_ignora_y_usa_groq(claves, capsys):
     aplicar(["sin-clave-gemini"], FUENTES)
     assert secreto("GEMINI_API_KEY") is None and secreto("GROQ_API_KEY")
     esperas = []
     with httpx.Client(transport=httpx.MockTransport(groq_ok)) as cliente:
         assert pedir_json("hola", CONFIG, cliente, dormir=esperas.append) == {"respuesta": "OK"}
     assert esperas == []  # sin clave no se reintenta: va directo al respaldo
+    assert "falta GEMINI_API_KEY; se usa el respaldo (groq)" in capsys.readouterr().out
 
 
 def test_cuota_gemini_reintenta_con_espera_y_pasa_a_groq(claves):

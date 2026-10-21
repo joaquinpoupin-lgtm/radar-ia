@@ -164,6 +164,8 @@ def pedir_json(prompt: str, config: dict, cliente: httpx.Client,
         clave = secreto(variable)
         if not clave:
             fallos.append(f"{proveedor}: falta {variable}")
+            if rol == "principal":
+                print(f"  IA: falta {variable}; se usa el respaldo ({ia['respaldo']['proveedor']})")
             continue
         respuestas_malas = 0
         for intento in range(ia["reintentos"]):
