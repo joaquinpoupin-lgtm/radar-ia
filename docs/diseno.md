@@ -26,7 +26,8 @@ data/
   AAAA-MM-DD.json      noticias publicadas de ese día (hora de Chile)
   cache/procesados.json  ids ya resumidos o descartados
   pendientes.json      grupos que la IA no pudo procesar (se reintentan)
-tests/                 sin red ni claves reales (fixtures en tests/fixtures/)
+tests/                 sin red ni claves reales (fixtures en tests/fixtures/);
+                       test_secretos.py vigila que ninguna clave se suba   ← Paso 11
 _site/                 sitio generado (ignorado por git; lo publica Actions)
 .github/workflows/radar.yml                                           ← Paso 12
 ```
@@ -149,7 +150,9 @@ Cómo trabaja `radar/recolectar.py`:
 - Sin noticias nuevas no se toca `data/` (no se crea un día vacío). `--forzar-brief` arma el brief aunque sea antes de las 06:00 (para probar en local; en Actions no se usa).
 - Imprime una sección por etapa con su duración y un resumen final (nuevas, pendientes, link al sitio, avisos, errores): queda legible en el log de Actions.
 
-## Automatización (Paso 12)
+## Automatización (Pasos 11-12)
+
+- Repo público `joaquinpoupin-lgtm/radar-ia` (rama `main`), Pages con origen **GitHub Actions** (no una rama `gh-pages`): `https://joaquinpoupin-lgtm.github.io/radar-ia/`. Secrets `GEMINI_API_KEY` y `GROQ_API_KEY` ya guardados. Los commits usan el correo noreply de GitHub (también el robot del Paso 12 debe usar uno noreply).
 
 - `.github/workflows/radar.yml`: `schedule` con `cron: '30 0,6,12,18 * * *'` y `timezone: America/Santiago` (verificar la sintaxis contra la documentación oficial de GitHub al implementarlo) + `workflow_dispatch`.
 - `concurrency: radar` (nunca dos corridas a la vez). Pasos: checkout → Python 3.12 → instalar → `python -m radar correr` → commit de `data/` con el bot si hubo cambios → subir `_site/` con `actions/upload-pages-artifact` + `actions/deploy-pages`.
