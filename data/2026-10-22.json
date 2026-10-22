@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-22",
- "actualizado": "2026-10-22T11:35:55-03:00",
+ "actualizado": "2026-10-22T16:20:35-03:00",
  "brief": {
   "lo_mas_importante": [
    "Anthropic presentó Claude Duet, una nueva aplicación con un asistente proactivo que monitorea tu correo y calendario para realizar tareas.",
@@ -229,6 +229,207 @@
     {
      "nombre": "TechCrunch (IA)",
      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "cc012b1e3b75",
+   "fecha": "2026-10-22",
+   "titulo": "Anthropic traspasa su estándar de habilidades para agentes a la Fundación AAIF",
+   "que_paso": "Anthropic donó Agent Skills, el estándar abierto para dar conocimientos especializados a agentes de inteligencia artificial, a la Fundación Agentic AI. Esta norma ya cuenta con la integración de más de 70 plataformas, incluyendo ChatGPT y Cursor.",
+   "por_que_importa": "Permite que diferentes herramientas de inteligencia artificial compartan un formato común para sus funciones y conocimientos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas de forma autónoma siguiendo tus instrucciones."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    },
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "b328ea6101eb",
+   "fecha": "2026-10-22",
+   "titulo": "Lanzan Omnara, una alternativa abierta para ejecutar agentes de inteligencia artificial",
+   "que_paso": "Un desarrollador presentó Omnara, una interfaz de programación abierta para crear y ejecutar agentes persistentes. El sistema maneja permisos, comandos y guarda el estado en una base de datos para que no se pierda al reiniciar.",
+   "por_que_importa": "Ofrece una opción libre para quienes quieren construir y mantener sus propios ayudantes virtuales automatizados.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "interfaz de programación",
+     "explicacion": "Un sistema que permite que distintas aplicaciones se comuniquen entre sí."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/omnara-ai/omnara"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "ba6fa07d677a",
+   "fecha": "2026-10-22",
+   "titulo": "Uber implementa ChatGPT Work para más de treinta mil empleados",
+   "que_paso": "La empresa Uber comenzó a integrar ChatGPT Work en las labores diarias de su personal. La herramienta se usará para investigar, analizar datos y elaborar presentaciones en equipos de trabajo.",
+   "por_que_importa": "Muestra cómo las grandes corporaciones están adoptando asistentes de inteligencia artificial para estandarizar las tareas de oficina.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/uber-chatgpt-work-rollout"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "17bd4145ec30",
+   "fecha": "2026-10-22",
+   "titulo": "Reason Network, un motor en GitHub para conectar agentes de programación",
+   "que_paso": "Un nuevo proyecto en GitHub llamado Reason Network permite que los agentes de programación de un equipo de trabajo conversen entre sí. Está desarrollado en el lenguaje de programación Rust y ya supera las mil estrellas.",
+   "por_que_importa": "Facilita que varias inteligencias artificiales colaboren de manera coordinada en tareas de desarrollo de software.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Rust",
+     "explicacion": "Un lenguaje de programación utilizado para crear software rápido y seguro."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/reason-machines/reason-network"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "fe52d49759b6",
+   "fecha": "2026-10-22",
+   "titulo": "1Password estrena un sistema para que los agentes inicien sesión sin ver las claves",
+   "que_paso": "La aplicación de seguridad 1Password creó una función que permite a los agentes de inteligencia artificial ingresar a cuentas personales sin revelar las credenciales privadas del usuario.",
+   "por_que_importa": "Protege los datos de acceso personales al permitir que los asistentes operen cuentas en tu nombre de forma segura.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "865ffb65f1d5",
+   "fecha": "2026-10-22",
+   "titulo": "Canva lanza su primer modelo propio de generación de imágenes",
+   "que_paso": "La plataforma Canva puso a disposición de todos sus usuarios un nuevo modelo de inteligencia artificial enfocado en crear imágenes. La herramienta promete un rendimiento más personalizable y costos más bajos.",
+   "por_que_importa": "Amplía las opciones creativas integradas directamente en las herramientas de diseño habituales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "513cd840eacd",
+   "fecha": "2026-10-22",
+   "titulo": "Bancos en Estados Unidos se preparan ante el uso de agentes de inteligencia artificial",
+   "que_paso": "Los agentes autónomos están comenzando a interactuar con cuentas bancarias en nombre de los usuarios. Diversas entidades financieras en Estados Unidos evalúan los riesgos de estas operaciones ante posibles errores.",
+   "por_que_importa": "Plantea nuevos desafíos de seguridad y control financiero a medida que las herramientas automatizadas manejan dinero real.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/agentes-ia-se-mueven-cuentas-bancarias-algunas-entidades-eeuu-se-preparan-para-peor"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "12d0b1a86546",
+   "fecha": "2026-10-22",
+   "titulo": "Spotify apuesta por adaptar su servicio para que sea elegido por los agentes de inteligencia artificial",
+   "que_paso": "El codirector ejecutivo de Spotify, Gustav Söderström, explicó la estrategia de la compañía ante el auge de los asistentes automatizados. La meta es asegurar que los agentes de software elijan su plataforma musical por encima de otras.",
+   "por_que_importa": "Ilustra cómo las empresas de contenido replantean sus plataformas para que sean utilizadas por programas autónomos y no solo por humanos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "74fcf21eca7a",
+   "fecha": "2026-10-22",
+   "titulo": "La publicidad en ChatGPT se expande a veintiséis nuevos países",
+   "que_paso": "OpenAI amplió su plataforma de anuncios en ChatGPT a 26 nuevos mercados. Más de cien mil anunciantes ya han utilizado el sistema para llegar a los usuarios mientras buscan qué comprar.",
+   "por_que_importa": "Modifica la forma en que las marcas se promocionan dentro de las conversaciones con los asistentes virtuales.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
     }
    ],
    "confirmacion": 1
