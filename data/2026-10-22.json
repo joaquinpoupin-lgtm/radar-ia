@@ -1,7 +1,25 @@
 {
  "fecha": "2026-10-22",
- "actualizado": "2026-10-22T05:49:04-03:00",
- "brief": null,
+ "actualizado": "2026-10-22T11:35:55-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Anthropic presentó Claude Duet, una nueva aplicación con un asistente proactivo que monitorea tu correo y calendario para realizar tareas.",
+   "Google DeepMind logró que cuatro agentes basados en Gemini 4 Argon terminaran el juego Minecraft en 27 horas sin ayuda humana.",
+   "OpenAI y Google Cloud anunciaron una alianza para ofrecer los modelos avanzados de OpenAI dentro de la plataforma empresarial de Google."
+  ],
+  "ids": [
+   "5dbb54a00540",
+   "15170329e0c0",
+   "61f4d0141ff3",
+   "1de8e62ff715",
+   "59f554d8046d",
+   "655df0fb22ac",
+   "b949a9351a02",
+   "9b35c0bfb2f0",
+   "b412447cbc10",
+   "8e16d6a95427"
+  ]
+ },
  "noticias": [
   {
    "id": "5dbb54a00540",
@@ -105,6 +123,115 @@
     }
    ],
    "confirmacion": 2
+  },
+  {
+   "id": "655df0fb22ac",
+   "fecha": "2026-10-22",
+   "titulo": "Google DeepMind lanza un mapa global de tipos de bosques",
+   "que_paso": "Google DeepMind creó un mapa global que clasifica cada sección de diez metros de tierra en la Tierra según su tipo de bosque.",
+   "por_que_importa": "Permite conocer con mayor detalle la distribución de los bosques a nivel mundial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b949a9351a02",
+   "fecha": "2026-10-22",
+   "titulo": "Renuncian empleados de Google por contratos militares de IA",
+   "que_paso": "Varios empleados actuales y exempleados de Google DeepMind renunciaron en protesta por el uso de inteligencia artificial en campos de batalla.",
+   "por_que_importa": "Muestra los conflictos internos en las empresas tecnológicas sobre el uso militar de sus sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.bbc.com/news/articles/cmreyvepnv0po"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "9b35c0bfb2f0",
+   "fecha": "2026-10-22",
+   "titulo": "IBM lanza Granite Speech 5.0 para procesar voz",
+   "que_paso": "IBM presentó un nuevo sistema para transcribir, traducir y atribuir voz de forma más rápida y precisa. Está disponible en Hugging Face.",
+   "por_que_importa": "Ofrece una opción mejorada para trabajar con archivos de audio y traducciones automáticas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b412447cbc10",
+   "fecha": "2026-10-22",
+   "titulo": "Herramienta de código abierto crea videos comerciales con agentes",
+   "que_paso": "Un nuevo proyecto en GitHub permite que un agente de software cree videos promocionales comerciales y componga música. Los usuarios pueden modificar detalles específicos señalando la pantalla.",
+   "por_que_importa": "Facilita la creación automática de material audiovisual para proyectos o empresas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "programa de inteligencia artificial diseñado para realizar tareas de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/alchaincyf/huashu-motion"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "8e16d6a95427",
+   "fecha": "2026-10-22",
+   "titulo": "Anthropic lanza la lista de espera para la app Claude Duet",
+   "que_paso": "Anthropic presentó Claude Duet, una nueva aplicación centrada en agentes autónomos. Por ahora funciona mediante una lista de espera para los planes Pro y Max.",
+   "por_que_importa": "Representa la apuesta de la empresa por asistentes que ejecutan tareas de manera independiente.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "programas de inteligencia artificial que pueden completar tareas por su cuenta."
+    }
+   ],
+   "etiquetas": [
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+    }
+   ],
+   "confirmacion": 1
   }
  ]
 }
