@@ -1,0 +1,110 @@
+{
+ "fecha": "2026-10-22",
+ "actualizado": "2026-10-22T05:49:04-03:00",
+ "brief": null,
+ "noticias": [
+  {
+   "id": "5dbb54a00540",
+   "fecha": "2026-10-22",
+   "titulo": "Anthropic lanza Claude Duet, un agente de inteligencia artificial proactivo",
+   "que_paso": "Anthropic presentó Claude Duet, una nueva aplicación que funciona como un asistente proactivo. Monitorea tu correo y calendario, realiza tareas complejas y te avisa cuando te necesita.",
+   "por_que_importa": "Podrás delegar la gestión de tu bandeja de entrada y tareas repetitivas en una inteligencia artificial que trabaja por ti.",
+   "seccion": "herramientas",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "de pago",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://claude.com/product/claude-duet"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://claude.com/resources/articles/claude-duet"
+    },
+    {
+     "nombre": "Product Hunt (IA)",
+     "url": "https://www.producthunt.com/products/claude"
+    }
+   ],
+   "confirmacion": 3
+  },
+  {
+   "id": "61f4d0141ff3",
+   "fecha": "2026-10-22",
+   "titulo": "Modelos de OpenAI llegan a Google Cloud",
+   "que_paso": "OpenAI y Google Cloud anunciaron una alianza para llevar los modelos avanzados de OpenAI a la plataforma de Google Cloud. Estarán disponibles próximamente a través del mercado de Google.",
+   "por_que_importa": "Facilita el acceso a las herramientas de OpenAI para quienes ya utilizan la infraestructura y servicios empresariales de Google.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/openai-models-google-cloud"
+    },
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/"
+    }
+   ],
+   "confirmacion": 3
+  },
+  {
+   "id": "1de8e62ff715",
+   "fecha": "2026-10-22",
+   "titulo": "Utilizan agentes de inteligencia artificial para analizar datos biológicos",
+   "que_paso": "OpenAI, PerturbAI y Scripps Research usaron múltiples agentes de inteligencia artificial distribuidos. Lograron descubrir nuevas pistas de investigación en datos de millones de células cerebrales.",
+   "por_que_importa": "Muestra cómo el uso de múltiples inteligencias artificiales conectadas puede acelerar descubrimientos complejos en la ciencia.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de tomar decisiones y realizar tareas de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "59f554d8046d",
+   "fecha": "2026-10-22",
+   "titulo": "Lanzan Recursive Flint, un modelo de inteligencia artificial enfocado en programación",
+   "que_paso": "Presentaron Flint, un modelo de lenguaje de código abierto diseñado para investigar bases de código y corregir errores. Funciona con unos 2.500 millones de parámetros activos y permite procesar textos largos.",
+   "por_que_importa": "Ofrece una alternativa eficiente para programadores que buscan ayuda con código usando menos recursos de hardware.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "parámetros",
+     "explicacion": "Valores internos que un modelo de inteligencia artificial ajusta para aprender y generar respuestas."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://huggingface.co/RecursiveSI/flint"
+    }
+   ],
+   "confirmacion": 2
+  }
+ ]
+}
