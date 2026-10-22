@@ -19,7 +19,7 @@
 {% endfor %}
 {% else %}
 <h1>Brief del día</h1>
-<p class="aviso">Todavía no hay brief. Se arma en la primera corrida después de las 06:00 (hora de Chile).</p>
+<p class="aviso">Todavía no hay brief. Se arma en la primera corrida del día (hora de Chile).</p>
 {% endif %}
 {% if p.hoy_fuera %}
 <p class="mas"><a href="archivo/{{ p.hoy }}.html">Hoy hay {{ p.hoy_fuera }} noticia{{ "s" if p.hoy_fuera > 1 }} más fuera del brief →</a></p>

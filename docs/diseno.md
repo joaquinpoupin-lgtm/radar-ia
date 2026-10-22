@@ -160,7 +160,7 @@ Cómo trabaja `radar/recolectar.py`:
 - Tres etapas en orden: **Noticias** (recolectar → agrupar → sumar pendientes → pre-filtro → `resumir` → `guardar_corrida`), **Brief** (`actualizar_brief` + `problemas_dia`; el día se reescribe solo si el brief cambió) y **Sitio** (`generar_sitio` + links internos). Un solo cliente HTTP para la IA en toda la corrida.
 - Cada etapa va envuelta: si explota por algo inesperado, se imprime el detalle técnico, se anota el error y se sigue; el sitio se genera igual con lo ya guardado.
 - **Código de salida** (Actions lo usa para marcar verde/rojo): 0 si todo anduvo, aunque haya **avisos** esperables (fuentes caídas, IA sin cuota → pendientes, brief sin bullets). 1 si hubo **errores**: una etapa explotó, no se pudo leer *ninguna* fuente, la revisión del día encontró problemas o hay links internos rotos.
-- Sin noticias nuevas no se toca `data/` (no se crea un día vacío). `--forzar-brief` arma el brief aunque sea antes de las 06:00 (para probar en local; en Actions no se usa).
+- Sin noticias nuevas no se toca `data/` (no se crea un día vacío). `--forzar-brief` arma el brief aunque sea antes de `brief.hora_desde` o lo rehace (para probar en local; en Actions no se usa).
 - Imprime una sección por etapa con su duración y un resumen final (nuevas, pendientes, link al sitio, avisos, errores): queda legible en el log de Actions.
 
 ## Automatización (Pasos 11-12)

@@ -25,7 +25,7 @@ cache:
   dias: 30                 # las entradas de procesados.json más viejas que esto se borran
 
 brief:
-  hora_desde: "06:00"      # la primera corrida del día después de esta hora arma el brief
+  hora_desde: "00:00"      # la primera corrida del día después de esta hora arma el brief (00:00: el cron de GitHub se atrasa horas)
 
 sitio:
   dias_secciones: 7        # la página Secciones muestra las noticias de los últimos N días

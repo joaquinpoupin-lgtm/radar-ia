@@ -90,6 +90,7 @@ fuentes (sources.yaml)
 - [ ] **Paso 15 — Observación de 3 días**
   Dejarlo correr solo y revisar los criterios de éxito del brief (sección 9): corre solo, brief cada mañana legible en ~3 min, resúmenes claros, links funcionando, $0, sin roturas.
   **Verificación:** todos los criterios en OK → **MVP terminado** → recién ahí, Fase 2.
+  - *Día 1 (revisado 2026-10-22 ~12:00):* 5 corridas automáticas, todas en verde y sin intervención; sitio en línea (portada, secciones y archivo 200); 38 links a fuentes: 33 OK, 5 avisos (openai.com y reuters.com bloquean programas) y 0 rotos; las 30 fuentes en OK (YouTube volvió). **Problema:** el cron de GitHub llega con 2,5–5 h de atraso (06:30 → 11:34/11:35, 12:30 → 16:26, 18:30 → 21:05, 00:30 → 05:48), así que el brief de hoy se armó a las 11:35 y no antes de las 7:00. Las corridas del 21 no resumieron nada porque el tope de 25 ya estaba lleno por las pruebas del Paso 13 (esperado). Falta: que el usuario lea el brief y diga si se entiende. **Decisión (con el usuario):** `brief.hora_desde` pasa de 06:00 a 00:00, así que la primera corrida del día (la de 00:30, que hoy llegó a las 05:48) arma el brief; las noticias de la mañana entran al brief del día siguiente. 152 tests en verde (los de la hora de corte ahora la fijan en 06:00 por su cuenta).
 
 ## Pendientes sueltos (fuera de los pasos)
 

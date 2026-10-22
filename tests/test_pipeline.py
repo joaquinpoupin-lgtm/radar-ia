@@ -12,6 +12,7 @@ from radar.ia import IANoDisponible
 from radar.pipeline import correr, texto_final
 
 CONFIG = cargar_config()
+CONFIG["brief"]["hora_desde"] = "06:00"  # fija la hora para probar el corte, aunque config.yaml use otra
 MANANA = datetime(2026, 10, 21, 9, 31, tzinfo=timezone.utc)  # 06:31 en Chile: toca el brief
 MADRUGADA = datetime(2026, 10, 21, 3, 31, tzinfo=timezone.utc)  # 00:31 en Chile
 HOY = "2026-10-21"

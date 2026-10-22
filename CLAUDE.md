@@ -46,7 +46,7 @@ python -m pytest -q                       # tests
 | Lenguaje | Python 3.12+ | `feedparser`, scripts legibles, un solo lenguaje para todo |
 | Web | HTML + CSS + JS mínimo generado con Jinja2 | Sin Node ni build; mobile-first |
 | Repo / hosting | Repo **público** + **GitHub Pages** | Pages gratis solo en repos públicos; Actions ilimitado |
-| Automatización | GitHub Actions, cron 00:30 / 06:30 / 12:30 / 18:30 `America/Santiago` | La de 06:30 arma el brief antes de las 7:00 aunque el cron se atrase |
+| Automatización | GitHub Actions, cron 00:30 / 06:30 / 12:30 / 18:30 `America/Santiago` | La primera del día (00:30) arma el brief: el cron de GitHub llega con horas de atraso (Paso 15) |
 | IA | Gemini (Flash-Lite) principal, Groq respaldo; llamadas HTTP directas con `httpx` | Ambos gratis sin tarjeta; nombres de modelo en config, no en código |
 | Datos | JSON en el repo (`data/`) | Cero infraestructura |
 | YouTube (MVP) | Resumen desde título + descripción del RSS | Transcripciones se evalúan en Fase 2 |

@@ -16,6 +16,7 @@ from radar.recolectar import Candidato
 from radar.resumir import Resultado
 
 CONFIG = cargar_config()
+CONFIG["brief"]["hora_desde"] = "06:00"  # fija la hora para probar el corte, aunque config.yaml use otra
 # 06:31 en Chile (UTC-3 en octubre): hora de armar el brief.
 MANANA = datetime(2026, 10, 21, 9, 31, tzinfo=timezone.utc)
 MADRUGADA = datetime(2026, 10, 21, 3, 31, tzinfo=timezone.utc)  # 00:31 en Chile
@@ -98,6 +99,11 @@ def test_el_brief_toca_desde_la_hora_configurada_y_una_sola_vez():
     assert not toca_brief(dia_vacio(HOY), MADRUGADA, CONFIG)
     assert toca_brief(dia_vacio(HOY), MANANA, CONFIG)
     assert not toca_brief(dia_con(HOY, [], {"lo_mas_importante": [], "ids": ["a"]}), MANANA, CONFIG)
+
+
+def test_con_config_yaml_la_primera_corrida_del_dia_arma_el_brief():
+    # hora_desde 00:00: el cron de GitHub llega con horas de atraso (Paso 15)
+    assert toca_brief(dia_vacio(HOY), MADRUGADA, cargar_config())
 
 
 def test_candidatas_hoy_mas_las_de_ayer_que_no_entraron_en_el_brief_de_ayer():

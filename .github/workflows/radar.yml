@@ -1,5 +1,5 @@
 # Corrida automática de Radar IA: recolecta, resume, guarda data/ y publica el sitio en GitHub Pages.
-# Horario en hora de Chile; la de 06:30 arma el brief del día (antes de las 7:00 aunque se atrase).
+# Horario en hora de Chile; la primera del día (00:30) arma el brief, así sale antes de la mañana aunque se atrase horas.
 name: Radar IA
 
 on:

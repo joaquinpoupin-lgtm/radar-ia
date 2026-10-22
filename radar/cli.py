@@ -73,7 +73,7 @@ def construir_parser() -> argparse.ArgumentParser:
         "--revisar-links", action="store_true", help="además prueba que cada link a las fuentes responda")
     sub.choices["correr"].add_argument(
         "--forzar-brief", action="store_true",
-        help="arma el brief aunque sea antes de las 06:00 (o lo rehace si ya estaba); útil para probar en local")
+        help="arma el brief aunque no sea la hora (o lo rehace si ya estaba); útil para probar en local")
     sub.choices["correr"].add_argument(
         "--simular", metavar="FALLAS",
         help="provoca fallas a propósito para probar (separadas por coma): " + ", ".join(SIMULACROS))
