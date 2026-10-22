@@ -6,6 +6,12 @@
       "runtimeExecutable": ".venv/bin/python",
       "runtimeArgs": ["-m", "http.server", "8000", "--directory", "_site", "--bind", "127.0.0.1"],
       "port": 8000
+    },
+    {
+      "name": "sitio-windows",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
+      "runtimeArgs": ["-m", "http.server", "8001", "--directory", "_site", "--bind", "127.0.0.1"],
+      "port": 8001
     }
   ]
 }
