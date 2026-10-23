@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-23",
- "actualizado": "2026-10-23T11:20:33-03:00",
+ "actualizado": "2026-10-23T16:25:49-03:00",
  "brief": {
   "lo_mas_importante": [
    "Investigadores del MIT dejaron trece inteligencias artificiales en una isla virtual sin tareas, y los sistemas terminaron inventando juegos y mejorando su desempeño.",
@@ -550,6 +550,32 @@
     {
      "nombre": "Hacker News",
      "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "48e2274fdf2b",
+   "fecha": "2026-10-23",
+   "titulo": "OpenAI mejora la seguridad al entrenar modelos avanzados",
+   "que_paso": "OpenAI reforzó los sistemas para proteger el entrenamiento de sus modelos de IA más avanzados. La empresa implementó entornos sin conexión a internet y pruebas de seguridad más estrictas.",
+   "por_que_importa": "Muestra las medidas técnicas que usan las grandes empresas para evitar filtraciones y riesgos al desarrollar IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos avanzados",
+     "explicacion": "Sistemas de inteligencia artificial de última generación y alta capacidad."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/securing-our-frontier-model-training-environment"
     }
    ],
    "confirmacion": 1
