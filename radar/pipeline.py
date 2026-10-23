@@ -72,6 +72,9 @@ def correr(config: dict, ahora: datetime, fuentes: list[Fuente], datos: Path = C
         for i in caidas:
             corrida.avisos.append(f"fuente {i.nombre}: {i.error}")
             print(f"   ! {i.nombre}: {i.error}")
+        por_canal = [i.nombre for i in recoleccion.informes if i.desde_canal]
+        if por_canal:
+            print(f"   YouTube sin RSS, leído desde la página del canal: {', '.join(por_canal)}")
         if fuentes and len(caidas) == len(fuentes):
             corrida.errores.append("no se pudo leer ninguna fuente (¿sin internet?)")
 

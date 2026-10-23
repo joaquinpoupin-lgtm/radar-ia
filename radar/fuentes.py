@@ -1,10 +1,12 @@
 """Lectura de sources.yaml y comando `fuentes`, que prueba cada fuente."""
 
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 from zoneinfo import ZoneInfo
 
 import feedparser
@@ -198,24 +200,93 @@ def descargar(url: str, cliente: httpx.Client) -> httpx.Response:
     return respuesta
 
 
+# --- YouTube: respaldo cuando el RSS está caído ---
+# Desde fines de 2025 los feeds de YouTube responden 404/500 a ratos (sobre todo a servidores en la nube),
+# mientras la página de videos del canal sigue abriendo. Esa página no trae la fecha exacta, sino
+# "3 days ago" / "hace 3 días", así que la fecha de esos videos es aproximada. Se pide en el idioma del
+# canal (`hl`) porque en otro idioma YouTube muestra los títulos traducidos.
+
+URL_CANAL_YOUTUBE = "https://www.youtube.com/channel/{}/videos?hl={}"
+HACE = re.compile(r"(\d+)\s+(second|minute|hour|day|week|month|year)s?\s+ago"
+                  r"|hace\s+(\d+)\s+(segundo|minuto|hora|día|semana|mes|año)", re.I)
+SEGUNDOS = {"second": 1, "minute": 60, "hour": 3600, "day": 86400, "week": 7 * 86400,
+            "month": 30 * 86400, "year": 365 * 86400,
+            "segundo": 1, "minuto": 60, "hora": 3600, "día": 86400, "semana": 7 * 86400,
+            "mes": 30 * 86400, "año": 365 * 86400}
+
+
+def _buscar(nodo, clave: str):
+    """Todos los valores de `clave` en cualquier nivel de un JSON."""
+    if isinstance(nodo, dict):
+        if clave in nodo:
+            yield nodo[clave]
+        for valor in nodo.values():
+            yield from _buscar(valor, clave)
+    elif isinstance(nodo, list):
+        for valor in nodo:
+            yield from _buscar(valor, clave)
+
+
+def videos_canal(pagina: str, ahora: datetime) -> list[dict]:
+    """Página de videos de un canal de YouTube → [{"id", "titulo", "fecha"}]. Lanza ValueError si no sirve."""
+    m = re.search(r"var ytInitialData = (\{.*?\});</script>", pagina, re.S)
+    try:
+        datos = json.loads(m.group(1)) if m else None
+    except json.JSONDecodeError:
+        datos = None
+    if datos is None:
+        raise ValueError("la página del canal no trae la lista de videos")
+    videos = []
+    for video in _buscar(datos, "lockupViewModel"):
+        if video.get("contentType") != "LOCKUP_CONTENT_TYPE_VIDEO" or not video.get("contentId"):
+            continue
+        meta = video.get("metadata", {}).get("lockupMetadataViewModel", {})
+        titulo = re.sub(r"\s+", " ", meta.get("title", {}).get("content", "")).strip()
+        filas = meta.get("metadata", {}).get("contentMetadataViewModel", {}).get("metadataRows", [])
+        textos = [p.get("accessibilityLabel") or p.get("text", {}).get("content", "")
+                  for fila in filas for p in fila.get("metadataParts", [])]
+        hace = next((h for h in map(HACE.search, textos) if h), None)
+        if titulo and hace:  # sin "hace X" (p. ej. un estreno programado) no se sabe si es reciente
+            cantidad, unidad = (hace[1], hace[2]) if hace[1] else (hace[3], hace[4])
+            fecha = ahora - timedelta(seconds=int(cantidad) * SEGUNDOS[unidad.lower()])
+            videos.append({"id": video["contentId"], "titulo": titulo, "fecha": fecha})
+    return videos
+
+
+def leer_canal_youtube(fuente: Fuente, cliente: httpx.Client, ahora: datetime) -> list[dict]:
+    """Videos del canal leídos desde su página (ver `videos_canal`). Lanza ErrorDescarga con un motivo legible."""
+    canal = parse_qs(urlparse(fuente.url).query).get("channel_id")
+    if not canal:
+        raise ErrorDescarga("la URL no trae channel_id")
+    respuesta = descargar(URL_CANAL_YOUTUBE.format(canal[0], fuente.idioma), cliente)
+    try:
+        return videos_canal(respuesta.text, ahora)
+    except ValueError as e:
+        raise ErrorDescarga(str(e))
+
+
 def probar_fuente(fuente: Fuente, cliente: httpx.Client, ahora: datetime, dias_aviso: int,
                   url: str | None = None) -> Resultado:
     """Descarga la fuente (o `url`, si ya trae la fecha puesta) y dice si funciona. Nunca lanza excepciones."""
+    nota = ""
     try:
-        respuesta = descargar(url or fuente.url, cliente)
-    except ErrorDescarga as e:
-        return Resultado(fuente, "ERROR", detalle=str(e))
-
-    try:
-        items, ultima = _leer(fuente, respuesta)
-    except ValueError as e:
-        return Resultado(fuente, "ERROR", detalle=str(e))
+        items, ultima = _leer(fuente, descargar(url or fuente.url, cliente))
+    except (ErrorDescarga, ValueError) as e:
+        if fuente.tipo != "youtube":
+            return Resultado(fuente, "ERROR", detalle=str(e))
+        try:
+            videos = leer_canal_youtube(fuente, cliente, ahora)
+        except ErrorDescarga as e2:
+            return Resultado(fuente, "ERROR", detalle=f"RSS: {e} · página del canal: {e2}")
+        items, ultima = len(videos), max((v["fecha"] for v in videos), default=None)
+        nota = f"RSS caído ({e}); se leyó la página del canal"
 
     if items == 0:
         return Resultado(fuente, "AVISO", detalle="responde, pero no trae publicaciones")
     if ultima and (ahora - ultima).days > dias_aviso:
-        return Resultado(fuente, "AVISO", items, ultima, f"sin novedades hace {(ahora - ultima).days} días")
-    return Resultado(fuente, "OK", items, ultima)
+        detalle = f"sin novedades hace {(ahora - ultima).days} días" + (f" · {nota}" if nota else "")
+        return Resultado(fuente, "AVISO", items, ultima, detalle)
+    return Resultado(fuente, "OK", items, ultima, nota)
 
 
 def probar_todas(fuentes: list[Fuente], config: dict, ahora: datetime | None = None,

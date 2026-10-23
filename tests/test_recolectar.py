@@ -56,6 +56,31 @@ def test_youtube_usa_la_descripcion_sin_links():
     assert "lo comparo con el anterior" in c.extracto and "https://" not in c.extracto
 
 
+def test_youtube_sin_rss_lee_el_canal_y_la_descripcion_de_cada_video():
+    canal = fuente("Canal", "youtube", "https://www.youtube.com/feeds/videos.xml?channel_id=UCabc", "creadores")
+    pedidos = []
+
+    def responder(pedido):
+        url = str(pedido.url)
+        pedidos.append(url)
+        if "feeds/videos.xml" in url:
+            return httpx.Response(500)
+        if "/channel/UCabc/videos" in url:
+            return httpx.Response(200, content=(FIXTURES / "youtube_canal.html").read_bytes())
+        if url.startswith("https://www.youtube.com/watch?v=nuevo1"):
+            return httpx.Response(200, text='{"shortDescription":"Pruebo el modelo \\"nuevo\\" paso a paso.'
+                                            '\\nLink: https://promo.com/x"}')
+        return httpx.Response(404)
+
+    r = recolectar([canal], CONFIG, AHORA, httpx.Client(transport=httpx.MockTransport(responder)))
+    assert [(c.titulo, c.url) for c in r.candidatos] == [("Probé el nuevo modelo de video",
+                                                          "https://www.youtube.com/watch?v=nuevo1")]  # el viejo no
+    assert r.candidatos[0].extracto == 'Pruebo el modelo "nuevo" paso a paso. Link:'
+    assert r.informes[0].desde_canal and not r.informes[0].error
+    assert "https://www.youtube.com/watch?v=viejo2&hl=en" not in pedidos  # del video viejo no se pide nada
+    assert "RSS caído: leído desde la página del canal" in tabla(r)
+
+
 def test_reddit_usa_el_link_externo_y_el_texto_del_post():
     externo, propio, video = candidatos_feed(fuente(), (FIXTURES / "reddit_ejemplo.xml").read_bytes(), 500)
     assert externo.url == "https://blog.ejemplo.com/modelo-abierto?utm_source=reddit"

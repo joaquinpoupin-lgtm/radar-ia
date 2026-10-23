@@ -5,7 +5,7 @@ import httpx
 import pytest
 
 from radar.config import cargar_config
-from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes, probar_fuente, probar_todas, tabla
+from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes, probar_fuente, probar_todas, tabla, videos_canal
 
 FIXTURES = Path(__file__).parent / "fixtures"
 AHORA = datetime(2026, 10, 20, 15, 0, tzinfo=timezone.utc)
@@ -92,6 +92,42 @@ def test_sin_conexion_no_lanza_excepcion():
 
     r = probar_fuente(RSS, httpx.Client(transport=httpx.MockTransport(caida)), AHORA, 90)
     assert r.estado == "ERROR" and "conexión" in r.detalle
+
+
+YT = Fuente("Canal", "youtube", "https://www.youtube.com/feeds/videos.xml?channel_id=UCabc", "creadores", "es", 2)
+
+
+def test_pagina_del_canal_de_youtube_da_videos_con_fecha_aproximada():
+    videos = videos_canal((FIXTURES / "youtube_canal.html").read_text(encoding="utf-8"), AHORA)
+    # El estreno programado (sin "hace X") y la lista de reproducción no cuentan.
+    assert [(v["id"], v["titulo"]) for v in videos] == [("nuevo1", "Probé el nuevo modelo de video"),
+                                                        ("viejo2", "Un video de hace tiempo")]
+    assert [(AHORA - v["fecha"]).days for v in videos] == [2, 21]
+    ingles = ('<script>var ytInitialData = {"lockupViewModel":{"contentId":"x","contentType":'
+              '"LOCKUP_CONTENT_TYPE_VIDEO","metadata":{"lockupMetadataViewModel":{"title":{"content":"T"},'
+              '"metadata":{"contentMetadataViewModel":{"metadataRows":[{"metadataParts":[{"text":{"content":"5h ago"},'
+              '"accessibilityLabel":"5 hours ago"}]}]}}}}}};</script>')
+    assert (AHORA - videos_canal(ingles, AHORA)[0]["fecha"]).total_seconds() == 5 * 3600
+    with pytest.raises(ValueError):
+        videos_canal("<html>otra cosa</html>", AHORA)
+
+
+def test_youtube_sin_rss_se_lee_desde_la_pagina_del_canal():
+    pagina = (FIXTURES / "youtube_canal.html").read_bytes()
+    pedidos = []
+
+    def responder(pedido):
+        pedidos.append(str(pedido.url))
+        if "feeds/videos.xml" in str(pedido.url):
+            return httpx.Response(404)
+        return httpx.Response(200, content=pagina)
+
+    r = probar_fuente(YT, httpx.Client(transport=httpx.MockTransport(responder)), AHORA, 90)
+    assert (r.estado, r.items) == ("OK", 2) and "se leyó la página del canal" in r.detalle
+    assert pedidos[1] == "https://www.youtube.com/channel/UCabc/videos?hl=es"  # en el idioma del canal
+
+    r = probar_fuente(YT, cliente_falso(status=404), AHORA, 90)  # también falla la página
+    assert r.estado == "ERROR" and r.detalle.startswith("RSS: HTTP 404") and "página del canal: HTTP 404" in r.detalle
 
 
 def test_hacker_news():

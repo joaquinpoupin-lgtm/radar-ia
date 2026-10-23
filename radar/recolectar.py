@@ -1,6 +1,7 @@
 """Recolector: lee todas las fuentes y las convierte a un formato común (Candidato)."""
 
 import html
+import json
 import re
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
@@ -16,7 +17,7 @@ import httpx
 from radar.agrupar import agrupar, resumen_agrupacion
 from radar.config import cargar_config
 from radar.fuentes import (TIPOS_JSON, ErrorDescarga, ErrorFuentes, Fuente, cargar_fuentes, crear_cliente,
-                           descargar, fecha_entrada, fecha_item_json, items_json, url_real)
+                           descargar, fecha_entrada, fecha_item_json, items_json, leer_canal_youtube, url_real)
 
 # Extractos más cortos que esto (p. ej. "TBD") no sirven: se busca la descripción de la página.
 MIN_EXTRACTO = 40
@@ -27,6 +28,9 @@ URL_HN = "https://news.ycombinator.com/item?id={}"
 URL_HF_MODELO = "https://huggingface.co/{}"
 URL_HF_README = "https://huggingface.co/{}/raw/main/README.md"
 URL_ARXIV = "https://arxiv.org/abs/{}"
+URL_VIDEO_YOUTUBE = "https://www.youtube.com/watch?v={}"
+# En la página de un video, la descripción (la misma que trae el RSS) va como texto JSON.
+DESCRIPCION_VIDEO = re.compile(r'"shortDescription":"((?:[^"\\]|\\.)*)"')
 # Del README de un modelo solo se lee el comienzo: el párrafo que lo presenta está arriba.
 MAX_BYTES_README = 60_000
 # Encabezados del README desde donde ya no se busca la presentación del modelo.
@@ -61,6 +65,7 @@ class InformeFuente:
     candidatos: int = 0
     con_descripcion_pagina: int = 0  # extractos sacados de og:description
     error: str = ""
+    desde_canal: bool = False  # YouTube: el RSS falló y se leyó la página del canal
 
 
 @dataclass
@@ -166,6 +171,40 @@ def candidatos_feed(fuente: Fuente, contenido: bytes, largo: int) -> list[Candid
             extracto = limpiar_texto(e.content[0].get("value", ""), largo)
         salida.append(_base(fuente, titulo=titulo, url=url, fecha=fecha_entrada(e), extracto=extracto))
     return salida
+
+
+def descripcion_video(url: str, cliente: httpx.Client) -> str | None:
+    """Descripción de un video de YouTube leída de su página. Nunca lanza."""
+    try:
+        r = cliente.get(url)
+        m = DESCRIPCION_VIDEO.search(r.text) if r.status_code == 200 else None
+        return json.loads(f'"{m.group(1)}"') if m else None
+    except Exception:  # una página rara nunca debe romper la recolección
+        return None
+
+
+def candidatos_youtube(fuente: Fuente, url: str, cliente: httpx.Client, ahora: datetime, desde: datetime,
+                       largo: int) -> tuple[list[Candidato], bool]:
+    """RSS del canal → candidatos; si YouTube lo tiene caído, la página del canal (ver `leer_canal_youtube`).
+
+    Devuelve (candidatos, si se usó la página del canal). Lanza ErrorDescarga si fallan los dos.
+    """
+    try:
+        return candidatos_feed(fuente, descargar(url, cliente).content, largo), False
+    except ErrorDescarga as e:
+        try:
+            videos = leer_canal_youtube(fuente, cliente, ahora)
+        except ErrorDescarga as e2:
+            raise ErrorDescarga(f"RSS: {e} · página del canal: {e2}")
+    salida = []
+    for v in videos:
+        if v["fecha"] < desde:
+            continue  # la descripción solo se busca para los recientes: cada página de video pesa ~1 MB
+        enlace = URL_VIDEO_YOUTUBE.format(v["id"])
+        descripcion = descripcion_video(f"{enlace}&hl={fuente.idioma}", cliente)  # hl: sin traducir
+        salida.append(_base(fuente, titulo=v["titulo"], url=enlace, fecha=v["fecha"],
+                            extracto=limpiar_texto(descripcion or "", largo)))
+    return salida, True
 
 
 def patron_ia(palabras: list[str]) -> re.Pattern:
@@ -309,9 +348,12 @@ def _leer_fuente(fuente: Fuente, cliente: httpx.Client, config: dict, patron: re
     largo = rec["largo_extracto"]
     desde = ahora - timedelta(days=config["limites"]["dias_antiguedad_max"])
     desde_tendencias = ahora - timedelta(days=rec["dias_tendencias"])
+    url = url_real(fuente, ahora, config)
     try:
-        respuesta = descargar(url_real(fuente, ahora, config), cliente)
-        if fuente.tipo in TIPOS_JSON:
+        if fuente.tipo == "youtube":
+            candidatos, informe.desde_canal = candidatos_youtube(fuente, url, cliente, ahora, desde, largo)
+        elif fuente.tipo in TIPOS_JSON:
+            respuesta = descargar(url, cliente)
             try:
                 datos = respuesta.json()
                 items = items_json(fuente.tipo, datos)
@@ -326,7 +368,7 @@ def _leer_fuente(fuente: Fuente, cliente: httpx.Client, config: dict, patron: re
             else:
                 candidatos = candidatos_papers(fuente, items, rec["papers_votos_min"], largo)
         else:
-            candidatos = candidatos_feed(fuente, respuesta.content, largo)
+            candidatos = candidatos_feed(fuente, descargar(url, cliente).content, largo)
     except ErrorDescarga as e:
         informe.error = str(e)
         return [], informe
@@ -383,6 +425,8 @@ def tabla(recoleccion: Recoleccion) -> str:
     for i in recoleccion.informes:
         if i.error:
             detalle = f"ERROR: {i.error}"
+        elif i.desde_canal:
+            detalle = "RSS caído: leído desde la página del canal"
         elif i.con_descripcion_pagina:
             detalle = f"{i.con_descripcion_pagina} con extracto tomado de la página"
         else:
