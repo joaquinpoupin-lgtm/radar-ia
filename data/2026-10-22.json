@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-22",
- "actualizado": "2026-10-22T16:20:35-03:00",
+ "actualizado": "2026-10-22T21:03:39-03:00",
  "brief": {
   "lo_mas_importante": [
    "Anthropic presentó Claude Duet, una nueva aplicación con un asistente proactivo que monitorea tu correo y calendario para realizar tareas.",
@@ -430,6 +430,96 @@
     {
      "nombre": "OpenAI",
      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "374db3b9194f",
+   "fecha": "2026-10-22",
+   "titulo": "Doce modelos de inteligencia artificial coinciden en una opinión sobre los humanos",
+   "que_paso": "Un usuario de Reddit preguntó a 12 modelos de IA cuál era su opinión más polémica sobre los humanos. La gran mayoría respondió que las personas se preocupan más por pertenecer a un grupo que por saber la verdad.",
+   "por_que_importa": "Muestra qué patrones de comportamiento humano detectan los sistemas actuales al ser consultados en profundidad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "4dcdb9557827",
+   "fecha": "2026-10-22",
+   "titulo": "OpenShell: un entorno seguro y privado para ejecutar agentes autónomos",
+   "que_paso": "NVIDIA liberó OpenShell, un sistema diseñado para que los programas de IA que actúan por sí solos operen de forma segura y privada. El proyecto está disponible en GitHub.",
+   "por_que_importa": "Permite gestionar asistentes automatizados con mayores resguardos de seguridad.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes autónomos",
+     "explicacion": "Programas de inteligencia artificial que pueden realizar tareas complejas por sí solos sin que tengas que guiarlos paso a paso."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/NVIDIA/OpenShell"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "27825e300358",
+   "fecha": "2026-10-22",
+   "titulo": "OpenAI lanza la Decisions API para aplicaciones",
+   "que_paso": "OpenAI presentó una nueva interfaz de programación enfocada en tomar decisiones rápidas, específicas y de bajo costo para cualquier tipo de aplicación.",
+   "por_que_importa": "Facilita la integración de respuestas automatizadas y económicas en programas informáticos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que diferentes aplicaciones se comuniquen entre sí."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/decisions-api"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "daa98ecb15f3",
+   "fecha": "2026-10-22",
+   "titulo": "Herramienta permite convertir juegos de un jugador en multijugador usando IA",
+   "que_paso": "Un proyecto en GitHub llamado Co-op Anything usa un agente de IA para adaptar videojuegos diseñados para una sola persona y permitir que se jueguen con amigos en línea o en pantalla dividida.",
+   "por_que_importa": "Abre nuevas formas de modificar y disfrutar videojuegos antiguos o individuales con otras personas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/cranebeaker/coop-anything"
     }
    ],
    "confirmacion": 1
