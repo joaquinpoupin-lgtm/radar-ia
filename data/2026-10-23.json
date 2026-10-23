@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-23",
- "actualizado": "2026-10-23T02:32:29-03:00",
+ "actualizado": "2026-10-23T05:44:35-03:00",
  "brief": {
   "lo_mas_importante": [
    "Investigadores del MIT dejaron trece inteligencias artificiales en una isla virtual sin tareas, y los sistemas terminaron inventando juegos y mejorando su desempeño.",
@@ -204,6 +204,178 @@
     {
      "nombre": "NVIDIA",
      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "8db2bf743b5d",
+   "fecha": "2026-10-23",
+   "titulo": "Calculan cuánta contaminación genera usar inteligencia artificial según el país",
+   "que_paso": "Una empresa sueca creó un método para medir las emisiones de carbono de cada consulta de inteligencia artificial. Los clientes pueden revisar el impacto ambiental directamente en su consola de control.",
+   "por_que_importa": "Permite conocer el costo ambiental exacto de usar herramientas de inteligencia artificial en el trabajo diario.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "emisiones de carbono",
+     "explicacion": "Gases contaminantes que se liberan a la atmósfera y contribuyen al calentamiento global."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://berget.ai/en/blog/per-request-co2-press-release"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "15c1f8ef7a58",
+   "fecha": "2026-10-23",
+   "titulo": "OpenAI y una institución polaca se alían para investigar seguridad en IA",
+   "que_paso": "OpenAI y NASK de Polonia firmaron una alianza enfocada en la seguridad y en la investigación técnica. Buscan fortalecer las salvaguardas y mejorar la resistencia del ecosistema digital.",
+   "por_que_importa": "Muestra los esfuerzos de los creadores de modelos por mejorar la seguridad y protección de sus sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "ce7fed74f496",
+   "fecha": "2026-10-23",
+   "titulo": "Debaten si a las empresas de IA les conviene más vender servicios o crear productos propios",
+   "que_paso": "En un foro en línea, usuarios discutieron por qué empresas como OpenAI venden acceso a sus modelos en lugar de usarlos para crear sus propias compañías. Señalan que podría haber más ganancias creando aplicaciones finales.",
+   "por_que_importa": "Refleja las dudas actuales sobre el modelo de negocio detrás del desarrollo y venta de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Unidades de texto que los modelos de inteligencia artificial procesan y cobran por su uso."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50200997"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "09c9f9d097fb",
+   "fecha": "2026-10-23",
+   "titulo": "Canva lanza un modelo de imágenes que planifica los diseños antes de crearlos",
+   "que_paso": "Canva presentó un nuevo modelo generador de imágenes llamado Canva Craft. Utiliza un sistema de dos etapas para planificar el diseño antes de generar la imagen final.",
+   "por_que_importa": "Ofrece mayor precisión y control al crear imágenes dentro de la plataforma.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "9201054eeb4c",
+   "fecha": "2026-10-23",
+   "titulo": "Cloudflare usa herramientas de OpenAI para encontrar fallas de seguridad",
+   "que_paso": "Cloudflare comenzó a utilizar tecnología de OpenAI para investigar vulnerabilidades y proponer correcciones de código. Sus desarrolladores usan estas herramientas para trabajar con mayor rapidez.",
+   "por_que_importa": "Ejemplifica cómo se usa la inteligencia artificial para tareas técnicas de ciberseguridad.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/cloudflare-cyber"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b2deaf97c98c",
+   "fecha": "2026-10-23",
+   "titulo": "OpenAI publica propuesta para fortalecer la ciberseguridad con inteligencia artificial",
+   "que_paso": "OpenAI detalló una guía para apoyar a los defensores de ciberseguridad utilizando inteligencia artificial avanzada. La propuesta busca modernizar la protección de instituciones públicas.",
+   "por_que_importa": "Apunta a nuevas formas de proteger sistemas informáticos contra ataques complejos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/empowering-cyber-defenders"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "fac04cd6a26e",
+   "fecha": "2026-10-23",
+   "titulo": "Un físico de Harvard se integra al consejo de supervisión de Anthropic",
+   "que_paso": "Christopher Stubbs, físico experimental y exdecano de ciencias en la Universidad Harvard, se sumó al fideicomiso encargado de supervisar los objetivos a largo plazo de Anthropic.",
+   "por_que_importa": "Muestra la incorporación de expertos científicos externos en la toma de decisiones de empresas de IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "6372ebaa66c8",
+   "fecha": "2026-10-23",
+   "titulo": "OpenAI busca una nueva ronda de financiamiento por 30 mil millones de dólares",
+   "que_paso": "OpenAI está negociando una nueva recaudación de fondos que alcanzaría los 30 mil millones de dólares, con una valoración de un billón doscientos cincuenta mil millones.",
+   "por_que_importa": "Marca un hito financiero histórico para una empresa privada en el sector tecnológico.",
+   "seccion": "dinero",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
     }
    ],
    "confirmacion": 1
