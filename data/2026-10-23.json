@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-23",
- "actualizado": "2026-10-23T05:44:35-03:00",
+ "actualizado": "2026-10-23T11:20:33-03:00",
  "brief": {
   "lo_mas_importante": [
    "Investigadores del MIT dejaron trece inteligencias artificiales en una isla virtual sin tareas, y los sistemas terminaron inventando juegos y mejorando su desempeño.",
@@ -376,6 +376,180 @@
     {
      "nombre": "TechCrunch (IA)",
      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "9174a0a001c9",
+   "fecha": "2026-10-23",
+   "titulo": "Oficinas del gobierno de Suecia prohibirían el uso de ChatGPT y Claude",
+   "que_paso": "El gobierno sueco estaría planeando prohibir el uso de asistentes de inteligencia artificial en sus oficinas. La medida busca prevenir riesgos relacionados con el manejo de información oficial.",
+   "por_que_importa": "Muestra cómo las instituciones gubernamentales endurecen las reglas sobre el uso de herramientas de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "rumor",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "4139a43688b7",
+   "fecha": "2026-10-23",
+   "titulo": "Lanzan MiniMax-M3.1-Flash, un modelo multimodal para código y tareas avanzadas",
+   "que_paso": "Lanzaron MiniMax-M3.1-Flash, un nuevo modelo capaz de procesar texto, imágenes y video. Está diseñado para asistir en programación, uso de computadores y ciberseguridad.",
+   "por_que_importa": "Ofrece a los desarrolladores una nueva opción multimodal con alta capacidad para tareas técnicas complejos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "multimodal",
+     "explicacion": "Capacidad de un sistema para entender y combinar diferentes tipos de información, como texto, imágenes y video."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xd0fgs/minimaxm31flash/"
+    },
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "704776833759",
+   "fecha": "2026-10-23",
+   "titulo": "PandaCode, un espacio de trabajo en el escritorio para agentes de programación",
+   "que_paso": "Lanzaron PandaCode, una aplicación de escritorio programada en lenguaje Rust. Funciona como un espacio de trabajo tranquilo para utilizar agentes de programación.",
+   "por_que_importa": "Facilita la gestión y uso de asistentes de código directamente desde el computador.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas de varios pasos por sí mismos."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/aicodeking/pandacode"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "646400ef1b4a",
+   "fecha": "2026-10-23",
+   "titulo": "Walmart permitirá que agentes de inteligencia artificial compren en nombre de sus usuarios",
+   "que_paso": "El CEO de Walmart anunció que la cadena permitirá que programas automatizados realicen compras por sus clientes. Esto contrasta con la postura de Amazon, que ha decidido bloquear este tipo de accesos.",
+   "por_que_importa": "Abre la puerta para que las compras cotidianas comiencen a ser realizadas de forma automática por asistentes virtuales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de IA",
+     "explicacion": "Programas que ejecutan tareas de varios pasos encadenados sin intervención humana constante."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/servicios/amazon-cierra-puerta-a-agentes-ia-mayor-cadena-supermercados-eeuu-abre-par-par"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "0043ec56a51a",
+   "fecha": "2026-10-23",
+   "titulo": "Lanzan Spark-X2.6-4B con mejoras en razonamiento y programación",
+   "que_paso": "Presentaron Spark-X2.6-4B, un modelo de lenguaje de tamaño compacto enfocado en desarrolladores. Sus creadores mejoraron sus capacidades para programar, razonar y procesar contextos largos.",
+   "por_que_importa": "Permite ejecutar tareas avanzadas directamente en dispositivos locales gracias a su menor tamaño.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/XHToken/Spark-X2.6-4B"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "73558bf56090",
+   "fecha": "2026-10-23",
+   "titulo": "Nuevas herramientas facilitan la creación de proyectos de videojuegos retro",
+   "que_paso": "Nuevas aplicaciones de inteligencia artificial han provocado un aumento de proyectos de videojuegos clásicos adaptados a plataformas inusuales. Estos desarrollos se han vuelto virales recientemente en internet.",
+   "por_que_importa": "Demuestra cómo las herramientas actuales facilitan proyectos de programación lúdicos y experimentales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "dc75f68802f1",
+   "fecha": "2026-10-23",
+   "titulo": "Ayuntamiento de Madrid revisa vídeos con inteligencia artificial tras protestas",
+   "que_paso": "El alcalde José Luis Martínez-Almeida estaría utilizando análisis de video asistido para revisar grabaciones de la Puerta del Sol. La revisión busca detectar posibles delitos vinculados a una acampada por la vivienda.",
+   "por_que_importa": "Ejemplifica el uso institucional de herramientas automatizadas de análisis de video en espacios públicos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/magnet/almeida-esta-revisando-videos-sol-frame-a-frame-para-descubrir-posibles-delitos-acampados-vivienda"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b7046e0a16fa",
+   "fecha": "2026-10-23",
+   "titulo": "La mayoría de los estadounidenses ve riesgos en la inteligencia artificial",
+   "que_paso": "Una encuesta indica que gran parte de la población ve a la inteligencia artificial como algo negativo para la sociedad. Además, la mayoría se opone a la instalación de nuevos centros de datos en sus comunidades.",
+   "por_que_importa": "Refleja el escepticismo y la resistencia social creciente frente a la infraestructura y expansión de la tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085"
     }
    ],
    "confirmacion": 1
