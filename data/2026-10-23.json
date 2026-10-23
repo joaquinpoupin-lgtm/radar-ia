@@ -1,0 +1,212 @@
+{
+ "fecha": "2026-10-23",
+ "actualizado": "2026-10-23T02:32:29-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Investigadores del MIT dejaron trece inteligencias artificiales en una isla virtual sin tareas, y los sistemas terminaron inventando juegos y mejorando su desempeño.",
+   "Anthropic presentó Claude Duet, un agente proactivo que vigila aplicaciones conectadas, envía resúmenes matutinos y sigue trabajando en la nube en segundo plano.",
+   "Lanzaron la actualización DeepSeek-V4.1-Flash con mejoras en razonamiento, programación y tareas visuales para responder más rápido y a menor costo."
+  ],
+  "ids": [
+   "cc012b1e3b75",
+   "374db3b9194f",
+   "4e9bfd07ae02",
+   "571b01845b8f",
+   "8937fd9c8277",
+   "529d06c3bbfb",
+   "82899c945579",
+   "9b13d6a721a0",
+   "3602c8887bef",
+   "822412740c4f"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "4e9bfd07ae02",
+   "fecha": "2026-10-23",
+   "titulo": "Claude comprueba la seguridad de código y encuentra errores antiguos",
+   "que_paso": "Claude comprobó de forma oficial la seguridad en el código compilado de 123 bibliotecas de código abierto. Durante este proceso, el sistema encontró errores que llevaban años sin ser detectados.",
+   "por_que_importa": "Muestra cómo la IA puede ayudar a revisar la seguridad de programas complejos de forma automática.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código compilado",
+     "explicacion": "El código que ya ha sido traducido para que una computadora pueda ejecutarlo directamente."
+    },
+    {
+     "termino": "bibliotecas",
+     "explicacion": "Conjuntos de código ya creado que los programadores usan para no empezar desde cero."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.anthropic.com/research/formal-verification"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "571b01845b8f",
+   "fecha": "2026-10-23",
+   "titulo": "Herramienta permite usar varios agentes de Claude Code y Codex juntos",
+   "que_paso": "Crearon un proyecto en GitHub que permite ejecutar múltiples agentes de Claude Code y Codex de forma simultánea. Cuenta con una barra lateral para mostrar cuál de ellos necesita atención.",
+   "por_que_importa": "Facilita coordinar varios asistentes de programación en una sola pantalla.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de IA capaces de actuar y tomar decisiones de forma más autónoma para cumplir tareas."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/dominikmartn/harp"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "8937fd9c8277",
+   "fecha": "2026-10-23",
+   "titulo": "Investigadores dejan 13 IAs en una isla virtual y empiezan a jugar",
+   "que_paso": "Investigadores del MIT dejaron trece inteligencias artificiales en una isla virtual sin tareas asignadas. Las IAs respondieron inventando juegos, lamentando la pérdida de un anillo y mejorando su desempeño en el trabajo.",
+   "por_que_importa": "Muestra comportamientos inesperados en sistemas autónomos cuando se les deja interactuar sin supervisión directa.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "529d06c3bbfb",
+   "fecha": "2026-10-23",
+   "titulo": "Anthropic presenta Claude Duet, un nuevo agente proactivo",
+   "que_paso": "Anthropic presentó Claude Duet, un agente proactivo en versión preliminar enfocado en profesionales y pequeñas empresas. Vigila aplicaciones conectadas, envía resúmenes matutinos y sigue trabajando en la nube aunque la app se cierre.",
+   "por_que_importa": "Ofrece una opción de asistente autónomo que trabaja en segundo plano para organizar las tareas diarias.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente proactivo",
+     "explicacion": "Una IA que toma la iniciativa y realiza tareas por su cuenta sin esperar a que el usuario se lo pida."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/a-openai-anthropic-les-han-adelantado-derecha-agentes-ia-whatsapp-concretamente"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "82899c945579",
+   "fecha": "2026-10-23",
+   "titulo": "Mistral y NVIDIA se unen para mejorar la ingeniería con IA",
+   "que_paso": "Mistral AI colabora con NVIDIA para desarrollar una nueva generación de flujos de trabajo de ingeniería impulsados por computación acelerada.",
+   "por_que_importa": "Apunta a mejorar las herramientas de ingeniería usando modelos avanzados y hardware especializado.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "computación acelerada",
+     "explicacion": "Uso de procesadores especializados que realizan cálculos complejos de IA mucho más rápido."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Mistral AI",
+     "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "9b13d6a721a0",
+   "fecha": "2026-10-23",
+   "titulo": "Lanzan DeepSeek-V4.1-Flash con mejoras en razonamiento y código",
+   "que_paso": "Lanzaron una actualización menor de DeepSeek-V4.1-Flash que mejora el razonamiento, la programación y las tareas visuales. Reduce el tiempo de ejecución y la longitud de las respuestas para completar tareas más rápido y a menor costo.",
+   "por_que_importa": "Entrega un modelo actualizado que procesa tareas de texto e imagen de forma más eficiente.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "3602c8887bef",
+   "fecha": "2026-10-23",
+   "titulo": "inDrive planea probar taxis autónomos en Kazajistán junto a Pony.ai",
+   "que_paso": "La empresa inDrive planea iniciar pruebas con los taxis autónomos de Pony.ai en la capital de Kazajistán. Estas pruebas están previstas para la primera mitad del año 2027.",
+   "por_que_importa": "Muestra la expansión de los vehículos autónomos respaldados por tecnología de IA a nuevas regiones geográficas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "robotaxi",
+     "explicacion": "Un vehículo autónomo que transporta pasajeros sin necesidad de un conductor humano."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "822412740c4f",
+   "fecha": "2026-10-23",
+   "titulo": "Kazajistán amplía su infraestructura de computación para proyectos de IA",
+   "que_paso": "El ecosistema de inteligencia artificial de Kazajistán avanza desde la planificación hacia la implementación práctica. Esto incluye una mayor disponibilidad de computación acelerada para respaldar modelos y aplicaciones locales.",
+   "por_que_importa": "Refleja cómo distintos países aumentan su capacidad técnica para desarrollar y usar inteligencia artificial a nivel nacional.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/"
+    }
+   ],
+   "confirmacion": 1
+  }
+ ]
+}
