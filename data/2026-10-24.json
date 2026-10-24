@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-24",
- "actualizado": "2026-10-24T05:19:14-03:00",
+ "actualizado": "2026-10-24T10:27:28-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI negocia una nueva recaudación de fondos por treinta mil millones de dólares, alcanzando una alta valoración en el sector tecnológico.",
@@ -170,6 +170,177 @@
     {
      "nombre": "Matt Wolfe",
      "url": "https://www.youtube.com/shorts/FiyUagHO37Y"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "cc7d25153873",
+   "fecha": "2026-10-24",
+   "titulo": "Herramienta para adaptar juegos de Nintendo Switch a dispositivos Apple",
+   "que_paso": "Lanzaron un proyecto en GitHub que sirve para adaptar juegos de Nintendo Switch a equipos con procesadores Apple Silicon. El sistema usa lenguajes de programación y tecnologías gráficas para macOS, iPadOS e iOS.",
+   "por_que_importa": "Permite trasladar videojuegos de una consola a computadoras y tabletas de Apple de forma nativa.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Apple Silicon",
+     "explicacion": "Nombre de los procesadores propios que usa Apple en sus computadoras y tabletas recientes."
+    },
+    {
+     "termino": "GitHub",
+     "explicacion": "Sitio web donde los creadores comparten código de programación de forma pública."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/realskyrin/ns-game-apple-arm-port"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "963388230709",
+   "fecha": "2026-10-24",
+   "titulo": "Kromoss, un nuevo modelo para generar imágenes a partir de texto",
+   "que_paso": "Publicaron Kromoss, una versión modificada del modelo MOSS-Image-Base que funciona como reemplazo directo en tareas de creación visual. Utiliza componentes de procesamiento de texto y decodificación de otras plataformas.",
+   "por_que_importa": "Ofrece una nueva alternativa abierta para crear imágenes usando descripciones escritas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo",
+     "explicacion": "Sistema de inteligencia artificial entrenado con datos para realizar tareas específicas."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/lodestones/Kromoss"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "e4e6f0cc8ac0",
+   "fecha": "2026-10-24",
+   "titulo": "Novela ganadora de premio en México genera sospechas de uso de IA",
+   "que_paso": "Un detector automático indicó que la novela 'Donde el agua trabaja', ganadora de un premio de 20.000 euros, fue escrita casi en su totalidad con inteligencia artificial. Las reglas del concurso prohibían el uso de estas herramientas.",
+   "por_que_importa": "Muestra los problemas actuales para verificar la autenticidad de los textos en los concursos literarios debido a los márgenes de error de los detectores.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/pangram-donde-agua-trabaja-david-silva-rojas-ia-al-99-problema-siempre-que-ia-no-infalible"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "f699a3e5cdaf",
+   "fecha": "2026-10-24",
+   "titulo": "OpenAI dejará de entrenar sus modelos avanzados usando internet en vivo",
+   "que_paso": "OpenAI decidió aislar sus sistemas más avanzados de la red para evitar riesgos de seguridad y hackeos. La empresa creó un entorno sin conexión donde los modelos interactúan con contenidos web almacenados previamente.",
+   "por_que_importa": "Cambia la forma en que se desarrollan los sistemas de la empresa para protegerlos frente a incidentes externos.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "modelos",
+     "explicacion": "Sistemas de inteligencia artificial que procesan información para generar respuestas."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+    },
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "18216b018fb1",
+   "fecha": "2026-10-24",
+   "titulo": "Nuevo truco con prompts para crear ilustraciones digitales con Claude",
+   "que_paso": "El desarrollador Simon Willison compartió una instrucción para pedirle al modelo Claude Opus que pinte fotos rápidamente usando elementos visuales y código. El sistema procesa los bordes de una imagen sin necesidad de instalar programas externos.",
+   "por_que_importa": "Sirve para experimentar con las capacidades visuales del asistente mediante instrucciones de texto.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "prompt",
+     "explicacion": "Instrucción o texto que se le escribe a un asistente virtual para que realice una tarea."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "35c8a9cbb1e2",
+   "fecha": "2026-10-24",
+   "titulo": "Tres formas de usar los agentes activos de ChatGPT en tareas cotidianas",
+   "que_paso": "Un video de YouTube muestra cómo utilizar las funciones de ChatGPT que operan en segundo plano de forma continua. Se pueden aplicar para rastrear precios y compras, gestionar problemas de viaje o monitorear pendientes en el correo y calendario.",
+   "por_que_importa": "Permite delegar tareas recurrentes para que el asistente trabaje de manera automática en el fondo.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Sistemas autónomos capaces de realizar acciones y cumplir objetivos por su cuenta."
+    }
+   ],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/shorts/WSHEBdmahHY"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "6643f32ed82d",
+   "fecha": "2026-10-24",
+   "titulo": "Actualización de Google indica que Gmail podría usarse para publicidad",
+   "que_paso": "Una modificación en la política de privacidad de Google señala que la función de inteligencia artificial personal utilizará más datos de los usuarios. Esto incluye información para orientar la publicidad dentro de los servicios.",
+   "por_que_importa": "Afecta directamente el manejo de los datos personales y el nivel de privacidad al usar las herramientas de la plataforma.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "privacidad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
     }
    ],
    "confirmacion": 1
