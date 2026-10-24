@@ -6,7 +6,8 @@ Páginas:
     archivo/index.html         lista de días
     archivo/AAAA-MM-DD.html    brief + todas las noticias de ese día
 
-Sin servidor ni frameworks: HTML generado con Jinja2, un solo CSS y un poco de JS para los filtros.
+Sin servidor ni frameworks: HTML generado con Jinja2, un solo CSS y un poco de JS para los filtros
+y el "espectro" (cada noticia es una línea de color según su sección).
 """
 
 import html
@@ -33,6 +34,9 @@ CARPETA_PLANTILLAS = RAIZ / "templates"
 CARPETA_SITIO = RAIZ / "_site"
 PATRON_DIA = re.compile(r"^\d{4}-\d{2}-\d{2}\.json$")
 MAX_ETIQUETAS_FILTRO = 20  # en secciones.html solo las etiquetas más usadas (si no, el filtro no se lee)
+# Se copian tal cual a _site/. La fuente Archivo (licencia libre OFL, ver archivo-OFL.txt) va dentro
+# del sitio para no depender de Google Fonts.
+ARCHIVOS_ESTATICOS = ["estilo.css", "archivo.woff2", "archivo-OFL.txt"]
 
 NOMBRES_SECCION = {
     "modelos": "Modelos y lanzamientos",
@@ -135,6 +139,27 @@ def noticias_recientes(dias: dict[str, dict], hoy: str, cantidad_dias: int) -> l
     return recientes
 
 
+def espectro(noticias: list[dict], fecha: str | None = None) -> list[dict]:
+    """Una línea por noticia para la banda del "espectro": la banda se divide en una franja por sección
+    (en el orden de SECCIONES) y las noticias de una misma sección se reparten dentro de su franja.
+    `x` es la posición en % del ancho; un pequeño corrimiento fijo por noticia evita que parezca un
+    código de barras. Con `fecha`, las noticias de otro día (las "de ayer" del brief) se marcan."""
+    ancho = 100 / len(SECCIONES)
+    lineas = []
+    for k, seccion in enumerate(SECCIONES):
+        grupo = [n for n in noticias if n["seccion"] == seccion]
+        paso = min(ancho * 0.72 / (len(grupo) - 1), 2.4) if len(grupo) > 1 else 0
+        for j, n in enumerate(grupo):
+            corrimiento = (sum(map(ord, n["id"])) % 11 - 5) / 10 * paso * 0.5
+            x = (k + 0.5) * ancho + (j - (len(grupo) - 1) / 2) * paso + corrimiento
+            lineas.append({"id": n["id"], "seccion": seccion, "x": round(x, 2), "titulo": n["titulo"],
+                           "alta": n["importancia"] == "alta", "etiquetas": n.get("etiquetas", []),
+                           "de_ayer": bool(fecha) and n["fecha"] != fecha})
+    for i, linea in enumerate(lineas):
+        linea["i"] = i
+    return lineas
+
+
 def etiquetas_frecuentes(noticias: list[dict], maximo: int = MAX_ETIQUETAS_FILTRO) -> list[tuple[str, int]]:
     cuenta = Counter(e for n in noticias for e in n.get("etiquetas", []))
     return sorted(cuenta.items(), key=lambda par: (-par[1], par[0]))[:maximo]
@@ -145,7 +170,7 @@ def etiquetas_frecuentes(noticias: list[dict], maximo: int = MAX_ETIQUETAS_FILTR
 def entorno() -> Environment:
     env = Environment(loader=FileSystemLoader(CARPETA_PLANTILLAS), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
-    env.globals.update(NOMBRES_SECCION=NOMBRES_SECCION, SECCIONES=SECCIONES)
+    env.globals.update(NOMBRES_SECCION=NOMBRES_SECCION, SECCIONES=SECCIONES, espectro=espectro)
     env.filters.update(fecha_larga=fecha_larga, fecha_corta=fecha_corta)
     return env
 
@@ -188,7 +213,8 @@ def generar_sitio(config: dict, ahora: datetime, datos: Path = CARPETA_DATOS,
              etiquetas=etiquetas_frecuentes(recientes), altas=sum(n["importancia"] == "alta" for n in recientes),
              **comun)
 
-    resumen_dias = [{"fecha": f, "noticias": len(dias[f]["noticias"]), "brief": bool(dias[f].get("brief"))}
+    resumen_dias = [{"fecha": f, "noticias": len(dias[f]["noticias"]), "brief": bool(dias[f].get("brief")),
+                     "lineas": espectro(dias[f]["noticias"])}
                     for f in sorted(dias, reverse=True)]
     escribir("archivo/index.html", "archivo.html", pagina="archivo", dias=resumen_dias, **comun)
     fechas = sorted(dias)
@@ -199,7 +225,8 @@ def generar_sitio(config: dict, ahora: datetime, datos: Path = CARPETA_DATOS,
                  anterior=fechas[i - 1] if i > 0 else None,
                  siguiente=fechas[i + 1] if i + 1 < len(fechas) else None, **comun)
 
-    shutil.copy(CARPETA_PLANTILLAS / "estilo.css", temporal / "estilo.css")
+    for archivo in ARCHIVOS_ESTATICOS:
+        shutil.copy(CARPETA_PLANTILLAS / archivo, temporal / archivo)
     shutil.rmtree(destino, ignore_errors=True)
     temporal.replace(destino)
     paginas = [destino / p.relative_to(temporal) for p in paginas]

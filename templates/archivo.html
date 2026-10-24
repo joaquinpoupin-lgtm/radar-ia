@@ -1,12 +1,22 @@
 {% extends "base.html" %}
+{% from "_espectro.html" import mini, flecha %}
 {% block titulo %}Radar IA · Archivo{% endblock %}
 {% block contenido %}
-<h1>Archivo</h1>
+<header class="apertura">
+  <h1 class="titular">Archivo</h1>
+  <p class="bajada rotulo">{{ dias | length }} día{{ "s" if dias | length != 1 }} guardado{{ "s" if dias | length != 1 }}</p>
+</header>
 {% if dias %}
 <ul class="dias">
   {% for d in dias %}
-  <li><a href="{{ d.fecha }}.html">{{ d.fecha | fecha_larga | capitalize }}</a>
-    <span>{{ d.noticias }} noticia{{ "s" if d.noticias != 1 }}{% if d.brief %} · con brief{% endif %}</span></li>
+  <li>
+    <a href="{{ d.fecha }}.html">
+      {{ mini(d.lineas) }}
+      <span class="dias__fecha">{{ d.fecha | fecha_larga | capitalize }}</span>
+      <span class="dias__datos rotulo">{{ d.noticias }} noticia{{ "s" if d.noticias != 1 }}{% if d.brief %} · con brief{% endif %}</span>
+      {{ flecha() }}
+    </a>
+  </li>
   {% endfor %}
 </ul>
 {% else %}

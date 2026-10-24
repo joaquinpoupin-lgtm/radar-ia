@@ -1,28 +1,41 @@
 {% extends "base.html" %}
 {% from "_noticia.html" import noticia %}
+{% from "_espectro.html" import banda, flecha %}
 {% block titulo %}Radar IA · Brief del día{% endblock %}
 {% block contenido %}
 {% if p.brief %}
-<h1>Brief del {{ p.fecha | fecha_larga }}</h1>
-<p class="bajada">{{ p.brief.noticias | length }} noticias · lectura de ~{{ p.minutos }} min</p>
+<header class="apertura">
+  <h1 class="titular"><span class="solo-lector">Brief del </span>{{ p.fecha | fecha_larga | replace(" de " ~ p.fecha[:4], "") }}<span class="solo-lector"> de {{ p.fecha[:4] }}</span></h1>
+  <p class="bajada rotulo">{{ p.brief.noticias | length }} noticias · lectura de ~{{ p.minutos }} min</p>
+</header>
+<div class="apertura__espectro">
+  {{ banda(espectro(p.brief.noticias, p.fecha), ayuda="Cada línea es una noticia del brief. Tócala para ir a ella.") }}
+</div>
 {% if not p.es_hoy %}
-<p class="aviso">El brief de hoy se arma en la corrida de las 06:30. Mientras tanto, este es el último.</p>
+<p class="aviso">El brief de hoy se arma en la primera corrida del día. Mientras tanto, este es el último.</p>
 {% endif %}
 {% if p.brief.bullets %}
-<section class="destacado">
-  <h2>Lo más importante {{ "hoy" if p.es_hoy else "de ese día" }}</h2>
+<section class="clave" aria-labelledby="clave-titulo">
+  <h2 id="clave-titulo">Lo más importante {{ "hoy" if p.es_hoy else "de ese día" }}</h2>
   <ul>{% for b in p.brief.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
 </section>
 {% endif %}
-{% for n in p.brief.noticias %}
-{{ noticia(n, raiz, de_ayer=(n.fecha != p.fecha)) }}
-{% endfor %}
+<section class="lista" aria-labelledby="lista-titulo">
+  <h2 id="lista-titulo">Las {{ p.brief.noticias | length }} noticias</h2>
+  {% for n in p.brief.noticias %}
+  {{ noticia(n, raiz, de_ayer=(n.fecha != p.fecha)) }}
+  {% endfor %}
+</section>
 {% else %}
-<h1>Brief del día</h1>
+<header class="apertura">
+  <h1 class="titular">Brief del día</h1>
+</header>
 <p class="aviso">Todavía no hay brief. Se arma en la primera corrida del día (hora de Chile).</p>
 {% endif %}
-{% if p.hoy_fuera %}
-<p class="mas"><a href="archivo/{{ p.hoy }}.html">Hoy hay {{ p.hoy_fuera }} noticia{{ "s" if p.hoy_fuera > 1 }} más fuera del brief →</a></p>
-{% endif %}
-<p class="mas"><a href="secciones.html">Ver todo por secciones →</a></p>
+<nav class="seguir" aria-label="Seguir leyendo">
+  {% if p.hoy_fuera %}
+  <a class="boton" href="archivo/{{ p.hoy }}.html">Hoy hay {{ p.hoy_fuera }} noticia{{ "s" if p.hoy_fuera > 1 }} más fuera del brief{{ flecha() }}</a>
+  {% endif %}
+  <a class="boton" href="secciones.html">Ver todo por secciones{{ flecha() }}</a>
+</nav>
 {% endblock %}

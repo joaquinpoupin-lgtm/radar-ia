@@ -2,28 +2,54 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#121314">
+<meta name="color-scheme" content="dark">
 <title>{% block titulo %}Radar IA{% endblock %}</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%23121314%22/><path d=%22M7 6v20%22 stroke=%22%23a07dff%22 stroke-width=%222%22/><path d=%22M12.5 6v20%22 stroke=%22%233ec3ff%22 stroke-width=%222%22/><path d=%22M19 6v20%22 stroke=%22%238fe36a%22 stroke-width=%222%22/><path d=%22M26 6v20%22 stroke=%22%23ff5d55%22 stroke-width=%222%22/></svg>">
+<link rel="preload" href="{{ raiz }}archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ raiz }}estilo.css">
 </head>
 <body>
-<header class="cabecera">
-  <a class="marca" href="{{ raiz }}index.html">📡 Radar IA</a>
-  <nav>
-    <a href="{{ raiz }}index.html"{% if pagina == "hoy" %} aria-current="page"{% endif %}>Hoy</a>
-    <a href="{{ raiz }}secciones.html"{% if pagina == "secciones" %} aria-current="page"{% endif %}>Secciones</a>
-    <a href="{{ raiz }}archivo/index.html"{% if pagina == "archivo" %} aria-current="page"{% endif %}>Archivo</a>
-  </nav>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="barra">
+  <div class="barra__dentro">
+    <a class="marca" href="{{ raiz }}index.html" aria-label="Radar IA, inicio">
+      <svg class="marca__signo" viewBox="0 0 22 16" aria-hidden="true"><path d="M1.5 1v14" stroke="var(--l405)"/><path d="M6 1v14" stroke="var(--l486)"/><path d="M11.5 1v14" stroke="var(--l546)"/><path d="M17 1v14" stroke="var(--l615)"/><path d="M20.5 1v14" stroke="var(--l656)"/></svg>
+      <span>Radar IA</span>
+    </a>
+    <nav class="menu" aria-label="Páginas">
+      <a href="{{ raiz }}index.html"{% if pagina == "hoy" %} aria-current="page"{% endif %}>Hoy</a>
+      <a href="{{ raiz }}secciones.html"{% if pagina == "secciones" %} aria-current="page"{% endif %}>Secciones</a>
+      <a href="{{ raiz }}archivo/index.html"{% if pagina == "archivo" %} aria-current="page"{% endif %}>Archivo</a>
+    </nav>
+  </div>
 </header>
-<main>
+<main class="lamina" id="contenido">
 {% block contenido %}{% endblock %}
 </main>
 <footer class="pie">
-  <p>Resúmenes hechos con IA a partir de fuentes públicas: pueden tener errores. Ante la duda, lee la fuente original.</p>
-  {% if actualizado %}<p>Actualizado: {{ actualizado }} (hora de Chile)</p>{% endif %}
+  <div class="pie__dentro">
+    <p>Resúmenes hechos con IA a partir de fuentes públicas: pueden tener errores. Ante la duda, lee la fuente original.</p>
+    {% if actualizado %}<p class="rotulo">Actualizado {{ actualizado }} · hora de Chile</p>{% endif %}
+  </div>
 </footer>
+<script>
+// Espectro: al pasar el mouse o enfocar una línea, el pie dice de qué noticia se trata.
+document.querySelectorAll(".espectro").forEach(function (fig) {
+  var lectura = fig.querySelector(".espectro__lectura");
+  function mostrar(ev) {
+    var l = ev.target.closest(".linea");
+    if (l && l.getAttribute("aria-label")) lectura.textContent = l.getAttribute("aria-label");
+  }
+  function volver() { lectura.textContent = lectura.dataset.ayuda; }
+  fig.addEventListener("pointerover", mostrar);
+  fig.addEventListener("focusin", mostrar);
+  fig.addEventListener("pointerleave", volver);
+  fig.addEventListener("focusout", volver);
+});
+</script>
 {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 {% from "_noticia.html" import noticia %}
+{% from "_espectro.html" import banda %}
 {% block titulo %}Radar IA · Secciones{% endblock %}
 {% block contenido %}
-<h1>Secciones</h1>
-<p class="bajada">Noticias de los últimos {{ dias }} días, de la más nueva a la más vieja.</p>
+<header class="apertura">
+  <h1 class="titular">Secciones</h1>
+  <p class="bajada rotulo">Últimos {{ dias }} días · de la más nueva a la más vieja</p>
+</header>
 {% if noticias %}
+<div class="apertura__espectro">
+  {{ banda(espectro(noticias), enlaces=false, nombre="Espectro de los últimos días",
+           ayuda="Cada línea es una de las " ~ (noticias | length) ~ " noticias de estos días.") }}
+</div>
 <div class="filtros" id="filtros" hidden>
   <div class="grupo" role="group" aria-label="Sección">
     <button type="button" data-seccion="" aria-pressed="true">Todas <small>{{ noticias | length }}</small></button>
@@ -13,18 +20,19 @@
     {% endfor %}
   </div>
   <div class="grupo" role="group" aria-label="Importancia y etiquetas">
-    {% if altas %}<button type="button" data-alta aria-pressed="false">🔥 Solo importantes <small>{{ altas }}</small></button>{% endif %}
+    {% if altas %}<button type="button" class="doble" data-alta aria-pressed="false">Solo importantes <small>{{ altas }}</small></button>{% endif %}
     {% for e, c in etiquetas %}
     <button type="button" class="chico" data-etiqueta="{{ e }}" aria-pressed="false">#{{ e }} <small>{{ c }}</small></button>
     {% endfor %}
   </div>
-  <p class="contador" id="contador" aria-live="polite"></p>
+  <p class="contador rotulo" id="contador" aria-live="polite"></p>
 </div>
-<div id="lista">
+<section class="lista" id="lista" aria-labelledby="lista-titulo">
+<h2 class="solo-lector" id="lista-titulo">Noticias</h2>
 {% for n in noticias %}
 {{ noticia(n, raiz, mostrar_fecha=true) }}
 {% endfor %}
-</div>
+</section>
 <p class="aviso" id="vacio" hidden>Ninguna noticia cumple esos filtros.</p>
 {% else %}
 <p class="aviso">Todavía no hay noticias en estos días.</p>
@@ -33,10 +41,13 @@
 {% block scripts %}
 {% if noticias %}
 <script>
-// Filtros: una sección (o todas) + solo 🔥 + una etiqueta. Sin JS se ven todas las noticias.
+// Filtros: una sección (o todas) + solo importantes + una etiqueta. Sin JS se ven todas las noticias.
+// Las líneas del espectro siguen a los filtros: las que quedan fuera bajan a un muñón.
 (function () {
   var filtros = document.getElementById("filtros");
   var noticias = document.querySelectorAll("#lista .noticia");
+  var lineas = {};
+  document.querySelectorAll(".espectro__banda .linea").forEach(function (l) { lineas[l.dataset.id] = l; });
   var estado = { seccion: "", alta: false, etiqueta: "" };
   filtros.hidden = false;
 
@@ -47,6 +58,8 @@
                (!estado.alta || n.dataset.alta === "si") &&
                (!estado.etiqueta || n.dataset.etiquetas.split("|").indexOf(estado.etiqueta) >= 0);
       n.hidden = !ok;
+      var linea = lineas[n.id.slice(2)];
+      if (linea) linea.classList.toggle("fuera", !ok);
       if (ok) visibles++;
     });
     filtros.querySelectorAll("[data-seccion]").forEach(function (b) {

@@ -1,30 +1,36 @@
-{# Una noticia. `mostrar_fecha`: en las listas de varios días. `de_ayer`: en el brief, si viene de ayer. #}
+{% from "_espectro.html" import flecha %}
+{# Una noticia. `mostrar_fecha`: en las listas de varios días. `de_ayer`: en el brief, si viene de ayer.
+   En el computador los datos (sección, importancia, fuentes) cuelgan a la izquierda del riel. #}
 {% macro noticia(n, raiz, mostrar_fecha=false, de_ayer=false) %}
-<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}" data-seccion="{{ n.seccion }}"
+<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}" id="n-{{ n.id }}" data-seccion="{{ n.seccion }}"
   data-alta="{{ 'si' if n.importancia == 'alta' else 'no' }}" data-etiquetas="{{ n.etiquetas | join('|') }}">
-  <p class="meta">
-    {% if n.importancia == "alta" %}<span class="fuego" title="Importancia alta">🔥 Importante</span>{% endif %}
-    <span class="seccion">{{ NOMBRES_SECCION.get(n.seccion, n.seccion) }}</span>
-    {% if mostrar_fecha %}<span>· {{ n.fecha | fecha_corta }}</span>{% endif %}
-    {% if de_ayer %}<span>· de ayer</span>{% endif %}
-    {% if n.confirmacion > 1 %}<span>· {{ n.confirmacion }} fuentes la cuentan</span>{% endif %}
-  </p>
   <h3>{{ n.titulo }}</h3>
-  <p>{{ n.que_paso }}</p>
-  <p class="importa"><strong>Por qué importa:</strong> {{ n.por_que_importa }}</p>
-  {% if n.terminos %}
-  <details class="terminos">
-    <summary>{{ "Qué significa" if n.terminos | length == 1 else "Términos explicados" }}: {{ n.terminos | map(attribute="termino") | join(", ") }}</summary>
-    <dl>
-      {% for t in n.terminos %}<dt>{{ t.termino }}</dt><dd>{{ t.explicacion }}</dd>{% endfor %}
-    </dl>
-  </details>
-  {% endif %}
-  {% if n.etiquetas %}
-  <ul class="etiquetas">{% for e in n.etiquetas %}<li>{{ e }}</li>{% endfor %}</ul>
-  {% endif %}
-  <p class="fuentes">Leer en:
-    {% for f in n.fuentes %}<a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.nombre }} ↗</a>{% if not loop.last %} · {% endif %}{% endfor %}
+  <p class="datos">
+    <span class="dato-seccion">{{ NOMBRES_SECCION.get(n.seccion, n.seccion) }}</span>
+    {% if n.importancia == "alta" %}<span class="dato-alta">Importante</span>{% endif %}
+    {% if mostrar_fecha %}<span>{{ n.fecha | fecha_corta }}</span>{% endif %}
+    {% if de_ayer %}<span>de ayer</span>{% endif %}
+    {% if n.confirmacion > 1 %}<span>{{ n.confirmacion }} fuentes la cuentan</span>{% endif %}
   </p>
+  <div class="cuerpo">
+    <p>{{ n.que_paso }}</p>
+    <p class="importa"><strong>Por qué importa</strong> {{ n.por_que_importa }}</p>
+    {% if n.terminos %}
+    <details class="terminos">
+      <summary><svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg>{{ "Qué significa" if n.terminos | length == 1 else "Términos explicados" }}: {{ n.terminos | map(attribute="termino") | join(", ") }}</summary>
+      <dl>
+        {% for t in n.terminos %}<dt>{{ t.termino }}</dt><dd>{{ t.explicacion }}</dd>{% endfor %}
+      </dl>
+    </details>
+    {% endif %}
+    <div class="pie-noticia">
+      <p class="fuentes"><span class="rotulo">Leer en</span>
+        {% for f in n.fuentes %}<a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.nombre }}{{ flecha() }}</a>{% endfor %}
+      </p>
+      {% if n.etiquetas %}
+      <ul class="etiquetas" aria-label="Etiquetas">{% for e in n.etiquetas %}<li>{{ e }}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+  </div>
 </article>
 {% endmacro %}

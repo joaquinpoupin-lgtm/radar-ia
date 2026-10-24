@@ -1,21 +1,32 @@
 {% extends "base.html" %}
 {% from "_noticia.html" import noticia %}
+{% from "_espectro.html" import banda, flecha %}
 {% block titulo %}Radar IA · {{ fecha }}{% endblock %}
 {% block contenido %}
-<h1>{{ fecha | fecha_larga | capitalize }}</h1>
-<p class="bajada">{{ noticias | length }} noticia{{ "s" if noticias | length != 1 }} publicadas este día</p>
+<header class="apertura">
+  <h1 class="titular">{{ fecha | fecha_larga | replace(" de " ~ fecha[:4], "") }}<span class="solo-lector"> de {{ fecha[:4] }}</span></h1>
+  <p class="bajada rotulo">{{ fecha[:4] }} · {{ noticias | length }} noticia{{ "s" if noticias | length != 1 }} publicadas este día</p>
+</header>
+{% if noticias %}
+<div class="apertura__espectro">
+  {{ banda(espectro(noticias), ayuda="Cada línea es una noticia de este día. Tócala para ir a ella.") }}
+</div>
+{% endif %}
 {% if brief and brief.bullets %}
-<section class="destacado">
-  <h2>Lo más importante</h2>
+<section class="clave" aria-labelledby="clave-titulo">
+  <h2 id="clave-titulo">Lo más importante</h2>
   <ul>{% for b in brief.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
 </section>
 {% endif %}
-{% for n in noticias %}
-{{ noticia(n, raiz) }}
-{% endfor %}
-<nav class="paginas">
-  {% if anterior %}<a href="{{ anterior }}.html">← {{ anterior | fecha_corta }}</a>{% else %}<span></span>{% endif %}
-  <a href="index.html">Todos los días</a>
-  {% if siguiente %}<a href="{{ siguiente }}.html">{{ siguiente | fecha_corta }} →</a>{% else %}<span></span>{% endif %}
+<section class="lista" aria-labelledby="lista-titulo">
+  <h2 id="lista-titulo">Todas las noticias</h2>
+  {% for n in noticias %}
+  {{ noticia(n, raiz) }}
+  {% endfor %}
+</section>
+<nav class="paginas" aria-label="Otros días">
+  {% if anterior %}<a class="boton boton--atras" href="{{ anterior }}.html">{{ flecha() }}{{ anterior | fecha_corta }}</a>{% else %}<span></span>{% endif %}
+  <a class="boton boton--centro" href="index.html">Todos los días</a>
+  {% if siguiente %}<a class="boton" href="{{ siguiente }}.html">{{ siguiente | fecha_corta }}{{ flecha() }}</a>{% else %}<span></span>{% endif %}
 </nav>
 {% endblock %}

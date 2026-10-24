@@ -12,3 +12,8 @@ _site/
 _site.tmp/
 
 .DS_Store
+
+# Impeccable (skill de diseño): se guardan el contrato de dirección y DESIGN.md, no las capturas ni la página de elección
+.impeccable/review/
+.impeccable/questions/
+.impeccable/mocks/

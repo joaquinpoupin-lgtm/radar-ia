@@ -1,0 +1,41 @@
+{# El "espectro": una línea por noticia, del color de su sección (ver radar/sitio.py: espectro()).
+   Doble = importante; media altura = de ayer. Los colores por sección están en estilo.css. #}
+{% set CORTOS = {"modelos": "Modelos", "herramientas": "Herramientas", "tendencias": "Tendencias",
+                 "creadores": "Creadores", "dinero": "Dinero", "tips": "Tips"} %}
+
+{# `enlaces`: cada línea lleva a su noticia (portada y días). Si no, es solo dibujo y responde a los
+   filtros (Secciones). #}
+{% macro banda(lineas, enlaces=true, nombre="Espectro del día", ayuda="") %}
+<figure class="espectro">
+  {% if enlaces %}
+  <nav class="espectro__banda" aria-label="{{ nombre }}: cada línea es una noticia">
+    {% for l in lineas %}
+    <a class="linea{% if l.alta %} doble{% endif %}{% if l.de_ayer %} ayer{% endif %}" href="#n-{{ l.id }}" data-seccion="{{ l.seccion }}" style="--x: {{ l.x }}%; --i: {{ l.i }}" aria-label="{{ NOMBRES_SECCION[l.seccion] }}: {{ l.titulo }}"></a>
+    {% endfor %}
+  </nav>
+  {% else %}
+  <div class="espectro__banda" aria-hidden="true">
+    {% for l in lineas %}
+    <span class="linea{% if l.alta %} doble{% endif %}" data-id="{{ l.id }}" data-seccion="{{ l.seccion }}" style="--x: {{ l.x }}%; --i: {{ l.i }}"></span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <ol class="espectro__eje" aria-hidden="true">
+    {% for s in SECCIONES %}<li data-seccion="{{ s }}" style="--x: {{ ((loop.index0 + 0.5) * 100 / SECCIONES | length) | round(2) }}%">{{ CORTOS[s] }}</li>{% endfor %}
+  </ol>
+  <figcaption class="espectro__pie">
+    <span class="leyenda" aria-hidden="true">
+      <span class="leyenda__item"><i class="muestra"></i>Noticia</span>
+      <span class="leyenda__item"><i class="muestra doble"></i>Importante</span>
+      {% if lineas | selectattr("de_ayer") | list %}<span class="leyenda__item"><i class="muestra ayer"></i>De ayer</span>{% endif %}
+    </span>
+    <span class="espectro__lectura" data-ayuda="{{ ayuda }}">{{ ayuda }}</span>
+  </figcaption>
+</figure>
+{% endmacro %}
+
+{% macro mini(lineas) %}
+<span class="mini" aria-hidden="true">{% for l in lineas %}<i class="{{ 'doble' if l.alta }}" data-seccion="{{ l.seccion }}" style="--x: {{ l.x }}%"></i>{% endfor %}</span>
+{% endmacro %}
+
+{% macro flecha() %}<svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11.5M9 3.5 13.5 8 9 12.5"/></svg>{% endmacro %}
