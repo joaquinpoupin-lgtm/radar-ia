@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-24",
- "actualizado": "2026-10-24T15:16:58-03:00",
+ "actualizado": "2026-10-24T20:31:00-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI negocia una nueva recaudación de fondos por treinta mil millones de dólares, alcanzando una alta valoración en el sector tecnológico.",
@@ -495,6 +495,94 @@
     {
      "nombre": "Xataka (IA)",
      "url": "https://www.xataka.com/robotica-e-ia/ibm-tiene-unas-cifras-que-desafian-a-gigantes-ia-cerrada-90-rendimiento-solo-10-coste-token"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "6597a1303e38",
+   "fecha": "2026-10-24",
+   "titulo": "Las empresas fuera del sector tecnológico aún no ven ganancias con la inteligencia artificial",
+   "que_paso": "Un informe señala que las inversiones en inteligencia artificial no han generado beneficios financieros en las empresas tradicionales de Estados Unidos. Las ganancias se concentran exclusivamente dentro del sector tecnológico.",
+   "por_que_importa": "Muestra que el impacto económico real de la inteligencia artificial todavía es limitado fuera de las propias empresas que la desarrollan.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "81c8fd74d5e2",
+   "fecha": "2026-10-24",
+   "titulo": "Estudio analiza por qué los textos creados por inteligencia artificial resultan difíciles de leer",
+   "que_paso": "Una investigación analizó las características lingüísticas de los textos generados por inteligencia artificial. El estudio descubrió que estos modelos usan estructuras gramaticales complejas con mayor frecuencia que los textos escritos por humanos.",
+   "por_que_importa": "Explica la sensación común de que los escritos automáticos actuales son más difíciles de procesar y comprender.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://arxiv.org/abs/2610.29162"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "777f23ad5fb4",
+   "fecha": "2026-10-24",
+   "titulo": "Herramienta crea páginas web completas en un solo archivo a partir de una descripción",
+   "que_paso": "Lanzaron una herramienta ligera que permite describir una página web para que un agente la escriba automáticamente. El resultado se guarda directamente en un único archivo de código.",
+   "por_que_importa": "Facilita la creación rápida de diseños web básicos usando solo instrucciones de texto.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Programa de inteligencia artificial diseñado para realizar tareas de manera autónoma."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/vercel-labs/fx0"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "2e829f1f359a",
+   "fecha": "2026-10-24",
+   "titulo": "KRAFTON lanza un nuevo modelo de lenguaje enfocado en tareas conversacionales",
+   "que_paso": "La empresa KRAFTON AI presentó un modelo de lenguaje de tamaño medio diseñado y entrenado desde cero. El sistema destaca en conversaciones en coreano y en el uso de herramientas de manera autónoma.",
+   "por_que_importa": "Ofrece una nueva opción abierta para desarrolladores que trabajan en tareas automatizadas y en el idioma coreano.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo de lenguaje",
+     "explicacion": "Sistema de inteligencia artificial entrenado para entender y generar texto similar al humano."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview"
     }
    ],
    "confirmacion": 1
