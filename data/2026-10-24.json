@@ -1,0 +1,178 @@
+{
+ "fecha": "2026-10-24",
+ "actualizado": "2026-10-24T05:19:14-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI negocia una nueva recaudación de fondos por treinta mil millones de dólares, alcanzando una alta valoración en el sector tecnológico.",
+   "Una empresa sueca creó un método para medir las emisiones de carbono de cada consulta de inteligencia artificial.",
+   "OpenAI y una institución polaca firmaron una alianza estratégica enfocada en la seguridad y en la investigación técnica."
+  ],
+  "ids": [
+   "6372ebaa66c8",
+   "953eb9558e9c",
+   "4139a43688b7",
+   "296a9e0ddc42",
+   "4f1a69c73f38",
+   "c83614434645",
+   "c2a7a8e39fd1",
+   "b6e0b87cd5b3",
+   "8db2bf743b5d",
+   "15c1f8ef7a58"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "953eb9558e9c",
+   "fecha": "2026-10-24",
+   "titulo": "Llega Kimi K3.1 Pro a la API de Moonshot",
+   "que_paso": "Moonshot lanzó Kimi K3.1 Pro en su interfaz de programación. Ofrece una versión rápida y promete liberar los pesos del modelo completo el 4 de noviembre de 2026.",
+   "por_que_importa": "Permite acceder a un nuevo modelo de lenguaje con precios similares a alternativas conocidas del mercado.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que distintas aplicaciones se comuniquen entre sí."
+    },
+    {
+     "termino": "pesos",
+     "explicacion": "Los archivos que contienen los datos fundamentales de un modelo de inteligencia artificial entrenado."
+    },
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de palabras que las inteligencias artificiales procesan y generan."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/singularity/comments/1xdkbgt/kimi_k31_pro_benchmarks/"
+    },
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "296a9e0ddc42",
+   "fecha": "2026-10-24",
+   "titulo": "Publican repositorio con instrucciones para pruebas de seguridad en IA",
+   "que_paso": "Crearon una recopilación de instrucciones para saltarse restricciones en diversos modelos. Está orientada a investigaciones de seguridad.",
+   "por_que_importa": "Sirve para revisar las vulnerabilidades de los sistemas de inteligencia artificial.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "jailbreak",
+     "explicacion": "Técnicas para lograr que una inteligencia artificial ignore sus propias normas de seguridad."
+    },
+    {
+     "termino": "prompt",
+     "explicacion": "Instrucción o texto que se le escribe a una inteligencia artificial para que realice una tarea."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/Alejandros17487/ai-jailbreaks"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "4f1a69c73f38",
+   "fecha": "2026-10-24",
+   "titulo": "Empresa Block presenta un modelo entrenado solo con charlas humanas",
+   "que_paso": "La compañía Block anunció un modelo llamado Dessa entrenado desde cero exclusivamente con conversaciones de personas. Los creadores compartieron ejemplos de chats que muestran interacciones poco habituales.",
+   "por_que_importa": "Muestra un enfoque distinto en el entrenamiento de modelos conversacionales basado netamente en interacciones reales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "c83614434645",
+   "fecha": "2026-10-24",
+   "titulo": "Lanzan modelo DeepSeek con capacidad de procesamiento visual y de video",
+   "que_paso": "Publicaron un nuevo modelo con una ventana de contexto de un millón de tokens y capacidades para entender imágenes y videos. Utiliza licencias de código abierto.",
+   "por_que_importa": "Ofrece alternativas avanzadas para procesar archivos multimedia extensos de manera local o en servidores propios.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto o datos que la inteligencia artificial procesa."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "c2a7a8e39fd1",
+   "fecha": "2026-10-24",
+   "titulo": "Video repasa las novedades del modelo Kimi K3.1",
+   "que_paso": "El creador Matthew Berman analiza en su canal de YouTube las características y capacidades del modelo Kimi K3.1.",
+   "por_que_importa": "Permite conocer opiniones y detalles visuales sobre el funcionamiento de esta tecnología.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matthew Berman",
+     "url": "https://www.youtube.com/watch?v=5sEVvu4mQ8g"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b6e0b87cd5b3",
+   "fecha": "2026-10-24",
+   "titulo": "Video explora el uso de teléfonos antiguos con inteligencia artificial",
+   "que_paso": "El creador Matt Wolfe publica un video sobre las últimas novedades de la industria, incluyendo el uso de dispositivos móviles antiguos.",
+   "por_que_importa": "Muestra proyectos curiosos sobre cómo reutilizar hardware antiguo mediante tecnologías recientes.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/shorts/FiyUagHO37Y"
+    }
+   ],
+   "confirmacion": 1
+  }
+ ]
+}
