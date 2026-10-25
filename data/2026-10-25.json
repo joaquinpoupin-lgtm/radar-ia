@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-25",
- "actualizado": "2026-10-25T05:37:30-03:00",
+ "actualizado": "2026-10-25T10:49:09-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI decidió aislar de internet sus modelos más avanzados para evitar riesgos de seguridad y prevenir posibles hackeos externos.",
@@ -173,6 +173,126 @@
     {
      "nombre": "Reddit",
      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xeqtp1/i_built_a_laser_dryfire_shooting_game_with_claude/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "6bffee9c13e8",
+   "fecha": "2026-10-25",
+   "titulo": "La comunidad r/opensource prohíbe proyectos que utilicen inteligencia artificial",
+   "que_paso": "Los moderadores del espacio de código abierto r/opensource actualizaron sus normas de publicación. Decidieron vetar cualquier proyecto que esté hecho con inteligencia artificial, la utilice o esté pensado para ella.",
+   "por_que_importa": "Muestra el rechazo de algunos sectores del software libre hacia la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "47e6b753d7f3",
+   "fecha": "2026-10-25",
+   "titulo": "Dinamarca prepara un plan para proteger la voz y el rostro de los ciudadanos",
+   "que_paso": "Dinamarca busca implementar medidas legales para blindar la identidad de las personas contra el uso no autorizado de su imagen y voz mediante inteligencia artificial. El objetivo es frenar estafas y la creación de contenidos falsos.",
+   "por_que_importa": "Los gobiernos empiezan a buscar soluciones legales ante el uso malicioso de herramientas de clonación digital.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/privacidad/dinamarca-tiene-plan-deepfakes-blindar-voz-rostro-sus-ciudadanos-ia"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b8a932d98917",
+   "fecha": "2026-10-25",
+   "titulo": "Lanzan una versión preliminar de un modelo de IA para programar y crear escenas 3D",
+   "que_paso": "Un usuario compartió una versión temprana de un modelo de inteligencia artificial entrenado para generar código y crear entornos en tres dimensiones. El proyecto es una modificación independiente de un modelo ya existente y ya se puede descargar.",
+   "por_que_importa": "Permite experimentar con la generación de elementos tridimensionales mediante modelos de tamaño reducido.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeuo7t/a_4b_coding_model_that_can_generate_3d_scenes/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "22abdef1b51c",
+   "fecha": "2026-10-25",
+   "titulo": "Debate en Reddit sobre el rendimiento de versiones comprimidas de DeepSeek",
+   "que_paso": "Un usuario de Reddit abrió un debate para consultar si las versiones comprimidas de DeepSeek-V4.1-Flash mantienen realmente la calidad prometida en las pruebas oficiales. Varios miembros de la comunidad discuten sobre cómo medir la degradación real del modelo.",
+   "por_que_importa": "Refleja las dudas de la comunidad sobre la efectividad de las versiones comprimidas de modelos de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xes5x0/too_good_to_be_true_istas_gsqrco_2bit/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "5495cbe25cea",
+   "fecha": "2026-10-25",
+   "titulo": "Directivo de Anthropic advierte que los ciberataques impulsados por IA empeorarán",
+   "que_paso": "Jason Clinton, subdirector de ciberseguridad en Anthropic, señaló que la seguridad digital se enfrenta a desafíos cada vez mayores debido a la evolución de la tecnología. La advertencia apunta a que las amenazas actuales se volverán mucho más complejas.",
+   "por_que_importa": "Anticipa mayores riesgos de ciberseguridad a medida que las herramientas avanzan.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/seguridad/van-a-empeorar-mucho-jason-clinton-subdirector-ciberseguridad-anthropic-advierte-que-esta-venir"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "aab6bf4c99ee",
+   "fecha": "2026-10-25",
+   "titulo": "Resumen en video repasa incidentes recientes de seguridad informática y agentes de IA",
+   "que_paso": "Un nuevo video repasa varios problemas recientes de seguridad en internet. Entre los casos mencionados se incluyen fallos en paquetes de código, vulnerabilidades antiguas y situaciones relacionadas con agentes de inteligencia artificial.",
+   "por_que_importa": "Muestra una recopilación rápida de incidentes y riesgos actuales en el desarrollo de software.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Fireship",
+     "url": "https://www.youtube.com/watch?v=SMGg7iisHmc"
     }
    ],
    "confirmacion": 1
