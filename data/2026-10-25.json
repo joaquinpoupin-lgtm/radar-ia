@@ -1,0 +1,181 @@
+{
+ "fecha": "2026-10-25",
+ "actualizado": "2026-10-25T05:37:30-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI decidió aislar de internet sus modelos más avanzados para evitar riesgos de seguridad y prevenir posibles hackeos externos.",
+   "Una modificación en la política de privacidad de Google indica que Gmail podría usar más datos para orientar publicidad.",
+   "Un análisis en Estados Unidos examina el impacto de la inteligencia artificial en la pérdida de empleos creativos en diversos sectores."
+  ],
+  "ids": [
+   "f699a3e5cdaf",
+   "6643f32ed82d",
+   "283aef7b5aec",
+   "c35e0b6aa8bd",
+   "a2ab57efc2fc",
+   "2762aa8f75cb",
+   "26a10ea170f0",
+   "dbe76530e989",
+   "934580108444",
+   "77a508042084"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "283aef7b5aec",
+   "fecha": "2026-10-25",
+   "titulo": "Analizan el impacto de la inteligencia artificial en la pérdida de empleos creativos",
+   "que_paso": "En Estados Unidos se han perdido cientos de miles de empleos en medios, cine y artes. Un análisis examina cuánto de esta caída se debe al avance de la inteligencia artificial.",
+   "por_que_importa": "Muestra la preocupación actual sobre cómo la tecnología está afectando al mercado laboral en sectores creativos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "c35e0b6aa8bd",
+   "fecha": "2026-10-25",
+   "titulo": "Cerebras despliega modelos de inteligencia artificial de un billón de parámetros",
+   "que_paso": "La empresa Cerebras logró distribuir modelos complejos a través de sus chips especializados. Esto permite procesar información a una velocidad muy alta de más de mil tokens por segundo.",
+   "por_que_importa": "Representa un avance en la potencia de hardware para hacer funcionar sistemas de inteligencia artificial con mayor rapidez.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que la inteligencia artificial procesa para leer y generar contenido."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "a2ab57efc2fc",
+   "fecha": "2026-10-25",
+   "titulo": "Desarrollan un chip neural que decodifica la comunicación entre regiones del cerebro",
+   "que_paso": "Investigadores crearon un chip implantable que monitorea cómo se comunican distintas partes del cerebro. El dispositivo logra identificar estados cognitivos y emocionales en tiempo real.",
+   "por_que_importa": "Es un desarrollo científico que acerca la tecnología a la lectura de señales cerebrales humanas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "2762aa8f75cb",
+   "fecha": "2026-10-25",
+   "titulo": "Carbon-X: un modelo abierto para comprender y generar ADN",
+   "que_paso": "Lanzaron un modelo de lenguaje de catorce mil millones de parámetros enfocado en biología. Permite entender y generar secuencias de ADN bajo una licencia de uso abierto.",
+   "por_que_importa": "Ofrece a los científicos una herramienta abierta para trabajar en investigación genética con inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/HuggingFaceBio/Carbon-X"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "26a10ea170f0",
+   "fecha": "2026-10-25",
+   "titulo": "La serie Blue Planet III mantendrá tomas imperfectas para diferenciarse de la inteligencia artificial",
+   "que_paso": "La BBC decidió dejar las imperfecciones en sus tomas de naturaleza para su próxima serie. Buscan demostrar autenticidad frente al exceso de imágenes perfectas y pulidas que genera la inteligencia artificial.",
+   "por_que_importa": "Refleja cómo los realizadores buscan marcar distancia visual frente al contenido artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "dbe76530e989",
+   "fecha": "2026-10-25",
+   "titulo": "Recopilan proyectos y aplicaciones de inteligencia artificial que fracasaron o cerraron",
+   "que_paso": "Un listado actual reúne iniciativas que no cumplieron las expectativas o terminaron canceladas. Entre los casos figuran retrasos en asistentes de voz y lanzamientos complejos de grandes empresas.",
+   "por_que_importa": "Muestra que en la industria tecnológica no todos los proyectos logran prosperar.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "934580108444",
+   "fecha": "2026-10-25",
+   "titulo": "Pensilvania exigirá etiquetas visibles en anuncios creados con inteligencia artificial",
+   "que_paso": "El gobernador del estado firmó una ley que obliga a identificar publicidades hechas o modificadas con inteligencia artificial. La norma aplica para imágenes, videos, audios y textos publicitarios.",
+   "por_que_importa": "Establece nuevas reglas legales para evitar engaños en la publicidad digital.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "77a508042084",
+   "fecha": "2026-10-25",
+   "titulo": "Creador en Reddit desarrolla un juego de disparos láser usando inteligencia artificial",
+   "que_paso": "Un usuario programó un juego donde una cámara web rastrea los disparos láser hechos contra el monitor y calcula los puntajes. El proyecto fue creado con asistencia de herramientas de programación y se ofrece de forma libre.",
+   "por_que_importa": "Muestra cómo una persona puede crear aplicaciones interactivas propias apoyándose en asistentes de código.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gratis",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/ClaudeAI/comments/1xeqtp1/i_built_a_laser_dryfire_shooting_game_with_claude/"
+    }
+   ],
+   "confirmacion": 1
+  }
+ ]
+}
