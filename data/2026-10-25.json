@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-25",
- "actualizado": "2026-10-25T10:49:09-03:00",
+ "actualizado": "2026-10-25T15:31:08-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI decidió aislar de internet sus modelos más avanzados para evitar riesgos de seguridad y prevenir posibles hackeos externos.",
@@ -293,6 +293,162 @@
     {
      "nombre": "Fireship",
      "url": "https://www.youtube.com/watch?v=SMGg7iisHmc"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "1dc75a32fc6a",
+   "fecha": "2026-10-25",
+   "titulo": "Dermatólogo descubre que red neuronal antigua supera a modelos actuales en diagnóstico",
+   "que_paso": "Un dermatólogo probó la capacidad de modelos recientes para diagnosticar cáncer de piel y notó menor precisión de la esperada. Al comparar los resultados con una red neuronal de hace diez años, descubrió que esta última era superior.",
+   "por_que_importa": "Muestra que los sistemas más nuevos no siempre superan a tecnologías anteriores en tareas médicas específicas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "red neuronal",
+     "explicacion": "Sistema informático inspirado en el cerebro humano que aprende a reconocer patrones a partir de datos."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://lynchlab.net/llm-skin-cancer"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "7deb0a380978",
+   "fecha": "2026-10-25",
+   "titulo": "Lanzan modelo de lenguaje Nanbeige4.3-33B para futuras versiones más pequeñas",
+   "que_paso": "Liberaron Nanbeige4.3-33B, un modelo de gran capacidad pensado para servir como base y transferir sus capacidades avanzadas hacia versiones más compactas.",
+   "por_que_importa": "Permite el desarrollo futuro de asistentes de inteligencia artificial más pequeños y eficientes.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo de lenguaje",
+     "explicacion": "Inteligencia artificial entrenada para entender y generar texto parecido al humano."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "ed849a13eb41",
+   "fecha": "2026-10-25",
+   "titulo": "Premio de fotografía microscópica de Nikon se retira por indicios de inteligencia artificial",
+   "que_paso": "Un concurso de microfotografía de Nikon retiró el título al ganador después de que científicos detectaran señales de que la imagen fue generada o alterada con inteligencia artificial.",
+   "por_que_importa": "Evidencia los desafíos actuales para verificar la autenticidad de las imágenes en concursos visuales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "4655457b8c4b",
+   "fecha": "2026-10-25",
+   "titulo": "Herramienta de genealogía basada en inteligencia artificial para investigar historia familiar",
+   "que_paso": "Crearon una función para agentes de inteligencia artificial orientada a buscar registros históricos, eclesiásticos y militares en el territorio de la antigua Unión Soviética. Responde en el idioma del usuario.",
+   "por_que_importa": "Facilita la búsqueda de antepasados y documentos genealógicos antiguos mediante asistentes virtuales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de inteligencia artificial",
+     "explicacion": "Programas autónomos que usan IA para cumplir tareas complejas por su cuenta."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "f5b6ee82a6be",
+   "fecha": "2026-10-25",
+   "titulo": "Presidente de Alibaba afirma que Europa necesita inteligencia artificial abierta para su soberanía",
+   "que_paso": "Joe Tsai señaló en un evento en Italia que la única manera de lograr soberanía tecnológica en Europa es mediante modelos abiertos que puedan personalizarse, en lugar de depender de APIs cerradas de terceros.",
+   "por_que_importa": "Destaca el debate sobre la dependencia de las empresas europeas frente a proveedores externos de tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API cerrada",
+     "explicacion": "Servicio de inteligencia artificial cuyo código y funcionamiento interno no son públicos."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/presidente-alibaba-tiene-claro-unica-forma-que-europa-alcance-soberania-tecnologica-ia-open-source"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "b23877b88e69",
+   "fecha": "2026-10-25",
+   "titulo": "Inversiones en inteligencia artificial aún no generan retornos financieros fuera del sector tecnológico",
+   "que_paso": "Un economista de la firma Apollo señaló que, a pesar del gasto masivo y la popularidad de la inteligencia artificial, la tecnología todavía no ha entregado ganancias financieras en las empresas corporativas fuera del rubro tecnológico.",
+   "por_que_importa": "Pone en duda el impacto económico real que la tecnología tiene por ahora en la mayoría de las empresas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "45101e4dc28d",
+   "fecha": "2026-10-25",
+   "titulo": "Video analiza las novedades y precios de la herramienta de video Kling 4",
+   "que_paso": "El creador de contenido Xavier Mitjana publicó un video en YouTube analizando las novedades del modelo de video Kling 4. Muestra ejemplos prácticos y lo compara con Seedance 2.5.",
+   "por_que_importa": "Permite ver comparativas visuales entre herramientas actuales de generación de video.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video",
+    "español"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xavier Mitjana",
+     "url": "https://www.youtube.com/watch?v=gNODQ57rvJc"
     }
    ],
    "confirmacion": 1
