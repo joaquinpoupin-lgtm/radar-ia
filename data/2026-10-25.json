@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-25",
- "actualizado": "2026-10-25T15:31:08-03:00",
+ "actualizado": "2026-10-25T20:25:19-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI decidió aislar de internet sus modelos más avanzados para evitar riesgos de seguridad y prevenir posibles hackeos externos.",
@@ -449,6 +449,42 @@
     {
      "nombre": "Xavier Mitjana",
      "url": "https://www.youtube.com/watch?v=gNODQ57rvJc"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "33331332d5b9",
+   "fecha": "2026-10-25",
+   "titulo": "Profesor de matemáticas deja de calificar tareas al ver el uso de inteligencia artificial",
+   "que_paso": "Un profesor de la Universidad de California en Berkeley decidió no revisar más las tareas de sus alumnos. Notó que muchos estudiantes usaban inteligencia artificial para obtener notas altas de forma constante.",
+   "por_que_importa": "Muestra cómo el uso masivo de estas herramientas por parte de los estudiantes está cambiando la forma de enseñar en la universidad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "bf7f18e0418c",
+   "fecha": "2026-10-25",
+   "titulo": "Lanzan los primeros siete minutos de una producción generada por Grok",
+   "que_paso": "Se publicaron los primeros minutos de 'Odyssey', una obra creada completamente con inteligencia artificial. Las primeras impresiones indican que el resultado visual es aceptable, aunque sin destacar por su calidad artística.",
+   "por_que_importa": "Permite ver hasta dónde llegan las herramientas actuales para generar contenido audiovisual de larga duración.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/"
     }
    ],
    "confirmacion": 1
