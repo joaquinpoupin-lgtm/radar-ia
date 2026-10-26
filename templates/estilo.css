@@ -27,6 +27,7 @@
   --l405: #a07dff;
   --l436: #7084ff;
   --l486: #3ec3ff;
+  --l510: #2fe3b8;
   --l546: #8fe36a;
   --l589: #ffd84a;
   --l615: #ff9a45;
@@ -54,6 +55,7 @@
 [data-seccion="modelos"] { --c: var(--l405); }
 [data-seccion="herramientas"] { --c: var(--l436); }
 [data-seccion="tendencias"] { --c: var(--l486); }
+[data-seccion="skills"] { --c: var(--l510); }
 [data-seccion="creadores"] { --c: var(--l546); }
 [data-seccion="dinero"] { --c: var(--l615); }
 [data-seccion="tips"] { --c: var(--l656); }
@@ -285,7 +287,7 @@ a.linea:focus-visible { outline-offset: 0; }
   position: absolute; left: var(--x); top: 0;
   translate: -50% 0;
   padding-top: .55rem;
-  font-size: .7rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+  font-size: .7rem; font-weight: 500; letter-spacing: .03em; text-transform: uppercase;
   color: var(--hueso-2);
   white-space: nowrap;
 }

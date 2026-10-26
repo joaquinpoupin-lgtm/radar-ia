@@ -21,7 +21,7 @@ TIPOS = {"rss", "hackernews", "youtube", "github", "huggingface", "papers"}
 # Tipos que se leen desde una API JSON (no RSS). Paso 14: github (búsqueda de repos), huggingface (modelos
 # en tendencia) y papers (Daily Papers de Hugging Face, que son papers de arXiv votados por la comunidad).
 TIPOS_JSON = {"hackernews", "github", "huggingface", "papers"}
-SECCIONES = {"modelos", "herramientas", "tendencias", "creadores", "dinero", "tips"}
+SECCIONES = {"modelos", "herramientas", "tendencias", "skills", "creadores", "dinero", "tips"}
 IDIOMAS = {"es", "en"}
 CAMPOS = ("nombre", "tipo", "url", "seccion", "idioma", "peso")
 

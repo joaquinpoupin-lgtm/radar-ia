@@ -28,6 +28,7 @@ Un "radar" que lee por mí cientos de fuentes sobre IA, separa lo importante del
 | **Modelos y lanzamientos** | Modelos nuevos o actualizados (texto, imagen, video, voz, código): qué cambió, para qué sirve, si es gratis o de pago, comparación con el anterior. |
 | **Herramientas y proyectos** | Apps, proyectos open source, agentes, automatizaciones que están apareciendo (GitHub, Hugging Face, Product Hunt). |
 | **De qué habla la gente** | Temas que están subiendo en Reddit, Hacker News, YouTube. Termómetro de "qué está caliente esta semana". |
+| **Skills para Claude** | Skills y plugins nuevos para Claude (oficiales y de la comunidad): qué hacen, para quién sirven y dónde funcionan. *(Agregada el 2026-10-26 a pedido del usuario.)* |
 | **Radar de creadores** | Videos nuevos de canales de IA, resumidos en ~5 líneas. Qué tipo de proyectos están mostrando. |
 | **Cómo la gente gana dinero con IA** | Casos reales y modelos de negocio: qué es, inversión/dificultad aproximada, si está saturado. |
 | **Saca el máximo provecho** | Trucos, prompts y flujos de trabajo concretos y prácticos. |
@@ -133,7 +134,7 @@ Esquema sugerido:
   "titulo": "Título claro en español",
   "que_paso": "2-3 líneas simples explicando la noticia.",
   "por_que_importa": "1 línea: qué significa para alguien que usa IA.",
-  "seccion": "modelos | herramientas | tendencias | creadores | dinero | tips",
+  "seccion": "modelos | herramientas | tendencias | skills | creadores | dinero | tips",
   "importancia": "alta | normal",
   "terminos": [{"termino": "RAG", "explicacion": "Técnica para que la IA consulte tus documentos antes de responder."}],
   "etiquetas": ["video", "gratis", "open source"],

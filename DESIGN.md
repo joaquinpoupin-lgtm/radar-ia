@@ -6,6 +6,7 @@ colors:
   l405: "#a07dff"
   l436: "#7084ff"
   l486: "#3ec3ff"
+  l510: "#2fe3b8"
   l546: "#8fe36a"
   l615: "#ff9a45"
   l656: "#ff5d55"
@@ -152,6 +153,7 @@ Una longitud de onda por sección, aplicada vía `data-seccion` a la variable `-
 - **Violeta 405** (l405): modelos.
 - **Índigo 436** (l436): herramientas.
 - **Cian 486** (l486): tendencias.
+- **Verde agua 510** (l510): skills para Claude.
 - **Verde 546** (l546): creadores.
 - **Naranja 615** (l615): dinero.
 - **Rojo 656** (l656): tips.

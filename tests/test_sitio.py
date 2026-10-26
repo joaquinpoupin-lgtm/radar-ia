@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import httpx
 
 from radar.config import cargar_config
+from radar.resumir import SECCIONES
 from radar.sitio import (cargar_dias, datos_portada, espectro, fecha_larga, generar_sitio, links_externos,
                          links_internos_rotos, minutos_lectura, noticias_recientes, probar_link, revisar_links)
 
@@ -144,9 +145,10 @@ def test_espectro_reparte_cada_seccion_en_su_franja():
     noticias = [noticia(f"m{i}") for i in range(5)] + [noticia("t", AYER, seccion="tips", importancia="alta")]
     lineas = espectro(noticias, HOY)
     modelos = [l["x"] for l in lineas if l["seccion"] == "modelos"]
-    assert len(lineas) == 6 and all(0 < x < 100 / 6 for x in modelos) and len(set(modelos)) == 5
+    franja = 100 / len(SECCIONES)
+    assert len(lineas) == 6 and all(0 < x < franja for x in modelos) and len(set(modelos)) == 5
     tips = lineas[-1]
-    assert 500 / 6 < tips["x"] < 100 and tips["alta"] and tips["de_ayer"]
+    assert 100 - franja < tips["x"] < 100 and tips["alta"] and tips["de_ayer"]
     assert [l["i"] for l in lineas] == list(range(6))
 
 

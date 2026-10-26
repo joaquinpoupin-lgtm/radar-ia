@@ -21,7 +21,7 @@ from radar.ia import IANoDisponible, pedir_json
 from radar.recolectar import recolectar
 
 RUTA_PROMPT = RAIZ / "prompts" / "resumen.md"
-SECCIONES = ("modelos", "herramientas", "tendencias", "creadores", "dinero", "tips")
+SECCIONES = ("modelos", "herramientas", "tendencias", "skills", "creadores", "dinero", "tips")
 IMPORTANCIAS = ("alta", "normal")
 CAMPOS_TEXTO = ("titulo", "que_paso", "por_que_importa")
 MAX_ETIQUETAS = 4

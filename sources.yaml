@@ -7,7 +7,7 @@
 #            (github, huggingface y papers leen la API pública de esos sitios; ver más abajo)
 #   url      dirección del feed (o de la API). {desde} se cambia por la fecha de hace
 #            `recolector.dias_tendencias` días (config.yaml)
-#   seccion  sección por defecto: modelos | herramientas | tendencias | creadores | dinero | tips
+#   seccion  sección por defecto: modelos | herramientas | tendencias | skills | creadores | dinero | tips
 #            (la IA puede cambiarla según la noticia)
 #   idioma   es | en
 #   peso     1 (mucho ruido) a 3 (oficial / muy confiable); cuenta en el pre-filtro
@@ -33,6 +33,13 @@ fuentes:
     tipo: rss   # feed comunitario
     url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml
     seccion: modelos
+    idioma: en
+    peso: 3
+
+  - nombre: Claude (blog)
+    tipo: rss   # feed comunitario: blog de producto de Claude (anuncia skills y funciones nuevas)
+    url: https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml
+    seccion: herramientas
     idioma: en
     peso: 3
 
@@ -113,6 +120,14 @@ fuentes:
     tipo: github   # API de búsqueda: repos de IA creados en los últimos 7 días con ≥150 estrellas
     url: https://api.github.com/search/repositories?q=llm+OR+agent+OR+ai+in%3Aname%2Cdescription%2Ctopics+created%3A%3E%3D{desde}+stars%3A%3E%3D150&sort=stars&order=desc&per_page=30
     seccion: herramientas
+    idioma: en
+    peso: 2
+    max_por_corrida: 1
+
+  - nombre: GitHub (skills de Claude)
+    tipo: github   # skills para Claude creadas en los últimos 7 días con ≥100 estrellas
+    url: https://api.github.com/search/repositories?q=skills+claude+in%3Aname%2Cdescription%2Ctopics+created%3A%3E%3D{desde}+stars%3A%3E%3D100&sort=stars&order=desc&per_page=30
+    seccion: skills
     idioma: en
     peso: 2
     max_por_corrida: 1

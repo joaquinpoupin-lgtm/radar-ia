@@ -43,6 +43,7 @@ NOMBRES_SECCION = {
     "modelos": "Modelos y lanzamientos",
     "herramientas": "Herramientas y proyectos",
     "tendencias": "De qué habla la gente",
+    "skills": "Skills para Claude",
     "creadores": "Radar de creadores",
     "dinero": "Dinero con IA",
     "tips": "Saca el máximo provecho",

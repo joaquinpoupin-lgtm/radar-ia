@@ -11,13 +11,14 @@ Decide una de estas tres cosas:
    - es publicidad, una oferta de empleo, un evento o webinar, o un caso de cliente que solo promociona un producto sin dar nada útil;
    - es demasiado técnica o de nicho para alguien que usa IA pero no la programa (por ejemplo, un paper académico sin consecuencias prácticas);
    - el título y el extracto no dicen lo suficiente para contar qué pasó sin inventar;
-   - promete ganar dinero sin dar ningún dato concreto que se pueda revisar.
+   - promete ganar dinero sin dar ningún dato concreto que se pueda revisar;
+   - es una skill o plugin con contenido sexual, para saltarse reglas o bloqueos de un servicio, para manejar cuentas de otros o datos privados, o que no explica qué hace.
 2. **Unir** (`"misma_que": <n de la otra>`) si cuenta exactamente lo mismo que otra noticia de esta lista, aunque esté en otro idioma o con otras palabras. Resume solo la otra (la que no lleva `misma_que`).
 3. **Resumir** con estos campos:
    - `titulo`: título claro en español, de 12 palabras como máximo. Informativo, sin signos de exclamación ni adjetivos exagerados.
    - `que_paso`: 2 o 3 frases cortas (de 20 palabras como máximo cada una) que cuentan la noticia. Quién hizo qué, y qué se puede hacer ahora que antes no. Mejor dos frases cortas que una larga.
    - `por_que_importa`: 1 frase corta sobre qué significa para alguien que usa IA en su día a día. Tiene que salir de lo que dice la fuente: no agregues beneficios que la fuente no menciona (más barato, más rápido, más fácil…).
-   - `seccion`: una de `modelos`, `herramientas`, `tendencias`, `creadores`, `dinero`, `tips` (ver abajo). Puedes cambiar la sugerida si otra calza mejor.
+   - `seccion`: una de `modelos`, `herramientas`, `tendencias`, `skills`, `creadores`, `dinero`, `tips` (ver abajo). Puedes cambiar la sugerida si otra calza mejor.
    - `importancia`: `alta` solo si es un cambio grande que mucha gente va a notar (un modelo nuevo importante de una empresa grande, algo que pasa a ser gratis o un problema serio de seguridad o privacidad). Todo lo demás es `normal`. Usa `alta` en muy pocas noticias por lista, o en ninguna.
    - `terminos`: cada palabra técnica que hayas usado en `titulo`, `que_paso` o `por_que_importa`, explicada en una frase simple (`{"termino": "...", "explicacion": "..."}`). Lista vacía si no hay ninguna. Mejor todavía: evita las palabras técnicas cuando se pueda decir más simple.
    - `etiquetas`: de 0 a 4 etiquetas cortas en minúsculas. Úsalas solo cuando la fuente lo dice: `gratis`, `de pago`, `open source`, `video`, `español`, `rumor`, `sin confirmar`, `seguridad`, `privacidad`, `empresa`, `investigación`.
@@ -27,6 +28,7 @@ Decide una de estas tres cosas:
 - `modelos`: modelos de IA nuevos o actualizados (texto, imagen, video, voz, código). Qué cambió, para qué sirve y si es gratis o de pago, si la fuente lo dice.
 - `herramientas`: apps, proyectos open source, agentes y automatizaciones.
 - `tendencias`: de qué está hablando la gente (Reddit, Hacker News), debates y noticias de la industria (empresas, leyes, seguridad).
+- `skills`: skills y plugins para Claude (Agent Skills, plugins de Claude Code): paquetes de instrucciones que le enseñan a Claude a hacer una tarea. Cuenta qué hace, para quién sirve y, si la fuente lo dice, en qué funciona (Claude Code, la app de Claude, otros agentes). Di si es oficial de Anthropic o de la comunidad; si es de la comunidad, `por_que_importa` puede recordar que conviene revisarla antes de instalarla. Solo cuenta lo que dicen el título y el extracto.
 - `creadores`: videos de YouTube. Cuenta de qué trata el video y qué muestra.
 - `dinero`: cómo la gente o las empresas ganan dinero con IA, **solo con datos concretos** (cifras, empresa, de dónde salen). Una promesa de ingresos sin datos ("gana $X al mes") se descarta, o lleva la etiqueta `sin confirmar` y el texto dice claramente que no está comprobado.
 - `tips`: trucos, prompts y formas de trabajar concretas y prácticas.
