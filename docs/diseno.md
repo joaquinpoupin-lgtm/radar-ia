@@ -152,7 +152,7 @@ Cómo trabaja `radar/recolectar.py`:
 - **Cada noticia:** importante, sección, fecha (en Secciones), "N fuentes la cuentan" si `confirmacion > 1` (puede haber menos links que fuentes: si HN comparte el artículo de The Verge es un solo link), título, qué pasó, por qué importa, términos, etiquetas y links "Leer en: X →" (pestaña nueva, `rel=noopener`).
 - **Filtros (Secciones):** atributos `data-seccion`, `data-alta`, `data-etiquetas` en cada noticia y ~40 líneas de JS: una sección (o todas) + "solo importantes" + una etiqueta (las 20 más usadas), con contador y aviso si no queda ninguna. Sin JS los filtros no aparecen y se ven todas.
 - **Revisión de links:** siempre se comprueba que los links entre páginas apunten a archivos que existen. Con `--revisar-links` además se prueba cada link a las fuentes (GET sin bajar la página, en paralelo, mismo user-agent que el recolector): 2xx/3xx = OK; 401/403/429/999 = AVISO (el sitio existe pero bloquea programas); 404, 5xx o sin conexión = ERROR (sale con 1).
-- **Ver en local:** `.claude/launch.json` define el servidor `sitio` (`python -m http.server 8000 --directory _site`; en Windows, `sitio-windows` en el puerto 8001); abrir el `index.html` directo con doble clic también funciona.
+- **Ver en local:** `.claude/launch.json` define el servidor `sitio` (`python -m http.server 8001 --directory _site`, Windows; en el Mac, `sitio-mac` en el puerto 8000); abrir el `index.html` directo con doble clic también funciona.
 
 ## Corrida completa (Paso 10)
 

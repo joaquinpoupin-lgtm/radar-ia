@@ -649,14 +649,14 @@ a.linea:focus-visible { outline-offset: 0; }
     display: grid; grid-template-columns: var(--margen) var(--hueco) minmax(0, 1fr) var(--der);
     padding-inline: 0;
   }
-  .marca { grid-column: 1; }
+  .marca { grid-column: 1; padding-left: 1.5rem; }
   .menu { grid-column: 3; justify-self: end; margin-right: -.55rem; }
 
   .lamina > .apertura {
     grid-column: 1; grid-row: 1;
-    padding: 2.6rem 1.5rem 0 0;
+    padding: 2.6rem 1.5rem 0 1.5rem;
   }
-  .titular { font-size: 3.5rem; }
+  .titular { font-size: clamp(2.6rem, 3.5vw, 3.1rem); }
   .lamina > .apertura__espectro { grid-column: 2 / -1; padding: 2.6rem 0 0; }
   .apertura__espectro .espectro__pie { padding-inline: var(--hueco) var(--der); }
   .espectro__banda { height: 17rem; border-left: 0; border-right: 0; }
