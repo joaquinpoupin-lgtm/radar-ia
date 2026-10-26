@@ -9,7 +9,7 @@
 <title>{% block titulo %}Radar IA{% endblock %}</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%23121314%22/><path d=%22M7 6v20%22 stroke=%22%23a07dff%22 stroke-width=%222%22/><path d=%22M12.5 6v20%22 stroke=%22%233ec3ff%22 stroke-width=%222%22/><path d=%22M19 6v20%22 stroke=%22%238fe36a%22 stroke-width=%222%22/><path d=%22M26 6v20%22 stroke=%22%23ff5d55%22 stroke-width=%222%22/></svg>">
 <link rel="preload" href="{{ raiz }}archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{{ raiz }}estilo.css">
+<link rel="stylesheet" href="{{ raiz }}estilo.css?v={{ version_css }}">
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -26,9 +26,12 @@
     </nav>
   </div>
 </header>
+<div class="pagina">
 <main class="lamina" id="contenido">
 {% block contenido %}{% endblock %}
 </main>
+{% block lateral %}{% endblock %}
+</div>
 <footer class="pie">
   <div class="pie__dentro">
     <p>Resúmenes hechos con IA a partir de fuentes públicas: pueden tener errores. Ante la duda, lee la fuente original.</p>

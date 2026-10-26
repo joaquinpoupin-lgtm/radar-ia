@@ -8,10 +8,6 @@
   <p class="bajada rotulo">Últimos {{ dias }} días · de la más nueva a la más vieja</p>
 </header>
 {% if noticias %}
-<div class="apertura__espectro">
-  {{ banda(espectro(noticias), enlaces=false, nombre="Espectro de los últimos días",
-           ayuda="Cada línea es una de las " ~ (noticias | length) ~ " noticias de estos días.") }}
-</div>
 <div class="filtros" id="filtros" hidden>
   <div class="grupo" role="group" aria-label="Sección">
     <button type="button" data-seccion="" aria-pressed="true">Todas <small>{{ noticias | length }}</small></button>
@@ -26,6 +22,10 @@
     {% endfor %}
   </div>
   <p class="contador rotulo" id="contador" aria-live="polite"></p>
+</div>
+<div class="apertura__espectro espectro--compacto">
+  {{ banda(espectro(noticias), enlaces=false, nombre="Espectro de los últimos días",
+           ayuda="Cada línea es una de las " ~ (noticias | length) ~ " noticias de estos días.") }}
 </div>
 <section class="lista" id="lista" aria-labelledby="lista-titulo">
 <h2 class="solo-lector" id="lista-titulo">Noticias</h2>

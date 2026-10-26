@@ -182,6 +182,8 @@ def entorno() -> Environment:
                       trim_blocks=True, lstrip_blocks=True)
     env.globals.update(NOMBRES_SECCION=NOMBRES_SECCION, SECCIONES=SECCIONES, espectro=espectro,
                        ilustracion=ilustracion)
+    # Versión del CSS en su link (estilo.css?v=…): así el navegador no muestra un CSS viejo guardado.
+    env.globals["version_css"] = hashlib.sha1((CARPETA_PLANTILLAS / "estilo.css").read_bytes()).hexdigest()[:10]
     env.filters.update(fecha_larga=fecha_larga, fecha_corta=fecha_corta)
     return env
 

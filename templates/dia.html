@@ -7,11 +7,6 @@
   <h1 class="titular">{{ fecha | fecha_larga | replace(" de " ~ fecha[:4], "") }}<span class="solo-lector"> de {{ fecha[:4] }}</span></h1>
   <p class="bajada rotulo">{{ fecha[:4] }} · {{ noticias | length }} noticia{{ "s" if noticias | length != 1 }} publicadas este día</p>
 </header>
-{% if noticias %}
-<div class="apertura__espectro">
-  {{ banda(espectro(noticias), ayuda="Cada línea es una noticia de este día. Tócala para ir a ella.") }}
-</div>
-{% endif %}
 {% if brief and brief.bullets %}
 <section class="clave" aria-labelledby="clave-titulo">
   <h2 id="clave-titulo">Lo más importante</h2>
@@ -29,4 +24,20 @@
   <a class="boton boton--centro" href="index.html">Todos los días</a>
   {% if siguiente %}<a class="boton" href="{{ siguiente }}.html">{{ siguiente | fecha_corta }}{{ flecha() }}</a>{% else %}<span></span>{% endif %}
 </nav>
+{% endblock %}
+{% block lateral %}
+<aside class="lateral" aria-label="Resumen del día">
+  {% if brief and brief.bullets %}
+  <section class="clave clave--lateral" aria-labelledby="clave-lateral-titulo">
+    <h2 id="clave-lateral-titulo">Lo más importante</h2>
+    <ul>{% for b in brief.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  {% if noticias %}
+  <section class="lateral__espectro" aria-labelledby="espectro-titulo">
+    <h2 id="espectro-titulo">El día por secciones</h2>
+    {{ banda(espectro(noticias), ayuda="Cada línea es una noticia de este día. Tócala para ir a ella.") }}
+  </section>
+  {% endif %}
+</aside>
 {% endblock %}

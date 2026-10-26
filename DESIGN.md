@@ -205,6 +205,10 @@ La placa es una grilla de cuatro columnas: margen, hueco, columna de lectura (ha
 
 Ritmo vertical amplio: 4rem antes de los puntos clave (1.3rem entre puntos), 4.5rem antes de la lista, 2.5–2.75rem arriba y abajo de cada noticia (3.25–3.5rem en computador). La barra es pegajosa y respeta las áreas seguras del celular.
 
+- **Alineación (desde 64rem):** todo arranca a la izquierda (logo, placa y pie) con un borde de 1.5rem (2.5rem desde 100rem), en vez de centrarse.
+- **Columna lateral (`.lateral`):** lleva los puntos clave, el espectro ("El día por secciones") y los botones para seguir leyendo. Desde 100rem va a la derecha (21rem), fija al bajar, y la placa crece hasta un tope; ahí los puntos clave salen de la columna principal y la fecha pasa a una sola línea sobre la lista. En pantallas más angostas va debajo de las noticias, como continuación de la placa. El espectro ya no es lo primero de la portada; en Secciones va debajo de los filtros, en versión baja (5.5rem).
+- **CSS versionado:** el link lleva `?v=<hash>` del archivo, para que el navegador nunca mezcle HTML nuevo con un CSS viejo guardado.
+
 ### Named Rules
 **La Regla del Riel.** Todo se alinea al borde izquierdo de la placa. Un marcador nuevo cruza el riel desde el margen con el ancho `marcador + hueco × .7`; nada se alinea a otra cosa.
 

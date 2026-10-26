@@ -791,3 +791,74 @@ a.linea:focus-visible { outline-offset: 0; }
 @media (min-width: 64rem) {
   .lista > .destacada > h3 { font-size: 3.2rem; }
 }
+
+/* ---------- Página: lámina + columna lateral (2026-10-26) ----------
+   La columna lateral lleva los puntos clave, el espectro y "seguir leyendo". En pantallas
+   angostas va debajo de las noticias como continuación de la placa; desde 100rem va a la
+   derecha, fija al bajar. Desde 64rem todo se alinea a la izquierda en vez de centrarse. */
+
+:root { --borde-pagina: 0px; --ancho-lateral: 21rem; }
+img { max-width: 100%; }
+
+.lateral {
+  width: min(100%, calc(var(--margen) + var(--hueco) + var(--col) + var(--der)));
+  margin-inline: auto;
+  padding: .5rem var(--der) 3.5rem calc(var(--margen) + var(--hueco));
+  background: linear-gradient(90deg, transparent var(--margen), var(--borde-fuerte) var(--margen) calc(var(--margen) + 1px), var(--ceniza) calc(var(--margen) + 1px));
+}
+.lateral > * + * { margin-top: 3rem; }
+.lateral .clave--lateral { display: none; }
+.lateral .seguir { padding-top: 0; }
+.lateral__espectro h2 {
+  display: flex; align-items: center; gap: 1rem;
+  margin: 0 0 1rem;
+  font-size: .78rem; font-weight: 600; letter-spacing: .22em; line-height: 1.4; text-transform: uppercase;
+  color: var(--hueso-2);
+}
+.lateral__espectro h2::after { content: ""; flex: 1; height: 1px; background: var(--borde-fuerte); }
+
+@media (min-width: 64rem) {
+  :root { --borde-pagina: 1.5rem; }
+  .pagina { padding-left: var(--borde-pagina); }
+  .lamina, .lateral { margin-inline: 0; }
+  .barra__dentro {
+    display: flex; width: 100%;
+    padding: 0 2rem 0 var(--borde-pagina);
+  }
+  .menu { margin-right: 0; }
+  .pie__dentro { margin-left: var(--borde-pagina); max-width: calc(100% - var(--borde-pagina)); }
+  .lamina > .clave { padding-top: 2.6rem; }
+}
+
+@media (min-width: 100rem) {
+  :root { --borde-pagina: 2.5rem; --ancho-foto: 24rem; }
+  .pagina { display: flex; align-items: flex-start; gap: 3rem; padding-right: 2.5rem; }
+  .lamina { flex: 1 1 auto; min-width: 0; max-width: calc(var(--margen) + var(--hueco) + 66rem + var(--der)); }
+  .lamina > .clave { display: none; }
+  .lamina > .apertura { grid-column: 3; grid-row: auto; padding: 2.6rem 0 0; }
+  .titular { font-size: 3.2rem; }
+
+  .lateral {
+    flex: 0 0 var(--ancho-lateral); width: auto;
+    position: sticky; top: 4.5rem;
+    max-height: calc(100vh - 5.5rem); overflow-y: auto; scrollbar-width: thin;
+    margin-top: 2.6rem; padding: 0 .25rem 2rem 0;
+    background: none;
+  }
+  .lateral > * + * { margin-top: 2.5rem; }
+  .lateral .clave--lateral { display: block; padding-top: 0; }
+  .lateral .clave ul { max-width: none; }
+  .lateral .clave li { font-size: 1.08rem; line-height: 1.42; padding: .9rem 0 .9rem 1.6rem; }
+  .lateral .clave li::before { left: 0; width: 1rem; top: calc(.9rem + .7em - 2px); }
+  .lateral .espectro__banda { height: 7rem; }
+  .lateral .espectro__eje { height: 2.75rem; }
+  .lateral .espectro__eje li:nth-child(even) { padding-top: 1.55rem; }
+  .lateral .espectro__eje li:nth-child(even)::before { height: 1.4rem; opacity: .7; }
+  .lateral .espectro__eje li:first-child { translate: -24% 0; }
+  .lateral .espectro__eje li:last-child { translate: -76% 0; }
+  .lateral .seguir { grid-template-columns: 1fr; }
+}
+
+/* Secciones: el espectro va debajo de los filtros, más bajo y a todo el ancho de la columna */
+.lamina > .espectro--compacto { grid-column: 3; padding-top: 1.25rem; }
+.espectro--compacto .espectro__banda { height: 5.5rem; }

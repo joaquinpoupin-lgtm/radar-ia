@@ -8,9 +8,6 @@
   <h1 class="titular"><span class="solo-lector">Brief del </span>{{ p.fecha | fecha_larga | replace(" de " ~ p.fecha[:4], "") }}<span class="solo-lector"> de {{ p.fecha[:4] }}</span></h1>
   <p class="bajada rotulo">{{ p.brief.noticias | length }} noticias · lectura de ~{{ p.minutos }} min</p>
 </header>
-<div class="apertura__espectro">
-  {{ banda(espectro(p.brief.noticias, p.fecha), ayuda="Cada línea es una noticia del brief. Tócala para ir a ella.") }}
-</div>
 {% if not p.es_hoy %}
 <p class="aviso">El brief de hoy se arma en la primera corrida del día. Mientras tanto, este es el último.</p>
 {% endif %}
@@ -32,10 +29,28 @@
 </header>
 <p class="aviso">Todavía no hay brief. Se arma en la primera corrida del día (hora de Chile).</p>
 {% endif %}
-<nav class="seguir" aria-label="Seguir leyendo">
-  {% if p.hoy_fuera %}
-  <a class="boton" href="archivo/{{ p.hoy }}.html">Hoy hay {{ p.hoy_fuera }} noticia{{ "s" if p.hoy_fuera > 1 }} más fuera del brief{{ flecha() }}</a>
+{% endblock %}
+{# Columna lateral: a la derecha en pantallas anchas (fija al bajar); debajo de las noticias en las demás.
+   Los puntos clave se repiten aquí y se muestran en un solo lugar según el ancho. #}
+{% block lateral %}
+<aside class="lateral" aria-label="Resumen del día">
+  {% if p.brief and p.brief.bullets %}
+  <section class="clave clave--lateral" aria-labelledby="clave-lateral-titulo">
+    <h2 id="clave-lateral-titulo">Lo más importante {{ "hoy" if p.es_hoy else "de ese día" }}</h2>
+    <ul>{% for b in p.brief.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+  </section>
   {% endif %}
-  <a class="boton" href="secciones.html">Ver todo por secciones{{ flecha() }}</a>
-</nav>
+  {% if p.brief %}
+  <section class="lateral__espectro" aria-labelledby="espectro-titulo">
+    <h2 id="espectro-titulo">El día por secciones</h2>
+    {{ banda(espectro(p.brief.noticias, p.fecha), ayuda="Cada línea es una noticia del brief. Tócala para ir a ella.") }}
+  </section>
+  {% endif %}
+  <nav class="seguir" aria-label="Seguir leyendo">
+    {% if p.hoy_fuera %}
+    <a class="boton" href="archivo/{{ p.hoy }}.html">Hoy hay {{ p.hoy_fuera }} noticia{{ "s" if p.hoy_fuera > 1 }} más fuera del brief{{ flecha() }}</a>
+    {% endif %}
+    <a class="boton" href="secciones.html">Ver todo por secciones{{ flecha() }}</a>
+  </nav>
+</aside>
 {% endblock %}
