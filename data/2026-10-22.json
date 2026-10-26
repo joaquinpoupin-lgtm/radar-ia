@@ -48,7 +48,8 @@
      "url": "https://www.producthunt.com/products/claude"
     }
    ],
-   "confirmacion": 3
+   "confirmacion": 3,
+   "imagen": "https://claude.com/resources/articles/claude-duet/opengraph-image/og"
   },
   {
    "id": "61f4d0141ff3",
@@ -72,7 +73,8 @@
      "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/"
     }
    ],
-   "confirmacion": 3
+   "confirmacion": 3,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2025/06/Google-cloud-IO-1152x648.jpg"
   },
   {
    "id": "1de8e62ff715",
@@ -97,7 +99,8 @@
      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": null
   },
   {
    "id": "59f554d8046d",
@@ -122,7 +125,8 @@
      "url": "https://huggingface.co/RecursiveSI/flint"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/RecursiveSI/flint.png"
   },
   {
    "id": "655df0fb22ac",
@@ -140,7 +144,8 @@
      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w1200-h630-n-nu-rw"
   },
   {
    "id": "b949a9351a02",
@@ -160,7 +165,8 @@
      "url": "https://www.bbc.com/news/articles/cmreyvepnv0po"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://ichef.bbci.co.uk/news/1024/branded_news/4ad8/live/cd13e390-cbc3-11f1-aba9-2bb2608f11d9.jpg"
   },
   {
    "id": "9b35c0bfb2f0",
@@ -180,7 +186,8 @@
      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/M_JJyIOBOWVzHXdy7CVVG.png"
   },
   {
    "id": "b412447cbc10",
@@ -206,7 +213,8 @@
      "url": "https://github.com/alchaincyf/huashu-motion"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/c27b2b7bb220c3ac6b125935cf7f59fed575f4533a6d03de49eef57a8ce441b8/alchaincyf/huashu-motion"
   },
   {
    "id": "8e16d6a95427",
@@ -231,7 +239,8 @@
      "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Claude-Duet.jpg?resize=1200,675"
   },
   {
    "id": "cc012b1e3b75",
@@ -261,7 +270,8 @@
      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
   },
   {
    "id": "b328ea6101eb",
@@ -286,7 +296,8 @@
      "url": "https://github.com/omnara-ai/omnara"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1016411413/ed725ee5-25c6-40a2-b2a5-1ffd4749afbe"
   },
   {
    "id": "ba6fa07d677a",
@@ -306,7 +317,8 @@
      "url": "https://openai.com/index/uber-chatgpt-work-rollout"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "17bd4145ec30",
@@ -331,7 +343,8 @@
      "url": "https://github.com/reason-machines/reason-network"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/f617271cace01890e991f29ac0f6f40a9a455a59168c8df4dec4db9bb979b90e/reason-machines/reason-network"
   },
   {
    "id": "fe52d49759b6",
@@ -352,7 +365,8 @@
      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/AI-agents.jpg?resize=1200,675"
   },
   {
    "id": "865ffb65f1d5",
@@ -372,7 +386,8 @@
      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Sample-Outputs.jpeg?resize=1200,675"
   },
   {
    "id": "513cd840eacd",
@@ -392,7 +407,8 @@
      "url": "https://www.xataka.com/robotica-e-ia/agentes-ia-se-mueven-cuentas-bancarias-algunas-entidades-eeuu-se-preparan-para-peor"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/2e0f4b/bancos-en-alerta-por-agentes-de-ia-en-cuentas/840_560.jpeg"
   },
   {
    "id": "12d0b1a86546",
@@ -412,7 +428,8 @@
      "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2024/02/GettyImages-1783835425-crop-e1717409949317.jpg?resize=1200,676"
   },
   {
    "id": "74fcf21eca7a",
@@ -432,7 +449,8 @@
      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "374db3b9194f",
@@ -450,7 +468,8 @@
      "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://www.modelcompare.ai/api/og?post=ai-models-controversial-take-on-humans&v=xakbss"
   },
   {
    "id": "4dcdb9557827",
@@ -477,7 +496,8 @@
      "url": "https://github.com/NVIDIA/OpenShell"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/83933018451f00548b5d4fb2ffc975ff6c255d7ec5d1dad216b4ec63adb1e6fa/NVIDIA/OpenShell"
   },
   {
    "id": "27825e300358",
@@ -502,7 +522,8 @@
      "url": "https://openai.com/index/decisions-api"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "daa98ecb15f3",
@@ -522,7 +543,8 @@
      "url": "https://github.com/cranebeaker/coop-anything"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/1100739622f9fd0b56b5cf26d1de9fa396346e450af31d62de625e79dca8a53a/cranebeaker/coop-anything"
   }
  ]
 }

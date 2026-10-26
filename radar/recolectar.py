@@ -111,6 +111,7 @@ def _limpiar_reddit(resumen: str) -> tuple[str, str | None]:
 
 class _LectorMeta(HTMLParser):
     CLAVES = ("og:description", "twitter:description", "description")
+    CLAVES_IMAGEN = ("og:image", "og:image:secure_url", "og:image:url", "twitter:image", "twitter:image:src")
 
     def __init__(self):
         super().__init__()
@@ -121,16 +122,16 @@ class _LectorMeta(HTMLParser):
             return
         a = dict(attrs)
         clave = (a.get("property") or a.get("name") or "").lower()
-        if clave in self.CLAVES and a.get("content"):
+        if clave in self.CLAVES + self.CLAVES_IMAGEN and a.get("content"):
             self.encontradas.setdefault(clave, a["content"])
 
 
-def descripcion_pagina(url: str, cliente: httpx.Client) -> str | None:
-    """Lee el comienzo de la página y devuelve su og:description (o la descripción común). Nunca lanza."""
+def meta_pagina(url: str, cliente: httpx.Client) -> dict[str, str]:
+    """Lee el comienzo de la página y devuelve sus etiquetas <meta> de descripción e imagen. Nunca lanza."""
     try:
         with cliente.stream("GET", url) as r:
             if r.status_code != 200 or "html" not in r.headers.get("content-type", ""):
-                return None
+                return {}
             datos = b""
             for trozo in r.iter_bytes():
                 datos += trozo
@@ -139,8 +140,14 @@ def descripcion_pagina(url: str, cliente: httpx.Client) -> str | None:
         lector = _LectorMeta()
         lector.feed(datos.decode(r.encoding or "utf-8", errors="replace"))
     except Exception:  # una página rara nunca debe romper la recolección
-        return None
-    return next((lector.encontradas[c] for c in _LectorMeta.CLAVES if c in lector.encontradas), None)
+        return {}
+    return lector.encontradas
+
+
+def descripcion_pagina(url: str, cliente: httpx.Client) -> str | None:
+    """og:description de la página (o la descripción común)."""
+    encontradas = meta_pagina(url, cliente)
+    return next((encontradas[c] for c in _LectorMeta.CLAVES if c in encontradas), None)
 
 
 # --- Lectura por tipo de fuente ---

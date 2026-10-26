@@ -1,9 +1,16 @@
 {% from "_espectro.html" import flecha %}
 {# Una noticia. `mostrar_fecha`: en las listas de varios días. `de_ayer`: en el brief, si viene de ayer.
-   En el computador los datos (sección, importancia, fuentes) cuelgan a la izquierda del riel. #}
-{% macro noticia(n, raiz, mostrar_fecha=false, de_ayer=false) %}
-<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}" id="n-{{ n.id }}" data-seccion="{{ n.seccion }}"
+   `destacada`: la primera de la portada y de cada día, con la foto grande.
+   En el computador los datos (sección, importancia, fuentes) cuelgan a la izquierda del riel.
+   Foto: la vista previa de la fuente (se muestra desde su sitio). Debajo siempre hay una ilustración
+   propia con líneas del color de la sección: se ve si no hay foto o si la foto no carga. #}
+{% macro noticia(n, raiz, mostrar_fecha=false, de_ayer=false, destacada=false) %}
+<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}{% if destacada %} destacada{% endif %}" id="n-{{ n.id }}" data-seccion="{{ n.seccion }}"
   data-alta="{{ 'si' if n.importancia == 'alta' else 'no' }}" data-etiquetas="{{ n.etiquetas | join('|') }}">
+  <figure class="foto">
+    <span class="foto__arte" aria-hidden="true">{% for l in ilustracion(n.id) %}<i class="{{ 'doble' if l.doble }}" style="--x: {{ l.x }}%; --h: {{ l.h }}%; --o: {{ l.o }}"></i>{% endfor %}<span class="foto__seccion">{{ NOMBRES_SECCION.get(n.seccion, n.seccion) }}</span></span>
+    {% if n.imagen %}<img src="{{ n.imagen }}" alt="" loading="{{ 'eager' if destacada else 'lazy' }}" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
+  </figure>
   <h3>{{ n.titulo }}</h3>
   <p class="datos">
     <span class="dato-seccion">{{ NOMBRES_SECCION.get(n.seccion, n.seccion) }}</span>

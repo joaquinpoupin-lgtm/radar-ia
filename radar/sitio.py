@@ -10,6 +10,7 @@ Sin servidor ni frameworks: HTML generado con Jinja2, un solo CSS y un poco de J
 y el "espectro" (cada noticia es una línea de color según su sección).
 """
 
+import hashlib
 import html
 import json
 import re
@@ -160,6 +161,15 @@ def espectro(noticias: list[dict], fecha: str | None = None) -> list[dict]:
     return lineas
 
 
+def ilustracion(id_noticia: str, cantidad: int = 9) -> list[dict]:
+    """Ilustración propia para una noticia sin foto: líneas del color de su sección en posiciones y
+    alturas sacadas del id (siempre las mismas para la misma noticia, distintas entre noticias)."""
+    bytes_ = hashlib.sha1(id_noticia.encode()).digest()
+    return [{"x": round(6 + bytes_[i] / 255 * 88, 1), "h": round(30 + bytes_[i + 9] / 255 * 62),
+             "o": round(.45 + bytes_[i + 4] / 255 * .55, 2), "doble": bytes_[i + 2] > 215}
+            for i in range(cantidad)]
+
+
 def etiquetas_frecuentes(noticias: list[dict], maximo: int = MAX_ETIQUETAS_FILTRO) -> list[tuple[str, int]]:
     cuenta = Counter(e for n in noticias for e in n.get("etiquetas", []))
     return sorted(cuenta.items(), key=lambda par: (-par[1], par[0]))[:maximo]
@@ -170,7 +180,8 @@ def etiquetas_frecuentes(noticias: list[dict], maximo: int = MAX_ETIQUETAS_FILTR
 def entorno() -> Environment:
     env = Environment(loader=FileSystemLoader(CARPETA_PLANTILLAS), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
-    env.globals.update(NOMBRES_SECCION=NOMBRES_SECCION, SECCIONES=SECCIONES, espectro=espectro)
+    env.globals.update(NOMBRES_SECCION=NOMBRES_SECCION, SECCIONES=SECCIONES, espectro=espectro,
+                       ilustracion=ilustracion)
     env.filters.update(fecha_larga=fecha_larga, fecha_corta=fecha_corta)
     return env
 
@@ -236,10 +247,11 @@ def generar_sitio(config: dict, ahora: datetime, datos: Path = CARPETA_DATOS,
 # --- Revisar links ---
 
 PATRON_HREF = re.compile(r'\b(?:href|src)="([^"]+)"')
+PATRON_SOLO_HREF = re.compile(r'\bhref="([^"]+)"')
 
 
-def links_de(pagina: Path) -> list[str]:
-    return [html.unescape(h) for h in PATRON_HREF.findall(pagina.read_text(encoding="utf-8"))]
+def links_de(pagina: Path, patron: re.Pattern = PATRON_HREF) -> list[str]:
+    return [html.unescape(h) for h in patron.findall(pagina.read_text(encoding="utf-8"))]
 
 
 def links_internos_rotos(sitio: Path) -> list[str]:
@@ -259,10 +271,11 @@ def links_internos_rotos(sitio: Path) -> list[str]:
 
 
 def links_externos(sitio: Path) -> list[str]:
-    """Todos los links a otros sitios (las fuentes), sin repetir, en orden de aparición."""
+    """Todos los links a otros sitios (las fuentes), sin repetir, en orden de aparición. Las fotos de
+    las noticias no cuentan: si una no carga, el sitio muestra la ilustración propia."""
     vistos = {}
     for pagina in sorted(sitio.rglob("*.html")):
-        for href in links_de(pagina):
+        for href in links_de(pagina, PATRON_SOLO_HREF):
             if href.startswith(("https://", "http://")):
                 vistos.setdefault(href, None)
     return list(vistos)

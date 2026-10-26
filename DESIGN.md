@@ -35,13 +35,13 @@ typography:
     fontVariation: "\"wdth\" 68"
   title:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
-    fontSize: "1.27rem"
+    fontSize: "1.4rem"
     fontWeight: 620
-    lineHeight: 1.24
+    lineHeight: 1.22
     fontVariation: "\"wdth\" 90"
   lead:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
-    fontSize: "1.16rem"
+    fontSize: "1.2rem"
     fontWeight: 470
     lineHeight: 1.45
   body:
@@ -71,7 +71,9 @@ spacing:
   der: "16px"
   tick: "9px"
   col: "42rem"
-  bloque: "2.75rem"
+  col-computador: "58rem"
+  ancho-foto: "19rem"
+  bloque: "4rem"
 components:
   barra:
     backgroundColor: "{colors.carbon-hondo}"
@@ -113,6 +115,10 @@ components:
     textColor: "{colors.hueso-2}"
     rounded: "{rounded.none}"
     padding: ".9rem 1.1rem"
+  foto:
+    backgroundColor: "{colors.carbon-hondo}"
+    rounded: "{rounded.none}"
+    width: "{spacing.ancho-foto}"
 ---
 
 # Design System: Radar IA
@@ -176,8 +182,8 @@ Una longitud de onda por sección, aplicada vía `data-seccion` a la variable `-
 ### Hierarchy
 - **Display** (560, `clamp(2.75rem, 12.6vw, 3.7rem)`; 3.5rem en computador; ancho 62 %, mayúsculas): título de cada página, la fecha en la portada.
 - **Headline** (580, 1.6rem, ancho 68 %, mayúsculas): "Lo más importante" y el título de la lista.
-- **Title** (620, 1.27rem; 1.36rem desde 40rem; ancho 90 %): título de cada noticia, balanceado.
-- **Lead** (470, 1.16rem; 1.24rem desde 40rem): los 3 puntos clave.
+- **Title** (620, 1.4rem; 1.5rem desde 40rem; ancho 90 %): título de cada noticia, balanceado. En la noticia destacada: 1.75rem (2.1rem desde 40rem, 2.3rem en computador), ancho 84 %, máximo 28ch.
+- **Lead** (470, 1.2rem; 1.32rem desde 40rem): los 3 puntos clave, en una medida de hasta 48rem.
 - **Body** (400, 1.0625rem; 1.09rem desde 40rem; interlineado 1.6): "qué pasó" y "por qué importa", máximo 68ch.
 - **Label** (500, .72rem, espaciado .12–.16em, mayúsculas): rótulos, menú, datos de la noticia, "Leer en".
 - **Marca** (640, .95rem, ancho 72 %, espaciado .14em; .22em desde 40rem, mayúsculas): solo "Radar IA" en la barra.
@@ -193,9 +199,9 @@ La placa es una grilla de cuatro columnas: margen, hueco, columna de lectura (ha
 
 - **Celular (base):** margen 14px, hueco 18px, derecha 16px, marcador 9px. Banda del espectro de 7.5rem.
 - **Tablet (≥40rem):** margen 1.75rem, hueco 2.25rem, derecha 2rem, marcador 12px. Banda de 10rem; botones de "seguir" en dos columnas.
-- **Computador (≥64rem):** margen 15.5rem, hueco 3rem, derecha 3rem, marcador 1.6rem. El título de la página ocupa la columna de margen, a la izquierda del riel; el espectro (17rem) va al lado. Los datos de cada noticia cuelgan a la izquierda del riel, alineados a la derecha.
+- **Computador (≥64rem):** margen 15.5rem, hueco 3rem, derecha 3rem, marcador 1.6rem; la columna crece hasta 58rem para que quepa la foto (19rem) a la derecha del texto. El título de la página ocupa la columna de margen, a la izquierda del riel; el espectro (17rem) va al lado. Los datos de cada noticia cuelgan a la izquierda del riel, alineados a la derecha.
 
-Ritmo vertical: 2.75rem entre bloques (puntos clave, botones de seguir), 3rem antes de la lista, 1.75–1.9rem dentro de cada noticia. La barra es pegajosa y respeta las áreas seguras del celular.
+Ritmo vertical amplio: 4rem antes de los puntos clave (1.3rem entre puntos), 4.5rem antes de la lista, 2.5–2.75rem arriba y abajo de cada noticia (3.25–3.5rem en computador). La barra es pegajosa y respeta las áreas seguras del celular.
 
 ### Named Rules
 **La Regla del Riel.** Todo se alinea al borde izquierdo de la placa. Un marcador nuevo cruza el riel desde el margen con el ancho `marcador + hueco × .7`; nada se alinea a otra cosa.
@@ -208,7 +214,7 @@ Plano. No hay `box-shadow`. La profundidad sale de capas tonales: carbón hondo 
 - **Brillo de emisión** (`filter: drop-shadow(0 0 3px <color de la línea>)`): solo en los dobletes (puntos clave y noticias importantes). Es luz de la línea, no sombra de un objeto.
 
 ### Named Rules
-**La Regla de la Placa Lisa.** El grano y las bandas no entran a la placa de lectura; si un elemento necesita textura, va en carbón hondo.
+**La Regla de la Placa Lisa.** El grano y las bandas no entran a la placa de lectura; si un elemento necesita textura, va en carbón hondo (la banda del espectro, la miniatura del Archivo y el marco de la foto).
 
 ## Shapes
 
@@ -238,6 +244,9 @@ La banda: fondo carbón hondo con grano, bandas finas y un resplandor central; u
 
 ### Noticia
 Título (Title) con su marcador sobre el riel (1px del color de sección; doblete con brillo si es importante). Fila de datos en rótulos: sección con su trazo, "Importante" con doblete hueso, fecha y cuántas fuentes la cuentan. Cuerpo: "qué pasó" en hueso, "Por qué importa" en hueso-2 con rótulo inline. Términos en un `details` con "+" que gira 45°. Fuentes con subrayado borde-fuerte que toma el color de la sección al pasar; etiquetas con "#" en hueso-3.
+
+### Foto de la noticia
+La vista previa (og:image) de la fuente, mostrada desde su sitio (`referrerpolicy="no-referrer"`, carga diferida salvo la destacada). Va enmarcada en grafito: fondo carbón hondo con bandas, esquinas rectas y un filete de 1px del color de la sección arriba. La foto entra un poco apagada (`saturate(.8)`, `brightness(.94)`) y recupera su color al pasar el mouse sobre la noticia. Debajo siempre hay una **ilustración propia**: nueve líneas del color de la sección en posiciones y alturas sacadas del id, con su halo, y el nombre de la sección en rótulo; se ve si la noticia no tiene foto o si la foto no carga. Proporción 16:9. En el celular va arriba del título, del riel al borde de la placa. En el computador va a la derecha del texto (19rem); en la **noticia destacada** (la primera de la portada y de cada día) va arriba a todo el ancho, en 21:9.
 
 ### Lo más importante
 Lista sin viñetas en Lead, separada por filetes; cada punto cruza el riel con un doblete sodio con brillo.

@@ -7,6 +7,7 @@ from radar.almacen import comando_brief
 from radar.filtrar import comando_filtrar
 from radar.fuentes import comando_fuentes
 from radar.ia import comando_probar_ia
+from radar.imagenes import comando_imagenes
 from radar.pipeline import comando_correr
 from radar.recolectar import comando_recolectar
 from radar.resumir import comando_resumir
@@ -24,6 +25,7 @@ PLANEADOS = [
     ("brief", "Arma el brief del día (≤10 noticias + 'Lo más importante hoy') con lo guardado en data/", 8),
     ("sitio", "Genera el sitio web estático en _site/ a partir de data/", 9),
     ("correr", "Corrida completa: recolectar, resumir, guardar y generar sitio", 10),
+    ("imagenes", "Busca la foto de vista previa de las noticias ya guardadas que no la tienen", 15),
 ]
 
 
@@ -44,6 +46,7 @@ COMANDOS["resumir"] = comando_resumir
 COMANDOS["brief"] = comando_brief
 COMANDOS["sitio"] = comando_sitio
 COMANDOS["correr"] = comando_correr
+COMANDOS["imagenes"] = comando_imagenes
 
 
 def construir_parser() -> argparse.ArgumentParser:

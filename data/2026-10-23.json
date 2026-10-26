@@ -48,7 +48,8 @@
      "url": "https://www.anthropic.com/research/formal-verification"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/80cf520cb540989c3643907f004b2514ec4d01f1-1200x630.jpg"
   },
   {
    "id": "571b01845b8f",
@@ -73,7 +74,8 @@
      "url": "https://github.com/dominikmartn/harp"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/7217d191a82abe4a1821beed05964d95e01c6f1d6e46b0005de056380983e2f9/dominikmartn/harp"
   },
   {
    "id": "8937fd9c8277",
@@ -93,7 +95,8 @@
      "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-5.42.44-PM.png?resize=1200,590"
   },
   {
    "id": "529d06c3bbfb",
@@ -118,7 +121,8 @@
      "url": "https://www.xataka.com/robotica-e-ia/a-openai-anthropic-les-han-adelantado-derecha-agentes-ia-whatsapp-concretamente"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/3abe4a/og/840_560.jpeg"
   },
   {
    "id": "82899c945579",
@@ -143,7 +147,8 @@
      "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp"
   },
   {
    "id": "9b13d6a721a0",
@@ -163,7 +168,8 @@
      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
   },
   {
    "id": "3602c8887bef",
@@ -188,7 +194,8 @@
      "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/indrive-pony-ai-kazakhstan.jpg?resize=1200,800"
   },
   {
    "id": "822412740c4f",
@@ -206,7 +213,8 @@
      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/10/kz-post-note-gtc-berliin-2026-1920x1080-1.jpg"
   },
   {
    "id": "8db2bf743b5d",
@@ -232,7 +240,8 @@
      "url": "https://berget.ai/en/blog/per-request-co2-press-release"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://berget.ai/api/og?title=New+open-source+method+shows+the+same+AI+request+emits+8.5+times+more+CO%E2%82%82+in+Texas+than+in+Sweden&image=https%3A%2F%2Fberget.ai%2Fimages%2Fblog%2Fper-request-co2-press-release%2Fcover.png"
   },
   {
    "id": "15c1f8ef7a58",
@@ -253,7 +262,8 @@
      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "ce7fed74f496",
@@ -276,7 +286,8 @@
      "url": "https://news.ycombinator.com/item?id=50200997"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "09c9f9d097fb",
@@ -296,7 +307,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
   },
   {
    "id": "9201054eeb4c",
@@ -317,7 +329,8 @@
      "url": "https://openai.com/index/cloudflare-cyber"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "b2deaf97c98c",
@@ -338,7 +351,8 @@
      "url": "https://openai.com/index/empowering-cyber-defenders"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "fac04cd6a26e",
@@ -358,7 +372,8 @@
      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
   },
   {
    "id": "6372ebaa66c8",
@@ -378,7 +393,8 @@
      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2023/11/Sam-Altman-OpenAI.jpg?resize=1200,680"
   },
   {
    "id": "9174a0a001c9",
@@ -399,7 +415,8 @@
      "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://static-cdn.sr.se/images/83/4f267bc3-0129-4628-bd75-1e593f208dfc.jpg"
   },
   {
    "id": "4139a43688b7",
@@ -426,7 +443,8 @@
      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/MiniMaxAI/MiniMax-M3.1-Flash.png"
   },
   {
    "id": "704776833759",
@@ -451,7 +469,8 @@
      "url": "https://github.com/aicodeking/pandacode"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/53f3d22750fa891d41501faf79659c9c7065ff7c175716890775972ed4cc6ac2/aicodeking/pandacode"
   },
   {
    "id": "646400ef1b4a",
@@ -476,7 +495,8 @@
      "url": "https://www.xataka.com/servicios/amazon-cierra-puerta-a-agentes-ia-mayor-cadena-supermercados-eeuu-abre-par-par"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/d3fcf4/upscalemedia-transformed-1-/840_560.jpeg"
   },
   {
    "id": "0043ec56a51a",
@@ -496,7 +516,8 @@
      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/XHToken/Spark-X2.6-4B.png"
   },
   {
    "id": "73558bf56090",
@@ -514,7 +535,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK465_VIDEO_GAMES_EMULATOR__CVirginia_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   },
   {
    "id": "dc75f68802f1",
@@ -534,7 +556,8 @@
      "url": "https://www.xataka.com/magnet/almeida-esta-revisando-videos-sol-frame-a-frame-para-descubrir-posibles-delitos-acampados-vivienda"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/8d8424/camaras/840_560.jpeg"
   },
   {
    "id": "b7046e0a16fa",
@@ -552,7 +575,8 @@
      "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.abcnewsfe.com/a/76af8d06-92bb-4767-b96d-3f27f7c34e58/data-gty-er--261020_1792522906404_hpMain_16x9.jpg?w=1600"
   },
   {
    "id": "48e2274fdf2b",
@@ -578,7 +602,8 @@
      "url": "https://openai.com/index/securing-our-frontier-model-training-environment"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }

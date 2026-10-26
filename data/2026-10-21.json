@@ -38,7 +38,8 @@
      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://framerusercontent.com/images/g61nppL2S0T51TuBYG0bTxac2U.png?width=2150&height=1126"
   },
   {
    "id": "79e072c52849",
@@ -63,7 +64,8 @@
      "url": "https://github.com/deepseek-ai/DeepInfer"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/f083ca474f65623ce40dcdac9d2c1cd372cd9203398c5d04ac0bb97f2e5ba835/deepseek-ai/DeepInfer"
   },
   {
    "id": "dbaa90254253",
@@ -87,7 +89,8 @@
      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/pills-GettyImages-157287767.jpg?resize=1200,800"
   },
   {
    "id": "efa8c4c666c6",
@@ -105,7 +108,8 @@
      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://redact.dev/blog-images/2026/10/whatsapp-hidden-ai-notes-robot-puppeteer.jpg"
   },
   {
    "id": "72f398965877",
@@ -125,7 +129,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_A-1.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200"
   },
   {
    "id": "afe5d96a9d46",
@@ -148,7 +153,8 @@
      "url": "https://mistral.ai/news/voxtral-3"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://mistral.ai/cms-media/api/media/file/hero-blog-voxtral.png"
   },
   {
    "id": "e7fd8cf2b322",
@@ -166,7 +172,8 @@
      "url": "https://news.ycombinator.com/item?id=50151036"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "b6629abae55b",
@@ -187,7 +194,8 @@
      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024"
   },
   {
    "id": "87c5cb39af2e",
@@ -208,7 +216,8 @@
      "url": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/electric-plant-bud-sensor.jpeg?resize=1200,800"
   },
   {
    "id": "15705003f60b",
@@ -228,7 +237,8 @@
      "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-19-at-1.21.23-PM.png?resize=1200,974"
   },
   {
    "id": "3a11e60ee8cf",
@@ -255,7 +265,8 @@
      "url": "https://mistral.ai/news/timestral/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://mistral.ai/cms-media/api/media/file/og-timestral.webp"
   },
   {
    "id": "60f7f9822d20",
@@ -278,7 +289,8 @@
      "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "a87757c6fb36",
@@ -301,7 +313,8 @@
      "url": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "15170329e0c0",
@@ -328,7 +341,8 @@
      "url": "https://www.xataka.com/videojuegos/google-deepmind-presume-haber-batido-a-minecraft-agentes-controlados-gemini-4-argon-apenas-27-horas"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/d9cbcf/upscalemedia-transformed-2/840_560.jpeg"
   },
   {
    "id": "7a364f356aab",
@@ -355,7 +369,8 @@
      "url": "https://openai.com/index/low-resource-programming-languages"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "9dbc0d55ff91",
@@ -382,7 +397,8 @@
      "url": "https://huggingface.co/blog/hf-torchneuron"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://huggingface.co/blog/assets/hf-torchneuron/thumbnail.png"
   },
   {
    "id": "5ed43860b2e6",
@@ -409,7 +425,8 @@
      "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/google-gemini-personal-intelligence.png?quality=90&strip=all&crop=1.0809792843691%2C0%2C97.838041431262%2C100&w=1200"
   },
   {
    "id": "0c63a7613017",
@@ -427,7 +444,8 @@
      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://framerusercontent.com/images/Zgp1I1AaILVgkXF4Xlk7iImaE.png?width=1200&height=630"
   },
   {
    "id": "01db0834cbe3",
@@ -450,7 +468,8 @@
      "url": "https://benjamincongdon.me/blog/2026/10/19/Agentic-Monitoring/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "bb2f91049337",
@@ -470,7 +489,8 @@
      "url": "https://100toolkit.com/blog/deslop-model/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://100toolkit.com/blog/deslop-model/og.png"
   },
   {
    "id": "342f3b31d430",
@@ -488,7 +508,8 @@
      "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/11/clem-delangue.png?resize=1200,789"
   },
   {
    "id": "0e19bec78e36",
@@ -509,7 +530,8 @@
      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Networked-AI-swarm-with-glowing-nodes.png?resize=1200,600"
   },
   {
    "id": "dd8747983c69",
@@ -529,7 +551,8 @@
      "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800"
   },
   {
    "id": "a054bcdb2791",
@@ -550,7 +573,8 @@
      "url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2299491134-1152x648.jpg"
   },
   {
    "id": "938ea47a6b58",
@@ -568,7 +592,8 @@
      "url": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/google-gemini-android-auto-1152x648.png"
   }
  ]
 }

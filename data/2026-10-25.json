@@ -37,7 +37,8 @@
      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!oz9x!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F999e3450-1df3-457d-8715-5e2e46d5121c_2886x1843.png"
   },
   {
    "id": "c35e0b6aa8bd",
@@ -60,7 +61,8 @@
      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn.sanity.io/images/e4qjo92p/production/1796e3cccda1454e97d262833fb0bb0d6015032f-2786x1567.png?rect=0,53,2786,1463&w=1200&h=630&fit=max&auto=format"
   },
   {
    "id": "a2ab57efc2fc",
@@ -80,7 +82,8 @@
      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://actu.epfl.ch/image/168660/1440x810.jpg"
   },
   {
    "id": "2762aa8f75cb",
@@ -100,7 +103,8 @@
      "url": "https://huggingface.co/HuggingFaceBio/Carbon-X"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/HuggingFaceBio/Carbon-X.png"
   },
   {
    "id": "26a10ea170f0",
@@ -118,7 +122,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&strip=all&crop=0%2C3.4695867913185%2C100%2C93.060826417363&w=1200"
   },
   {
    "id": "dbe76530e989",
@@ -136,7 +141,8 @@
      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?resize=1200,797"
   },
   {
    "id": "934580108444",
@@ -154,7 +160,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   },
   {
    "id": "77a508042084",
@@ -175,7 +182,8 @@
      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xeqtp1/i_built_a_laser_dryfire_shooting_game_with_claude/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "6bffee9c13e8",
@@ -195,7 +203,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   },
   {
    "id": "47e6b753d7f3",
@@ -216,7 +225,8 @@
      "url": "https://www.xataka.com/privacidad/dinamarca-tiene-plan-deepfakes-blindar-voz-rostro-sus-ciudadanos-ia"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/64124d/christiansborg_slot/840_560.jpeg"
   },
   {
    "id": "b8a932d98917",
@@ -236,7 +246,8 @@
      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeuo7t/a_4b_coding_model_that_can_generate_3d_scenes/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "22abdef1b51c",
@@ -254,7 +265,8 @@
      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xes5x0/too_good_to_be_true_istas_gsqrco_2bit/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "5495cbe25cea",
@@ -274,7 +286,8 @@
      "url": "https://www.xataka.com/seguridad/van-a-empeorar-mucho-jason-clinton-subdirector-ciberseguridad-anthropic-advierte-que-esta-venir"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/67c4a0/jason-clinton/840_560.jpeg"
   },
   {
    "id": "aab6bf4c99ee",
@@ -295,7 +308,8 @@
      "url": "https://www.youtube.com/watch?v=SMGg7iisHmc"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/SMGg7iisHmc/hqdefault.jpg"
   },
   {
    "id": "1dc75a32fc6a",
@@ -318,7 +332,8 @@
      "url": "https://lynchlab.net/llm-skin-cancer"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "7deb0a380978",
@@ -343,7 +358,8 @@
      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Nanbeige/Nanbeige4.3-33B.png"
   },
   {
    "id": "ed849a13eb41",
@@ -361,7 +377,8 @@
      "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://www.techspot.com/images2/news/bigimage/2026/10/2026-10-12-image-4.jpg"
   },
   {
    "id": "4655457b8c4b",
@@ -386,7 +403,8 @@
      "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/8bfd222eded474f10a4052231c81504301b7075dcb1c0ac67814a532f7189cdf/DenisSergeevitch/ex-ussr-kinship-research"
   },
   {
    "id": "f5b6ee82a6be",
@@ -412,7 +430,8 @@
      "url": "https://www.xataka.com/robotica-e-ia/presidente-alibaba-tiene-claro-unica-forma-que-europa-alcance-soberania-tecnologica-ia-open-source"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/11c6aa/retrato-pop-art-con-estrellas-europeas/840_560.jpeg"
   },
   {
    "id": "b23877b88e69",
@@ -430,7 +449,8 @@
      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1308803174.jpg?resize=1200,800"
   },
   {
    "id": "45101e4dc28d",
@@ -451,7 +471,8 @@
      "url": "https://www.youtube.com/watch?v=gNODQ57rvJc"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/gNODQ57rvJc/hqdefault.jpg"
   },
   {
    "id": "33331332d5b9",
@@ -469,7 +490,8 @@
      "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://bloximages.chicago2.vip.townnews.com/dailycal.org/content/tncms/assets/v3/editorial/9/44/944d84f9-b521-443c-ae42-3811a39ea788/6adac8999d0f1.image.jpg?crop=1793%2C941%2C0%2C106&resize=1200%2C630&order=crop%2Cresize"
   },
   {
    "id": "bf7f18e0418c",
@@ -487,7 +509,8 @@
      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800"
   }
  ]
 }

@@ -21,7 +21,7 @@
 <section class="lista" aria-labelledby="lista-titulo">
   <h2 id="lista-titulo">Todas las noticias</h2>
   {% for n in noticias %}
-  {{ noticia(n, raiz) }}
+  {{ noticia(n, raiz, destacada=loop.first) }}
   {% endfor %}
 </section>
 <nav class="paginas" aria-label="Otros días">

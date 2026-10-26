@@ -44,7 +44,8 @@
      "url": "https://minimaxir.com/2026/10/cheap-llms/"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://minimaxir.com/2026/10/cheap-llms/vercel.png"
   },
   {
    "id": "d4b2839c83ea",
@@ -73,7 +74,8 @@
      "url": "https://github.com/wangrongding/tv-fresh"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/cf25999e424aac87da75f85f33625d74b1a2e34d13763f9960264e4ee4da44d8/wangrongding/tv-fresh"
   },
   {
    "id": "9759a34338b6",
@@ -93,7 +95,8 @@
      "url": "https://shattered.io/microsoft-decision-1-qwen3-5-9b-model-2026/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://shattered.io/wp-content/uploads/2026/10/microsoft-decision-1-qwen3-5-9b-model-2026-gen.jpg"
   },
   {
    "id": "fef41446736a",
@@ -113,7 +116,8 @@
      "url": "https://www.youtube.com/shorts/B8YFkYY20OY"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/B8YFkYY20OY/hqdefault.jpg"
   },
   {
    "id": "1bb180ff2772",
@@ -131,7 +135,8 @@
      "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!0-U5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcafd3438-ef0d-41c0-83cf-bcc7e1c995be_1536x1024.png"
   },
   {
    "id": "26fd38f53c39",
@@ -149,7 +154,8 @@
      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "52f71ac09466",
@@ -175,7 +181,8 @@
      "url": "https://www.reddit.com/r/ClaudeAI/comments/1xfqc9x/i_built_an_open_source_sky_camera_that_claude/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "5cd14d06f4c5",
@@ -195,7 +202,8 @@
      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xfl3al/introducing_clown_prophecy_the_only_actually_fix/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "8a77e646571b",
@@ -232,7 +240,8 @@
      "url": "https://www.xataka.com/empresas-y-economia/anthropic-acaba-dar-uno-pasos-importantes-industria-ia-abrir-sus-cuentas-para-salir-a-bolsa"
     }
    ],
-   "confirmacion": 5
+   "confirmacion": 5,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
   }
  ]
 }

@@ -150,6 +150,19 @@ def test_espectro_reparte_cada_seccion_en_su_franja():
     assert [l["i"] for l in lineas] == list(range(6))
 
 
+def test_noticia_con_foto_y_sin_foto(tmp_path):
+    con = {**noticia("con"), "imagen": "https://cdn.ej.com/foto.jpg?a=1&b=2"}
+    escribir_dia(tmp_path / "data", HOY, [con, noticia("sin")], brief={"lo_mas_importante": ["Uno."], "ids": ["con", "sin"]})
+    generar(tmp_path)
+    portada = leer(tmp_path, "index.html")
+    assert 'src="https://cdn.ej.com/foto.jpg?a=1&amp;b=2"' in portada and 'referrerpolicy="no-referrer"' in portada
+    assert portada.count('class="foto__arte"') == 2  # la ilustración propia siempre está debajo
+    assert portada.count("<img ") == 1
+    assert 'class="noticia destacada" id="n-con"' in portada
+    # La foto no es un link a una fuente: no se revisa con --revisar-links.
+    assert "https://cdn.ej.com/foto.jpg?a=1&b=2" not in links_externos(tmp_path / "_site")
+
+
 def test_fecha_larga():
     assert fecha_larga("2026-10-21") == "miércoles 21 de octubre de 2026"
     assert fecha_larga("2026-01-04") == "domingo 4 de enero de 2026"

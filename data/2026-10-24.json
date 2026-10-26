@@ -56,7 +56,8 @@
      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": null
   },
   {
    "id": "296a9e0ddc42",
@@ -86,7 +87,8 @@
      "url": "https://github.com/Alejandros17487/ai-jailbreaks"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/886b8c140f4911b4d5c7c469406914df880e083d6fbaef16123873eed21e8d04/Alejandros17487/ai-jailbreaks"
   },
   {
    "id": "4f1a69c73f38",
@@ -106,7 +108,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS536_AI_HALLUCINATION_B.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   },
   {
    "id": "c83614434645",
@@ -132,7 +135,8 @@
      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8/dealign_mascot.png"
   },
   {
    "id": "c2a7a8e39fd1",
@@ -152,7 +156,8 @@
      "url": "https://www.youtube.com/watch?v=5sEVvu4mQ8g"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/5sEVvu4mQ8g/hqdefault.jpg"
   },
   {
    "id": "b6e0b87cd5b3",
@@ -172,7 +177,8 @@
      "url": "https://www.youtube.com/shorts/FiyUagHO37Y"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/FiyUagHO37Y/hqdefault.jpg"
   },
   {
    "id": "cc7d25153873",
@@ -201,7 +207,8 @@
      "url": "https://github.com/realskyrin/ns-game-apple-arm-port"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/b6e3b666edcdfbd1e4995f8fe308527e4169812af3255a260c3a821c0f014d81/realskyrin/ns-game-apple-arm-port"
   },
   {
    "id": "963388230709",
@@ -226,7 +233,8 @@
      "url": "https://huggingface.co/lodestones/Kromoss"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/lodestones/Kromoss.png"
   },
   {
    "id": "e4e6f0cc8ac0",
@@ -244,7 +252,8 @@
      "url": "https://www.xataka.com/robotica-e-ia/pangram-donde-agua-trabaja-david-silva-rojas-ia-al-99-problema-siempre-que-ia-no-infalible"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/c48e40/novela-corta-escrita-a-mano/840_560.jpeg"
   },
   {
    "id": "f699a3e5cdaf",
@@ -274,7 +283,8 @@
      "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
     }
    ],
-   "confirmacion": 2
+   "confirmacion": 2,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK155_OPEN_AI_2025_CVirgiia_B_d6ffc8.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   },
   {
    "id": "18216b018fb1",
@@ -297,7 +307,8 @@
      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "35c8a9cbb1e2",
@@ -322,7 +333,8 @@
      "url": "https://www.youtube.com/shorts/WSHEBdmahHY"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/WSHEBdmahHY/hqdefault.jpg"
   },
   {
    "id": "6643f32ed82d",
@@ -343,7 +355,8 @@
      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "0081d3510713",
@@ -368,7 +381,8 @@
      "url": "https://github.com/lesnolie/Tigris"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/026af8d7eb87379c90aa242e85de28b12720993e80679919dfa3c12f009a1844/lesnolie/Tigris"
   },
   {
    "id": "688136660c10",
@@ -393,7 +407,8 @@
      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822"
   },
   {
    "id": "e4ac1d3f295a",
@@ -411,7 +426,8 @@
      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900"
   },
   {
    "id": "cd22c30ce420",
@@ -434,7 +450,8 @@
      "url": "https://www.xataka.com/ecologia-y-naturaleza/ia-esta-cambiando-prediccion-tiempo-huracan-isaias-acerto-su-trayectoria-cuando-modelos-tradicionales-fallaron"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/75edb6/meteorologia/840_560.jpeg"
   },
   {
    "id": "8ef9c99c3688",
@@ -454,7 +471,8 @@
      "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://torrentfreak.com/images/keyboardfeat.jpg"
   },
   {
    "id": "5699208333bf",
@@ -472,7 +490,8 @@
      "url": "https://simonwillison.net/2026/Oct/24/battledrones/"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg"
   },
   {
    "id": "ef5aeecec9d2",
@@ -497,7 +516,8 @@
      "url": "https://www.xataka.com/robotica-e-ia/ibm-tiene-unas-cifras-que-desafian-a-gigantes-ia-cerrada-90-rendimiento-solo-10-coste-token"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/34ee1c/arvind-krishna-ceo-de-ibm/840_560.jpeg"
   },
   {
    "id": "6597a1303e38",
@@ -515,7 +535,8 @@
      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://www.apollo.com/content/dam/apolloaem/images/media/re-paper-image.jpg"
   },
   {
    "id": "81c8fd74d5e2",
@@ -535,7 +556,8 @@
      "url": "https://arxiv.org/abs/2610.29162"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": null
   },
   {
    "id": "777f23ad5fb4",
@@ -560,7 +582,8 @@
      "url": "https://github.com/vercel-labs/fx0"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/7c41d9226e45097fec47b1b0a6fa05e189eb738f16d215e93bfe99469ea6131d/vercel-labs/fx0"
   },
   {
    "id": "2e829f1f359a",
@@ -585,7 +608,8 @@
      "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview"
     }
    ],
-   "confirmacion": 1
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/KRAFTON/Raon-1-mini-preview.png"
   }
  ]
 }

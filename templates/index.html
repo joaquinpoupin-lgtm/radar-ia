@@ -23,7 +23,7 @@
 <section class="lista" aria-labelledby="lista-titulo">
   <h2 id="lista-titulo">Las {{ p.brief.noticias | length }} noticias</h2>
   {% for n in p.brief.noticias %}
-  {{ noticia(n, raiz, de_ayer=(n.fecha != p.fecha)) }}
+  {{ noticia(n, raiz, de_ayer=(n.fecha != p.fecha), destacada=loop.first) }}
   {% endfor %}
 </section>
 {% else %}

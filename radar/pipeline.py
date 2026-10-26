@@ -21,8 +21,9 @@ from radar.almacen import (actualizar_brief, cargar_dia, fecha_anterior, guardar
 from radar.config import cargar_config
 from radar.filtrar import (CARPETA_DATOS, cargar_pendientes, cargar_procesados, hoy_chile, prefiltrar,
                            publicadas_hoy, sumar_pendientes)
-from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes, topes_por_fuente
+from radar.fuentes import ErrorFuentes, Fuente, cargar_fuentes, crear_cliente, topes_por_fuente
 from radar.ia import pedir_json
+from radar.imagenes import poner_imagenes
 from radar.recolectar import recolectar
 from radar.resumir import resumir
 from radar.simulacro import SIMULACROS, aplicar, cliente_ia, leer_simulacros
@@ -93,6 +94,14 @@ def correr(config: dict, ahora: datetime, fuentes: list[Fuente], datos: Path = C
             return
 
         resultado = resumir(elegidas, config, ia, hoy, pedir)
+        # Foto de vista previa de cada noticia (sin foto = el sitio dibuja una ilustración).
+        # `cliente_red` solo lo pasan los tests (red falsa): ahí no se abre una conexión real.
+        if cliente_red is not None:
+            fotos = poner_imagenes(resultado.noticias, cliente_red, config["fuentes"]["hilos"])
+        else:
+            with crear_cliente(config) as red:
+                fotos = poner_imagenes(resultado.noticias, red, config["fuentes"]["hilos"])
+        print(f"Fotos de vista previa: {fotos} de {len(resultado.noticias)}")
         agregadas = guardar_corrida(resultado, pendientes, config, ahora, datos)
         corrida.nuevas = agregadas
         corrida.pendientes = len(cargar_pendientes(ruta_pendientes))
