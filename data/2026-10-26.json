@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-26",
- "actualizado": "2026-10-26T18:18:34-03:00",
+ "actualizado": "2026-10-26T18:31:30-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI y Anthropic bajaron los precios de sus modelos de inteligencia artificial hasta en un ochenta por ciento en pocos meses.",
@@ -468,6 +468,120 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_E.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "e1c26a7e8170",
+   "fecha": "2026-10-26",
+   "titulo": "Herramienta para crear plantillas de video reutilizables en agentes de programación",
+   "que_paso": "Lanzaron una herramienta en Python para crear plantillas de video editables. Permite reutilizarlas en más de veinticinco agentes de programación como Claude Code.",
+   "por_que_importa": "Facilita la automatización de la creación de videos si usas asistentes de código en tu trabajo.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de programación",
+     "explicacion": "Programas de inteligencia artificial diseñados para escribir, revisar o corregir código de software de forma automática."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/actionow-ai/vvv"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/47a62f71cff9b7c2d15c251968b7e84948e7377af8a2262350a2052ecb93b33c/actionow-ai/vvv"
+  },
+  {
+   "id": "b521cb6b48c6",
+   "fecha": "2026-10-26",
+   "titulo": "ChatGPT deriva problemas técnicos comunes a un medio de periodismo",
+   "que_paso": "Ante la falta de soporte humano en las plataformas tecnológicas, los usuarios usan ChatGPT para resolver fallas. El sistema les responde erróneamente que descubrieron un caso periodístico relevante y los envía a contactar al medio 404 Media.",
+   "por_que_importa": "Muestra que la inteligencia artificial aún inventa respuestas y deriva a los usuarios a lugares incorrectos cuando no sabe qué hacer.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "603e1fd3a28b",
+   "fecha": "2026-10-26",
+   "titulo": "Protesta de empleados de Boston Dynamics por venta de perros robot a ICE",
+   "que_paso": "Más de trescientos trabajadores de la empresa de robótica Boston Dynamics protestaron contra un acuerdo para vender sus perros robot a la agencia migratoria ICE en Estados Unidos. La compañía defendió la venta a pesar de las advertencias del personal sobre los riesgos.",
+   "por_que_importa": "Refleja los debates éticos y laborales internos que ocurren en las empresas que desarrollan robots y tecnología avanzada.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Radeco-Cerberus-robot-1152x648.jpg"
+  },
+  {
+   "id": "10bf391e656e",
+   "fecha": "2026-10-26",
+   "titulo": "Microsoft se reorienta como una compañía enfocada primero en agentes de IA",
+   "que_paso": "Microsoft reorganizó sus divisiones principales en dos grupos tras gastar 190.000 millones de dólares en inteligencia artificial. Su director ejecutivo, Satya Nadella, explicó en una carta anual que la empresa ahora prioriza los agentes autónomos.",
+   "por_que_importa": "Indica el cambio de enfoque de las grandes tecnológicas hacia herramientas que realizan tareas de forma independiente.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de IA",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas complejas y tomar decisiones por sí mismos."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/empresas-y-economia/microsoft-va-a-fundir-190-000-millones-dolares-ia-solo-este-ano-ha-hecho-movimiento-obvio-ahora-compania-agentes"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/6ec393/satya/840_560.jpeg"
+  },
+  {
+   "id": "a68819a9654b",
+   "fecha": "2026-10-26",
+   "titulo": "Elon Musk advierte sobre cierres y fusiones en las nubes de inteligencia artificial",
+   "que_paso": "El director ejecutivo de SpaceX señaló que las empresas proveedoras de servicios en la nube especializados en IA enfrentarán quiebras y fusiones extremas. Esto ocurre debido a los altos costos de comprar y mantener los chips necesarios para operar.",
+   "por_que_importa": "Muestra los desafíos financieros y de infraestructura que enfrentan las empresas que proveen la potencia de cálculo para la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/empresas-y-economia/elon-musk-cree-que-carrera-ia-se-cobrara-nuevas-victimas-neoclouds"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/adf547/elon-musk-neoclouds-portada1/840_560.jpeg"
   }
  ]
 }
