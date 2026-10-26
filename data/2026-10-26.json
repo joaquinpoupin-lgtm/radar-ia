@@ -1,0 +1,201 @@
+{
+ "fecha": "2026-10-26",
+ "actualizado": "2026-10-26T06:14:01-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI y Anthropic bajaron los precios de sus modelos de inteligencia artificial hasta en un ochenta por ciento en pocos meses.",
+   "La comunidad de código abierto r/opensource decidió vetar cualquier proyecto que esté hecho con inteligencia artificial o la utilice.",
+   "Microsoft presentó Decision-1, un nuevo modelo basado en Qwen enfocado en la puntuación de decisiones."
+  ],
+  "ids": [
+   "c45c68dc9fe2",
+   "7deb0a380978",
+   "d4b2839c83ea",
+   "9759a34338b6",
+   "fef41446736a",
+   "1bb180ff2772",
+   "26fd38f53c39",
+   "52f71ac09466",
+   "5cd14d06f4c5",
+   "6bffee9c13e8"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "c45c68dc9fe2",
+   "fecha": "2026-10-26",
+   "titulo": "OpenAI y Anthropic reducen drásticamente los precios de sus modelos de lenguaje",
+   "que_paso": "OpenAI y Anthropic bajaron los precios de sus modelos de inteligencia artificial hasta en un ochenta por ciento en pocos meses. La discusión en la comunidad se centra en conocer cuál es el costo real de procesar cada dato.",
+   "por_que_importa": "Permite usar herramientas avanzadas de IA gastando menos dinero que antes.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de lenguaje",
+     "explicacion": "Sistemas de inteligencia artificial entrenados para entender y generar texto parecido al humano."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://minimaxir.com/2026/10/cheap-llms/"
+    }
+   ],
+   "confirmacion": 2
+  },
+  {
+   "id": "d4b2839c83ea",
+   "fecha": "2026-10-26",
+   "titulo": "Herramienta open source para limpiar y quitar anuncios en Xiaomi TV",
+   "que_paso": "Lanzaron una herramienta en GitHub llamada tv-fresh que permite eliminar publicidad, limpiar aplicaciones preinstaladas y cambiar el escritorio en televisores Xiaomi con MIUI TV. Funciona mediante un script y una habilidad de agente, sin necesidad de modificar el sistema de raíz.",
+   "por_que_importa": "Ofrece una opción automatizada para personalizar y sacar la publicidad de ciertos televisores inteligentes.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "open source",
+     "explicacion": "Software cuyo código es público para que cualquiera pueda verlo, usarlo y modificarlo."
+    },
+    {
+     "termino": "script",
+     "explicacion": "Un pequeño programa o conjunto de instrucciones que automatiza tareas."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/wangrongding/tv-fresh"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "9759a34338b6",
+   "fecha": "2026-10-26",
+   "titulo": "Microsoft lanza Decision-1, un modelo basado en Qwen para calificación",
+   "que_paso": "Microsoft presentó Decision-1, un modelo de nueve mil millones de parámetros basado en Qwen3.5 enfocado en la puntuación de decisiones mediante inteligencia artificial. La plataforma detalla sus precios y resultados en pruebas comparativas.",
+   "por_que_importa": "Muestra las nuevas alternativas que lanza Microsoft para tareas de análisis y toma de decisiones.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://shattered.io/microsoft-decision-1-qwen3-5-9b-model-2026/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "fef41446736a",
+   "fecha": "2026-10-26",
+   "titulo": "Video sobre robots mayordomos y las últimas novedades en inteligencia artificial",
+   "que_paso": "El creador Matt Wolfe publicó un video en YouTube recopilando noticias recientes sobre inteligencia artificial, con foco en el funcionamiento de un robot mayordomo y nuevas herramientas.",
+   "por_que_importa": "Sirve para enterarse de forma visual y rápida sobre los últimos avances presentados en la industria.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/shorts/B8YFkYY20OY"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "1bb180ff2772",
+   "fecha": "2026-10-26",
+   "titulo": "Debate sobre el pánico actual ante la inteligencia artificial y el capitalismo",
+   "que_paso": "Una publicación en Hacker News analiza cómo el miedo actual hacia la inteligencia artificial guarda similitudes con la ansiedad que generó la llegada del capitalismo temprano.",
+   "por_que_importa": "Refleja las discusiones sociales y filosóficas sobre el impacto económico de la tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://contraptions.venkateshrao.com/p/cognitive-mercantilism"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "26fd38f53c39",
+   "fecha": "2026-10-26",
+   "titulo": "Creador lanza Seam Cutter para recortar secciones intermedias de imágenes",
+   "que_paso": "Simon Willison desarrolló una herramienta web específica para hacer cortes horizontales o verticales en una imagen y juntar ambos lados. La creó para recortar partes irrelevantes en capturas de pantalla largas sin complicarse.",
+   "por_que_importa": "Facilita la edición rápida de capturas de pantalla para eliminar datos que no necesitas mostrar.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "52f71ac09466",
+   "fecha": "2026-10-26",
+   "titulo": "Usuario crea una cámara de cielo automatizada con Claude Code",
+   "que_paso": "Un usuario de Reddit cuenta que construyó una cámara de cielo con código abierto conectada a Claude Code para registrar y clasificar meteoros automáticamente durante la noche. El sistema graba en resolución 4K y separa los hallazgos en categorías como estrellas fugaces o aviones.",
+   "por_que_importa": "Demuestra cómo usar herramientas de programación por IA para automatizar tareas caseras de procesamiento de video.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software con diseño accesible públicamente para que cualquier persona pueda usarlo y modificarlo."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/ClaudeAI/comments/1xfqc9x/i_built_an_open_source_sky_camera_that_claude/"
+    }
+   ],
+   "confirmacion": 1
+  },
+  {
+   "id": "5cd14d06f4c5",
+   "fecha": "2026-10-26",
+   "titulo": "Truco en Reddit para evitar la pérdida de calidad al encadenar clips de video en IA",
+   "que_paso": "Un usuario de Reddit comparte un método para evitar que los videos generados con MiniMax pierdan calidad y se vean borrosos al unirlos uno tras otro. Explica que el problema ocurre porque los modelos solo reciben indicaciones de inicio y no de final.",
+   "por_que_importa": "Ayuda a mantener una mejor calidad visual al crear secuencias largas con herramientas de video.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/StableDiffusion/comments/1xfl3al/introducing_clown_prophecy_the_only_actually_fix/"
+    }
+   ],
+   "confirmacion": 1
+  }
+ ]
+}
