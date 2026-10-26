@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-26",
- "actualizado": "2026-10-26T13:14:53-03:00",
+ "actualizado": "2026-10-26T18:18:34-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI y Anthropic bajaron los precios de sus modelos de inteligencia artificial hasta en un ochenta por ciento en pocos meses.",
@@ -242,6 +242,232 @@
    ],
    "confirmacion": 5,
    "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+  },
+  {
+   "id": "1758535ac6be",
+   "fecha": "2026-10-26",
+   "titulo": "OpenAI lanza GPT-6.1 Terra con funciones para computadoras",
+   "que_paso": "OpenAI presentó GPT-6.1 Terra. Su objetivo es ofrecer un uso de computadoras rápido y útil para todo el mundo.",
+   "por_que_importa": "Permite usar nuevas capacidades de interacción con el computador.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/OpenAI/comments/1xg4hoi/openai_launches_gpt_61_terra/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": null
+  },
+  {
+   "id": "ce5ce5fc43fb",
+   "fecha": "2026-10-26",
+   "titulo": "Riesgos de seguridad en modelos de IA de peso abierto",
+   "que_paso": "Un análisis muestra que los modelos de IA de peso abierto que no son de confianza pueden filtrar datos, incluso cuando se ejecutan de forma local.",
+   "por_que_importa": "Plantea riesgos de seguridad y privacidad al usar ciertos modelos en una empresa.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "peso abierto",
+     "explicacion": "Modelos de inteligencia artificial cuyos archivos internos son públicos para que cualquiera pueda descargarlos y modificarlos."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn.sanity.io/images/rjtqmwfu/web3-prod/658e160a6519a049e260213d409551e67399113a-1352x754.png?rect=0,22,1352,710&w=1200&h=630&q=80&fit=crop&auto=format"
+  },
+  {
+   "id": "6a90b4648e94",
+   "fecha": "2026-10-26",
+   "titulo": "ChatGPT deriva correos de soporte técnico a un medio",
+   "que_paso": "ChatGPT está indicando a los usuarios que el medio 404 Media puede resolver sus problemas de soporte técnico. Como resultado, el sitio recibe numerosos correos pidiendo ayuda.",
+   "por_que_importa": "Muestra cómo los errores de las respuestas de ChatGPT pueden afectar a terceros.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/size/w1200/2026/10/Untitled-1.png"
+  },
+  {
+   "id": "f2b7a055af10",
+   "fecha": "2026-10-26",
+   "titulo": "Mapean el trabajo global detrás del funcionamiento de la IA",
+   "que_paso": "Una estudiante creó una herramienta interactiva que expone la estructura de poder y el trabajo de bajo salario de los recolectores de datos en el Sur Global.",
+   "por_que_importa": "Revela el costo humano y laboral real que sostiene el desarrollo de los algoritmos actuales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "64d59b55a8fb",
+   "fecha": "2026-10-26",
+   "titulo": "Datos sobre cómo la gente usa ChatGPT para trabajar",
+   "que_paso": "OpenAI publicó datos de casi 100 países sobre cómo las personas utilizan ChatGPT en 165 actividades laborales y cómo cambia ese uso con el tiempo.",
+   "por_que_importa": "Permite entender en qué tareas reales se está aplicando la herramienta a nivel global.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/chatgpt-expanding-world-of-work"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "8f2f08b6e197",
+   "fecha": "2026-10-26",
+   "titulo": "OpenAI reduce tiempo de investigación de incidentes con código",
+   "que_paso": "Ingenieros de OpenAI usan una herramienta para investigar incidentes de seguridad y refactorizar código en minutos en lugar de horas.",
+   "por_que_importa": "Ejemplifica cómo el uso interno de herramientas de programación acelera las tareas técnicas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/openai-cut-incident-investigation"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "5a88eac68d32",
+   "fecha": "2026-10-26",
+   "titulo": "Herramienta para enseñar a agentes de código a usar Rust",
+   "que_paso": "Publicaron en GitHub un proyecto que enseña a los agentes de programación a escribir y revisar código en lenguaje Rust. Funciona con herramientas como Claude Code, Copilot y Cursor.",
+   "por_que_importa": "Ayuda a mejorar la precisión cuando usas asistentes de programación en proyectos de software.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Rust",
+     "explicacion": "Un lenguaje de programación enfocado en la velocidad y la seguridad."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/morganlinton/BeautifulRust"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/93f732a0fb7da1c8936eaa5267b01cc30543d242c996545f7f5caf5996e2c1b4/morganlinton/BeautifulRust"
+  },
+  {
+   "id": "93eb651fa249",
+   "fecha": "2026-10-26",
+   "titulo": "Apple lanza actualizaciones con nuevas funciones de Siri y privacidad",
+   "que_paso": "Apple lanzó iOS y macOS con nuevas funciones de IA para Siri. Incluye la opción de limitar qué aplicaciones puede consultar directamente el asistente.",
+   "por_que_importa": "Da mayor control sobre la privacidad de tus datos al usar las funciones inteligentes del sistema.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "privacidad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Siri-AI-1152x648.png"
+  },
+  {
+   "id": "1e82fbd2f3d1",
+   "fecha": "2026-10-26",
+   "titulo": "Analizan el nuevo modelo Kimi K3.1 de China",
+   "que_paso": "Un video del canal Fireship revisa Kimi K3.1, un modelo de peso abierto con una gran cantidad de parámetros que compite de cerca con los mejores del mercado.",
+   "por_que_importa": "Permite conocer las características y el rendimiento de las nuevas opciones disponibles en el mercado.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Fireship",
+     "url": "https://www.youtube.com/watch?v=G_em1hHPnXY"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/G_em1hHPnXY/hqdefault.jpg"
+  },
+  {
+   "id": "e1d50011f6a6",
+   "fecha": "2026-10-26",
+   "titulo": "The RealReal bloquea agentes de compra automáticos",
+   "que_paso": "La tienda de moda de segunda mano actualizó su sistema de defensa contra bots para dificultar que los agentes de inteligencia artificial compren en su sitio web tras detectar abusos en su sistema.",
+   "por_que_importa": "Refleja cómo los comercios empiezan a restringir el acceso automatizado a sus catálogos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_E.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   }
  ]
 }
