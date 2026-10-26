@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-26",
- "actualizado": "2026-10-26T06:14:01-03:00",
+ "actualizado": "2026-10-26T13:14:53-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI y Anthropic bajaron los precios de sus modelos de inteligencia artificial hasta en un ochenta por ciento en pocos meses.",
@@ -196,6 +196,43 @@
     }
    ],
    "confirmacion": 1
+  },
+  {
+   "id": "8a77e646571b",
+   "fecha": "2026-10-26",
+   "titulo": "Anthropic inicia los trámites oficiales para salir a la bolsa",
+   "que_paso": "La empresa presentó los documentos necesarios ante las autoridades financieras de Estados Unidos. Busca cotizar en el mercado Nasdaq bajo el símbolo ANT.",
+   "por_que_importa": "Muestra el crecimiento financiero de una de las principales empresas creadoras de asistentes de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "bolsa",
+     "explicacion": "Mercado donde se compran y venden acciones de empresas."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/s1-sec"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+    },
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+    },
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/empresas-y-economia/anthropic-acaba-dar-uno-pasos-importantes-industria-ia-abrir-sus-cuentas-para-salir-a-bolsa"
+    }
+   ],
+   "confirmacion": 5
   }
  ]
 }
