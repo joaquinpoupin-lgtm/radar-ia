@@ -739,3 +739,55 @@ a.linea:focus-visible { outline-offset: 0; }
   .lista > .destacada > .datos { grid-row: 2 / span 2; }
   .lista > .destacada > .cuerpo { grid-row: 3; padding-right: 0; }
 }
+
+/* ---------- Jerarquía de letras (2026-10-26) ----------
+   Títulos de noticia condensados, pesados y en blanco cálido; los títulos de sección bajan a
+   rótulos con una línea larga; la sección y "Por qué importa" se leen en el color de la sección. */
+
+:root {
+  --tinta: #f6f2e9; /* blanco cálido para títulos */
+}
+/* Títulos de sección: pasan a ser rótulos con una línea larga; ya no compiten con las noticias */
+.clave h2,
+.lista > h2 {
+  display: flex; align-items: center; gap: 1rem;
+  font-stretch: 100%; font-weight: 600;
+  font-size: .78rem; letter-spacing: .22em; line-height: 1.4;
+  color: var(--hueso-2);
+}
+.clave h2::after,
+.lista > h2::after {
+  content: ""; flex: 1; height: 1px; background: var(--borde-fuerte);
+}
+.clave h2 { color: var(--l589); }
+.clave li {
+  font-stretch: 92%; font-weight: 560; color: var(--tinta);
+  font-size: 1.3rem; line-height: 1.38;
+}
+/* Títulos de noticia: condensados, pesados y en blanco cálido */
+.noticia h3 {
+  font-stretch: 74%; font-weight: 720;
+  font-size: 1.72rem; line-height: 1.08; letter-spacing: -.004em;
+  color: var(--tinta);
+}
+.destacada h3 { font-size: 2.2rem; font-stretch: 70%; line-height: 1.02; }
+/* La sección se lee en su color */
+.dato-seccion { color: var(--c); }
+/* Texto: "qué pasó" claro y cómodo; "por qué importa" como nota aparte */
+.cuerpo > p:first-child {
+  font-size: 1.06rem; line-height: 1.62; font-weight: 400; color: var(--hueso);
+}
+.importa {
+  padding: .1rem 0 .1rem 1rem;
+  border-left: 1px solid var(--c);
+  font-size: .98rem; line-height: 1.6; color: var(--hueso-2);
+}
+.importa strong { display: block; margin: 0 0 .25rem; color: var(--c); }
+@media (min-width: 40rem) {
+  .noticia h3 { font-size: 1.95rem; }
+  .destacada h3 { font-size: 2.8rem; }
+  .clave li { font-size: 1.45rem; }
+}
+@media (min-width: 64rem) {
+  .lista > .destacada > h3 { font-size: 3.2rem; }
+}

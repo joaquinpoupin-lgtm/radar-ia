@@ -35,10 +35,10 @@ typography:
     fontVariation: "\"wdth\" 68"
   title:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
-    fontSize: "1.4rem"
-    fontWeight: 620
-    lineHeight: 1.22
-    fontVariation: "\"wdth\" 90"
+    fontSize: "1.72rem"
+    fontWeight: 720
+    lineHeight: 1.08
+    fontVariation: "\"wdth\" 74"
   lead:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
     fontSize: "1.2rem"
@@ -145,7 +145,7 @@ Es denso pero sereno, oscuro por decisión (no hay tema claro) y pensado primero
 Neutros de carbón, ceniza y hueso casi sin croma, cortados por siete líneas espectrales saturadas.
 
 ### Primary
-- **Sodio 589 nm** (l589): el doblete de "Lo más importante". También tiñe la selección de texto (a 32 % de opacidad). Ningún otro elemento lo usa.
+- **Sodio 589 nm** (l589): el doblete de "Lo más importante" y el rótulo de ese bloque. También tiñe la selección de texto (a 32 % de opacidad). Ningún otro elemento lo usa.
 
 ### Secondary
 Una longitud de onda por sección, aplicada vía `data-seccion` a la variable `--c`:
@@ -163,12 +163,13 @@ Una longitud de onda por sección, aplicada vía `data-seccion` a la variable `-
 - **Ceniza alta** (ceniza-alta): fondo de botones y filtros al pasar o activos.
 - **Borde** (borde): filetes entre noticias, borde de la banda y de filtros en reposo.
 - **Borde fuerte** (borde-fuerte): el riel, borde de botones, subrayados en reposo, líneas punteadas.
+- **Tinta** (`--tinta`, #f6f2e9): blanco cálido, solo para títulos de noticia y los puntos clave.
 - **Hueso** (hueso): texto principal y estado actual o activo.
 - **Hueso 2** (hueso-2): texto secundario, rótulos, "Por qué importa".
 - **Hueso 3** (hueso-3): texto terciario (etiquetas, leyenda, íconos en reposo, nodos del riel). Contraste 5:1 sobre ceniza; no bajar de este tono para texto.
 
 ### Named Rules
-**La Regla de la Línea Fina.** El color de sección vive solo en líneas de 1 px (doblete de 4 px, halo tenue de 11 a 17 px). Nunca rellena una superficie ni pinta texto; como mucho colorea un subrayado al pasar el mouse.
+**La Regla de la Línea Fina.** El color de sección vive en líneas de 1 px (doblete de 4 px, halo tenue de 11 a 17 px). Nunca rellena una superficie. Solo tiñe dos rótulos de texto: el nombre de la sección en los datos y el rótulo "Por qué importa"; y colorea un subrayado al pasar el mouse.
 
 **La Regla del Sodio.** El amarillo 589 es exclusivo de los puntos clave y siempre va en doblete. Lo "importante" de una noticia se marca con doblete en su propio color de sección (o en hueso), no en sodio.
 
@@ -181,9 +182,10 @@ Una longitud de onda por sección, aplicada vía `data-seccion` a la variable `-
 
 ### Hierarchy
 - **Display** (560, `clamp(2.75rem, 12.6vw, 3.7rem)`; 3.5rem en computador; ancho 62 %, mayúsculas): título de cada página, la fecha en la portada.
-- **Headline** (580, 1.6rem, ancho 68 %, mayúsculas): "Lo más importante" y el título de la lista.
-- **Title** (620, 1.4rem; 1.5rem desde 40rem; ancho 90 %): título de cada noticia, balanceado. En la noticia destacada: 1.75rem (2.1rem desde 40rem, 2.3rem en computador), ancho 84 %, máximo 28ch.
-- **Lead** (470, 1.2rem; 1.32rem desde 40rem): los 3 puntos clave, en una medida de hasta 48rem.
+- **Rótulo de sección** (600, .78rem, espaciado .22em, mayúsculas, hueso-2 con una línea larga borde-fuerte a la derecha): "Lo más importante" (en sodio) y el título de la lista. Son rótulos a propósito: no compiten con los titulares.
+- **Title** (720, 1.72rem; 1.95rem desde 40rem; ancho 74 %, interlineado 1.08, tinta): título de cada noticia. En la destacada: 2.2rem (2.8rem desde 40rem, 3.2rem en computador), ancho 70 %, máximo 28ch.
+- **Lead** (560, 1.3rem; 1.45rem desde 40rem; ancho 92 %, tinta): los 3 puntos clave, en una medida de hasta 48rem.
+- **"Qué pasó"** (400, 1.06rem, hueso) y **"Por qué importa"** (.98rem, hueso-2) como nota aparte: sangría con una línea de 1px del color de la sección y su rótulo encima, en ese color.
 - **Body** (400, 1.0625rem; 1.09rem desde 40rem; interlineado 1.6): "qué pasó" y "por qué importa", máximo 68ch.
 - **Label** (500, .72rem, espaciado .12–.16em, mayúsculas): rótulos, menú, datos de la noticia, "Leer en".
 - **Marca** (640, .95rem, ancho 72 %, espaciado .14em; .22em desde 40rem, mayúsculas): solo "Radar IA" en la barra.
@@ -191,7 +193,7 @@ Una longitud de onda por sección, aplicada vía `data-seccion` a la variable `-
 ### Named Rules
 **La Regla del Rótulo Único.** Los rótulos tienen un solo tamaño (.72rem); se ordenan por espaciado y tinta (hueso, hueso-2, hueso-3), no por tamaño.
 
-**La Regla del Ancho.** La jerarquía de títulos se hace con el eje de ancho (62 → 68 → 90 %) además del tamaño; no se agrega una segunda familia.
+**La Regla del Ancho.** La jerarquía se hace con los ejes de ancho y peso (página 62 % / 560, titular 74 % / 720, texto 100 % / 400) además del tamaño y la tinta; no se agrega una segunda familia. El salto entre titular y texto tiene que notarse a simple vista.
 
 ## Layout
 
