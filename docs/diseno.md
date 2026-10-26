@@ -155,6 +155,8 @@ Cómo trabaja `radar/recolectar.py`:
 - **Revisión de links:** siempre se comprueba que los links entre páginas apunten a archivos que existen. Con `--revisar-links` además se prueba cada link a las fuentes (GET sin bajar la página, en paralelo, mismo user-agent que el recolector): 2xx/3xx = OK; 401/403/429/999 = AVISO (el sitio existe pero bloquea programas); 404, 5xx o sin conexión = ERROR (sale con 1).
 - **Ver en local:** `.claude/launch.json` define el servidor `sitio` (`python -m http.server 8001 --directory _site`, Windows; en el Mac, `sitio-mac` en el puerto 8000); abrir el `index.html` directo con doble clic también funciona.
 
+- **Vercel** (2026-10-26, además de GitHub Pages): proyecto `radar-ia` en la cuenta Hobby (gratis) del usuario, conectado al repositorio. `vercel.json` le dice cómo armarlo: crea `.venv` (el Python de Vercel no deja instalar paquetes en el sistema), instala `requirements.txt`, corre `python -m radar sitio` y publica `_site/`. Cada push a `main` (incluidos los del robot de datos) vuelve a publicar solo. Dirección pública: https://radar-ia-joaquin.vercel.app (`radar-ia.vercel.app` es de otra persona; las direcciones `*-joaquinpoupin-5629s-projects.vercel.app` piden iniciar sesión).
+
 ## Corrida completa (Paso 10)
 
 `radar/pipeline.py`: `python -m radar correr [--forzar-brief]` es lo que correrá Actions.
