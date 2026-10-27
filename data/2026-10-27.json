@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-27",
- "actualizado": "2026-10-27T06:14:42-03:00",
+ "actualizado": "2026-10-27T12:28:56-03:00",
  "brief": {
   "lo_mas_importante": [
    "Anthropic presentó los documentos necesarios ante las autoridades financieras de Estados Unidos para salir a la bolsa en el mercado Nasdaq.",
@@ -207,6 +207,179 @@
    ],
    "confirmacion": 1,
    "imagen": "https://j11g.com/content/images/cern-resized.jpg"
+  },
+  {
+   "id": "c61ee1a62651",
+   "fecha": "2026-10-27",
+   "titulo": "Un ejecutivo tecnológico relata cómo los agentes de IA aumentaron su carga de trabajo",
+   "que_paso": "Un vicepresidente de tecnología en GitHub cuenta que las herramientas automatizadas hicieron que programar fuera más barato. Empezó a hacer muchas tareas en paralelo, lo que aumentó su ritmo de trabajo y causó agotamiento.",
+   "por_que_importa": "Muestra que usar IA para hacer más tareas en menos tiempo puede terminar generando un exceso de trabajo en lugar de descanso.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://oioannou.com/blog/ai-promised-less-work/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://oioannou.com/img/blog-by-orestis.jpg"
+  },
+  {
+   "id": "7f56e3b5a8ef",
+   "fecha": "2026-10-27",
+   "titulo": "Herramienta de código abierto para crear videos de avatares parlantes",
+   "que_paso": "Un proyecto permite generar videos de rostros parlantes a partir de una sola foto. Incluye estilos de edición y componentes para creadores.",
+   "por_que_importa": "Facilita la creación rápida de contenido en video usando una única imagen como base.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software cuyo código es público y cualquier persona puede usarlo, modificarlo o revisarlo libremente."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/andyhuo520/digital-human-koubo"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://opengraph.githubassets.com/6b13b3377ec20d72345eed875e3fbc4a96975b0d4e87d190a7c2aa453554ade7/andyhuo520/digital-human-koubo"
+  },
+  {
+   "id": "acb3a24ef951",
+   "fecha": "2026-10-27",
+   "titulo": "Wikipedia intensifica la limpieza de contenidos creados con inteligencia artificial",
+   "que_paso": "La plataforma enfrenta el reto de detectar textos generados por modelos de lenguaje en sus artículos. A pesar de que son cada vez más difíciles de identificar, la comunidad mantiene sus esfuerzos de revisión.",
+   "por_que_importa": "Refleja cómo las plataformas de contenido masivo buscan mantener la autenticidad frente al aumento de textos automáticos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://spectrum.ieee.org/media-library/surreal-collage-of-a-womans-face-with-geometric-shapes-pencil-and-wikipedia-globe.png?id=68486571&width=1200&height=600&coordinates=0%2C167%2C0%2C168"
+  },
+  {
+   "id": "a7c15a9b2fb3",
+   "fecha": "2026-10-27",
+   "titulo": "Nueva habilidad de Claude Code para convertir gráficos SVG en animaciones",
+   "que_paso": "Un complemento permite transformar cualquier gráfico vectorial en animaciones fluidas a 60 cuadros por segundo. Funciona para dar movimiento a rostros y escenas completas.",
+   "por_que_importa": "Permite añadir animaciones complejas a aplicaciones de forma automática desde el asistente de programación.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "SVG",
+     "explicacion": "Un formato de imagen digital basado en vectores que no pierde calidad al ampliar su tamaño."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/rossark0/rossark-motion-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1429198796/2f578926-6f2d-4b60-99be-cd26fd8146d5"
+  },
+  {
+   "id": "4a299d1e9f3d",
+   "fecha": "2026-10-27",
+   "titulo": "La inteligencia artificial acelera la investigación sobre la demencia",
+   "que_paso": "Un consorcio utiliza tecnología avanzada para analizar grandes volúmenes de datos biomédicos. El objetivo es superar la falta de expertos y acelerar los descubrimientos para los millones de pacientes afectados.",
+   "por_que_importa": "Ilustra cómo el análisis automatizado de datos ayuda a procesar información médica compleja en beneficio de la investigación.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/10/cbrain-nvidia-1.png"
+  },
+  {
+   "id": "bb124f9e261c",
+   "fecha": "2026-10-27",
+   "titulo": "Directores de IA en Meta dejan la empresa para crear una startup",
+   "que_paso": "Un directivo de Meta dejó la compañía tras ocho años de trabajo para fundar Ndoc. Su nuevo proyecto busca competir directamente con las herramientas de oficina de Google y Microsoft.",
+   "por_que_importa": "Muestra el movimiento de talento especializado desde las grandes empresas tecnológicas hacia nuevos proyectos de software.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/rohit-5.jpg?resize=1200,800"
+  },
+  {
+   "id": "470e7f2ce2bd",
+   "fecha": "2026-10-27",
+   "titulo": "Advertencia sobre el uso de datos al enviar comentarios en chats de Claude",
+   "que_paso": "Usuarios discuten en internet sobre las políticas de privacidad de la plataforma. Enviar retroalimentación sobre las conversaciones permite que Anthropic utilice esos datos.",
+   "por_que_importa": "Recuerda la importancia de revisar qué información compartimos con las herramientas de chat al enviar reportes o comentarios.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "f4e0b5373313",
+   "fecha": "2026-10-27",
+   "titulo": "Apple integrará un asistente de IA en sus aplicaciones de oficina",
+   "que_paso": "La compañía sumará funciones inteligentes a Pages, Keynote y Numbers. El asistente utiliza modelos propios y de OpenAI para diseñar diapositivas y redactar textos según el contexto.",
+   "por_que_importa": "Facilita la edición de documentos y la creación de presentaciones directamente en las aplicaciones habituales de Apple.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Apple-Creator-Studio-intelligent-assistant-in-Keynote-on-iPad-Pro-261027_big.jpg.large_2x.jpg?quality=90&strip=all&crop=0%2C10.727975106345%2C100%2C78.54404978731&w=1200"
   }
  ]
 }
