@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-26",
- "actualizado": "2026-10-26T18:31:30-03:00",
+ "actualizado": "2026-10-26T21:40:01-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI y Anthropic bajaron los precios de sus modelos de inteligencia artificial hasta en un ochenta por ciento en pocos meses.",
@@ -582,6 +582,27 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.blogs.es/adf547/elon-musk-neoclouds-portada1/840_560.jpeg"
+  },
+  {
+   "id": "f16aefe89a6e",
+   "fecha": "2026-10-26",
+   "titulo": "OpenAI publica avances científicos logrados con inteligencia artificial en matemáticas y física",
+   "que_paso": "OpenAI compartió resultados de investigación sobre problemas complejos en matemáticas, teoría de la computación y física cuántica. La inteligencia artificial ayudó a resolver enigmas en áreas donde los investigadores llevaban décadas trabajando.",
+   "por_que_importa": "Muestra cómo los modelos actuales empiezan a aportar soluciones concretas a problemas avanzados de investigación científica.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": null
   }
  ]
 }
