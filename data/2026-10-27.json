@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-27",
- "actualizado": "2026-10-27T12:28:56-03:00",
+ "actualizado": "2026-10-27T17:11:57-03:00",
  "brief": {
   "lo_mas_importante": [
    "Anthropic presentó los documentos necesarios ante las autoridades financieras de Estados Unidos para salir a la bolsa en el mercado Nasdaq.",
@@ -380,6 +380,207 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Apple-Creator-Studio-intelligent-assistant-in-Keynote-on-iPad-Pro-261027_big.jpg.large_2x.jpg?quality=90&strip=all&crop=0%2C10.727975106345%2C100%2C78.54404978731&w=1200"
+  },
+  {
+   "id": "5ef94984dce4",
+   "fecha": "2026-10-27",
+   "titulo": "Google DeepMind presenta Genie 4 para simulaciones realistas",
+   "que_paso": "Google DeepMind lanzó Genie 4, un nuevo modelo que busca lograr simulaciones en tiempo real con un gran nivel de realismo. Funciona como un modelo de mundos virtuales.",
+   "por_que_importa": "Abre la puerta a simulaciones visuales mucho más detalladas creadas por inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+    },
+    {
+     "nombre": "Reddit",
+     "url": "https://youtu.be/sFfPkUJd_Jk?si=lxnHNFGx9tXxyInb"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://lh3.googleusercontent.com/i7iotPkcMbMubxRzAdriO5wsIsowROonBvjLNnmPbOaRgEb1k4LKTBqay5VrcPpZi0R4il_bYCCsPYQ0Gy_-XbAw66azAGEfE-E6_9Izz5apP0BMJVE=w1200-h630-n-nu-rw"
+  },
+  {
+   "id": "db98bf59a6c7",
+   "fecha": "2026-10-27",
+   "titulo": "Liquid AI publica el modelo multimodal LFM3 en Hugging Face",
+   "que_paso": "Liquid AI estrenó LFM3, un nuevo modelo multimodal diseñado para tareas especializadas. Ya está disponible en la plataforma Hugging Face.",
+   "por_que_importa": "Ofrece una nueva opción de código abierto para quienes buscan integrar modelos multimodales en sus proyectos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "multimodal",
+     "explicacion": "Capacidad de una inteligencia artificial para entender y procesar distintos tipos de información, como texto, imágenes y audio."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/wEKXxH6qGa7vmHjn5KA-W.png"
+  },
+  {
+   "id": "099c4912233a",
+   "fecha": "2026-10-27",
+   "titulo": "Policía usa inteligencia artificial para detectar conductores sospechosos",
+   "que_paso": "Según una publicación en Hacker News y Gizmodo, la policía está utilizando sistemas de inteligencia artificial para detener a conductores por comportamientos considerados sospechosos.",
+   "por_que_importa": "Muestra cómo las autoridades están aplicando algoritmos de vigilancia en las calles.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "34370e88c88d",
+   "fecha": "2026-10-27",
+   "titulo": "Investigan si los modelos de lenguaje pueden juzgar ideas de investigación",
+   "que_paso": "Un artículo publicado por Ai2 en Hugging Face analiza la capacidad de los modelos de lenguaje para evaluar si una idea de investigación es novedosa.",
+   "por_que_importa": "Permite entender las limitaciones actuales de la inteligencia artificial al revisar trabajos académicos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de lenguaje",
+     "explicacion": "Sistemas de inteligencia artificial entrenados para comprender y generar texto de forma natural."
+    }
+   ],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/allenai/novelty-bench"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/ZrKpGOLkSf0LmAf3bnJIX.png"
+  },
+  {
+   "id": "a4c44e96b0a9",
+   "fecha": "2026-10-27",
+   "titulo": "Anthropic enfrenta cuestionamientos por uso de libros académicos",
+   "que_paso": "Según medios citados en Hacker News, la empresa Anthropic utilizó obras de académicos de Stanford para entrenar a Claude, vinculándose a un acuerdo de derechos de autor por 1.500 millones de dólares.",
+   "por_que_importa": "Refleja los conflictos legales sobre el material protegido que usan las empresas para entrenar sus sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://stanforddaily.com/wp-content/uploads/2026/10/Green-Library.png"
+  },
+  {
+   "id": "a3a879144b29",
+   "fecha": "2026-10-27",
+   "titulo": "OpenAI y Oracle amplían su alianza para integrar aplicaciones empresariales",
+   "que_paso": "OpenAI y Oracle anunciaron una expansión de su asociación. El objetivo es llevar aplicaciones empresariales y agentes de inteligencia artificial directamente a ChatGPT.",
+   "por_que_importa": "Facilitará el uso de herramientas de negocios desde la interfaz de ChatGPT.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Sistemas de inteligencia artificial capaces de ejecutar tareas de forma autónoma para cumplir un objetivo."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/oracle-apps-in-chatgpt"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "8cb333260a17",
+   "fecha": "2026-10-27",
+   "titulo": "Check Point acelera investigación de ciberseguridad con OpenAI Daybreak",
+   "que_paso": "La empresa de seguridad Check Point comenzó a utilizar OpenAI Daybreak para acelerar el análisis de vulnerabilidades y crear defensas para sus clientes con mayor rapidez.",
+   "por_que_importa": "Muestra un caso práctico del uso de herramientas de OpenAI en el sector de la ciberseguridad.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/check-point-daybreak"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "728afeb9147d",
+   "fecha": "2026-10-27",
+   "titulo": "Buenas prácticas para gestionar costos de Claude Code en Google Cloud",
+   "que_paso": "El blog de Claude publicó una guía con recomendaciones para controlar los gastos y medir el rendimiento de Claude Code al utilizarlo en Google Cloud.",
+   "por_que_importa": "Ayuda a quienes usan esta herramienta en la nube a mantener el control de su presupuesto.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud/opengraph-image/og"
+  },
+  {
+   "id": "7e8eb7c474c4",
+   "fecha": "2026-10-27",
+   "titulo": "Claude incorpora nuevas funciones para asesores financieros",
+   "que_paso": "Claude ahora permite a los asesores financieros conectar la inteligencia artificial a plataformas de portafolios, CRMs y herramientas de planificación, sumando habilidades específicas para su trabajo diario.",
+   "por_que_importa": "Permite a los profesionales de las finanzas integrar la inteligencia artificial directamente con los sistemas que ya utilizan.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/claude-for-financial-advisors"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/claude-for-financial-advisors/opengraph-image/og"
   }
  ]
 }
