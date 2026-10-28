@@ -1,0 +1,282 @@
+{
+ "fecha": "2026-10-28",
+ "actualizado": "2026-10-28T06:54:57-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Apple integrará funciones inteligentes en Pages, Keynote y Numbers con modelos propios y de OpenAI.",
+   "Anthropic se asoció con seis organizaciones y comenzó proyectos propios para investigar curas a enfermedades con Claude.",
+   "Google DeepMind presentó Genie 4, un nuevo modelo enfocado en lograr simulaciones visuales en tiempo real."
+  ],
+  "ids": [
+   "f4e0b5373313",
+   "001110b136cd",
+   "11144fe59342",
+   "7f56e3b5a8ef",
+   "5ef94984dce4",
+   "f6df93ac1527",
+   "a044912b52ff",
+   "d42fb1eb3362",
+   "4344253691ef",
+   "cecbd99948fa"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "001110b136cd",
+   "fecha": "2026-10-28",
+   "titulo": "Anthropic inicia investigaciones para acelerar el desarrollo de medicamentos con Claude",
+   "que_paso": "Anthropic se asoció con seis organizaciones para buscar curas a enfermedades. También inició proyectos propios, como el estudio de una distrofia muscular infantil.",
+   "por_que_importa": "Muestra cómo Claude se está utilizando en investigaciones científicas y médicas complejas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/research/early-progress-drug-development"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg"
+  },
+  {
+   "id": "f6df93ac1527",
+   "fecha": "2026-10-28",
+   "titulo": "Survival LLM: asistente de IA y biblioteca de emergencia offline",
+   "que_paso": "Lanzaron un asistente de IA gratuito que funciona sin internet en computadoras Mac y Windows. Incluye una biblioteca con un millón y medio de artículos y muestra la fuente de cada respuesta.",
+   "por_que_importa": "Permite consultar información y recibir asistencia de IA sin depender de una conexión a la red.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "LLM",
+     "explicacion": "Modelo de lenguaje grande, un tipo de inteligencia artificial entrenada para entender y generar texto."
+    }
+   ],
+   "etiquetas": [
+    "gratis",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.brangus.io/survival-llm"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.brangus.io/survival-llm/social-card.png"
+  },
+  {
+   "id": "a044912b52ff",
+   "fecha": "2026-10-28",
+   "titulo": "Amazon reestructura su división de inteligencia artificial",
+   "que_paso": "Amazon decidió recortar sus laboratorios de IA y trasladar sus recursos a un nuevo proyecto liderado por un especialista en robótica.",
+   "por_que_importa": "Refleja cambios importantes en las estrategias de desarrollo de inteligencia artificial dentro de las grandes empresas tecnológicas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://futurism.com/wp-content/uploads/2026/07/amazon-gutting-ai-division-failure.jpg?w=1200"
+  },
+  {
+   "id": "11144fe59342",
+   "fecha": "2026-10-28",
+   "titulo": "LiquidAI lanza LFM3-1.7B, un modelo de texto para dispositivos",
+   "que_paso": "LiquidAI presentó LFM3-1.7B, un modelo compacto diseñado para funcionar localmente en teléfonos y computadoras portátiles. Ocupa aproximadamente un gigabyte de memoria y está optimizado para agentes locales.",
+   "por_que_importa": "Facilita la ejecución de modelos de IA directamente en dispositivos personales sin requerir conexión en la nube.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo",
+     "explicacion": "Sistema de inteligencia artificial entrenado para procesar datos y realizar tareas como generar texto."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://huggingface.co/LiquidAI/LFM3-1.7B"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/LiquidAI/LFM3-1.7B.png"
+  },
+  {
+   "id": "d42fb1eb3362",
+   "fecha": "2026-10-28",
+   "titulo": "Retell utiliza modelos de OpenAI para gestionar llamadas masivas",
+   "que_paso": "La plataforma Retell usa modelos de OpenAI para potenciar sus agentes de voz, alcanzando cien millones de llamadas mensuales. Los datos indican un buen rendimiento económico por empleado.",
+   "por_que_importa": "Muestra aplicaciones comerciales a gran escala basadas en voz utilizando la tecnología de OpenAI.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de voz",
+     "explicacion": "Sistemas de inteligencia artificial capaces de mantener conversaciones habladas de forma automatizada."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/retell-ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "4344253691ef",
+   "fecha": "2026-10-28",
+   "titulo": "CopilotKit lanza OpenDuet para crear agentes de IA proactivos",
+   "que_paso": "Publicaron una plantilla en código abierto escrita en TypeScript. Su objetivo es ayudar a crear agentes de inteligencia artificial que realicen tareas manteniendo al usuario informado.",
+   "por_que_importa": "Ofrece un recurso base para desarrolladores que buscan construir asistentes más autónomos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "TypeScript",
+     "explicacion": "Un lenguaje de programación utilizado para crear aplicaciones web y software."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/CopilotKit/OpenDuet"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/96e583a05501274111fe921f0504a8f3fc406c13a868fa3df856baf1b50d7fce/CopilotKit/OpenDuet"
+  },
+  {
+   "id": "cecbd99948fa",
+   "fecha": "2026-10-28",
+   "titulo": "Anime Series Maker: skill para crear episodios de anime con IA",
+   "que_paso": "Es una herramienta comunitaria para Claude Code y Codex que genera un episodio de anime a partir de dos hojas de personajes y una línea de historia. Funciona mediante Python.",
+   "por_que_importa": "Permite automatizar la creación de contenido audiovisual usando instrucciones integradas para asistentes.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Herramienta de desarrollo de Anthropic para interactuar con la IA desde la terminal de comandos."
+    },
+    {
+     "termino": "Python",
+     "explicacion": "Un lenguaje de programación ampliamente utilizado en proyectos de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/Mayzmei/anime-series-maker"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/29e35c682207c9142ac4ee0bd76cd6ad08754acb8e62611fa7980123a517af83/Mayzmei/anime-series-maker"
+  },
+  {
+   "id": "31f854764086",
+   "fecha": "2026-10-28",
+   "titulo": "Anthropic amplía su alianza con la GSA para ofrecer descuentos en Claude",
+   "que_paso": "Anthropic firmó un nuevo acuerdo con la administración pública de Estados Unidos. Esto otorga un descuento del cuarenta por ciento en Claude Enterprise, Claude for Government y la API.",
+   "por_que_importa": "Facilita la adopción institucional de Claude en distintas áreas del sector público.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que diferentes programas de software se comuniquen entre sí."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/expanding-partnership-gsa"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/4e3bfa972a8ec391977288fa36de3da1ecd78232-1920x1080.webp"
+  },
+  {
+   "id": "0419fa07eb02",
+   "fecha": "2026-10-28",
+   "titulo": "Debate en Estados Unidos sobre la responsabilidad legal de empresas operadas por IA",
+   "que_paso": "Un plan en Delaware permitiría que agentes de inteligencia artificial operen empresas sin intervención humana. Representantes del congreso estadounidense advierten que los dueños podrían evadir responsabilidades por acciones imprudentes.",
+   "por_que_importa": "Plantea dudas legales y de seguridad sobre el control humano y la responsabilidad empresarial ante la automatización total.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas y tomar decisiones de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2023/09/robot-phone-headset-1152x648.jpg"
+  },
+  {
+   "id": "a30b4228516c",
+   "fecha": "2026-10-28",
+   "titulo": "Google presenta Genie 4 con mejoras en audio y físicas",
+   "que_paso": "Google actualizó su modelo de mundos virtuales, Genie 4. Ahora mantiene escenas consistentes hasta por dos minutos, duplica el límite de su versión anterior e incluye mejor audio y personajes más realistas.",
+   "por_que_importa": "Mejora la generación de entornos interactivos y simulaciones virtuales mediante inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo de mundos",
+     "explicacion": "Un sistema de inteligencia artificial capaz de simular y generar entornos virtuales interactivos."
+    }
+   ],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Genie-4-blog-header.png?resize=1200,675"
+  }
+ ]
+}
