@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-28",
- "actualizado": "2026-10-28T06:54:57-03:00",
+ "actualizado": "2026-10-28T17:26:52-03:00",
  "brief": {
   "lo_mas_importante": [
    "Apple integrará funciones inteligentes en Pages, Keynote y Numbers con modelos propios y de OpenAI.",
@@ -277,6 +277,192 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Genie-4-blog-header.png?resize=1200,675"
+  },
+  {
+   "id": "6318bf62f2c5",
+   "fecha": "2026-10-28",
+   "titulo": "Google presenta Gemini 4 Carbon",
+   "que_paso": "Google DeepMind lanzó Gemini 4 Carbon. Es su modelo más avanzado hasta la fecha, con capacidades mejoradas en ciberseguridad y tareas de largo plazo.",
+   "por_que_importa": "Ofrece un modelo más potente para quienes utilizan las herramientas de Google en tareas complejas.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "modelo",
+     "explicacion": "Sistema de inteligencia artificial entrenado para procesar información y generar respuestas."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/singularity/comments/1xhtwjm/gemini_4_carbon/"
+    },
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png"
+  },
+  {
+   "id": "7ae8eb20550e",
+   "fecha": "2026-10-28",
+   "titulo": "NVIDIA lanza Nemotron 3.5 Transcribe y Granary v2",
+   "que_paso": "NVIDIA publicó nuevas herramientas de transcripción multilingüe adaptables mediante instrucciones. Permiten procesar audio de forma más inteligente.",
+   "por_que_importa": "Sirve para quienes necesitan transcribir y adaptar contenidos de audio en varios idiomas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/68127936de624fb6f57d9989/3vFxCEUXz_xJVrTBr4hNr.jpeg"
+  },
+  {
+   "id": "97373eedda74",
+   "fecha": "2026-10-28",
+   "titulo": "Evalúan agentes de IA en cincuenta tareas tributarias",
+   "que_paso": "Una prueba llamada Dayjob evaluó agentes de IA en cincuenta escenarios reales de impuestos. Midió su manejo de registros desordenados y juicio profesional.",
+   "por_que_importa": "Muestra qué tan confiables son las herramientas de IA al realizar trabajos complejos de contabilidad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de IA",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas y tomar decisiones por sí mismos."
+    }
+   ],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://surgehq.ai/blog/dayjob-tax"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.prod.website-files.com/68dcd2ceb173c46fa029931c/6ae0beffc0ef7d2c805991ec_6ae0bef7bc59db92222e060b_dayjob-tax-cover-v3.png"
+  },
+  {
+   "id": "3cfd7e486253",
+   "fecha": "2026-10-28",
+   "titulo": "Claude para Legal incluye artefactos listos para usar",
+   "que_paso": "Claude añadió artefactos para el sector legal que los equipos pueden adaptar con sus propios datos. Permite compartir estos elementos en toda la empresa.",
+   "por_que_importa": "Facilita la integración de documentos y datos legales propios dentro del trabajo diario con Claude.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work/opengraph-image/og"
+  },
+  {
+   "id": "0dc3cf0b7c98",
+   "fecha": "2026-10-28",
+   "titulo": "OpenAI analiza cómo la IA ingresará a las empresas",
+   "que_paso": "OpenAI publicó un análisis sobre cómo la inteligencia artificial podría integrarse dentro de la estructura de las organizaciones. Examina su posición respecto a los equipos de trabajo.",
+   "por_que_importa": "Ayuda a visualizar los cambios futuros en la organización del trabajo dentro de las empresas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/the-future-of-the-firm"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "41c97fe8dc29",
+   "fecha": "2026-10-28",
+   "titulo": "Legora construye un sistema operativo para el trabajo legal",
+   "que_paso": "La empresa Legora utiliza los modelos de OpenAI, ChatGPT y Codex para acelerar flujos de trabajo legales. Esto ayuda a ampliar el análisis de contratos para los abogados.",
+   "por_que_importa": "Ejemplifica cómo las firmas usan la IA para automatizar tareas rutinarias de contratos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/legora"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "cba4e4e6bf9f",
+   "fecha": "2026-10-28",
+   "titulo": "Nuevas funciones de reportes y presupuestos en Claude Enterprise",
+   "que_paso": "Claude Enterprise incorporó reportes inteligentes, encuestas y presupuestos grupales compartidos. Busca expandir el uso de la herramienta a todos los equipos de una organización.",
+   "por_que_importa": "Permite gestionar de forma centralizada proyectos y presupuestos usando Claude en empresas grandes.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets/opengraph-image/og"
+  },
+  {
+   "id": "064f3e7c0304",
+   "fecha": "2026-10-28",
+   "titulo": "IDC integra Claude en su plataforma Quanta",
+   "que_paso": "La empresa IDC integró Claude dentro de su plataforma Quanta y desplegó su uso en toda la compañía. Esto expande su adopción corporativa.",
+   "por_que_importa": "Muestra casos reales de grandes corporaciones que adoptan Claude de forma interna.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company/opengraph-image/og"
   }
  ]
 }
