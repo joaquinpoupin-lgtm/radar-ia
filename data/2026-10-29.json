@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-29",
- "actualizado": "2026-10-29T07:17:36-03:00",
+ "actualizado": "2026-10-29T17:25:54-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google lanzó Gemini 4 Carbon, su modelo más avanzado hasta la fecha, con mejores capacidades en ciberseguridad y tareas de largo plazo.",
@@ -206,6 +206,191 @@
    ],
    "confirmacion": 1,
    "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ccore/Qwen3.5-4B-3D-Coder.png"
+  },
+  {
+   "id": "8ccea7e89b70",
+   "fecha": "2026-10-29",
+   "titulo": "Mistral AI lanza Mistral Large 4, un modelo abierto de un billón de parámetros",
+   "que_paso": "La empresa europea Mistral AI liberó los pesos de su nuevo modelo multimodal Mistral Large 4, apodado Le Chonk. Está diseñado especialmente para programación.",
+   "por_que_importa": "Es una nueva opción disponible con código abierto para quienes buscan herramientas avanzadas de desarrollo.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "multimodal",
+     "explicacion": "Capacidad de la inteligencia artificial para procesar y entender distintos tipos de información, como texto, imágenes o audio."
+    },
+    {
+     "termino": "pesos",
+     "explicacion": "Los archivos numéricos que forman el cerebro de un modelo de inteligencia artificial ya entrenado."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Mistral AI",
+     "url": "https://mistral.ai/news/mistral-large-4-oss"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp"
+  },
+  {
+   "id": "eebb63f2228b",
+   "fecha": "2026-10-29",
+   "titulo": "Google domina las listas de rendimiento en análisis e inteligencia artificial",
+   "que_paso": "El modelo Gemini 4 Carbon de Google alcanzó el primer puesto en el índice de análisis de inteligencia artificial. Además, quedó muy cerca de los líderes en la categoría de agentes de programación.",
+   "por_que_importa": "Muestra cómo cambian las capacidades de los principales asistentes disponibles en el mercado.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.sanity.io/images/6vfeftx9/articles/ce3b883faa25c57a8672817086d2da1d248fbbfa-1254x1254.png?w=1200&auto=format"
+  },
+  {
+   "id": "7bf0065ceb16",
+   "fecha": "2026-10-29",
+   "titulo": "OpenAI actualiza su guía de valores para guiar el comportamiento de sus IAs",
+   "que_paso": "OpenAI publicó una versión actualizada de su guía de especificaciones de modelos. Establece cinco valores centrales para orientar a la inteligencia artificial hacia la intención humana y un juicio adecuado.",
+   "por_que_importa": "Define los principios éticos y de comportamiento que la empresa usa para guiar el desarrollo de sus tecnologías.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/updated-model-spec"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "d28967fce9c6",
+   "fecha": "2026-10-29",
+   "titulo": "OpenAI implementa monitoreo para detectar comportamientos imprevistos en sus modelos",
+   "que_paso": "La empresa utiliza sistemas de supervisión por capas para identificar desalineaciones y acciones no autorizadas en sus modelos más avanzados. Esto permite intervenir antes de que ocurran incidentes.",
+   "por_que_importa": "Apunta a mejorar la seguridad y el control sobre herramientas complejas de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "desalineación",
+     "explicacion": "Cuando un sistema de inteligencia artificial actúa de una forma distinta a la que sus creadores pretendían."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "bd43dca7b973",
+   "fecha": "2026-10-29",
+   "titulo": "Un estudio analiza de dónde sacan los datos numéricos los asistentes de inteligencia artificial",
+   "que_paso": "Un análisis puso a prueba a cinco asistentes de inteligencia artificial con 200 preguntas que requerían cifras. Luego rastrearon el origen de 1.285 estadísticas citadas por las respuestas.",
+   "por_que_importa": "Permite entender mejor la confiabilidad de los datos numéricos que entregan estas herramientas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://trakkr.ai/trakkr-research/zombie-stats"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://trakkr.ai/images/research/og/zombie-stats.png"
+  },
+  {
+   "id": "739e0b5535e3",
+   "fecha": "2026-10-29",
+   "titulo": "Analizan las limitaciones en el estilo de redacción de los modelos de lenguaje",
+   "que_paso": "Un artículo publicado por Martin Fowler reflexiona sobre la sensación artificial y predecible que a veces tienen los textos generados por modelos de lenguaje.",
+   "por_que_importa": "Refleja los debates actuales sobre la calidad y naturalidad de los contenidos escritos por IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de lenguaje",
+     "explicacion": "Inteligencias artificiales entrenadas para leer, entender y redactar texto de manera similar a los humanos."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://martinfowler.com/bliki/LLM-Voice.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "f3538b6fb36f",
+   "fecha": "2026-10-29",
+   "titulo": "IBM Granite presenta Granite Switch 4.1.1 para actualizar modelos fácilmente",
+   "que_paso": "IBM Granite publicó detalles sobre una herramienta para actualizar modelos de inteligencia artificial con la misma facilidad con la que se actualiza cualquier software convencional.",
+   "por_que_importa": "Facilita el mantenimiento y la actualización de sistemas basados en IA.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/az6afuuoAkyiMImufSePe.png"
+  },
+  {
+   "id": "2d9928289658",
+   "fecha": "2026-10-29",
+   "titulo": "El estudio de abogados Ropes & Gray desarrolla inteligencia artificial para revisión legal",
+   "que_paso": "La firma Ropes & Gray está creando herramientas de IA junto a OpenAI para agilizar la revisión de documentos en transacciones. Los abogados supervisan los resúmenes antes de asesorar a sus clientes.",
+   "por_que_importa": "Muestra aplicaciones prácticas de la IA en procesos legales complejos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/ropes-gray-ai-diligence"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
