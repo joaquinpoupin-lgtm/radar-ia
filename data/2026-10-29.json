@@ -1,0 +1,211 @@
+{
+ "fecha": "2026-10-29",
+ "actualizado": "2026-10-29T07:17:36-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google lanzó Gemini 4 Carbon, su modelo más avanzado hasta la fecha, con mejores capacidades en ciberseguridad y tareas de largo plazo.",
+   "El presidente de Estados Unidos anunció su intención de eliminar la expresión inteligencia artificial del discurso oficial.",
+   "NVIDIA publicó nuevas herramientas de transcripción multilingüe adaptables mediante instrucciones para procesar audio de forma más inteligente."
+  ],
+  "ids": [
+   "6318bf62f2c5",
+   "7803291cc744",
+   "41e0dc889e76",
+   "7ae8eb20550e",
+   "9a783b4021e0",
+   "eb47039fe454",
+   "ea370fdd96af",
+   "a01db71b034c",
+   "36eb3dda48d9",
+   "4683a3b03315"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "7803291cc744",
+   "fecha": "2026-10-29",
+   "titulo": "Presidente de EE. UU. quiere prohibir el término inteligencia artificial",
+   "que_paso": "El presidente anunció su intención de eliminar la expresión “inteligencia artificial” del discurso oficial. No dio detalles de cómo se aplicaría la medida.",
+   "por_que_importa": "Podría influir en la forma en que se discuten y regulan las tecnologías de IA.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "inteligencia artificial",
+     "explicacion": "Tecnología que permite a máquinas realizar tareas que normalmente requieren inteligencia humana."
+    }
+   ],
+   "etiquetas": [
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://thehill.com/homenews/administration/6175633-trump-bans-artificial-intelligence-term/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "ea370fdd96af",
+   "fecha": "2026-10-29",
+   "titulo": "Anthropic muestra cuánto cuestan sus modelos a las empresas",
+   "que_paso": "Anthropic lanzó una herramienta que desglosa el gasto de los usuarios en sus modelos de IA. La funcionalidad aparece antes de su salida a bolsa.",
+   "por_que_importa": "Ayuda a las empresas a entender mejor el costo de usar sus servicios de IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo",
+     "explicacion": "Algoritmo entrenado para generar respuestas o realizar tareas específicas."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/claude-enterprise-social-smartreports-five-beats-gray200-animated-1080x608-v032.gif?w=1080"
+  },
+  {
+   "id": "a01db71b034c",
+   "fecha": "2026-10-29",
+   "titulo": "Google abre Gemini y Search a más aplicaciones",
+   "que_paso": "Google lanzó una plataforma para desarrolladores que permite integrar sus servicios en Gemini y la búsqueda con IA. Las apps podrán aparecer dentro de las experiencias de IA de Google.",
+   "por_que_importa": "Los usuarios podrían descubrir y usar más servicios directamente desde la búsqueda y Gemini.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Gemini",
+     "explicacion": "Modelo de IA de Google para generar texto e imágenes."
+    },
+    {
+     "termino": "API",
+     "explicacion": "Conjunto de reglas que permite a programas comunicarse entre sí."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Blog_ConnectedApps_1027_2.width-2200.format-webp.webp?resize=1200,675"
+  },
+  {
+   "id": "36eb3dda48d9",
+   "fecha": "2026-10-29",
+   "titulo": "Nuevas laptops RTX Spark con GPU Blackwell y CPU Grace",
+   "que_paso": "NVIDIA anunció laptops ligeros equipados con la GPU RTX Blackwell y la CPU Grace en un solo chip, disponibles en marcas como ASUS y Dell. Ofrecen hasta 128 GB de memoria unificada.",
+   "por_que_importa": "Estos equipos pueden ejecutar aplicaciones de IA más rápido y con menos consumo de energía.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "GPU",
+     "explicacion": "Unidad de procesamiento gráfico, usada también para cálculos de IA."
+    },
+    {
+     "termino": "CPU",
+     "explicacion": "Unidad central de procesamiento, principal chip de un ordenador."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nv-blog-1280x680-2-1.jpg"
+  },
+  {
+   "id": "4683a3b03315",
+   "fecha": "2026-10-29",
+   "titulo": "Meta lanza Waddle World, una app tipo mascota virtual con IA",
+   "que_paso": "Meta presentó Waddle World, una aplicación donde una mascota virtual conversa con el usuario y genera dibujos de la charla. Se describe como un diario diario disfrazado de juego retro de 16 bits.",
+   "por_que_importa": "Permite interactuar con IA de forma lúdica y creativa sin escribir texto.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "IA",
+     "explicacion": "Inteligencia artificial, tecnología que permite a los sistemas conversar y generar contenido."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Waddle-World-meta-app-hero.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "19f1fb919a2d",
+   "fecha": "2026-10-29",
+   "titulo": "Skill de Claude Code para edición básica de video en DaVinci Resolve",
+   "que_paso": "Se publicó una skill que enseña a Claude Code a hacer cortes de transcripción, añadir B‑roll y ajustar ritmo en DaVinci Resolve. La licencia permite uso no comercial.",
+   "por_que_importa": "Facilita que usuarios sin experiencia editen videos usando instrucciones de IA.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Conjunto de instrucciones que le dice a la IA cómo realizar una tarea específica."
+    },
+    {
+     "termino": "DaVinci Resolve",
+     "explicacion": "Programa de edición de video profesional."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/appariciojunior/video-editor-skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/e5c34a3e2c6b3d9b31b5e3f153e68abc817ce707d2359518b949910f1a9efd90/appariciojunior/video-editor-skills"
+  },
+  {
+   "id": "1c6441623ff5",
+   "fecha": "2026-10-29",
+   "titulo": "Qwen3.5‑4B‑3D‑Coder, modelo pequeño para código y 3D",
+   "que_paso": "Hugging Face aloja el modelo Qwen3.5‑4B‑3D‑Coder, diseñado para generar código y crear escenas 3D de alta calidad. Está bajo licencia Apache‑2.0 y ya ha sido descargado miles de veces.",
+   "por_que_importa": "Permite a desarrolladores experimentar con generación de código y gráficos 3D sin requerir recursos de gran escala.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo de lenguaje",
+     "explicacion": "Algoritmo que predice y genera texto o código a partir de datos de entrenamiento."
+    },
+    {
+     "termino": "Apache‑2.0",
+     "explicacion": "Licencia de software que permite uso libre y modificaciones."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ccore/Qwen3.5-4B-3D-Coder.png"
+  }
+ ]
+}
