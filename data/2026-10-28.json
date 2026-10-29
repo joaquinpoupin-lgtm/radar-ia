@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-28",
- "actualizado": "2026-10-28T17:26:52-03:00",
+ "actualizado": "2026-10-28T22:07:46-03:00",
  "brief": {
   "lo_mas_importante": [
    "Apple integrará funciones inteligentes en Pages, Keynote y Numbers con modelos propios y de OpenAI.",
@@ -463,6 +463,143 @@
    ],
    "confirmacion": 1,
    "imagen": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company/opengraph-image/og"
+  },
+  {
+   "id": "9a783b4021e0",
+   "fecha": "2026-10-28",
+   "titulo": "Las respuestas de la IA de Google cambian según el país",
+   "que_paso": "La inteligencia artificial de Google evita dar respuestas directas al preguntar quién ganó las elecciones de 2020 dentro de Estados Unidos. Sin embargo, estas respuestas son más directas cuando se consulta desde fuera de ese país.",
+   "por_que_importa": "Muestra cómo el comportamiento de una misma inteligencia artificial puede variar dependiendo del lugar geográfico desde donde se le consulte.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2181827335-1152x648.jpg"
+  },
+  {
+   "id": "41e0dc889e76",
+   "fecha": "2026-10-28",
+   "titulo": "Google presenta el modelo de inteligencia artificial Gemini 4 Carbon",
+   "que_paso": "Google anunció el lanzamiento de Gemini 4 Carbon, un nuevo modelo avanzado de inteligencia artificial que funciona como una versión mejorada de la variante anterior llamada Argon. La fuente señala que no está disponible para su uso.",
+   "por_que_importa": "Permite conocer la evolución de los modelos de inteligencia artificial que Google está desarrollando en su gama más avanzada.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/"
+    },
+    {
+     "nombre": "Matthew Berman",
+     "url": "https://www.youtube.com/shorts/3yZb9rGt-rk"
+    },
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-2-1152x648.jpg"
+  },
+  {
+   "id": "eb47039fe454",
+   "fecha": "2026-10-28",
+   "titulo": "Skill para Claude Code enfocada en creación de contenido",
+   "que_paso": "Lanzaron una skill comunitaria para Claude Code y Codex orientada a la creación de videos para plataformas como TikTok y Xiaohongshu. Ayuda a planificar contenido, escribir guiones, definir títulos y revisar borradores.",
+   "por_que_importa": "Es una herramienta útil para quienes producen videos cortos y buscan asistencia automatizada en el proceso creativo.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Una interfaz de programación que permite interactuar con la inteligencia artificial Claude desde la terminal de comandos."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/liuhaisi2026212-maker/taishang-laojun"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://repository-images.githubusercontent.com/1429409577/7452fa0c-7c2d-4d9a-837c-f34cf9884536"
+  },
+  {
+   "id": "75e2017ed4c5",
+   "fecha": "2026-10-28",
+   "titulo": "OpenAI y ServiceNow amplían su alianza para integrar flujos de trabajo",
+   "que_paso": "OpenAI y ServiceNow ampliaron su colaboración para integrar modelos y agentes de OpenAI dentro de la plataforma ServiceNow. Además, permitirán que los flujos de trabajo de ServiceNow se conecten con ChatGPT y Codex.",
+   "por_que_importa": "Facilita el uso de la inteligencia artificial directamente dentro de las herramientas corporativas que ya utilizan las empresas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/openai-servicenow-partnership-expansion"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "c517821d0281",
+   "fecha": "2026-10-28",
+   "titulo": "Anthropic expande su programa de inteligencia artificial para la ciencia",
+   "que_paso": "Anthropic amplió su iniciativa destinada al ámbito científico mediante asociaciones con 20 fundaciones, instituciones y grupos de investigación de todo el mundo.",
+   "por_que_importa": "Amplía el acceso y la colaboración de la tecnología de Anthropic en proyectos de investigación científica global.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2c317246f4ac7eaf0667d90a76ac05a7a7b601fc-1200x630.jpg"
+  },
+  {
+   "id": "8a483cf9155c",
+   "fecha": "2026-10-28",
+   "titulo": "Akai impulsa modificaciones de código abierto en un nuevo dispositivo",
+   "que_paso": "La marca Akai otorgó acceso anticipado a desarrolladores para crear modificaciones de código abierto en su próximo dispositivo, el MPC Sample Key. La empresa decidió abrir el sistema para aprovechar el trabajo de la comunidad de creadores.",
+   "por_que_importa": "Muestra cómo algunos fabricantes abren sus dispositivos para que la comunidad de usuarios pueda personalizarlos libremente.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Akai-MPC-Sample-Key.jpg?quality=90&strip=all&crop=0,20.395548367643,100,59.208903264713"
   }
  ]
 }
