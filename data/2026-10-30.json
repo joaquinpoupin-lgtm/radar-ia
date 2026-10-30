@@ -1,0 +1,244 @@
+{
+ "fecha": "2026-10-30",
+ "actualizado": "2026-10-30T07:19:34-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Mistral AI lanzó Mistral Large 4, un modelo abierto de un billón de parámetros diseñado especialmente para la programación.",
+   "La empresa Mistral también liberó los pesos de otro modelo de un billón de parámetros enfocado en la ciberseguridad.",
+   "La Fundación Wikimedia pidió proteger legalmente el entrenamiento de IA con material protegido, pero sancionar las copias directas de contenido."
+  ],
+  "ids": [
+   "8ccea7e89b70",
+   "23e63926ccea",
+   "6a4dc94a574c",
+   "e8bb9b5c5c77",
+   "a2aba86559e6",
+   "4dcfcc0d1943",
+   "638c4d7104de",
+   "5c450d9a985f",
+   "fc37b03a28fa",
+   "9fd54443238a"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "6a4dc94a574c",
+   "fecha": "2026-10-30",
+   "titulo": "Proton impulsa el uso interno de inteligencia artificial pese a reparos",
+   "que_paso": "El director ejecutivo de Proton promueve públicamente la cautela frente a las grandes tecnológicas y la IA. En paralelo, presiona internamente a sus equipos de ingeniería para integrar inteligencia artificial en los productos de la empresa, a pesar de las preocupaciones sobre seguridad que manifiestan los trabajadores.",
+   "por_que_importa": "Muestra cómo incluso las empresas enfocadas en privacidad enfrentan tensiones internas al decidir si adoptan la inteligencia artificial en sus sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/size/w1200/2026/10/andy3.png"
+  },
+  {
+   "id": "e8bb9b5c5c77",
+   "fecha": "2026-10-30",
+   "titulo": "Herramienta de defensa protege programas y código frente a agentes de IA",
+   "que_paso": "Lanzaron un escudo de defensa que busca proteger archivos binarios, aplicaciones y diferentes lenguajes de programación frente a agentes de inteligencia artificial dedicados a la ingeniería inversa. La herramienta utiliza técnicas para envenenar datos, agotar recursos y generar alucinaciones en dichos sistemas.",
+   "por_que_importa": "Ofrece una barrera técnica para evitar que sistemas automatizados analicen y extraigan código sin autorización.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "ingeniería inversa",
+     "explicacion": "Proceso de analizar un programa informático para entender cómo funciona por dentro."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/qybaihe/bla"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/1695c004be6acf471510c00bb5a309bad864024a899a245a2a672ca9d500ce3a/qybaihe/bla"
+  },
+  {
+   "id": "a2aba86559e6",
+   "fecha": "2026-10-30",
+   "titulo": "Lanzan herramientas gratuitas de auditoría SEO para Codex CLI",
+   "que_paso": "Publicaron una versión adaptada para Codex CLI que incluye decenas de habilidades y roles especializados enfocados en auditorías de posicionamiento web, optimización técnica y comercio electrónico. El proyecto está disponible de forma abierta en GitHub.",
+   "por_que_importa": "Permite realizar análisis de sitios web directamente desde la interfaz de comandos utilizando herramientas abiertas.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "SEO",
+     "explicacion": "Conjunto de técnicas para mejorar la visibilidad de un sitio web en los buscadores de internet."
+    },
+    {
+     "termino": "CLI",
+     "explicacion": "Interfaz de línea de comandos donde se escriben instrucciones de texto para operar el computador."
+    }
+   ],
+   "etiquetas": [
+    "gratis",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/zhtyyx/codex-seo"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/04b665f76d20d7f611c19b617dcf0f7ecd3ef47a8c2451787910ca399080ae04/zhtyyx/codex-seo"
+  },
+  {
+   "id": "4dcfcc0d1943",
+   "fecha": "2026-10-30",
+   "titulo": "Exdirectivos de Palantir recaudan fondos para crear modelos de IA de construcción",
+   "que_paso": "Una nueva empresa obtuvo millones de dólares en financiamiento para desarrollar un modelo de mundo enfocado en el sector de la construcción. El sistema se entrenó utilizando millones de pies cuadrados de datos de permisos de construcción en Estados Unidos.",
+   "por_que_importa": "Representa el desarrollo de inteligencia artificial especializada en normas físicas y de construcción reales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/TeamPhoto_1.png?resize=1200,675"
+  },
+  {
+   "id": "638c4d7104de",
+   "fecha": "2026-10-30",
+   "titulo": "Exingenieros de Tesla y Neuralink crean simulación para probar firmware con IA",
+   "que_paso": "Fundadores que trabajaron en proyectos de hardware crearon una plataforma para que ingenieros y agentes de inteligencia artificial puedan probar y validar firmware sin necesidad de contar con el hardware físico.",
+   "por_que_importa": "Facilita la prueba de código de sistemas integrados mediante simulaciones automatizadas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "firmware",
+     "explicacion": "Código de programación que controla directamente los circuitos electrónicos de un dispositivo."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50291116"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "5c450d9a985f",
+   "fecha": "2026-10-30",
+   "titulo": "Wabi recauda fondos y alcanza una valorización de mil millones de dólares",
+   "que_paso": "La aplicación de inteligencia artificial orientada a la creación de mini aplicaciones, que ahora se define como un agente personal, consiguió una nueva ronda de financiamiento que eleva su valor en el mercado a más de mil millones de dólares.",
+   "por_que_importa": "Refleja el crecimiento en la valorización de empresas enfocadas en agentes personales de inteligencia artificial.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/wabi-20.jpg?resize=1200,620"
+  },
+  {
+   "id": "fc37b03a28fa",
+   "fecha": "2026-10-30",
+   "titulo": "Lanzan Clover, un modelo de lenguaje de código abierto con ventana amplia",
+   "que_paso": "Presentaron un nuevo modelo de lenguaje de código abierto basado en difusión que cuenta con una arquitectura de mezcla de expertos y soporte para contextos extensos de texto. El proyecto fue publicado en la plataforma Hugging Face.",
+   "por_que_importa": "Ofrece a los desarrolladores una nueva alternativa de modelo abierto para procesar grandes cantidades de información.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software cuyo código fuente se comparte libremente para que cualquiera pueda usarlo, estudiarlo y modificarlo."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Diffuspace/Clover-35B-A3B-Preview.png"
+  },
+  {
+   "id": "9fd54443238a",
+   "fecha": "2026-10-30",
+   "titulo": "Fundación Wikimedia pide proteger el entrenamiento de IA pero frenar copias directas",
+   "que_paso": "La organización detrás de Wikipedia pide a los tribunales que protejan legalmente el entrenamiento de modelos de lenguaje con material protegido por derechos de autor. Al mismo tiempo, solicita que se sancione a los chatbots que reproducen textualmente ese contenido a los usuarios.",
+   "por_que_importa": "Plantea un equilibrio legal entre permitir que la IA aprenda de la web y proteger el contenido original para no perjudicar sitios abiertos como Wikipedia.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de lenguaje",
+     "explicacion": "Sistemas de inteligencia artificial entrenados para comprender y generar texto similar al humano."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK037_WIKIPEDIA_A.jpg?quality=90&strip=all&crop=0%2C10.728364100735%2C100%2C78.54327179853&w=1200"
+  },
+  {
+   "id": "3f421dfac052",
+   "fecha": "2026-10-30",
+   "titulo": "Administrador universitario obtiene exención religiosa para no usar IA en su trabajo",
+   "que_paso": "Un empleado administrativo de una universidad en Estados Unidos logró que se le otorgara una exención por motivos religiosos para no utilizar herramientas de inteligencia artificial en su lugar de trabajo.",
+   "por_que_importa": "Muestra un caso singular donde convicciones personales se aplican para evitar el uso obligatorio de herramientas tecnológicas en el empleo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2274650383.jpg?resize=1200,840"
+  }
+ ]
+}
