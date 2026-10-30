@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-30",
- "actualizado": "2026-10-30T07:19:34-03:00",
+ "actualizado": "2026-10-30T16:59:00-03:00",
  "brief": {
   "lo_mas_importante": [
    "Mistral AI lanzó Mistral Large 4, un modelo abierto de un billón de parámetros diseñado especialmente para la programación.",
@@ -239,6 +239,156 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2274650383.jpg?resize=1200,840"
+  },
+  {
+   "id": "9e37c40a85b3",
+   "fecha": "2026-10-30",
+   "titulo": "Advierten que depender demasiado de la inteligencia artificial reduce las habilidades técnicas",
+   "que_paso": "Un artículo analiza si resolver la mayoría de los problemas con inteligencia artificial hace que las personas pierdan práctica para solucionar fallos complejos.",
+   "por_que_importa": "Muestra el riesgo de perder capacidad de respuesta cuando la inteligencia artificial no logra resolver un problema difícil.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!Hgvq!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F530d847f-26cb-4ddd-a6de-875cbbaf8fab_6233x4167.webp"
+  },
+  {
+   "id": "7e2aaf184ac3",
+   "fecha": "2026-10-30",
+   "titulo": "Detectan extensiones maliciosas en mercados de código que comprometen equipos",
+   "que_paso": "Se descubrió que una extensión de Claude Code disponible en la plataforma Cursor contenía software malicioso diseñado para acceder remotamente a los computadores.",
+   "por_que_importa": "Alerta sobre los riesgos de seguridad al instalar complementos para herramientas de inteligencia artificial desde mercados de terceros.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://cyberplace.social/@GossiTheDog/117528831681803563"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "9aab5ec37539",
+   "fecha": "2026-10-30",
+   "titulo": "Nueva función de Claude para mejorar interfaces visuales hechas por inteligencia artificial",
+   "que_paso": "Lanzaron una instrucción para Claude que transforma diseños de interfaces generados automáticamente en diseños de aspecto más profesional. Cuenta con ochocientas setenta y cinco estrellas en GitHub.",
+   "por_que_importa": "Sirve para quienes usan Claude en programación y buscan que las interfaces de sus proyectos se vean mejor diseñadas.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/heydamir/unslop"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://opengraph.githubassets.com/168ed0b299d55ec5cbf2b59ded5e7d620ad0baddeb014c8107b98b3ec0a3c221/heydamir/unslop"
+  },
+  {
+   "id": "25cc4c9bb2e3",
+   "fecha": "2026-10-30",
+   "titulo": "OpenAI facilitará que los sitios web indiquen sus preferencias de entrenamiento",
+   "que_paso": "OpenAI anunció que respetará una señal compartida en los archivos robots.txt para que los operadores de sitios web comuniquen si permiten o no el uso de sus datos.",
+   "por_que_importa": "Da mayor control a los dueños de sitios web sobre cómo las empresas de inteligencia artificial utilizan su contenido.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "c7606af40dbb",
+   "fecha": "2026-10-30",
+   "titulo": "OpenAI refuerza las medidas de seguridad y prevención de violencia para adolescentes",
+   "que_paso": "La empresa implementó nuevas salvaguardas y detecciones tempranas en ChatGPT enfocadas en la protección de usuarios jóvenes.",
+   "por_que_importa": "Busca hacer más seguro el uso de la aplicación para menores de edad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "a457451f7b0a",
+   "fecha": "2026-10-30",
+   "titulo": "Nuevo asistente virtual ayuda a elegir restaurantes y hacer reservas por texto",
+   "que_paso": "Una aplicación llamada Zest lanzó un conserje virtual que combina los gustos de un grupo, organiza votaciones y realiza la reserva en el restaurante.",
+   "por_que_importa": "Muestra cómo los asistentes automatizados empiezan a coordinar tareas cotidianas entre varias personas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/zest.jpg?resize=1200,764"
+  },
+  {
+   "id": "e9e7beb52b83",
+   "fecha": "2026-10-30",
+   "titulo": "DoorDash registra un uso muy bajo de pedidos realizados mediante inteligencia artificial",
+   "que_paso": "La plataforma de entrega de comida informó que apenas ha recibido varios cientos de pedidos originados por agentes de inteligencia artificial, aunque se muestra abierta a colaborar con creadores externos.",
+   "por_que_importa": "Indica que el comercio electrónico mediante asistentes automatizados aún está en una etapa muy inicial de adopción.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/"
+    },
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1232015093.jpg?resize=1200,800"
   }
  ]
 }
