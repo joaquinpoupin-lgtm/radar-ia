@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-29",
- "actualizado": "2026-10-29T17:25:54-03:00",
+ "actualizado": "2026-10-29T22:13:06-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google lanzó Gemini 4 Carbon, su modelo más avanzado hasta la fecha, con mejores capacidades en ciberseguridad y tareas de largo plazo.",
@@ -391,6 +391,167 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "d8eb5a4b641e",
+   "fecha": "2026-10-29",
+   "titulo": "Prueban grupos de agentes de IA en Minecraft y Mindustry",
+   "que_paso": "Un grupo de usuarios puso a prueba en Hacker News enjambres de agentes basados en Claude y GPT para jugar en Minecraft y Mindustry. La experiencia muestra cómo múltiples inteligencias artificiales pueden operar de manera conjunta en entornos virtuales de videojuegos.",
+   "por_que_importa": "Muestra cómo los usuarios están experimentando con múltiples agentes colaborando en mundos virtuales complejos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial que pueden ejecutar tareas complejas de forma autónoma."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://labs.ycombinator.com/projects/games/index.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://labs.ycombinator.com/og.png"
+  },
+  {
+   "id": "537bd3ea8f73",
+   "fecha": "2026-10-29",
+   "titulo": "Nuevas herramientas para crear aplicaciones en macOS",
+   "que_paso": "Lanzaron un paquete de habilidades para agentes enfocado en investigar, clonar, diseñar y probar aplicaciones nativas para Mac. Utiliza lenguajes y herramientas como Swift y SwiftUI junto con Claude Code.",
+   "por_que_importa": "Ofrece a quienes desarrollan software una forma de automatizar la creación y prueba de aplicaciones para el sistema de Apple.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Herramienta de Anthropic para programar asistido por inteligencia artificial desde la terminal."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/daveebbelaar/bama"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/534a22a55ac6f9eff00c791517f1e1f41b803ad90f1501e12ff996b6b2a6c9f1/daveebbelaar/bama"
+  },
+  {
+   "id": "a1765f446c5b",
+   "fecha": "2026-10-29",
+   "titulo": "Mistral Large 4 ya está disponible en Hugging Face",
+   "que_paso": "La plataforma Hugging Face incorporó el modelo Mistral Large 4, conocido bajo el nombre de Le Chonk. Permite a los usuarios acceder a este nuevo sistema de lenguaje de la empresa Mistral.",
+   "por_que_importa": "Facilita el acceso a un modelo reciente de inteligencia artificial para probarlo directamente en la plataforma.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/mistral-large4"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://huggingface.co/blog/assets/ml4/thumbnail.png"
+  },
+  {
+   "id": "1e09943a421e",
+   "fecha": "2026-10-29",
+   "titulo": "Reddit cambia su enfoque ante el avance de las búsquedas por IA",
+   "que_paso": "Ante los cambios en cómo las personas encuentran información en internet, Reddit decidió modificar su estrategia abierta. La plataforma está orientando su experiencia hacia usuarios que hayan iniciado sesión para proteger su comunidad y su negocio.",
+   "por_que_importa": "Refleja cómo los cambios en la web impulsados por la inteligencia artificial están obligando a los sitios populares a cerrar sus contenidos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2023/03/reddit-e1708636699632.jpg?resize=1200,800"
+  },
+  {
+   "id": "bde015e58f37",
+   "fecha": "2026-10-29",
+   "titulo": "Meta lanza una aplicación de moda basada en IA",
+   "que_paso": "Meta estrenó una aplicación llamada Style Sketch que se conecta a Instagram. Permite armar un armario virtual a partir de fotos ya compartidas o agregando prendas nuevas mediante imágenes, videos o fotos de la galería.",
+   "por_que_importa": "Permite organizar la ropa y la indumentaria de forma automática usando las fotos y videos del teléfono.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/meta-style-sketch.png?resize=1200,625"
+  },
+  {
+   "id": "23e63926ccea",
+   "fecha": "2026-10-29",
+   "titulo": "Mistral lanza modelo enfocado en ciberseguridad con un billón de parámetros",
+   "que_paso": "La empresa Mistral liberó los pesos de un modelo de inteligencia artificial de un billón de parámetros diseñado para la ciberseguridad. Según la compañía, esto otorga a las organizaciones un control sobre sus defensas digitales que los modelos cerrados no permiten.",
+   "por_que_importa": "Entrega a las organizaciones un modelo avanzado para gestionar su seguridad informática de forma interna.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "parámetros",
+     "explicacion": "Variables internas de un modelo de IA que determinan su capacidad de procesamiento y aprendizaje."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2024/06/GettyImages-1760104305.jpg?resize=1200,798"
+  },
+  {
+   "id": "1112027d5901",
+   "fecha": "2026-10-29",
+   "titulo": "Desarrolladores combinan IA y simulaciones en Omniverse",
+   "que_paso": "Creadores de software están uniendo modelos avanzados de inteligencia artificial con las librerías de NVIDIA Omniverse. Esta combinación busca facilitar la creación de simulaciones, el diseño de escenarios y la investigación de fallas técnicas.",
+   "por_que_importa": "Ayuda a quienes desarrollan proyectos a transformar ideas en simulaciones funcionales de manera más directa.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/10/Copy-of-nvidia-ov-x-astra-4up-KV-r1-press-4k-r2-1680x945.png"
   }
  ]
 }
