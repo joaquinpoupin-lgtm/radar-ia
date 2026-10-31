@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-31",
- "actualizado": "2026-10-31T06:51:52-03:00",
+ "actualizado": "2026-10-31T16:26:05-03:00",
  "brief": {
   "lo_mas_importante": [
    "Detectaron extensiones maliciosas en mercados de código de herramientas de inteligencia artificial que permiten acceder remotamente a los computadores.",
@@ -216,6 +216,188 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Intel-Lip-Bu-Tan-1.jpg?resize=1200,800"
+  },
+  {
+   "id": "5b0ac3b976a1",
+   "fecha": "2026-10-31",
+   "titulo": "Un software malicioso usa IA para clasificar a sus víctimas",
+   "que_paso": "Un programa malicioso roba datos personales, credenciales y billeteras digitales. Luego, utiliza inteligencia artificial para analizar a las víctimas y ordenar sus bienes según su valor económico.",
+   "por_que_importa": "Muestra cómo los ciberdelincuentes están usando la inteligencia artificial para automatizar y optimizar sus ataques.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "software malicioso",
+     "explicacion": "Programas diseñados para dañar equipos o robar información."
+    }
+   ],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w1200/2026/10/VOLTA.jpg"
+  },
+  {
+   "id": "76e502c4ebad",
+   "fecha": "2026-10-31",
+   "titulo": "Lanzan prototipo de un sistema de agentes autónomos",
+   "que_paso": "Publicaron un nuevo proyecto en GitHub llamado dsh-superagent-prototype. Está desarrollado en TypeScript y busca avanzar hacia sistemas de agentes más autónomos.",
+   "por_que_importa": "Es una herramienta de código abierto para quienes desarrollan y experimentan con agentes de inteligencia artificial.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "TypeScript",
+     "explicacion": "Lenguaje de programación basado en JavaScript."
+    },
+    {
+     "termino": "agentes autónomos",
+     "explicacion": "Programas de IA capaces de tomar decisiones y realizar tareas por sí mismos."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/e81e07fb6cf7852651816cd08a01320a462d59f26142e492c752f39716845ffc/deepseek-ai/dsh-superagent-prototype"
+  },
+  {
+   "id": "9b894388109d",
+   "fecha": "2026-10-31",
+   "titulo": "Anthropic restringe la reescritura de videojuegos en Claude Code",
+   "que_paso": "Anthropic implementó una nueva regla automática en los servidores para Claude Code. La medida limita la reescritura de videojuegos existentes sin que exista una opción para desactivarla.",
+   "por_que_importa": "Afecta directamente a quienes usan esta herramienta para modificar o recrear juegos en su trabajo diario.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://pbs.twimg.com/media/HV3D_otWQAAicKf?format=webp&name=large"
+  },
+  {
+   "id": "acae5487f5f3",
+   "fecha": "2026-10-31",
+   "titulo": "Cupan una herramienta para simular y desarmar máquinas en 3D",
+   "que_paso": "Crearon una extensión para Claude Code llamada teardown. Convierte cualquier máquina en un simulador tridimensional que se puede desmontar por partes.",
+   "por_que_importa": "Añade una nueva función visual y de simulación interactiva para los usuarios de Claude Code.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/elvarofficial/teardown"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1439522537/bdfd9e2b-0ca9-4146-b1cb-75a376517286"
+  },
+  {
+   "id": "ee9f8f39beac",
+   "fecha": "2026-10-31",
+   "titulo": "Crítica a los dispositivos de compañía con inteligencia artificial",
+   "que_paso": "Un artículo compara los dispositivos portátiles de IA que funcionan como mascotas virtuales con alternativas caseras. Cuestiona la necesidad de comprar estos nuevos aparatos para llevar la asistencia virtual a todas partes.",
+   "por_que_importa": "Refleja el debate actual sobre la utilidad real de los accesorios físicos con inteligencia artificial frente al software en el teléfono.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/verge-sean-hollister-muse-gadget-331A2564-01-3.jpg?quality=90&strip=all&crop=4%2C9.7534360513847%2C96%2C75.393048208485&w=1200"
+  },
+  {
+   "id": "c10fef6ec816",
+   "fecha": "2026-10-31",
+   "titulo": "OpenAI reduciría la meta de su nueva ronda de financiamiento",
+   "que_paso": "La reciente ronda de inversión de OpenAI no estaría alcanzando las expectativas iniciales. Debido a esto, la empresa habría bajado su objetivo de recaudación de fondos.",
+   "por_que_importa": "Muestra posibles cambios en el ritmo de inversión económica dentro de la industria de la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "ff3c0ba63213",
+   "fecha": "2026-10-31",
+   "titulo": "Bill Gates advierte sobre el impacto de la automatización laboral",
+   "que_paso": "Bill Gates señaló que la adopción de la inteligencia artificial en el trabajo será un proceso turbulento. Propuso cobrar impuestos a los robots y tokens de IA de la misma manera que se grava el sueldo de los trabajadores humanos.",
+   "por_que_importa": "Plantea una discusión sobre el futuro del empleo y posibles cambios regulatorios en la economía.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Unidades de texto que los modelos de lenguaje procesan y generan."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/bill-gates-fundador-microsoft-consiste-contratar-al-robot-despedir-al-humano-no-mirar-atras"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/9442f9/bill/840_560.jpeg"
+  },
+  {
+   "id": "ef4c1375c469",
+   "fecha": "2026-10-31",
+   "titulo": "Empresa de aviones supersónicos cambia su foco hacia centros de datos de IA",
+   "que_paso": "Una compañía enfocada en la aviación supersónica retrasó su proyecto de aviones. Ahora redireccionó su negocio para suministrar energía a centros de datos dedicados a la inteligencia artificial.",
+   "por_que_importa": "Ilustra cómo la alta demanda energética de la infraestructura de IA está cambiando los planes de grandes empresas industriales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Superpower-Superfactory-2560x1440.jpg"
   }
  ]
 }
