@@ -1,0 +1,221 @@
+{
+ "fecha": "2026-10-31",
+ "actualizado": "2026-10-31T06:51:52-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Detectaron extensiones maliciosas en mercados de código de herramientas de inteligencia artificial que permiten acceder remotamente a los computadores.",
+   "DoorDash informó que apenas ha recibido varios cientos de pedidos de comida originados por agentes automatizados de inteligencia artificial.",
+   "Agencias de calificación estiman que Anthropic podría recibir una nota financiera baja tras su salida a bolsa."
+  ],
+  "ids": [
+   "7e2aaf184ac3",
+   "bf5aaab63512",
+   "9aab5ec37539",
+   "e9e7beb52b83",
+   "1ad66cf690a9",
+   "58bdc6b4d610",
+   "41a783f21e16",
+   "aa58fb4e9bc5",
+   "0d67183d9957",
+   "46e307363c08"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "58bdc6b4d610",
+   "fecha": "2026-10-31",
+   "titulo": "Consola Nintendo clásica emulada dentro de un modelo de IA",
+   "que_paso": "Lograron compilar la CPU de una consola NES dentro de los pesos de un modelo de inteligencia artificial Qwen. El experimento demuestra que es posible integrar sistemas informáticos tradicionales en la estructura interna de una red neuronal.",
+   "por_que_importa": "Muestra las capacidades técnicas y los límites creativos que los desarrolladores descubren al manipular los componentes internos de los modelos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "pesos",
+     "explicacion": "Los valores numéricos internos que forman la estructura de una inteligencia artificial y determinan cómo responde."
+    },
+    {
+     "termino": "CPU",
+     "explicacion": "El procesador principal que se encarga de ejecutar las instrucciones de un programa o dispositivo."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/dbreunig/nesformer"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/ca0ae3d9762d22c9502ba7916938c1cb135f4ad90aa904381d6bc80792d74f87/dbreunig/nesformer"
+  },
+  {
+   "id": "41a783f21e16",
+   "fecha": "2026-10-31",
+   "titulo": "Acciones tecnológicas caen en Estados Unidos por temor a costos de IA",
+   "que_paso": "Las acciones de Intel continuaron bajando y el índice Nasdaq abrió en su nivel más bajo en más de dos meses. El mercado muestra preocupación por el alto nivel de inversión que exigen las tecnologías de inteligencia artificial.",
+   "por_que_importa": "Refleja cómo la incertidumbre financiera en torno a los gastos en IA comienza a impactar de forma directa en los mercados bursátiles.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/10b0/live/dcdf2a60-d46e-11f1-9dda-1ba6fcc7d159.jpg"
+  },
+  {
+   "id": "aa58fb4e9bc5",
+   "fecha": "2026-10-31",
+   "titulo": "Asistente de IA gratuito y local enfocado en supervivencia",
+   "que_paso": "Lanzaron una biblioteca y asistente de inteligencia artificial que funciona directamente en el computador personal sin requerir conexión a internet. El sistema muestra la fuente de cada una de las respuestas que entrega.",
+   "por_que_importa": "Permite consultar información de manera completamente independiente de la red y verificar el origen exacto de los datos obtenidos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gratis",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/anonnerdfrenzy/survival-llm"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/92e3f4d35b2e07c74af5e8f929a31c726308251f8b37b64a265671f38eca5e46/anonnerdfrenzy/survival-llm"
+  },
+  {
+   "id": "0d67183d9957",
+   "fecha": "2026-10-31",
+   "titulo": "Skill para Claude Code que analiza animaciones fotograma a fotograma",
+   "que_paso": "Crearon un complemento para Claude Code capaz de desarmar cualquier animación cuadro por cuadro. Luego, el sistema verifica que la copia generada se mueva exactamente igual que eloriginal.",
+   "por_que_importa": "Facilita la tarea de replicar movimientos visuales complejos directamente desde las herramientas de desarrollo.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/NiazMorshed2007/reanimate"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/385806b0f3b6dad9db7e7b7c4048d3c08d141cea03f31d2f5e101584917810cd/NiazMorshed2007/reanimate"
+  },
+  {
+   "id": "46e307363c08",
+   "fecha": "2026-10-31",
+   "titulo": "Herramienta convierte una foto en un objeto 3D en segundos",
+   "que_paso": "Un nuevo modelo transforma una sola imagen estática en un archivo tridimensional en menos de dos segundos. El sistema funciona en tarjetas gráficas comunes de computadores personales.",
+   "por_que_importa": "Permite generar contenidos tridimensionales de forma rápida sin necesidad de contar con hardware especializado de alta gama.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tarjetas gráficas",
+     "explicacion": "Componentes del computador especializados en procesar gráficos y cálculos complejos rápidamente."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/speridlabs/idol"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/speridlabs/idol.png"
+  },
+  {
+   "id": "c6b2d3ea7917",
+   "fecha": "2026-10-31",
+   "titulo": "Nvidia evalúa respaldar un préstamo para un centro de datos",
+   "que_paso": "Nvidia analiza actuar como codeudor en un préstamo destinado a un centro de datos de IA en Virginia Occidental. La iniciativa surge en un contexto donde los inversionistas muestran cautela ante los altos gastos en infraestructura.",
+   "por_que_importa": "Ilustra cómo los principales fabricantes de chips buscan facilitar el financiamiento para asegurar la demanda de su propia tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2235971874.jpg?resize=1200,800"
+  },
+  {
+   "id": "5d6f84404e1c",
+   "fecha": "2026-10-31",
+   "titulo": "Asistente de IA centrado en la privacidad anuncia su cierre",
+   "que_paso": "Los creadores de Ollie, un asistente de inteligencia artificial que priorizaba la privacidad del usuario, informaron que el servicio dejará de funcionar en una semana. La decisión ocurre en medio de la alta competencia en el mercado de asistentes.",
+   "por_que_importa": "Muestra las dificultades que enfrentan las alternativas más pequeñas frente a la gran cantidad de opciones disponibles en la industria.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/Ollie_Hero.png?resize=1200,847"
+  },
+  {
+   "id": "1fff1698b18b",
+   "fecha": "2026-10-31",
+   "titulo": "Apple Intelligence llegará a China con el sistema iOS 27.3",
+   "que_paso": "Apple anunció que integrará sus funciones de inteligencia artificial en China a través de la actualización iOS 27.3. El despliegue comenzará con una versión de prueba en noviembre y un lanzamiento general en diciembre.",
+   "por_que_importa": "Amplía la disponibilidad de las herramientas de IA de la compañía a nuevos mercados geográficos regulados.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25699392/DSC08596_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200"
+  },
+  {
+   "id": "a977761811a9",
+   "fecha": "2026-10-31",
+   "titulo": "Caída en la bolsa de Intel reduce el valor de participación estatal",
+   "que_paso": "Las acciones de Intel sufrieron un desplome bursátil que redujo de manera importante el valor de la participación del gobierno en la empresa. La baja se ve afectada por la menor venta de computadores personales mientras la industria prioriza los componentes de IA.",
+   "por_que_importa": "Evidencia el impacto financiero negativo que la concentración de la industria en la inteligencia artificial genera en sectores tradicionales de hardware.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Intel-Lip-Bu-Tan-1.jpg?resize=1200,800"
+  }
+ ]
+}
