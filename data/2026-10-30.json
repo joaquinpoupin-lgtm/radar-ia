@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-30",
- "actualizado": "2026-10-30T16:59:00-03:00",
+ "actualizado": "2026-10-30T21:56:39-03:00",
  "brief": {
   "lo_mas_importante": [
    "Mistral AI lanzó Mistral Large 4, un modelo abierto de un billón de parámetros diseñado especialmente para la programación.",
@@ -389,6 +389,169 @@
    ],
    "confirmacion": 2,
    "imagen": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1232015093.jpg?resize=1200,800"
+  },
+  {
+   "id": "bf5aaab63512",
+   "fecha": "2026-10-30",
+   "titulo": "Detectan una puerta trasera en una extensión de Claude Code",
+   "que_paso": "Detectaron una brecha de seguridad en una extensión de Claude Code para VS Code en el mercado de Cursor. Permite instalar accesos remotos no deseados en varios sistemas operativos.",
+   "por_que_importa": "Es una advertencia sobre los riesgos de seguridad al instalar extensiones de código en herramientas de desarrollo.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "puerta trasera",
+     "explicacion": "Un acceso oculto que permite entrar a un sistema informático sin autorización."
+    },
+    {
+     "termino": "SSH",
+     "explicacion": "Un protocolo para conectar de forma segura a computadoras a través de una red."
+    }
+   ],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "1ad66cf690a9",
+   "fecha": "2026-10-30",
+   "titulo": "Anthropic podría recibir una baja calificación crediticia tras su salida a bolsa",
+   "que_paso": "Según un informe, agencias de calificación estiman que Anthropic podría recibir una nota baja tras su salida a bolsa. Esto encarecería el financiamiento para sus altos gastos operativos.",
+   "por_que_importa": "Muestra los desafíos financieros que enfrentan las grandes empresas de inteligencia artificial para sostener sus costos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024"
+  },
+  {
+   "id": "da44a73a6396",
+   "fecha": "2026-10-30",
+   "titulo": "CEO de Proton cancela reentrevistas basadas en IA tras críticas",
+   "que_paso": "Proton canceló un proceso de reentrevistas impulsado por IA tras una investigación periodística. La medida se frenó luego de cuestionamientos sobre seguridad y la presión interna del director ejecutivo.",
+   "por_que_importa": "Refleja los conflictos y preocupaciones de seguridad que surgen cuando las empresas intentan imponer el uso de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/size/w1200/2026/10/andy4.png"
+  },
+  {
+   "id": "f72111f2a530",
+   "fecha": "2026-10-30",
+   "titulo": "Mika: un asistente de inteligencia artificial para Android que opera aplicaciones",
+   "que_paso": "Lanzaron Mika, un agente de inteligencia artificial para Android que funciona directamente en el dispositivo. Puede operar aplicaciones y navegar por la web para realizar tareas de forma automática.",
+   "por_que_importa": "Permite automatizar tareas cotidianas directamente desde el teléfono móvil mediante un asistente local.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Un sistema de inteligencia artificial capaz de realizar acciones y tomar decisiones de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/wangzan101/Mika"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/fdd739d1c020e5cd5876d33a673c562fbc25a8c68c13af8a32d875e5f5df9df6/wangzan101/Mika"
+  },
+  {
+   "id": "d2282bcce162",
+   "fecha": "2026-10-30",
+   "titulo": "OpenAI defiende el uso justo para el entrenamiento de inteligencia artificial",
+   "que_paso": "OpenAI recopiló posturas de expertos y creadores sobre la doctrina de uso justo. Argumentan que este principio legal es necesario para respaldar el entrenamiento de sistemas de inteligencia artificial.",
+   "por_que_importa": "Define el marco legal que permite a las empresas usar contenido público para entrenar sus modelos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/fair-use-benefits-everyone"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "2649f49189d7",
+   "fecha": "2026-10-30",
+   "titulo": "Herramienta para crear efectos visuales en pixel art con Claude Code",
+   "que_paso": "Publicaron un paquete con cientos de efectos visuales en código y una skill para Claude Code. Permite generar animaciones y diseños propios en pixel art.",
+   "por_que_importa": "Facilita la creación de arte visual y animaciones usando asistentes de programación.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/patch-gg/pixelfx"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/5ae8af62ad801cd5d8b98092685abb50916a18d0661c15607cb242a419b01f85/patch-gg/pixelfx"
+  },
+  {
+   "id": "ee64b630519e",
+   "fecha": "2026-10-30",
+   "titulo": "Lanzan Pika H3 Flex para la creación de video con inteligencia artificial",
+   "que_paso": "Presentaron Pika H3 Flex, un modelo optimizado para creadores profesionales que convierte imágenes en video. Permite generar secuencias con audio sincronizado y usar múltiples referencias visuales.",
+   "por_que_importa": "Ofrece mayor control y velocidad a los creadores que generan contenido de video mediante inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Pika-Labs/Pika-H3-Flex.png"
   }
  ]
 }
