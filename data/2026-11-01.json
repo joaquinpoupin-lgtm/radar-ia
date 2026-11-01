@@ -1,0 +1,192 @@
+{
+ "fecha": "2026-11-01",
+ "actualizado": "2026-11-01T07:42:29-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Apple anunció que integrará sus funciones de inteligencia artificial en China a partir de diciembre mediante una actualización del sistema operativo.",
+   "Un juez permitió que avance una demanda contra un centro de datos de xAI por violar normativas de aire limpio.",
+   "Nvidia analiza actuar como codeudor en un préstamo para financiar un nuevo centro de datos de inteligencia artificial en Estados Unidos."
+  ],
+  "ids": [
+   "2a10a176a3e7",
+   "71145972f162",
+   "be30f7c398b1",
+   "36009fbcf950",
+   "081f68392d7a",
+   "f839ccb49d6e",
+   "e07dacdb45dc",
+   "c6b2d3ea7917",
+   "5d6f84404e1c",
+   "1fff1698b18b"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "2a10a176a3e7",
+   "fecha": "2026-11-01",
+   "titulo": "Abogados son multados en Brasil tras ocultar instrucciones para la IA en un documento legal",
+   "que_paso": "Un tribunal de Brasil multó con 16.000 dólares a dos abogados que ocultaron texto invisible en un escrito judicial. La instrucción oculta buscaba que la IA del tribunal favoreciera su caso, pero el sistema la detectó.",
+   "por_que_importa": "Muestra que los tribunales ya usan sistemas capaces de detectar intentos de manipulación en documentos legales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://jetstream.security/wp-content/uploads/2026/07/ChatGPT-Image-Jul-1-2026-02_56_34-PM.png"
+  },
+  {
+   "id": "71145972f162",
+   "fecha": "2026-11-01",
+   "titulo": "Anthropic bloquea a Claude para evitar la ingeniería inversa en videojuegos",
+   "que_paso": "Anthropic implementó restricciones para impedir que Claude analice y descompile videojuegos. La medida ha generado problemas colaterales, afectando incluso a desarrolladores legítimos que intentan realizar tareas básicas de solución de problemas.",
+   "por_que_importa": "Demuestra cómo las medidas de seguridad para proteger propiedad intelectual pueden terminar limitando el trabajo de desarrolladores legítimos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "ingeniería inversa",
+     "explicacion": "Proceso de desarmar o analizar un programa o juego para entender cómo fue construido."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://helios-i.mashable.com/imagery/articles/00cSAXoWdRYObLNtN71MkCO/hero-image.fill.size_1200x675.v1793455880.png"
+  },
+  {
+   "id": "be30f7c398b1",
+   "fecha": "2026-11-01",
+   "titulo": "Nueva skill de código ayuda a crear videos cortos en Python",
+   "que_paso": "Lanzaron una skill para automatizar la creación de videos cortos para redes sociales, abarcando desde la selección de temas hasta el borrador de edición. El proyecto suma 589 estrellas en GitHub y utiliza lenguaje Python.",
+   "por_que_importa": "Permite automatizar la producción de contenido audiovisual usando instrucciones guiadas para la IA.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a un asistente de IA a realizar una tarea específica."
+    },
+    {
+     "termino": "Python",
+     "explicacion": "Lenguaje de programación utilizado para crear software y herramientas."
+    }
+   ],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/konlu/story-studio"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/bd98e8cf7c98388e97c3d3170be7e96263b63d2314e8af5310142453933a6caf/konlu/story-studio"
+  },
+  {
+   "id": "36009fbcf950",
+   "fecha": "2026-11-01",
+   "titulo": "Lanzan modelo open source para mejorar la resolución de videos",
+   "que_paso": "Publicaron un modelo abierto que reemplaza una interfaz de programación de pago para mejorar la calidad de videos. El sistema toma un borrador en menor resolución y lo transforma a alta definición.",
+   "por_que_importa": "Ofrece una alternativa gratuita y de código abierto para procesar y mejorar videos mediante inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Efficient-Large-Model/Open-H3-Regenerate-2K.png"
+  },
+  {
+   "id": "081f68392d7a",
+   "fecha": "2026-11-01",
+   "titulo": "Cuentan con una skill para crear videos educativos con voz y referencias",
+   "que_paso": "Desarrollaron una skill para Claude Code que permite transformar un concepto en un video explicativo corto. La herramienta incluye narración por voz y citas en cada frase, ofreciendo 44 estilos diferentes.",
+   "por_que_importa": "Facilita la generación automatizada de videos educativos estructurados directamente desde el entorno de programación de Claude.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a un asistente de IA a realizar una tarea específica."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/andyhuo520/vibe-knowledge"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/b3b1bab8b2307712aa147c312aac7f8f9757cb4716716d8d283a0707b856f906/andyhuo520/vibe-knowledge"
+  },
+  {
+   "id": "f839ccb49d6e",
+   "fecha": "2026-11-01",
+   "titulo": "Video analiza ciberataques, robos masivos y el rol de los sistemas de inteligencia artificial",
+   "que_paso": "Un video de YouTube analiza un robo multimillonario a una plataforma de criptomonedas y debate los riesgos de seguridad en internet. El creador explora qué sucede cuando proteger la red requiere depender de sistemas automatizados.",
+   "por_que_importa": "Reflexiona sobre los desafíos de seguridad digital y el uso de tecnologías automatizadas en la infraestructura actual.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Wes Roth",
+     "url": "https://www.youtube.com/watch?v=WhA2iNfzytY"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/WhA2iNfzytY/hqdefault.jpg"
+  },
+  {
+   "id": "e07dacdb45dc",
+   "fecha": "2026-11-01",
+   "titulo": "Juez permite que avance demanda contra centro de datos de xAI por contaminación",
+   "que_paso": "Un tribunal permitió que siga adelante una demanda presentada contra la empresa de inteligencia artificial de Elon Musk. La organización NAACP acusa a la compañía de violar normativas de aire limpio en sus instalaciones.",
+   "por_que_importa": "Pone el foco en el impacto ambiental y legal que generan los grandes centros de datos necesarios para operar modelos de IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800"
+  }
+ ]
+}
