@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-01",
- "actualizado": "2026-11-01T07:42:29-03:00",
+ "actualizado": "2026-11-01T16:50:51-03:00",
  "brief": {
   "lo_mas_importante": [
    "Apple anunció que integrará sus funciones de inteligencia artificial en China a partir de diciembre mediante una actualización del sistema operativo.",
@@ -187,6 +187,194 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800"
+  },
+  {
+   "id": "e17eb6c5fcac",
+   "fecha": "2026-11-01",
+   "titulo": "Grupos de agentes de IA en Minecraft no logran construir una civilización",
+   "que_paso": "Un grupo de agentes intentó crear una civilización dentro del videojuego Minecraft. Fracasaron en el intento y terminaron colapsados por la burocracia digital.",
+   "por_que_importa": "Muestra que los agentes actuales aún tienen problemas graves para organizarse en tareas complejas a largo plazo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.mos.cms.futurecdn.net/SCYhnjqyKUaWNuCxFpW8m9-1920-80.jpg"
+  },
+  {
+   "id": "76c843e9c8ad",
+   "fecha": "2026-11-01",
+   "titulo": "Paquete de código abierto con flujos y habilidades para crear MiniMax Code",
+   "que_paso": "El equipo de MiniMax Code liberó en código abierto los flujos de trabajo y habilidades que utilizan para desarrollar su plataforma. Ya se puede instalar y usar.",
+   "por_que_importa": "Permite a los programadores usar las mismas herramientas internas de un equipo de desarrollo de IA.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/MiniMax-AI/mcode-stack"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/4c08f8604dc5588329daaa80714b433b35605a3156d95e1a6536efa276e2a3a6/MiniMax-AI/mcode-stack"
+  },
+  {
+   "id": "3334b15fe6f5",
+   "fecha": "2026-11-01",
+   "titulo": "Habilidad de Claude para crear videos animados cortos con personajes en 3D",
+   "que_paso": "Un usuario creó una skill gratuita para Claude enfocada en generar historias animadas en formato corto. Utiliza tecnologías como three.js y Remotion para combinar personajes 2D en mundos 3D.",
+   "por_que_importa": "Facilita la creación automática de contenidos animados para quienes usan el asistente en proyectos creativos.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/mromidev/claude-animated-shorts"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/06441d00967c4f3cda4478d785a5cadec7e297a719ee6416744a510221dce641/mromidev/claude-animated-shorts"
+  },
+  {
+   "id": "df743e1acd04",
+   "fecha": "2026-11-01",
+   "titulo": "Prueba de ejecución local de modelos de IA de texto, imagen y video",
+   "que_paso": "Un video de YouTube pone a prueba un computador portátil equipado con hardware de Nvidia. Demuestra la generación local de contenido en texto, imagen y audio sin depender de la nube.",
+   "por_que_importa": "Muestra el estado actual del procesamiento local de inteligencia artificial en equipos portátiles.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xavier Mitjana",
+     "url": "https://www.youtube.com/watch?v=KiRhL4m1Yeg"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/KiRhL4m1Yeg/hqdefault.jpg"
+  },
+  {
+   "id": "2b51d8c5bce7",
+   "fecha": "2026-11-01",
+   "titulo": "Claude bloquea solicitudes relacionadas con clonación de videojuegos",
+   "que_paso": "Desarrolladores de videojuegos reportan que la IA de Anthropic se niega a trabajar en proyectos de clonación o ingeniería inversa. La medida busca evitar que las empresas vulneren la propiedad intelectual.",
+   "por_que_importa": "Afecta a quienes usan el asistente para desarrollar o analizar software basado en juegos existentes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "ingeniería inversa",
+     "explicacion": "Proceso de analizar un software existente para entender cómo funciona o recrearlo."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked"
+    },
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/singularity/comments/1xkwvhe/so_anthropics_claude_ai_blocks_video_game_cloning/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn.mos.cms.futurecdn.net/uCXNTvaQDC2MRU8U37YwaV-2169-80.jpg"
+  },
+  {
+   "id": "7a06514023fd",
+   "fecha": "2026-11-01",
+   "titulo": "El uso de modelos de lenguaje erosiona la confianza en la documentación",
+   "que_paso": "Una reflexión señala que la masificación de los modelos de lenguaje reduce la confianza en la documentación de software y en los proyectos tecnológicos. Ahora es más fácil falsificar señales de sistemas maduros.",
+   "por_que_importa": "Obliga a los creadores de software a buscar nuevas formas de demostrar la calidad real de su trabajo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "57a89e536400",
+   "fecha": "2026-11-01",
+   "titulo": "Desarrollador crea una cámara para vehículos impulsada por IA para detectar basura",
+   "que_paso": "Un programador adaptó su teléfono móvil en el tablero de su auto para registrar basura en las carreteras mediante inteligencia artificial. Las imágenes capturadas se envían automáticamente a grupos de campañas ecológicas.",
+   "por_que_importa": "Demuestra un uso práctico de la visión artificial y los teléfonos móviles para resolver problemas cotidianos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/aplicaciones/harto-basura-carreteras-desarrollador-ha-creado-dashcam-ia-que-detecta-clasifica-e-informa"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/174246/matthias-gellissen-kbuwy08bwpi-unsplash/840_560.jpeg"
+  },
+  {
+   "id": "d619d6506339",
+   "fecha": "2026-11-01",
+   "titulo": "Tecnológicas chinas ofrecen altos sueldos para ingenieros especializados en clientes",
+   "que_paso": "Empresas como ByteDance, Tencent y Alibaba ofrecen un millón de yuanes al año (unos 134.000 euros) por ingenieros enfocados en entender los problemas de los clientes e implementar soluciones de IA.",
+   "por_que_importa": "Refleja la alta demanda laboral en el mercado asiático por perfiles que conecten la tecnología con las necesidades de las empresas.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/empresas-y-economia/china-ofrece-sueldos-millon-yuanes-ingeniero-ia-que-tambien-buscan-anthropic-openai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/94188a/china/840_560.jpeg"
+  },
+  {
+   "id": "92934ed7e8be",
+   "fecha": "2026-11-01",
+   "titulo": "La inteligencia artificial cambia la forma en que los usuarios interactúan con las aplicaciones",
+   "que_paso": "Las aplicaciones tradicionales solían incluir múltiples funciones adicionales impuestas por sus creadores. La llegada de la inteligencia artificial está rompiendo esa dinámica y cambiando el control hacia el usuario.",
+   "por_que_importa": "Plantea un cambio en cómo las personas consumirán software en el futuro frente a las apps tradicionales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/ahora-apps-siempre-solo-podian-hacer-que-sus-creadores-querian-ia-esta-dinamitando-eso"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/f9ae21/vibecoding-personalizar-apps-portada/840_560.jpeg"
   }
  ]
 }
