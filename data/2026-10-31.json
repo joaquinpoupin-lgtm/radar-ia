@@ -1,6 +1,6 @@
 {
  "fecha": "2026-10-31",
- "actualizado": "2026-10-31T16:26:05-03:00",
+ "actualizado": "2026-10-31T21:15:29-03:00",
  "brief": {
   "lo_mas_importante": [
    "Detectaron extensiones maliciosas en mercados de código de herramientas de inteligencia artificial que permiten acceder remotamente a los computadores.",
@@ -398,6 +398,162 @@
    ],
    "confirmacion": 1,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Superpower-Superfactory-2560x1440.jpg"
+  },
+  {
+   "id": "32c78f8a2d41",
+   "fecha": "2026-10-31",
+   "titulo": "Cisco da tokens de IA ilimitados a un ingeniero para actualizar código antiguo",
+   "que_paso": "El presidente de Cisco le entregó tokens ilimitados a un ingeniero de 27 años para modernizar sistemas antiguos. Le pidieron usar toda la capacidad disponible sin restricciones.",
+   "por_que_importa": "Muestra cómo una gran empresa impulsa el uso intensivo de IA para acelerar tareas de programación interna.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Unidades de texto que procesan los modelos de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2270629609-e1793295597735.jpg?resize=1200,600"
+  },
+  {
+   "id": "e07ec5d69c95",
+   "fecha": "2026-10-31",
+   "titulo": "Usuarios reportan bloqueos en Anthropic por usar herramientas vinculadas a entrenar modelos",
+   "que_paso": "Un usuario denunció en redes sociales que Anthropic lo bloqueó por supuestamente entrenar un modelo competidor. Afirma que solo usaba Claude para enviar tareas y analizar datos, pero las restricciones afectan cualquier actividad relacionada con entrenamiento.",
+   "por_que_importa": "Advierte sobre las estrictas políticas de uso que aplican las empresas de IA para evitar la creación de sistemas rivales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://pbs.twimg.com/profile_images/1983126868095315969/28wHeS_J_400x400.jpg"
+  },
+  {
+   "id": "82785ab4f152",
+   "fecha": "2026-10-31",
+   "titulo": "Un agente de IA completa una partida del videojuego Factorio",
+   "que_paso": "Un desarrollador logró que el modelo GPT-5.6 Sol completara una partida en modo pacífico del videojuego Factorio. El sistema tardó trece horas y media de tiempo de juego en finalizar el desafío.",
+   "por_que_importa": "Demuestra los avances de los agentes autónomos para resolver tareas largas y complejas en entornos virtuales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Un sistema de inteligencia artificial capaz de ejecutar tareas y tomar decisiones de forma autónoma."
+    }
+   ],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://ryanmadden.net/gpt-56-beats-factorio/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://ryanmadden.net/img/factorio_rocket_launch_social.jpg"
+  },
+  {
+   "id": "9d7b7c274052",
+   "fecha": "2026-10-31",
+   "titulo": "Guía en GitHub para construir aplicaciones útiles y rentables con agentes de código",
+   "que_paso": "Publicaron un repositorio en GitHub con instrucciones y un archivo de configuración para guiar a los agentes de programación en la creación de aplicaciones.",
+   "por_que_importa": "Ofrece un recurso práctico para quienes buscan desarrollar software utilizando asistentes automatizados.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/blakeandersonw/ai-app-playbook"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/1dc02ab314fee58d906551ec4dca56f9b22ad276561f505f594dc55e5de64815/blakeandersonw/ai-app-playbook"
+  },
+  {
+   "id": "1e94ece288d7",
+   "fecha": "2026-10-31",
+   "titulo": "Skill para Claude crea series animadas cortas a partir de una frase",
+   "que_paso": "Lanzaron un complemento para Claude que permite generar episodios de series animadas con personajes originales. A partir de una sola instrucción crea la descripción de personajes, guiones gráficos y videos.",
+   "por_que_importa": "Facilita la producción rápida de contenido audiovisual automatizado usando asistentes de IA.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/10291124jcjc-dotcom/ai-anime-series"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/bff7d6b00b85cbf55d15eec44b4d08c56f9c9af9f125064854e6d769f364881e/10291124jcjc-dotcom/ai-anime-series"
+  },
+  {
+   "id": "4c77a0dfd633",
+   "fecha": "2026-10-31",
+   "titulo": "Actualización del complemento datasette-llm simplifica el uso de modelos",
+   "que_paso": "El desarrollador Simon Willison lanzó una actualización de su complemento para Datasette. Ahora detecta automáticamente el modelo predeterminado de lenguaje, evitando configuraciones manuales previas.",
+   "por_que_importa": "Facilita la integración y el uso rápido de herramientas de IA con bases de datos.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "9f56e268b05e",
+   "fecha": "2026-10-31",
+   "titulo": "Apple defiende su postura sobre la implementación de inteligencia artificial",
+   "que_paso": "El director ejecutivo de Apple se refirió a la estrategia de la compañía en el mercado tecnológico. Señaló que no buscan lanzar funciones de inteligencia artificial solo por sumarse a la tendencia.",
+   "por_que_importa": "Refleja la visión cautelosa de uno de los gigantes tecnológicos frente al desarrollo y despliegue de estas herramientas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2302418320.jpg?w=1024"
   }
  ]
 }
