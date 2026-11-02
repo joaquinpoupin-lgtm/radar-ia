@@ -7,6 +7,11 @@ on:
     # Minuto 30 y no en punto: a la hora en punto GitHub está más cargado y atrasa o salta corridas.
     - cron: '30 0,6,12,18 * * *'
       timezone: "America/Santiago"
+  # Cambios en la web (diseño o código del sitio): solo se rearma y publica el sitio, sin correr la IA.
+  # Los commits del robot no disparan esto (GitHub no lanza workflows por pushes hechos con su token).
+  push:
+    branches: [main]
+    paths: ["templates/**", "radar/sitio.py", "config.yaml", ".github/workflows/radar.yml"]
   workflow_dispatch:  # botón "Run workflow" para lanzarlo a mano
     inputs:
       simular:
@@ -41,8 +46,13 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
+      - name: Solo armar el sitio (cambio en la web)
+        if: github.event_name == 'push'
+        run: python -m radar sitio
+
       - name: Correr el radar
         id: radar
+        if: github.event_name != 'push'
         # Si falla, igual se guardan los datos y se publica el sitio; al final la corrida queda en rojo.
         continue-on-error: true
         env:

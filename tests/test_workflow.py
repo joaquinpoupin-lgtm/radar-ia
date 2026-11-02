@@ -24,6 +24,15 @@ def test_horario_en_hora_de_chile_y_boton_manual():
     assert "workflow_dispatch" in disparadores
 
 
+def test_cambio_en_la_web_solo_rearma_el_sitio():
+    wf = _workflow()
+    assert _disparadores(wf)["push"]["branches"] == ["main"]
+    pasos = wf["jobs"]["correr"]["steps"]
+    radar = next(p for p in pasos if p.get("id") == "radar")
+    assert radar["if"] == "github.event_name != 'push'"  # un push nunca gasta cuota de la IA
+    assert any(p.get("run") == "python -m radar sitio" and p["if"] == "github.event_name == 'push'" for p in pasos)
+
+
 def test_nunca_dos_corridas_a_la_vez():
     concurrencia = _workflow()["concurrency"]
     assert concurrencia["group"]

@@ -159,6 +159,7 @@ Cómo trabaja `radar/recolectar.py`:
 - **Ver en local:** `.claude/launch.json` define el servidor `sitio` (`python -m http.server 8001 --directory _site`, Windows; en el Mac, `sitio-mac` en el puerto 8000); abrir el `index.html` directo con doble clic también funciona.
 
 - **Vercel** (2026-10-26, además de GitHub Pages): proyecto `radar-ia` en la cuenta Hobby (gratis) del usuario, conectado al repositorio. `vercel.json` le dice cómo armarlo: crea `.venv` (el Python de Vercel no deja instalar paquetes en el sistema), instala `requirements.txt`, corre `python -m radar sitio` y publica `_site/`. Cada push a `main` (incluidos los del robot de datos) vuelve a publicar solo. Dirección pública: https://radar-ia-joaquin.vercel.app (`radar-ia.vercel.app` es de otra persona; las direcciones `*-joaquinpoupin-5629s-projects.vercel.app` piden iniciar sesión).
+- **GitHub Pages con cambios de la web** (2026-11-01): además de las 4 corridas, el workflow corre con cada push a `main` que toque `templates/`, `radar/sitio.py`, `config.yaml` o el propio workflow. En ese caso salta la IA (`python -m radar correr`) y solo arma el sitio (`python -m radar sitio`) y lo publica. Antes Pages quedaba atrasado hasta la corrida siguiente.
 
 ## Corrida completa (Paso 10)
 
