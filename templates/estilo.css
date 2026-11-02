@@ -169,6 +169,11 @@ a { color: inherit; }
 .menu a:hover { color: var(--hueso); }
 .menu a[aria-current="page"] { color: var(--hueso); }
 .menu a[aria-current="page"]::before { scale: 1; background: var(--hueso); }
+/* En el celular "Favoritas" es solo la estrellita (el texto queda para lectores de pantalla) */
+.menu__estrella { font-size: .95rem; stroke-linejoin: round; }
+.menu__texto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+/* Celulares angostos: la marca queda solo con su signo para que el menú quepa */
+@media (max-width: 27rem) { .marca span { display: none; } }
 
 /* ---------- Lámina (placa de lectura sobre el riel) ---------- */
 
@@ -500,6 +505,19 @@ a.linea:focus-visible { outline-offset: 0; }
 .datos { padding-left: calc(14px + .5rem); }
 .dato-seccion { display: inline-flex; align-items: center; gap: .5rem; margin-left: calc(-14px - .5rem); }
 .dato-seccion::before { content: ""; width: 14px; height: 1px; background: var(--c); flex: none; }
+/* Estrellita de favoritas: al final de la línea de datos; rellena en amarillo si está guardada */
+.favorito {
+  display: inline-grid; place-items: center;
+  width: 2.5rem; height: 2.5rem; margin: -.7rem -.7rem -.7rem auto;
+  padding: 0; border: 0; background: transparent;
+  color: var(--hueso-3); cursor: pointer;
+  transition: color .2s ease-out;
+}
+.favorito .icono { font-size: 1.15rem; stroke-linejoin: round; transition: scale .35s var(--resorte), fill .2s; }
+.favorito:hover { color: var(--hueso); }
+.favorito:active .icono { scale: .85; }
+.favorito[aria-pressed="true"] { color: var(--l589); }
+.favorito[aria-pressed="true"] .icono { fill: var(--l589); filter: drop-shadow(0 0 3px rgba(255, 216, 74, .45)); }
 .dato-alta { display: inline-flex; align-items: center; gap: .5rem; color: var(--hueso); font-weight: 650; }
 .dato-alta::before {
   content: ""; width: 14px; height: 4px; flex: none;
@@ -675,6 +693,8 @@ a.linea:focus-visible { outline-offset: 0; }
   body { font-size: 1.09rem; }
   .marca { letter-spacing: .22em; }
   .menu a { padding: 0 .55rem 0 .85rem; letter-spacing: .16em; }
+  .menu__estrella { display: none; }
+  .menu__texto { position: static; width: auto; height: auto; overflow: visible; clip-path: none; }
   .espectro__banda { height: 10rem; }
   .espectro__eje { height: 2rem; }
   .espectro__eje li:nth-child(even) { padding-top: .55rem; }

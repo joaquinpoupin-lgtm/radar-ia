@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block titulo %}Radar IA · Favoritas{% endblock %}
+{% block contenido %}
+<header class="apertura">
+  <h1 class="titular">Favoritas</h1>
+  <p class="bajada rotulo" id="contador">Guardadas en este navegador</p>
+</header>
+<section class="lista" id="lista" aria-labelledby="lista-titulo">
+<h2 class="solo-lector" id="lista-titulo">Noticias guardadas</h2>
+</section>
+<p class="aviso" id="vacio">Todavía no guardas ninguna. Toca la estrellita de una noticia para guardarla aquí.</p>
+{% endblock %}
+{% block scripts %}
+<script>
+// Las favoritas viven en este navegador: se arman desde las copias guardadas, la última primero.
+// Si se quita la estrellita aquí, la noticia sigue a la vista hasta recargar (así se puede deshacer).
+(function () {
+  var lista = document.getElementById("lista");
+  var f = Favoritas.leer();
+  var ids = Object.keys(f).sort(function (a, b) { return f[b].guardada - f[a].guardada; });
+  lista.insertAdjacentHTML("beforeend", ids.map(function (id) { return f[id].html; }).join(""));
+  Favoritas.preparar(lista);
+  function contar() {
+    var n = Object.keys(Favoritas.leer()).length;
+    document.getElementById("contador").textContent =
+      n + (n === 1 ? " noticia guardada" : " noticias guardadas") + " en este navegador";
+    document.getElementById("vacio").hidden = ids.length > 0;
+  }
+  document.addEventListener("favoritas", contar);
+  contar();
+})();
+</script>
+{% endblock %}

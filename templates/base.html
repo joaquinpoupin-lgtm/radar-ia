@@ -23,6 +23,7 @@
       <a href="{{ raiz }}index.html"{% if pagina == "hoy" %} aria-current="page"{% endif %}>Hoy</a>
       <a href="{{ raiz }}secciones.html"{% if pagina == "secciones" %} aria-current="page"{% endif %}>Secciones</a>
       <a href="{{ raiz }}archivo/index.html"{% if pagina == "archivo" %} aria-current="page"{% endif %}>Archivo</a>
+      <a href="{{ raiz }}favoritas.html"{% if pagina == "favoritas" %} aria-current="page"{% endif %}><svg class="icono menu__estrella" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z"/></svg><span class="menu__texto">Favoritas</span></a>
     </nav>
   </div>
 </header>
@@ -52,6 +53,48 @@ document.querySelectorAll(".espectro").forEach(function (fig) {
   fig.addEventListener("pointerleave", volver);
   fig.addEventListener("focusout", volver);
 });
+
+// Favoritas: la estrellita guarda una copia de la noticia en este navegador (localStorage),
+// así sigue en favoritas.html aunque la noticia ya no aparezca en las otras páginas.
+var Favoritas = (function () {
+  var CLAVE = "radar-favoritas";
+  function leer() {
+    try { return JSON.parse(localStorage.getItem(CLAVE)) || {}; } catch (e) { return {}; }
+  }
+  function guardar(f) {
+    try { localStorage.setItem(CLAVE, JSON.stringify(f)); return true; } catch (e) { return false; }
+  }
+  function marcar(boton, si) {
+    boton.setAttribute("aria-pressed", si);
+    var texto = si ? "Quitar de favoritas" : "Guardar en favoritas";
+    boton.setAttribute("aria-label", texto);
+    boton.title = texto;
+  }
+  function preparar(raiz) {
+    var f = leer();
+    raiz.querySelectorAll(".noticia .favorito").forEach(function (b) {
+      marcar(b, !!f[b.closest(".noticia").id]);
+      b.hidden = false;
+    });
+  }
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest(".favorito");
+    if (!b) return;
+    var n = b.closest(".noticia"), f = leer();
+    if (f[n.id]) delete f[n.id];
+    else {
+      var copia = n.cloneNode(true);
+      copia.classList.remove("destacada");
+      copia.hidden = false;
+      f[n.id] = { html: copia.outerHTML, guardada: Date.now() };
+    }
+    if (!guardar(f)) return;
+    document.querySelectorAll('[id="' + n.id + '"] .favorito').forEach(function (o) { marcar(o, !!f[n.id]); });
+    document.dispatchEvent(new CustomEvent("favoritas", { detail: { id: n.id, guardada: !!f[n.id] } }));
+  });
+  preparar(document);
+  return { leer: leer, preparar: preparar };
+})();
 </script>
 {% block scripts %}{% endblock %}
 </body>

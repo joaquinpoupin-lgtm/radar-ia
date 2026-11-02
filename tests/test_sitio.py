@@ -45,12 +45,23 @@ def test_genera_todas_las_paginas_con_links_internos_sanos(tmp_path):
                  brief={"lo_mas_importante": ["Uno.", "Dos."], "ids": ["hoy1", "ayer2"]})
     generado = generar(tmp_path)
     sitio = tmp_path / "_site"
-    for ruta in ["index.html", "secciones.html", "estilo.css", "archivo.woff2", "archivo/index.html",
+    for ruta in ["index.html", "secciones.html", "favoritas.html", "estilo.css", "archivo.woff2", "archivo/index.html",
                  f"archivo/{HOY}.html", f"archivo/{AYER}.html"]:
         assert (sitio / ruta).exists(), ruta
     assert generado.noticias == 3
     assert links_internos_rotos(sitio) == []
     assert not (tmp_path / "_site.tmp").exists()
+
+
+def test_cada_noticia_trae_su_estrellita_y_el_menu_lleva_a_favoritas(tmp_path):
+    escribir_dia(tmp_path / "data", HOY, [noticia("hoy1"), noticia("hoy2")],
+                 brief={"lo_mas_importante": ["Uno."], "ids": ["hoy1", "hoy2"]})
+    generar(tmp_path)
+    portada = leer(tmp_path, "index.html")
+    assert portada.count('class="favorito"') == 2
+    assert 'href="favoritas.html"' in portada
+    assert 'href="../favoritas.html"' in leer(tmp_path, f"archivo/{HOY}.html")
+    assert "Favoritas.leer()" in leer(tmp_path, "favoritas.html")
 
 
 def test_portada_muestra_el_brief_de_hoy_con_la_noticia_de_ayer(tmp_path):

@@ -5,6 +5,7 @@ Páginas:
     secciones.html             noticias de los últimos días con filtros (sección, 🔥, etiquetas)
     archivo/index.html         lista de días
     archivo/AAAA-MM-DD.html    brief + todas las noticias de ese día
+    favoritas.html             noticias marcadas con la estrellita (guardadas en el navegador)
 
 Sin servidor ni frameworks: HTML generado con Jinja2, un solo CSS y un poco de JS para los filtros
 y el "espectro" (cada noticia es una línea de color según su sección).
@@ -231,6 +232,7 @@ def generar_sitio(config: dict, ahora: datetime, datos: Path = CARPETA_DATOS,
                      "lineas": espectro(dias[f]["noticias"])}
                     for f in sorted(dias, reverse=True)]
     escribir("archivo/index.html", "archivo.html", pagina="archivo", dias=resumen_dias, **comun)
+    escribir("favoritas.html", "favoritas.html", pagina="favoritas", **comun)
     fechas = sorted(dias)
     for i, fecha in enumerate(fechas):
         dia = dias[fecha]
