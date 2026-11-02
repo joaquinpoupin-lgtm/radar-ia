@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-01",
- "actualizado": "2026-11-01T16:50:51-03:00",
+ "actualizado": "2026-11-01T21:57:16-03:00",
  "brief": {
   "lo_mas_importante": [
    "Apple anunció que integrará sus funciones de inteligencia artificial en China a partir de diciembre mediante una actualización del sistema operativo.",
@@ -375,6 +375,167 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.blogs.es/f9ae21/vibecoding-personalizar-apps-portada/840_560.jpeg"
+  },
+  {
+   "id": "4b795773d113",
+   "fecha": "2026-11-01",
+   "titulo": "El CEO de Proton defiende los límites en el uso de código hecho con IA",
+   "que_paso": "El director ejecutivo de Proton rechazó un pedido de pruebas de seguridad y criticó esa postura. Señaló que usar IA para programar es aceptable, pero en una empresa de privacidad los controles de ese código son clave.",
+   "por_que_importa": "Muestra cómo una empresa enfocada en la privacidad maneja los resguardos al integrar programación asistida por IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://blog.raed.dev/posts/proton-loser-thinking/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blog.raed.dev/It%20wasn't%20AI%20that%20flipped%20Proton's%20charge.png"
+  },
+  {
+   "id": "0290b2793774",
+   "fecha": "2026-11-01",
+   "titulo": "Paquete de instrucciones para crear sitios web en 3D con agentes",
+   "que_paso": "Un desarrollador creó un conjunto de habilidades para agentes que permite generar escenas y animaciones web en 3D mediante código. Funciona con herramientas como Claude Code, Cursor y Gemini CLI.",
+   "por_que_importa": "Sirve para quienes usan asistentes de programación para construir elementos visuales complejos y animados en la web.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/Moh4696/open-3d-skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/ed5fe2fbbbbe899a63fdb6077a279b144a47c673f982ce09f531bde6fbc657ad/Moh4696/open-3d-skills"
+  },
+  {
+   "id": "7d7291538279",
+   "fecha": "2026-11-01",
+   "titulo": "Consejo para solucionar errores de dependencias al usar Python y IA",
+   "que_paso": "Un experto en tecnología comparte que al usar versiones recientes de Python y herramientas relacionadas, borrar el archivo de control de dependencias suele resolver errores confusos.",
+   "por_que_importa": "Ayuda a solucionar problemas técnicos comunes al configurar entornos de desarrollo.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "0dbf0226aa90",
+   "fecha": "2026-11-01",
+   "titulo": "OpenAI evalúa cambiar el nombre de sus centros de datos",
+   "que_paso": "La empresa analiza renombrar su infraestructura técnica debido a la baja popularidad que suelen tener los centros de datos tradicionales entre el público.",
+   "por_que_importa": "Refleja cómo las grandes empresas de IA buscan cambiar la percepción pública sobre su infraestructura física.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2283113936-maller.jpg?w=1024"
+  },
+  {
+   "id": "2041779807cb",
+   "fecha": "2026-11-01",
+   "titulo": "El uso generalizado de modelos de lenguaje para procesar ideas",
+   "que_paso": "Un debate en la web apunta a cómo la mayoría de las personas parece utilizar sistemas de inteligencia artificial para reflexionar y estructurar sus pensamientos hoy en día.",
+   "por_que_importa": "Ilumina un cambio en la forma en que los usuarios cotidianos abordan la resolución de problemas mentales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://eva.ac/blog/llms/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "bb2642061f37",
+   "fecha": "2026-11-01",
+   "titulo": "Reflexión sobre el impacto de la IA para directores ejecutivos y empleados",
+   "que_paso": "Un análisis aborda la desconexión entre cómo los altos ejecutivos perciben las ventajas de la tecnología en su rutina y la realidad del resto de los trabajadores.",
+   "por_que_importa": "Pone sobre la mesa las distintas perspectivas sobre el valor real de la IA en el ámbito laboral.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-1481617564.jpg?resize=1200,680"
+  },
+  {
+   "id": "1449d58909e9",
+   "fecha": "2026-11-01",
+   "titulo": "Un usuario relata su experiencia usando un agente para trámites complejos",
+   "que_paso": "Un redactor de tecnología usó un agente automatizado para realizar un trámite burocrático engorroso que tenía pendiente desde hace años, logrando completarlo en pocos minutos.",
+   "por_que_importa": "Ejemplifica cómo los agentes de IA pueden simplificar tareas cotidianas tediosas y burocráticas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/llevo-anos-queriendo-dar-baja-mi-moto-instinct-me-ha-solucionado-diez-minutos"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/b5aeca/instinct-portada-2/840_560.jpeg"
+  },
+  {
+   "id": "ca2782c6c315",
+   "fecha": "2026-11-01",
+   "titulo": "Nuevo modelo de programación liviano para crear elementos en 3D",
+   "que_paso": "Un desarrollador creó un modelo compacto enfocado en generar código para escenas visuales y exportarlas a motores de videojuegos como Godot. No requiere instrucciones complejas.",
+   "por_que_importa": "Ofrece una opción accesible para quienes desarrollan videojuegos y buscan generar recursos gráficos usando modelos pequeños.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlh0zw/glb3dcoder_a_tiny_4b_coding_model_that_creates_3d/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
