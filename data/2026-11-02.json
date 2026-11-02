@@ -1,0 +1,219 @@
+{
+ "fecha": "2026-11-02",
+ "actualizado": "2026-11-02T08:31:38-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google DeepMind y el gobierno británico se asociaron para aplicar inteligencia artificial con el fin de reducir los tiempos en planificación urbana.",
+   "Un análisis forense demostró que un supuesto archivo filtrado de Anthropic era falso y contenía datos generados de forma pseudoaleatoria.",
+   "Un grupo de agentes de inteligencia artificial intentó crear una civilización en Minecraft, pero el proyecto colapsó por la burocracia digital."
+  ],
+  "ids": [
+   "069c01a3a1c6",
+   "2b51d8c5bce7",
+   "fad0edb4dfca",
+   "73e8678c878e",
+   "60aa8902d462",
+   "3200a25c2906",
+   "8536304e49f3",
+   "ea66f5a34808",
+   "22aef1183288",
+   "e17eb6c5fcac"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "069c01a3a1c6",
+   "fecha": "2026-11-02",
+   "titulo": "Skill de la comunidad para crear series animadas con IA",
+   "que_paso": "Un paquete de instrucciones de la comunidad para Claude Code y otras herramientas ayuda a generar proyectos de animación. Permite crear propuestas, guiones, divisiones por escenas y textos para imágenes a partir de una idea.",
+   "por_que_importa": "Es una herramienta comunitaria que ayuda a estructurar y planificar proyectos creativos paso a paso mediante instrucciones guiadas.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Skill",
+     "explicacion": "Paquete de instrucciones que le enseña a una inteligencia artificial a realizar una tarea específica."
+    }
+   ],
+   "etiquetas": [
+    "claude code",
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/zhanghao123vip/ai-manju-skills"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://opengraph.githubassets.com/14af4aef4c543e7e244001e7d3d1db40c0a2c364e883f27da531618bb511cb89/zhanghao123vip/ai-manju-skills"
+  },
+  {
+   "id": "fad0edb4dfca",
+   "fecha": "2026-11-02",
+   "titulo": "Skill de la comunidad con estilos de animación para código",
+   "que_paso": "Una nueva skill para Claude Code ofrece cientos de opciones de estilo y referencias para animación con código. Facilita la selección de diseños y la generación de animaciones en formato web.",
+   "por_que_importa": "Permite añadir efectos visuales y animaciones basados en código de manera más directa dentro del flujo de trabajo con Claude.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Skill",
+     "explicacion": "Paquete de instrucciones que le enseña a una inteligencia artificial a realizar tareas específicas."
+    }
+   ],
+   "etiquetas": [
+    "claude code",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/XiaoyeCodes/code-animation-prompts"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/67f4630b5b7b782d4da598bcc3cfeda7e0cd7fbb7679473fcaad9dd06dbf273f/XiaoyeCodes/code-animation-prompts"
+  },
+  {
+   "id": "73e8678c878e",
+   "fecha": "2026-11-02",
+   "titulo": "Nuevo modelo multimodal SenseNova Loop de código abierto",
+   "que_paso": "Lanzamiento preliminar de SenseNova-Loop-9B-Preview, un modelo lingüístico multimodal de origen chino enfocado en textos largos y flujos de trabajo con agentes. Acepta entradas de texto e imagen bajo licencia Apache 2.0.",
+   "por_que_importa": "Ofrece una nueva alternativa abierta para desarrolladores que necesitan procesar documentos extensos y combinar texto con imágenes.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "multimodal",
+     "explicacion": "Capacidad de una inteligencia artificial para comprender y procesar distintos tipos de información a la vez, como texto e imágenes."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "imagen",
+    "español"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sensenova/SenseNova-Loop-9B-Preview.png"
+  },
+  {
+   "id": "60aa8902d462",
+   "fecha": "2026-11-02",
+   "titulo": "Usuarios logran ejecutar iOS en teléfonos Android usando IA",
+   "que_paso": "Aficionados han compartido videos en redes sociales donde consiguen instalar y hacer funcionar el sistema operativo iOS en dispositivos Android. Estos proyectos de modificación se han visto impulsados por el uso de herramientas de inteligencia artificial.",
+   "por_que_importa": "Muestra cómo los aficionados utilizan asistentes de IA para abordar proyectos complejos de modificación de software en teléfonos móviles.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/moviles/alguien-ha-conseguido-que-parecia-imposible-redmi-note-12-ejecutando-ios-ayuda-claude-claro"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/f2d046/android-ios/840_560.jpeg"
+  },
+  {
+   "id": "3200a25c2906",
+   "fecha": "2026-11-02",
+   "titulo": "Wikis de videojuegos generadas por IA generan descontento",
+   "que_paso": "Sitios web de fanáticos sobre videojuegos creados con modelos de lenguaje están llenos de información inexacta. Según reportes de la industria, esto afecta a las comunidades de jugadores y obliga a los editores a lidiar con datos erróneos.",
+   "por_que_importa": "Refleja los problemas actuales que surgen cuando se publican contenidos masivos generados por IA sin la debida revisión humana.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://assetsio.gnwcdn.com/gamedb-wiki-header.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp"
+  },
+  {
+   "id": "8536304e49f3",
+   "fecha": "2026-11-02",
+   "titulo": "Usuario explica su uso intensivo de ChatGPT para programar",
+   "que_paso": "Un desarrollador detalla en un artículo cómo creó integraciones personalizadas y usó múltiples conversaciones simultáneas en ChatGPT para tareas de programación.",
+   "por_que_importa": "Ilustra métodos avanzados de trabajo y automatización que algunos usuarios aplican para potenciar el desarrollo de software.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://chaosmanage.github.io/i-killed-unlimited-chatgpt/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "ea66f5a34808",
+   "fecha": "2026-11-02",
+   "titulo": "Google DeepMind colabora con el gobierno británico en urbanismo",
+   "que_paso": "Google DeepMind y el gobierno del Reino Unido se asociaron para aplicar inteligencia artificial con el fin de reducir los tiempos de evaluación en decisiones de planificación urbana.",
+   "por_que_importa": "Muestra un caso práctico del uso de tecnología de Google en la gestión y trámites administrativos estatales.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://lh3.googleusercontent.com/AnSfPLyNIwSu1XsT_WUP3aYfQrc9jo8lwlotms7NmryT7RhWXnwdF4_zzYBMlJOcNT1U_ZbDMCM7AzpnFDPeYKJDardybJGlm447xeEXo1eQqgjCEg=w1200-h630-n-nu-rw"
+  },
+  {
+   "id": "22aef1183288",
+   "fecha": "2026-11-02",
+   "titulo": "Demuestran que modelo de Anthropic filtrado es falso",
+   "que_paso": "Un análisis forense de un archivo de gran tamaño que circulaba en internet demostró que no corresponde a un modelo entrenado de Anthropic. La investigación comprobó que los datos fueron generados de forma pseudoaleatoria y no mediante aprendizaje automático.",
+   "por_que_importa": "Advierte sobre la circulación de archivos falsos en la red que simulan ser sistemas avanzados de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "rumor",
+    "sin confirmar"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/ClaudeAI/comments/1xls4cj/the_772tb_alleged_anthropic_ai_model_is_fake_i/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
