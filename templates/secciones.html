@@ -9,6 +9,10 @@
 </header>
 {% if noticias %}
 <div class="filtros" id="filtros" hidden>
+  <div class="buscador" role="search">
+    <label class="rotulo" for="buscar">Buscar</label>
+    <input type="search" id="buscar" placeholder="Tema, empresa o #etiqueta" autocomplete="off" spellcheck="false">
+  </div>
   {% if dias_filtro | length > 1 %}
   <div class="grupo" role="group" aria-label="Día">
     <button type="button" data-fecha="" aria-pressed="true">Todos los días <small>{{ noticias | length }}</small></button>
@@ -49,15 +53,23 @@
 {% block scripts %}
 {% if noticias %}
 <script>
-// Filtros: un día (o todos) + una sección (o todas) + solo importantes + una etiqueta. Sin JS se ven todas las noticias.
+// Filtros: búsqueda + un día (o todos) + una sección (o todas) + solo importantes + una etiqueta. Sin JS se ven todas las noticias.
+// La búsqueda mira etiquetas, título y cuerpo; sin importar mayúsculas ni tildes, y cada palabra tiene que aparecer.
 // Las líneas del espectro siguen a los filtros: las que quedan fuera bajan a un muñón.
 (function () {
   var filtros = document.getElementById("filtros");
   var noticias = document.querySelectorAll("#lista .noticia");
   var lineas = {};
   document.querySelectorAll(".espectro__banda .linea").forEach(function (l) { lineas[l.dataset.id] = l; });
-  var estado = { fecha: "", seccion: "", alta: false, etiqueta: "" };
+  var estado = { fecha: "", seccion: "", alta: false, etiqueta: "", palabras: [] };
   filtros.hidden = false;
+
+  function normal(t) { return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  var textos = {};
+  noticias.forEach(function (n) {
+    textos[n.id] = normal(n.dataset.etiquetas.replace(/\|/g, " ") + " " +
+                          n.querySelector("h3").textContent + " " + n.querySelector(".cuerpo").textContent);
+  });
 
   function aplicar() {
     var visibles = 0;
@@ -65,7 +77,8 @@
       var ok = (!estado.fecha || n.dataset.fecha === estado.fecha) &&
                (!estado.seccion || n.dataset.seccion === estado.seccion) &&
                (!estado.alta || n.dataset.alta === "si") &&
-               (!estado.etiqueta || n.dataset.etiquetas.split("|").indexOf(estado.etiqueta) >= 0);
+               (!estado.etiqueta || n.dataset.etiquetas.split("|").indexOf(estado.etiqueta) >= 0) &&
+               estado.palabras.every(function (p) { return textos[n.id].indexOf(p) >= 0; });
       n.hidden = !ok;
       var linea = lineas[n.id.slice(2)];
       if (linea) linea.classList.toggle("fuera", !ok);
@@ -95,6 +108,10 @@
     else if (b.hasAttribute("data-alta")) estado.alta = !estado.alta;
     else if (b.hasAttribute("data-etiqueta"))
       estado.etiqueta = estado.etiqueta === b.dataset.etiqueta ? "" : b.dataset.etiqueta;
+    aplicar();
+  });
+  document.getElementById("buscar").addEventListener("input", function (ev) {
+    estado.palabras = normal(ev.target.value).replace(/#/g, " ").split(/\s+/).filter(Boolean);
     aplicar();
   });
   aplicar();

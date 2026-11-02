@@ -21,7 +21,11 @@ Decide una de estas tres cosas:
    - `seccion`: una de `modelos`, `herramientas`, `tendencias`, `skills`, `creadores`, `dinero`, `tips` (ver abajo). Puedes cambiar la sugerida si otra calza mejor.
    - `importancia`: `alta` solo si es un cambio grande que mucha gente va a notar (un modelo nuevo importante de una empresa grande, algo que pasa a ser gratis o un problema serio de seguridad o privacidad). Todo lo demás es `normal`. Usa `alta` en muy pocas noticias por lista, o en ninguna.
    - `terminos`: cada palabra técnica que hayas usado en `titulo`, `que_paso` o `por_que_importa`, explicada en una frase simple (`{"termino": "...", "explicacion": "..."}`). Lista vacía si no hay ninguna. Mejor todavía: evita las palabras técnicas cuando se pueda decir más simple.
-   - `etiquetas`: de 0 a 4 etiquetas cortas en minúsculas. Úsalas solo cuando la fuente lo dice: `gratis`, `de pago`, `open source`, `video`, `español`, `rumor`, `sin confirmar`, `seguridad`, `privacidad`, `empresa`, `investigación`.
+   - `etiquetas`: 3 o 4 etiquetas cortas en minúsculas (1 a 3 palabras cada una), para buscar la noticia después. Mezcla:
+     - la empresa o el producto principal, tal como se escribe pero en minúsculas (`openai`, `chatgpt`, `gemini`, `claude`, `hugging face`);
+     - el tema, en español y en singular (`imagen`, `video`, `voz`, `programación`, `agentes`, `educación`, `salud`, `leyes`, `chips`…);
+     - y, solo si la fuente lo dice: `gratis`, `de pago`, `open source`, `español`, `rumor`, `sin confirmar`, `seguridad`, `privacidad`, `investigación`.
+     No repitas la sección como etiqueta ni inventes datos para llenar etiquetas.
 
 ## Secciones
 
@@ -52,7 +56,7 @@ Responde **solo** con un objeto JSON, sin texto antes ni después, con **una ent
 ```json
 {"noticias": [
   {"n": 1, "titulo": "...", "que_paso": "...", "por_que_importa": "...", "seccion": "modelos",
-   "importancia": "normal", "terminos": [{"termino": "...", "explicacion": "..."}], "etiquetas": ["gratis"]},
+   "importancia": "normal", "terminos": [{"termino": "...", "explicacion": "..."}], "etiquetas": ["openai", "imagen", "gratis"]},
   {"n": 2, "descartar": true, "motivo": "no trata de IA"},
   {"n": 3, "misma_que": 1}
 ]}

@@ -635,6 +635,18 @@ a.linea:focus-visible { outline-offset: 0; }
 .filtros button[aria-pressed="true"]::before { scale: 1; }
 .filtros button[aria-pressed="true"] small { color: var(--hueso-2); }
 .contador { margin: .4rem 0 0; }
+.buscador { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem; }
+.buscador input {
+  flex: 1; min-width: 0; max-width: 28rem; min-height: 2.75rem;
+  padding: .5rem .8rem;
+  border: 1px solid var(--borde-fuerte); border-radius: 0;
+  background: var(--ceniza);
+  font: inherit; font-size: 1rem; color: var(--hueso);
+  transition: border-color .2s ease-out;
+}
+.buscador input::placeholder { color: var(--hueso-3); }
+.buscador input:hover { border-color: var(--hueso-3); }
+.buscador input:focus-visible { outline-offset: 2px; border-color: var(--hueso-3); }
 
 /* ---------- Archivo ---------- */
 

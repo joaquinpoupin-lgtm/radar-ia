@@ -139,6 +139,7 @@ def test_secciones_tiene_filtros_y_solo_los_ultimos_dias(tmp_path):
     assert 'data-etiqueta="gratis" aria-pressed="false">#gratis <small>2</small>' in pagina
     assert 'data-alta="si" data-etiquetas="gratis"' in pagina
     assert "Solo importantes <small>1</small>" in pagina
+    assert '<input type="search" id="buscar"' in pagina  # buscador (etiquetas, título y cuerpo)
     # El archivo sí guarda la vieja.
     assert "Título vieja" in leer(tmp_path, "archivo/2026-10-01.html")
 
