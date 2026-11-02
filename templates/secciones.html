@@ -9,6 +9,14 @@
 </header>
 {% if noticias %}
 <div class="filtros" id="filtros" hidden>
+  {% if dias_filtro | length > 1 %}
+  <div class="grupo" role="group" aria-label="Día">
+    <button type="button" data-fecha="" aria-pressed="true">Todos los días <small>{{ noticias | length }}</small></button>
+    {% for d in dias_filtro %}
+    <button type="button" data-fecha="{{ d.fecha }}" aria-pressed="false">{{ d.nombre }} <small>{{ d.cantidad }}</small></button>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="grupo" role="group" aria-label="Sección">
     <button type="button" data-seccion="" aria-pressed="true">Todas <small>{{ noticias | length }}</small></button>
     {% for s in SECCIONES if cuenta_secciones[s] %}
@@ -41,26 +49,30 @@
 {% block scripts %}
 {% if noticias %}
 <script>
-// Filtros: una sección (o todas) + solo importantes + una etiqueta. Sin JS se ven todas las noticias.
+// Filtros: un día (o todos) + una sección (o todas) + solo importantes + una etiqueta. Sin JS se ven todas las noticias.
 // Las líneas del espectro siguen a los filtros: las que quedan fuera bajan a un muñón.
 (function () {
   var filtros = document.getElementById("filtros");
   var noticias = document.querySelectorAll("#lista .noticia");
   var lineas = {};
   document.querySelectorAll(".espectro__banda .linea").forEach(function (l) { lineas[l.dataset.id] = l; });
-  var estado = { seccion: "", alta: false, etiqueta: "" };
+  var estado = { fecha: "", seccion: "", alta: false, etiqueta: "" };
   filtros.hidden = false;
 
   function aplicar() {
     var visibles = 0;
     noticias.forEach(function (n) {
-      var ok = (!estado.seccion || n.dataset.seccion === estado.seccion) &&
+      var ok = (!estado.fecha || n.dataset.fecha === estado.fecha) &&
+               (!estado.seccion || n.dataset.seccion === estado.seccion) &&
                (!estado.alta || n.dataset.alta === "si") &&
                (!estado.etiqueta || n.dataset.etiquetas.split("|").indexOf(estado.etiqueta) >= 0);
       n.hidden = !ok;
       var linea = lineas[n.id.slice(2)];
       if (linea) linea.classList.toggle("fuera", !ok);
       if (ok) visibles++;
+    });
+    filtros.querySelectorAll("[data-fecha]").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.fecha === estado.fecha);
     });
     filtros.querySelectorAll("[data-seccion]").forEach(function (b) {
       b.setAttribute("aria-pressed", b.dataset.seccion === estado.seccion);
@@ -78,7 +90,8 @@
   filtros.addEventListener("click", function (ev) {
     var b = ev.target.closest("button");
     if (!b) return;
-    if (b.hasAttribute("data-seccion")) estado.seccion = b.dataset.seccion;
+    if (b.hasAttribute("data-fecha")) estado.fecha = b.dataset.fecha;
+    else if (b.hasAttribute("data-seccion")) estado.seccion = b.dataset.seccion;
     else if (b.hasAttribute("data-alta")) estado.alta = !estado.alta;
     else if (b.hasAttribute("data-etiqueta"))
       estado.etiqueta = estado.etiqueta === b.dataset.etiqueta ? "" : b.dataset.etiqueta;

@@ -481,6 +481,16 @@ a.linea:focus-visible { outline-offset: 0; }
   line-height: 1.22;
   text-wrap: balance;
 }
+/* Puntito naranjo al final del título: la noticia todavía no se lee (lo pone el JS) */
+.noticia h3::after {
+  content: ""; display: inline-block;
+  width: .38em; height: .38em; margin-left: .4em; vertical-align: .18em;
+  border-radius: 50%;
+  background: var(--l615); box-shadow: 0 0 6px rgba(255, 154, 69, .6);
+  scale: 0;
+  transition: scale .45s var(--resorte);
+}
+.noticia.sin-leer h3::after { scale: 1; }
 /* Marca de la noticia sobre el riel, del color de su sección; doble si es importante */
 .noticia h3::before {
   content: ""; position: absolute;
@@ -615,6 +625,8 @@ a.linea:focus-visible { outline-offset: 0; }
 .filtros button.chico:hover { border-color: transparent; text-decoration-color: var(--borde-fuerte); }
 .filtros button.chico[aria-pressed="true"] { border-color: transparent; background: transparent; text-decoration-color: var(--hueso); }
 .filtros button.chico::before { display: none; }
+.filtros button[data-fecha] { padding-left: .8rem; }
+.filtros button[data-fecha]::before { display: none; }
 .filtros button small { margin-left: .2rem; font-size: .72rem; color: var(--hueso-3); }
 .filtros button:hover { border-color: var(--borde-fuerte); color: var(--hueso); }
 .filtros button[aria-pressed="true"] {

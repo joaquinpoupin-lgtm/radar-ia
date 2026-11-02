@@ -142,6 +142,17 @@ def noticias_recientes(dias: dict[str, dict], hoy: str, cantidad_dias: int) -> l
     return recientes
 
 
+def dias_filtro(noticias: list[dict], hoy: str) -> list[dict]:
+    """Botones del filtro por día en Secciones: 'Hoy', 'Ayer' y luego 'Vie 23', con su cantidad."""
+    ayer = fecha_anterior(hoy)
+    dias = []
+    for fecha, cantidad in Counter(n["fecha"] for n in noticias).items():
+        d = date.fromisoformat(fecha)
+        nombre = {hoy: "Hoy", ayer: "Ayer"}.get(fecha, f"{DIAS_SEMANA[d.weekday()][:3].capitalize()} {d.day}")
+        dias.append({"fecha": fecha, "nombre": nombre, "cantidad": cantidad})
+    return sorted(dias, key=lambda d: d["fecha"], reverse=True)
+
+
 def espectro(noticias: list[dict], fecha: str | None = None) -> list[dict]:
     """Una línea por noticia para la banda del "espectro": la banda se divide en una franja por sección
     (en el orden de SECCIONES) y las noticias de una misma sección se reparten dentro de su franja.
@@ -225,6 +236,7 @@ def generar_sitio(config: dict, ahora: datetime, datos: Path = CARPETA_DATOS,
     cuenta_secciones = Counter(n["seccion"] for n in recientes)
     escribir("secciones.html", "secciones.html", pagina="secciones", noticias=recientes,
              dias=config["sitio"]["dias_secciones"], cuenta_secciones=cuenta_secciones,
+             dias_filtro=dias_filtro(recientes, hoy),
              etiquetas=etiquetas_frecuentes(recientes), altas=sum(n["importancia"] == "alta" for n in recientes),
              **comun)
 

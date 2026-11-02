@@ -84,7 +84,7 @@ var Favoritas = (function () {
     if (f[n.id]) delete f[n.id];
     else {
       var copia = n.cloneNode(true);
-      copia.classList.remove("destacada");
+      copia.classList.remove("destacada", "sin-leer");
       copia.hidden = false;
       f[n.id] = { html: copia.outerHTML, guardada: Date.now() };
     }
@@ -94,6 +94,39 @@ var Favoritas = (function () {
   });
   preparar(document);
   return { leer: leer, preparar: preparar };
+})();
+
+// No leídas: puntito naranjo en las noticias que aún no lees (registro en localStorage, por navegador).
+// Cuenta como leída si su texto estuvo en el centro de la pantalla ~3 segundos, o al abrir uno de sus links.
+(function () {
+  var CLAVE = "radar-leidas", VIGENCIA = 60 * 864e5, ESPERA = 3000;
+  var leidas;
+  try { leidas = JSON.parse(localStorage.getItem(CLAVE)) || {}; } catch (e) { return; }
+  var ahora = Date.now();
+  Object.keys(leidas).forEach(function (id) { if (ahora - leidas[id] > VIGENCIA) delete leidas[id]; });
+  function marcar(n) {
+    if (!n.classList.contains("sin-leer")) return;
+    n.classList.remove("sin-leer");
+    leidas[n.id] = Date.now();
+    try { localStorage.setItem(CLAVE, JSON.stringify(leidas)); } catch (e) {}
+  }
+  var relojes = new Map();
+  var ojo = "IntersectionObserver" in window && new IntersectionObserver(function (vistas) {
+    vistas.forEach(function (v) {
+      var n = v.target.closest(".noticia");
+      if (v.isIntersecting) relojes.set(n, setTimeout(function () { marcar(n); ojo.unobserve(v.target); }, ESPERA));
+      else clearTimeout(relojes.get(n));
+    });
+  }, { rootMargin: "-35% 0px -35% 0px" });
+  document.querySelectorAll(".noticia").forEach(function (n) {
+    if (leidas[n.id]) return;
+    n.classList.add("sin-leer");
+    if (ojo) ojo.observe(n.querySelector(".cuerpo"));
+  });
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest(".fuentes a");
+    if (a) marcar(a.closest(".noticia"));
+  });
 })();
 </script>
 {% block scripts %}{% endblock %}

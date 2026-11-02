@@ -7,8 +7,9 @@ import httpx
 
 from radar.config import cargar_config
 from radar.resumir import SECCIONES
-from radar.sitio import (cargar_dias, datos_portada, espectro, fecha_larga, generar_sitio, links_externos,
-                         links_internos_rotos, minutos_lectura, noticias_recientes, probar_link, revisar_links)
+from radar.sitio import (cargar_dias, datos_portada, dias_filtro, espectro, fecha_larga, generar_sitio,
+                         links_externos, links_internos_rotos, minutos_lectura, noticias_recientes, probar_link,
+                         revisar_links)
 
 CONFIG = cargar_config()
 MANANA = datetime(2026, 10, 21, 9, 31, tzinfo=timezone.utc)  # 06:31 en Chile
@@ -62,6 +63,21 @@ def test_cada_noticia_trae_su_estrellita_y_el_menu_lleva_a_favoritas(tmp_path):
     assert 'href="favoritas.html"' in portada
     assert 'href="../favoritas.html"' in leer(tmp_path, f"archivo/{HOY}.html")
     assert "Favoritas.leer()" in leer(tmp_path, "favoritas.html")
+
+
+def test_filtro_por_dia_nombra_hoy_ayer_y_los_demas(tmp_path):
+    noticias = [noticia("a"), noticia("b", AYER), noticia("c", AYER), noticia("d", "2026-10-16")]
+    assert dias_filtro(noticias, HOY) == [
+        {"fecha": HOY, "nombre": "Hoy", "cantidad": 1},
+        {"fecha": AYER, "nombre": "Ayer", "cantidad": 2},
+        {"fecha": "2026-10-16", "nombre": "Vie 16", "cantidad": 1},
+    ]
+    escribir_dia(tmp_path / "data", AYER, [noticia("ayer1", AYER)])
+    escribir_dia(tmp_path / "data", HOY, [noticia("hoy1")])
+    generar(tmp_path)
+    pagina = leer(tmp_path, "secciones.html")
+    assert f'data-fecha="{AYER}" aria-pressed="false">Ayer' in pagina
+    assert f'id="n-hoy1" data-seccion="modelos" data-fecha="{HOY}"' in pagina
 
 
 def test_portada_muestra_el_brief_de_hoy_con_la_noticia_de_ayer(tmp_path):

@@ -5,7 +5,7 @@
    Foto: la vista previa de la fuente (se muestra desde su sitio). Debajo siempre hay una ilustración
    propia con líneas del color de la sección: se ve si no hay foto o si la foto no carga. #}
 {% macro noticia(n, raiz, mostrar_fecha=false, de_ayer=false, destacada=false) %}
-<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}{% if destacada %} destacada{% endif %}" id="n-{{ n.id }}" data-seccion="{{ n.seccion }}"
+<article class="noticia{% if n.importancia == 'alta' %} alta{% endif %}{% if destacada %} destacada{% endif %}" id="n-{{ n.id }}" data-seccion="{{ n.seccion }}" data-fecha="{{ n.fecha }}"
   data-alta="{{ 'si' if n.importancia == 'alta' else 'no' }}" data-etiquetas="{{ n.etiquetas | join('|') }}">
   <figure class="foto">
     <span class="foto__arte" aria-hidden="true">{% for l in ilustracion(n.id) %}<i class="{{ 'doble' if l.doble }}" style="--x: {{ l.x }}%; --h: {{ l.h }}%; --o: {{ l.o }}"></i>{% endfor %}<span class="foto__seccion">{{ NOMBRES_SECCION.get(n.seccion, n.seccion) }}</span></span>
