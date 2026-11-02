@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-02",
- "actualizado": "2026-11-02T08:31:38-03:00",
+ "actualizado": "2026-11-02T20:10:52-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google DeepMind y el gobierno británico se asociaron para aplicar inteligencia artificial con el fin de reducir los tiempos en planificación urbana.",
@@ -214,6 +214,233 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "38c41eb0ed98",
+   "fecha": "2026-11-02",
+   "titulo": "Un sistema de inteligencia artificial edita redes neuronales para mejorar matemáticas",
+   "que_paso": "Un modelo llamado Astra modificó directamente los pesos internos de Qwen sin entrenamiento previo. Al cambiar una fracción muy pequeña de sus datos, mejoró su razonamiento matemático y el seguimiento de instrucciones.",
+   "por_que_importa": "Muestra que los sistemas avanzados pueden empezar a modificarse a sí mismos para volverse más precisos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "pesos",
+     "explicacion": "Los valores numéricos dentro de una red neuronal que determinan cómo procesa la información y toma decisiones."
+    },
+    {
+     "termino": "razonamiento",
+     "explicacion": "La capacidad del modelo para seguir pasos lógicos y resolver problemas complejos."
+    }
+   ],
+   "etiquetas": [
+    "qwen",
+    "investigación",
+    "matemáticas",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://rikiyat.github.io/images/blog/weight-space-programming.png"
+  },
+  {
+   "id": "5464a863f83d",
+   "fecha": "2026-11-02",
+   "titulo": "Anthropic gasta más en su propio uso de inteligencia artificial que en su personal",
+   "que_paso": "Documentos financieros de Anthropic revelan un dato llamativo sobre sus operaciones. El costo de utilizar sus propias herramientas de inteligencia artificial a precio de mercado superó el total de los sueldos de sus empleados.",
+   "por_que_importa": "Refleja el enorme volumen de recursos informáticos que las empresas detrás de estos sistemas necesitan para operar y desarrollarse.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "empresa",
+    "finanzas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://i.insider.com/6ae5023ed8cc18cf7950fbe3?width=1200&format=jpeg"
+  },
+  {
+   "id": "19244c7aa206",
+   "fecha": "2026-11-02",
+   "titulo": "OpenAI lanza un programa para proteger la red eléctrica",
+   "que_paso": "OpenAI creó una iniciativa llamada Grid Protectors Program para trabajar con empresas de servicios públicos. Su objetivo es ayudar a que los futuros centros de datos manejen la demanda de energía sin afectar los costos para los consumidores.",
+   "por_que_importa": "Busca mitigar el alto consumo eléctrico que generan las grandes instalaciones de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "energía",
+    "infraestructura"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/grid-protectors-program"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "d7eb8c9ceea3",
+   "fecha": "2026-11-02",
+   "titulo": "Un agente de inteligencia artificial realiza cirugía cerebral en un ratón",
+   "que_paso": "Un sistema automatizado seleccionó un medicamento y una zona cerebral específica para tratar la epilepsia en un modelo de ratón. Utilizando un equipo motorizado con cámaras, ejecutó la intervención con el objetivo de reducir las convulsiones.",
+   "por_que_importa": "Ilustra cómo los agentes autónomos empiezan a coordinar tareas físicas complejas en el ámbito médico y científico.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Un sistema de inteligencia artificial capaz de tomar decisiones y realizar acciones de forma autónoma para cumplir una meta."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "salud",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://twitter.com/OcanaSantero/status/2115442964574908902"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://pbs.twimg.com/media/HVtOKh7aIAAFGeA?format=webp&name=large"
+  },
+  {
+   "id": "62ae9381c5a0",
+   "fecha": "2026-11-02",
+   "titulo": "Claude actualiza su API para hacer más rápidos los agentes de larga duración",
+   "que_paso": "La nueva función en la interfaz de programación de Anthropic permite enviar el historial de conversación una sola vez. En los turnos siguientes, el sistema solo recibe los mensajes nuevos.",
+   "por_que_importa": "Optimiza el rendimiento y la velocidad al ejecutar tareas largas que requieren múltiples interacciones.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que diferentes programas de software se comuniquen entre sí."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "claude",
+    "programación",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/message-threads"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/message-threads/opengraph-image/og"
+  },
+  {
+   "id": "ed4b58253682",
+   "fecha": "2026-11-02",
+   "titulo": "OpenAI presenta un sistema para medir la ayuda de la inteligencia artificial en tareas cotidianas",
+   "que_paso": "La empresa creó una prueba llamada LifeVal para evaluar qué tan bien los modelos ayudan a las personas en actividades diarias. Esto incluye desde buscar cuidado infantil hasta gestionar finanzas y trámites gubernamentales.",
+   "por_que_importa": "Permite medir la utilidad real de los asistentes en la vida diaria más allá de las pruebas técnicas tradicionales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "investigación",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/lifeval"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "598c6194c0d3",
+   "fecha": "2026-11-02",
+   "titulo": "Qodo integra el contexto de las empresas en las revisiones de código",
+   "que_paso": "La herramienta Qodo incorporó las normas de codificación y el conocimiento interno de las empresas al modelo Codex. Esto ayuda a los desarrolladores a detectar problemas graves en los repositorios antes de publicar cambios.",
+   "por_que_importa": "Facilita la revisión de código adaptándose a las reglas particulares de cada equipo de trabajo.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/qodo-codex-plugin"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "b6fd0b882821",
+   "fecha": "2026-11-02",
+   "titulo": "AnyModelBot ofrece una alternativa abierta para crear bots locales con múltiples modelos",
+   "que_paso": "Lanzaron un proyecto de código abierto que permite conectar diferentes inteligencias artificiales, como GPT, Claude o Gemini, a través de una sola clave. Los bots pueden recordar al usuario, ejecutar comandos y funcionar en segundo plano.",
+   "por_que_importa": "Permite centralizar el uso de varios modelos de lenguaje en una sola aplicación propia.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "claude",
+    "gemini",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/modelflare-ai/AnyModelBot"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/17b136491fa54346fa1af4fcbfc100d462d0852d352283620641129bb0776d86/modelflare-ai/AnyModelBot"
+  },
+  {
+   "id": "3776219788ef",
+   "fecha": "2026-11-02",
+   "titulo": "Un video analiza declaraciones sobre control de modelos y nuevos lanzamientos",
+   "que_paso": "Un resumen en video de YouTube aborda comentarios de líderes de la industria sobre la posibilidad de lanzar modelos con comportamientos difíciles de verificar. También menciona la aparición de nuevos sistemas y debates recientes en la industria.",
+   "por_que_importa": "Reúne las discusiones y novedades más comentadas de la semana en la comunidad tecnológica.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "AI Explained",
+     "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/0Kw6_DTZPrY/hqdefault.jpg"
   }
  ]
 }
