@@ -1,0 +1,171 @@
+{
+ "fecha": "2026-11-03",
+ "actualizado": "2026-11-03T08:11:29-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI creó un programa para colaborar con empresas eléctricas y buscar que sus futuros centros de datos no afecten el costo de la energía.",
+   "Un modelo de inteligencia artificial logró modificar sus propios datos internos para mejorar su razonamiento matemático sin necesidad de entrenamiento previo.",
+   "Documentos financieros revelan que los costos operativos de Anthropic por usar sus propias herramientas superan el total de sueldos de sus empleados."
+  ],
+  "ids": [
+   "de4cf53f9db9",
+   "38c41eb0ed98",
+   "5464a863f83d",
+   "755eea7f3c8e",
+   "6fd6ad7938fa",
+   "d4458417ce4c",
+   "9dafa2ce1b9a",
+   "793a736581dc",
+   "19244c7aa206",
+   "d7eb8c9ceea3"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "de4cf53f9db9",
+   "fecha": "2026-11-03",
+   "titulo": "OpenAI crea Pando para organizar código a gran escala",
+   "que_paso": "OpenAI desarrolló Pando, un sistema compatible con Git diseñado para soportar el gran volumen de desarrollo que genera su herramienta Codex.",
+   "por_que_importa": "Permite entender cómo manejan internamente el almacenamiento y control de código para proyectos masivos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Git",
+     "explicacion": "Sistema que usan los programadores para llevar el historial y control de cambios en su código."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/scaling-git-at-openai"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": null
+  },
+  {
+   "id": "755eea7f3c8e",
+   "fecha": "2026-11-03",
+   "titulo": "Oracle emite nuevas acciones y bonos para financiar infraestructura de IA",
+   "que_paso": "Oracle presentó planes para vender 20 mil millones de dólares en nuevas acciones y deudas. Estos recursos se destinarán a financiar su expansión en inteligencia artificial.",
+   "por_que_importa": "Muestra las grandes inversiones financieras que las empresas tecnológicas están realizando para sostener sus servicios de IA.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "oracle",
+    "infraestructura",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://image.cnbcfm.com/api/v1/image/108468745-1793103926982-gettyimages-2234722679-_73a3321_cmlbiuj4.jpeg?v=1793642583&w=1920&h=1080"
+  },
+  {
+   "id": "6fd6ad7938fa",
+   "fecha": "2026-11-03",
+   "titulo": "OpenAI aumenta pagos por reportes de seguridad",
+   "que_paso": "OpenAI subió las recompensas de su programa de seguridad y añadió bonos por calidad y lealtad para investigadores independientes.",
+   "por_que_importa": "Incentiva a que más expertos encuentren y reporten fallos para mejorar la protección de los usuarios.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "d4458417ce4c",
+   "fecha": "2026-11-03",
+   "titulo": "Skill para crear diagramas de arquitectura con Claude Code",
+   "que_paso": "Lanzaron una skill para Claude Code que genera un diagrama de arquitectura con logos oficiales a partir de una descripción breve.",
+   "por_que_importa": "Facilita la creación visual de estructuras técnicas escribiendo solo una frase.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/caru-ini/stack-diagram"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/6c8391a5952522e123efdc5977c38f2d49e1de1ffb6464cd44f5f38f9363e88d/caru-ini/stack-diagram"
+  },
+  {
+   "id": "9dafa2ce1b9a",
+   "fecha": "2026-11-03",
+   "titulo": "Skills para Claude orientadas a la investigación médica",
+   "que_paso": "Crearon un paquete de 32 skills para Claude Code y Codex enfocadas en médicos y estudiantes. Cubren desde la búsqueda de bibliografía hasta la redacción y revisión de artículos.",
+   "por_que_importa": "Ayuda a automatizar tareas de redacción y búsqueda científica para profesionales de la salud.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "salud",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/duyunzhoudyz/dyz-med-paper-skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1441929163/66f8d8f1-48a1-4406-91b7-c6c8f87366cd"
+  },
+  {
+   "id": "793a736581dc",
+   "fecha": "2026-11-03",
+   "titulo": "Garry Tan gasta hasta 200 mil dólares al año en tokens",
+   "que_paso": "El líder de Y Combinator, Garry Tan, reveló en un podcast que gasta hasta 200.000 dólares anuales en tokens para utilizar agentes de inteligencia artificial.",
+   "por_que_importa": "Ejemplifica el alto costo operativo que algunos usuarios intensivos pagan por integrar agentes avanzados en su flujo de trabajo diario.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Unidades de texto que procesan los modelos de inteligencia artificial y por las cuales se paga según su uso."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/03/garry-tan-sxsw-getty.jpg?resize=1200,801"
+  }
+ ]
+}
