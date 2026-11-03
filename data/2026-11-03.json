@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-03",
- "actualizado": "2026-11-03T08:11:29-03:00",
+ "actualizado": "2026-11-03T18:11:02-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI creó un programa para colaborar con empresas eléctricas y buscar que sus futuros centros de datos no afecten el costo de la energía.",
@@ -166,6 +166,233 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2026/03/garry-tan-sxsw-getty.jpg?resize=1200,801"
+  },
+  {
+   "id": "9b0f1b3870f8",
+   "fecha": "2026-11-03",
+   "titulo": "Ciertos modelos de inteligencia artificial pueden leer y modificar los pesos de redes neuronales",
+   "que_paso": "Un estudio muestra que algunos sistemas avanzados de inteligencia artificial pueden interpretar y cambiar directamente los números internos de otros modelos. Esto permite que una inteligencia artificial trabaje sobre la estructura de otra.",
+   "por_que_importa": "Muestra que los modelos más avanzados están ganando la capacidad de analizar y modificar los cimientos técnicos de otros sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "pesos de redes neuronales",
+     "explicacion": "Los números y parámetros internos que determinan cómo una inteligencia artificial toma decisiones y procesa información."
+    }
+   ],
+   "etiquetas": [
+    "investigación",
+    "modelos",
+    "qwen"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": null
+  },
+  {
+   "id": "605a80a50559",
+   "fecha": "2026-11-03",
+   "titulo": "Usuarios reportan que OpenAI habría reactivado el uso de datos en Codex",
+   "que_paso": "Un usuario de Hacker News señala que la opción para permitir el entrenamiento con chats en Codex se habría activado nuevamente sin aviso. Varios compañeros notaron que el ajuste cambió sin haberlo autorizado de forma consciente.",
+   "por_que_importa": "Es importante revisar los ajustes de privacidad si te preocupa que tus conversaciones y código sean utilizados para entrenar los modelos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "codex",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50352757"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "da9a5824109f",
+   "fecha": "2026-11-03",
+   "titulo": "Postman instala plugins de inteligencia artificial y busca compartir datos de API",
+   "que_paso": "Usuarios en GitHub reportan que al abrir Postman en Mac se instalan de forma automática complementos de inteligencia artificial. Estos complementos intentan recopilar y compartir información sobre las conexiones y datos de las API.",
+   "por_que_importa": "Alerta sobre herramientas que activan funciones de inteligencia artificial y manejo de datos sin aviso previo al usuario.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un mecanismo que permite que distintas aplicaciones se comuniquen y compartan datos entre sí."
+    }
+   ],
+   "etiquetas": [
+    "herramientas",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/c640334f62d481d176d9dea316ce680ac2e4161e819049ae45f569d89b8692f5/postmanlabs/postman-app-support/issues/14370"
+  },
+  {
+   "id": "bc4177032a04",
+   "fecha": "2026-11-03",
+   "titulo": "IBM Research presenta Palette para adaptar modelos a estilos visuales corporativos",
+   "que_paso": "IBM Research publicó una entrada sobre Palette, una técnica para enseñar a modelos pequeños a crear presentaciones y diseños bajo las normas estéticas de una marca específica.",
+   "por_que_importa": "Permite que modelos más compactos generen contenido visual alineado con la identidad de diseño de una empresa.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "ibm",
+    "imagen",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/ibm-research/palette-deck-building"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/63890e3843d8b0797a0ad606/5pHD09UHuAK-6OyKGKimD.png"
+  },
+  {
+   "id": "703ef60bebf7",
+   "fecha": "2026-11-03",
+   "titulo": "Herramienta de código abierto para auditorías legales en Vietnam",
+   "que_paso": "Un proyecto en GitHub ofrece un conjunto de instrucciones para asistentes de programación como Claude Code y Cursor. Permite revisar la conformidad legal de sitios web según normativas de Vietnam sobre comercio electrónico, ciberseguridad e inteligencia artificial.",
+   "por_que_importa": "Facilita la revisión automática de normativas locales para desarrolladores que trabajan en proyectos orientados a ese país.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "programación",
+    "leyes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/mhfed/vn-law-check"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://opengraph.githubassets.com/6777be54be8393b8a07845816394db72a9394d75ed0bdd5c855fa01897f0e86a/mhfed/vn-law-check"
+  },
+  {
+   "id": "a55665cf4895",
+   "fecha": "2026-11-03",
+   "titulo": "StateBench evalúa cómo los modelos siguen cambios en textos largos",
+   "que_paso": "El Allen Institute for AI presentó StateBench, una prueba diseñada para medir la capacidad de los modelos de lenguaje para rastrear modificaciones y eventos a lo largo de documentos extensos.",
+   "por_que_importa": "Ayuda a medir qué tan bien las inteligencias artificiales retienen y comprenden información compleja en textos muy largos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/allenai/statebench"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/5g9HfQLFFaQE0fslWrxh0.png"
+  },
+  {
+   "id": "adafdd4764cb",
+   "fecha": "2026-11-03",
+   "titulo": "Google DeepMind presenta herramientas de inteligencia artificial para química",
+   "que_paso": "Google DeepMind detalla el uso de sus sistemas y habilidades especializadas en química computacional. Estas herramientas ayudan a acelerar la búsqueda de compuestos y el diseño de moléculas para el desarrollo de fármacos.",
+   "por_que_importa": "Muestra cómo los agentes de inteligencia artificial se aplican en laboratorios para acelerar procesos de investigación científica y farmacéutica.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "química computacional",
+     "explicacion": "El uso de computadoras para simular y resolver problemas químicos y moleculares."
+    }
+   ],
+   "etiquetas": [
+    "google deepmind",
+    "salud",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://lh3.googleusercontent.com/UFTBrp1IrRBrc6_f4ibNgtV35iY8F2iTYaqOb1lzR-qZNy-Mb5726xrLKTozohfdZ_3quHe50uyn8z-Wh_Eril_8CVh7py7gH0188sl_EXkoJknlqg=w1200-h630-n-nu-rw"
+  },
+  {
+   "id": "26c6032e1d26",
+   "fecha": "2026-11-03",
+   "titulo": "OpenAI destaca el uso de ChatGPT y Codex en ingeniería física",
+   "que_paso": "OpenAI publica casos sobre cómo sus modelos ayudan a ingenieros en tareas del mundo físico. Entre las áreas mencionadas se incluyen el diseño asistido por computadora, circuitos impresos y simulaciones técnicas.",
+   "por_que_importa": "Ilustra cómo los asistentes de texto y código se integran en flujos de trabajo tradicionales de ingeniería y diseño industrial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "CAD",
+     "explicacion": "Diseño asistido por computadora, programas usados para crear planos y modelos tridimensionales."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "codex",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "a2357e701f02",
+   "fecha": "2026-11-03",
+   "titulo": "Cisco integra modelos de OpenAI para potenciar su ciberseguridad",
+   "que_paso": "Cisco combina sus datos de inteligencia de redes con los modelos de OpenAI para mejorar la seguridad corporativa. La colaboración busca crear defensas más adaptativas frente a amenazas informáticas.",
+   "por_que_importa": "Ejemplifica cómo grandes empresas de tecnología integran modelos comerciales para automatizar y fortalecer la defensa de redes.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/cisco-cyber"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
