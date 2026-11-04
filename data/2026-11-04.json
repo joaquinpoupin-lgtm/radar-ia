@@ -1,0 +1,195 @@
+{
+ "fecha": "2026-11-04",
+ "actualizado": "2026-11-04T18:23:15-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "La deuda oculta y los compromisos financieros de empresas como Google y Meta subieron un noventa por ciento debido a la infraestructura de inteligencia artificial.",
+   "Un estudio muestra que algunos sistemas avanzados de inteligencia artificial ya pueden leer y modificar directamente los números internos de otros modelos.",
+   "OpenAI anunció la compra de Pierre Computer Company para ampliar y mejorar las herramientas destinadas a crear, comprender y revisar código."
+  ],
+  "ids": [
+   "f3900be82c6f",
+   "9b0f1b3870f8",
+   "3a06f84c0f51",
+   "7838c87736f9",
+   "703ef60bebf7",
+   "150a39b9eb9a",
+   "58a090b4c911",
+   "75679f5aa60b",
+   "969dd462482a",
+   "7cdc8ed3fda5"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "3a06f84c0f51",
+   "fecha": "2026-11-04",
+   "titulo": "OpenAI compra Pierre Computer Company para ampliar sus herramientas de código",
+   "que_paso": "OpenAI anunció la compra de la empresa Pierre Computer Company. Esto permitirá ampliar las herramientas de Codex para crear, comprender y revisar código.",
+   "por_que_importa": "Mejora las herramientas para programar y revisar código dentro de la plataforma.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Sistema de OpenAI enfocado en entender y escribir código de programación.",
+     "explicacion": "Sistema de OpenAI enfocado en entender y escribir código de programación."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/openai-to-acquire-pierre"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": null
+  },
+  {
+   "id": "150a39b9eb9a",
+   "fecha": "2026-11-04",
+   "titulo": "Google usa el historial de chat de Gemini en cuentas personales para entrenar",
+   "que_paso": "Un usuario de Hacker News advierte que Google utiliza el historial de chat guardado en cuentas personales para entrenar sus servicios. Esto puede evitarse desactivando el historial o usando sesiones temporales.",
+   "por_que_importa": "Tus conversaciones guardadas pueden ser utilizadas y revisadas por personas para entrenar los sistemas de Google a menos que desactives el historial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gemini",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50363461"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "58a090b4c911",
+   "fecha": "2026-11-04",
+   "titulo": "Claude Marketplace suma agentes para seguridad, productividad y trabajo creativo",
+   "que_paso": "Claude sumó nuevos agentes y productos orientados a la seguridad, la productividad y las tareas creativas en su mercado digital.",
+   "por_que_importa": "Hay nuevas opciones disponibles en la plataforma para distintos tipos de trabajo.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "7838c87736f9",
+   "fecha": "2026-11-04",
+   "titulo": "Lanzan Kimi-K3.1-Pro, un modelo abierto de gran tamaño",
+   "que_paso": "Lanzaron Kimi K3.1 Pro, un modelo multimodal de código abierto con una ventana de contexto de un millón de tokens. Ofrece mejoras en programación, creación 3D e investigación financiera.",
+   "por_que_importa": "Permite procesar una gran cantidad de información y usarlo en tareas complejas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "multimodal",
+     "explicacion": "Capacidad de un modelo para entender diferentes tipos de información, como texto e imágenes."
+    },
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que la inteligencia artificial procesa y lee."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "imagen"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K3.1-Pro.png"
+  },
+  {
+   "id": "75679f5aa60b",
+   "fecha": "2026-11-04",
+   "titulo": "OpenAI lleva Daybreak Red a Amazon Bedrock en AWS GovCloud",
+   "que_paso": "Daybreak Red quedó disponible para clientes aprobados en AWS GovCloud mediante Amazon Bedrock. Está destinado a trabajos autorizados de ciberseguridad.",
+   "por_que_importa": "Facilita el uso de estas herramientas para tareas de ciberseguridad en entornos gubernamentales.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/daybreak-red-aws-govcloud"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "969dd462482a",
+   "fecha": "2026-11-04",
+   "titulo": "agent-autoloop permite automatizar tareas en la línea de comandos",
+   "que_paso": "Un proyecto en GitHub llamado agent-autoloop permite que un agente en la línea de comandos trabaje en segundo plano. Solo contacta al usuario cuando necesita una decisión importante.",
+   "por_que_importa": "Ayuda a automatizar tareas repetitivas en la consola sin requerir supervisión constante.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "automatización",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/KKKKhazix/agent-autoloop"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/0c1e397e819fb9b968ff174ad70069c3f2955fe713e42b0d385095e927d73d49/KKKKhazix/agent-autoloop"
+  },
+  {
+   "id": "7cdc8ed3fda5",
+   "fecha": "2026-11-04",
+   "titulo": "marketing-skill-hub ofrece habilidades de marketing para Claude y Cursor",
+   "que_paso": "Un repositorio de la comunidad ofrece habilidades de marketing para Claude, Codex y Cursor. Incluye herramientas para anuncios en redes sociales, redacción de textos y análisis de videos.",
+   "por_que_importa": "Permite sumar funciones de marketing a tus herramientas de inteligencia artificial habituales.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/aronhy/marketing-skill-hub"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/109ab0de3c6f75db68d51e4bcd9fc64fb631026cc951526391b3e30772634aef/aronhy/marketing-skill-hub"
+  }
+ ]
+}
