@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-03",
- "actualizado": "2026-11-03T18:11:02-03:00",
+ "actualizado": "2026-11-03T22:32:49-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI creó un programa para colaborar con empresas eléctricas y buscar que sus futuros centros de datos no afecten el costo de la energía.",
@@ -393,6 +393,124 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "8ac198972094",
+   "fecha": "2026-11-03",
+   "titulo": "Lanzan marco de trabajo para crear capas de razonamiento semántico",
+   "que_paso": "Presentaron un marco en Python para conectar datos mediante estructuras basadas en gráficos. Permite generar consultas de forma precisa y mejorar la recuperación de contexto.",
+   "por_que_importa": "Facilita obtener respuestas más claras y explicables al usar sistemas de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "marco de trabajo",
+     "explicacion": "Una base de código con reglas y herramientas listas para que los programadores construyan aplicaciones más rápido."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/NVIDIA/auto-ontology"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/e6dfc27656897568cc18d3f75a8c83070b8014c49f5061309a3a015a293973b6/NVIDIA/auto-ontology"
+  },
+  {
+   "id": "f3900be82c6f",
+   "fecha": "2026-11-03",
+   "titulo": "Deuda oculta en tecnología ligada a inteligencia artificial sube un 90%",
+   "que_paso": "Los compromisos y obligaciones financieras de empresas como Google y Meta alcanzaron el ochenta por ciento de sus activos en un periodo de seis meses.",
+   "por_que_importa": "Muestra el alto nivel de compromisos financieros que las grandes empresas tecnológicas están contrayendo debido a la infraestructura de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "meta",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fcms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F9%2F1%2F3%2F4%2F13394319-2-eng-GB%2Faad3b104a912-photo_SXM2026103100004660.jpg?fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms&format=jpg&width=1260&height=630"
+  },
+  {
+   "id": "2591bdc40799",
+   "fecha": "2026-11-03",
+   "titulo": "Herramienta ligera para agentes de código sin cortes silenciosos",
+   "que_paso": "Lanzaron un programa ligero para manejar agentes de programación de forma directa. Funciona con herramientas básicas y texto estándar.",
+   "por_que_importa": "Permite gestionar tareas de programación con una aplicación compacta y fácil de ejecutar.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/Balanov/uncut"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/0f2c9aebe5ea65732423bb45e54767242f6e5f5e3fb9921774c014b63cbe61a1/Balanov/uncut"
+  },
+  {
+   "id": "262cfa35f430",
+   "fecha": "2026-11-03",
+   "titulo": "OpenAI prepara pruebas internas para reforzar su seguridad",
+   "que_paso": "La empresa realiza una nueva ronda de pruebas de seguridad junto a Cathedral Systems. Su objetivo es poner a prueba y fortalecer sus defensas usando inteligencia artificial.",
+   "por_que_importa": "Busca mejorar la protección y los resguardos de los sistemas de la plataforma.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "beabc49c7a2c",
+   "fecha": "2026-11-03",
+   "titulo": "Habilidad para Claude enfocada en la creación de videos con código",
+   "que_paso": "Crearon una instrucción para Claude que permite dirigir, construir y verificar videos generados mediante código. Incluye principios de diseño y guiones de control de calidad.",
+   "por_que_importa": "Ayuda a coordinar la creación y revisión automática de videos en formato digital. Al ser de la comunidad, conviene revisarla antes de instalarla.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/win4r/video-director"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/0030ea3f082435fc8e5ba469addcdc18d1562f74cb95039a797c79b7cf7e7a2c/win4r/video-director"
   }
  ]
 }
