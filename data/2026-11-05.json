@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-05",
- "actualizado": "2026-11-05T08:19:42-03:00",
+ "actualizado": "2026-11-05T18:30:29-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI creó un proceso automatizado capaz de encontrar y corregir cientos de fallas en el sistema operativo Linux.",
@@ -150,6 +150,167 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "53c56afbaf05",
+   "fecha": "2026-11-05",
+   "titulo": "OpenAI presenta GPT-6 Cyber para ciberseguridad avanzada",
+   "que_paso": "OpenAI lanzó GPT-6 Cyber, un modelo diseñado para encontrar fallas de seguridad y crear soluciones. Obtiene mejores resultados en tareas de ciberseguridad que versiones anteriores.",
+   "por_que_importa": "Ofrece una herramienta más capaz para detectar y corregir vulnerabilidades en sistemas.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-gpt-6-cyber"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": null
+  },
+  {
+   "id": "d7e9e3e89ee7",
+   "fecha": "2026-11-05",
+   "titulo": "Google lanza Gemini Omni 1.2 Flash con video más largo",
+   "que_paso": "Google estrenó Gemini Omni 1.2 Flash, un modelo que genera y edita videos de hasta 15 segundos. Su precio es un 30% más bajo que versiones previas.",
+   "por_que_importa": "Permite crear y editar videos directamente con IA a un menor costo.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "video",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png"
+  },
+  {
+   "id": "00183b004892",
+   "fecha": "2026-11-05",
+   "titulo": "Claude incorpora funciones para finanzas personales",
+   "que_paso": "Claude ahora permite conectar cuentas bancarias para responder preguntas sobre dinero y finanzas personales. Los usuarios pueden consultar sus datos directamente.",
+   "por_que_importa": "Facilita la revisión de finanzas personales mediante preguntas en lenguaje natural.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "finanzas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/introducing-personal-finance-in-claude/opengraph-image/og"
+  },
+  {
+   "id": "9404bc0f47e8",
+   "fecha": "2026-11-05",
+   "titulo": "Inversores reducen inversiones en IA tras elecciones y cae el Nasdaq",
+   "que_paso": "El índice Nasdaq cayó un 5% luego de que los inversores se retiraran del sector de inteligencia artificial tras las elecciones. La baja refleja cautela en el mercado tecnológico.",
+   "por_que_importa": "Muestra cambios en el humor del mercado financiero respecto a las empresas de tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "1184d3a025fd",
+   "fecha": "2026-11-05",
+   "titulo": "Mistral AI lanza Mistral Studio y modelos Le Chonk",
+   "que_paso": "Mistral AI introdujo Mistral Studio y herramientas para crear agentes y aplicaciones empresariales. Permite mantener control total sobre los modelos y los datos.",
+   "por_que_importa": "Entrega a las empresas mayor control sobre su propia infraestructura de inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "mistral ai",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Mistral AI",
+     "url": "https://mistral.ai/news/build-with-studio"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://mistral.ai/cms-media/api/media/file/Studio%20V2%20-%20smal%20thumbnail.png"
+  },
+  {
+   "id": "94b7888e188f",
+   "fecha": "2026-11-05",
+   "titulo": "Claude Enterprise suma controles para equipos de seguridad",
+   "que_paso": "Anthropic añadió nuevas opciones de visibilidad y control de seguridad para las empresas que usan Claude Enterprise. Permite gestionar mejor el uso interno de la plataforma.",
+   "por_que_importa": "Ayuda a los equipos de seguridad a supervisar el uso corporativo de la herramienta.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/claude-enterprise-security-updates"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/claude-enterprise-security-updates/opengraph-image/og"
+  },
+  {
+   "id": "7bbd34ebffb2",
+   "fecha": "2026-11-05",
+   "titulo": "Cinecode: una herramienta de código abierto para crear videos con IA",
+   "que_paso": "Un proyecto en GitHub llamado Cinecode permite usar un agente de programación para escribir guiones, diseñar sonido y generar videos completos en formato MP4 usando código.",
+   "por_que_importa": "Ofrece una forma automatizada para crear piezas audiovisuales mediante programación.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "video",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/sarpstar/cinecode"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/f362c2070c2ef392d0c62d9aabae75bef072fe77fc969c6136e496fce0458a52/sarpstar/cinecode"
   }
  ]
 }
