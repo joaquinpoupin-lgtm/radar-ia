@@ -1,0 +1,155 @@
+{
+ "fecha": "2026-11-05",
+ "actualizado": "2026-11-05T08:19:42-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI creó un proceso automatizado capaz de encontrar y corregir cientos de fallas en el sistema operativo Linux.",
+   "El premio Nobel Geoffrey Hinton advierte que la tecnología podría provocar un incidente grave, como un apagón bancario o energético.",
+   "OpenAI lanzó una actualización para generar imágenes y GIFs de forma más rápida, incluyendo herramientas de edición más precisas."
+  ],
+  "ids": [
+   "a4f4c423c542",
+   "276a2df43aba",
+   "793baf0e5454",
+   "dc34df3985a1",
+   "6588c4f8f4d9",
+   "42af486580e7",
+   "e64d0791be6f",
+   "96eddcc208ed",
+   "0a437d67f2ef",
+   "2c0b081a6fa7"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "793baf0e5454",
+   "fecha": "2026-11-05",
+   "titulo": "Un usuario de Hacker News pregunta cómo usa la gente la IA a diario",
+   "que_paso": "Un usuario en Hacker News abrió un debate para saber qué suscripciones de IA paga la gente y qué modelos usa fuera de ellas.",
+   "por_que_importa": "Permite conocer las herramientas y suscripciones de IA que otras personas eligen para su día a día.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hacker news",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50366117"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "dc34df3985a1",
+   "fecha": "2026-11-05",
+   "titulo": "Geoffrey Hinton advierte sobre posibles incidentes graves causados por la IA",
+   "que_paso": "El ganador del premio Nobel Geoffrey Hinton advierte que la tecnología podría estar cerca de provocar un incidente importante, como un apagón bancario o energético.",
+   "por_que_importa": "Plantea advertencias de seguridad sobre los riesgos potenciales del avance de la tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.guim.co.uk/img/media/2874e862dc2a0fc34d651f70e5ecffd542d947a6/543_22_2658_2128/master/2658.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ae0638cdbc3daea6b3a154d41c73dad9"
+  },
+  {
+   "id": "276a2df43aba",
+   "fecha": "2026-11-05",
+   "titulo": "Lanzan Ripple-65B Preview, un modelo de lenguaje de 65 mil millones de parámetros",
+   "que_paso": "Ricursive Intelligence presentó Ripple-65B Preview, un modelo entrenado con 12 billones de tokens y soporte para contextos largos. El modelo muestra buenos resultados en tareas de programación en terminal frente a opciones más grandes.",
+   "por_que_importa": "Ofrece una nueva alternativa de código abierto para quienes buscan modelos avanzados en programación.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ricursiveAI/Ripple-65B-Preview.png"
+  },
+  {
+   "id": "6588c4f8f4d9",
+   "fecha": "2026-11-05",
+   "titulo": "Lanzan shim, una herramienta local para conectar modelos y agentes de IA",
+   "que_paso": "Balanov creó shim, una herramienta local sin dependencias que permite usar distintos modelos de IA, protocolos y habilidades de agentes mediante comandos en lenguaje natural.",
+   "por_que_importa": "Facilita la ejecución y conexión local de diferentes herramientas y modelos de inteligencia artificial.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/Balanov/shim"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/ecf347b5135cfc1f144f46a655d319f93df5b0573802afd13758d5bbeacfa25a/Balanov/shim"
+  },
+  {
+   "id": "42af486580e7",
+   "fecha": "2026-11-05",
+   "titulo": "Nothing anuncia un dispositivo de IA sin pantalla para diciembre",
+   "que_paso": "El director ejecutivo de Nothing, Carl Pei, anunció en X que la empresa lanzará su primer dispositivo de inteligencia artificial el próximo mes de diciembre.",
+   "por_que_importa": "Introduce un nuevo dispositivo físico basado en inteligencia artificial al mercado.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/nothing-phone-4a-2.jpg?quality=90&strip=all&crop=0%2C10.741906587151%2C100%2C78.516186825698&w=1200"
+  },
+  {
+   "id": "e64d0791be6f",
+   "fecha": "2026-11-05",
+   "titulo": "Uber reporta una baja cantidad de pedidos y viajes gestionados por agentes de IA",
+   "que_paso": "Ejecutivos de Uber informaron que durante el tercer trimestre solo se concretaron cuatro viajes y alrededor de 500 pedidos de Uber Eats a través de agentes de inteligencia artificial de terceros.",
+   "por_que_importa": "Muestra que el uso real de agentes de IA para compras o pedidos cotidianos aún es muy bajo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  }
+ ]
+}
