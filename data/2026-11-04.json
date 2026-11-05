@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-04",
- "actualizado": "2026-11-04T18:23:15-03:00",
+ "actualizado": "2026-11-04T22:36:18-03:00",
  "brief": {
   "lo_mas_importante": [
    "La deuda oculta y los compromisos financieros de empresas como Google y Meta subieron un noventa por ciento debido a la infraestructura de inteligencia artificial.",
@@ -190,6 +190,148 @@
    ],
    "confirmacion": 1,
    "imagen": "https://opengraph.githubassets.com/109ab0de3c6f75db68d51e4bcd9fc64fb631026cc951526391b3e30772634aef/aronhy/marketing-skill-hub"
+  },
+  {
+   "id": "96eddcc208ed",
+   "fecha": "2026-11-04",
+   "titulo": "Nuevo método de IA para reinventar el diseño de chips",
+   "que_paso": "Desarrollan un sistema para acortar los plazos tradicionales en la creación de componentes de hardware. Busca conectar directamente la inteligencia artificial con la fabricación de chips personalizados.",
+   "por_que_importa": "Muestra cómo la tecnología se usa para acelerar la creación de los propios componentes físicos que la hacen funcionar.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chips",
+    "open source",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.ricursive.com/ripple"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://framerusercontent.com/images/u4OXzV0utwAtaPgcVxQtTXmkg.png"
+  },
+  {
+   "id": "0a437d67f2ef",
+   "fecha": "2026-11-04",
+   "titulo": "OpenAI lanza una actualización para generar y editar imágenes",
+   "que_paso": "Llega una nueva versión con creación más rápida de imágenes y GIFs. También incluye herramientas de edición más precisas y controles nuevos para programadores.",
+   "por_que_importa": "Permite obtener resultados visuales con mayor rapidez y control dentro de las plataformas de la empresa.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "imagen",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-images-2-6"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "a4f4c423c542",
+   "fecha": "2026-11-04",
+   "titulo": "OpenAI usa un sistema autónomo para hallar fallas en Linux",
+   "que_paso": "Crearon un proceso automatizado capaz de encontrar y corregir cientos de vulnerabilidades en el sistema operativo Linux. Esto ayuda a blindar el software contra posibles intrusiones.",
+   "por_que_importa": "Demuestra que la tecnología puede encargarse de tareas complejas de seguridad informática de forma completamente autónoma.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/a-thousand-fewer-paths-to-root"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "2c0b081a6fa7",
+   "fecha": "2026-11-04",
+   "titulo": "Herramienta permite que agentes de IA creen fotos y videos",
+   "que_paso": "Crearon un puente para Windows que conecta agentes de inteligencia artificial con herramientas multimedia. Facilita que los asistentes generen contenido visual de forma automatizada.",
+   "por_que_importa": "Permite conectar tus programas asistentes con generadores visuales para automatizar tareas multimedia.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "imagen",
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/andrew-babo/muse4ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/96ccece4f0e779298778b385fde832e8a4ee7f6da8de8ef371b94d58da982bcc/andrew-babo/muse4ai"
+  },
+  {
+   "id": "94c502abbc46",
+   "fecha": "2026-11-04",
+   "titulo": "Muy pocas personas usan asistentes autónomos para pedir Uber",
+   "que_paso": "La empresa de transporte informó que durante su semana más ocupada del trimestre pasado, apenas cuatro usuarios pidieron un viaje mediante un agente virtual. Esto refleja una baja adopción inicial de esta modalidad.",
+   "por_que_importa": "Muestra que el uso cotidiano de asistentes para compras o servicios automatizados aún es muy bajo entre los usuarios.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/07/uber-getty.jpg?resize=1200,800"
+  },
+  {
+   "id": "bb779f39a67b",
+   "fecha": "2026-11-04",
+   "titulo": "El auge de la inteligencia artificial de código abierto",
+   "que_paso": "Gobiernos, empresas y creadores adoptan cada vez más modelos abiertos por su flexibilidad y menor costo. Expertos discuten cómo las compañías obtienen ganancias y el avance de los proyectos de origen chino frente a los estadounidenses.",
+   "por_que_importa": "Permite entender cómo funciona el mercado de los modelos libres y por qué cada vez más organizaciones los prefieren.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "open source",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/"
+    },
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/55593309776_55e4a08b03_o.jpg?resize=1200,800"
   }
  ]
 }
