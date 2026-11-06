@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-06",
- "actualizado": "2026-11-06T08:17:04-03:00",
+ "actualizado": "2026-11-06T17:58:32-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI lanzó GPT-6 Cyber, un nuevo modelo diseñado para encontrar fallas de seguridad y crear soluciones.",
@@ -231,6 +231,187 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/acastro_STK090_06.jpg?quality=90&strip=all&crop=0%2C10.761835884455%2C100%2C78.47632823109&w=1200"
+  },
+  {
+   "id": "cfd4354afa14",
+   "fecha": "2026-11-06",
+   "titulo": "OpenAI lanza una prueba para medir el rendimiento de agentes en laboratorios",
+   "que_paso": "OpenAI presentó un sistema llamado BioBasicsBench. Cuenta con cien tareas para evaluar cómo los agentes de inteligencia artificial interpretan datos científicos de laboratorio.",
+   "por_que_importa": "Permite medir qué tan bien la inteligencia artificial puede manejar tareas científicas del mundo real.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial que pueden tomar decisiones y realizar tareas de forma más autónoma."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "ciencia",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "b9afbb2661b6",
+   "fecha": "2026-11-06",
+   "titulo": "Perplexity lanza asistentes virtuales orientados al trabajo",
+   "que_paso": "Perplexity introdujo nuevos asistentes de inteligencia artificial llamados Teammates. Funcionan dentro de espacios de trabajo y utilizan herramientas y memorias previas del usuario.",
+   "por_que_importa": "Ofrece una nueva alternativa para integrar asistentes de inteligencia artificial en las tareas laborales diarias.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial diseñados para ejecutar tareas y trabajar de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "perplexity",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "5046827bcbdd",
+   "fecha": "2026-11-06",
+   "titulo": "Bibliotecas universitarias enfrentan saturación por bots de inteligencia artificial",
+   "que_paso": "Las bibliotecas académicas sufren bloqueos y demoras debido a una gran cantidad de bots que extraen datos. Las empresas de inteligencia artificial usan estas herramientas para recopilar contenido.",
+   "por_que_importa": "Muestra cómo la búsqueda masiva de datos para entrenar modelos afecta sitios web públicos y de investigación.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "educación",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "bc8f9eac1966",
+   "fecha": "2026-11-06",
+   "titulo": "OpenAI se alía con Hacktron para detectar fallos en sus sistemas",
+   "que_paso": "OpenAI se asoció con Hacktron para encontrar vulnerabilidades y mejorar la seguridad de sus conexiones con servicios externos.",
+   "por_que_importa": "Busca fortalecer la seguridad y la defensa de las plataformas de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/partnering-with-hacktron"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "ff1baa6ed7d0",
+   "fecha": "2026-11-06",
+   "titulo": "Herramienta de código abierto conecta asistentes de IA con Roblox Studio",
+   "que_paso": "Crearon un servidor de código abierto en Python para conectar asistentes como Claude y Cursor con Roblox Studio. Permite leer elementos, editar códigos y realizar pruebas de manera segura.",
+   "por_que_importa": "Facilita el uso de asistentes de inteligencia artificial para programar y editar dentro de Roblox.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "cursor",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/HerdBuilderEstimate/roblox-studio-mcp"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/620c4b81d63f9d5c4b84a4305ca18fb1cf393b91a28772d462a422b6f4db9e79/HerdBuilderEstimate/roblox-studio-mcp"
+  },
+  {
+   "id": "0e926ae111ec",
+   "fecha": "2026-11-06",
+   "titulo": "Directorio recopila automatizaciones y habilidades para agentes de IA",
+   "que_paso": "Publicaron un directorio de código abierto con habilidades y automatizaciones de flujos de trabajo para Claude Code y otros agentes compatibles.",
+   "por_que_importa": "Reúne recursos de la comunidad para ampliar las funciones de Claude Code, aunque conviene revisar cada complemento antes de instalarlo.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas guiadas por instrucciones."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/ABLingss/awesome-agent-loops"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/15324073db21fe58b0ae25d41af092468ed43ac2c8a1b4645f2796dc11971f9b/ABLingss/awesome-agent-loops"
+  },
+  {
+   "id": "016e849ea3ab",
+   "fecha": "2026-11-06",
+   "titulo": "Meta presenta Spaces para colaborar con sus agentes Muse",
+   "que_paso": "Meta incorporó nuevas funciones para sus agentes de inteligencia artificial Muse. Añadió Spaces como una nueva alternativa para interactuar con estos asistentes.",
+   "por_que_importa": "Amplía las opciones de interacción con los asistentes virtuales que ofrece Meta.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Asistentes virtuales de inteligencia artificial diseñados para ayudar en distintas tareas."
+    }
+   ],
+   "etiquetas": [
+    "meta",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200"
   }
  ]
 }
