@@ -1,0 +1,236 @@
+{
+ "fecha": "2026-11-06",
+ "actualizado": "2026-11-06T08:17:04-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI lanzó GPT-6 Cyber, un nuevo modelo diseñado para encontrar fallas de seguridad y crear soluciones.",
+   "Universidades en Australia están integrando ChatGPT en la enseñanza para preparar a los estudiantes en un entorno laboral con inteligencia artificial.",
+   "Claude incorporó una herramienta para conectar cuentas bancarias y hacer preguntas sobre finanzas personales."
+  ],
+  "ids": [
+   "53c56afbaf05",
+   "7b187a5bdc28",
+   "d7e9e3e89ee7",
+   "6f78e24cdb5b",
+   "3b58ffb304e7",
+   "82196d4ece0a",
+   "c88b52d0b210",
+   "b58fee4edbbb",
+   "300d91101f21",
+   "904574e3ce24"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "6f78e24cdb5b",
+   "fecha": "2026-11-06",
+   "titulo": "Mark Cuban señala que Facebook permite anuncios falsos con estafas de IA",
+   "que_paso": "Un usuario de Hacker News comenta que ha visto su propia cara usada en anuncios falsos de curas para la diabetes creados con inteligencia artificial. Documentos indican que los ingresos por fraude ascenderían a 16 mil millones.",
+   "por_que_importa": "Muestra los riesgos de seguridad y estafas con videos falsos en redes sociales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "deepfake",
+     "explicacion": "Video o imagen manipulada con inteligencia artificial para hacer creer que una persona hizo o dijo algo que nunca ocurrió."
+    }
+   ],
+   "etiquetas": [
+    "facebook",
+    "video",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://s.yimg.com/lo/mysterio/api/c7b9e208fd6dff01b9115dea6cf00d560e269c36a6987f309be6e79d843e306b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmoneywise_327%2F892777675c4b84ce45a666a8bfe1fb93.jpg"
+  },
+  {
+   "id": "3b58ffb304e7",
+   "fecha": "2026-11-06",
+   "titulo": "Claude Code comparte direcciones de correo electrónico con páginas web por error",
+   "que_paso": "Un reporte en Hacker News detalla que Claude Code envía el correo electrónico del usuario a páginas de terceros durante búsquedas en la web. Esto genera la recepción de numerosos correos no deseados.",
+   "por_que_importa": "Alerta sobre problemas de privacidad al usar herramientas de programación asistida.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/anthropics/claude-code/issues/107757"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/eeb2621b7bc6f3819b5ec33631e891513a7973658f46a21d593abb207709f08c/anthropics/claude-code/issues/107757"
+  },
+  {
+   "id": "82196d4ece0a",
+   "fecha": "2026-11-06",
+   "titulo": "Nuevos idiomas en la tabla de clasificación de reconocimiento de voz",
+   "que_paso": "El inglés de Egipto y de Nigeria fueron sumados a la tabla abierta de reconocimiento automático de voz en Hugging Face.",
+   "por_que_importa": "Amplía la disponibilidad de opciones para procesar distintos acentos en herramientas de voz.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "voz",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/open-asr-leaderboard-liva"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://huggingface.co/blog/assets/open-asr-leaderboard-liva/thumbnail.png"
+  },
+  {
+   "id": "c88b52d0b210",
+   "fecha": "2026-11-06",
+   "titulo": "Cult.fit utiliza Codex para acelerar el desarrollo de herramientas internas",
+   "que_paso": "La empresa Cult.fit está implementando Codex para ayudar a sus equipos a construir herramientas con mayor rapidez y cambiar sus procesos de trabajo.",
+   "por_que_importa": "Muestra cómo las empresas usan la asistencia de programación para agilizar tareas operativas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/cultfit-builds-with-codex"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "7b187a5bdc28",
+   "fecha": "2026-11-06",
+   "titulo": "Claude incorpora una herramienta para analizar finanzas personales",
+   "que_paso": "Los usuarios pueden conectar sus cuentas bancarias y de tarjetas mediante Plaid dentro de Claude para hacer preguntas sobre sus finanzas.",
+   "por_que_importa": "Facilita la revisión de gastos y cuentas directamente desde la interfaz del asistente.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Claude-Personal-Finance-2.png?resize=1200,675"
+  },
+  {
+   "id": "b58fee4edbbb",
+   "fecha": "2026-11-06",
+   "titulo": "Universidades en Australia amplían el uso de ChatGPT en la educación",
+   "que_paso": "Instituciones de educación superior en Australia están integrando ChatGPT en la enseñanza y el aprendizaje para preparar a los estudiantes en un entorno laboral con inteligencia artificial.",
+   "por_que_importa": "Ilustra cómo la educación formal incorpora asistentes de IA en las aulas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/australian-universities-ai-native-graduates"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "300d91101f21",
+   "fecha": "2026-11-06",
+   "titulo": "Merge implementa tecnología de OpenAI para revisar código y marketing",
+   "que_paso": "La compañía utiliza modelos y herramientas de OpenAI para examinar código de productos, apoyar en marketing, organizar cenas ejecutivas y preparar actualizaciones de ventas.",
+   "por_que_importa": "Ejemplifica el uso empresarial de la inteligencia artificial en múltiples departamentos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/merge-builds-with-openai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "904574e3ce24",
+   "fecha": "2026-11-06",
+   "titulo": "Palo Alto Networks negocia la compra de Clutch por 500 millones de dólares",
+   "que_paso": "La empresa de ciberseguridad está en conversaciones para adquirir la startup de seguridad para agentes de inteligencia artificial, que antes estaba valorada en 85 millones.",
+   "por_que_importa": "Refleja el aumento de la inversión en seguridad para agentes virtuales en el mercado.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "startup",
+     "explicacion": "Empresa emergente de tecnología con alto potencial de crecimiento."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/07/GettyImages-2215666246.jpg?resize=1200,800"
+  },
+  {
+   "id": "0802c2aa0040",
+   "fecha": "2026-11-06",
+   "titulo": "Airbnb prepara un agente de inteligencia artificial para viajes",
+   "que_paso": "Airbnb anunció en su carta a los accionistas que planea lanzar un agente de IA en la primera mitad de 2027 para ayudar a los usuarios a planificar y reservar viajes.",
+   "por_que_importa": "Muestra el avance de las plataformas hacia asistentes capaces de gestionar reservas y planes completos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/acastro_STK090_06.jpg?quality=90&strip=all&crop=0%2C10.761835884455%2C100%2C78.47632823109&w=1200"
+  }
+ ]
+}
