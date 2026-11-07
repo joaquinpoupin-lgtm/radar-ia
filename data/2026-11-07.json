@@ -1,0 +1,231 @@
+{
+ "fecha": "2026-11-07",
+ "actualizado": "2026-11-07T07:32:14-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI alcanzó una valorización de 1,25 billones de dólares tras una nueva ronda de financiamiento en la que recaudó 11 mil millones adicionales.",
+   "Perplexity introdujo nuevos asistentes de inteligencia artificial llamados Teammates para funcionar dentro de espacios de trabajo.",
+   "Presentaron un sistema de memoria llamado Memorilla para ayudar a los modelos de lenguaje a manejar información pasada y documentos largos."
+  ],
+  "ids": [
+   "5287355c1060",
+   "b9afbb2661b6",
+   "e086e2a5c605",
+   "94e71a77453c",
+   "8715c26a1b9b",
+   "192626375dc9",
+   "6fdd84122043",
+   "c2107a5a7cf6",
+   "c0d7b0808284",
+   "54d4f685c5e0"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "e086e2a5c605",
+   "fecha": "2026-11-07",
+   "titulo": "Nuevo sistema de memoria para que los modelos de lenguaje recuerden mejor",
+   "que_paso": "Presentan Memorilla, un sistema diseñado para ayudar a los modelos de lenguaje a manejar información pasada y documentos largos sin sobrecargar su memoria. Busca resolver el problema de combinar datos relevantes para cada consulta manteniendo el sistema eficiente.",
+   "por_que_importa": "Podría permitir que las inteligencias artificiales recuerden mejor las conversaciones largas y los documentos sin perder información en el camino.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de lenguaje",
+     "explicacion": "Sistemas de inteligencia artificial entrenados para comprender y generar texto similar al humano."
+    }
+   ],
+   "etiquetas": [
+    "investigación",
+    "memoria"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://arxiv.org/abs/2610.21375"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "94e71a77453c",
+   "fecha": "2026-11-07",
+   "titulo": "Lanzan motor gráfico en 3D para agentes de inteligencia artificial",
+   "que_paso": "Publican una versión de prueba de Vork, un motor gráfico en 3D y efectos visuales creado específicamente para operar con agentes. El proyecto está desarrollado en lenguaje Rust.",
+   "por_que_importa": "Facilita que los agentes de inteligencia artificial puedan procesar entornos visuales en tres dimensiones de forma especializada.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "vork",
+    "video",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/voyager-so/vork"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1447586025/c7dc900b-e055-48b4-868b-d204b7fe09a3"
+  },
+  {
+   "id": "8715c26a1b9b",
+   "fecha": "2026-11-07",
+   "titulo": "Herramienta educativa de Python para aprender sobre agentes y Claude",
+   "que_paso": "Crean mini-harness, un programa en Python pensado para la enseñanza que incluye modos de objetivos, permisos y funciones avanzadas de Claude. Cuenta con cerca de 1.400 líneas de código.",
+   "por_que_importa": "Sirve como recurso educativo para quienes quieren entender cómo funcionan por dentro los sistemas de agentes y las herramientas de Claude.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/phuryn/mini-harness"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/10016ea1f2f36901c22c8fc23df22b81ed8589d320a2214db9338106dabeb6f8/phuryn/mini-harness"
+  },
+  {
+   "id": "192626375dc9",
+   "fecha": "2026-11-07",
+   "titulo": "ChatGPT se consolida principalmente como buscador en España",
+   "que_paso": "Un análisis sobre el uso de la tecnología de OpenAI muestra que, más allá de redactar textos, los usuarios la están utilizando de forma masiva para buscar información y resolver dudas cotidianas. OpenAI ha reflejado esta actividad en distintas áreas de uso.",
+   "por_que_importa": "Muestra un cambio en cómo las personas usan la inteligencia artificial en su día a día, prefiriéndola cada vez más para hacer consultas en lugar de motores de búsqueda tradicionales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "openai"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/creiamos-que-ia-iba-a-escribir-nosotros-donde-chagpt-esta-creciendo-espana-como-buscador"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/beebc9/gemini_generated_image_pljii7pljii7plji/840_560.jpeg"
+  },
+  {
+   "id": "6fdd84122043",
+   "fecha": "2026-11-07",
+   "titulo": "Comparan la caída bursátil de la inteligencia artificial con crisis históricas",
+   "que_paso": "Tras una baja importante en los mercados financieros, analizan el comportamiento bursátil actual frente a caídas históricas registradas desde 1950, incluyendo las crisis de 1987 y 2008.",
+   "por_que_importa": "Refleja la volatilidad económica que está experimentando el sector tecnológico y su impacto en los mercados globales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.kadoa.com/companies/og/insights/ai-selloff-perspective.png"
+  },
+  {
+   "id": "c2107a5a7cf6",
+   "fecha": "2026-11-07",
+   "titulo": "Google compra un proyecto de centro de datos en Wyoming a Crusoe",
+   "que_paso": "Google adquirió un proyecto de centro de datos que pertenecía a Crusoe en el estado de Wyoming. La operación refleja los desafíos actuales para desarrollar infraestructura masiva para inteligencia artificial.",
+   "por_que_importa": "Evidencia el esfuerzo y las dificultades que enfrentan las grandes tecnológicas para conseguir la infraestructura física necesaria que requiere la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "infraestructura"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/crusoe-ceo-getty.jpg?resize=1200,800"
+  },
+  {
+   "id": "c0d7b0808284",
+   "fecha": "2026-11-07",
+   "titulo": "Franklin Templeton integra herramientas de OpenAI para investigación financiera",
+   "que_paso": "La firma de inversiones comenzó a utilizar la tecnología de OpenAI para ayudar a sus gestores a examinar riesgos de inversión y comparar datos. Es el inicio de nuevos flujos de trabajo basados en esta tecnología.",
+   "por_que_importa": "Muestra cómo las grandes instituciones financieras están adoptando la inteligencia artificial para analizar datos del mercado y tomar decisiones de inversión.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "salud"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/franklin-templeton"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "5287355c1060",
+   "fecha": "2026-11-07",
+   "titulo": "OpenAI alcanza una valorización de 1,25 billones de dólares",
+   "que_paso": "OpenAI logró una valorización de 1,25 billones de dólares tras una nueva ronda de financiamiento en la que recaudó 11 mil millones adicionales, según informes de Bloomberg. Esto la posiciona entre las empresas más valiosas del mundo.",
+   "por_que_importa": "Demuestra el enorme flujo de capital que sigue recibiendo la industria de la inteligencia artificial por parte de los inversionistas.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK155_OPEN_AI_CVirginia_2_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "54d4f685c5e0",
+   "fecha": "2026-11-07",
+   "titulo": "Detectan transferencia silenciosa de datos entre conectores en ChatGPT",
+   "que_paso": "Un usuario reportó que ChatGPT utilizó un conector diferente al que inició una tarea para realizar una llamada posterior, pasando información sin previo aviso. El caso fue planteado en la comunidad de desarrolladores.",
+   "por_que_importa": "Pone sobre la mesa aspectos de privacidad y control sobre cómo las distintas extensiones y herramientas comparten datos de forma interna.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://us1.discourse-cdn.com/openai1/original/4X/0/4/c/04c8546833f0824a49d21f50e2b08dd44bfd3d05.png"
+  }
+ ]
+}
