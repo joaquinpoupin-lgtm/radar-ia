@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-06",
- "actualizado": "2026-11-06T17:58:32-03:00",
+ "actualizado": "2026-11-06T22:01:58-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI lanzó GPT-6 Cyber, un nuevo modelo diseñado para encontrar fallas de seguridad y crear soluciones.",
@@ -412,6 +412,128 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200"
+  },
+  {
+   "id": "3b972ecaa602",
+   "fecha": "2026-11-06",
+   "titulo": "La inteligencia artificial acelera su propia investigación a gran velocidad",
+   "que_paso": "Un debate en internet discute cómo la aceleración en el desarrollo de la inteligencia artificial se acumula. Esto podría llevar a una superinteligencia en poco tiempo, según proyecciones basadas en la tendencia actual.",
+   "por_que_importa": "Muestra que los avances tecnológicos están ocurriendo cada vez más rápido según las discusiones en la comunidad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "tendencia",
+    "investigación",
+    "superinteligencia"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!u_X_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd74ff70-df26-4e1a-be31-4fc3543bada8_2048x1072.png"
+  },
+  {
+   "id": "f2e68a651d21",
+   "fecha": "2026-11-06",
+   "titulo": "OpenAmika, un compañero virtual de código abierto con voz y memoria",
+   "que_paso": "Lanzaron OpenAmika, una herramienta de código abierto que funciona como un asistente virtual con un avatar animado. Cuenta con voz en tiempo real, memoria a largo plazo y permite usar distintos sistemas como cerebro.",
+   "por_que_importa": "Permite crear y personalizar un compañero virtual con capacidades avanzadas de conversación y memoria en tu propio computador.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "voz",
+    "memoria",
+    "python"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/zeekk0/OpenAmika"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/04e63ce66d5f54b40ad6fa2f74c9303eb922c297279cb2f6d688d37dc8578f9a/zeekk0/OpenAmika"
+  },
+  {
+   "id": "a394d9aad7a2",
+   "fecha": "2026-11-06",
+   "titulo": "Underdog presenta un modelo de voz y música muy pequeño",
+   "que_paso": "La empresa Underdog mostró una demostración de su nuevo modelo de inteligencia artificial. A pesar de ocupar solo 32 megabytes, es capaz de generar tanto voz como música.",
+   "por_que_importa": "Demuestra que es posible crear modelos pequeños que generan audio y música sin ocupar mucho espacio.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "voz",
+    "música",
+    "modelo"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-05-at-7.02.34-PM.jpg?resize=1200,542"
+  },
+  {
+   "id": "76b5590e5268",
+   "fecha": "2026-11-06",
+   "titulo": "Seis funciones para Claude Code enfocadas en crear animaciones",
+   "que_paso": "Publicaron un paquete de seis funciones para Claude Code que permiten crear animaciones para videos cortos sin necesidad de grabar material propio. Incluye estilos como dibujos animados en 3D, monigotes y gráficos de líneas.",
+   "por_que_importa": "Facilita la creación de animaciones directamente mediante instrucciones para Claude Code.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Una herramienta de programación que funciona mediante comandos de texto."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "video",
+    "animación",
+    "javascript"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/artemnovitckii/claude-animation-skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/98f8f7bcdb0fe568ee9c6e275830103d843d5af63e81aa1a3c54fe18d2fd0b02/artemnovitckii/claude-animation-skills"
+  },
+  {
+   "id": "fe91d7ca3f73",
+   "fecha": "2026-11-06",
+   "titulo": "Resumen en video sobre nuevos modelos abiertos y de imagen",
+   "que_paso": "El creador Matthew Berman publicó un video repasando novedades de la semana. Entre los temas incluye los pesos del modelo de código abierto Kimi K3.1, un nuevo modelo de imagen y noticias sobre Pika H3.",
+   "por_que_importa": "Reúne en un solo video las principales novedades de la semana en el mundo de la inteligencia artificial.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "imagen",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matthew Berman",
+     "url": "https://www.youtube.com/watch?v=-M62vWrZh54"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/-M62vWrZh54/hqdefault.jpg"
   }
  ]
 }
