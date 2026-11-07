@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-07",
- "actualizado": "2026-11-07T07:32:14-03:00",
+ "actualizado": "2026-11-07T16:30:59-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI alcanzó una valorización de 1,25 billones de dólares tras una nueva ronda de financiamiento en la que recaudó 11 mil millones adicionales.",
@@ -226,6 +226,165 @@
    ],
    "confirmacion": 1,
    "imagen": "https://us1.discourse-cdn.com/openai1/original/4X/0/4/c/04c8546833f0824a49d21f50e2b08dd44bfd3d05.png"
+  },
+  {
+   "id": "58d1e7f2f30e",
+   "fecha": "2026-11-07",
+   "titulo": "Investigador John Langford deja Microsoft y grupo AI Frontiers finaliza",
+   "que_paso": "El investigador John Langford salió de Microsoft. El grupo AI Frontiers terminó tras integrarse al área de Microsoft AI.",
+   "por_que_importa": "Muestra cambios en la estructura de los equipos de investigación de IA dentro de Microsoft.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "microsoft",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://businessexaminer.ca/victoria-articles/item/microsoft-researcher-john-langford-exits-as-ai-frontiers-group-is-declared/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://businessexaminer.ca/wp-content/uploads/2026/11/microsoft-researcher-john-langford-exits-as-ai-frontiers-gro.webp"
+  },
+  {
+   "id": "5d00c635512a",
+   "fecha": "2026-11-07",
+   "titulo": "Herramienta para hablar con perfiles de Hermes mediante Home Assistant Assist",
+   "que_paso": "Lanzaron una integración en Python para conversar con perfiles de agentes Hermes usando Home Assistant Assist.",
+   "por_que_importa": "Permite conectar perfiles de agentes de IA con sistemas de automatización del hogar.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Python",
+     "explicacion": "Un lenguaje de programación muy usado para crear software y herramientas tecnológicas."
+    }
+   ],
+   "etiquetas": [
+    "python",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/majorminorlabs/hermes-voice"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/a5f4a8e009335158d89f4deb75ab56d1daa6263924a6ace40858f222596a6e82/majorminorlabs/hermes-voice"
+  },
+  {
+   "id": "13f4910530cc",
+   "fecha": "2026-11-07",
+   "titulo": "Anthropic analiza más de doscientos mil usos de Claude en ciencia",
+   "que_paso": "Anthropic revisó 207.000 sesiones de investigación científica con Claude. El análisis busca entender qué tareas usan más la herramienta y cómo podría acelerar descubrimientos.",
+   "por_que_importa": "Da pistas sobre qué tareas científicas aprovechan mejor la inteligencia artificial en la práctica.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/0c1a04cc7042949252ee54565755780fe21d5ecf-1200x630.jpg"
+  },
+  {
+   "id": "ab56d7cf584e",
+   "fecha": "2026-11-07",
+   "titulo": "Skill para generar paquetes de stickers animados con Claude Code",
+   "que_paso": "Crearon una skill en Python para Claude Code y Codex que genera una serie completa de stickers animados con la misma imagen a partir de una foto.",
+   "por_que_importa": "Facilita la creación rápida de material gráfico repetible para mensajería.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a Claude a realizar una tarea específica."
+    },
+    {
+     "termino": "Python",
+     "explicacion": "Un lenguaje de programación utilizado para desarrollar aplicaciones."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "imagen",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/imraywang/ray-sticker-shop"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/0104036f137b8f618f0e516ef63e866996892d5d752cf4c1512110ad7ad85acd/imraywang/ray-sticker-shop"
+  },
+  {
+   "id": "55ffe1fba5ed",
+   "fecha": "2026-11-07",
+   "titulo": "Lanzan Arete-27B, un modelo adaptado para reflejar valores occidentales",
+   "que_paso": "NousResearch entrenó sobre el modelo Qwen3.8-27B de Alibaba para reforzar valores occidentales. El resultado es el modelo Arete-27B bajo licencia abierta.",
+   "por_que_importa": "Ofrece una opción de código abierto modificada para ajustar los enfoques culturales del modelo original.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "open source",
+     "explicacion": "Software cuyo código es público y puede ser usado, modificado y compartido libremente."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "texto"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/NousResearch/Arete-27B"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/NousResearch/Arete-27B.png"
+  },
+  {
+   "id": "b1f00cdb1ac5",
+   "fecha": "2026-11-07",
+   "titulo": "Agentes de Claude Code ahora pueden hacer llamadas telefónicas",
+   "que_paso": "Una herramienta llamada birdHQ permite que Claude Code llame por teléfono o envíe mensajes de texto. Así, avisa cuando necesita una decisión o termina una tarea.",
+   "por_que_importa": "Evita que tengas que esperar frente al computador mientras el agente de programación trabaja en segundo plano.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas complejas de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "voz",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/shorts/A5SfzBD6M3o"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/A5SfzBD6M3o/hqdefault.jpg"
   }
  ]
 }
