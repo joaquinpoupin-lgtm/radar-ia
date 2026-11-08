@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-07",
- "actualizado": "2026-11-07T16:30:59-03:00",
+ "actualizado": "2026-11-07T21:49:58-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI alcanzó una valorización de 1,25 billones de dólares tras una nueva ronda de financiamiento en la que recaudó 11 mil millones adicionales.",
@@ -385,6 +385,184 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.ytimg.com/vi/A5SfzBD6M3o/hqdefault.jpg"
+  },
+  {
+   "id": "5186d80b7eef",
+   "fecha": "2026-11-07",
+   "titulo": "Una función de Claude Code expuso contraseñas en archivos públicos de GitHub",
+   "que_paso": "Una función llamada \"Don't Ask Again\" de Claude Code dejó expuestas contraseñas en más de mil archivos públicos en GitHub. Esto plantea riesgos de seguridad para los datos que manejan los agentes de programación.",
+   "por_que_importa": "Muestra que las herramientas de programación automática pueden filtrar credenciales si no se configuran con precaución.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Una herramienta de Anthropic para programar usando inteligencia artificial."
+    },
+    {
+     "termino": "GitHub",
+     "explicacion": "Una plataforma en línea donde los programadores guardan y comparten código."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "d5689684c624",
+   "fecha": "2026-11-07",
+   "titulo": "Lanzan un administrador de tareas GPU para Windows, Linux y WSL",
+   "que_paso": "Crearon una herramienta gratuita para monitorear el uso de tarjetas gráficas en Windows, Linux y WSL. Permite ver el consumo por proceso y detalles de modelos de inteligencia artificial.",
+   "por_que_importa": "Sirve para revisar el rendimiento de tu equipo al ejecutar modelos locales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "GPU",
+     "explicacion": "Tarjeta gráfica, el componente que acelera el funcionamiento de la inteligencia artificial."
+    },
+    {
+     "termino": "WSL",
+     "explicacion": "Subsistema de Windows para ejecutar herramientas de Linux."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "programación",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/shanselman/gputaskman"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/7c51926f916411094cfa0dd45b62214299384bd5126e14dee87e46a72d01b354/shanselman/gputaskman"
+  },
+  {
+   "id": "18554f5ea61b",
+   "fecha": "2026-11-07",
+   "titulo": "Nueva skill para entrenar modelos usando sesiones de Claude Code",
+   "que_paso": "Publicaron una skill comunitaria para ajustar modelos usando tus propias sesiones de Claude Code. Funciona en plataformas como Claude Code, Codex y OpenCode.",
+   "por_que_importa": "Permite personalizar modelos con base en tu historial de trabajo, aunque al ser de la comunidad conviene revisarla antes de instalarla.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a Claude a realizar tareas específicas."
+    },
+    {
+     "termino": "Claude Code",
+     "explicacion": "Herramienta de Anthropic orientada a tareas de programación."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/drost-ai/tinker-ai-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/85125e4a18e1fdf35060c925f0e1072dbdac6428e5cc6157127d3cd0683d9993/drost-ai/tinker-ai-skill"
+  },
+  {
+   "id": "f45973610354",
+   "fecha": "2026-11-07",
+   "titulo": "Comprimen un modelo de video y audio para hacerlo más liviano",
+   "que_paso": "Lograron comprimir un modelo de generación de video y audio de 31 mil millones a 14 mil millones de parámetros. Reduce los pasos necesarios para generar contenido multimedia.",
+   "por_que_importa": "Facilita la ejecución de modelos multimedia complejos en equipos menos potentes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "parámetros",
+     "explicacion": "Variables internas que determinan la capacidad y tamaño de un modelo de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "video",
+    "voz",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/91d2971cea84d3000e455a27ccbb5f952cf201b710ce4d25163f724c1325d8b5/Video-Rebirth/hyperflow-h3-flash"
+  },
+  {
+   "id": "2c93e9013ac1",
+   "fecha": "2026-11-07",
+   "titulo": "Servicios de inteligencia vinculan a ejecutiva con intento de espionaje a Nvidia",
+   "que_paso": "Un memorándum de inteligencia estadounidense señala que el ministerio de seguridad de China reclutó a una ejecutiva tecnológica para espiar al director ejecutivo de Nvidia.",
+   "por_que_importa": "Muestra las tensiones geopolíticas y de seguridad en torno al liderazgo en la industria de chips.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Nvidia",
+     "explicacion": "Empresa líder en la fabricación de chips para inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294936867.jpg?resize=1200,800"
+  },
+  {
+   "id": "2634a86d9aad",
+   "fecha": "2026-11-07",
+   "titulo": "Cuestionan permisos de venta de chips de Nvidia a oficina vacía en China",
+   "que_paso": "Reportes indican que el gobierno de Estados Unidos permitió a Nvidia vender chips avanzados a una empresa en China cuyas oficinas están vacías. Esto genera dudas sobre los controles de exportación.",
+   "por_que_importa": "Evidencia fallas en la verificación de las empresas autorizadas para recibir tecnología avanzada.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Nvidia",
+     "explicacion": "Fabricante principal de los chips utilizados para entrenar modelos avanzados."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK083_NVIDIA_2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   }
  ]
 }
