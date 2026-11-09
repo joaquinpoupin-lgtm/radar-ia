@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-09",
- "actualizado": "2026-11-09T08:55:57-03:00",
+ "actualizado": "2026-11-09T20:49:47-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI recaudó once mil millones de dólares con una valoración de un billón doscientos cincuenta mil millones en medio de tensiones sobre su crecimiento.",
@@ -232,6 +232,181 @@
     {
      "nombre": "Simon Willison",
      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "ffe8a09e969f",
+   "fecha": "2026-11-09",
+   "titulo": "Anthropic lanza los modelos Claude Fable 5.2 y Mythos 5.2",
+   "que_paso": "Anthropic presentó dos nuevos modelos de inteligencia artificial llamados Claude Fable 5.2 y Claude Mythos 5.2. Están diseñados para enfrentar tareas técnicas complejas en áreas como programación, finanzas y ciencias.",
+   "por_que_importa": "Permite acceder a modelos más avanzados para resolver problemas técnicos difíciles en el trabajo diario.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b2dab182c77b4ccfd36423470106915b20f676ae-1200x630.jpg"
+  },
+  {
+   "id": "f37b680abcf7",
+   "fecha": "2026-11-09",
+   "titulo": "OpenAI crea un sistema central para detener cargas de trabajo de IA",
+   "que_paso": "OpenAI desarrolló un sistema central llamado Control Room para monitorear las cargas de trabajo de sus modelos de IA. Permite detenerlas rápidamente si surgen problemas de seguridad.",
+   "por_que_importa": "Muestra las medidas internas que toman las empresas para controlar sus sistemas de inteligencia artificial ante riesgos de seguridad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/control-room"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "8ceada5f9502",
+   "fecha": "2026-11-09",
+   "titulo": "ChatGPT Desktop reenvía claves SSH a máquinas remotas",
+   "que_paso": "Usuarios en Hacker News señalan que la aplicación de escritorio de ChatGPT reenvía credenciales SSH locales a equipos remotos. Esto permite que un agente autónomo autentique y suba cambios a repositorios privados en GitHub.",
+   "por_que_importa": "Advierte sobre cómo las herramientas de escritorio pueden compartir credenciales locales con entornos externos al ejecutar tareas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "SSH",
+     "explicacion": "Protocolo seguro para conectarse a otros computadores a distancia."
+    }
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "seguridad",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://news.ycombinator.com/item?id=50422628"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "9c331579e229",
+   "fecha": "2026-11-09",
+   "titulo": "ChatGPT Enterprise ya está disponible en AWS Marketplace",
+   "que_paso": "OpenAI integró su versión empresarial ChatGPT Enterprise en AWS Marketplace. Las organizaciones pueden adquirir el servicio utilizando sus contratos y relaciones de facturación existentes con Amazon Web Services.",
+   "por_que_importa": "Facilita a las empresas la compra y gestión de herramientas de inteligencia artificial mediante proveedores que ya utilizan.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "913ed88b2f74",
+   "fecha": "2026-11-09",
+   "titulo": "DeepX anuncia un chip de IA de bajo consumo para 2027",
+   "que_paso": "La empresa DeepX informó que su chip DX-M2 puede ejecutar modelos de lenguaje grandes de hasta 100 mil millones de parámetros gastando menos de 5 vatios. Las muestras físicas estarán disponibles en marzo de 2027.",
+   "por_que_importa": "Apunta hacia futuros dispositivos capaces de ejecutar inteligencia artificial compleja con un consumo mínimo de energía.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "parámetros",
+     "explicacion": "Valores internos que usa un modelo de inteligencia artificial para aprender y generar respuestas."
+    },
+    {
+     "termino": "vatios",
+     "explicacion": "Unidad para medir el consumo de energía eléctrica."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "hardware"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.eetimes.com/wp-content/uploads/DX-M2-sq.jpg?resize=1200,675"
+  },
+  {
+   "id": "23b94c697622",
+   "fecha": "2026-11-09",
+   "titulo": "CodeRabbit utiliza modelos de OpenAI para multiplicar su desarrollo",
+   "que_paso": "La plataforma CodeRabbit implementó modelos de OpenAI y Codex para gestionar y verificar código generado por IA. Esto le permitió a su equipo de ingeniería multiplicar por veinte la cantidad de software entregado.",
+   "por_que_importa": "Ejemplifica cómo las empresas usan la inteligencia artificial para acelerar la creación de software.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/coderabbit-codex-daybreak"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "418fd0c9fee6",
+   "fecha": "2026-11-09",
+   "titulo": "JPMorganChase amplía el uso de Claude Code entre sus empleados",
+   "que_paso": "El banco JPMorganChase decidió expandir el acceso a la herramienta Claude Code a una mayor cantidad de trabajadores en toda la empresa.",
+   "por_que_importa": "Muestra la adopción masiva de herramientas de asistencia de programación por parte de grandes corporaciones financieras.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code"
     }
    ],
    "confirmacion": 1,
