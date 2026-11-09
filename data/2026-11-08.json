@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-08",
- "actualizado": "2026-11-08T16:51:24-03:00",
+ "actualizado": "2026-11-08T22:05:35-03:00",
  "brief": {
   "lo_mas_importante": [
    "Una función de Claude Code dejó expuestas contraseñas en más de mil archivos públicos en GitHub, generando riesgos de seguridad.",
@@ -376,6 +376,102 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22202367/517216004.jpg?quality=90&strip=all&crop=0%2C3.4730210448443%2C100%2C41.13900448979&w=1200"
+  },
+  {
+   "id": "e06ec8877bce",
+   "fecha": "2026-11-08",
+   "titulo": "Controla iPhone desde Linux con AirPlay y Bluetooth HID",
+   "que_paso": "Un proyecto de GitHub permite reflejar la pantalla del iPhone en un PC Linux vía AirPlay y usar el teléfono como mouse y teclado Bluetooth. Incluye una interfaz de línea de comandos y una skill para agentes de IA.",
+   "por_que_importa": "Facilita usar un iPhone como pantalla y periférico sin modificar el dispositivo.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "AirPlay",
+     "explicacion": "Protocolo de Apple para transmitir audio y video de forma inalámbrica."
+    },
+    {
+     "termino": "Bluetooth HID",
+     "explicacion": "Perfil Bluetooth que permite que un dispositivo actúe como teclado o mouse."
+    }
+   ],
+   "etiquetas": [
+    "github",
+    "iphone",
+    "linux"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/lxe/phoneuse"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/fe852cca562658851031c1070677de4988925ecee195b4ddf21f956e4897fe50/lxe/phoneuse"
+  },
+  {
+   "id": "ebca66cf0a8f",
+   "fecha": "2026-11-08",
+   "titulo": "Skill de Claude Code crea objeto 3D que se desmonta",
+   "que_paso": "Un skill de Claude Code convierte una imagen en un modelo 3D que se desarma paso a paso, usando three.js para generar la animación. El proceso se verifica con la foto original y se renderiza a 60 fps.",
+   "por_que_importa": "Muestra cómo Claude puede generar contenidos visuales interactivos a partir de una sola foto.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Plataforma de Anthropic que permite crear habilidades personalizadas para el modelo Claude."
+    },
+    {
+     "termino": "three.js",
+     "explicacion": "Biblioteca de JavaScript para crear y mostrar gráficos 3D en el navegador."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "imagen",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/Nyxera0x/cutaway"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1448083694/abf75481-93d3-4e6e-968e-d3af0a15a7e9"
+  },
+  {
+   "id": "3e62264ffb8e",
+   "fecha": "2026-11-08",
+   "titulo": "Claude ayuda a crear una extensión SQLite para parsear números",
+   "que_paso": "Usando Claude Opus 5.5, el autor pidió generar código C que añade la función parse_number() a SQLite. La función convierte cadenas con símbolos de moneda o porcentaje en valores numéricos para ordenar o sumar.",
+   "por_que_importa": "Ejemplo de cómo Claude puede acelerar la escritura de extensiones personalizadas para bases de datos.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "SQLite",
+     "explicacion": "Base de datos ligera que se usa frecuentemente en aplicaciones móviles y de escritorio."
+    },
+    {
+     "termino": "Claude",
+     "explicacion": "Modelo de lenguaje de Anthropic que puede generar código y responder preguntas."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "bases de datos",
+    "codigo"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
