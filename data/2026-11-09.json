@@ -1,0 +1,241 @@
+{
+ "fecha": "2026-11-09",
+ "actualizado": "2026-11-09T08:55:57-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI recaudó once mil millones de dólares con una valoración de un billón doscientos cincuenta mil millones en medio de tensiones sobre su crecimiento.",
+   "La junta directiva de NVIDIA investiga a su director ejecutivo, Jensen Huang, por una relación con una persona sospechada de espionaje.",
+   "Goldman Sachs prohibió el uso de la herramienta Claude Code a banqueros y operadores, dejándola solo en manos de los ingenieros."
+  ],
+  "ids": [
+   "1d660dc4ea7a",
+   "b4717b7762b7",
+   "e22dd6f96618",
+   "6d49d7349281",
+   "c140bde79f92",
+   "38995d3fca35",
+   "51bc8200bfc7",
+   "b10abbc74a23",
+   "2382673acb37",
+   "68ff5ed661ee"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "b4717b7762b7",
+   "fecha": "2026-11-09",
+   "titulo": "Reflexiones sobre la supuesta burbuja financiera en la inteligencia artificial",
+   "que_paso": "Un usuario en internet analiza si la industria de la inteligencia artificial está sobrevalorada. Se discute qué pasaría con la economía si el valor de estas grandes empresas colapsara.",
+   "por_que_importa": "Permite conocer diferentes opiniones sobre la estabilidad financiera de las empresas que desarrollan inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "tendencias",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://matteoraso.github.io/images/profile.jpg"
+  },
+  {
+   "id": "e22dd6f96618",
+   "fecha": "2026-11-09",
+   "titulo": "Lanzamiento de habilidades para agentes de la comunidad en GitHub",
+   "que_paso": "Un repositorio en GitHub llamado agent_skills acumula interés y estrellas entre los usuarios. Ofrece instrucciones para dotar de capacidades a los agentes.",
+   "por_que_importa": "Muestra recursos creados por la comunidad para ampliar las funciones de los agentes inteligentes.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "GitHub",
+     "explicacion": "Plataforma en internet donde los programadores guardan y comparten código de proyectos."
+    }
+   ],
+   "etiquetas": [
+    "github",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/janestreet/agent_skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/051e8d0b32fc20a22f3b7a922ed796015638050cf4d1cc202274249b8323123c/janestreet/agent_skills"
+  },
+  {
+   "id": "6d49d7349281",
+   "fecha": "2026-11-09",
+   "titulo": "NVIDIA anuncia nuevas inversiones en empresas emergentes de Corea del Sur",
+   "que_paso": "NVIDIA y el Ministerio de Ciencia de Corea del Sur organizaron un foro con más de veinte empresas locales. Se anunció una inversión en la startup coreana Point2.",
+   "por_que_importa": "Muestra cómo los fabricantes de chips apoyan el desarrollo de nuevas tecnologías en otros países.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "startup",
+     "explicacion": "Empresa nueva que busca crecer rápidamente con una idea innovadora."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "inversión"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/11/korea-startups-msit-1920x1080-1.jpg"
+  },
+  {
+   "id": "c140bde79f92",
+   "fecha": "2026-11-09",
+   "titulo": "Claude Code compartía correos de usuarios con páginas web",
+   "que_paso": "Se descubrió un problema en Claude Code donde el correo electrónico utilizado para iniciar sesión se compartía con algunos sitios web. El error quedó registrado en el repositorio oficial.",
+   "por_que_importa": "Advierte sobre fallos de privacidad al utilizar herramientas de programación basadas en inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Herramienta de Anthropic para escribir código mediante inteligencia artificial."
+    },
+    {
+     "termino": "repositorio",
+     "explicacion": "Lugar centralizado donde se almacena y mantiene información o código de un software."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/claude-code-guardaba-tu-correo-para-saber-quien-eres-algunas-webs-acabaron-recibiendolo"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/d2a1e5/claude-portada/840_560.jpeg"
+  },
+  {
+   "id": "38995d3fca35",
+   "fecha": "2026-11-09",
+   "titulo": "Corea del Sur impulsa la inteligencia artificial física junto a NVIDIA",
+   "que_paso": "Empresas en Corea del Sur aplican computación acelerada y simulación en la fabricación de semiconductores, robótica y vehículos autónomos. NVIDIA colabora en estas iniciativas.",
+   "por_que_importa": "Ejemplifica cómo la tecnología se traslada desde el desarrollo digital hacia la industria y la maquinaria del mundo real.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "simulación",
+     "explicacion": "Reproducción digital de situaciones o entornos reales para probar sistemas antes de usarlos."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "robótica",
+    "chips"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/11/omniverse-overall-ai-day-seoul-1920x1080-1.jpeg"
+  },
+  {
+   "id": "51bc8200bfc7",
+   "fecha": "2026-11-09",
+   "titulo": "Empresas coreanas integran soluciones de NVIDIA para agentes autónomos",
+   "que_paso": "Hyundai Motor Group y AIM Intelligence adoptan herramientas de seguridad y desarrollo de NVIDIA. Buscan proteger los flujos de trabajo empresariales y el uso de agentes autónomos.",
+   "por_que_importa": "Muestra cómo las grandes corporaciones buscan mejorar la seguridad al implementar agentes autónomos en sus oficinas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes autónomos",
+     "explicacion": "Sistemas de inteligencia artificial capaces de tomar decisiones y realizar tareas por sí mismos."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "agentes",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/11/korea-agentic-ai-1920x1080-1.jpg"
+  },
+  {
+   "id": "b10abbc74a23",
+   "fecha": "2026-11-09",
+   "titulo": "Investigación sobre el director ejecutivo de NVIDIA genera incertidumbre",
+   "que_paso": "La junta directiva de NVIDIA investiga a Jensen Huang por su relación con una persona sospechada de espionaje. Expertos estiman que su continuidad en el cargo está en duda.",
+   "por_que_importa": "Apunta a posibles cambios de liderazgo en una de las empresas más influyentes del sector tecnológico.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "seguridad",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/Jensen-Huang.jpg?resize=1200,800"
+  },
+  {
+   "id": "2382673acb37",
+   "fecha": "2026-11-09",
+   "titulo": "Experimentos de programación y diseño gráfico mediante Claude",
+   "que_paso": "Un usuario utilizó Claude para trasladar un diseño gráfico realizado en una librería visual a código JavaScript estándar. El proceso generó un código funcional diferente al original.",
+   "por_que_importa": "Ilustra una forma práctica de reutilizar y adaptar código generado por chat en distintas tecnologías web.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude",
+     "explicacion": "Asistente de inteligencia artificial desarrollado por la empresa Anthropic."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
