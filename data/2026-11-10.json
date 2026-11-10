@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-10",
- "actualizado": "2026-11-10T08:29:19-03:00",
+ "actualizado": "2026-11-10T18:22:17-03:00",
  "brief": {
   "lo_mas_importante": [
    "Anthropic lanzó los nuevos modelos Claude Fable 5.2 y Mythos 5.2 para enfrentar tareas técnicas complejas en programación, finanzas y ciencias.",
@@ -239,6 +239,211 @@
    ],
    "confirmacion": 1,
    "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b953cc611ebe78f0b84e996dd54a614efd38b3f4-2000x1125.jpg"
+  },
+  {
+   "id": "fc6b6a56df7b",
+   "fecha": "2026-11-10",
+   "titulo": "Google lanza Gemini 4 Carbon para desarrolladores y empresas",
+   "que_paso": "Google DeepMind lanzó Gemini 4 Carbon. Está disponible para desarrolladores, empresas, científicos y consumidores.",
+   "por_que_importa": "Los usuarios de las plataformas de Google ya pueden acceder a este nuevo modelo.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "google deepmind",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg"
+  },
+  {
+   "id": "7737e173e31a",
+   "fecha": "2026-11-10",
+   "titulo": "Claude incorpora pizarras, planillas y herramientas de datos",
+   "que_paso": "Claude añadió nuevas funciones para hacer lluvias de ideas en pizarras compartidas, armar planillas y compartir datos con el equipo. Está disponible en todos los planes de pago.",
+   "por_que_importa": "Permite colaborar en equipo usando planillas y pizarras directamente dentro de Claude.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "productividad",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og"
+  },
+  {
+   "id": "02e4a20d191a",
+   "fecha": "2026-11-10",
+   "titulo": "Google Cloud lanza Gemini para el sector de la salud",
+   "que_paso": "Google Cloud lanzó una versión de Gemini enfocada en la salud. Busca unificar datos clínicos y automatizar tareas administrativas.",
+   "por_que_importa": "Ayuda a reducir la carga administrativa en el área de la salud.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google cloud",
+    "salud"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/social_share_NWQpgus.max-1440x810.png"
+  },
+  {
+   "id": "f8c1a7370c13",
+   "fecha": "2026-11-10",
+   "titulo": "Agentes de Google escriben millones de líneas de código de seguridad",
+   "que_paso": "Los agentes de AlphaProof Code escribieron tres millones de líneas de pruebas para verificar el cifrado principal de Signal.",
+   "por_que_importa": "Muestra cómo la inteligencia artificial puede verificar sistemas complejos de software.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google deepmind",
+    "programación",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://lh3.googleusercontent.com/hn6AiI6lYFo6chi1mL6uJ9nOW9UXfsAKnSyOApiie2urHNU2tmSPUmGn0hNfWyYLRcsWCGjCIrBZSCt1ihZmvW-LDJPfyolsr5w-yvzlknZVzmaH=w1200-h630-n-nu-rw"
+  },
+  {
+   "id": "5ca4dc7b6d88",
+   "fecha": "2026-11-10",
+   "titulo": "OpenAI introduce herramientas para negocios en ChatGPT",
+   "que_paso": "OpenAI lanzó una función para administrar la información comercial dentro de ChatGPT. Permite ver cómo aparece la empresa y convertir el interés en acciones.",
+   "por_que_importa": "Facilita la gestión de la presencia de un negocio directamente en ChatGPT.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-businesses-chatgpt"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "26b496ffaa34",
+   "fecha": "2026-11-10",
+   "titulo": "Anthropic inicia gira para su oferta pública inicial",
+   "que_paso": "Anthropic comenzó la gira de presentación para su propuesta de oferta pública inicial de acciones comunes.",
+   "por_que_importa": "Es un paso clave en el proceso para que la empresa comience a cotizar en la bolsa.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/roadshow-launch"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+  },
+  {
+   "id": "3180dbea1b88",
+   "fecha": "2026-11-10",
+   "titulo": "Curative automatiza contratos con agentes en Claude",
+   "que_paso": "La empresa Curative utiliza agentes en Claude para negociar más de dos mil contratos de proveedores a la semana.",
+   "por_que_importa": "Ejemplifica cómo las empresas usan agentes de IA para gestionar grandes volúmenes de contratos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude/opengraph-image/og"
+  },
+  {
+   "id": "66ed14c6418f",
+   "fecha": "2026-11-10",
+   "titulo": "Google integra herramientas de Adobe en sus aplicaciones",
+   "que_paso": "Google y Adobe se unieron para integrar herramientas creativas y de productividad. Ahora se pueden editar archivos PDF en Drive y usar funciones de Adobe en Gemini.",
+   "por_que_importa": "Facilita el uso de herramientas de Adobe dentro de los servicios habituales de Google.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "adobe",
+    "google"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Adobe_snippet_hero.max-1440x810.png"
+  },
+  {
+   "id": "46ecb159c153",
+   "fecha": "2026-11-10",
+   "titulo": "OpenAI organiza talleres gratuitos de ChatGPT para cuidadores",
+   "que_paso": "A través de OpenAI Academy, la empresa realizará talleres prácticos y gratuitos de ChatGPT para cuidadores en cinco ciudades de Estados Unidos.",
+   "por_que_importa": "Permite a los cuidadores aprender a usar la inteligencia artificial en su vida diaria.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "educación",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
