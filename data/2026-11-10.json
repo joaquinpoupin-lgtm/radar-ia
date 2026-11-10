@@ -1,0 +1,244 @@
+{
+ "fecha": "2026-11-10",
+ "actualizado": "2026-11-10T08:29:19-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Anthropic lanzó los nuevos modelos Claude Fable 5.2 y Mythos 5.2 para enfrentar tareas técnicas complejas en programación, finanzas y ciencias.",
+   "Un repositorio en GitHub expone documentación sobre un supuesto comportamiento de filtración de archivos personales en Google Gemini.",
+   "OpenAI publicó lecciones sobre el uso de inteligencia artificial en la educación para apoyar a docentes y fomentar el aprendizaje."
+  ],
+  "ids": [
+   "ffe8a09e969f",
+   "1b18e8c9acf7",
+   "01a8528fa117",
+   "458bb1a34baf",
+   "d5f14a6242b0",
+   "62afb1e0ab94",
+   "f5b13b9a76a1",
+   "932fe34bad72",
+   "1afd9e573768",
+   "c4ba76b538d8"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "1b18e8c9acf7",
+   "fecha": "2026-11-10",
+   "titulo": "Documentación expone filtraciones de archivos personales en Google Gemini",
+   "que_paso": "Un repositorio en GitHub expone documentación sobre un supuesto comportamiento de filtración de archivos en Google Gemini. Se señala que archivos personales de Drive y correos estarían siendo enviados a revisores humanos.",
+   "por_que_importa": "Plantea dudas sobre la privacidad y el manejo de los documentos y correos personales al usar esta herramienta.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "gemini",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/thisisme6598/gemini_files/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/1f55c182599b0702b83f651db680370712049172c59a93134552cf2c9487a73f/thisisme6598/gemini_files"
+  },
+  {
+   "id": "01a8528fa117",
+   "fecha": "2026-11-10",
+   "titulo": "OpenAI publica lecciones sobre el uso de inteligencia artificial en la educación",
+   "que_paso": "OpenAI compartió aprendizajes de sus alianzas educativas en Europa, Medio Oriente y África junto con una investigación de ThinkYoung. El enfoque busca apoyar a los docentes, fomentar la alfabetización en inteligencia artificial y promover el aprendizaje independiente.",
+   "por_que_importa": "Muestra cómo se está evaluando la integración de estas herramientas en el ámbito educativo para apoyar a profesores y alumnos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/closing-ai-guidance-gap-education"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "458bb1a34baf",
+   "fecha": "2026-11-10",
+   "titulo": "Suben los rendimientos de bonos de CoreWeave por tensiones financieras en IA",
+   "que_paso": "Los rendimientos de los bonos de CoreWeave superaron el 16 por ciento debido al estrés financiero en los mercados de deuda vinculados a la inteligencia artificial. Los inversionistas muestran preocupación ante una posible desaceleración en la construcción de centros de datos.",
+   "por_que_importa": "Refleja la presión económica y las dudas de los mercados sobre la sostenibilidad financiera de la infraestructura tecnológica actual.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://image.cnbcfm.com/api/v1/image/108410034-1792003128025-gettyimages-2245498775-raa-coreweav251110_npfn0.jpeg?v=1792003201&w=1920&h=1080"
+  },
+  {
+   "id": "d5f14a6242b0",
+   "fecha": "2026-11-10",
+   "titulo": "Guía para elegir el modelo de Claude adecuado según cada tarea",
+   "que_paso": "Anthropic publicó una guía para elegir entre sus modelos Claude Fable 5.2, Opus 5.5, Sonnet 5.5 y Haiku 5.5. La selección depende del tipo de tarea, el costo y el nivel de esfuerzo requerido.",
+   "por_que_importa": "Ayuda a decidir cuál versión utilizar según las necesidades y el presupuesto de cada proyecto.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.dev/blog/which-claude-model-should-you-build-with/og.png"
+  },
+  {
+   "id": "62afb1e0ab94",
+   "fecha": "2026-11-10",
+   "titulo": "Equipos de agentes de Claude reproducen una demostración matemática",
+   "que_paso": "Un equipo de mil agentes con una versión preliminar de Claude Fable 5.2 logró reproducir una demostración formal del último teorema de Fermat. Utilizaron herramientas generales, una base de datos compartida y controles de seguridad por capas.",
+   "por_que_importa": "Muestra el avance en el uso coordinado de múltiples agentes para resolver problemas complejos de investigación.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Sistemas de inteligencia artificial capaces de ejecutar tareas y tomar decisiones de forma más autónoma."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "agentes",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/og.png"
+  },
+  {
+   "id": "f5b13b9a76a1",
+   "fecha": "2026-11-10",
+   "titulo": "Lanzan entorno aislado para proyectos y agentes de programación",
+   "que_paso": "Presentaron devvm, un sistema que crea una máquina virtual aislada por proyecto con sus respectivas herramientas. Está preparado para que tanto humanos como agentes de programación comiencen a trabajar de inmediato.",
+   "por_que_importa": "Facilita la creación de entornos seguros y listos para usar en desarrollo de software.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de programación",
+     "explicacion": "Sistemas de inteligencia artificial especializados en escribir y modificar código."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/devvmhq/devvm"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/9ad4c0c55a395cb3d7a73f1a8ea07aa76ecf2036332a1d4573de3f8bca3cb5ab/devvmhq/devvm"
+  },
+  {
+   "id": "932fe34bad72",
+   "fecha": "2026-11-10",
+   "titulo": "Empresa utiliza la API de OpenAI para buscar en dibujos históricos en minutos",
+   "que_paso": "Kuken Industries usa la tecnología de OpenAI para buscar entre 70 años de planos de torres de enfriamiento. Los ingenieros ahora encuentran un plano en 4,5 minutos en lugar de casi una hora.",
+   "por_que_importa": "Ejemplifica cómo buscar rápidamente en archivos antiguos y complejos mejora la eficiencia en el trabajo diario.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que distintos programas de software se comuniquen entre sí."
+    }
+   ],
+   "etiquetas": [
+    "openai"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/kuken"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "1afd9e573768",
+   "fecha": "2026-11-10",
+   "titulo": "Meta lanza Muse Ember como su modelo más pequeño y eficiente",
+   "que_paso": "Meta presentó Muse Ember, un modelo enfocado en razonamiento complejo y tareas repetitivas de agentes como llamadas a herramientas, subtareas de código y análisis de documentos largos. Su precio para mensajes cortos es de 0,10 dólares por millón de tokens de entrada y 0,50 por millón de salida.",
+   "por_que_importa": "Ofrece una opción eficiente y económica para integrar tareas automatizadas y uso de herramientas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que los modelos de inteligencia artificial procesan y utilizan para leer y escribir."
+    }
+   ],
+   "etiquetas": [
+    "de pago",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/10/muse-ember/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "c4ba76b538d8",
+   "fecha": "2026-11-10",
+   "titulo": "Claude diseña prototipos electrónicos funcionales de principio a fin",
+   "que_paso": "Anthropic le pidió a Claude que diseñara tres dispositivos electrónicos, incluyendo un altavoz y una mascota virtual. Los prototipos resultantes funcionaron sin necesidad de corregir sus circuitos.",
+   "por_que_importa": "Demuestra la capacidad de la herramienta para realizar diseños técnicos complejos en el mundo físico.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://www.anthropic.com/research/claude-electronics-design"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b953cc611ebe78f0b84e996dd54a614efd38b3f4-2000x1125.jpg"
+  }
+ ]
+}
