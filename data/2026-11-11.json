@@ -1,0 +1,189 @@
+{
+ "fecha": "2026-11-11",
+ "actualizado": "2026-11-11T08:18:46-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google lanzó Gemini 4 Carbon, un nuevo modelo disponible para desarrolladores, empresas, científicos y consumidores.",
+   "Claude incorporó nuevas funciones de pago para colaborar en equipo usando pizarras compartidas, planillas y datos.",
+   "Singapore Airlines implementó tecnología de OpenAI para optimizar su atención al cliente y la productividad de sus empleados."
+  ],
+  "ids": [
+   "fc6b6a56df7b",
+   "e822901e33e1",
+   "7737e173e31a",
+   "77d255b4e9ac",
+   "586d37dc5945",
+   "f7afa1dd4ce8",
+   "80b38ea7da37",
+   "2d0b0af1ac4b",
+   "9d8099e6e6ef",
+   "4e3e5904c85a"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "f7afa1dd4ce8",
+   "fecha": "2026-11-11",
+   "titulo": "Seguimiento de fallas de seguridad descubiertas por Anthropic",
+   "que_paso": "Un informe detalla que se han registrado cientos de vulnerabilidades vinculadas a Anthropic durante varios meses. Solo una pequeña parte de los hallazgos se ha hecho pública y ha sido corregida.",
+   "por_que_importa": "Muestra el estado de la revisión de seguridad y la corrección de fallas en los sistemas de la empresa.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "vulnerabilidades",
+     "explicacion": "Fallos o debilidades en los sistemas informáticos que pueden ser aprovechados por terceros."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "seguridad",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.vulncheck.com/_og/s/o_6eba28d38c5a4083.png"
+  },
+  {
+   "id": "80b38ea7da37",
+   "fecha": "2026-11-11",
+   "titulo": "Veteranos de Estados Unidos reciben acceso gratuito a ChatGPT Plus",
+   "que_paso": "Más de 20.000 veteranos y miembros en transición de las fuerzas armadas obtuvieron un año gratis de ChatGPT Plus. Utilizan esta versión para prepararse para carreras en el mundo civil.",
+   "por_que_importa": "Facilita el acceso a herramientas avanzadas para la inserción laboral de exmilitares.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/chatgpt-plus-for-veterans"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "e822901e33e1",
+   "fecha": "2026-11-11",
+   "titulo": "Novedades sobre un modelo de Anthropic llamado Fable 5.2",
+   "que_paso": "Un usuario de Reddit y un creador de contenido comentan que un modelo de Anthropic logra no generar ninguna respuesta en una tarea específica. Destacan que utiliza menor cantidad de tokens en comparación con versiones anteriores.",
+   "por_que_importa": "Permite conocer opiniones de usuarios sobre el comportamiento de nuevos modelos en pruebas específicas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Unidades de texto que la inteligencia artificial procesa para leer y escribir."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/ClaudeAI/comments/1xt4fap/guys_fable_52_is_insane/"
+    },
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/shorts/Mt54ez7xsiI"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://i.ytimg.com/vi/Mt54ez7xsiI/hqdefault.jpg"
+  },
+  {
+   "id": "2d0b0af1ac4b",
+   "fecha": "2026-11-11",
+   "titulo": "Creador de aplicaciones web de código abierto con inteligencia artificial",
+   "que_paso": "Publicaron una herramienta de código abierto en GitHub para crear aplicaciones completas en Next.js. Incluye funciones de alojamiento y autenticación.",
+   "por_que_importa": "Ofrece una alternativa abierta para desarrollar aplicaciones web apoyándose en inteligencia artificial.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software cuyo código fuente está disponible públicamente para que cualquiera pueda usarlo y modificarlo."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/AbhiKamane/ai-app-builder-open"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1448721787/9e4d5bcd-e35c-4886-a879-23b08faa0544"
+  },
+  {
+   "id": "9d8099e6e6ef",
+   "fecha": "2026-11-11",
+   "titulo": "Mapa en vivo para observar la actividad de Claude Code",
+   "que_paso": "Lanzaron una herramienta local en GitHub que muestra en un mapa lateral lo que hace Claude Code. Permite visualizar llamadas a herramientas, pasos del modelo y agentes en cinco idiomas.",
+   "por_que_importa": "Ayuda a entender en tiempo real las acciones que realiza Claude Code mientras trabaja.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "subagentes",
+     "explicacion": "Pequeños programas o tareas secundarias que ejecutan acciones específicas bajo las órdenes de un sistema principal."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/alexeyw/lot-map"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/f0f623c3f76c45d8530650d6d6303accc781f8b65a79fdc9335fc7bb8d978062/alexeyw/lot-map"
+  },
+  {
+   "id": "4e3e5904c85a",
+   "fecha": "2026-11-11",
+   "titulo": "Singapore Airlines implementa tecnología de OpenAI para mejorar servicios",
+   "que_paso": "La aerolínea incorporó modelos y la API de OpenAI para optimizar su atención al cliente y la productividad de sus empleados. Según la empresa, duplicaron la satisfacción de los usuarios en su chat de asistencia.",
+   "por_que_importa": "Muestra un caso de uso empresarial donde la inteligencia artificial mejora la atención automatizada a pasajeros.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que distintas aplicaciones se comuniquen entre sí."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "atención al cliente"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/singapore-airlines-travel-work"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
