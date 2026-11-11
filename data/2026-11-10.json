@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-10",
- "actualizado": "2026-11-10T18:22:17-03:00",
+ "actualizado": "2026-11-10T22:21:31-03:00",
  "brief": {
   "lo_mas_importante": [
    "Anthropic lanzó los nuevos modelos Claude Fable 5.2 y Mythos 5.2 para enfrentar tareas técnicas complejas en programación, finanzas y ciencias.",
@@ -444,6 +444,122 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "77d255b4e9ac",
+   "fecha": "2026-11-10",
+   "titulo": "Apple prepara una aplicación para usar modelos de inteligencia artificial locales",
+   "que_paso": "Un analista descubrió rastros de una nueva aplicación en desarrollo dentro de Apple. Esta herramienta está diseñada para facilitar la ejecución de modelos de inteligencia artificial directamente en los computadores Mac.",
+   "por_que_importa": "Permite anticipar una forma más sencilla de correr inteligencia artificial en el computador sin depender de internet.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "apple",
+    "mac",
+    "modelos",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/Mac-mini.jpg?quality=82&strip=all&resize=1200,628"
+  },
+  {
+   "id": "586d37dc5945",
+   "fecha": "2026-11-10",
+   "titulo": "Lanzan una habilidad para que Claude reescriba textos quitando marcas de inteligencia artificial",
+   "que_paso": "Creadores independientes publicaron 'STE80 Humanizer', una habilidad para agentes que elimina las características típicas de los textos hechos por inteligencia artificial. El sistema adapta la redacción utilizando el método de inglés técnico simplificado.",
+   "por_que_importa": "Sirve para quienes usan Claude en la redacción y quieren obtener textos que suenen más naturales y menos automáticos.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/Dodaios/ste80-humanizer"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://opengraph.githubassets.com/9f47fef0192dbe4b50d3be072e975d2d3ca3580f310c98062eb071e3e6629c87/Dodaios/ste80-humanizer"
+  },
+  {
+   "id": "3588ceed4155",
+   "fecha": "2026-11-10",
+   "titulo": "Nuevos datos sobre el impacto de la inteligencia artificial en el trabajo independiente",
+   "que_paso": "Un estudio conjunto entre OpenAI y Upwork analizó cómo la inteligencia artificial está modificando la demanda laboral. La investigación detectó cambios en las habilidades requeridas, además de mayores presupuestos y más horas dedicadas a proyectos relacionados con esta tecnología.",
+   "por_que_importa": "Muestra las tendencias actuales en la demanda de servicios independientes vinculados a la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/ai-effect-on-freelance-work"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "cf85162be8fb",
+   "fecha": "2026-11-10",
+   "titulo": "Sistema de edición de video automatizado basado en agentes y archivos JSON",
+   "que_paso": "Desarrolladores publicaron un sistema de código abierto que combina un teleprompter con agentes de edición. Permite automatizar flujos de trabajo de animación y gráficos en movimiento utilizando archivos estructurados.",
+   "por_que_importa": "Ofrece una herramienta para automatizar procesos de edición de video mediante comandos estructurados.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video",
+    "animación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/dhruvthakur11/youtube-ai-video-editing-system"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1448769693/246715ff-4cc5-4e35-84f5-34caa07ed7ae"
+  },
+  {
+   "id": "9d1df668fbe6",
+   "fecha": "2026-11-10",
+   "titulo": "Nueva habilidad para crear videos narrados y cinemáticos mediante código",
+   "que_paso": "Lanzaron una habilidad para agentes que permite generar películas cinemáticas narradas utilizando código. El sistema une fotos, mapas y tarjetas con una cámara continua sincronizada con la voz.",
+   "por_que_importa": "Facilita la creación automatizada de contenidos visuales y narrativos para quienes usan herramientas de asistencia por código.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "video",
+    "voz",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/Moh4696/cinematic-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/2bb890181e22774041e762b94e4a65a292363ec156dca6c510455bfd1332bd51/Moh4696/cinematic-skill"
   }
  ]
 }
