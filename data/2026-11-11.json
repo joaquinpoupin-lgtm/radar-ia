@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-11",
- "actualizado": "2026-11-11T08:18:46-03:00",
+ "actualizado": "2026-11-11T19:06:05-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google lanzó Gemini 4 Carbon, un nuevo modelo disponible para desarrolladores, empresas, científicos y consumidores.",
@@ -184,6 +184,139 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "cce714811b51",
+   "fecha": "2026-11-11",
+   "titulo": "Google lanza Gemini Decisions API para respuestas estructuradas",
+   "que_paso": "Google estrenó Gemini Decisions API junto a un nuevo modelo enfocado en decisiones rápidas. Permite responder preguntas de sí o no, opciones múltiples y calificaciones basadas en pautas. Su costo es de diez centavos por cada millón de tokens de entrada y la salida es gratuita.",
+   "por_que_importa": "Ofrece a los desarrolladores una opción económica para integrar decisiones estructuradas en sus aplicaciones.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que la inteligencia artificial procesa para leer y escribir."
+    }
+   ],
+   "etiquetas": [
+    "google",
+    "gemini",
+    "api",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini__decisions__blog-header_2784x1566.width-1300.png"
+  },
+  {
+   "id": "e879c6fc35d4",
+   "fecha": "2026-11-11",
+   "titulo": "Google DeepMind presenta AlphaGenome 2 para analizar el ADN",
+   "que_paso": "Google DeepMind develó AlphaGenome 2, un modelo diseñado para predecir el impacto de los cambios en el ADN en diferentes tipos de células humanas y enfermedades. Fue entrenado con más de cien millones de perfiles celulares de sesenta y ocho tejidos.",
+   "por_que_importa": "Ayuda a entender mejor cómo las variaciones genéticas afectan la actividad de los genes y su relación con la salud.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "salud",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://lh3.googleusercontent.com/VPOhADdGu1T7kK_gWBiGzyVawQbKCjpL3-B0L0wxpYCyr8cHxviYmo9Hghy4f1laeIo2YKwuz8E07TR9HWWk2b0EONi0uvju-8TDLHX6YWHG4dXe3w=w1200-h630-n-nu-rw"
+  },
+  {
+   "id": "8d8bc38f54a7",
+   "fecha": "2026-11-11",
+   "titulo": "Agentes de IA descubren un sitio maya bajo la selva",
+   "que_paso": "Un usuario de Hacker News utilizó agentes de inteligencia artificial para analizar datos geográficos públicos durante la noche. El sistema identificó un sitio maya oculto bajo la selva que aún no figuraba en el registro oficial de México.",
+   "por_que_importa": "Muestra cómo las herramientas automatizadas pueden procesar grandes volúmenes de datos geográficos para encontrar información arqueológica.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas complejas por sí mismos."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://pietromiotti.com/latest/maya-site"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://pietromiotti.com/latest/maya-site/forest-vs-lidar.jpg"
+  },
+  {
+   "id": "bad6ee94c356",
+   "fecha": "2026-11-11",
+   "titulo": "Google Labs prueba Tabletop para organizar planes en grupo",
+   "que_paso": "Google lanzó una lista de espera para probar Tabletop, un experimento colaborativo para planificar itinerarios, votaciones y actividades en equipo. Permite construir espacios personalizados para coordinar grupos.",
+   "por_que_importa": "Permite organizar y planificar tareas compartidas de forma interactiva.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/labs_tabletop_blog_image_2784x1566.max-1440x810.jpg"
+  },
+  {
+   "id": "d8ee9ab549e4",
+   "fecha": "2026-11-11",
+   "titulo": "United Airlines prohíbe que agentes de IA reserven vuelos",
+   "que_paso": "United Airlines anunció que no permitirá que asistentes de inteligencia artificial compren pasajes en su plataforma. La aerolínea justificó la medida por motivos de privacidad y normativas regulatorias.",
+   "por_que_importa": "Refleja las restricciones que empiezan a poner las empresas tradicionales al uso de asistentes automatizados.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de realizar acciones en nombre del usuario."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23176430/1237621702.jpg?quality=90&strip=all&crop=0%2C10.721800295556%2C100%2C78.556399408888&w=1200"
   }
  ]
 }
