@@ -1,0 +1,230 @@
+{
+ "fecha": "2026-11-12",
+ "actualizado": "2026-11-12T08:38:11-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google DeepMind presentó AlphaGenome 2, un modelo creado para predecir el impacto de los cambios en el ADN en distintos tejidos y enfermedades humanas.",
+   "OpenAI destinó dos millones de dólares para financiar investigaciones enfocadas en medir los riesgos y proteger la seguridad infantil al usar inteligencia artificial.",
+   "United Airlines prohibió el uso de agentes automáticos para reservar pasajes, argumentando riesgos de seguridad y posibles infracciones a normas federales."
+  ],
+  "ids": [
+   "cce714811b51",
+   "fc794bb4db25",
+   "e879c6fc35d4",
+   "53bc56e14c08",
+   "418d10f93d4e",
+   "0990939c7d6e",
+   "b06379671ede",
+   "9818440638d9",
+   "6619f09dbc0d",
+   "0ccfb511c0c8"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "53bc56e14c08",
+   "fecha": "2026-11-12",
+   "titulo": "United Airlines prohíbe usar agentes de IA para reservar vuelos",
+   "que_paso": "La aerolínea prohibió el uso de agentes automáticos para hacer reservas de pasajes. Argumenta que esto genera riesgos de seguridad y podría infringir normas federales.",
+   "por_que_importa": "Muestra que las empresas de transporte comienzan a poner restricciones al uso de asistentes automáticos para comprar pasajes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "seguridad",
+    "aviación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/11/11/abfecdbe-5571-42df-95f8-6c22131067aa/thumbnail/1200x630/526b47f241e8e11c31cb47bc82f1f68c/gettyimages-2296986024-1.jpg"
+  },
+  {
+   "id": "418d10f93d4e",
+   "fecha": "2026-11-12",
+   "titulo": "Huawei lanza una herramienta para ejecutar modelos de IA localmente",
+   "que_paso": "Huawei liberó una herramienta interna llamada MACaQ para optimizar y ejecutar modelos de texto, imagen, video y audio en equipos propios. Funciona con sistemas populares como llama.cpp y PyTorch.",
+   "por_que_importa": "Facilita a los desarrolladores correr modelos avanzados directamente en sus propios computadores.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "huawei",
+    "open source",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/huawei-csl/MACaQ"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1452417816/74bc9106-306c-4e93-96da-77dcff2e0d77"
+  },
+  {
+   "id": "fc794bb4db25",
+   "fecha": "2026-11-12",
+   "titulo": "Skill gratuita convierte artículos y videos en contenido para redes sociales",
+   "que_paso": "Un desarrollo comunitario para Claude Code transforma textos y videos de plataformas como YouTube en publicaciones gráficas, formatos largos y videos con voz artificial. Cuenta con 21 temas y no requiere dependencias adicionales.",
+   "por_que_importa": "Permite reciclar contenido de formato largo en publicaciones visuales para redes sociales de forma automática.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "video",
+    "redes sociales",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/threerocks/article2media"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://opengraph.githubassets.com/d3892cc1774b364f45dfab59f38b7ac069fa11e35aec365c313afd784421b548/threerocks/article2media"
+  },
+  {
+   "id": "0990939c7d6e",
+   "fecha": "2026-11-12",
+   "titulo": "Holiday Extras utiliza Codex para mejorar sus aplicaciones",
+   "que_paso": "La empresa Holiday Extras está aprovechando la herramienta Codex para transformar el conocimiento de sus clientes en mejores aplicaciones. Esto busca aumentar las reservas y generar nuevas oportunidades de crecimiento.",
+   "por_que_importa": "Ejemplifica cómo las empresas usan herramientas de programación para optimizar sus plataformas de atención.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/business/customer-stories/holidays-extras-codex"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "b06379671ede",
+   "fecha": "2026-11-12",
+   "titulo": "OpenAI dona fondos para investigar sobre seguridad infantil",
+   "que_paso": "OpenAI destinó dos millones de dólares para financiar investigaciones sobre el uso de la inteligencia artificial y la seguridad de los niños. El proyecto busca crear herramientas compartidas para medir riesgos y oportunidades para los jóvenes.",
+   "por_que_importa": "Apunta a desarrollar métodos estandarizados para proteger a los menores frente al uso de herramientas digitales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/children-first-declaration"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "9818440638d9",
+   "fecha": "2026-11-12",
+   "titulo": "Skill de la comunidad permite a Claude crear juegos 3D en el navegador",
+   "que_paso": "Un usuario creó una skill de código abierto para Claude Code que enseña a la inteligencia artificial a desarrollar juegos de acción en 3D desde cero usando el navegador. Incluye una demostración jugable llamada '雾锁山门'.",
+   "por_que_importa": "Muestra cómo añadir instrucciones especializadas para que un asistente cree videojuegos interactivos completos.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/op7418/guizang-game-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/ed5d511731297f6eda8027414ab629da75d1df3b81b6ecf99ac5e77b0d0937eb/op7418/guizang-game-skill"
+  },
+  {
+   "id": "6619f09dbc0d",
+   "fecha": "2026-11-12",
+   "titulo": "Databricks usa un agente de IA para conocer problemas internos",
+   "que_paso": "El director ejecutivo de Databricks, Ali Ghodsi, utiliza una versión actualizada del agente Genie para enterarse de los problemas reales dentro de la empresa. La herramienta le entrega información directa cuando los empleados evitan reportar fallas.",
+   "por_que_importa": "Ilustra cómo los líderes usan agentes internos para obtener reportes sin filtros sobre el funcionamiento de sus equipos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "empresas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2021/04/Ali_Ghodsi.jpg?resize=1200,1200"
+  },
+  {
+   "id": "0ccfb511c0c8",
+   "fecha": "2026-11-12",
+   "titulo": "Plurai busca mejorar la confiabilidad de los agentes de IA",
+   "que_paso": "La empresa Plurai propone aplicar metodologías similares a las usadas en el desarrollo de vehículos autónomos para mejorar el funcionamiento de los agentes. Busca resolver el comportamiento impredecible de estos sistemas en entornos reales.",
+   "por_que_importa": "Busca hacer que los asistentes virtuales sean más estables y seguros al ejecutar tareas complejas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Plurai-team-photo.-Credit-Guy-Hamoy.jpg?resize=1200,800"
+  },
+  {
+   "id": "14e5a7f70a2a",
+   "fecha": "2026-11-12",
+   "titulo": "Comfy-Org sube modelo MiniMax-H3-Image a Hugging Face",
+   "que_paso": "El modelo de generación de imágenes MiniMax-H3-Image ya está disponible en la plataforma Hugging Face. Cuenta con cientos de miles de descargas y utiliza una licencia de uso específica.",
+   "por_que_importa": "Pone a disposición de la comunidad un nuevo modelo para generar imágenes a partir de texto.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "imagen",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Comfy-Org/MiniMax-H3-Image.png"
+  }
+ ]
+}
