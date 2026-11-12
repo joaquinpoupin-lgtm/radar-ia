@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-12",
- "actualizado": "2026-11-12T08:38:11-03:00",
+ "actualizado": "2026-11-12T18:53:18-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google DeepMind presentó AlphaGenome 2, un modelo creado para predecir el impacto de los cambios en el ADN en distintos tejidos y enfermedades humanas.",
@@ -225,6 +225,138 @@
    ],
    "confirmacion": 1,
    "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Comfy-Org/MiniMax-H3-Image.png"
+  },
+  {
+   "id": "a8d5fa7d24b3",
+   "fecha": "2026-11-12",
+   "titulo": "Google lanza el modelo Gemini 4 Hydrogen",
+   "que_paso": "Google DeepMind presentó Gemini 4 Hydrogen, un nuevo modelo diseñado para tareas automatizadas y flujos de trabajo con agentes. Ya se encuentra disponible para su uso diario.",
+   "por_que_importa": "Permite utilizar una nueva opción de inteligencia artificial de Google enfocada en la automatización de tareas.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de tomar decisiones y realizar tareas de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "google deepmind",
+    "gemini",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg"
+  },
+  {
+   "id": "f101ffad2bb3",
+   "fecha": "2026-11-12",
+   "titulo": "Anthropic inicia los trámites para salir a la bolsa",
+   "que_paso": "Anthropic presentó la documentación necesaria para convertirse en una empresa pública que cotiza en el mercado de valores.",
+   "por_que_importa": "Marca un paso importante en la madurez financiera de una de las empresas principales de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "empresa",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://ipo.anthropic.com/us/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://ipo.anthropic.com/assets/share-image-eAr8nJRP.jpg"
+  },
+  {
+   "id": "5b59c75a11e5",
+   "fecha": "2026-11-12",
+   "titulo": "Claude permite ejecutar agentes administrados en servidores propios",
+   "que_paso": "Anthropic introdujo agentes administrados de Claude que se pueden alojar en la propia nube o infraestructura local. Permite controlar dónde se envían las solicitudes y mantener las credenciales y el historial de sesiones.",
+   "por_que_importa": "Ofrece mayor control sobre la privacidad y el almacenamiento de datos al utilizar la tecnología de Claude.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas complejas con mínima intervención."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "agentes",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/self-hosted-claude-managed-agents/opengraph-image/og"
+  },
+  {
+   "id": "6b5db77df3bf",
+   "fecha": "2026-11-12",
+   "titulo": "Nuevo complemento de Claude para la industria manufacturera",
+   "que_paso": "Lanzaron un complemento enfocado en el sector industrial con 17 habilidades y cuatro conectores. Ayuda a redactar cotizaciones, reportes de calidad y pedidos a proveedores desde los sistemas que ya usan.",
+   "por_que_importa": "Facilita la redacción de documentos técnicos y operativos dentro del rubro de manufactura usando datos propios.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "automatización"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/claude-for-manufacturing"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/claude-for-manufacturing/opengraph-image/og"
+  },
+  {
+   "id": "ad614f81e42f",
+   "fecha": "2026-11-12",
+   "titulo": "El buscador de Google integra el modelo Gemini 4 Hydrogen",
+   "que_paso": "Google comenzó a desplegar el nuevo modelo Gemini 4 Hydrogen directamente dentro de las funciones de su buscador web.",
+   "por_que_importa": "Permite interactuar con la tecnología más reciente de Google al realizar búsquedas cotidianas en la web.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "gemini",
+    "búsqueda"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HydrogenUI_socialshare.width-1300.png"
   }
  ]
 }
