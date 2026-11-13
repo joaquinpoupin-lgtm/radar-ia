@@ -1,0 +1,171 @@
+{
+ "fecha": "2026-11-13",
+ "actualizado": "2026-11-13T08:22:05-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google presentó e integró en su buscador el nuevo modelo Gemini 4 Hydrogen, diseñado para tareas automatizadas.",
+   "Hugging Face prometió continuar con el código abierto tras dudas generadas por una compra de Nvidia.",
+   "Un análisis forense detectó procesadores avanzados de Nvidia en modelos de inteligencia artificial chinos, pese a las restricciones."
+  ],
+  "ids": [
+   "a8d5fa7d24b3",
+   "5c8a7e2ce9e4",
+   "d096a8a420fb",
+   "ad614f81e42f",
+   "d3d3421ae28d",
+   "0667a519c650",
+   "4d58a71c284d",
+   "05f1e3cef617",
+   "14e5a7f70a2a",
+   "f101ffad2bb3"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "d3d3421ae28d",
+   "fecha": "2026-11-13",
+   "titulo": "Empleados de Nvidia piden el regreso de Jensen Huang",
+   "que_paso": "Una publicación interna en Nvidia reunió más de 1.600 comentarios. La mayoría apoya que el exdirector ejecutivo regrese a su cargo.",
+   "por_que_importa": "Muestra la incertidumbre interna sobre el liderazgo actual en una de las empresas clave para el desarrollo de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://media.wired.com/photos/6af6533dc5d481da1362b330/191:100/w_1280,c_limit/Petition-Bring-Back-Jensen-Business-2299493060.jpg"
+  },
+  {
+   "id": "d096a8a420fb",
+   "fecha": "2026-11-13",
+   "titulo": "Detectan chips avanzados de Nvidia en modelos de IA chinos",
+   "que_paso": "Un análisis forense encontró rastros de los procesadores Blackwell de Nvidia en modelos de IA creados en China. Esto ocurre a pesar de las restricciones comerciales vigentes.",
+   "por_que_importa": "Revela que algunas empresas chinas lograron acceder a tecnología de punta estadounidense para entrenar sus sistemas a pesar de los vetos.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Circuitos integrados o microprocesadores que sirven para procesar datos."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://unemploymentlabs.com/checkpoint-forensics"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://unemploymentlabs.com/checkpoint-forensics-og.png?v=4"
+  },
+  {
+   "id": "0667a519c650",
+   "fecha": "2026-11-13",
+   "titulo": "Proyecto busca ejecutar modelos de lenguaje en dispositivos pequeños",
+   "que_paso": "Un proyecto de código abierto optimiza sistemas de inteligencia artificial para que funcionen en equipos antiguos y de bajo rendimiento.",
+   "por_que_importa": "Permite usar herramientas avanzadas directamente en dispositivos cotidianos sin depender de servidores externos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/hyperionaidev/smolmaxxing/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/383c9899e8c3defb745d00e0f29a60dd8e14dd2b339c03ba786779f3ee85fd56/hyperionaidev/smolmaxxing"
+  },
+  {
+   "id": "5c8a7e2ce9e4",
+   "fecha": "2026-11-13",
+   "titulo": "Hugging Face defiende el código abierto tras cambios en Nvidia",
+   "que_paso": "El director ejecutivo de Hugging Face prometió seguir impulsando la inteligencia artificial de código abierto. Surgieron dudas sobre el futuro de la plataforma tras la adquisición de Nvidia por 12.900 millones de dólares.",
+   "por_que_importa": "Afecta la disponibilidad de modelos y datos abiertos que usan muchos creadores y desarrolladores en sus proyectos diarios.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "nvidia",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/07/Hugging-Face-CEO-Clem-Delangue.png?resize=1200,675"
+  },
+  {
+   "id": "4d58a71c284d",
+   "fecha": "2026-11-13",
+   "titulo": "Lanzan alternativa a Slack integrada con agentes de inteligencia artificial",
+   "que_paso": "Crearon una plataforma de código abierto para equipos que combina canales de chat con asistentes virtuales de Claude, ChatGPT, Gemini o Grok. Permite que estos agentes usen herramientas propias, navegador y memoria.",
+   "por_que_importa": "Ofrece una opción autohospedada para trabajar en equipo con la ayuda directa de múltiples inteligencias artificiales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "open-source",
+     "explicacion": "Software cuyo código es público para que cualquiera pueda usarlo, modificarlo y mejorarlo."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "chatgpt",
+    "gemini",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/agentes-chat/agentes-chat"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/54df60f447d4f831e213261e9aefbe0378a59375742f99b32a69a745b0c76c01/agentes-chat/agentes-chat"
+  },
+  {
+   "id": "05f1e3cef617",
+   "fecha": "2026-11-13",
+   "titulo": "Claude Opus 5.5 se consolida como modelo predeterminado",
+   "que_paso": "Anthropic detalló el funcionamiento y las ventajas de su modelo Opus 5.5 para tareas de conocimiento. Ya se encuentra disponible por defecto en los planes Pro, Max, Ultra y Team.",
+   "por_que_importa": "Define el rendimiento y las capacidades predeterminadas que reciben los usuarios de pago de Claude en su trabajo diario.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work/opengraph-image/og"
+  }
+ ]
+}
