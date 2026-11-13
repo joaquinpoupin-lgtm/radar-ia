@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-13",
- "actualizado": "2026-11-13T08:22:05-03:00",
+ "actualizado": "2026-11-13T18:29:05-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google presentó e integró en su buscador el nuevo modelo Gemini 4 Hydrogen, diseñado para tareas automatizadas.",
@@ -166,6 +166,222 @@
    ],
    "confirmacion": 1,
    "imagen": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work/opengraph-image/og"
+  },
+  {
+   "id": "44da454e7900",
+   "fecha": "2026-11-13",
+   "titulo": "Problemas de funcionamiento en las plataformas de Claude",
+   "que_paso": "La página de estado de Claude reportó errores elevados en su sitio web, en la herramienta Claude Code y en su plataforma para desarrolladores. Esto puede afectar el uso normal de los servicios durante el incidente.",
+   "por_que_importa": "Es útil saberlo si usas estas herramientas en tu día a día y notas que fallan o responden con errores.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Una herramienta de Anthropic para interactuar con Claude directamente desde la computadora."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://status.claude.com/incidents/nn11wk485zfn"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "f980cc1f1e21",
+   "fecha": "2026-11-13",
+   "titulo": "Lanzan Edge0-145B, un modelo abierto para ejecutar en computadoras",
+   "que_paso": "Presentaron Edge0-145B, un modelo de código abierto de gran tamaño enfocado en tareas de programación, razonamiento y agentes. Permite su uso local sin depender de la nube ni pagar tarifas por cada consulta.",
+   "por_que_importa": "Permite usar capacidades avanzadas de IA directamente en tu equipo sin enviar datos a servidores externos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software cuyo código fuente es público para que cualquiera pueda usarlo, estudiarlo y modificarlo."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "programación",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.hashnode.com/uploads/covers/6aea03219fa4aa99923b5acf/de5ebdea-3436-4b9a-b3f2-e9910f3a0abc.png"
+  },
+  {
+   "id": "5bf4951adbe9",
+   "fecha": "2026-11-13",
+   "titulo": "OpenAI introduce ChatGPT Wallet para pagos de agentes",
+   "que_paso": "OpenAI presentó ChatGPT Wallet, un sistema para que los agentes de IA puedan realizar compras de forma segura con la aprobación del usuario. Utiliza las protecciones de tarjetas de crédito ya existentes.",
+   "por_que_importa": "Facilita que las herramientas automatizadas manejen transacciones comerciales con tu autorización previa.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de IA capaces de tomar decisiones y realizar tareas de forma más autónoma."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-chatgpt-wallet"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "984d08da3cf7",
+   "fecha": "2026-11-13",
+   "titulo": "Guía para crear agentes que funcionan de forma continua",
+   "que_paso": "Claude publicó una guía sobre cómo diseñar agentes que operan indefinidamente a lo largo de múltiples sesiones. Explica los conceptos básicos y cómo combinarlos para mantener tareas activas.",
+   "por_que_importa": "Muestra cómo estructurar herramientas de IA para que realicen trabajos largos sin intervención constante.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/building-always-on-agents"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/building-always-on-agents/opengraph-image/og"
+  },
+  {
+   "id": "2427bacb74a9",
+   "fecha": "2026-11-13",
+   "titulo": "NVIDIA publica una simulación de robótica en Hugging Face",
+   "que_paso": "NVIDIA compartió una publicación en Hugging Face para crear simulaciones de robots que recogen y ubican objetos usando activos digitales específicos.",
+   "por_que_importa": "Ofrece recursos para probar y simular tareas robóticas en entornos virtuales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/6abfe9e7d7cf09a9b38ef308/HFZWtQ2i9VN_agjeUw2HB.gif"
+  },
+  {
+   "id": "8400bdfe1e2a",
+   "fecha": "2026-11-13",
+   "titulo": "XYBench: una herramienta para analizar problemas de IA",
+   "que_paso": "El instituto Ai2 publicó en Hugging Face una herramienta llamada XYBench para ayudar a entender los problemas detrás de las preguntas que responden los modelos.",
+   "por_que_importa": "Ayuda a medir y comprender mejor el razonamiento detrás de las respuestas de los sistemas de IA.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/allenai/xybench"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png"
+  },
+  {
+   "id": "40e78db6601d",
+   "fecha": "2026-11-13",
+   "titulo": "Actualizan llama.cpp para mejorar el ecosistema de IA local",
+   "que_paso": "Lanzaron la versión 1.0.0 de llama.cpp, un proyecto fundamental para ejecutar modelos de lenguaje directamente en dispositivos propios. Busca ofrecer una base más sólida para desarrolladores y usuarios.",
+   "por_que_importa": "Mejora el rendimiento y la estabilidad al correr modelos de inteligencia artificial en computadoras personales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png"
+  },
+  {
+   "id": "f6b29b4e2ab3",
+   "fecha": "2026-11-13",
+   "titulo": "Yogurt: notas de reuniones privadas basadas en IA y código abierto",
+   "que_paso": "Lanzaron Yogurt, una herramienta gratuita y de código abierto para tomar notas de reuniones de forma privada. Funciona de manera local en el computador del usuario.",
+   "por_que_importa": "Permite registrar y resumir reuniones de trabajo manteniendo la privacidad de la información en tu propio equipo.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gratis",
+    "open source",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/FrigadeHQ/yogurt"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1453132706/355ef15b-b53b-4211-bd76-47cdaad9ef5b"
+  },
+  {
+   "id": "c05ea765525b",
+   "fecha": "2026-11-13",
+   "titulo": "Nuevas habilidades de la comunidad para agentes de Claude",
+   "que_paso": "Un usuario de GitHub creó un paquete de instrucciones para Claude que incluye funciones para limpiar almacenamiento, pulir textos y editar contenido. Es un desarrollo externo a la empresa.",
+   "por_que_importa": "Al ser un aporte de la comunidad, conviene revisar qué hace exactamente antes de instalarlo en tus herramientas.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/LemonFace0309/charles-skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/b7910a7a10d61aea6d2a5fb7b38cbd7739bc7bbed08304a5e49e0ef40acfba4c/LemonFace0309/charles-skills"
   }
  ]
 }
