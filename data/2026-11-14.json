@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-14",
- "actualizado": "2026-11-14T07:45:19-03:00",
+ "actualizado": "2026-11-14T17:00:01-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI lanzó ChatGPT Wallet en Estados Unidos para que sus agentes de inteligencia artificial puedan realizar compras y pagos de forma automática.",
@@ -148,6 +148,157 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/acastro_STK103__03.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "c0997196dc7d",
+   "fecha": "2026-11-14",
+   "titulo": "AI Manus es un agente de IA general en entornos seguros",
+   "que_paso": "Un proyecto en GitHub llamado AI Manus funciona como un sistema de agentes de inteligencia artificial. Es capaz de ejecutar distintas herramientas y operaciones dentro de un entorno seguro y aislado.",
+   "por_que_importa": "Permite probar agentes de IA que realizan tareas automatizadas de manera controlada.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de IA",
+     "explicacion": "Programas de inteligencia artificial capaces de tomar decisiones y realizar tareas de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/TrapBladesmith/ai--manus2.0"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/7fa52a840c237dee1181735ad192d32e4cc722146ee04094d2cd5265cb30830b/TrapBladesmith/ai--manus2.0"
+  },
+  {
+   "id": "6518fbd35a14",
+   "fecha": "2026-11-14",
+   "titulo": "Haru-4B es un modelo multilingüe para conversar de forma fluida",
+   "que_paso": "Lanzaron Haru-4B, un modelo base enfocado en audio que escucha y habla al mismo tiempo. Permite mantener una conversación continua y con baja latencia, similar a una llamada telefónica.",
+   "por_que_importa": "Muestra avances en la interacción por voz en tiempo real con inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "latencia",
+     "explicacion": "El retraso o tiempo de espera entre que das una orden y la inteligencia artificial responde."
+    }
+   ],
+   "etiquetas": [
+    "hugging face",
+    "voz",
+    "open source",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/higurashi-ai/Haru-4B"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/higurashi-ai/Haru-4B.png"
+  },
+  {
+   "id": "b08cefd9996d",
+   "fecha": "2026-11-14",
+   "titulo": "Un repaso a los proyectos de inteligencia artificial que fracasaron",
+   "que_paso": "Un listado recopila proyectos y aplicaciones de inteligencia artificial que cerraron o no cumplieron con las expectativas. Entre ellos se mencionan los retrasos de Siri y lanzamientos de OpenAI.",
+   "por_que_importa": "Muestra que no todas las iniciativas de inteligencia artificial logran sobrevivir o funcionar como se esperaba.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?resize=1200,797"
+  },
+  {
+   "id": "2a2bfff1121f",
+   "fecha": "2026-11-14",
+   "titulo": "Gobiernos asiáticos reaccionan a la salida del director de Nvidia",
+   "que_paso": "Diversos gobiernos en Asia reaccionaron ante la salida del director ejecutivo de Nvidia, Jensen Huang. Algunos buscaron asegurar el suministro de chips y otros monitorean el impacto en proyectos locales.",
+   "por_que_importa": "Evidencia cómo los cambios en la industria de chips afectan la geopolítica y los proyectos tecnológicos estatales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Componentes electrónicos esenciales para que funcionen los sistemas de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang.jpg?w=1024"
+  },
+  {
+   "id": "19d340976929",
+   "fecha": "2026-11-14",
+   "titulo": "Ex miembro de la junta de OpenAI cuestiona la confianza en los líderes",
+   "que_paso": "Helen Toner, ex miembro de la junta directiva de OpenAI que participó en la salida de Sam Altman, conversó sobre la gobernanza en la industria. Señaló que todavía existen dudas sobre si se puede confiar plenamente en los directores de empresas de inteligencia artificial.",
+   "por_que_importa": "Refleja los debates internos sobre la seguridad y el liderazgo en las grandes empresas del sector.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD-Helen-Toner.jpg?quality=90&strip=all&crop=0%2C10.711631919237%2C100%2C78.576736161526&w=1200"
+  },
+  {
+   "id": "07400b9e1c8c",
+   "fecha": "2026-11-14",
+   "titulo": "Granjas de salmón en Noruega usan robots con IA para eliminar parásitos",
+   "que_paso": "Noruega utiliza unos 3.500 robots equipados con inteligencia artificial y lásers en sus piscifactorías. Estas máquinas se encargan de cazar y eliminar piojos que afectan a los salmones.",
+   "por_que_importa": "Muestra una aplicación práctica de la inteligencia artificial y la robótica en la industria alimentaria.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "salud",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/ecologia-y-naturaleza/noruega-tiene-3-500-robots-ia-armados-laser-cazando-piojos-sus-granjas-salmon"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/1f9a37/gemini_generated_image_jc6f96jc6f96jc6f/840_560.jpeg"
   }
  ]
 }
