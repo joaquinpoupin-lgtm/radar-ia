@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-13",
- "actualizado": "2026-11-13T18:29:05-03:00",
+ "actualizado": "2026-11-13T22:39:39-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google presentó e integró en su buscador el nuevo modelo Gemini 4 Hydrogen, diseñado para tareas automatizadas.",
@@ -382,6 +382,191 @@
    ],
    "confirmacion": 1,
    "imagen": "https://opengraph.githubassets.com/b7910a7a10d61aea6d2a5fb7b38cbd7739bc7bbed08304a5e49e0ef40acfba4c/LemonFace0309/charles-skills"
+  },
+  {
+   "id": "4a36f6adfa9f",
+   "fecha": "2026-11-13",
+   "titulo": "OpenAI disuelve su equipo de robótica para usar modelos generales",
+   "que_paso": "OpenAI trasladó a sus investigadores de robótica a otros equipos. La empresa cambió su estrategia sobre cómo desarrollar robots de uso general.",
+   "por_que_importa": "Muestra un cambio en cómo se están construyendo los robots usando modelos generales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "robótica"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2304572308-e1794587995495.jpg?resize=1200,600"
+  },
+  {
+   "id": "a1e895b935bb",
+   "fecha": "2026-11-13",
+   "titulo": "Una inteligencia artificial descifra los escritos de Kurt Gödel",
+   "que_paso": "Una inteligencia artificial analizó más de mil páginas de textos escritos por Kurt Gödel. Los documentos contienen cientos de teoremas ya demostrados.",
+   "por_que_importa": "Permite acceder y entender notas históricas complejas que antes eran muy difíciles de leer.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.guim.co.uk/img/media/6eeccf216579fe2181ae737d30f31abd7590125c/210_58_1759_1407/master/1759.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=334efc63d7472a97d72be0ffd23af8bb"
+  },
+  {
+   "id": "d1318183fe17",
+   "fecha": "2026-11-13",
+   "titulo": "Shield usa OpenAI para ayudar a técnicos en portales antiguos",
+   "que_paso": "Shield utiliza inteligencia artificial de OpenAI para que los técnicos deleguen tareas en portales antiguos. Sus agentes de software navegan por los sistemas para que las personas se enfoquen en problemas complejos.",
+   "por_que_importa": "Permite automatizar tareas rutinarias de soporte técnico en sistemas heredados.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/business/customer-stories/shield"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "15848fd1b754",
+   "fecha": "2026-11-13",
+   "titulo": "Lanzan MiniMax-H3-Image para crear y editar imágenes",
+   "que_paso": "Presentaron MiniMax-H3-Image, un modelo de código abierto enfocado en la generación y edición de imágenes de 16 megapíxeles. Funciona con lenguaje Python.",
+   "por_que_importa": "Ofrece una opción abierta para crear y modificar imágenes de alta resolución.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software cuyo código fuente está disponible públicamente para que cualquiera pueda usarlo, modificarlo o estudiarlo."
+    }
+   ],
+   "etiquetas": [
+    "imagen",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/MiniMax-AI/MiniMax-H3-Image"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/29e056e77374a53710f5ac725a771059342a96f8443cb8b69851d8bc341841e0/MiniMax-AI/MiniMax-H3-Image"
+  },
+  {
+   "id": "d450ad1a277f",
+   "fecha": "2026-11-13",
+   "titulo": "ChatGPT Wallet permite que los agentes de IA realicen compras",
+   "que_paso": "OpenAI lanzó ChatGPT Wallet para sus agentes de IA. Está disponible inicialmente en Estados Unidos para suscriptores Pro mayores de 18 años con tarjetas elegibles.",
+   "por_que_importa": "Permite que los agentes de inteligencia artificial realicen pagos y compras de forma automática.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "agentes",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+    },
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "38741df50e34",
+   "fecha": "2026-11-13",
+   "titulo": "La empresa de agentes LangChain alcanza una valorización de 3 mil millones",
+   "que_paso": "La startup LangChain llegó a una valorización de tres mil millones de dólares. La empresa afirma que cuenta con 7.000 clientes para su herramienta de gestión de agentes llamada LangSmith.",
+   "por_que_importa": "Refleja el crecimiento en el uso de herramientas para crear y administrar agentes de inteligencia artificial.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Raising-money.jpg?resize=1200,829"
+  },
+  {
+   "id": "1bd099ba94a3",
+   "fecha": "2026-11-13",
+   "titulo": "Prueban el agente Duet de Anthropic para usuarios de consumo",
+   "que_paso": "Anthropic lanzó Claude Duet, un agente de inteligencia artificial orientado a consumidores que no escriben código. La herramienta ofrece asistencia en tareas cotidianas.",
+   "por_que_importa": "Acerca el uso de agentes de IA a personas que no saben programar.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04398_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200"
+  },
+  {
+   "id": "ba94cde37d83",
+   "fecha": "2026-11-13",
+   "titulo": "Crean habilidad para Claude con animaciones y gráficos vectoriales",
+   "que_paso": "Desarrollaron una habilidad para Claude y una librería en TypeScript para crear componentes animados en formato SVG. Permite generar figuras que caminan y reaccionan con ciclos de día y noche.",
+   "por_que_importa": "Añade capacidades de animación y diseño gráfico interactivo al asistente.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/JDhruv14/line-art-animation"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/f3526432f5d2131826bf9812b7e1d454d755bf975e129247aa8a41ca0d97ff92/JDhruv14/line-art-animation"
   }
  ]
 }
