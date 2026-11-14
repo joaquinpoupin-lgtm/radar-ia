@@ -1,0 +1,153 @@
+{
+ "fecha": "2026-11-14",
+ "actualizado": "2026-11-14T07:45:19-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI lanzó ChatGPT Wallet en Estados Unidos para que sus agentes de inteligencia artificial puedan realizar compras y pagos de forma automática.",
+   "La policía investiga el robo de un cargamento con equipos de Nvidia valorados en 11,4 millones de dólares en Estados Unidos.",
+   "La plataforma Claude reportó errores elevados en su sitio web, en Claude Code y en su servicio para desarrolladores."
+  ],
+  "ids": [
+   "d450ad1a277f",
+   "4a36f6adfa9f",
+   "03f9e691f932",
+   "625a5cb56141",
+   "60bb07d5d4e4",
+   "2250172890a0",
+   "43a8bca0b077",
+   "44da454e7900",
+   "f980cc1f1e21",
+   "5bf4951adbe9"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "03f9e691f932",
+   "fecha": "2026-11-14",
+   "titulo": "Roban cargamento de hardware de Nvidia valorado en millones",
+   "que_paso": "La policía investiga el robo de un envío con equipos de Nvidia valorados en 11,4 millones de dólares en Estados Unidos. Aún no se conocen los detalles de las circunstancias ni la identidad de los responsables.",
+   "por_que_importa": "Muestra los riesgos de seguridad y logística que enfrentan los componentes físicos necesarios para crear inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "seguridad",
+    "chips"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.freightwaves.com/wp-content/uploads/2026/11/09/NVIDIA-Endeavor-1200x628-1.jpg"
+  },
+  {
+   "id": "625a5cb56141",
+   "fecha": "2026-11-14",
+   "titulo": "AI Manus: sistema de agentes de inteligencia artificial para entornos seguros",
+   "que_paso": "Lanzaron AI Manus, un sistema general de agentes capaz de ejecutar diversas herramientas y operaciones dentro de un entorno aislado y seguro.",
+   "por_que_importa": "Ofrece una opción para probar tareas automatizadas con agentes sin arriesgar los archivos principales de tu computador.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "programa de inteligencia artificial que puede tomar decisiones y realizar tareas de forma autónoma."
+    },
+    {
+     "termino": "sandbox",
+     "explicacion": "entorno aislado y seguro para probar software sin afectar el resto del sistema."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/WinnerBrokerBarrow/ai--manus"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/a50cb413e9e5797e7385dea444a56a09d2669b907a0a46586530593b2abe3ad1/WinnerBrokerBarrow/ai--manus"
+  },
+  {
+   "id": "60bb07d5d4e4",
+   "fecha": "2026-11-14",
+   "titulo": "Nueva skill para Claude convierte planos técnicos en gráficos de conocimiento",
+   "que_paso": "Crearon una función para Claude que transforma archivos de diagramas en formato PDF, ya sean digitales o escaneados, en mapas de flujo y control.",
+   "por_que_importa": "Permite extraer información compleja de documentos técnicos de ingeniería de manera automática.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "conjunto de instrucciones que le enseña a Claude a realizar tareas específicas."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/ScottDuncanAI/PID-to-Knowledge-Graph"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/fe1a3e72b4b0e355fb83d357b4730ef4c7ed4f8b11abe67189b6707e37b396aa/ScottDuncanAI/PID-to-Knowledge-Graph"
+  },
+  {
+   "id": "2250172890a0",
+   "fecha": "2026-11-14",
+   "titulo": "ZONOS3-Mini: un modelo abierto y ligero de voz",
+   "que_paso": "Zyphra presentó ZONOS3-Mini, un modelo de código abierto enfocado en convertir texto en voz de manera natural y clonar voces en teléfonos y computadores.",
+   "por_que_importa": "Permite generar audio realista directamente en dispositivos cotidianos gracias a su tamaño reducido.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "voz",
+    "open source",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/Zyphra/ZONOS3-Mini"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Zyphra/ZONOS3-Mini.png"
+  },
+  {
+   "id": "43a8bca0b077",
+   "fecha": "2026-11-14",
+   "titulo": "Amazon planea crear un registro global de productos de internet",
+   "que_paso": "Amazon desarrolla un proyecto para recopilar datos de todos los productos que se venden en internet, incluso los que no ofrece en su propia plataforma.",
+   "por_que_importa": "Podría cambiar la forma en que los usuarios buscan y comparan productos en línea al centralizar la información.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "amazon",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/acastro_STK103__03.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  }
+ ]
+}
