@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-15",
- "actualizado": "2026-11-15T08:20:54-03:00",
+ "actualizado": "2026-11-15T17:27:54-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google y OpenAI preparan nuevos sistemas de inteligencia artificial enfocados en entregar respuestas basadas en datos numéricos.",
@@ -156,6 +156,194 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "de1b04aef218",
+   "fecha": "2026-11-15",
+   "titulo": "Proponen que todo código creado con ayuda de inteligencia artificial sea libre",
+   "que_paso": "Un autor en internet sugiere que cualquier código generado con ayuda de inteligencia artificial debería ser de código abierto o tener licencia de uso libre. La idea busca cambiar la forma en que se comparten estos desarrollos tecnológicos.",
+   "por_que_importa": "Plantea un debate sobre a quién pertenecen los programas creados con la ayuda de estas herramientas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://jakub.jankiewicz.org/img/en/ai-code-open-source.png"
+  },
+  {
+   "id": "498022c4a5fa",
+   "fecha": "2026-11-15",
+   "titulo": "Lanzan un asistente de inteligencia artificial para trabajar dentro del programa Blender",
+   "que_paso": "Crearon un complemento que integra asistentes de inteligencia artificial directamente en Blender para gestionar proyectos en 3D. Permite chatear visualmente, usar herramientas de escena y coordinar múltiples flujos de trabajo.",
+   "por_que_importa": "Facilita la creación de diseños tridimensionales utilizando comandos en lenguaje natural.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "claude",
+    "gemini",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/hitkeeen/blender-ai-mcp-addon"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/669ae153feaf0ca3d30162c8e9b3d93a77d221c611efd96e678ccba57e29b3ea/hitkeeen/blender-ai-mcp-addon"
+  },
+  {
+   "id": "f4c8a4a992bb",
+   "fecha": "2026-11-15",
+   "titulo": "Crean una herramienta para detectar y corregir diseños de aplicaciones con aspecto de inteligencia artificial",
+   "que_paso": "Desarrollaron una habilidad para agentes que identifica y repara interfaces visuales que se ven hechas automáticamente por inteligencia artificial. Funciona en sitios web y aplicaciones para móviles.",
+   "por_que_importa": "Ayuda a mejorar el diseño de páginas web y aplicaciones para que no tengan un estilo artificial.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "interfaz",
+     "explicacion": "La parte visual de una aplicación o página web con la que interactúan las personas."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/erkamyaman/unslopovich"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/d90a6710594ef62b58f1cf84cdc367740552a4990c1dba0f9a5af4ee5627bd4d/erkamyaman/unslopovich"
+  },
+  {
+   "id": "a9dc79e6aa5b",
+   "fecha": "2026-11-15",
+   "titulo": "Anthropic actualiza Claude Code para ejecutar múltiples tareas en paralelo",
+   "que_paso": "La empresa lanzó una nueva versión de prueba en Claude Code que permite coordinar múltiples trabajadores digitales de forma simultánea. Es una experiencia renovada para los proyectos dentro de la plataforma.",
+   "por_que_importa": "Permite realizar varias tareas complejas al mismo tiempo dentro del sistema de programación.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://claude.com/resources/articles/projects-redesigned"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/projects-redesigned/opengraph-image/og"
+  },
+  {
+   "id": "024802442c5a",
+   "fecha": "2026-11-15",
+   "titulo": "El Congreso de Estados Unidos busca endurecer las reglas para exportar chips de inteligencia artificial",
+   "que_paso": "Tras un escándalo de espionaje que involucró al exdirector ejecutivo de Nvidia, el Congreso evalúa nuevas restricciones para la salida de componentes tecnológicos. Legisladores de distintos partidos apoyan medidas y exigen la declaración de los líderes de la empresa.",
+   "por_que_importa": "Podría afectar la disponibilidad global y el comercio de los chips necesarios para hacer funcionar los sistemas avanzados.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Pequeñas piezas de silicio que procesan los datos necesarios para que funcionen los sistemas tecnológicos."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25545717/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "6fdb9cf64c8f",
+   "fecha": "2026-11-15",
+   "titulo": "Analizan las repercusiones de la salida de Jensen Huang de Nvidia",
+   "que_paso": "Medios especializados repasan los momentos complejos vividos tras la renuncia de Jensen Huang a la dirección de Nvidia. La situación generó una crisis de liderazgo en la compañía.",
+   "por_que_importa": "Muestra los cambios en la cúpula de una de las empresas más influyentes en el desarrollo tecnológico actual.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301620664.jpg?quality=90&strip=all&crop=0%2C14.751764993408%2C100%2C70.496470013184&w=1200"
+  },
+  {
+   "id": "ad639fbc6552",
+   "fecha": "2026-11-15",
+   "titulo": "La salida de Jensen Huang de Nvidia genera incertidumbre en la financiación de startups de inteligencia artificial",
+   "que_paso": "Inversionistas y fundadores señalan que la partida del directivo dejará un vacío en el apoyo económico a nuevos proyectos tecnológicos. Nvidia solía invertir grandes sumas en empresas emergentes del sector.",
+   "por_que_importa": "Podría traducirse en menor disponibilidad de recursos y valoraciones más bajas para las nuevas empresas del rubro.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "startups",
+     "explicacion": "Empresas nuevas o emprendimientos que buscan crecer rápidamente en el mercado tecnológico."
+    }
+   ],
+   "etiquetas": [
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang-nvidia.jpg?w=1024"
+  },
+  {
+   "id": "4e2810e47ea3",
+   "fecha": "2026-11-15",
+   "titulo": "Demócratas inician una investigación en el Congreso contra Nvidia",
+   "que_paso": "Legisladores lanzaron una indagatoria sobre las ventas de la empresa en China y sus tratos políticos. Es la segunda investigación oficial abierta en el Congreso tras conocerse un presunto caso de espionaje.",
+   "por_que_importa": "Incrementa la presión política sobre las operaciones internacionales de los principales fabricantes de hardware.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205211212-1.jpg?resize=1200,800"
   }
  ]
 }
