@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-14",
- "actualizado": "2026-11-14T17:00:01-03:00",
+ "actualizado": "2026-11-14T22:10:06-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI lanzó ChatGPT Wallet en Estados Unidos para que sus agentes de inteligencia artificial puedan realizar compras y pagos de forma automática.",
@@ -299,6 +299,223 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.blogs.es/1f9a37/gemini_generated_image_jc6f96jc6f96jc6f/840_560.jpeg"
+  },
+  {
+   "id": "85985435b8f3",
+   "fecha": "2026-11-14",
+   "titulo": "Reporte cuestiona las prácticas financieras de Nvidia con sus clientes",
+   "que_paso": "Un artículo del Wall Street Journal detalla cómo Nvidia financió a sus propios clientes para impulsar las ventas. La estrategia buscaba mantener los precios de los procesadores altos.",
+   "por_que_importa": "Muestra cómo operan internamente las empresas que dominan el mercado de hardware para IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "procesadores",
+     "explicacion": "Chips especializados que se usan para entrenar y hacer funcionar sistemas de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.techspot.com/images2/news/bigimage/2025/01/2025-01-08-image-3.jpg"
+  },
+  {
+   "id": "7039aca8dbba",
+   "fecha": "2026-11-14",
+   "titulo": "Directivo de Nvidia vendió acciones antes de la salida del CEO",
+   "que_paso": "Un director de Nvidia vendió una gran cantidad de acciones semanas antes de que Jensen Huang renunciara como director ejecutivo. Su salida ocurrió tras revelarse relaciones personales con ejecutivas de la empresa.",
+   "por_que_importa": "Afecta a una de las empresas clave en el desarrollo de la infraestructura de IA a nivel global.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://s.yimg.com/lo/mysterio/api/ea33872456927e6c60fd6ae873cc248800ea9558f19ac095dc5ea2367757e23b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmoneywise_327%2F03f97ac29476948d659ef4eba662dfa9.jpg"
+  },
+  {
+   "id": "8ae9cd1fda72",
+   "fecha": "2026-11-14",
+   "titulo": "AI Manus: sistema de agentes autónomos en entorno seguro",
+   "que_paso": "Un nuevo proyecto en GitHub llamado AI Manus funciona como un sistema de agentes de inteligencia artificial de uso general. Permite ejecutar diversas herramientas y operaciones dentro de un entorno aislado.",
+   "por_que_importa": "Ofrece una opción para ejecutar tareas automatizadas con mayor control y seguridad.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Sistemas de IA capaces de tomar decisiones y realizar tareas de forma autónoma para cumplir un objetivo."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/Topkiflare74/ai--manus2.0"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/a897e1afa7a0f09073220be08dd988cc581b9011337065b459473dda6146bbd0/Topkiflare74/ai--manus2.0"
+  },
+  {
+   "id": "cdf34d438f12",
+   "fecha": "2026-11-14",
+   "titulo": "Cuestionan la seguridad interna de Nvidia tras la salida de su CEO",
+   "que_paso": "Tras la renuncia de Jensen Huang y la salida previa del jefe de seguridad, expertos señalan fallas en la protección de información sensible. La situación involucra vínculos con una empresa sospechosa de enviar chips a China.",
+   "por_que_importa": "Refleja los riesgos de seguridad y filtración de datos en las grandes compañías del sector.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Circuitos integrados indispensables para procesar los cálculos complejos de la inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang-1.jpg?w=1024"
+  },
+  {
+   "id": "f9a3c449e598",
+   "fecha": "2026-11-14",
+   "titulo": "Actualización de datasette-llm permite usar modelos locales",
+   "que_paso": "Llegó una nueva versión del complemento datasette-llm con soporte para conexiones compatibles con OpenAI. Ahora permite configurar la herramienta para utilizar modelos de inteligencia artificial ejecutados de forma local.",
+   "por_que_importa": "Facilita la integración de modelos propios o locales en flujos de trabajo con datos.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos locales",
+     "explicacion": "Sistemas de inteligencia artificial que se ejecutan directamente en tu propio computador en lugar de en la nube."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "9a736294c460",
+   "fecha": "2026-11-14",
+   "titulo": "Petición en línea pide el regreso de Jensen Huang a Nvidia",
+   "que_paso": "Una petición firmada por Elon Musk y otros ejecutivos de tecnología reunió más de 115.000 firmas. Los firmantes solicitan que Jensen Huang sea reinstalado como director ejecutivo de Nvidia.",
+   "por_que_importa": "Muestra el respaldo de figuras de la industria hacia los líderes de la infraestructura tecnológica actual.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2216028442.jpg?w=1024"
+  },
+  {
+   "id": "5acb9d3d7e18",
+   "fecha": "2026-11-14",
+   "titulo": "Actualizan plugin datasette-vega para generar gráficos",
+   "que_paso": "Se lanzó una nueva versión de datasette-vega, una herramienta para crear gráficos interactivos a partir de tablas de datos. La actualización incluye compatibilidad con las versiones más recientes de Datasette.",
+   "por_que_importa": "Ayuda a visualizar información de manera más sencilla al trabajar con datos y consultas.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/14/datasette-vega/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "3767d050def3",
+   "fecha": "2026-11-14",
+   "titulo": "Video de Matt Wolfe sobre novedades en inteligencia artificial",
+   "que_paso": "El creador de contenido Matt Wolfe publicó un video titulado 'Things Will Never Be The Same' en su canal de YouTube. En él repasa las noticias y cambios recientes en el ámbito de la inteligencia artificial.",
+   "por_que_importa": "Permite ponerse al día con un resumen visual de las últimas tendencias del sector.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/watch?v=G_Jrexy_5Bg"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/G_Jrexy_5Bg/hqdefault.jpg"
+  },
+  {
+   "id": "5a18ed87ac9c",
+   "fecha": "2026-11-14",
+   "titulo": "Video de Wes Roth sobre avances recientes en IA",
+   "que_paso": "El canal de YouTube de Wes Roth estrenó un video enfocado en la actualidad tecnológica reciente. El contenido aborda novedades sobre sistemas avanzados y herramientas automatizadas.",
+   "por_que_importa": "Entrega una perspectiva en video sobre el ritmo de desarrollo de las nuevas tecnologías.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Wes Roth",
+     "url": "https://www.youtube.com/watch?v=Sc6TriRAGnI"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/Sc6TriRAGnI/hqdefault.jpg"
   }
  ]
 }
