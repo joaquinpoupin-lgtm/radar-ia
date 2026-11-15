@@ -1,0 +1,161 @@
+{
+ "fecha": "2026-11-15",
+ "actualizado": "2026-11-15T08:20:54-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google y OpenAI preparan nuevos sistemas de inteligencia artificial enfocados en entregar respuestas basadas en datos numéricos.",
+   "Una filtración señala que Nvidia evalúa fabricar sus propios componentes avanzados para reducir su dependencia de Samsung.",
+   "Un informe reporta el ingreso ilegal de una gran cantidad de chips especializados en inteligencia artificial hacia territorio chino."
+  ],
+  "ids": [
+   "852c131ce304",
+   "5edf1aa239c2",
+   "6639bea844cf",
+   "220697e6ee7b",
+   "90199e72cc10",
+   "0bfd9e382d69",
+   "c0997196dc7d",
+   "6518fbd35a14",
+   "b08cefd9996d",
+   "2a2bfff1121f"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "852c131ce304",
+   "fecha": "2026-11-15",
+   "titulo": "GitHub Copilot lanza aplicación de escritorio para gestionar tareas de software",
+   "que_paso": "GitHub presentó una aplicación de escritorio centrada en agentes de IA. Permite buscar, ejecutar, dirigir y finalizar trabajo de desarrollo en tus repositorios.",
+   "por_que_importa": "Facilita la gestión de proyectos de software mediante inteligencia artificial desde el escritorio.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "github",
+    "programación",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/trackboatwrightplan/GitHub-Copilot-app"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/c80eed085cd10eb0e3afaee06feb4cdc2adc3b622994e298ca3cf156ee124bf2/trackboatwrightplan/GitHub-Copilot-app"
+  },
+  {
+   "id": "5edf1aa239c2",
+   "fecha": "2026-11-15",
+   "titulo": "Nvidia evalúa fabricar su propia memoria avanzada para reducir dependencia de Samsung",
+   "que_paso": "La escasez de memoria por el auge de la IA ha disparado los precios. Según una filtración, Nvidia se plantea fabricar sus propios componentes avanzados.",
+   "por_que_importa": "Podría cambiar la cadena de suministro de componentes para hardware de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "rumor",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/componentes/produccion-memoria-siendo-drama-nvidia-planea-dar-salto-para-no-depender-samsung-se-habria-pedido-a-tsmc"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/b2b935/original/840_560.jpeg"
+  },
+  {
+   "id": "6639bea844cf",
+   "fecha": "2026-11-15",
+   "titulo": "Google y OpenAI preparan modelos de IA enfocados en respuestas numéricas",
+   "que_paso": "Las grandes empresas de tecnología desarrollan sistemas que dejan de lado la conversación extensa. Estas nuevas IAs se centran en entregar respuestas basadas en datos numéricos.",
+   "por_que_importa": "Apunta a un cambio en cómo las empresas usarán la inteligencia artificial para obtener resultados precisos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "openai",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/ia-rentable-2027-no-va-a-explicarnos-nada-solo-nos-dara-respuestas-como-0-82-0-16"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/387def/decisiones/840_560.jpeg"
+  },
+  {
+   "id": "220697e6ee7b",
+   "fecha": "2026-11-15",
+   "titulo": "Detectan el flujo ilegal de millones de aceleradores de IA hacia China",
+   "que_paso": "Una firma analista reporta el rastreo de una gran cantidad de aceleradores de IA prohibidos que habrían ingresado a territorio chino.",
+   "por_que_importa": "Muestra los desafíos en el control comercial de los chips especializados en inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.mos.cms.futurecdn.net/HVkaHhmB8KxE77YzmL6FR9-2560-80.jpg"
+  },
+  {
+   "id": "90199e72cc10",
+   "fecha": "2026-11-15",
+   "titulo": "EUROPA: el modelo de código abierto europeo apunta al billón de parámetros",
+   "que_paso": "La Comisión Europea impulsa EUROPA, un modelo abierto que cuenta con más de 950 mil millones de parámetros y ha sido probado en el sistema JUPITER.",
+   "por_que_importa": "Representa el desarrollo de infraestructura de inteligencia artificial a gran escala en Europa.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://maccus.fr/en/eu-open-ai-model-europa/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://maccus.fr/wp-content/uploads/2026/11/europa-throughput-en.jpg"
+  },
+  {
+   "id": "0bfd9e382d69",
+   "fecha": "2026-11-15",
+   "titulo": "Usuario de Reddit logra crear un pequeño modelo de lenguaje que funciona en DOS",
+   "que_paso": "Un usuario utilizó herramientas de IA para generar un modelo propio de 367 mil parámetros. El programa y sus pesos ocupan poco más de 400 KB y corren en un computador antiguo.",
+   "por_que_importa": "Demuestra que es posible ejecutar modelos de lenguaje muy básicos en sistemas operativos y equipos antiguos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Reddit",
+     "url": "https://www.reddit.com/r/ClaudeAI/comments/1xwpenj/claude_wrote_and_trained_a_language_model_for_dos/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
