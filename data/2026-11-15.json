@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-15",
- "actualizado": "2026-11-15T17:27:54-03:00",
+ "actualizado": "2026-11-15T22:16:27-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google y OpenAI preparan nuevos sistemas de inteligencia artificial enfocados en entregar respuestas basadas en datos numéricos.",
@@ -344,6 +344,196 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2205211212-1.jpg?resize=1200,800"
+  },
+  {
+   "id": "a0f134886e82",
+   "fecha": "2026-11-15",
+   "titulo": "Discusiones sobre el rol de Jensen Huang en Nvidia",
+   "que_paso": "Usuarios en Hacker News discuten sobre el rol de Jensen Huang en Nvidia junto a aliados. La noticia no detalla mayores cambios operativos.",
+   "por_que_importa": "Permite conocer las conversaciones en la comunidad sobre los liderazgos en empresas clave de la industria de IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1"
+    },
+    {
+     "nombre": "Reddit",
+     "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?syn-25a6b1a6=1"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": null
+  },
+  {
+   "id": "4b0fc5b701ff",
+   "fecha": "2026-11-15",
+   "titulo": "OpenAI lanza un blog enfocado en ciencia",
+   "que_paso": "OpenAI estrenó un espacio para compartir hallazgos, métodos y experiencias de investigadores. El sitio muestra cómo usan la tecnología para acelerar descubrimientos científicos.",
+   "por_que_importa": "Muestra ejemplos prácticos de cómo la investigación científica se apoya en estas herramientas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/our-new-blog-for-science"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "b052cbb42810",
+   "fecha": "2026-11-15",
+   "titulo": "Asistente de IA para Blender con control por texto",
+   "que_paso": "Crearon una herramienta para Blender que convierte instrucciones en texto en operaciones para escenas en 3D. Incluye un espacio de chat visual y soporte para múltiples modelos.",
+   "por_que_importa": "Facilita la edición en 3D permitiendo dar órdenes en lenguaje cotidiano en lugar de hacer los cambios manualmente.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "MCP",
+     "explicacion": "Protocolo técnico que permite que distintas aplicaciones de software se conecten y compartan información con la IA."
+    }
+   ],
+   "etiquetas": [
+    "blender",
+    "3d",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/81790dc2e6f74ba4a1e5d2530e043961096b93293d703b7789e1a911690e9975/racdeufindurch198812/Blender-AI-MCP-Studio"
+  },
+  {
+   "id": "16b4b3a7aa40",
+   "fecha": "2026-11-15",
+   "titulo": "Actualización del complemento datasette-agent",
+   "que_paso": "Simon Willison lanzó una nueva versión de su complemento para hacer preguntas sobre bases de datos. Ahora incluye un acceso directo en la página principal y soporte para menciones con símbolos.",
+   "por_que_importa": "Simplifica la consulta de datos propios usando lenguaje natural directamente en la interfaz.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "46b48e728e81",
+   "fecha": "2026-11-15",
+   "titulo": "Evento de IA reúne a la industria en Corea del Sur",
+   "que_paso": "Se realizó un evento en Seúl con más de 2.000 asistentes entre líderes de empresas y desarrolladores. El encuentro se centró en avances sobre robótica y agentes de IA.",
+   "por_que_importa": "Refleja el desarrollo y la adopción de tecnologías de automatización y robótica en distintos mercados.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/11/ai-day-seoul-wrapup-1920x1080-1.jpg"
+  },
+  {
+   "id": "4b4d48f19f03",
+   "fecha": "2026-11-15",
+   "titulo": "Nuevo complemento geoespacial para Datasette",
+   "que_paso": "Desarrollaron un complemento que combina mapas vectoriales libres con una herramienta para visualizar datos geográficos. Fue creado usando un único aviso dirigido a un modelo de IA.",
+   "por_que_importa": "Muestra cómo crear complementos de software rápidamente mediante instrucciones precisas a un asistente.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "mapas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "fc91828979fb",
+   "fecha": "2026-11-15",
+   "titulo": "Startup india Bharat Semi recauda fondos para sensores",
+   "que_paso": "La startup Bharat Semi consiguió 24 millones de dólares en su ronda de financiamiento inicial. Busca expandir su tecnología de sensores con capacidad de IA en el mercado global.",
+   "por_que_importa": "Aporta datos concretos sobre inversión de capital en el desarrollo de hardware especializado.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chips",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/bharat-semi-co-founders-vinayak-dalmia-vrinda-kapoor.jpg?resize=1200,800"
+  },
+  {
+   "id": "3bc6cdb34c17",
+   "fecha": "2026-11-15",
+   "titulo": "Nueva versión de Datasette con soporte de transmisión",
+   "que_paso": "Lanzaron una actualización orientada a mejorar la exportación de datos en formatos tabulares y optimizar el rendimiento. La versión incorporó correcciones de seguridad.",
+   "por_que_importa": "Mejora el manejo y la exportación masiva de datos en proyectos propios.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/15/datasette/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
