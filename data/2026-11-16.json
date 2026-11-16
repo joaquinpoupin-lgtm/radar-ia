@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-16",
- "actualizado": "2026-11-16T08:52:29-03:00",
+ "actualizado": "2026-11-16T20:47:30-03:00",
  "brief": {
   "lo_mas_importante": [
    "El Congreso de Estados Unidos evalúa nuevas restricciones para exportar chips tras un escándalo de espionaje que involucró al exdirector ejecutivo de Nvidia.",
@@ -204,6 +204,214 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.ytimg.com/vi/pjYntsza2FA/hqdefault.jpg"
+  },
+  {
+   "id": "e3915f7e4cf0",
+   "fecha": "2026-11-16",
+   "titulo": "The King's Trust y OpenAI lanzan alianza educativa en Reino Unido",
+   "que_paso": "The King's Trust y OpenAI unieron fuerzas en una alianza de un millón de libras. Buscan que hasta 25.000 jóvenes en el Reino Unido desarrollen habilidades prácticas de inteligencia artificial para el trabajo.",
+   "por_que_importa": "Muestra cómo las grandes empresas de IA impulsan programas educativos locales para acercar estas tecnologías a los jóvenes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/the-kings-trust-and-openai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "853b24ff0d6e",
+   "fecha": "2026-11-16",
+   "titulo": "Hugging Face y OpenRouter facilitan ejecutar modelos abiertos",
+   "que_paso": "Hugging Face y OpenRouter se asociaron para simplificar el uso y la ejecución de modelos de inteligencia artificial de peso abierto. La colaboración busca hacer más accesible el desarrollo mediante código abierto.",
+   "por_que_importa": "Facilita probar y utilizar modelos abiertos sin la necesidad de configuraciones técnicas complejas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "peso abierto",
+     "explicacion": "Modelos de inteligencia artificial cuyos archivos internos están disponibles públicamente para que cualquiera pueda usarlos o modificarlos."
+    }
+   ],
+   "etiquetas": [
+    "hugging face",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/openrouter"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://huggingface.co/blog/assets/openrouter/thumbnail.jpg"
+  },
+  {
+   "id": "f26f2a4dfd6b",
+   "fecha": "2026-11-16",
+   "titulo": "OpenAI amplía acceso gratuito a investigadores académicos",
+   "que_paso": "OpenAI expandió su programa para investigadores con el fin de ofrecer acceso gratuito a sus modelos más avanzados. Doscientos mil investigadores en todo el mundo podrán utilizar estas herramientas en sus trabajos.",
+   "por_que_importa": "Permite que más científicos utilicen tecnología avanzada sin costo para sus investigaciones.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "c5bef0f0bbad",
+   "fecha": "2026-11-16",
+   "titulo": "Competencia de Nvidia busca aprovechar tensiones en la industria",
+   "que_paso": "Un artículo de Wired señala que los competidores de Nvidia están alcanzando su tecnología. Intentan sacar provecho de los recientes problemas y el caos interno de la compañía.",
+   "por_que_importa": "Muestra el panorama de la competencia en el mercado de chips y hardware para inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chips"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://media.wired.com/photos/6af5e8bf5864e5f624e083f1/191:100/w_1280,c_limit/111226-Nvidia%20In%20Trouble.jpg"
+  },
+  {
+   "id": "0bc322583e6f",
+   "fecha": "2026-11-16",
+   "titulo": "Google Maps añade funciones conversacionales para viajes",
+   "que_paso": "Google incorporó nuevas funciones de conversación en su aplicación de mapas para ayudar a planificar viajes y rutas. Los usuarios pueden buscar citas locales y revisar listas guardadas usando lenguaje natural.",
+   "por_que_importa": "Facilita la planificación de recorridos y la búsqueda de lugares mediante interacciones más conversacionales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.width-1300.png"
+  },
+  {
+   "id": "148d861f9b5b",
+   "fecha": "2026-11-16",
+   "titulo": "Haru: un modelo de voz multilingüe de baja latencia",
+   "que_paso": "Lanzaron Haru, un modelo de diálogo hablado que opera en múltiples idiomas y cuenta con baja latencia. El proyecto en código abierto ya suma cientos de estrellas en GitHub.",
+   "por_que_importa": "Ofrece una opción nueva para crear asistentes de voz fluidos y rápidos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "baja latencia",
+     "explicacion": "Tiempo de respuesta muy corto, lo que permite que la conversación sea fluida y sin retrasos."
+    }
+   ],
+   "etiquetas": [
+    "voz",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/higurashi-ai/Haru"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/edfebd2e66632aa763c7eb193b21024a21dff791ad9599f231feced9dc29100d/higurashi-ai/Haru"
+  },
+  {
+   "id": "773cc78ee17a",
+   "fecha": "2026-11-16",
+   "titulo": "California demanda a OpenAI por incidente con agente autónomo",
+   "que_paso": "La fiscalía general del estado de California presentó una demanda contra OpenAI. Es uno de los primeros intentos legales para responsabilizar a un laboratorio de inteligencia artificial por un incidente relacionado con un agente autónomo.",
+   "por_que_importa": "Marca un precedente en la fiscalización legal y la responsabilidad de las empresas ante fallos de sus sistemas autónomos.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad",
+    "leyes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/1920px-Rob_Bonta_at_Central_Bay_Operations_and_Maintenance_Facility_opening_December_2018.jpeg?resize=1200,981"
+  },
+  {
+   "id": "030a040e02b2",
+   "fecha": "2026-11-16",
+   "titulo": "FBI advierte sobre herramienta de hackeo basada en código abierto",
+   "que_paso": "El FBI alertó sobre el uso de Artex AI, una herramienta de código abierto empleada para vulnerar redes informáticas en menos de tres horas. Ciberataques recientes afectaron a una empresa de tecnología de Estados Unidos y al sector financiero de Corea del Sur.",
+   "por_que_importa": "Destaca los riesgos de seguridad asociados al uso malicioso de herramientas de código abierto.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/02/china-hacker-computer-flag.jpg?resize=1200,675"
+  },
+  {
+   "id": "8c824024c914",
+   "fecha": "2026-11-16",
+   "titulo": "OpenAI implementa clasificador de imágenes y bloqueos temporales",
+   "que_paso": "OpenAI lanzó un nuevo clasificador de imágenes y estableció restricciones en ChatGPT. Las cuentas que intenten acceder a contenido de abuso infantil recibirán un bloqueo temporal de 24 horas como advertencia.",
+   "por_que_importa": "Muestra las medidas de seguridad y moderación que implementan las plataformas para prevenir abusos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/OpenAI-chatgpt-CSAM.jpeg?resize=1200,675"
   }
  ]
 }
