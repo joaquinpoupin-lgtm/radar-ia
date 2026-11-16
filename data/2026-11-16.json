@@ -1,0 +1,209 @@
+{
+ "fecha": "2026-11-16",
+ "actualizado": "2026-11-16T08:52:29-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "El Congreso de Estados Unidos evalúa nuevas restricciones para exportar chips tras un escándalo de espionaje que involucró al exdirector ejecutivo de Nvidia.",
+   "Jensen Huang renunció como director ejecutivo de Nvidia después de más de tres décadas al frente de la empresa de hardware.",
+   "LVMH y OpenAI anunciaron una colaboración para que la inteligencia artificial ayude a crear contenido y facilite el acceso a artículos a través de ChatGPT."
+  ],
+  "ids": [
+   "024802442c5a",
+   "70fcd4b516bd",
+   "09862cd7036c",
+   "a0f134886e82",
+   "91e58e2ea930",
+   "db266b9ed87d",
+   "3b862515bade",
+   "e291521cebff",
+   "de1b04aef218",
+   "498022c4a5fa"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "91e58e2ea930",
+   "fecha": "2026-11-16",
+   "titulo": "LVMH se asocia con OpenAI para usar IA en sus publicaciones",
+   "que_paso": "La división de medios de LVMH y OpenAI anunciaron una colaboración. La IA de OpenAI ayudará a crear contenido y a hacer más accesibles los artículos a través de ChatGPT.",
+   "por_que_importa": "Los lectores podrán obtener información de los medios de LVMH de forma más rápida y con asistencia de IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "ChatGPT",
+     "explicacion": "Asistente de conversación basado en IA de OpenAI."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "lvmh",
+    "medios"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/lvmh-media-division-partnership"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "70fcd4b516bd",
+   "fecha": "2026-11-16",
+   "titulo": "Jensen Huang renuncia tras 33 años al frente de Nvidia",
+   "que_paso": "El fundador y CEO de Nvidia, Jensen Huang, presentó su renuncia después de más de tres décadas. La junta directiva ahora buscará un nuevo líder para la empresa.",
+   "por_que_importa": "El futuro de Nvidia, clave en hardware de IA, es incierto y podría afectar el ecosistema de desarrolladores.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Nvidia",
+     "explicacion": "Empresa que fabrica tarjetas gráficas y chips usados en IA."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "empresa",
+    "liderazgo"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/"
+    },
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://steveblank.com/wp-content/uploads/2026/11/nvidia-reinventions-1024x677.jpg"
+  },
+  {
+   "id": "db266b9ed87d",
+   "fecha": "2026-11-16",
+   "titulo": "Blender AI Copilot Lab: herramienta de IA para crear escenas 3D",
+   "que_paso": "Un proyecto de GitHub ofrece un laboratorio de IA integrado en Blender. Usa agentes que gestionan, ejecutan y revisan tareas de modelado paso a paso.",
+   "por_que_importa": "Los usuarios de Blender pueden probar flujos de trabajo automatizados sin programar scripts complejos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Blender",
+     "explicacion": "Software libre para crear y animar objetos 3D."
+    },
+    {
+     "termino": "agentes",
+     "explicacion": "Programas que actúan de forma autónoma para realizar tareas específicas."
+    }
+   ],
+   "etiquetas": [
+    "blender",
+    "ia",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/precygtrucqui1981/blender-ai-copilot-lab"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/6b4a806d9c9e19bee7e1b563f7fbe242282ca86492a7c291af1e2c6bb3b08817/precygtrucqui1981/blender-ai-copilot-lab"
+  },
+  {
+   "id": "09862cd7036c",
+   "fecha": "2026-11-16",
+   "titulo": "Apple lanza app para estudiar uso de IA en salud",
+   "que_paso": "Apple presentó una aplicación que recopila datos sobre cómo la gente interactúa con herramientas de IA médica. El objetivo es medir la utilidad de las respuestas generadas.",
+   "por_que_importa": "Los resultados ayudarán a mejorar la precisión y confianza de los asistentes de salud basados en IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "IA",
+     "explicacion": "Inteligencia artificial, sistemas que imitan la cognición humana."
+    }
+   ],
+   "etiquetas": [
+    "apple",
+    "salud",
+    "estudio"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
+    },
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Apple-Health-AI-Usage-Study.jpg?resize=1200,800"
+  },
+  {
+   "id": "3b862515bade",
+   "fecha": "2026-11-16",
+   "titulo": "Oferta de empleo con IA alcanza mínimos de 12 años",
+   "que_paso": "En Hacker News se observa que los anuncios de trabajo están en su nivel más bajo en más de una década, mientras la IA aparece en más de la mitad de ellos. El informe muestra qué tecnologías son más demandadas en noviembre 2026.",
+   "por_que_importa": "Indica que la IA ya es parte estándar de muchas vacantes, cambiando la forma de buscar empleo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "IA",
+     "explicacion": "Inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "empleo",
+    "ia",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.hntrends.com/2026/november.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.hntrends.com/images/202611-ask-hn-who-is-hiring-tot.png?v=2"
+  },
+  {
+   "id": "e291521cebff",
+   "fecha": "2026-11-16",
+   "titulo": "Claude lanza nuevo modelo Mythos 5.2 con programa de verificación",
+   "que_paso": "Anthropic anunció un programa de verificación que permite acceder a Mythos 5.2, su último modelo de Claude. El cambio también incluye mejoras visuales, como la creación de un videoclip musical.",
+   "por_que_importa": "Los usuarios de Claude podrán probar capacidades avanzadas del modelo una vez aprobado el programa.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude",
+     "explicacion": "Modelo de lenguaje grande desarrollado por Anthropic."
+    },
+    {
+     "termino": "Mythos 5.2",
+     "explicacion": "Versión reciente del modelo Claude con mejoras de rendimiento."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "modelo",
+    "actualizacion"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Wes Roth",
+     "url": "https://www.youtube.com/watch?v=pjYntsza2FA"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/pjYntsza2FA/hqdefault.jpg"
+  }
+ ]
+}
