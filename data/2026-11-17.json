@@ -1,0 +1,235 @@
+{
+ "fecha": "2026-11-17",
+ "actualizado": "2026-11-17T09:14:50-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "La fiscalía general de California demandó a OpenAI por un incidente con un agente autónomo, marcando un precedente legal.",
+   "El FBI alertó sobre Artex AI, una herramienta de código abierto usada para vulnerar redes en menos de tres horas.",
+   "OpenAI inició evaluaciones con organizaciones externas para revisar de forma independiente la seguridad de sus modelos."
+  ],
+  "ids": [
+   "773cc78ee17a",
+   "030a040e02b2",
+   "ebd9eb949639",
+   "590cb0b9c5dd",
+   "b1c71d07875a",
+   "a70cae4c16f0",
+   "319bd0f08238",
+   "8192f1094925",
+   "6cab091c059a",
+   "7064e35195fc"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "ebd9eb949639",
+   "fecha": "2026-11-17",
+   "titulo": "OpenAI comienza evaluaciones independientes de sus modelos con organizaciones externas",
+   "que_paso": "OpenAI inició evaluaciones independientes con organizaciones externas para revisar la seguridad y el funcionamiento de sus modelos. El objetivo es analizar de forma independiente las medidas de protección y los sistemas de monitoreo.",
+   "por_que_importa": "Muestra cómo la empresa busca externos para verificar la seguridad de su tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/our-first-phase-of-embedded-assessments"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": null
+  },
+  {
+   "id": "590cb0b9c5dd",
+   "fecha": "2026-11-17",
+   "titulo": "OpenAI colabora con la OTAN en ciberdefensa",
+   "que_paso": "OpenAI está trabajando con agencias de ciberdefensa de la OTAN y aliados. La colaboración busca ayudar a encontrar vulnerabilidades y proteger sistemas esenciales.",
+   "por_que_importa": "Indica el uso de herramientas de IA en la defensa informática de organismos internacionales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "b1c71d07875a",
+   "fecha": "2026-11-17",
+   "titulo": "Nuevas herramientas de OpenAI contra el abuso infantil en línea",
+   "que_paso": "OpenAI lanzó herramientas, guías y nuevas asociaciones para prevenir y detectar el abuso y la explotación infantil en internet. Estas medidas buscan mejorar la respuesta ante este tipo de contenido.",
+   "por_que_importa": "Añade recursos específicos de moderación y detección en las plataformas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/strengthening-online-child-safety"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "a70cae4c16f0",
+   "fecha": "2026-11-17",
+   "titulo": "Skill para optimizar la velocidad de modelos locales de lenguaje",
+   "que_paso": "Crearon una skill orientada a mejorar la velocidad de ejecución de modelos locales de lenguaje en distintos tipos de hardware. Permite trabajar aspectos técnicos de rendimiento mediante Python.",
+   "por_que_importa": "Sirve para quienes ejecutan modelos en sus propios equipos y buscan mayor rapidez.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a Claude a realizar una tarea específica."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/sybil-solutions/inference-optimisation-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/675ccb7b69ee3d96ac5e80a8f753469680ff0b57971309866af24426378a9904/sybil-solutions/inference-optimisation-skill"
+  },
+  {
+   "id": "319bd0f08238",
+   "fecha": "2026-11-17",
+   "titulo": "Google analiza combinar modelos de IA según la dificultad de la tarea",
+   "que_paso": "Google explora el uso de diferentes modelos de IA para abaratar costos en programación. La idea es que un modelo complejo piense la solución y uno más sencillo y rápido ejecute el trabajo básico.",
+   "por_que_importa": "Ayuda a entender cómo se optimiza el uso de modelos para gastar menos recursos al programar.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/google-tiene-idea-programar-ia-gaste-que-modelo-caro-solo-piense-barato-haga-trabajo"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/c3f091/orchestrator-modelos-ia-portada/840_560.jpeg"
+  },
+  {
+   "id": "8192f1094925",
+   "fecha": "2026-11-17",
+   "titulo": "NVIDIA actualiza librerías para acelerar la investigación científica",
+   "que_paso": "NVIDIA amplió sus librerías CUDA-X para ayudar a los investigadores a procesar grandes volúmenes de datos. Las mejoras permiten simular sistemas complejos en áreas como astrofísica y biología.",
+   "por_que_importa": "Facilita a los científicos el análisis de datos masivos mediante agentes.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "salud"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/11/hpc-for-dev-tech-blog-cuda-x-sc26-1920x1080-5818376.jpg"
+  },
+  {
+   "id": "6cab091c059a",
+   "fecha": "2026-11-17",
+   "titulo": "NVIDIA anuncia nuevo procesador gráfico para simulaciones científicas",
+   "que_paso": "NVIDIA presentó un nuevo procesador gráfico dentro de su plataforma Vera Rubin diseñado para simulaciones. Busca acelerar el procesamiento de datos en ingeniería, ciencia y análisis.",
+   "por_que_importa": "Mejora el soporte de hardware para simulaciones complejas usadas por ingenieros y científicos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "GPU",
+     "explicacion": "Procesador especializado en cálculos pesados, fundamental para entrenar y ejecutar modelos de IA."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips"
+   ],
+   "fuentes": [
+    {
+     "nombre": "NVIDIA",
+     "url": "https://blogs.nvidia.com/blog/rubin-hpc/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://blogs.nvidia.com/wp-content/uploads/2026/11/hpc-blog-rubin-hpc-gpu-1920x1080-5957124-1.jpg"
+  },
+  {
+   "id": "7064e35195fc",
+   "fecha": "2026-11-17",
+   "titulo": "Tiny-voca, un modelo pequeño y rápido de texto a voz",
+   "que_paso": "Lanzaron un modelo liviano de conversión de texto a voz en inglés con dos voces disponibles. Funciona a partir de pocos parámetros y puede ejecutarse de forma rápida en procesadores comunes.",
+   "por_que_importa": "Ofrece una opción ligera para generar voz sintética sin requerir equipos potentes.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "voz",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/n4ze3m/tiny-voca"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/n4ze3m/tiny-voca.png"
+  },
+  {
+   "id": "ae3ee0f483ed",
+   "fecha": "2026-11-17",
+   "titulo": "Reflexión sobre reutilizar código en lugar de sumar dependencias",
+   "que_paso": "Simon Willison comparte un proverbio sobre programación que prioriza copiar una pequeña cantidad de código antes de agregar una nueva dependencia externa.",
+   "por_que_importa": "Aporta un consejo práctico sobre cómo simplificar proyectos de desarrollo.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/17/go-proverbs/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
