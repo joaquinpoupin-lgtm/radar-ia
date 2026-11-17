@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-17",
- "actualizado": "2026-11-17T09:14:50-03:00",
+ "actualizado": "2026-11-17T20:03:07-03:00",
  "brief": {
   "lo_mas_importante": [
    "La fiscalía general de California demandó a OpenAI por un incidente con un agente autónomo, marcando un precedente legal.",
@@ -230,6 +230,189 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "549a77347d5e",
+   "fecha": "2026-11-17",
+   "titulo": "OpenAI lanza GPT-6.2 Astra y GPT-6.2 Sol",
+   "que_paso": "OpenAI presentó dos modelos nuevos llamados GPT-6.2 Astra y GPT-6.2 Sol. Están disponibles en la interfaz de ChatGPT y en la interfaz de programación para tareas profesionales y uso diario.",
+   "por_que_importa": "Permite usar modelos actualizados con mayor eficiencia para proyectos complejos y trabajos cotidianos.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "programación",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"
+    }
+   ],
+   "confirmacion": 3,
+   "imagen": null
+  },
+  {
+   "id": "c6c361c53bc4",
+   "fecha": "2026-11-17",
+   "titulo": "OpenAI introduce nuevos complementos de ventas en ChatGPT",
+   "que_paso": "OpenAI sumó un complemento de ventas y más de treinta opciones de socios a ChatGPT. Estas herramientas ayudan a investigar prospectos, preparar presentaciones y actualizar registros.",
+   "por_que_importa": "Facilita la gestión comercial y la organización de datos directamente desde el chat.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-chatgpt-for-sales"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "58da9c66b145",
+   "fecha": "2026-11-17",
+   "titulo": "OpenAI y el Gobierno de Chile se asocian",
+   "que_paso": "OpenAI y el Gobierno de Chile iniciaron una alianza para fomentar el uso responsable de la inteligencia artificial. La colaboración busca capacitar al sector público y apoyar a emprendimientos locales.",
+   "por_que_importa": "Impulsa el desarrollo tecnológico y la formación en herramientas de inteligencia artificial dentro del país.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-openai-for-chile"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "cb1d8f8bc84f",
+   "fecha": "2026-11-17",
+   "titulo": "Google muestra la interfaz de trabajo de Gemini",
+   "que_paso": "Google publicó una vista previa de la interfaz de usuario de Gemini centrada en la ejecución de tareas. Muestra un cuadro de texto con la pregunta sobre qué trabajo puede realizar.",
+   "por_que_importa": "Muestra cómo la plataforma orienta su diseño hacia la resolución directa de tareas diarias.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gemini",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_2784_x_1566_1.width-1300.png"
+  },
+  {
+   "id": "246f1a63c5a1",
+   "fecha": "2026-11-17",
+   "titulo": "Directores de Baidu y Xiaomi advierten brecha entre expectativas y ganancias",
+   "que_paso": "Los máximos responsables de Baidu y Xiaomi señalaron que existe una distancia creciente entre la expectación generada por la inteligencia artificial y los retornos económicos reales.",
+   "por_que_importa": "Refleja la cautela de la industria tecnológica frente a la rentabilidad actual de estas herramientas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "3574711074a4",
+   "fecha": "2026-11-17",
+   "titulo": "Plataforma de Claude añade facturación vinculada en fase de prueba",
+   "que_paso": "La plataforma de Claude introdujo facturación vinculada en versión beta. Las plataformas externas ahora pueden permitir que los clientes paguen por el uso de la interfaz de programación sin compartir una llave de acceso.",
+   "por_que_importa": "Simplifica el pago por el uso de la tecnología en aplicaciones de terceros de forma más segura.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/linked-billing-on-claude-platform/opengraph-image/og"
+  },
+  {
+   "id": "36a542e12ff7",
+   "fecha": "2026-11-17",
+   "titulo": "PyBot: un asistente basado en reglas programado en Python",
+   "que_paso": "Desarrollaron PyBot, un asistente conversacional creado en código de Python mediante un conjunto de agentes. Funciona exclusivamente con reglas, sin modelos de lenguaje entrenados ni pesos.",
+   "por_que_importa": "Muestra una alternativa de programación basada en reglas tradicionales en lugar de modelos complejos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/huggingface/pybot"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/9b34f83388bd5c5d61565b066584921d22a12d48bbe12341f19a7fb731899874/huggingface/pybot"
+  },
+  {
+   "id": "116dad2ea71e",
+   "fecha": "2026-11-17",
+   "titulo": "Antialgorithm: skill para evitar respuestas repetitivas en Claude Code",
+   "que_paso": "Crearon una instrucción para Claude Code que evita que el modelo elija las opciones más comunes en trabajos creativos como nombres, ideas y diseños. Cuenta con más de 180 estrellas en GitHub.",
+   "por_que_importa": "Ayuda a obtener resultados más originales al usar Claude Code en proyectos creativos.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/mankidev/antialgorithm"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/ba7b8d0855b150f01e89bd44715d59139a71068e6e464ab3bee29e5ed440fc70/mankidev/antialgorithm"
   }
  ]
 }
