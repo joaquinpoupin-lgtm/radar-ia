@@ -1,0 +1,236 @@
+{
+ "fecha": "2026-11-18",
+ "actualizado": "2026-11-18T09:02:07-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI presentó dos modelos nuevos llamados GPT-6.2 Astra y GPT-6.2 Sol para tareas profesionales y uso diario en ChatGPT.",
+   "Un experimento demostró que los resúmenes de inteligencia artificial en Google reducen los clics hacia sitios externos en un cuarenta por ciento.",
+   "OpenAI y el Gobierno de Chile iniciaron una alianza para fomentar el uso responsable de la inteligencia artificial y capacitar al sector público."
+  ],
+  "ids": [
+   "549a77347d5e",
+   "695d1f9a1cf6",
+   "58da9c66b145",
+   "f1feb2e4bb48",
+   "6e090bb95c89",
+   "6cab9c8cd383",
+   "e9a68a300e49",
+   "d15b42d81c64",
+   "0604bc2b50fc",
+   "8f07365d378c"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "f1feb2e4bb48",
+   "fecha": "2026-11-18",
+   "titulo": "Un autor cuenta cómo la IA afecta su trabajo y empleo",
+   "que_paso": "Un creador de contenido de Berlín relata que utilizaron su trabajo para entrenar sistemas de inteligencia artificial. Ahora, esas mismas herramientas lo están dejando sin empleo.",
+   "por_que_importa": "Muestra cómo el uso de contenidos personales para entrenar IAs afecta directamente a los creadores independientes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "empleo",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://nicolasbouliane.com/blog/death-by-ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "695d1f9a1cf6",
+   "fecha": "2026-11-18",
+   "titulo": "Las respuestas con IA de Google reducen las visitas web en un cuarenta por ciento",
+   "que_paso": "Un experimento demostró que los resúmenes de inteligencia artificial en Google reducen los clics hacia sitios externos en un cuarenta por ciento. Estas funciones ya aparecen en más de la mitad de las búsquedas en Estados Unidos.",
+   "por_que_importa": "Explica por qué los sitios web reciben menos visitas desde el buscador de Google a medida que la IA responde directamente.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://revscope.co/blog/search-seo-geo-2026/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "6e090bb95c89",
+   "fecha": "2026-11-18",
+   "titulo": "Estudio de Harvard muestra que la IA aumenta el código pero frena su revisión",
+   "que_paso": "Una investigación de Harvard reveló que las herramientas de programación con inteligencia artificial aumentan la producción de código en un treinta por ciento. Sin embargo, el trabajo final no creció y el proceso de revisión tardó un cuarenta y nueve por ciento más.",
+   "por_que_importa": "Señala que generar código más rápido con IA no siempre agiliza el desarrollo total de un proyecto.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://complexdiscovery.com/wp-content/uploads/2026/10/AI-Report-One.jpg"
+  },
+  {
+   "id": "6cab9c8cd383",
+   "fecha": "2026-11-18",
+   "titulo": "OpenAI se alía con Le Groupe Figaro para llevar su periodismo a ChatGPT",
+   "que_paso": "OpenAI y Le Groupe Figaro llegaron a un acuerdo para integrar contenido periodístico en ChatGPT. Los usuarios verán resúmenes y extractos acompañados de enlaces hacia las historias originales.",
+   "por_que_importa": "Permite acceder a noticias de medios tradicionales directamente desde ChatGPT con referencias a sus fuentes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "e9a68a300e49",
+   "fecha": "2026-11-18",
+   "titulo": "Lanzan treinta y dos habilidades de marketing gratuitas para agentes de inteligencia artificial",
+   "que_paso": "Publicaron un paquete gratuito de treinta y dos herramientas de marketing orientadas a agentes de inteligencia artificial. Incluyen funciones para investigación, redacción, posicionamiento y búsqueda.",
+   "por_que_importa": "Ofrece recursos prácticos y gratuitos para que los asistentes virtuales ayuden en tareas de marketing.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Programa de inteligencia artificial diseñado para realizar tareas de forma autónoma siguiendo instrucciones."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/boringmarketer/boring-marketing-skills"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/537eea4490d52fb0b7d9296f2ea0055b790efa132ffc07fc046811abd8d71a49/boringmarketer/boring-marketing-skills"
+  },
+  {
+   "id": "d15b42d81c64",
+   "fecha": "2026-11-18",
+   "titulo": "Publican una biblioteca de habilidades de Claude para agentes de inteligencia artificial",
+   "que_paso": "Desarrolladores compartieron una biblioteca de instrucciones y funciones industriales diseñadas específicamente para Claude. Está pensada para integrarse en flujos de trabajo automatizados.",
+   "por_que_importa": "Amplía las capacidades técnicas que se le pueden enseñar a Claude para tareas complejas.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/buiquangvu235/antigravity-skills-engine"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1459165824/79298321-3248-401e-b1b0-32a6c70c19d1"
+  },
+  {
+   "id": "0604bc2b50fc",
+   "fecha": "2026-11-18",
+   "titulo": "Astra for Law lidera en inteligencia legal en la plataforma de OpenAI",
+   "que_paso": "La herramienta Astra for Law obtuvo el primer lugar en una evaluación centrada en veinticuatro áreas legales. Los clientes con cuentas empresariales de ChatGPT ya pueden solicitar acceso.",
+   "por_que_importa": "Facilita el análisis de temas legales complejos dentro de las herramientas corporativas de OpenAI.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt",
+    "leyes",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/astra-law-6-2"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "8f07365d378c",
+   "fecha": "2026-11-18",
+   "titulo": "Nvidia mantiene su estrategia de código abierto tras la salida de Jensen Huang",
+   "que_paso": "El director interino de Nvidia reafirmó los planes de continuar con la estrategia de inteligencia artificial abierta. También confirmó la intención de adquirir Hugging Face a pesar de la salida imprevista de Jensen Huang.",
+   "por_que_importa": "Confirma la continuidad en el desarrollo de herramientas abiertas por parte de una de las empresas clave del sector.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "hugging face",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2290097570.jpg?w=1024"
+  },
+  {
+   "id": "c60558e98558",
+   "fecha": "2026-11-18",
+   "titulo": "Exploran entornos seguros externos para ejecutar código generado por inteligencia artificial",
+   "que_paso": "Investigadores publicaron pruebas sobre el uso de entornos aislados para ejecutar código creado por agentes de inteligencia artificial. El objetivo es evitar que errores o ataques dañen el equipo principal.",
+   "por_que_importa": "Entrega una alternativa para probar código generado por IAs de forma más segura en computadores personales.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "sandbox",
+     "explicacion": "Entorno virtual aislado y seguro donde se pueden ejecutar programas sin afectar al resto del sistema."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
