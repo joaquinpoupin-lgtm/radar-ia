@@ -1,0 +1,207 @@
+{
+ "fecha": "2026-11-19",
+ "actualizado": "2026-11-19T08:58:19-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google lanzó Gemini 4 Neon, un nuevo modelo enfocado en programación y tareas complejas que destaca por su alta velocidad y menor costo.",
+   "Anthropic fijó el precio de su oferta pública inicial de acciones, marcando un paso relevante en la apertura de la compañía a la bolsa.",
+   "OpenAI utilizó sus modelos para mejorar circuitos en silicio y diseños de núcleos RISC-V, mostrando avances en la creación de hardware."
+  ],
+  "ids": [
+   "f52d965542ca",
+   "25c96fa5a216",
+   "b2c084a41275",
+   "c7d3ecb00643",
+   "069078b2b4e3",
+   "6fc8c039af46",
+   "ba05f6db61a4",
+   "bf1424b145e4",
+   "6d0f1469bd9c",
+   "e683d40fba10"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "25c96fa5a216",
+   "fecha": "2026-11-19",
+   "titulo": "Anthropic pone precio a su oferta pública inicial",
+   "que_paso": "La empresa Anthropic fijó el precio de su oferta pública inicial de acciones comunes de Clase A. Esto marca un paso relevante en la apertura de la compañía a la bolsa.",
+   "por_que_importa": "Muestra el crecimiento y la madurez financiera de una de las empresas clave en el desarrollo de inteligencia artificial.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg"
+  },
+  {
+   "id": "6fc8c039af46",
+   "fecha": "2026-11-19",
+   "titulo": "Nuevo tipo de razonador busca mayor eficiencia en inteligencia artificial",
+   "que_paso": "Desarrollan un sistema de razonamiento basado en energía que logra resolver problemas complejos con una precisión alta y usando muchos menos recursos que otros métodos.",
+   "por_que_importa": "Permite ejecutar tareas complejas de IA consumiendo menos potencia de cálculo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "investigación",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://energy-based-reasoners.github.io/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "ba05f6db61a4",
+   "fecha": "2026-11-19",
+   "titulo": "Ingeniería inversa asistida por inteligencia artificial",
+   "que_paso": "Un especialista en tecnología comparte cómo utiliza herramientas de inteligencia artificial para acelerar de manera notable el análisis y modificación de hardware y software.",
+   "por_que_importa": "Facilita y acelera el trabajo técnico de examinar cómo funcionan sistemas complejos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "bf1424b145e4",
+   "fecha": "2026-11-19",
+   "titulo": "Modelos de series temporales en Hugging Face",
+   "que_paso": "IBM Research publicó un artículo en la plataforma Hugging Face sobre nuevos modelos orientados a procesar datos de series temporales y sus posibles usos prácticos.",
+   "por_que_importa": "Abre nuevas opciones para analizar datos que cambian con el tiempo, como métricas o registros.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/yf6E9vJHIkGHG_toGSasb.gif"
+  },
+  {
+   "id": "6d0f1469bd9c",
+   "fecha": "2026-11-19",
+   "titulo": "Lanzan asistente de inteligencia artificial integrado para Blender",
+   "que_paso": "Crearon una herramienta que conecta modelos de inteligencia artificial con el programa de diseño 3D Blender. Permite modificar escenas usando instrucciones sencillas en texto.",
+   "por_que_importa": "Permite crear y modificar elementos 3D en Blender mediante lenguaje cotidiano sin necesidad de hacer cada paso de forma manual.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "herramientas",
+    "diseño"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/findavoulot1973/Blender-AI-MCP-Suite"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/bf8d23717e591c50a77668f3fde7cce9cd3c0520a15bc097aac4e8d240575e22/findavoulot1973/Blender-AI-MCP-Suite"
+  },
+  {
+   "id": "e683d40fba10",
+   "fecha": "2026-11-19",
+   "titulo": "Ensayo sobre el impacto social de la inteligencia artificial avanzada",
+   "que_paso": "Un directivo de OpenAI publicó un análisis sobre cómo sistemas de inteligencia artificial más capaces podrían transformar la sociedad y qué hacer para mantener el control institucional.",
+   "por_que_importa": "Plantea los desafíos de gobernanza y control social que traerán las futuras versiones de la tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/the-silent-consensus"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "f52d965542ca",
+   "fecha": "2026-11-19",
+   "titulo": "Google lanza Gemini 4 Neon para tareas complejas",
+   "que_paso": "Google sumó el modelo Gemini 4 Neon a su familia de inteligencia artificial. Está enfocado en programación y tareas complejas, destacando por una alta velocidad de ejecución y un menor costo por tarea.",
+   "por_que_importa": "Ofrece una opción más rápida y económica para resolver tareas exigentes y programar con inteligencia artificial.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "gemini",
+    "modelos",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/google-quiere-que-gemini-4-neon-sea-tu-modelo-para-casi-todo-rapido-que-carbon-barato-tarea"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://i.blogs.es/a4de04/gemini-4-neon-portada-2/840_560.jpeg"
+  },
+  {
+   "id": "9fa731b0ef6c",
+   "fecha": "2026-11-19",
+   "titulo": "Estudian cómo los agentes de código aceleran la investigación en inteligencia artificial",
+   "que_paso": "OpenAI midió el impacto de los agentes de programación en la aceleración de la investigación científica en inteligencia artificial. El estudio detalla en qué áreas rinden bien y dónde todavía muestran limitaciones.",
+   "por_que_importa": "Permite entender el estado actual de la automatización en el desarrollo de nueva tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "programación",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/research-acceleration-jagged-frontier"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  }
+ ]
+}
