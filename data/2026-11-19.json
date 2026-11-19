@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-19",
- "actualizado": "2026-11-19T08:58:19-03:00",
+ "actualizado": "2026-11-19T19:43:06-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google lanzó Gemini 4 Neon, un nuevo modelo enfocado en programación y tareas complejas que destaca por su alta velocidad y menor costo.",
@@ -202,6 +202,133 @@
    ],
    "confirmacion": 1,
    "imagen": null
+  },
+  {
+   "id": "be373132dcb8",
+   "fecha": "2026-11-19",
+   "titulo": "Claude resuelve dos problemas abiertos de física de agujeros negros",
+   "que_paso": "Una versión de Claude resolvió dos problemas teóricos de física relacionados con los agujeros negros. La investigación busca avanzar hacia una teoría de la gravedad cuántica.",
+   "por_que_importa": "Muestra cómo los modelos avanzados pueden abordar problemas complejos de investigación científica teórica.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "gravedad cuántica",
+     "explicacion": "Una teoría científica que busca unir la física cuántica con la teoría de la gravedad de Einstein."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "claude",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://assets.claude.com/57a443b51d13727573b7c1290130d09c5f434b2c.jpg"
+  },
+  {
+   "id": "b00f82b6db94",
+   "fecha": "2026-11-19",
+   "titulo": "Nueva función de recuperación de herramientas en la API de Gemini",
+   "que_paso": "Google lanzó una función en vista previa para la API de Gemini. Permite que los agentes conecten cientos de herramientas consumiendo menos recursos.",
+   "por_que_importa": "Facilita la integración de múltiples herramientas en aplicaciones de desarrollo.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que diferentes programas de software se comuniquen entre sí."
+    },
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que las inteligencias artificiales usan para leer y procesar información."
+    }
+   ],
+   "etiquetas": [
+    "gemini",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Tool_retrieval_hero.width-1300.png"
+  },
+  {
+   "id": "6687f7be62c3",
+   "fecha": "2026-11-19",
+   "titulo": "OpenAI usa flujos automatizados para mantener la velocidad de ChatGPT",
+   "que_paso": "OpenAI creó un sistema interno con flujos de trabajo propios para detectar y solucionar problemas de rendimiento. Esto ayuda a que ChatGPT funcione de forma rápida.",
+   "por_que_importa": "Explica cómo la empresa optimiza el funcionamiento interno del servicio que usan los usuarios.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "b24c1081da70",
+   "fecha": "2026-11-19",
+   "titulo": "Apple busca ingenieros para desarrollar su propio asistente con IA",
+   "que_paso": "Apple abrió ofertas de empleo para liderar la creación de un asistente inteligente. El agente podrá navegar por la web, usar aplicaciones, programar y realizar llamadas.",
+   "por_que_importa": "Indica los planes futuros de la compañía en el desarrollo de asistentes automatizados.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "apple",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200"
+  },
+  {
+   "id": "3c6079d895b9",
+   "fecha": "2026-11-19",
+   "titulo": "Video compara modelos recientes de OpenAI, Anthropic y Google",
+   "que_paso": "El canal Dot CSV puso a prueba diferentes modelos de lenguaje en tareas de escritura, programación y diseño 3D. El video compara los resultados de cada plataforma.",
+   "por_que_importa": "Permite ver una demostración práctica de cómo se desempeñan los principales modelos actuales.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "anthropic",
+    "gemini",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Dot CSV Lab",
+     "url": "https://www.youtube.com/watch?v=IxOHdMoS7LY"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/IxOHdMoS7LY/hqdefault.jpg"
   }
  ]
 }
