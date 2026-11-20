@@ -1,0 +1,221 @@
+{
+ "fecha": "2026-11-20",
+ "actualizado": "2026-11-20T08:59:20-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Empleados reportaron fallas de privacidad en el agente Muse de Meta, ya que el sistema mezclaba conversaciones y mostraba datos privados de otros usuarios.",
+   "Un modelo llamado Gemini 4 Neon alcanzó el primer lugar en una medición que evalúa el desempeño de los sistemas en tareas técnicas.",
+   "Informes de prensa señalan que Apple trabaja en el desarrollo de asistentes capaces de controlar equipos Mac de forma autónoma."
+  ],
+  "ids": [
+   "d9d2fba47fd3",
+   "ed33061e28b0",
+   "000028228240",
+   "d6421e349b9b",
+   "97d62433e020",
+   "2ed09bbf2a0c",
+   "6f06a2856d59",
+   "9fa731b0ef6c",
+   "be373132dcb8",
+   "b00f82b6db94"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "ed33061e28b0",
+   "fecha": "2026-11-20",
+   "titulo": "Un nuevo modelo lidera el índice de rendimiento en ingeniería",
+   "que_paso": "Un modelo llamado Gemini 4 Neon alcanzó el primer lugar en una medición que evalúa el desempeño de los sistemas de lenguaje en tareas técnicas.",
+   "por_que_importa": "Muestra cuáles modelos están funcionando mejor para resolver problemas complejos de ingeniería y programación.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de lenguaje",
+     "explicacion": "Sistemas de inteligencia artificial entrenados para comprender y generar texto similar al humano."
+    }
+   ],
+   "etiquetas": [
+    "gemini",
+    "programación",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://git-aarvin.github.io/mei/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://git-aarvin.github.io/mei/scatter/cost.png"
+  },
+  {
+   "id": "000028228240",
+   "fecha": "2026-11-20",
+   "titulo": "Diseñan un nuevo procesador utilizando inteligencia artificial",
+   "que_paso": "Crearon una arquitectura de procesador llamada Frostbite diseñada y verificada completamente por sistemas de inteligencia artificial.",
+   "por_que_importa": "Demuestra que la inteligencia artificial ya puede crear hardware con mayor eficiencia energética que los diseños tradicionales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "arquitectura de CPU",
+     "explicacion": "El diseño interno y la estructura lógica que determinan cómo funciona el procesador principal de un equipo."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://architectlabs.com/blog/frostbite"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "d6421e349b9b",
+   "fecha": "2026-11-20",
+   "titulo": "Logran ejecutar un modelo pequeño de lenguaje en una consola antigua",
+   "que_paso": "Un experimento no oficial logró hacer funcionar un pequeño sistema de lenguaje dentro de un cartucho de la consola Super Nintendo.",
+   "por_que_importa": "Es una prueba técnica curiosa sobre los límites de hardware donde se pueden ejecutar estos sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo de lenguaje",
+     "explicacion": "Software basado en inteligencia artificial capaz de procesar y generar lenguaje natural."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.bxfoundry.com/chatgpt_snes/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.bxfoundry.com/chatgpt_snes/img/og.png"
+  },
+  {
+   "id": "97d62433e020",
+   "fecha": "2026-11-20",
+   "titulo": "Nueva extensión conecta herramientas de inteligencia artificial con Blender",
+   "que_paso": "Lanzaron una extensión que añade un asistente visual y herramientas de trabajo en 3D para el programa Blender usando varios sistemas de IA.",
+   "por_que_importa": "Permite usar asistentes conversacionales directamente para crear y modificar escenas tridimensionales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "servidor MCP",
+     "explicacion": "Un protocolo que permite conectar modelos de inteligencia artificial con bases de datos o aplicaciones externas."
+    }
+   ],
+   "etiquetas": [
+    "chatgpt",
+    "claude",
+    "gemini",
+    "imagen"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/113b1eaa4bb9eea73f7c7b6165dcc4fb7487ec8c535d860db313be7687f39083/bookwjitchieni1986/blender-ai-mcp-addon"
+  },
+  {
+   "id": "2ed09bbf2a0c",
+   "fecha": "2026-11-20",
+   "titulo": "Apple estaría desarrollando un agente autónomo para computadores",
+   "que_paso": "Según informes de prensa, Apple trabaja en el desarrollo de asistentes automatizados capaces de controlar equipos Mac de forma autónoma.",
+   "por_que_importa": "Anticipa la llegada de nuevas herramientas de control automático para sistemas operativos, aún en fase de rumores.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Un sistema de inteligencia artificial capaz de ejecutar tareas y tomar decisiones por su cuenta para cumplir un objetivo."
+    }
+   ],
+   "etiquetas": [
+    "apple",
+    "agentes",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800"
+  },
+  {
+   "id": "d9d2fba47fd3",
+   "fecha": "2026-11-20",
+   "titulo": "Reportan fallas de privacidad en el agente de inteligencia artificial Muse de Meta",
+   "que_paso": "Empleados reportaron que el sistema Muse mezclaba conversaciones y mostraba datos privados de otros usuarios, como saldos bancarios y peticiones personales.",
+   "por_que_importa": "Expone los riesgos actuales de seguridad y manejo de información confidencial en los asistentes automatizados.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "Software de inteligencia artificial diseñado para actuar de manera autónoma en diversas tareas."
+    }
+   ],
+   "etiquetas": [
+    "meta",
+    "privacidad",
+    "seguridad",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200"
+  },
+  {
+   "id": "6f06a2856d59",
+   "fecha": "2026-11-20",
+   "titulo": "Apple libera modelos de generación de video rápido",
+   "que_paso": "Apple publicó los modelos FastFrames en versiones de menor y mayor tamaño diseñados para generar videos en resolución 480p de forma interactiva.",
+   "por_que_importa": "Ofrece nuevas opciones de código abierto para la creación automatizada de contenidos audiovisuales.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos de difusión",
+     "explicacion": "Sistemas de inteligencia artificial que generan imágenes o videos a partir de texto mediante la eliminación gradual de ruido visual."
+    }
+   ],
+   "etiquetas": [
+    "apple",
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/apple/FastFrames-L"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/apple/FastFrames-L.png"
+  }
+ ]
+}
