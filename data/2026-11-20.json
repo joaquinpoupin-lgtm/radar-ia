@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-20",
- "actualizado": "2026-11-20T08:59:20-03:00",
+ "actualizado": "2026-11-20T19:17:17-03:00",
  "brief": {
   "lo_mas_importante": [
    "Empleados reportaron fallas de privacidad en el agente Muse de Meta, ya que el sistema mezclaba conversaciones y mostraba datos privados de otros usuarios.",
@@ -216,6 +216,194 @@
    ],
    "confirmacion": 1,
    "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/apple/FastFrames-L.png"
+  },
+  {
+   "id": "e7354365dbd8",
+   "fecha": "2026-11-20",
+   "titulo": "Anthropic concreta su oferta pública inicial en la bolsa",
+   "que_paso": "Anthropic cerró su oferta pública inicial de acciones comunes clase A a un precio de 83 dólares por cada una. La operación incluyó la compra adicional de acciones por parte de los suscriptores y una colocación privada.",
+   "por_que_importa": "Muestra movimientos financieros importantes en una de las empresas clave detrás del desarrollo de IA.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Anthropic",
+     "url": "https://www.anthropic.com/news/ipo-close"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg"
+  },
+  {
+   "id": "c69438672bb7",
+   "fecha": "2026-11-20",
+   "titulo": "Investigan contabilidad de Nvidia bajo la lupa de la SEC",
+   "que_paso": "La caída en la bolsa de Nvidia se profundizó luego de que se informara que investigadores están revisando sus prácticas contables. La noticia generó revuelo en el mercado financiero.",
+   "por_que_importa": "Apunta a posibles problemas regulatorios para el principal fabricante de chips para IA.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://s.yimg.com/lo/mysterio/api/cef3d0cb072492443a64255ea4f07aa8daad11f175c74e7cdd347255f44a5e89/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-11%2F659a6a35-5338-4ebd-8785-e731cf831f2d"
+  },
+  {
+   "id": "99527486f11f",
+   "fecha": "2026-11-20",
+   "titulo": "Acciones de Anthropic caen tras su debut en la bolsa",
+   "que_paso": "La esperada llegada de Anthropic al mercado bursátil no logró calmar las dudas de los inversionistas. Sus títulos sufrieron caídas en una jornada negativa para el sector tecnológico.",
+   "por_que_importa": "Refleja la incertidumbre actual que existe entre los inversionistas respecto al mercado de la inteligencia artificial.",
+   "seccion": "dinero",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-11/261120-new-york-stock-exchange-ew-302p-4b969a.jpg"
+  },
+  {
+   "id": "83f2b5d135af",
+   "fecha": "2026-11-20",
+   "titulo": "Trabajadores de Google piden no castigar a colegios que rechazan la IA",
+   "que_paso": "Empleados de Google solicitaron a la empresa que no penalice a las escuelas que deciden no adoptar herramientas de inteligencia artificial. Según un trabajador, los altos mandos suelen asumir que la resistencia se debe a falta de visión.",
+   "por_que_importa": "Muestra debates internos sobre cómo la industria presiona para masificar la tecnología en la educación.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.motherjones.com/wp-content/uploads/2026/11/google-chromebook-la-school-covid.jpg?w=1200&h=630&crop=1"
+  },
+  {
+   "id": "3ea993db7e3c",
+   "fecha": "2026-11-20",
+   "titulo": "OpenAI implementa medidas contra la destilación adversarial",
+   "que_paso": "OpenAI combinó entrenamiento de modelos, salvaguardas y sistemas de detección para protegerse contra la extracción no autorizada de capacidades. La estrategia busca evitar que otros copien el funcionamiento interno de sus sistemas.",
+   "por_que_importa": "Ayuda a entender cómo las empresas protegen sus tecnologías para que no sean copiadas fácilmente por competidores.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "destilación adversarial",
+     "explicacion": "Técnica para intentar copiar las capacidades de un modelo avanzado usando otro más pequeño."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/combatting-adversarial-distillation"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/5SUtPGdssrttC7LfP1yoJ1/b6b000846ab3576c1735c29534ab20b0/combatting-adversarial-distillation-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "id": "d15c45643214",
+   "fecha": "2026-11-20",
+   "titulo": "Hebbia prueba mejoras financieras con un modelo avanzado",
+   "que_paso": "Hebbia puso a prueba una versión preliminar de un modelo para investigar datos financieros. Las evaluaciones mostraron mejoras en la recopilación de fuentes, la relevancia de las citas y la calidad de las presentaciones.",
+   "por_que_importa": "Indica avances en el uso de IA para analizar documentos financieros complejos con mayor precisión.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/business/customer-stories/hebbia"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/70gWqYyqb096it9EoD7OqI/5df8cad1c7fdf2a4e942c3183a10f405/hebbia-smoked-depth-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "id": "f4784c304003",
+   "fecha": "2026-11-20",
+   "titulo": "Evalúan si la inteligencia artificial ayuda a crear fármacos",
+   "que_paso": "Presentaron un sistema de evaluación para medir qué tan bien los modelos de IA interpretan estructuras moleculares y seleccionan compuestos químicos. La herramienta busca probar su utilidad en las etapas iniciales del descubrimiento de medicamentos.",
+   "por_que_importa": "Muestra cómo se mide el impacto real de la tecnología en campos científicos complejos como la medicina.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "salud",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/introducing-medchembench"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/37ZvKdwVigsgJ7G3FMr4Nb/12854063a79d19d63278704bf54e3010/introducing-medchembench-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "id": "ba504aec0cf0",
+   "fecha": "2026-11-20",
+   "titulo": "Crean herramienta gratuita y local para recortar videos con IA",
+   "que_paso": "Lanzaron un programa en código abierto que permite pegar un enlace y obtener clips verticales con subtítulos en aproximadamente dos minutos. Funciona de manera local usando procesamiento de audio y modelos propios.",
+   "por_que_importa": "Ofrece a los creadores de contenido una alternativa gratuita para editar videos cortos directamente en su computador.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "open source",
+     "explicacion": "Software cuyo código es público y puede ser modificado y utilizado libremente por cualquier persona."
+    }
+   ],
+   "etiquetas": [
+    "video",
+    "gratis",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/iamajmeena/neonclipping"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/ae0a413cb03ff4645ec7f0b4abced45dc0f99551d9c33c70b8562cec73d960c2/iamajmeena/neonclipping"
   }
  ]
 }
