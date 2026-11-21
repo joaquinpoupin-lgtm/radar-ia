@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-21",
- "actualizado": "2026-11-21T08:32:58-03:00",
+ "actualizado": "2026-11-21T17:58:06-03:00",
  "brief": {
   "lo_mas_importante": [
    "La SEC investiga las prácticas contables de Nvidia, lo que profundizó la caída en la bolsa del principal fabricante de chips para inteligencia artificial.",
@@ -247,6 +247,218 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.ytimg.com/vi/xjX3jESpZqs/hqdefault.jpg"
+  },
+  {
+   "id": "56c8c69722c8",
+   "fecha": "2026-11-21",
+   "titulo": "Crean un asistente de programación con IA que funciona en DOS",
+   "que_paso": "Un usuario desarrolló una interfaz de chat y programación con inteligencia artificial para el sistema operativo DOS. Funciona directamente en un computador antiguo IBM PC con un procesador muy limitado.",
+   "por_que_importa": "Muestra cómo la tecnología actual se puede adaptar para correr en equipos antiguos como una prueba técnica.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "DOS",
+     "explicacion": "Un sistema operativo antiguo para computadores, muy usado antes de que existieran Windows o Mac."
+    }
+   ],
+   "etiquetas": [
+    "programación",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "http://ricapar.net/ClawDOS/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "82e57c606d95",
+   "fecha": "2026-11-21",
+   "titulo": "Herramienta para convertir sesiones de Claude Code en una skill reutilizable",
+   "que_paso": "Lanzaron un proyecto en GitHub que permite transformar una sesión de trabajo de Claude Code en una skill. Así, otros modelos pueden seguir esas instrucciones para repetir la misma tarea.",
+   "por_que_importa": "Permite empaquetar flujos de trabajo exitosos para que otros sistemas de inteligencia artificial los repitan.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/sybil-solutions/skill-distill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/15dc2c1277396cbaf83d9209481c44c44dfff2aed53bb621415a8c460ce5b11b/sybil-solutions/skill-distill"
+  },
+  {
+   "id": "3e30621eb1a8",
+   "fecha": "2026-11-21",
+   "titulo": "Agentes de programación escriben millones de líneas de código para un chip",
+   "que_paso": "Un desarrollador usó agentes de inteligencia artificial para escribir tres millones de líneas de código. El objetivo fue implementar y optimizar un sistema para correr modelos de lenguaje en un chip especializado.",
+   "por_que_importa": "Demuestra el uso de la inteligencia artificial para automatizar tareas masivas de ingeniería en hardware.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Circuitos integrados que procesan la información y permiten que funcionen los programas y los modelos de IA."
+    }
+   ],
+   "etiquetas": [
+    "programación",
+    "agentes",
+    "chips"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://ankitg.me/blog/vibecoding-inference-chip/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://ankitg.me/assets/fpga-board.png"
+  },
+  {
+   "id": "9d9e2c9f2c65",
+   "fecha": "2026-11-21",
+   "titulo": "Un estudio muestra que muchas inteligencias artificiales dan los mismos consejos",
+   "que_paso": "Un análisis probó decenas de inteligencias artificiales con miles de preguntas cotidianas. Descubrieron que una gran parte de las respuestas recomendaba exactamente el mismo libro para distintas consultas.",
+   "por_que_importa": "Revela que diferentes herramientas de IA pueden compartir patrones de respuesta muy repetitivos ante preguntas comunes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "educación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://a90.com/experiments/same-advice/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://a90.com/experiments/same-advice/og.png"
+  },
+  {
+   "id": "6ccebafcdf30",
+   "fecha": "2026-11-21",
+   "titulo": "Listan los principales asistentes de IA integrados en mensajes de texto",
+   "que_paso": "Publicaron una selección con los agentes de inteligencia artificial más destacados que operan directamente en aplicaciones de mensajería. Incluye herramientas generales y otras orientadas a familias, viajes y trabajo.",
+   "por_que_importa": "Facilita encontrar asistentes virtuales accesibles directamente desde las conversaciones de texto habituales.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813"
+  },
+  {
+   "id": "b4f1a99333cf",
+   "fecha": "2026-11-21",
+   "titulo": "Tencent lanza Hy4-flash, un modelo eficiente de texto e imagen",
+   "que_paso": "Tencent presentó Hy4-flash, su modelo más económico hasta la fecha. Acepta entradas de texto e imagen, genera texto y soporta una ventana de contexto de hasta un millón de tokens.",
+   "por_que_importa": "Ofrece una opción más accesible y de gran capacidad para procesar textos extensos y contenidos visuales.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que la inteligencia artificial lee y procesa, que pueden ser palabras o partes de ellas."
+    }
+   ],
+   "etiquetas": [
+    "imagen",
+    "modelo"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/tencent/Hy4-flash"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/tencent/Hy4-flash.png"
+  },
+  {
+   "id": "2cb10b95a79b",
+   "fecha": "2026-11-21",
+   "titulo": "La ONU finaliza sin acuerdos sobre la regulación de armas autónomas",
+   "que_paso": "Diplomáticos de la ONU se reunieron en Ginebra para discutir reglas sobre armas autónomas, conocidas como robots asesinos. Tras una semana de negociaciones sin frutos, solo acordaron seguir discutiendo opciones en el futuro.",
+   "por_que_importa": "Refleja la dificultad internacional para establecer límites normativos al uso militar de la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "leyes",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0%2C11.089604074363%2C100%2C77.820791851273&w=1200"
+  },
+  {
+   "id": "dffab27fe8d5",
+   "fecha": "2026-11-21",
+   "titulo": "Actores licencian sus rostros a startups de microdramas usando IA",
+   "que_paso": "Un actor autorizó el uso de su rostro a una startup de microdramas, una tendencia ya popular en China. Expertos analizan las consecuencias a largo plazo si este modelo de negocio se expande a Hollywood.",
+   "por_que_importa": "Muestra cómo la creación de videos con rostros digitales comienza a implementarse en la industria del entretenimiento.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Inevitable-Key-Art_3x4-full-size.jpg?resize=899,1200"
+  },
+  {
+   "id": "a2b0b71c8120",
+   "fecha": "2026-11-21",
+   "titulo": "Anthropic debuta en la bolsa de valores de Nasdaq",
+   "que_paso": "La empresa detrás de Claude salió a la bolsa de valores de Nasdaq. El acontecimiento genera debates sobre la viabilidad de mantener la seguridad como prioridad principal tras cotizar en el mercado público.",
+   "por_que_importa": "Marca un hito financiero para uno de los principales creadores de inteligencia artificial del mercado.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_1121_Site.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
   }
  ]
 }
