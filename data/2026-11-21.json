@@ -1,0 +1,252 @@
+{
+ "fecha": "2026-11-21",
+ "actualizado": "2026-11-21T08:32:58-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "La SEC investiga las prácticas contables de Nvidia, lo que profundizó la caída en la bolsa del principal fabricante de chips para inteligencia artificial.",
+   "El índice Nasdaq perdió billones en valor mientras los inversores cuestionan las millonarias inversiones y la rentabilidad del sector tecnológico.",
+   "La aplicación Signal comenzó a restringir a los nuevos agentes de inteligencia artificial para proteger los datos privados de los usuarios."
+  ],
+  "ids": [
+   "c69438672bb7",
+   "c4ca83ba5741",
+   "fda5004e845f",
+   "a4a5f143094b",
+   "41f2f5ae1b61",
+   "5d113ff9d489",
+   "99ccc673a30f",
+   "2100dfc3ddff",
+   "7d9576698a11",
+   "b0358dc76630"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "c4ca83ba5741",
+   "fecha": "2026-11-21",
+   "titulo": "Signal limita el acceso de agentes de IA en celulares",
+   "que_paso": "La aplicación de mensajería Signal está restringiendo a los nuevos agentes de inteligencia artificial en sistemas operativos móviles. La medida busca evitar que capturen y almacenen datos privados de los usuarios.",
+   "por_que_importa": "Protege tus conversaciones para que los asistentes integrados en el teléfono no registren tu información personal sin permiso.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de inteligencia artificial",
+     "explicacion": "Programas diseñados para realizar tareas de forma autónoma en tu dispositivo."
+    }
+   ],
+   "etiquetas": [
+    "signal",
+    "seguridad",
+    "privacidad",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://signal.org/blog/protecting-your-privacy/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://signal.org/blog/images/protecting-your-privacy-opengraph.png"
+  },
+  {
+   "id": "fda5004e845f",
+   "fecha": "2026-11-21",
+   "titulo": "Caída bursátil arrastra al Nasdaq en medio de dudas sobre la IA",
+   "que_paso": "El índice Nasdaq perdió billones en valor y borró sus ganancias. Esto ocurre mientras los inversores cuestionan las millonarias inversiones en el sector y la salida a bolsa de una empresa de inteligencia artificial no logra repuntar.",
+   "por_que_importa": "Muestra la cautela de los mercados financieros frente al alto costo de desarrollar nueva tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.guim.co.uk/img/media/578833ee207aab76c1b6a542f17226703dbd735b/686_0_5336_4269/master/5336.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a36857abb7bd0660d819105186f898a0"
+  },
+  {
+   "id": "a4a5f143094b",
+   "fecha": "2026-11-21",
+   "titulo": "La SEC investiga prácticas contables de Nvidia",
+   "que_paso": "La Comisión de Bolsa y Valores de Estados Unidos inició una investigación sobre Nvidia. El organismo examina posibles problemas en la contabilidad de la empresa.",
+   "por_que_importa": "Afecta a uno de los fabricantes de chips más importantes para el funcionamiento de los sistemas actuales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "SEC",
+     "explicacion": "Comisión de Bolsa y Valores, el organismo que regula los mercados financieros en Estados Unidos."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "41f2f5ae1b61",
+   "fecha": "2026-11-21",
+   "titulo": "Extensión gratuita para detectar imágenes y videos de IA en el navegador",
+   "que_paso": "Lanzaron una extensión de código abierto para Chrome, Edge y Firefox que marca contenidos generados artificialmente mientras navegas. Funciona directamente en tu dispositivo.",
+   "por_que_importa": "Te ayuda a identificar fotos y videos falsos de forma directa mientras visitas páginas web.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "código abierto",
+     "explicacion": "Software cuyo código fuente está disponible públicamente para que cualquiera pueda revisarlo y modificarlo."
+    }
+   ],
+   "etiquetas": [
+    "imagen",
+    "video",
+    "open source",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/hikaku-io/hikaku-extension"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/6662e39b14c9100ca3f259ce14d13dec7d13e763072d1d42c4b55d0e32931a62/hikaku-io/hikaku-extension"
+  },
+  {
+   "id": "5d113ff9d489",
+   "fecha": "2026-11-21",
+   "titulo": "Nueva skill de la comunidad para convertir pixel art en objetos en 3D",
+   "que_paso": "Creadores independientes publicaron una instrucción para transformar cuatro vistas de arte en pixeles en objetos falsos en 3D que se pueden rotar. Funciona en herramientas como Claude Code, Cursor y Gemini CLI.",
+   "por_que_importa": "Permite a quienes diseñan videojuegos generar elementos visuales tridimensionales a partir de dibujos simples.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "pixel art",
+     "explicacion": "Estilo de arte digital en el que las imágenes se construyen utilizando pixeles individuales."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "cursor",
+    "gemini",
+    "imagen"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/danielwh2/sprite-stacking"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "99ccc673a30f",
+   "fecha": "2026-11-21",
+   "titulo": "Lanzan Inkling 2 Mini, un nuevo modelo multimodal de código abierto",
+   "que_paso": "Presentaron Inkling 2 Mini, un modelo capaz de recibir texto e imágenes para generar respuestas en texto y código. Está disponible bajo licencia Apache 2.0 para desarrolladores.",
+   "por_que_importa": "Ofrece una nueva opción gratuita para quienes crean aplicaciones y asistentes automatizados.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelo multimodal",
+     "explicacion": "Sistema capaz de procesar y combinar distintos tipos de información, como texto e imágenes."
+    }
+   ],
+   "etiquetas": [
+    "open source",
+    "programación",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/thinkingmachines/Inkling-2-Mini.png"
+  },
+  {
+   "id": "2100dfc3ddff",
+   "fecha": "2026-11-21",
+   "titulo": "Genesis AI recauda 500 millones de dólares para su robot en Europa",
+   "que_paso": "La startup de robótica Genesis AI cerró una ronda de financiación que eleva su valor a 3.500 millones de dólares. La empresa desarrolla un robot con un planteamiento particular en el sector.",
+   "por_que_importa": "Impulsa el desarrollo de robótica avanzada respaldada por capital europeo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/cabeza-500-millones-robot-genesis-ai-que-europa-quiere-dar-punetazo-robotica"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/576a74/eno/840_560.jpeg"
+  },
+  {
+   "id": "7d9576698a11",
+   "fecha": "2026-11-21",
+   "titulo": "Video sobre el impacto de la inteligencia artificial en la industria del software",
+   "que_paso": "El canal de YouTube de Wes Roth publicó un video que analiza cómo la tecnología actual transforma la creación de software. Muestra herramientas de programación y transcripción local.",
+   "por_que_importa": "Muestra opiniones sobre el cambio en el desarrollo de programas informáticos.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Wes Roth",
+     "url": "https://www.youtube.com/watch?v=AxQE_ash8b8"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/AxQE_ash8b8/hqdefault.jpg"
+  },
+  {
+   "id": "b0358dc76630",
+   "fecha": "2026-11-21",
+   "titulo": "Video aborda supuesta demostración matemática de Claude",
+   "que_paso": "Un video en YouTube discute afirmaciones sobre un investigador y Claude resolviendo un problema matemático histórico. Explora antecedentes de pruebas anteriores.",
+   "por_que_importa": "Refleja las discusiones de la comunidad sobre las capacidades de razonamiento matemático de los asistentes.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Wes Roth",
+     "url": "https://www.youtube.com/watch?v=xjX3jESpZqs"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/xjX3jESpZqs/hqdefault.jpg"
+  }
+ ]
+}
