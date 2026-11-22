@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-21",
- "actualizado": "2026-11-21T17:58:06-03:00",
+ "actualizado": "2026-11-21T22:28:35-03:00",
  "brief": {
   "lo_mas_importante": [
    "La SEC investiga las prácticas contables de Nvidia, lo que profundizó la caída en la bolsa del principal fabricante de chips para inteligencia artificial.",
@@ -459,6 +459,79 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_1121_Site.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "6e086317ffb3",
+   "fecha": "2026-11-21",
+   "titulo": "Una prueba de rastreo revela problemas en la privacidad de datos de la IA.",
+   "que_paso": "Un investigador colocó millones de datos rastreables dentro de la cadena de suministro de IA. El experimento demostró que los datos privados de los usuarios terminan expuestos.",
+   "por_que_importa": "Muestra que la información personal que procesan los sistemas de inteligencia artificial no siempre se mantiene privada.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "privacidad",
+    "seguridad",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg"
+  },
+  {
+   "id": "dc79824f7494",
+   "fecha": "2026-11-21",
+   "titulo": "Lanzan adaptador de software para el modelo de lenguaje Qwen.",
+   "que_paso": "Publicaron un adaptador entrenado para que el modelo Qwen funcione como asistente en tareas de programación y comandos. Cuenta con miles de descargas en Hugging Face.",
+   "por_que_importa": "Permite utilizar este modelo abierto con un enfoque especializado en desarrollo de software.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "LoRA adapter",
+     "explicacion": "Un pequeño archivo de configuración que modifica un modelo de inteligencia artificial existente para darle una nueva habilidad."
+    }
+   ],
+   "etiquetas": [
+    "hugging face",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/harness-hub/Qwen3.8-27B-pi-adapted.png"
+  },
+  {
+   "id": "f3487ac9886e",
+   "fecha": "2026-11-21",
+   "titulo": "Signal restringe capturas de pantalla en sus aplicaciones móviles por la vigilancia con IA.",
+   "que_paso": "La aplicación de mensajería Signal comenzó a limitar la capacidad de tomar capturas de pantalla tanto en Android como en iOS. La medida busca enfrentar los riesgos de la vigilancia automatizada.",
+   "por_que_importa": "Afecta la forma en que los usuarios comparten información desde la aplicación para proteger su privacidad.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
