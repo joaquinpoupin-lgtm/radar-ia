@@ -1,0 +1,210 @@
+{
+ "fecha": "2026-11-22",
+ "actualizado": "2026-11-22T08:47:05-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google actualizó su buscador para priorizar las conversaciones con inteligencia artificial, incluyendo el historial de chat en su página principal.",
+   "Un análisis proyecta que el consumo energético de Anthropic basado en gas y carbón aumentará significativamente hacia 2028.",
+   "Meta está revisando sus objetivos ambientales para 2030 debido al aumento de las emisiones de carbono de sus centros de datos."
+  ],
+  "ids": [
+   "4d6c192ff862",
+   "6e086317ffb3",
+   "b77be25502fd",
+   "38c61351fe0d",
+   "381628060ea9",
+   "3400785e0033",
+   "9dc3bbb2d9bc",
+   "364473e00aca",
+   "8bc8fed2fbe6",
+   "56c8c69722c8"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "b77be25502fd",
+   "fecha": "2026-11-22",
+   "titulo": "Lanzan API con leyes y decisiones judiciales europeas para agentes de IA",
+   "que_paso": "Crearon una herramienta y servidor que reúne la legislación y decisiones de tribunales de la Unión Europea y siete países. Está diseñado para que sistemas de IA y buscadores puedan consultar estas normas legales de forma directa.",
+   "por_que_importa": "Facilita que las aplicaciones de inteligencia artificial accedan a leyes oficiales europeas actualizadas para realizar consultas o tareas legales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "API",
+     "explicacion": "Un sistema que permite que diferentes programas de software se comuniquen entre sí de forma automática."
+    },
+    {
+     "termino": "servidor",
+     "explicacion": "Una computadora central que procesa solicitudes y entrega información a otros programas o usuarios en internet."
+    }
+   ],
+   "etiquetas": [
+    "leyes",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.pandex.io"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.pandex.io/opengraph-image?6367cd8c0b666bc6"
+  },
+  {
+   "id": "38c61351fe0d",
+   "fecha": "2026-11-22",
+   "titulo": "Estudio proyecta alto consumo energético de Anthropic basado en gas y carbón",
+   "que_paso": "Un análisis sobre el consumo energético y emisiones de Anthropic proyecta que gran parte de su energía provendrá de gas y carbón hacia 2028. La estimación calcula que la empresa podría emitir millones de toneladas métricas de dióxido de carbono.",
+   "por_que_importa": "Muestra el impacto ambiental y la alta demanda de energía que generan las grandes empresas de inteligencia artificial para operar sus sistemas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i0.wp.com/betterdatacenterproject.com/wp-content/uploads/2026/11/anthropic-total-co2.png?fit=1200%2C1065&ssl=1"
+  },
+  {
+   "id": "381628060ea9",
+   "fecha": "2026-11-22",
+   "titulo": "OpenRouter toma medidas tras incidentes de procesamiento de datos",
+   "que_paso": "OpenRouter retiró a tres proveedores y eliminó puntos de acceso de su categoría de retención cero de datos. La plataforma notificó a los clientes que pudieron verse afectados tras realizar investigaciones de seguridad con tokens de prueba.",
+   "por_que_importa": "Alerta sobre problemas en el manejo de datos privados por parte de proveedores externos al usar servicios de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "proveedores",
+     "explicacion": "Empresas externas que ofrecen la tecnología base para que otros puedan usar modelos de inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://openrouter.ai/og.png"
+  },
+  {
+   "id": "3400785e0033",
+   "fecha": "2026-11-22",
+   "titulo": "Herramienta para optimizar código lento usando agentes de programación",
+   "que_paso": "Publicaron un proyecto en GitHub que ayuda a identificar y reescribir solo el cinco por ciento de las funciones lentas en aplicaciones de Python, Node o Ruby. Utiliza agentes de programación para reescribir esas partes específicas y comprobar que funcionen igual.",
+   "por_que_importa": "Permite acelerar aplicaciones existentes usando inteligencia artificial sin necesidad de reescribir todo el código desde cero.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial capaces de ejecutar tareas de forma autónoma siguiendo instrucciones."
+    }
+   ],
+   "etiquetas": [
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/EL4CTEO/fast-anything"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/f28aaf31b95f94fce3d715f65aec79efba51d9e0bfa1fa45cad37fb8b4d89e09/EL4CTEO/fast-anything"
+  },
+  {
+   "id": "9dc3bbb2d9bc",
+   "fecha": "2026-11-22",
+   "titulo": "Lanzan versión sin censura de un modelo de IA multimodal",
+   "que_paso": "Publicaron una versión sin restricciones del modelo Inkling-2-Mini, la cual acepta texto e imagen como entrada. Está disponible tanto como un adaptador como en archivos listos para usar bajo licencia Apache-2.0.",
+   "por_que_importa": "Ofrece una alternativa de código abierto sin filtros para quienes ejecutan modelos de inteligencia artificial en sus propios equipos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "imagen"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/AtomicChat/Inkling-2-Mini-Uncensored-GGUF.png"
+  },
+  {
+   "id": "364473e00aca",
+   "fecha": "2026-11-22",
+   "titulo": "Video muestra a seis robots trabajando en una tienda en Shanghái",
+   "que_paso": "El creador de contenido Matthew Berman publicó un video donde muestra a seis robots trabajando durante un turno de veinticuatro horas en una tienda de conveniencia en Shanghái.",
+   "por_que_importa": "Muestra ejemplos prácticos del uso de robots automatizados en espacios comerciales cotidianos.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Matthew Berman",
+     "url": "https://www.youtube.com/shorts/BoBe0tepch4"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/BoBe0tepch4/hqdefault.jpg"
+  },
+  {
+   "id": "4d6c192ff862",
+   "fecha": "2026-11-22",
+   "titulo": "Google rediseña su página de búsqueda integrando historial de chat de IA",
+   "que_paso": "Google actualizó la página principal de su buscador para facilitar el acceso directo a sus herramientas de inteligencia artificial. El nuevo diseño incluye el historial de chat y prescinde del botón tradicional de búsqueda.",
+   "por_que_importa": "Cambia la interfaz diaria de Google para priorizar las conversaciones con inteligencia artificial en la página principal.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "8bc8fed2fbe6",
+   "fecha": "2026-11-22",
+   "titulo": "Meta reevalúa su meta ambiental para 2030 por emisiones de centros de datos",
+   "que_paso": "Meta está revisando sus objetivos de sostenibilidad para 2030 debido al aumento récord en las emisiones de carbono generadas por sus centros de datos de inteligencia artificial.",
+   "por_que_importa": "Evidencia cómo el crecimiento de la infraestructura tecnológica dificulta que las grandes empresas cumplan sus metas ecológicas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Meta-El-Paso-data-center-2560x1440.jpg"
+  }
+ ]
+}
