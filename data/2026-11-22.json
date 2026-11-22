@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-22",
- "actualizado": "2026-11-22T08:47:05-03:00",
+ "actualizado": "2026-11-22T18:08:28-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google actualizó su buscador para priorizar las conversaciones con inteligencia artificial, incluyendo el historial de chat en su página principal.",
@@ -205,6 +205,214 @@
    ],
    "confirmacion": 1,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Meta-El-Paso-data-center-2560x1440.jpg"
+  },
+  {
+   "id": "de5cd1a6d51d",
+   "fecha": "2026-11-22",
+   "titulo": "OpenAI explica cómo mide el progreso en sus modelos de inteligencia artificial",
+   "que_paso": "OpenAI publicó un artículo sobre cómo mide el progreso técnico de sus modelos y por qué esto ayuda a los desarrolladores. La empresa busca que la industria adopte una forma compartida de evaluar las nuevas capacidades que aparecen.",
+   "por_que_importa": "Ayuda a entender cómo los creadores de tecnología miden si un sistema es mejor que el anterior.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/perplexity-and-intelligence"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "id": "3c4f4993adca",
+   "fecha": "2026-11-22",
+   "titulo": "Juego web simula cómo es trabajar bajo las órdenes de una inteligencia artificial",
+   "que_paso": "Un usuario de Hacker News creó un juego de navegador donde un jefe virtual de inteligencia artificial cree que eres su subagente. Se puede jugar de forma gratuita en un sitio web llamado worker755.com.",
+   "por_que_importa": "Muestra una forma creativa y lúdica de experimentar con la idea de recibir órdenes de un sistema automatizado.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/gulivan/worker755"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/1a61c41993f5254c109a85cd28568cd220bb2a58bf2ef90d655e6655e7c459d0/gulivan/worker755"
+  },
+  {
+   "id": "528d6924cf9a",
+   "fecha": "2026-11-22",
+   "titulo": "Debate sobre los mitos de la inteligencia artificial consciente",
+   "que_paso": "Un artículo publicado en Noema Magazine analiza por qué la conciencia es más propia de los seres vivos que de la computación. Además, advierte que intentar crear sistemas que parezcan conscientes es una mala idea.",
+   "por_que_importa": "Aporta una perspectiva crítica sobre los límites éticos y filosóficos de crear sistemas que simulan tener sentimientos o conciencia.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://noemamag.imgix.net/2026/01/The-Mythology-of-Conscious-AI-scaled.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=ac64b80d34a8583e44429565e7df4a07"
+  },
+  {
+   "id": "4a5a9b50a238",
+   "fecha": "2026-11-22",
+   "titulo": "Herramienta ejecuta agentes de inteligencia artificial para probar aplicaciones en teléfonos",
+   "que_paso": "Un proyecto en GitHub permite usar agentes para probar aplicaciones móviles en simultáneo en simuladores de iOS y emuladores de Android. La herramienta detecta errores de diseño, traducción y fallas en flujos de uso.",
+   "por_que_importa": "Permite automatizar la revisión de aplicaciones en múltiples teléfonos al mismo tiempo usando herramientas gratuitas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "emuladores",
+     "explicacion": "Programas que imitan el funcionamiento de un dispositivo, como un teléfono celular, en una computadora."
+    }
+   ],
+   "etiquetas": [
+    "github",
+    "python",
+    "open source",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/pierridotite/mobile-agent-testers"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1460452633/46cc0a06-33e1-4a65-a13b-88575b4d0b0f"
+  },
+  {
+   "id": "e0ac5bcc25e1",
+   "fecha": "2026-11-22",
+   "titulo": "Habilidad comunitaria para investigar árboles genealógicos y archivos históricos",
+   "que_paso": "Un usuario creó una skill comunitaria de Python que permite consultar registros de archivos estatales y documentos genealógicos hasta el siglo XVI. Funciona con herramientas como Claude y MCP Skill.",
+   "por_que_importa": "Sirve para automatizar búsquedas genealógicas complejas, aunque al ser creada por la comunidad conviene revisarla antes de instalarla.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a una inteligencia artificial a realizar una tarea específica."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "python",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/5921206ef584b7de3c19eda48acc2f433cfbada545b5d179d701f265f0b90a3c/shnfatih-hash/devlet-arsivleri-soykutugu"
+  },
+  {
+   "id": "4b443d68faa9",
+   "fecha": "2026-11-22",
+   "titulo": "Nuevo modelo de inteligencia artificial SenseNova Loop 9B disponible en Hugging Face",
+   "que_paso": "Llega a la plataforma Hugging Face el modelo SenseNova-Loop-9B con licencia Apache 2.0. El sistema está diseñado para procesar tareas que combinan imágenes y texto.",
+   "por_que_importa": "Ofrece a los desarrolladores una nueva alternativa de código abierto para integrar capacidades visuales y de texto en sus proyectos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "imagen",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/sensenova/SenseNova-Loop-9B.png"
+  },
+  {
+   "id": "bed82431ae1f",
+   "fecha": "2026-11-22",
+   "titulo": "El crecimiento de los centros de datos genera resistencia en las comunidades",
+   "que_paso": "El periodista Paris Marx analiza en su nuevo libro los conflictos sociales y ambientales generados por la expansión de los centros de datos necesarios para las grandes tecnológicas.",
+   "por_que_importa": "Expone el impacto físico y social que tiene a nivel local la alta demanda energética de la tecnología actual.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2283113936-maller.jpg?w=1024"
+  },
+  {
+   "id": "10b966779bbd",
+   "fecha": "2026-11-22",
+   "titulo": "Desarrollador retira música creada con inteligencia artificial de un videojuego tras críticas",
+   "que_paso": "Los creadores de The Binding of Isaac: Repentance Plus eliminaron pistas de audio generadas con Suno tras recibir críticas negativas de los usuarios en Steam. Jugadores descubrieron metadatos de la herramienta en archivos musicales del juego.",
+   "por_que_importa": "Refleja el rechazo que parte de la comunidad de jugadores tiene hacia el uso de contenido automatizado en los videojuegos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "voz",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/j7yPmbNCP4I-HD.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+  },
+  {
+   "id": "4fbc26b85197",
+   "fecha": "2026-11-22",
+   "titulo": "Video muestra quince usos creativos de la inteligencia artificial para el futuro",
+   "que_paso": "El creador de contenido Xavier Mitjana publicó un video en YouTube con quince casos prácticos y creativos sobre cómo utilizar sistemas de inteligencia artificial en diferentes niveles de complejidad.",
+   "por_que_importa": "Entrega ideas y ejemplos prácticos para aplicar la tecnología en tareas cotidianas o proyectos personales.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "español"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xavier Mitjana",
+     "url": "https://www.youtube.com/watch?v=q9IM1MEG6hk"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/q9IM1MEG6hk/hqdefault.jpg"
   }
  ]
 }
