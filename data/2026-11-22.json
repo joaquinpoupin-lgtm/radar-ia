@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-22",
- "actualizado": "2026-11-22T18:08:28-03:00",
+ "actualizado": "2026-11-22T22:53:23-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google actualizó su buscador para priorizar las conversaciones con inteligencia artificial, incluyendo el historial de chat en su página principal.",
@@ -413,6 +413,149 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.ytimg.com/vi/q9IM1MEG6hk/hqdefault.jpg"
+  },
+  {
+   "id": "1ba4d31258de",
+   "fecha": "2026-11-22",
+   "titulo": "Guía para instalar una IA privada en tu propio computador",
+   "que_paso": "Un artículo muestra cómo armar un asistente de inteligencia artificial personal y gratuito usando el computador de la casa. El sistema funciona de forma privada para todo el hogar.",
+   "por_que_importa": "Permite usar herramientas de inteligencia artificial de manera local sin depender de internet ni enviar datos a servidores externos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "privacidad",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth/opengraph-image-17m7t5?6653c98c6cd84ba6"
+  },
+  {
+   "id": "315e82c2f910",
+   "fecha": "2026-11-22",
+   "titulo": "Estudios advierten sobre el impacto ambiental y de salud de la industria de la IA",
+   "que_paso": "Dos nuevas investigaciones revelan el rápido crecimiento de las emisiones de carbono del sector tecnológico. Al mismo tiempo, las empresas buscan limitar las protestas comunitarias contra la construcción de centros de datos.",
+   "por_que_importa": "Muestra las consecuencias medioambientales y en la salud humana que genera el funcionamiento de la infraestructura de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!MW3Y!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,$fp_!0.3439:1!/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5d71c583-fbcc-4b20-91c7-e1bdabe47973_4978x3319.jpeg"
+  },
+  {
+   "id": "ce0bcf2918b4",
+   "fecha": "2026-11-22",
+   "titulo": "Detectan filtraciones de datos y problemas de seguridad en proveedores de IA",
+   "que_paso": "Una prueba masiva con dos millones de avisos de inteligencia artificial descubrió tres brechas en proveedores, robo de instrucciones y configuraciones de privacidad que no se respetaron.",
+   "por_que_importa": "Evidencia fallas de seguridad y de privacidad en las empresas que ofrecen servicios de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "seguridad",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "4c3b353329d5",
+   "fecha": "2026-11-22",
+   "titulo": "Publican reglas de detección para marcos de ataques de agentes de IA",
+   "que_paso": "Lanzaron un conjunto de reglas y herramientas técnicas en GitHub para detectar ataques dirigidos a sistemas de inteligencia artificial autónomos. El proyecto recopila patrones para distintos programas de defensa informática.",
+   "por_que_importa": "Entrega recursos de seguridad para identificar y bloquear amenazas enfocadas en agentes de inteligencia artificial.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "Programas de inteligencia artificial diseñados para realizar tareas de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "seguridad",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/ThreatDefence/agentic-attack-detections"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1464795219/d1137601-3acd-4e93-a98c-f5d3bb45ef7a"
+  },
+  {
+   "id": "85f4e896dbd4",
+   "fecha": "2026-11-22",
+   "titulo": "Lanzan DaisyRose-27B, un nuevo modelo multimodal de razonamiento",
+   "que_paso": "Presentaron un nuevo modelo de inteligencia artificial entrenado exclusivamente con aprendizaje por refuerzo y sin ajuste fino supervisado tradicional. El desarrollo requirió dieciocho días de entrenamiento en servidores especializados.",
+   "por_que_importa": "Introduce una alternativa creada mediante nuevos métodos de entrenamiento para tareas complejas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "multimodal",
+     "explicacion": "Capacidad de un sistema para entender y procesar distintos tipos de información, como texto e imágenes."
+    }
+   ],
+   "etiquetas": [
+    "imagen",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/RadixArk/DaisyRose-27B"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/RadixArk/DaisyRose-27B.png"
+  },
+  {
+   "id": "05744626c0d6",
+   "fecha": "2026-11-22",
+   "titulo": "El jefe de ciencia de OpenAI discute cómo limitar el desarrollo de la IA",
+   "que_paso": "Un alto cargo de OpenAI analizó los métodos necesarios para establecer límites de velocidad en la creación de nuevos sistemas. El debate se centra en encontrar una forma acordada para medir ese ritmo de avance.",
+   "por_que_importa": "Refleja la discusión interna en la industria sobre la necesidad de regular la velocidad con la que evoluciona la tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
   }
  ]
 }
