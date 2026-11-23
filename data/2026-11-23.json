@@ -1,0 +1,216 @@
+{
+ "fecha": "2026-11-23",
+ "actualizado": "2026-11-23T10:26:41-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "OpenAI reveló que utiliza una medida de incertidumbre para comparar sus modelos y propuso que la industria adopte este estándar común.",
+   "Una prueba masiva con dos millones de avisos descubrió tres brechas en proveedores, robo de instrucciones y fallas de privacidad.",
+   "Se lanzó PiBot, un equipo de agentes de inteligencia artificial que funciona sin conexión a internet en múltiples sistemas operativos."
+  ],
+  "ids": [
+   "66377a56c5f8",
+   "ce0bcf2918b4",
+   "de5cd1a6d51d",
+   "361586e9a0c0",
+   "69aed33940f7",
+   "4f1b4d5d72a4",
+   "68cc273733ba",
+   "1793f4fe05b1",
+   "3a8ea930f30c",
+   "3c4f4993adca"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "361586e9a0c0",
+   "fecha": "2026-11-23",
+   "titulo": "PiBot: agente de IA local y de código abierto para escritorio",
+   "que_paso": "Se lanzó PiBot, un equipo de agentes de IA que funciona sin conexión y permite chats grupales, usar el navegador y ejecutar rutinas. Está disponible para macOS, Windows, Linux y Android.",
+   "por_que_importa": "Permite usar asistentes de IA sin depender de servicios en la nube.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente de IA",
+     "explicacion": "Programa que realiza tareas automáticas usando inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "pi",
+    "herramientas",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/w01fb0ss/PiBot"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1466272233/d5c85074-b3c6-47e3-ac51-300e4c0d5cac"
+  },
+  {
+   "id": "69aed33940f7",
+   "fecha": "2026-11-23",
+   "titulo": "Localcode permite programar con IA en Mac con un solo comando",
+   "que_paso": "Se presentó Localcode, una herramienta de código abierto que instala agentes de IA en el Mac para generar código localmente. Funciona con modelos locales y se instala con un comando.",
+   "por_que_importa": "Facilita usar IA para programar sin enviar el código a la nube.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "modelos locales",
+     "explicacion": "Modelos de IA que se ejecutan en el propio ordenador."
+    }
+   ],
+   "etiquetas": [
+    "localcode",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://github.com/mjwsolo/localcode"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/344b4d337d64b315bf25f9b02206d343d32c04c1035d581d064c1c00d40bac47/mjwsolo/localcode"
+  },
+  {
+   "id": "4f1b4d5d72a4",
+   "fecha": "2026-11-23",
+   "titulo": "LingSante-3.1-flash, modelo de texto para tareas médicas",
+   "que_paso": "Hugging Face añadió LingSante-3.1-flash, un modelo de generación de texto entrenado para razonamiento y flujos médicos. Usa pre‑entrenamiento mixto y fine‑tuning supervisado para tareas clínicas.",
+   "por_que_importa": "Ofrece una herramienta de IA especializada para profesionales de salud que necesiten asistencia textual.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "fine‑tuning",
+     "explicacion": "Ajustar un modelo previamente entrenado con datos específicos para mejorar su desempeño en una tarea."
+    }
+   ],
+   "etiquetas": [
+    "huggingface",
+    "salud",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/inclusionAI/LingSante-3.1-flash.png"
+  },
+  {
+   "id": "68cc273733ba",
+   "fecha": "2026-11-23",
+   "titulo": "Instinct vigila precios y compra móvil cuando baja",
+   "que_paso": "El autor configuró Instinct, un agente de IA, para monitorizar el precio del Google Pixel 11 Pro y comprarlo si baja 200 euros antes del Black Friday. Utiliza varios agentes como Hermes para la interacción.",
+   "por_que_importa": "Muestra cómo los agentes de IA pueden automatizar compras personales basadas en precios.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "instinct",
+    "compras",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/le-he-pedido-a-instinct-que-vigile-precio-movil-black-friday-baja-200-euros-compra"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/5c232a/instinct-compra-portada-3/840_560.jpeg"
+  },
+  {
+   "id": "1793f4fe05b1",
+   "fecha": "2026-11-23",
+   "titulo": "Asus ProArt P16 permite ejecutar agentes de IA locales",
+   "que_paso": "Ars Technica revisó el portátil Asus ProArt P16, que cuesta hasta 7 000 USD y soporta varios agentes de IA que corren localmente sin conexión a internet.",
+   "por_que_importa": "Demuestra que el hardware de consumo ya puede ejecutar IA local de forma potente.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de IA locales",
+     "explicacion": "Programas de IA que se ejecutan directamente en el dispositivo del usuario."
+    }
+   ],
+   "etiquetas": [
+    "asus",
+    "hardware",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Asus-P16-3-1152x648.jpg"
+  },
+  {
+   "id": "66377a56c5f8",
+   "fecha": "2026-11-23",
+   "titulo": "OpenAI publica la perplejidad como métrica de sus modelos",
+   "que_paso": "OpenAI reveló que usa la perplejidad, una medida de incertidumbre, para comparar sus modelos y propone que la industria adopte un estándar similar. Jakub Pachocki, científico jefe, explicó la iniciativa.",
+   "por_que_importa": "Una métrica común facilitará comparar capacidades entre diferentes sistemas de IA.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "perplejidad",
+     "explicacion": "Valor que indica cuán bien un modelo predice una secuencia de texto; valores más bajos son mejores."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "modelo",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/openai-le-ha-puesto-numero-a-inteligencia-sus-modelos-quiere-que-toda-industria-pacte-donde-parar"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/9c7526/openai-portada/840_560.jpeg"
+  },
+  {
+   "id": "3a8ea930f30c",
+   "fecha": "2026-11-23",
+   "titulo": "Meta Muse compra productos en Walmart por ti",
+   "que_paso": "Meta lanzó Muse, un agente que puede navegar el sitio de Walmart y comprar artículos durante el Black Friday. La función se activa mediante el Agent Gateway de Meta.",
+   "por_que_importa": "Permite delegar compras online a un asistente de IA, ahorrando tiempo al usuario.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Agent Gateway",
+     "explicacion": "Plataforma que permite a agentes de IA interactuar con sitios web externos."
+    }
+   ],
+   "etiquetas": [
+    "meta",
+    "compras",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  }
+ ]
+}
