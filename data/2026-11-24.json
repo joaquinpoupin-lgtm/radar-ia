@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-24",
- "actualizado": "2026-11-24T11:05:03-03:00",
+ "actualizado": "2026-11-24T20:59:06-03:00",
  "brief": {
   "lo_mas_importante": [
    "Amazon informó que hackers usaron agentes de inteligencia artificial para encontrar y aprovechar una vulnerabilidad informática con mínima intervención humana.",
@@ -304,6 +304,200 @@
    ],
    "confirmacion": 1,
    "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800"
+  },
+  {
+   "id": "3c6728c1bfd1",
+   "fecha": "2026-11-24",
+   "titulo": "Modelos GPT diseñan proteínas y logran resultados en pruebas",
+   "que_paso": "Nuevos modelos GPT diseñan estructuras y secuencias de proteínas usando razonamiento y código. Pruebas de laboratorio mostraron evidencia de unión en cinco objetivos distintos.",
+   "por_que_importa": "Muestra el avance de la inteligencia artificial en tareas científicas complejas como la biología.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "proteínas",
+     "explicacion": "Moléculas esenciales para la vida que cumplen funciones clave en todos los seres vivos."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "salud",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "id": "e213ef04a870",
+   "fecha": "2026-11-24",
+   "titulo": "Tidal prohibirá la música generada por inteligencia artificial",
+   "que_paso": "El servicio de streaming musical Tidal anunció que prohibirá desde el próximo mes las canciones que considere creadas completamente por inteligencia artificial.",
+   "por_que_importa": "Las plataformas de música toman medidas frente al aumento de contenido creado por inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "tidal",
+    "música"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "e628c0b2649e",
+   "fecha": "2026-11-24",
+   "titulo": "Acciones de Anthropic caen por debajo de su precio de salida a bolsa",
+   "que_paso": "Las acciones de Anthropic cotizaron por debajo de su precio inicial de ochenta y tres dólares por primera vez. Esto borra las ganancias de los inversores que apostaron por la empresa la semana pasada.",
+   "por_que_importa": "Refleja la volatilidad financiera en el mercado de las empresas dedicadas a la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iE6G4fxUCK2o/v0/1200x800.jpg"
+  },
+  {
+   "id": "002bc4ff2409",
+   "fecha": "2026-11-24",
+   "titulo": "Físico afirma que empleados de Anthropic hablan de tomar el poder",
+   "que_paso": "Un físico aseguró que empleados de la empresa de inteligencia artificial Anthropic conversan abiertamente sobre derrocar al gobierno de Estados Unidos y tomar el control del mundo.",
+   "por_que_importa": "Plantea debates públicos sobre la cultura y la seguridad dentro de los laboratorios de inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "seguridad",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://novaramedia.com/wp-content/uploads/2026/11/Screenshot-2026-11-24-at-2.42.06-pm-e1795535439679-1200x630.png"
+  },
+  {
+   "id": "e2544bc1aeb2",
+   "fecha": "2026-11-24",
+   "titulo": "Google Gemini se asocia con los Golden State para la experiencia de fanáticos",
+   "que_paso": "Google Gemini se asoció con los Golden State para potenciar las experiencias de los fanáticos y las operaciones comerciales del equipo, las Valkyries y el Chase Center.",
+   "por_que_importa": "Muestra cómo grandes organizaciones usan la inteligencia artificial para gestionar sus operaciones y la relación con el público.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gemini",
+    "deportes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Gemini_1.max-1440x810.jpg"
+  },
+  {
+   "id": "f3aa9260f109",
+   "fecha": "2026-11-24",
+   "titulo": "Astrónomos aficionados usan inteligencia artificial para buscar exoplanetas",
+   "que_paso": "Dos astrónomos aficionados usaron herramientas para encontrar posibles exoplanetas utilizando datos públicos de los telescopios espaciales Kepler y TESS de la NASA.",
+   "por_que_importa": "Ejemplifica cómo las personas pueden usar la tecnología para realizar descubrimientos usando datos públicos.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "exoplanetas",
+     "explicacion": "Planetas que están fuera de nuestro sistema solar."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "ciencia",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "OpenAI",
+     "url": "https://openai.com/index/searching-for-distant-planets-with-astra"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/318YLaAKlMKQFzOdMutjeX/8b6e4e516fd1a7894c97318838f43a0f/searching-for-distant-planets-with-astra-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "id": "44f76c8bfa0f",
+   "fecha": "2026-11-24",
+   "titulo": "Servidores MCP ahora pueden integrar habilidades y ejecutar tareas con Claude",
+   "que_paso": "Los servidores MCP ahora permiten incorporar habilidades, ejecutar tareas y realizar más funciones directamente con Claude.",
+   "por_que_importa": "Amplía las capacidades de integración y automatización de tareas en Claude.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more/opengraph-image/og"
+  },
+  {
+   "id": "38f3d822d564",
+   "fecha": "2026-11-24",
+   "titulo": "Claude permite convertir artefactos en aplicaciones para Mac y Windows",
+   "que_paso": "Ahora es posible abrir los artefactos de uso diario como cualquier otra aplicación en el computador para que realicen más funciones.",
+   "por_que_importa": "Facilita transformar contenido generado por la inteligencia artificial en aplicaciones funcionales para el computador.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "artefactos",
+     "explicacion": "Contenidos interactivos o código generado por Claude que se pueden ver y usar por separado."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/install-as-app"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/install-as-app/opengraph-image/og"
   }
  ]
 }
