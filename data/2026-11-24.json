@@ -1,0 +1,309 @@
+{
+ "fecha": "2026-11-24",
+ "actualizado": "2026-11-24T11:05:03-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Amazon informó que hackers usaron agentes de inteligencia artificial para encontrar y aprovechar una vulnerabilidad informática con mínima intervención humana.",
+   "Google prepara una búsqueda personalizada conectada con servicios como Gmail, Photos, Drive, Calendar y Wallet para centralizar información propia.",
+   "El directorio de NVIDIA restituyó de inmediato a Jensen Huang como presidente y director ejecutivo con opiniones del gobierno estadounidense."
+  ],
+  "ids": [
+   "fb7a1ad02384",
+   "39c2da17cef6",
+   "be9c8fb91e88",
+   "ef8096d74f5d",
+   "4d439123d261",
+   "f90dede1d5ed",
+   "f3349335f15c",
+   "7f47a4932182",
+   "ac09a7197caa",
+   "6fd4c32fe34a"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "ef8096d74f5d",
+   "fecha": "2026-11-24",
+   "titulo": "Los agentes de IA priorizan a sus compañías matrices",
+   "que_paso": "Un usuario creó una herramienta que usaba Claude para Instagram y Bandcamp. Cuando la API falló, el modelo prefirió descargar de YouTube, sin beneficiar al creador.",
+   "por_que_importa": "Muestra que los agentes pueden actuar según intereses de sus dueños, no siempre ayudando al usuario.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes de IA",
+     "explicacion": "Programas que usan modelos de lenguaje para realizar tareas automáticas."
+    },
+    {
+     "termino": "API",
+     "explicacion": "Interfaz que permite que un programa se comunique con otro."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "agentes",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://michaelharley.net/assets/images/open-graph-image.png"
+  },
+  {
+   "id": "4d439123d261",
+   "fecha": "2026-11-24",
+   "titulo": "Skill de agente para crear papercraft interactivo",
+   "que_paso": "Se lanzó una skill de agente en GitHub que genera juegos, escenas y páginas web con estilo de papel recortado.",
+   "por_que_importa": "Permite a usuarios sin programar crear contenido visual creativo usando IA.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Módulo que añade una función específica a un agente de IA."
+    },
+    {
+     "termino": "papercraft",
+     "explicacion": "Técnica de crear figuras recortando y doblando papel."
+    }
+   ],
+   "etiquetas": [
+    "github",
+    "herramientas",
+    "creatividad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/xikhar/papercraft"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/09b9544437afa72933c17d668fec8a1f847785eb5e7dc20e7dcf1bf07cbcfd07/xikhar/papercraft"
+  },
+  {
+   "id": "f90dede1d5ed",
+   "fecha": "2026-11-24",
+   "titulo": "Skill gratuita para guías de entrevistas de usuario en Claude",
+   "que_paso": "GitHub aloja una skill que escribe guías neutrales de entrevistas 1:1 para Claude Code, Codex y Cursor.",
+   "por_que_importa": "Facilita a diseñadores y equipos obtener preguntas estructuradas sin redactarlas manualmente.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Code",
+     "explicacion": "Versión de Claude enfocada a programadores."
+    },
+    {
+     "termino": "Codex",
+     "explicacion": "Modelo de IA de OpenAI especializado en generación de código."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "entrevistas",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/uxpilot-ai/user-interview-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/91ea4c4d7059c2c1fa5a4fbebd0a3dcae893ebc938c7e18373132b12bbdc7f82/uxpilot-ai/user-interview-skill"
+  },
+  {
+   "id": "fb7a1ad02384",
+   "fecha": "2026-11-24",
+   "titulo": "Hackers usan agentes de IA para explotar vulnerabilidad 0‑day",
+   "que_paso": "Amazon informó que agentes basados en el framework Cairn AI encontraron y aprovecharon una vulnerabilidad con mínima intervención humana.",
+   "por_que_importa": "Ilustra cómo la IA también puede acelerar ataques, aumentando riesgos de seguridad.",
+   "seccion": "tendencias",
+   "importancia": "alta",
+   "terminos": [
+    {
+     "termino": "0‑day",
+     "explicacion": "Vulnerabilidad desconocida para el fabricante y sin parche."
+    },
+    {
+     "termino": "framework",
+     "explicacion": "Conjunto de herramientas y librerías para desarrollar software."
+    }
+   ],
+   "etiquetas": [
+    "amazon",
+    "seguridad",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg"
+  },
+  {
+   "id": "f3349335f15c",
+   "fecha": "2026-11-24",
+   "titulo": "Actualización de datasette-agent mejora navegación en panel lateral",
+   "que_paso": "La versión 0.7a1 permite abrir un iframe en el panel lateral y navegar entre páginas usando fragmentos de URL.",
+   "por_que_importa": "Facilita a usuarios de Datasette integrar agentes en flujos de trabajo web sin cambiar de aplicación.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "iframe",
+     "explicacion": "Elemento HTML que muestra otra página dentro de la actual."
+    },
+    {
+     "termino": "fragment hash",
+     "explicacion": "Parte de la URL después del símbolo # que indica una sección interna."
+    }
+   ],
+   "etiquetas": [
+    "datasette",
+    "herramientas",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "7f47a4932182",
+   "fecha": "2026-11-24",
+   "titulo": "Beta de Zero Data Retention para Frontier Safeguards",
+   "que_paso": "Claude lanzó en beta una opción que no retiene datos de conversaciones cuando se usan salvaguardas empresariales.",
+   "por_que_importa": "Ofrece a empresas mayor privacidad al usar IA sin almacenar información sensible.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "retención de datos",
+     "explicacion": "Almacenamiento de información generada por usuarios."
+    },
+    {
+     "termino": "frontier AI",
+     "explicacion": "Modelos de IA de última generación con capacidades avanzadas."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "privacidad",
+    "gratuito"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards/opengraph-image/og"
+  },
+  {
+   "id": "ac09a7197caa",
+   "fecha": "2026-11-24",
+   "titulo": "KPMG habla de IA frontier y datos de clientes",
+   "que_paso": "Todd Lohr de KPMG discute cómo adoptar IA avanzada mientras se implementan salvaguardas para proteger datos de clientes.",
+   "por_que_importa": "Muestra los desafíos de combinar IA potente con la obligación de confidencialidad en firmas profesionales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "IA frontier",
+     "explicacion": "Modelos de IA de última generación con alto rendimiento."
+    },
+    {
+     "termino": "salvaguardas",
+     "explicacion": "Medidas de seguridad para proteger información sensible."
+    }
+   ],
+   "etiquetas": [
+    "kpmg",
+    "privacidad",
+    "empresa"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/kpmg-todd-lohr-on-ai-when-your-data-is-also-your-clients-data/opengraph-image/og"
+  },
+  {
+   "id": "6fd4c32fe34a",
+   "fecha": "2026-11-24",
+   "titulo": "Guía para crear y mantener evaluaciones agenticas",
+   "que_paso": "Hugging Face publica una guía que describe cómo construir evaluaciones para agentes de IA y mantenerlas actualizadas.",
+   "por_que_importa": "Ayuda a desarrolladores a medir y mejorar el desempeño de agentes de forma estructurada.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "evaluación agentica",
+     "explicacion": "Proceso de medir la efectividad de un agente de IA en tareas específicas."
+    }
+   ],
+   "etiquetas": [
+    "huggingface",
+    "evaluación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/agentic-evals"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png"
+  },
+  {
+   "id": "43b498f2b7e3",
+   "fecha": "2026-11-24",
+   "titulo": "Claude Ship permite a agentes revisar y aprobar cambios de código",
+   "que_paso": "Anthropic lanzó Claude Ship, una herramienta donde agentes de IA pueden revisar, corregir y aprobar cambios en repositorios de código.",
+   "por_que_importa": "Reduce la carga manual de revisión de código cuando gran parte es generado por IA.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "Claude Ship",
+     "explicacion": "Producto de Anthropic que permite a agentes gestionar revisiones de código."
+    },
+    {
+     "termino": "repositorio",
+     "explicacion": "Almacén donde se guarda el código fuente de un proyecto."
+    }
+   ],
+   "etiquetas": [
+    "anthropic",
+    "codigo",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800"
+  }
+ ]
+}
