@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-23",
- "actualizado": "2026-11-23T10:26:41-03:00",
+ "actualizado": "2026-11-23T23:28:06-03:00",
  "brief": {
   "lo_mas_importante": [
    "OpenAI reveló que utiliza una medida de incertidumbre para comparar sus modelos y propuso que la industria adopte este estándar común.",
@@ -211,6 +211,165 @@
    ],
    "confirmacion": 1,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+  },
+  {
+   "id": "be9c8fb91e88",
+   "fecha": "2026-11-23",
+   "titulo": "Jensen Huang vuelve a ser director ejecutivo de NVIDIA",
+   "que_paso": "El directorio de NVIDIA restituyó de inmediato a Jensen Huang como presidente y director ejecutivo. La decisión contó con opiniones de altos niveles del gobierno estadounidense.",
+   "por_que_importa": "Afecta directamente el liderazgo de una de las empresas de tecnología más importantes para el desarrollo de la inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "nvidia",
+    "tendencias",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+    },
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/"
+    },
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+    }
+   ],
+   "confirmacion": 2,
+   "imagen": "https://nvidianews.nvidia.com/media/sites/219/images/social-image.jpg"
+  },
+  {
+   "id": "61dcf1169479",
+   "fecha": "2026-11-23",
+   "titulo": "Google DeepMind usa agentes para buscar algoritmos cuánticos",
+   "que_paso": "Google DeepMind utiliza equipos de agentes inteligentes y verificación formal para mejorar algoritmos cuánticos. Estos algoritmos se aplican en áreas como la química y la fusión.",
+   "por_que_importa": "Permite acelerar investigaciones científicas complejas usando herramientas automatizadas.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "algoritmos cuánticos",
+     "explicacion": "Instrucciones diseñadas para computadoras cuánticas, que resuelven problemas científicos complejos mucho más rápido que las computadoras normales."
+    },
+    {
+     "termino": "verificación formal",
+     "explicacion": "Método matemático para comprobar que un programa o código funciona exactamente como se espera sin errores."
+    }
+   ],
+   "etiquetas": [
+    "google deepmind",
+    "agentes",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google DeepMind",
+     "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w1200-h630-n-nu-rw"
+  },
+  {
+   "id": "e277391e1ad3",
+   "fecha": "2026-11-23",
+   "titulo": "Claude Ship revisa y corrige solicitudes de código automáticamente",
+   "que_paso": "Claude ahora puede revisar solicitudes de cambio de código, corregirlas y aprobarlas según las reglas permitidas por cada equipo. Esto ayuda a agilizar el trabajo de desarrollo.",
+   "por_que_importa": "Facilita la revisión de código en equipos de desarrollo para ahorrar tiempo en tareas repetitivas.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "solicitudes de código",
+     "explicacion": "Propuestas de cambios que los programadores hacen al código fuente de un proyecto para mejorarlo o agregar funciones."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/introducing-claude-ship"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/introducing-claude-ship/opengraph-image/og"
+  },
+  {
+   "id": "89fabf4c9972",
+   "fecha": "2026-11-23",
+   "titulo": "Guía para asegurar agentes de programación con Claude Code",
+   "que_paso": "Anthropic publicó una guía para que líderes técnicos y de seguridad entiendan y controlen los riesgos al usar Claude Code. La herramienta busca ayudar a escalar su uso de forma segura.",
+   "por_que_importa": "Entrega pautas para mantener la seguridad informática al integrar asistentes de código en una organización.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Claude (blog)",
+     "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents/opengraph-image/og"
+  },
+  {
+   "id": "ca38829e7312",
+   "fecha": "2026-11-23",
+   "titulo": "RoboTrack ofrece seguimiento de puntos para robots en el mundo real",
+   "que_paso": "El proyecto Ai2 publicó en Hugging Face una herramienta llamada RoboTrack enfocada en el seguimiento visual para la manipulación robótica en entornos reales.",
+   "por_que_importa": "Mejora las capacidades de percepción visual para que los robots interactúen con mayor precisión en el mundo físico.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "video",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/allenai/robotrack"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/0KlbITzhyUGtGPyvi09um.png"
+  },
+  {
+   "id": "39c2da17cef6",
+   "fecha": "2026-11-23",
+   "titulo": "Google Search integra información personal de múltiples aplicaciones",
+   "que_paso": "Google prepara una experiencia de búsqueda más personalizada conectada con servicios como Gmail, Google Photos, Google Drive, Google Calendar y Google Wallet.",
+   "por_que_importa": "Permite encontrar información propia de forma centralizada al usar las herramientas cotidianas de Google.",
+   "seccion": "modelos",
+   "importancia": "alta",
+   "terminos": [],
+   "etiquetas": [
+    "google",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Google AI",
+     "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_pContext_Drive_1118.width-1300.png"
   }
  ]
 }
