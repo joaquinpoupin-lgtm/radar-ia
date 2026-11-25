@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-25",
- "actualizado": "2026-11-25T10:18:29-03:00",
+ "actualizado": "2026-11-25T20:42:55-03:00",
  "brief": {
   "lo_mas_importante": [
    "Las acciones de Anthropic cayeron por debajo de su precio inicial en bolsa, borrando las ganancias recientes de sus inversores.",
@@ -172,6 +172,102 @@
    ],
    "confirmacion": 1,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1083228790-2560x1440.jpg"
+  },
+  {
+   "id": "5f305d13d7da",
+   "fecha": "2026-11-25",
+   "titulo": "Gemini se negó a dar la letra de una canción infantil",
+   "que_paso": "Un usuario de Hacker News reportó que Gemini comenzó a mostrar la letra de una canción infantil y luego se detuvo para bloquearla.",
+   "por_que_importa": "Muestra que a veces las herramientas de inteligencia artificial bloquean contenido común por razones inesperadas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "gemini",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.comentr.com/0150CPNGZR000000000C0MENTR/media/content_image/v1/bff5d66072971917ceddac67792e86c36ea69bdec2ba9cb46d7994c29d79c5ad.44HS7JCKCR7PGP5YRJ884468FT/p1-s2024x1956/w1080.webp"
+  },
+  {
+   "id": "197dc8b3ac4d",
+   "fecha": "2026-11-25",
+   "titulo": "Motor para entrenar modelos locales usando computadoras en pausa",
+   "que_paso": "Crearon un motor en Python para entrenar modelos de inteligencia artificial locales aprovechando los momentos en que la computadora no está en uso.",
+   "por_que_importa": "Permite aprovechar los recursos propios para personalizar modelos sin depender de servicios externos.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/sous-labs/songe"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1465322684/f6c97c41-6e40-4e48-83c6-1b20210672d6"
+  },
+  {
+   "id": "28175a595e60",
+   "fecha": "2026-11-25",
+   "titulo": "Amazon y Meta discuten terminar con el bloqueo del agente Muse",
+   "que_paso": "Amazon y Meta están en conversaciones para resolver un bloqueo de dos meses que afectaba al agente de inteligencia artificial Muse.",
+   "por_que_importa": "Podría marcar un cambio en cómo estas grandes empresas colaboran o compiten en el área de agentes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente",
+     "explicacion": "programa de inteligencia artificial diseñado para realizar tareas de forma más autónoma."
+    }
+   ],
+   "etiquetas": [
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200"
+  },
+  {
+   "id": "a9ba02207a16",
+   "fecha": "2026-11-25",
+   "titulo": "Herramientas de programación alteran el mercado de instrumentos musicales",
+   "que_paso": "La llegada de agentes avanzados de programación genera revuelo en la industria de equipos musicales, obligando a las marcas a reaccionar.",
+   "por_que_importa": "Ilustra cómo el avance de la inteligencia artificial en la creación de software afecta a industrias tradicionales fuera de la tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agentes",
+     "explicacion": "programas de inteligencia artificial que pueden ejecutar tareas complejas con poca supervisión."
+    }
+   ],
+   "etiquetas": [
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "The Verge (IA)",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/vibe_coding_synths_.jpg?quality=90&strip=all&crop=0%2C12.339110464558%2C100%2C75.321779070884&w=1200"
   }
  ]
 }
