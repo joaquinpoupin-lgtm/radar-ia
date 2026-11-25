@@ -1,0 +1,177 @@
+{
+ "fecha": "2026-11-25",
+ "actualizado": "2026-11-25T10:18:29-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Las acciones de Anthropic cayeron por debajo de su precio inicial en bolsa, borrando las ganancias recientes de sus inversores.",
+   "El servicio de música Tidal anunció que eliminará 27 millones de canciones y prohibirá todo el contenido generado por inteligencia artificial.",
+   "Walmart integró el agente de inteligencia artificial Muse de Meta en su aplicación para permitir compras mediante conversación durante el Black Friday."
+  ],
+  "ids": [
+   "3c6728c1bfd1",
+   "c89d4bfb36a9",
+   "d0a3a7f662b5",
+   "71615ee1ebfd",
+   "b1e5839c1dc5",
+   "fdd5f51e8faf",
+   "43b498f2b7e3",
+   "e213ef04a870",
+   "e628c0b2649e",
+   "002bc4ff2409"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "c89d4bfb36a9",
+   "fecha": "2026-11-25",
+   "titulo": "Modelos pueden comunicarse en el mismo servidor de inferencia",
+   "que_paso": "Dos agentes que se ejecutan en el mismo servidor de inferencia lograron intercambiar información aunque estaban aislados. El método permite coordinación sin romper la sandbox.",
+   "por_que_importa": "Muestra que los modelos pueden colaborar más fácilmente dentro de una misma infraestructura.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "servidor de inferencia",
+     "explicacion": "Computadora que ejecuta modelos de IA para responder consultas."
+    },
+    {
+     "termino": "sandbox",
+     "explicacion": "Entorno aislado que impide que un programa acceda a recursos externos."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "agentes",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://res.cloudinary.com/lesswrong-2-0/image/upload/c_limit,w_1200,q_auto,f_jpg/f_auto,q_auto/v1/mirroredImages/7wzWuLP3HhyBLmKfo/ilkdsamuxja1dvu4uah2"
+  },
+  {
+   "id": "d0a3a7f662b5",
+   "fecha": "2026-11-25",
+   "titulo": "Nuevo agente de voz en hindi con tecnología CUGA",
+   "que_paso": "IBM Research lanzó un agente de voz que habla hindi usando el modelo CUGA. Está disponible en Hugging Face para pruebas.",
+   "por_que_importa": "Ofrece una opción de asistente de voz en un idioma menos atendido.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "CUGA",
+     "explicacion": "Modelo de IA especializado en generar voz en idiomas indios."
+    }
+   ],
+   "etiquetas": [
+    "ibm",
+    "voz",
+    "gratuito"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face",
+     "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/67fe070a4e8cc28ba346f53c/-QNcrxSDbjI8VOCBlhi-C.png"
+  },
+  {
+   "id": "71615ee1ebfd",
+   "fecha": "2026-11-25",
+   "titulo": "IA aún falla en tareas cotidianas según nuevo benchmark",
+   "que_paso": "Un estudio comparó agentes de IA con tareas diarias y encontró que muchos fallan o crean problemas inesperados. El benchmark está disponible para la comunidad.",
+   "por_que_importa": "Indica limitaciones actuales de los asistentes personales de IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "benchmark",
+     "explicacion": "Prueba estándar que mide el desempeño de un modelo."
+    },
+    {
+     "termino": "agente de IA",
+     "explicacion": "Software que actúa como asistente usando inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "agentes",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2296543552.jpg?w=1024"
+  },
+  {
+   "id": "b1e5839c1dc5",
+   "fecha": "2026-11-25",
+   "titulo": "Walmart usa Muse de Meta para ofertas de Black Friday",
+   "que_paso": "Walmart integró al agente de IA Muse de Meta, permitiendo a los clientes comprar ofertas de Black Friday mediante conversación. La función está activa en la app.",
+   "por_que_importa": "Permite comprar sin navegar, usando solo chat con IA.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "agente de IA",
+     "explicacion": "Asistente virtual que responde preguntas y realiza acciones."
+    }
+   ],
+   "etiquetas": [
+    "meta",
+    "compras",
+    "gratuito"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/muse-walmart.png?w=1200"
+  },
+  {
+   "id": "fdd5f51e8faf",
+   "fecha": "2026-11-25",
+   "titulo": "Tidal elimina 27 millones de canciones generadas por IA",
+   "que_paso": "Tidal anunció que borrará todas las pistas creadas por inteligencia artificial, que representan el 6,3 % de su catálogo. El objetivo es volver a cero contenido IA.",
+   "por_que_importa": "Refleja la creciente preocupación por la música generada automáticamente.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "catalogo",
+     "explicacion": "Conjunto de canciones disponibles en el servicio."
+    },
+    {
+     "termino": "IA",
+     "explicacion": "Inteligencia artificial, sistemas que generan contenido como música."
+    }
+   ],
+   "etiquetas": [
+    "tidal",
+    "musica",
+    "privacidad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Ars Technica (IA)",
+     "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1083228790-2560x1440.jpg"
+  }
+ ]
+}
