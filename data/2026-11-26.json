@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-26",
- "actualizado": "2026-11-26T09:58:28-03:00",
+ "actualizado": "2026-11-26T20:56:40-03:00",
  "brief": {
   "lo_mas_importante": [
    "Amazon y Meta están en conversaciones para resolver un bloqueo de dos meses que afectaba al agente de inteligencia artificial Muse.",
@@ -106,6 +106,206 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.blogs.es/8da5ad/murati/840_560.jpeg"
+  },
+  {
+   "id": "6f6a6b07f17a",
+   "fecha": "2026-11-26",
+   "titulo": "Google exigirá usar sus servidores MCP para conectar agentes de IA a Workspace",
+   "que_paso": "Desde febrero de 2027, las normas de Google requerirán que los agentes de inteligencia artificial accedan a Gmail y Drive mediante servidores propios. El servidor de Gmail incluido no podrá enviar correos.",
+   "por_que_importa": "Obligará a revisar y adaptar las conexiones y herramientas que usen servicios de Google antes de esa fecha.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "servidores MCP",
+     "explicacion": "Un sistema estándar que permite a los programas de inteligencia artificial comunicarse de forma segura con otras aplicaciones y bases de datos."
+    }
+   ],
+   "etiquetas": [
+    "google",
+    "agentes",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techstackups.com/img/articles/google-workspace-agent-api/cover.jpg"
+  },
+  {
+   "id": "21ba123e16ac",
+   "fecha": "2026-11-26",
+   "titulo": "KuroCat: compañero de código en código abierto y un gato virtual de escritorio",
+   "que_paso": "Lanzaron KuroCat, una herramienta gratuita y de código abierto para Windows, Mac, Linux y Android. Funciona como un gato animado en la pantalla y como un asistente para programar usando inteligencia artificial.",
+   "por_que_importa": "Ofrece una opción abierta y gratuita para acompañar las tareas de programación en el computador.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "gratis",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/qianyiai/KuroCat"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/481889bd400679893f63a0cbd0305095d7955436b38ed9e4ef20ba9a53557055/qianyiai/KuroCat"
+  },
+  {
+   "id": "1cd32f7b5031",
+   "fecha": "2026-11-26",
+   "titulo": "Skill gratuita de Claude para crear páginas web con efectos de movimiento al deslizar",
+   "que_paso": "Publicaron una skill gratuita para Claude diseñada para programar sitios web con elementos dinámicos que reaccionan al desplazamiento del usuario. Está creada a partir de proyectos reales para computadores y teléfonos.",
+   "por_que_importa": "Permite pedirle a Claude que construya diseños web interactivos complejos con mayor precisión.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones especializadas que le enseña a Claude a realizar tareas específicas."
+    }
+   ],
+   "etiquetas": [
+    "claude",
+    "gratis",
+    "programación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/scrolltide/ai-studio-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1468939449/079b1e55-0d2e-4366-b981-4bb979adc694"
+  },
+  {
+   "id": "85e20bed87e9",
+   "fecha": "2026-11-26",
+   "titulo": "Video sobre cómo los ingenieros de Anthropic utilizan skills para sus agentes",
+   "que_paso": "Xavier Mitjana analiza en su canal de YouTube cómo se estructuran las skills para trabajar con un único agente de inteligencia artificial en lugar de múltiples sistemas complejos.",
+   "por_que_importa": "Muestra ejemplos prácticos y niveles de uso para organizar asistentes de inteligencia artificial.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "anthropic",
+    "agentes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xavier Mitjana",
+     "url": "https://www.youtube.com/watch?v=cx1hHeb-OMk"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/cx1hHeb-OMk/hqdefault.jpg"
+  },
+  {
+   "id": "1c5b18f84246",
+   "fecha": "2026-11-26",
+   "titulo": "Video sobre la configuración de Hermes Agent para funcionar de forma continua",
+   "que_paso": "Wes Roth muestra en YouTube cómo instalar y configurar Hermes Agent, un sistema abierto de Nous Research que funciona veinticuatro horas al día para automatizar tareas y conectar con Telegram.",
+   "por_que_importa": "Explica cómo mantener un agente de inteligencia artificial operando en un servidor propio sin depender de tener el computador encendido.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "servidor",
+     "explicacion": "Un computador remoto que permanece encendido permanentemente para ejecutar aplicaciones."
+    }
+   ],
+   "etiquetas": [
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Wes Roth",
+     "url": "https://www.youtube.com/watch?v=uClZwJ-BoSc"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/uClZwJ-BoSc/hqdefault.jpg"
+  },
+  {
+   "id": "cd73459784d8",
+   "fecha": "2026-11-26",
+   "titulo": "Lanzan Ling-3.2-air, modelo abierto enfocado en automatización de flujos de trabajo",
+   "que_paso": "Presentaron Ling-3.2-air, un modelo con arquitectura multimodal abierto que mejora el razonamiento sobre documentos profesionales y la automatización de tareas en comparación con su versión anterior.",
+   "por_que_importa": "Ofrece una opción con licencia libre orientada a procesar documentos complejos y flujos de trabajo.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "open source",
+    "automatización"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/inclusionAI/Ling-3.2-air"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/inclusionAI/Ling-3.2-air.png"
+  },
+  {
+   "id": "e222d11978c1",
+   "fecha": "2026-11-26",
+   "titulo": "El presidente de Microsoft advierte sobre posibles caídas de servicios por el uso de IA",
+   "que_paso": "El directivo señaló que el uso de herramientas de inteligencia artificial para analizar código está alterando el equilibrio entre proteger los sistemas frente a ataques y asegurar su correcto funcionamiento diario.",
+   "por_que_importa": "Señala los desafíos de seguridad y estabilidad que enfrentan las plataformas digitales actuales.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "microsoft",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/seguridad/tenemos-que-prepararnos-para-proximos-meses-presidente-microsoft-alerta-riesgo-caidas-ligado-a-ia"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/cd78f8/brad-smith-president-microsoft-/840_560.jpeg"
+  },
+  {
+   "id": "c881f1e71110",
+   "fecha": "2026-11-26",
+   "titulo": "Nvidia detiene temporalmente el envío de chips a países del Sudeste Asiático",
+   "que_paso": "Nvidia ordenó a sus socios fabricantes pausar los envíos de servidores hacia Malasia, Singapur, Tailandia e Indonesia en medio de restricciones de Estados Unidos para evitar que sus microchips lleguen a China.",
+   "por_que_importa": "Refleja el impacto de las restricciones internacionales en la cadena de suministro de componentes para inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Circuitos integrados avanzados que procesan los cálculos necesarios para entrenar y ejecutar inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "TechCrunch (IA)",
+     "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg?w=1024"
   }
  ]
 }
