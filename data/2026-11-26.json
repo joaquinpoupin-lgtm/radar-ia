@@ -1,0 +1,111 @@
+{
+ "fecha": "2026-11-26",
+ "actualizado": "2026-11-26T09:58:28-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Amazon y Meta están en conversaciones para resolver un bloqueo de dos meses que afectaba al agente de inteligencia artificial Muse.",
+   "The New York Times aconsejó a sus fotógrafos evitar la actualización de Photoshop para prevenir la inclusión automática de metadatos.",
+   "El modelo local Inkling 2 Mini, creado por la startup de Mira Murati, ha ganado popularidad por ejecutarse directamente en los equipos."
+  ],
+  "ids": [
+   "244a3e8cb4f1",
+   "19f2f984a80d",
+   "237abfc39fb7",
+   "bf7ecee0cf97",
+   "5f305d13d7da",
+   "197dc8b3ac4d",
+   "28175a595e60",
+   "a9ba02207a16"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "244a3e8cb4f1",
+   "fecha": "2026-11-26",
+   "titulo": "OpenAI corrige error de cobro y el uso de GPT-6.2 se agota más rápido",
+   "que_paso": "OpenAI admitió un error de facturación en el lanzamiento de GPT-6.2 que aplicaba descuentos por equivocación. Tras solucionar el problema, el límite de uso de las versiones Astra y Sol se agotará antes.",
+   "por_que_importa": "Los usuarios notarán que su cuota mensual de uso en estos modelos se consume de forma más acelerada que la semana pasada.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "openai",
+    "chatgpt"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://twitter.com/thsottiaux/status/2125784147889393806"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_400x400.jpg"
+  },
+  {
+   "id": "19f2f984a80d",
+   "fecha": "2026-11-26",
+   "titulo": "The New York Times pide a fotógrafos no actualizar Photoshop",
+   "que_paso": "El medio aconsejó a sus fotógrafos evitar la actualización de Photoshop para prevenir la inclusión automática de metadatos de inteligencia artificial en las imágenes.",
+   "por_que_importa": "Plantea cuestionamientos sobre el control y el registro de datos digitales en las herramientas de edición de imágenes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "privacidad",
+    "imagen"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2289911637.jpg?quality=90&strip=all&crop=0%2C10.232235952618%2C100%2C79.535528094764&w=1200"
+  },
+  {
+   "id": "237abfc39fb7",
+   "fecha": "2026-11-26",
+   "titulo": "Herramienta gratuita de diseño visual para Claude Code, Codex y Cursor",
+   "que_paso": "Lanzaron una extensión gratuita para crear interfaces visuales en un lienzo digital y luego generar el código automáticamente. Funciona con sistemas como Claude Code, Codex y Cursor.",
+   "por_que_importa": "Permite a quienes diseñan software estructurar interfaces de usuario de forma más directa dentro de sus entornos de programación.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "gratis"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/uxpilot-ai/frontend-design-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/391a2de28cf9011689a994783bd4dd65820aac7401c278ed96793e49a636a8c3/uxpilot-ai/frontend-design-skill"
+  },
+  {
+   "id": "bf7ecee0cf97",
+   "fecha": "2026-11-26",
+   "titulo": "Modelo de inteligencia artificial local Inkling 2 Mini genera interés",
+   "que_paso": "El modelo Inkling 2 Mini, desarrollado por la startup Thinking Machines Lab de Mira Murati, ha ganado popularidad entre expertos en pocas semanas. Destaca por ejecutarse de forma local en los equipos.",
+   "por_que_importa": "Ofrece una alternativa desarrollada fuera de China que funciona directamente en dispositivos propios.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/hay-modelo-ia-local-que-esta-causando-furor-se-llama-inkling-2-mini-tenemos-sorpresa-no-chino"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/8da5ad/murati/840_560.jpeg"
+  }
+ ]
+}
