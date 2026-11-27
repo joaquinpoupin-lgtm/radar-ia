@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-27",
- "actualizado": "2026-11-27T09:55:06-03:00",
+ "actualizado": "2026-11-27T20:37:55-03:00",
  "brief": {
   "lo_mas_importante": [
    "Google exigirá que, desde febrero de 2027, los agentes de inteligencia artificial accedan a Gmail y Drive utilizando únicamente sus servidores propios.",
@@ -227,6 +227,210 @@
    ],
    "confirmacion": 1,
    "imagen": "https://i.ytimg.com/vi/ZGX2NLLLYkY/hqdefault.jpg"
+  },
+  {
+   "id": "138e1e18872d",
+   "fecha": "2026-11-27",
+   "titulo": "Un usuario de Reddit reporta problemas al usar Claude en tareas de investigación de inteligencia artificial",
+   "que_paso": "Un usuario probó Claude en su propio trabajo de investigación y aseguró que genera malos resultados en comparación con otros modelos. La publicación generó discusión en la comunidad sobre el rendimiento de estos sistemas.",
+   "por_que_importa": "Muestra que las herramientas de IA pueden fallar en tareas complejas de investigación y requiere revisión humana constante.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "investigación",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://twitter.com/RealAstropulse/status/2126119408997466389"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://pbs.twimg.com/media/HYF66EGWIAAF9lx?format=webp&name=large"
+  },
+  {
+   "id": "aa5274859672",
+   "fecha": "2026-11-27",
+   "titulo": "Estados demandan a SpaceX para frenar la generación de contenido inapropiado con Grok",
+   "que_paso": "Varios estados presentaron una demanda contra la empresa para detener la creación de imágenes no autorizadas usando Grok. La acción legal busca proteger a los usuarios de la plataforma de la exposición a contenido falso y dañino.",
+   "por_que_importa": "Refleja los crecientes problemas legales y de seguridad que enfrentan las plataformas por el mal uso de sus herramientas de generación de imágenes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "imagen",
+    "seguridad",
+    "leyes"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://www.oag.state.va.us/images/OAG-Tile-Image-Jones_20260121.jpg?20220117"
+  },
+  {
+   "id": "a21b88813b82",
+   "fecha": "2026-11-27",
+   "titulo": "Inkworks: una habilidad para agentes que crea páginas 3D explicativas",
+   "que_paso": "Lanzaron Inkworks, una skill para herramientas como Claude Code escrita en JavaScript. Permite que los agentes generen páginas web interactivas en 3D con estilo de planos de ingeniería.",
+   "por_que_importa": "Permite a quienes usan agentes crear visualizaciones técnicas interactivas de forma automatizada.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "skill",
+     "explicacion": "Paquete de instrucciones que le enseña a un asistente de inteligencia artificial a realizar una tarea específica."
+    }
+   ],
+   "etiquetas": [
+    "claude-code",
+    "educación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/Moh4696/inkworks-skill"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/85b1e2ac4e89f9c88033fc097017c2296c2de3c851793d33f5d74503f1f3e829/Moh4696/inkworks-skill"
+  },
+  {
+   "id": "26cd3abe446d",
+   "fecha": "2026-11-27",
+   "titulo": "Lanzan plugin de habilidades robóticas para múltiples plataformas de programación",
+   "que_paso": "Publicaron un conjunto de habilidades para agentes enfocado en robótica que funciona en Claude Code, Cursor, Codex y Gemini CLI. Está adaptado a partir de un proyecto previo de Google DeepMind.",
+   "por_que_importa": "Facilita la integración de tareas de robótica y simulación directamente en asistentes de programación y agentes de IA.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "plugin",
+     "explicacion": "Complemento que se añade a un programa para ampliar sus funciones."
+    }
+   ],
+   "etiquetas": [
+    "claude-code",
+    "cursor",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/eust-w/open-robotics-plugin"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/986b2e8bb5330819159e4ac13283f928cb9dd498be336160a49432a5d5a5e473/eust-w/open-robotics-plugin"
+  },
+  {
+   "id": "9d5ba7119b15",
+   "fecha": "2026-11-27",
+   "titulo": "Baidu presenta ERNIE 5.5 Flash Preview con ventana de un millón de tokens",
+   "que_paso": "Baidu lanzó ERNIE 5.5 Flash Preview, un modelo de lenguaje basado en mezcla de expertos con una ventana de contexto de un millón de tokens. Ofrece buen rendimiento en programación, modelado 3D y creación de contenidos.",
+   "por_que_importa": "Ofrece una opción avanzada con gran capacidad de memoria para procesar textos extensos y código.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "Fragmentos de texto que la inteligencia artificial procesa y utiliza para leer y escribir."
+    }
+   ],
+   "etiquetas": [
+    "modelo",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/baidu/ERNIE-5.5-Flash-Preview.png"
+  },
+  {
+   "id": "ba04c9571eef",
+   "fecha": "2026-11-27",
+   "titulo": "Video sobre cuál de las tres principales inteligencias artificiales de pago conviene contratar",
+   "que_paso": "El creador Xavier Mitjana analiza en su canal de YouTube si vale la pena pagar por ChatGPT, Gemini o Claude. Compara los planes de pago de las tres herramientas para ayudar a elegir la mejor opción según el costo y uso.",
+   "por_que_importa": "Ayuda a decidir si la inversión económica en estas plataformas de pago se ajusta a las necesidades diarias.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "gemini",
+    "claude",
+    "de pago"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xavier Mitjana",
+     "url": "https://www.youtube.com/watch?v=0L8TWnPksMU"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/0L8TWnPksMU/hqdefault.jpg"
+  },
+  {
+   "id": "ac2e044443e4",
+   "fecha": "2026-11-27",
+   "titulo": "Detectan chips avanzados de Nvidia en un centro de datos en Shanghái",
+   "que_paso": "Documentos regulatorios indican que empresas chinas habrían instalado hardware con arquitectura Blackwell de Nvidia en un centro de datos en Shanghái. Estos chips tienen restricciones de exportación hacia China.",
+   "por_que_importa": "Muestra las dificultades para cumplir las restricciones comerciales internacionales en la distribución de hardware avanzado para inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "chips",
+     "explicacion": "Circuitos integrados de silicio que dan la potencia de cálculo necesaria para entrenar y usar inteligencia artificial."
+    }
+   ],
+   "etiquetas": [
+    "nvidia",
+    "chips",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/empresas-y-economia/chips-blackwell-nvidia-aparecen-centro-datos-shanghai-vinculado-a-alice-huang"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/00be2d/original/840_560.jpeg"
+  },
+  {
+   "id": "a752e85cd691",
+   "fecha": "2026-11-27",
+   "titulo": "Video sobre diez tendencias tecnológicas y el futuro del desarrollo de software",
+   "que_paso": "El canal de YouTube Fireship analiza en un video diez tendencias tecnológicas para tener en cuenta. Revisa los cambios en el mercado laboral para desarrolladores y los retos del código abierto.",
+   "por_que_importa": "Permite anticipar cambios en la industria del software impulsados por la tecnología actual.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "programación",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Fireship",
+     "url": "https://www.youtube.com/watch?v=sPGzM3ktJVE"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/sPGzM3ktJVE/hqdefault.jpg"
   }
  ]
 }
