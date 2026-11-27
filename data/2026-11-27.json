@@ -1,0 +1,232 @@
+{
+ "fecha": "2026-11-27",
+ "actualizado": "2026-11-27T09:55:06-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Google exigirá que, desde febrero de 2027, los agentes de inteligencia artificial accedan a Gmail y Drive utilizando únicamente sus servidores propios.",
+   "Unas pruebas demostraron que es posible burlar los detectores de texto GPTZero y Pangram modificando algunas frases del contenido generado por IA.",
+   "Una nueva herramienta de código abierto permite transformar asistentes de programación como Claude Code en estudios para crear y publicar videojuegos."
+  ],
+  "ids": [
+   "74835a583675",
+   "82a13b62ffcb",
+   "9a2d977585a6",
+   "e08730e6f11b",
+   "fd3b2eabdc92",
+   "3edc0087da83",
+   "ec00b0e30969",
+   "785bfa31ff22",
+   "6f6a6b07f17a",
+   "21ba123e16ac"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "74835a583675",
+   "fecha": "2026-11-27",
+   "titulo": "Un experimento en redes muestra chats donde las IAs cotillean sobre los usuarios",
+   "que_paso": "Un usuario de Hacker News comparte una prueba pidiéndole a ChatGPT que muestre un chat grupal ficticio donde varias IAs hablan sobre él. El resultado refleja el perfil que la IA ha construido del usuario de forma humorística.",
+   "por_que_importa": "Muestra de forma práctica el tipo de información y contexto que ChatGPT acumula sobre las interacciones de cada persona.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "chatgpt",
+    "privacidad",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://construct22.com/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "82a13b62ffcb",
+   "fecha": "2026-11-27",
+   "titulo": "Análisis apunta a posibles recortes de costos en versiones recientes de OpenAI",
+   "que_paso": "Un análisis basado en datos de rendimiento indica que las versiones recientes de los modelos de OpenAI habrían reducido sus costos operativos. Según las mediciones, esto se refleja en una disminución en la cantidad de tokens utilizados por tarea.",
+   "por_que_importa": "Permite entender los cambios internos en el rendimiento y la eficiencia económica de las herramientas que utilizas.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "tokens",
+     "explicacion": "fragmentos de texto que la inteligencia artificial procesa y utiliza para leer y escribir mensajes."
+    }
+   ],
+   "etiquetas": [
+    "openai",
+    "tendencias",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "9a2d977585a6",
+   "fecha": "2026-11-27",
+   "titulo": "Herramienta open source convierte asistentes de código en estudios de videojuegos",
+   "que_paso": "Una nueva herramienta en GitHub permite transformar asistentes de programación como Claude Code en un estudio completo para crear videojuegos. Ofrece opciones para diseñar y publicar juegos en plataformas como TikTok, Telegram y WeChat.",
+   "por_que_importa": "Facilita la creación y publicación rápida de videojuegos usando agentes de inteligencia artificial.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "open source",
+     "explicacion": "software cuyo código fuente está abierto para que cualquiera pueda examinarlo, usarlo y modificarlo."
+    },
+    {
+     "termino": "agentes",
+     "explicacion": "sistemas de inteligencia artificial capaces de ejecutar tareas y tomar decisiones de forma autónoma."
+    }
+   ],
+   "etiquetas": [
+    "claude code",
+    "programación",
+    "open source",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/nexu-io/opengame"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1471624301/e913bd79-c296-47cb-a727-ff4124bedcf2"
+  },
+  {
+   "id": "e08730e6f11b",
+   "fecha": "2026-11-27",
+   "titulo": "Plugin para Claude Code permite organizar conjuntos de habilidades por sesión",
+   "que_paso": "Un proyecto de código abierto en GitHub ofrece un plugin y cliente para Windows que permite seleccionar un conjunto específico de habilidades para cada sesión de Claude Code. De esta forma, el modelo solo visualiza las instrucciones necesarias para esa tarea.",
+   "por_que_importa": "Ayuda a mantener más organizadas y específicas las instrucciones que le das a Claude Code en cada trabajo.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude code",
+    "skills",
+    "open source",
+    "herramientas"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/chipfighter/lodestar"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://opengraph.githubassets.com/a1d8c652641288c137ca8682976924879e87cc022b3db4939a3c1b49ac5e042e/chipfighter/lodestar"
+  },
+  {
+   "id": "fd3b2eabdc92",
+   "fecha": "2026-11-27",
+   "titulo": "Advierten sobre riesgos de seguridad en herramientas de programación open source",
+   "que_paso": "Un análisis en medios especializados advierte que utilizar software de código abierto para programar con IA no exenta de peligros. Se señala que algunas herramientas gratuitas emplean telemetría para identificar a los usuarios.",
+   "por_que_importa": "Recuerda la importancia de revisar la procedencia y seguridad del software de código abierto antes de instalarlo.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "telemetría",
+     "explicacion": "recopilación y envío automático de datos sobre el uso de un programa a sus creadores."
+    }
+   ],
+   "etiquetas": [
+    "programación",
+    "open source",
+    "seguridad",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/revuelo-t3-code-programar-ia-explicado-software-open-source-que-usa-telemetria-para-identificar-al-usuario"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/1f3549/t3-code-portada/840_560.jpeg"
+  },
+  {
+   "id": "3edc0087da83",
+   "fecha": "2026-11-27",
+   "titulo": "Kandinsky Image Super-Resolution 2.0 mejora la resolución de imágenes mediante IA",
+   "que_paso": "Llega la versión 2.0 del modelo de mejora de resolución de imágenes de Kandinsky en Hugging Face. Utiliza un único conjunto de pesos para tareas de ampliación x2 y x4 bajo licencia MIT.",
+   "por_que_importa": "Ofrece una opción de código abierto para aumentar la calidad y definición de imágenes existentes.",
+   "seccion": "modelos",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "hugging face",
+    "imagen",
+    "open source",
+    "modelos"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hugging Face (modelos)",
+     "url": "https://huggingface.co/kandinskylab/Kandinsky-ImageSR-2.0"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/kandinskylab/Kandinsky-ImageSR-2.0.png"
+  },
+  {
+   "id": "ec00b0e30969",
+   "fecha": "2026-11-27",
+   "titulo": "Pruebas muestran que detectores de textos de IA se pueden engañar fácilmente",
+   "que_paso": "Una comparativa entre los detectores GPTZero y Pangram demuestra que es posible burlar ambos sistemas simplemente modificando algunas frases del texto generado. Las herramientas buscan identificar contenido creado por inteligencia artificial en plataformas y contenidos.",
+   "por_que_importa": "Evidencia las limitaciones actuales de las herramientas diseñadas para identificar textos escritos por inteligencia artificial.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "educación",
+    "tendencias",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/gptzero-pangram-se-pelean-ser-mejor-detector-textos-hechos-ia-he-probado-basta-cambiar-unas-frases-para-enganarlos"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/de7c91/gptzero-portada/840_560.jpeg"
+  },
+  {
+   "id": "785bfa31ff22",
+   "fecha": "2026-11-27",
+   "titulo": "Video explica cómo Tesla genera su vista de la realidad en tercera persona",
+   "que_paso": "Un nuevo video publicado en YouTube por el creador Matthew Berman detalla el funcionamiento técnico detrás de la generación de la vista del entorno en tercera persona utilizada por los vehículos Tesla.",
+   "por_que_importa": "Permite conocer los avances prácticos de la inteligencia artificial aplicada a la conducción autónoma.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "video",
+    "creadores",
+    "tendencias"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matthew Berman",
+     "url": "https://www.youtube.com/shorts/ZGX2NLLLYkY"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/ZGX2NLLLYkY/hqdefault.jpg"
+  }
+ ]
+}
