@@ -1,0 +1,215 @@
+{
+ "fecha": "2026-11-28",
+ "actualizado": "2026-11-28T09:06:24-03:00",
+ "brief": {
+  "lo_mas_importante": [
+   "Varios estados demandaron a la empresa para frenar la creación de imágenes no autorizadas y contenido falso usando Grok.",
+   "La alta demanda de componentes para inteligencia artificial multiplicó los beneficios económicos de las empresas fabricantes de memorias DRAM.",
+   "Una arrendataria fue desalojada después de que el asistente virtual del propietario le indicó de forma errónea que podía retrasar el arriendo."
+  ],
+  "ids": [
+   "4e825df2be8b",
+   "14839e0aa246",
+   "27058f3e66cb",
+   "12b632717eb6",
+   "05e7ef910863",
+   "89f842a04f4e",
+   "68cfb35a007a",
+   "3e3b6fa9a45b",
+   "138e1e18872d",
+   "aa5274859672"
+  ]
+ },
+ "noticias": [
+  {
+   "id": "4e825df2be8b",
+   "fecha": "2026-11-28",
+   "titulo": "Asistente virtual de un propietario dio información errónea sobre el alquiler",
+   "que_paso": "Una arrendataria fue desalojada después de que el asistente de inteligencia artificial del propietario le indicara que podía retrasar el pago del arriendo. El caso expone los problemas legales y de confusión que surgen al usar sistemas automáticos para gestionar contratos de vivienda.",
+   "por_que_importa": "Muestra los riesgos de depender de asistentes virtuales para tomar decisiones importantes sobre contratos y arriendos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "vivienda",
+    "privacidad",
+    "seguridad"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Hacker News",
+     "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "14839e0aa246",
+   "fecha": "2026-11-28",
+   "titulo": "Herramienta gratuita para mejorar fotos y aumentar resolución con IA",
+   "que_paso": "Lanzaron una aplicación gratuita para Windows que mejora la calidad de imágenes y elimina ruido en fotos usando redes neuronales. El programa aprovecha la tarjeta gráfica del computador para acelerar el procesamiento.",
+   "por_que_importa": "Permite mejorar imágenes y fotografías directamente en el computador sin depender de servicios pagados en internet.",
+   "seccion": "herramientas",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "imagen",
+    "gratis",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (en alza)",
+     "url": "https://github.com/Red2076-arch/waifu2x-image-upscaler-windows"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1474588528/26390ab6-ae75-451f-9c22-a6c4909f85f1"
+  },
+  {
+   "id": "27058f3e66cb",
+   "fecha": "2026-11-28",
+   "titulo": "Librería de la comunidad añade más de 16 funciones profesionales para agentes de IA",
+   "que_paso": "Publicaron un paquete de instrucciones y flujos de trabajo orientados a expandir las capacidades de Claude en tareas profesionales. La herramienta fue creada por la comunidad para estructurar mejor el trabajo de los agentes virtuales.",
+   "por_que_importa": "Sirve para quienes usan Claude en tareas especializadas, aunque al ser de la comunidad conviene revisar su contenido antes de instalarla.",
+   "seccion": "skills",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "agentes",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "GitHub (skills de Claude)",
+     "url": "https://github.com/thakordipak8347/antigravity-skills-engine"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://repository-images.githubusercontent.com/1473610761/aac4b9ea-995c-4ecb-bc0a-c019266b093d"
+  },
+  {
+   "id": "12b632717eb6",
+   "fecha": "2026-11-28",
+   "titulo": "El auge de la inteligencia artificial dispara los ingresos de fabricantes de memoria DRAM",
+   "que_paso": "La alta demanda de componentes para inteligencia artificial multiplicó los beneficios de las empresas fabricantes de memorias. Compañías del sector reportan crecimientos drásticos en sus ganancias trimestrales debido a la necesidad de infraestructura.",
+   "por_que_importa": "Explica cómo el negocio de la inteligencia artificial impulsa la economía de los fabricantes de hardware y componentes.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "memorias DRAM",
+     "explicacion": "Tipo de memoria principal que utilizan los computadores y dispositivos para almacenar datos de forma temporal mientras funcionan."
+    }
+   ],
+   "etiquetas": [
+    "chips",
+    "dinero"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/componentes/china-fabrica-casi-cada-once-memorias-dram-mundo-ia-le-esta-pagando-fabrica"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/9c0646/chiiii/840_560.jpeg"
+  },
+  {
+   "id": "05e7ef910863",
+   "fecha": "2026-11-28",
+   "titulo": "La inteligencia artificial facilita modificar el software interno de cámaras fotográficas",
+   "que_paso": "El uso de sistemas automáticos está permitiendo analizar y descifrar con mayor facilidad el código interno que controla los dispositivos electrónicos. Esta técnica se está aplicando en la ciberseguridad, en videojuegos y ahora en las funciones de cámaras de fotos.",
+   "por_que_importa": "Muestra cómo la tecnología facilita alterar el software protegido que traen de fábrica los dispositivos electrónicos.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [
+    {
+     "termino": "firmware",
+     "explicacion": "Software básico instalado en el hardware de un dispositivo que controla sus funciones principales."
+    }
+   ],
+   "etiquetas": [
+    "seguridad",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/robotica-e-ia/arrasar-matematicas-ciberseguridad-ia-tiene-nuevo-objetivo-liberar-funciones-capadas-tu-camara-fotos"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/a9d45f/primer-plano-de-camara-mirrorless-negra/840_560.png"
+  },
+  {
+   "id": "89f842a04f4e",
+   "fecha": "2026-11-28",
+   "titulo": "MIT desarrolla un microrobot volador con diseño de abeja",
+   "que_paso": "Investigadores del MIT crearon un pequeño robot volador que pesa menos que un clip para papeles y logra volar de forma independiente. El aparato utiliza un chip integrado y sensores para moverse sin cables externos.",
+   "por_que_importa": "Presenta avances en robótica miniatura impulsada por hardware especializado y sensores avanzados.",
+   "seccion": "creadores",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "robot",
+    "investigación"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Matt Wolfe",
+     "url": "https://www.youtube.com/shorts/gUlFwEG_lD0"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.ytimg.com/vi/gUlFwEG_lD0/hqdefault.jpg"
+  },
+  {
+   "id": "68cfb35a007a",
+   "fecha": "2026-11-28",
+   "titulo": "Actualización para crear gráficos personalizados con la ayuda de Claude",
+   "que_paso": "Lanzaron una nueva versión de una herramienta para crear gráficos que incluye soporte para que otros complementos definan nuevos tipos de visualizaciones. El creador utilizó a Claude para diseñar un complemento experimental y solucionar problemas de diseño.",
+   "por_que_importa": "Muestra un caso práctico de cómo usar un modelo de lenguaje para desarrollar y probar complementos de software.",
+   "seccion": "tips",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "claude",
+    "programación",
+    "open source"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Simon Willison",
+     "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": null
+  },
+  {
+   "id": "3e3b6fa9a45b",
+   "fecha": "2026-11-28",
+   "titulo": "Taiwán registra histórica fuga de capital extranjero por incertidumbre sobre la IA",
+   "que_paso": "Inversionistas extranjeros retiraron montos récord de la bolsa de Taiwán durante noviembre, superando los 33 mil millones de dólares. Según informes del mercado, la causa principal se relaciona con las mismas dudas financieras sobre la inteligencia artificial que afectan a otras regiones.",
+   "por_que_importa": "Refleja la volatilidad y la preocupación económica global en torno a las inversiones masivas en tecnología.",
+   "seccion": "tendencias",
+   "importancia": "normal",
+   "terminos": [],
+   "etiquetas": [
+    "dinero",
+    "rumor"
+   ],
+   "fuentes": [
+    {
+     "nombre": "Xataka (IA)",
+     "url": "https://www.xataka.com/empresas-y-economia/taiwan-sufre-mayor-fuga-capital-extranjero-su-historia-ia-gran-sospechosa"
+    }
+   ],
+   "confirmacion": 1,
+   "imagen": "https://i.blogs.es/53d5ac/market_data_on_display_at_taiwan_stock_exchange_20210208/840_560.jpeg"
+  }
+ ]
+}
